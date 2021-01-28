@@ -31,7 +31,9 @@ DEMO_TEST                  := 1
 
 # List of dependencies
 DEPENDENCIES = \
-  LIBPTHREAD 
+  LIBPTHREAD \
+  LSP_COMMON_LIB \
+  LSP_PLUGIN_FW
 
 TEST_DEPENDENCIES = \
   LSP_TEST_FW
