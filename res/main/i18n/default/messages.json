@@ -1,12 +1,4 @@
 {
-	"donations": {
-		"0": "https://liberapay.com/sadko4u/donate",
-		"1": "https://www.patreon.com/sadko4u",
-		"2": "https://paypal.me/sadko4u",
-		"3": "https://etherscan.io/address/0x079b24da78d78302cd3cfbb80c728cd554606cc6",
-		"4": "https://salt.bountysource.com/teams/lsp-plugins"
-	},
-	
 	"file": {
 		"confirm_load": "Do you really want to load the selected file?",
 		"confirm_overwrite": "The selected file already exists. Overwrite?",
@@ -24,10 +16,5 @@
 		"3": "Remember that subscription and regular small donations will give more benefits to the project than one-time donations.",
 		"4": "To not to be very annoying, this dialog will be shown only after each version update of plugins.",
 		"5": "Thanks in advance."
-	},
-	
-	"project": {
-		"name": "Linux Studio Plugins Project",
-		"url": "https://lsp-plug.in/"
 	}
 }
