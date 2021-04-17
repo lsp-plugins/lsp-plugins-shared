@@ -3,6 +3,9 @@
 <schema>
 	<!-- Color aliases -->
 	<colors>
+		<!-- Basic colors -->
+		<led.red value="#ff0000" />
+	
 		<!-- Main colors -->
 		<bg value="#1b1c22" />
 		<bg2 value="#26282f" />
@@ -46,33 +49,44 @@
 	
 
 	<!-- Simple widgets -->
-	<style class="Label" parents="root">
-		<text.color value="fg" />
-	</style>
-	
 	<style class="Align" parents="root">
 	</style>
 	
 	<style class="Box" parents="root">
 	</style>
 	
-	<style class="Hyperlink" parents="root">
-		<text.color value="hl.text" />
-		<text.hover.color value="hl.hover" />
+	<style class="Button" parents="root">
+		<border.size value="1" />
+		<gradient value="false" />
+		<hole value="false" />
+		<hover value="true" />
+		<text.shift value="0 0" />
+		<text.down.shift value="0 0" />
+		<text.pressed.shift value="1 1" />
+		
+		<border.color value="bc" />
+		<border.hover.color value="hv.border" />
+		<color value="bg2" />
+		<hover.color value="hv.fill" />
+		<text.color value="fg2" />
+		<text.hover.color value="hv.text" />
 	</style>
 	
-	<style class="Edit" parents="root">
+	<style class="CheckBox" parents="root">
 		<border.size value="1" />
-		<border.gap.size value="2" />
+		<border.gap.size value="0" />
 		<border.radius value="0" />
+		<check.radius value="0" />		
+		<check.gap.size value="2" />
 		
-		<color value="bg2" />		
-		<text.color value="fg2" />
-		<cursor.color value="fg2" />
 		<border.color value="bc" />
-		<border.gap.color value="bg2" />
+		<border.hover.color value="activity" />
+		<fill.color value="bg2" />
+		<fill.hover.color value="bg2" />
+		<color value="fg" />
+		<hover.color value="fg2" />
 	</style>
-
+	
 	<style class="ComboBox" parents="root">
 		<border.size value="1" />
 		<border.gap.size value="2" />
@@ -95,6 +109,30 @@
 		<border.color value="bc" />
 	</style>
 	
+	<style class="Edit" parents="root">
+		<border.size value="1" />
+		<border.gap.size value="2" />
+		<border.radius value="0" />
+		
+		<color value="bg2" />		
+		<text.color value="fg2" />
+		<cursor.color value="fg2" />
+		<border.color value="bc" />
+		<border.gap.color value="bg2" />
+	</style>
+	
+	<style class="Hyperlink" parents="root">
+		<text.color value="hl.text" />
+		<text.hover.color value="hl.hover" />
+	</style>
+	
+	<style class="Label" parents="root">
+		<text.color value="fg" />
+	</style>
+	
+	<style class="Led" parents="root">
+	</style>
+	
 	<style class="ListBox" parents="root">
 		<border.size value="1" />
 		<border.gap.size value="2" />
@@ -114,6 +152,24 @@
 		<text.selected.color value="fg2" />
 	</style>
 	
+	<style class="Menu" parents="root">
+		<border.size value="1" />
+		<ipadding.top value="4" />
+		<ipadding.bottom value="4" />
+		
+		<border.color value="bc" />
+		<bg.color value="bg2" />
+	</style>
+	
+	<style class="MenuItem" parents="root">
+		<bg.selected.color value="bg" />
+		<text.color value="fg" />
+		<text.selected.color value="fg" />
+	</style>
+	
+	<style class="RackEars" parents="root">
+	</style>
+
 	<style class="ScrollBar" parents="root">
 		<border.size value="1" />
 		<border.gap.size value="1" />
@@ -136,55 +192,11 @@
 		<text.active.color value="bg2" />
 	</style>
 	
-	<style class="Button" parents="root">
-		<border.size value="1" />
-		<gradient value="false" />
-		<hole value="false" />
-		<hover value="true" />
-		<text.shift value="0 0" />
-		<text.down.shift value="0 0" />
-		<text.pressed.shift value="1 1" />
-		
-		<border.color value="bc" />
-		<border.hover.color value="hv.border" />
-		<color value="bg2" />
-		<hover.color value="hv.fill" />
-		<text.color value="fg2" />
-		<text.hover.color value="hv.text" />
-	</style>
-	
 	<style class="Separator" parents="root">
 		<color value="bc" />
 	</style>
 	
-	<style class="Menu" parents="root">
-		<border.size value="1" />
-		<ipadding.top value="4" />
-		<ipadding.bottom value="4" />
-		
-		<border.color value="bc" />
-		<bg.color value="bg2" />
-	</style>
-	
-	<style class="MenuItem" parents="root">
-		<bg.selected.color value="bg" />
-		<text.color value="fg" />
-		<text.selected.color value="fg" />
-	</style>
-	
-	<style class="CheckBox" parents="root">
-		<border.size value="1" />
-		<border.gap.size value="0" />
-		<border.radius value="0" />
-		<check.radius value="0" />		
-		<check.gap.size value="2" />
-		
-		<border.color value="bc" />
-		<border.hover.color value="activity" />
-		<fill.color value="bg2" />
-		<fill.hover.color value="bg2" />
-		<color value="fg" />
-		<hover.color value="fg2" />
+	<style class="Switch" parents="root">
 	</style>
 	
 	<!-- FileDialog widgets -->
@@ -270,7 +282,46 @@
 		<allocation.vfill value="true" />
 		<text.layout.halign value="1.0" />
 	</style>
-
+	
+	<!-- GreetingDialog widgets -->
+	<style class="PluginWindow" parents="Window">
+		<allocation.hfill value="true" />
+		<allocation.vfill value="true" />
+		<text.layout.halign value="1.0" />
+	</style>
+	
+	<style class="PluginWindow::RackEarTop" parents="RackEars">
+		<font.size value="12" />
+	</style>
+	
+	<style class="PluginWindow::RackEarSide" parents="RackEars">
+		<font.size value="16" />
+	</style>
+	
+	<style class="PluginWindow::Bypass::Box" parents="Box">
+		<padding value="4" />
+		<allocation.hfill value="false" />
+		<allocation.vfill value="false" />
+	</style>
+	
+	<style class="PluginWindow::Bypass::Switch" parents="Switch">
+		<angle value="1" />
+		<size.range value="24" />
+	</style>
+	
+	<style class="PluginWindow::Bypass::Led" parents="Led">
+		<color value="led.red" />
+		<size value="8" />
+	</style>
+	
+	<style class="PluginWindow::Content" parents="Box">
+		<allocation.hfill value="true" />
+		<allocation.vfill value="true" />
+		<allocation.hexpand value="true" />
+		<allocation.vexpand value="true" />
+		<padding value="2" />
+	</style>
+	
 </schema>
 
 
