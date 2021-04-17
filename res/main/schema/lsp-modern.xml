@@ -44,6 +44,7 @@
 	<style class="MessageBox" parents="Window">
 	</style>
 	
+
 	<!-- Simple widgets -->
 	<style class="Label" parents="root">
 		<text.color value="fg" />
@@ -230,6 +231,44 @@
 	</style>
 	
 	<style class="MessageBox::Button" parents="Button">
+	</style>
+	
+	<!-- GreetingDialog widgets -->
+	<style class="GreetingDialog" parents="Window">
+		<padding value="16" />
+	</style>
+	
+	<style class="GreetingDialog::Text" parents="Label">
+		<allocation.hfill value="true" />
+		<allocation.vfill value="true" />
+		<text.layout.halign value="-1.0" />
+	</style>
+	
+	<style class="GreetingDialog::Heading" parents="Label">
+		<allocation.hfill value="true" />
+		<allocation.vfill value="true" />
+		<text.layout.halign value="-1.0" />
+		<font.size value="24" />
+		<font.bold value="true" />
+	</style>
+	
+	<style class="GreetingDialog::Postscript" parents="Label">
+		<allocation.hfill value="true" />
+		<allocation.vfill value="true" />
+		<text.layout.halign value="1.0" />
+	</style>
+	
+	<style class="GreetingDialog::Hlink" parents="Hyperlink">
+		<allocation.hfill value="true" />
+		<allocation.vfill value="true" />
+		<text.layout.halign value="-1.0" />
+		<padding.left value="24" />
+	</style>
+	
+	<style class="GreetingDialog::PostscriptHlink" parents="Hyperlink">
+		<allocation.hfill value="true" />
+		<allocation.vfill value="true" />
+		<text.layout.halign value="1.0" />
 	</style>
 
 </schema>
