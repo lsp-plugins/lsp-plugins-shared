@@ -121,6 +121,14 @@
 		<border.gap.color value="bg2" />
 	</style>
 	
+	<style class="Grid" parents="root">
+	</style>
+	
+	<style class="Group" parents="root">
+		<color value="fg" />
+		<text.color value="bg" />
+	</style>
+	
 	<style class="Hyperlink" parents="root">
 		<text.color value="hl.text" />
 		<text.hover.color value="hl.hover" />
