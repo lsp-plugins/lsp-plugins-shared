@@ -257,11 +257,7 @@
 	
 	<!-- Additional styles for value -->
 	<style class="Value::PopupWindow" parents="PopupWindow">
-		<border.size value="1" />
-		<padding.left value="4" />
-		<padding.right value="2" />
-		<padding.top value="2" />
-		<padding.bottom value="2" />
+		<padding value="2" />
 	</style>
 	
 	<style class="Value::PopupWindow::Box" parents="Box">
@@ -279,6 +275,10 @@
 	
 	<style class="Value::PopupWindow::InvalidInput" parents="Value::PopupWindow::Input">
 		<text.color value="#ff0000" />
+	</style>
+	
+	<style class="Value::PopupWindow::MismatchInput" parents="Value::PopupWindow::Input">
+		<text.color value="#ffff00" />
 	</style>
 	
 	<style class="Value::PopupWindow::Apply" parents="Button">
