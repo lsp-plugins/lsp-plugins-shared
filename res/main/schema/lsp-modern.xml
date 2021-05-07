@@ -138,6 +138,8 @@
 	
 	<style class="Label" parents="root">
 		<text.color value="fg" />
+		<allocation.hfill value="false" />
+		<allocation.vfill value="false" />
 	</style>
 	
 	<style class="Led" parents="root">
