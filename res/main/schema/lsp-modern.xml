@@ -11,8 +11,13 @@
 		<bg2 value="#26282f" />
 		<fg value="#8088b3" />
 		<fg2 value="#a8aed3" />
+		<fg4 value="#ebecee" />
 		<bc value="#373943" />
 		<bc2 value="#40424e" />
+		
+		<!-- Knob -->
+		<kscale value="#00c0ff" />
+		<kcap value="#474843" />
 		
 		<!-- Hyperlinks -->
 		<hl.text value="#239db5" />
@@ -127,13 +132,22 @@
 	</style>
 	
 	<style class="Group" parents="root">
-		<color value="fg" />
+		<color value="fg4" />
 		<text.color value="bg" />
 	</style>
 	
 	<style class="Hyperlink" parents="root">
 		<text.color value="hl.text" />
 		<text.hover.color value="hl.hover" />
+	</style>
+	
+	<style class="Knob" parents="root">
+		<color value="kcap" />
+		<scale.color value="kscale" />
+		<tip.color value="fg4" />
+		<size.range.min value="24" />
+		<size.range.max value="24" />
+		<scale.size value="5" />
 	</style>
 	
 	<style class="Label" parents="root">
