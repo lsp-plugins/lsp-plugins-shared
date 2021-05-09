@@ -4,7 +4,7 @@
 	<!-- Color aliases -->
 	<colors>
 		<!-- Basic colors -->
-		<led.red value="#ff0000" />
+		
 	
 		<!-- Main colors -->
 		<bg value="#1b1c22" />
@@ -20,6 +20,8 @@
 		<kcap value="#474843" />
 		
 		<!-- Led -->
+		<led.cred value="#880000" />
+		<led.lred value="#ff0000" />
 		<led.c value="#008800" />
 		<led.l value="#00cc00" />
 		
@@ -376,7 +378,8 @@
 	</style>
 	
 	<style class="PluginWindow::Bypass::Led" parents="Led">
-		<color value="led.red" />
+		<color value="led.cred" />
+		<led.color value="led.lred" />
 		<size value="8" />
 	</style>
 	
