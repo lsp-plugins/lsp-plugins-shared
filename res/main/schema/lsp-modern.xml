@@ -25,6 +25,10 @@
 		<led.c value="#008800" />
 		<led.l value="#00cc00" />
 		
+		<!-- Indicator -->
+		<ind.col value="#101010" />
+		<ind.text value="#00ff00" />
+		
 		<!-- Hyperlinks -->
 		<hl.text value="#239db5" />
 		<hl.hover value="#83ba2d" />
@@ -146,6 +150,11 @@
 	<style class="Hyperlink" parents="root">
 		<text.color value="hl.text" />
 		<text.hover.color value="hl.hover" />
+	</style>
+	
+	<style class="Indicator" parents="root">
+		<color value="ind.col" />
+		<text.color value="ind.text" />
 	</style>
 	
 	<style class="Knob" parents="root">
