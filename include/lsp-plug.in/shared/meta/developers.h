@@ -25,12 +25,16 @@
 #include <lsp-plug.in/shared/version.h>
 #include <lsp-plug.in/plug-fw/meta/types.h>
 
-#define LSP_LADSPA_BASE             0x4C5350
-#define LSP_BASE_URI                "http://lsp-plug.in/"
+#define LSP_LADSPA_BASE                     0x4C5350
+#define LSP_BASE_URI                        "http://lsp-plug.in/"
 
-#define LSP_LV2_URI(id)             LSP_BASE_URI "plugins/lv2/" id
-#define LSP_LADSPA_URI(id)          LSP_BASE_URI "plugins/ladspa/" id
-#define LSP_LV2UI_URI(id)           LSP_BASE_URI "ui/lv2/" id
+#define LSP_LV2_URI(id)                     LSP_BASE_URI "plugins/lv2/" id
+#define LSP_LADSPA_URI(id)                  LSP_BASE_URI "plugins/ladspa/" id
+#define LSP_LV2UI_URI(id)                   LSP_BASE_URI "ui/lv2/" id
+
+// LADSPA identifier allocation
+#define LSP_LADSPA_PHASE_DETECTOR_BASE      (LSP_LADSPA_BASE + 0)
+#define LSP_LADSPA_COMP_DELAY_BASE          (LSP_LADSPA_BASE + 1)
 
 namespace lsp
 {
