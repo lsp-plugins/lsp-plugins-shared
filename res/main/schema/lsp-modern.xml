@@ -3,7 +3,48 @@
 <schema>
 	<!-- Color aliases -->
 	<colors>
-		<!-- Basic colors -->
+		<!-- Generic colors -->
+		<bright_red value="#ff8080" />
+		<bright_green value="#80ff80" />
+		<bright_blue value="#8080ff" />
+		<bright_yellow value="#ffff80" />
+		<bright_cyan value="#80ffff" />
+		<bright_magenta value="#ff80ff" />
+
+		<black value="#000000" />
+		<red value="#ff0000" />
+		<green value="#00ff00" />
+		<blue value="#0000ff" />
+		<yellow value="#ffff00" />
+		<brown value="#884400" />
+		<orange value="#ff8800" />
+		<cyan value="#00ffff" />
+		<magenta value="#ff00ff" />
+		<white value="#ffffff" />
+		<silver value="#cccccc" />
+		<gray value="#888888" />
+		<grey value="#888888" />
+
+		<light_gray value="#cccccc" />
+		<light_grey value="#cccccc" />
+
+		<medium_red value="#880000" />
+		<medium_green value="#008800" />
+		<medium_blue value="#000088" />
+		<medium_yellow value="#888800" />
+		<medium_cyan value="#008888" />
+		<medium_magenta value="#880088" />
+		<medium_gray value="#888888" />
+		<medium_grey value="#888888" />
+
+		<dark_red value="#ff0000" />
+		<dark_green value="#00ff00" />
+		<dark_blue value="#0000ff" />
+		<dark_yellow value="#ffff00" />
+		<dark_cyan value="#00ffff" />
+		<dark_magenta value="#ff00ff" />
+		<dark_gray value="#444444" />
+		<dark_grey value="#444444" />
 		
 	
 		<!-- Main colors -->
