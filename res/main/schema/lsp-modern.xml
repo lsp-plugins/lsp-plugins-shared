@@ -179,6 +179,9 @@
 		<border.gap.color value="bg2" />
 	</style>
 	
+	<style class="Graph" parents="root">
+	</style>
+	
 	<style class="Grid" parents="root">
 	</style>
 	
