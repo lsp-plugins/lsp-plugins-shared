@@ -184,6 +184,11 @@
 	
 	<style class="GraphOrigin" parents="root">
 		<radius value="2" />
+		<smooth value="true" />
+	</style>
+	
+	<style class="GraphAxis" parents="root">
+		<smooth value="true" />
 	</style>
 	
 	<style class="Grid" parents="root">
