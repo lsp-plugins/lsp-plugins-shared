@@ -182,6 +182,10 @@
 	<style class="Graph" parents="root">
 	</style>
 	
+	<style class="GraphOrigin" parents="root">
+		<radius value="2" />
+	</style>
+	
 	<style class="Grid" parents="root">
 	</style>
 	
