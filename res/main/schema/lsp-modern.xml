@@ -182,13 +182,17 @@
 	<style class="Graph" parents="root">
 	</style>
 	
+	<style class="GraphAxis" parents="root">
+		<smooth value="false" />
+	</style>
+	
+	<style class="GraphMarker" parents="root">
+		<smooth value="false" />
+	</style>
+	
 	<style class="GraphOrigin" parents="root">
 		<radius value="2" />
 		<smooth value="true" />
-	</style>
-	
-	<style class="GraphAxis" parents="root">
-		<smooth value="false" />
 	</style>
 	
 	<style class="Grid" parents="root">
