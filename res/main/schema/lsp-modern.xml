@@ -188,7 +188,7 @@
 	</style>
 	
 	<style class="GraphAxis" parents="root">
-		<smooth value="true" />
+		<smooth value="false" />
 	</style>
 	
 	<style class="Grid" parents="root">
