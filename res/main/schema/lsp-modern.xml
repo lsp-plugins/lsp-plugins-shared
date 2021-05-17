@@ -195,6 +195,10 @@
 		<smooth value="true" />
 	</style>
 	
+	<style class="GraphText" parents="root">
+		<padding value="2" />
+	</style>
+	
 	<style class="Grid" parents="root">
 	</style>
 	
