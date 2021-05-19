@@ -46,6 +46,7 @@
 		<dark_gray value="#444444" />
 		<dark_grey value="#444444" />
 		
+		<g_mesh value="#00c0ff" />
 	
 		<!-- Main colors -->
 		<bg value="#1b1c22" />
@@ -188,6 +189,11 @@
 	
 	<style class="GraphMarker" parents="root">
 		<smooth value="false" />
+	</style>
+	
+	<style class="GraphMesh" parents="root">
+		<smooth value="true" />
+		<color value="g_mesh" />
 	</style>
 	
 	<style class="GraphOrigin" parents="root">
