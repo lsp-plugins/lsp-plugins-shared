@@ -71,5 +71,13 @@
 	"to_bookmarks": "+Bookmarks",
 	"toggle_rack_mount": "Toggle rack mount",
 	
-	"ui_manual": "UI manual"
+	"ui_manual": "UI manual",
+	
+	"ui_scaling": {
+		"prefer_host": "Prefer host",
+		"select": "UI scaling",
+		"value:pc": "{@value} %",
+		"zoom_in": "Zoom in",
+		"zoom_out": "Zoom out"
+	}
 }
