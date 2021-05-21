@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<window ui:style="PluginWindow">
+	<grid ui:inject="PluginWindow::Grid" rows="2" cols="4">
+<!-- 
+		<cell cols="4" visibility=":_ui_mount_stud ieq 1">
+			<rack ui:style="PluginWindow::RackEarTop" ui:id="rack_top" angle="1" />
+		</cell>
+		
+		<rack ui:style="PluginWindow::RackEarSide" ui:id="rack_left" visibility=":_ui_mount_stud ieq 0" angle="2" />
+-->		
+		<vbox ui:inject="PluginWindow::Bypass::Box" visibility="ex :bypass">
+			<label ui:inject="PluginWindow::Bypass::Label" text="labels.bypass" />
+			<switch ui:inject="PluginWindow::Bypass::Switch" id="bypass" />
+			<led ui:inject="PluginWindow::Bypass::Led" id="bypass" />
+		</vbox>
+		
+		<hbox ui:inject="PluginWindow::Content" ui:id="plugin_content">
+		</hbox>
+		
+<!-- 
+		<rack ui:style="PluginWindow::RackEarSide" ui:id="rack_right" visibility=":_ui_mount_stud ieq 0" angle="2" />
+ -->
+	</grid>
+</window>
