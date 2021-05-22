@@ -363,6 +363,12 @@
 	"q_hue": "Q, Tonalidad",
 	"quality": "Calidad",
 	
+	"rack": {
+		"left": "{@meta_pkg_brand}",
+		"right": "{@meta_plugin_acronym}",
+		"top": "{@meta_pkg_brand} {@meta_plugin_acronym}"
+	},
+	
 	"ramp": "Rampa",
 	"range": "Rango",
 	"range_id": "Rango {@id}",

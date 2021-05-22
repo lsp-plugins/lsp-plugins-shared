@@ -375,6 +375,12 @@
 	"q_hue": "Q, tonalité",
 	"quality": "Qualité",
 	
+	"rack": {
+		"left": "{@meta_pkg_brand}",
+		"right": "{@meta_plugin_acronym}",
+		"top": "{@meta_pkg_brand} {@meta_plugin_acronym}"
+	},
+	
 	"ramp": "Rampe",
 	"range": "Éventail",
 	"range_id": "Éventail {@id}",

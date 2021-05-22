@@ -387,6 +387,12 @@
 	"q_hue": "Добр, Тон",
 	"quality": "Качество",
 	
+	"rack": {
+		"left": "{@meta_pkg_brand}",
+		"right": "{@meta_plugin_acronym}",
+		"top": "{@meta_pkg_brand} {@meta_plugin_acronym}"
+	},
+	
 	"ramp": "Сглаж",
 	"range": "Диапазон",
 	"range_id": "Граница {@id}",

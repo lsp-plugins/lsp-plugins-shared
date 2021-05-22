@@ -367,6 +367,12 @@
 	"q_hue": "Q, Colore",
 	"quality": "Qualità",
 	
+	"rack": {
+		"left": "{@meta_pkg_brand}",
+		"right": "{@meta_plugin_acronym}",
+		"top": "{@meta_pkg_brand} {@meta_plugin_acronym}"
+	},
+	
 	"ramp": "Ramp",
 	"range": "Gamma",
 	"range_id": "Gamma {@id}",
