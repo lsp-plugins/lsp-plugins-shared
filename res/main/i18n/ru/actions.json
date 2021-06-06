@@ -29,6 +29,13 @@
 	"export_settings_to_clipboard": "Экпорт настроек в буфер обмена",
 	"export_settings_to_file": "Экспорт настроек в файл...",
 	
+	"font_scaling": {
+		"select": "Масштаб шрифтов",
+		"value:pc": "{@value} %",
+		"zoom_in": "Увеличить масштаб",
+		"zoom_out": "Уменьшить масштаб"
+	},
+	
 	"freeze": "Стоп-кадр",
 	
 	"import": "Импорт",
