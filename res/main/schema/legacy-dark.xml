@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <schema>
+	<!-- Metadata -->
+	<meta>
+		<title value="schemas.legacy_dark" />
+	</meta>
+
 	<!-- Color aliases -->
 	<colors>
 		<!-- Background colors -->
@@ -11,6 +16,7 @@
 		<hole value="#000000" />
 		<glass value="#101010" />
 		<fgwarn value="#ffff00" />
+		<red value="#ff0000" />
 		
 		<!-- Label colors -->
 		<main_text value="#ebecee" />
@@ -34,7 +40,7 @@
 	<root>
 		<size.scaling value="1.0" />
 		<lang value="en_US" />
-		<bg.color value="bg" />
+		<bg.color value="red" />
 	</root>
 	
 	<!-- Nested style of window -->
