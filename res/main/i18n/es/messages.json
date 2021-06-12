@@ -10,11 +10,14 @@
 	},
 	
 	"greetings": {
-		"0": "¡Has actualizado los plugins a la versión {@version}!",
-		"1": "El '{@project}' es un proyecto no-comercial y necesita apoyo económico para su desarrollo futuro.",
+		"0": "¡Has actualizado los plugins a la versión {@meta_pkg_version}!",
+		"1": "El '{@meta_pkg_full_name}' es un proyecto no-comercial y necesita apoyo económico para su desarrollo futuro.",
 		"2": "Puedes ayudar a esta colección de plugins de código abierto visitando el siguiente enlace y enviando donativos al proyecto:",
 		"3": "Recuerda que las suscripciones y los donativos pequeños pero regulares son más beneficiosos para el proyecto que un único donativo.",
 		"4": "Para no ser demasiado insistente, este diálogo solo se mostrará tras cada actualización de versión de los plugins.",
 		"5": "Gracias por adelantado."
-	}
+	},
+	
+	"postscript": "{@meta_pkg_full_name}",
+	"site": "{@meta_pkg_site}"
 }

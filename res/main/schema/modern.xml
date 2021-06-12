@@ -396,6 +396,8 @@
 	
 	<!-- GreetingDialog widgets -->
 	<style class="GreetingDialog" parents="Window">
+		<border.style value="dialog" />
+		<actions value="close" />
 		<padding value="16" />
 	</style>
 	

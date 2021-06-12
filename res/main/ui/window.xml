@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
-<window ui:style="PluginWindow">
+<window ui:inject="PluginWindow">
 	<grid ui:inject="PluginWindow::Grid" rows="2" cols="4">
 		<cell cols="4" visibility=":_ui_mount_stud ieq 0">
 			<rack ui:id="rack_top"
