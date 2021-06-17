@@ -6,6 +6,11 @@
 		<title value="schemas.legacy" />
 	</meta>
 
+	<!-- Fonts -->
+	<fonts>
+		<lsp-icons src="builtin://fonts/lsp-icons.ttf" />
+	</fonts>
+
 	<!-- Color aliases -->
 	<colors>
 		<!-- Background colors -->

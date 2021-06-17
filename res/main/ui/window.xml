@@ -18,6 +18,10 @@
 		/>
 
 		<vbox ui:inject="PluginWindow::Bypass::Box" visibility="ex :bypass">
+			<multilabel>
+				<label font.name="lsp-icons" font.size="32" font.antialias="true" text="A" color="#239db5" />
+				<label font.name="lsp-icons" font.size="32" font.antialias="true" text="B" color="#a4ed3b" />
+			</multilabel>
 			<label ui:inject="PluginWindow::Bypass::Label" text="labels.bypass" />
 			<switch ui:inject="PluginWindow::Bypass::Switch" id="bypass" />
 			<led ui:inject="PluginWindow::Bypass::Led" id="bypass" />
