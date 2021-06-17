@@ -90,6 +90,10 @@
 		<border.color value="fg" />
 	</style>
 	
+	<style class="Indicator" parents="root">
+		<modern value="false" />
+	</style>
+	
 	<style class="Menu" parents="root">
 		<bg.color value="fg" />
 		<text.color value="bg" />

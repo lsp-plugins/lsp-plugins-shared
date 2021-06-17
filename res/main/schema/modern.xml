@@ -227,6 +227,7 @@
 	<style class="Indicator" parents="root">
 		<color value="ind.col" />
 		<text.color value="ind.text" />
+		<modern value="true" />
 	</style>
 	
 	<style class="Knob" parents="root">
