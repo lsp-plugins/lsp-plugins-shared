@@ -288,7 +288,7 @@
 		<bg.inherit value="true" />
 	</style>
 
-	<style class="multilabel" parents="root">
+	<style class="MultiLabel" parents="root">
 		<bg.inherit value="true" />
 	</style>
 
