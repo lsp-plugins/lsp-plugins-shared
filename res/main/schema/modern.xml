@@ -9,8 +9,8 @@
 	<!-- Fonts -->
 	<fonts>
 		<lsp-icons src="builtin://fonts/lsp-icons.ttf" />
-		<noto-mono src="builtin://fonts/NotoMono-Regular.ttf" />
-		<noto-sdc src="builtin://fonts/NotoSansDisplay-Condensed.ttf" />
+		<noto-sans src="builtin://fonts/noto-sans-light.ttf" />
+		<noto-sans-condensed src="builtin://fonts/noto-sans-condensed-light.ttf" />
 	</fonts>
 
 	<!-- Color aliases -->
@@ -110,6 +110,8 @@
 		<size.scaling value="1.0" />
 		<lang value="en_US" />
 		<bg.color value="bg" />
+		<font.name value="noto-sans" />
+		<font.antialiasing value="true" />
 		<font.size value="12.0" />
 	</root>
 
