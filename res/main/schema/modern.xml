@@ -5,12 +5,14 @@
 	<meta>
 		<title value="schemas.modern" />
 	</meta>
-	
+
 	<!-- Fonts -->
 	<fonts>
 		<lsp-icons src="builtin://fonts/lsp-icons.ttf" />
+		<noto-mono src="builtin://fonts/NotoMono-Regular.ttf" />
+		<noto-sdc src="builtin://fonts/NotoSansDisplay-Condensed.ttf" />
 	</fonts>
-	
+
 	<!-- Color aliases -->
 	<colors>
 		<!-- Generic colors -->
@@ -55,42 +57,49 @@
 		<dark_magenta value="#ff00ff" />
 		<dark_gray value="#444444" />
 		<dark_grey value="#444444" />
-		
+
 		<g_mesh value="#00c0ff" />
-	
+
 		<!-- Main colors -->
+		<bg_dark value="#121317" />
 		<bg value="#1b1c22" />
 		<bg2 value="#26282f" />
+		<bg_name value="#373944" />
+		<bg_box value="#25272e" />
 		<fg value="#8088b3" />
 		<fg2 value="#a8aed3" />
-		<fg4 value="#ebecee" />
+		<fg3 value="#7d83a5" />
+		<fg4 value="#9ea6d1" />
 		<bc value="#373943" />
 		<bc2 value="#40424e" />
-		
+		<menu_text value="#a8aed3" />
+		<menu_icon value="#239fb5" />
+
 		<!-- Knob -->
 		<kscale value="#00c0ff" />
 		<kcap value="#474843" />
-		
+
+
 		<!-- Led -->
 		<led.cred value="#880000" />
 		<led.lred value="#ff0000" />
 		<led.c value="#008800" />
 		<led.l value="#00cc00" />
-		
+
 		<!-- Indicator -->
 		<ind.col value="#101010" />
 		<ind.text value="#00ff00" />
-		
+
 		<!-- Hyperlinks -->
 		<hl.text value="#239db5" />
 		<hl.hover value="#83ba2d" />
 		<hl.sel value="#57b2a5" />
-		
+
 		<!-- Hover -->
 		<hv.text value="#a8aed3" />
 		<hv.border value="#376576" />
 		<hv.fill value="#264652" />
-		
+
 		<!-- Misc -->
 		<activity value="#40424e" />
 		<warn value="#ffff00" />
@@ -103,27 +112,33 @@
 		<bg.color value="bg" />
 		<font.size value="12.0" />
 	</root>
-	
+
 	<!-- Windows -->
 	<style class="Window" parents="root">
 	</style>
-	
+
 	<style class="FileDialog" parents="Window">
 	</style>
-	
+
 	<style class="MessageBox" parents="Window">
 	</style>
-	
+
 	<style class="PopupWindow" parents="Window">
 	</style>
-	
+
 	<!-- Simple widgets -->
 	<style class="Align" parents="root">
+		<bg.inherit value="true" />
 	</style>
-	
+
 	<style class="Box" parents="root">
+		<bg.inherit value="true" />
 	</style>
-	
+
+	<style class="Void" parents="root">
+		<bg.inherit value="true" />
+	</style>
+
 	<style class="Button" parents="root">
 		<border.size value="1" />
 		<gradient value="false" />
@@ -132,7 +147,7 @@
 		<text.shift value="0 0" />
 		<text.down.shift value="0 0" />
 		<text.pressed.shift value="1 1" />
-		
+		<bg.inherit value="true" />
 		<border.color value="bc" />
 		<border.hover.color value="hv.border" />
 		<color value="bg2" />
@@ -140,14 +155,14 @@
 		<text.color value="fg2" />
 		<text.hover.color value="hv.text" />
 	</style>
-	
+
 	<style class="CheckBox" parents="root">
 		<border.size value="1" />
 		<border.gap.size value="0" />
 		<border.radius value="0" />
-		<check.radius value="0" />		
+		<check.radius value="0" />
 		<check.gap.size value="2" />
-		
+
 		<border.color value="bc" />
 		<border.hover.color value="activity" />
 		<fill.color value="bg2" />
@@ -155,141 +170,167 @@
 		<color value="fg" />
 		<hover.color value="fg2" />
 	</style>
-	
+
 	<style class="ComboBox" parents="root">
 		<border.size value="1" />
 		<border.gap.size value="2" />
 		<border.radius value="0" />
-		
-		<color value="bg2" />		
+
+		<color value="bg2" />
 		<text.color value="fg" />
-		<spin.color value="bg2" />		
+		<spin.color value="bg2" />
 		<spin.text.color value="fg2" />
 		<border.color value="bc" />
 		<border.gap.color value="bg2" />
 	</style>
-	
+
 	<style class="ComboBox::List" parents="root">
 		<border.size value="1" />
 		<border.gap.size value="2" />
 		<border.radius value="0" />
-		
+
 		<list.bg.color value="bg" />
 		<border.color value="bc" />
 	</style>
-	
+
 	<style class="Edit" parents="root">
 		<border.size value="1" />
 		<border.gap.size value="2" />
 		<border.radius value="0" />
-		
-		<color value="bg2" />		
+
+		<color value="bg2" />
 		<text.color value="fg2" />
 		<cursor.color value="fg2" />
 		<border.color value="bc" />
 		<border.gap.color value="bg2" />
 	</style>
-	
+
 	<style class="Graph" parents="root">
+		<glass.visibility value="true" />
+		<border.color value="bg_dark" />
+		<border.size value="0" />
+		<border.radius value="0" />
+		<color value="bg_dark" />
+		<bg.inherit value="true" />
+		<text.radius value="0" />
 	</style>
-	
+
 	<style class="GraphAxis" parents="root">
 		<smooth value="false" />
 	</style>
-	
+
 	<style class="GraphMarker" parents="root">
 		<smooth value="false" />
 	</style>
-	
+
 	<style class="GraphMesh" parents="root">
 		<smooth value="true" />
 		<color value="g_mesh" />
 	</style>
-	
+
 	<style class="GraphOrigin" parents="root">
 		<radius value="2" />
 		<smooth value="true" />
 	</style>
-	
+
 	<style class="GraphText" parents="root">
 		<padding value="2" />
 	</style>
-	
+
 	<style class="Grid" parents="root">
+		<bg.color value="bg_box" />
 	</style>
-	
+
+	<style class="Cell" parents="root">
+		<bg.inherit value="true" />
+	</style>
+
+
 	<style class="Group" parents="root">
-		<color value="fg4" />
-		<text.color value="bg" />
-		<ipadding value="4" />
+		<color value="bg_name" />
+		<border.size value="0" />
+		<text.color value="fg4" />
+		<ipadding value="12" />
+		<padding value="0" />
+		<border.radius value="0" />
+		<bg.color value="bg_box" />
+
+
+
 	</style>
-	
+
 	<style class="Hyperlink" parents="root">
 		<text.color value="hl.text" />
 		<text.hover.color value="hl.hover" />
 	</style>
-	
+
 	<style class="Indicator" parents="root">
 		<color value="ind.col" />
 		<text.color value="ind.text" />
-		<modern value="true" />
 	</style>
-	
+
 	<style class="Knob" parents="root">
-		<color value="kcap" />
+		<color value="bg" />
 		<scale.color value="kscale" />
 		<tip.color value="fg4" />
 		<size.range.min value="24" />
 		<size.range.max value="24" />
 		<scale.size value="5" />
+		<bg.inherit value="true" />
 	</style>
-	
+
 	<style class="Label" parents="root">
-		<text.color value="fg" />
+		<text.color value="fg2" />
 		<allocation.hfill value="false" />
 		<allocation.vfill value="false" />
+		<bg.inherit value="true" />
 	</style>
-	
+
+	<style class="multilabel" parents="root">
+		<bg.inherit value="true" />
+	</style>
+
 	<style class="Led" parents="root">
 		<color value="led.c" />
 		<led.color value="led.l" />
 		<size value="8" />
+		<bg.inherit value="true" />
 	</style>
-	
+
 	<style class="ListBox" parents="root">
 		<border.size value="1" />
 		<border.gap.size value="2" />
 		<border.radius value="0" />
-		
+
 		<list.bg.color value="bg2" />
 		<border.color value="bc" />
 	</style>
-	
+
 	<style class="ListBoxItem" parents="root">
 		<padding.top value="4" />
 		<padding.bottom value="4" />
-		
+
 		<bg.color value="bg2" />
 		<bg.selected.color value="bc" />
 		<text.color value="fg2" />
 		<text.selected.color value="fg2" />
 	</style>
-	
+
 	<style class="Menu" parents="root">
 		<border.size value="1" />
 		<ipadding.top value="4" />
 		<ipadding.bottom value="4" />
-		
+
 		<border.color value="bc" />
 		<bg.color value="bg2" />
 	</style>
-	
+
 	<style class="MenuItem" parents="root">
 		<bg.selected.color value="bg" />
-		<text.color value="fg" />
+		<text.color value="fg2" />
 		<text.selected.color value="fg" />
 	</style>
-	
+
 	<style class="RackEars" parents="root">
 	</style>
 
@@ -299,7 +340,7 @@
 		<border.radius value="0" />
 		<size.constraints.width.min value="16" />
 		<size.constraints.height.min value="16" />
-		
+
 		<border.color value="bc" />
 		<inc.color value="bg" />
 		<inc.active.color value="activity" />
@@ -314,46 +355,46 @@
 		<text.color value="fg" />
 		<text.active.color value="bg2" />
 	</style>
-	
+
 	<style class="Separator" parents="root">
 		<color value="bc" />
 	</style>
-	
+
 	<style class="Switch" parents="root">
 	</style>
-	
+
 	<!-- FileDialog widgets -->
 	<style class="FileDialog::Bookmark" parents="Hyperlink">
 	</style>
-	
+
 	<style class="FileDialog::Bookmark.selected" parents="FileDialog::Bookmark">
 		<text.color value="hl.sel" />
 		<bg.color value="bg2" />
 	</style>
-	
+
 	<style class="FileDialog::Warning" parents="root">
 		<text.color value="warn" />
 	</style>
-	
+
 	<style class="FileDialog::ActionButton" parents="Button">
 	</style>
-	
+
 	<style class="FileDialog::NavButton" parents="Button">
 	</style>
-	
+
 	<style class="FileDialog::ActionAlign" parents="Align">
 		<layout.hscale value="0.0" />
 		<layout.halign value="1.0" />
 	</style>
-	
+
 	<style class="FileDialog::ActionBox" parents="Box">
 		<spacing value="4" />
 	</style>
-	
+
 	<style class="FileDialog::NavBox" parents="Box">
 		<spacing value="2" />
 	</style>
-	
+
 	<style class="FileDialog::ExtCheck" parents="CheckBox">
 		<color value="fg" />
 	</style>
@@ -361,58 +402,56 @@
 	<!-- MessageBox widgets -->
 	<style class="MessageBox::Message" parents="Label">
 	</style>
-	
+
 	<style class="MessageBox::Heading" parents="Label">
 	</style>
-	
+
 	<style class="MessageBox::Button" parents="Button">
 	</style>
-	
+
 	<!-- Additional styles for value -->
 	<style class="Value::PopupWindow" parents="PopupWindow">
 		<padding value="2" />
 	</style>
-	
+
 	<style class="Value::PopupWindow::Box" parents="Box">
 		<orientation value="horizontal" />
 		<spacing value="2" />
 	</style>
-	
+
 	<style class="Value::PopupWindow::Input" parents="Edit">
 		<spacing value="2" />
 		<size.constraints.width.min value="64" />
 	</style>
-	
+
 	<style class="Value::PopupWindow::ValidInput" parents="Value::PopupWindow::Input">
 	</style>
-	
+
 	<style class="Value::PopupWindow::InvalidInput" parents="Value::PopupWindow::Input">
 		<text.color value="#ff0000" />
 	</style>
-	
+
 	<style class="Value::PopupWindow::MismatchInput" parents="Value::PopupWindow::Input">
 		<text.color value="#ffff00" />
 	</style>
-	
+
 	<style class="Value::PopupWindow::Apply" parents="Button">
 	</style>
-	
+
 	<style class="Value::PopupWindow::Cancel" parents="Button">
 	</style>
-	
+
 	<!-- GreetingDialog widgets -->
 	<style class="GreetingDialog" parents="Window">
-		<border.style value="dialog" />
-		<actions value="close" />
 		<padding value="16" />
 	</style>
-	
+
 	<style class="GreetingDialog::Text" parents="Label">
 		<allocation.hfill value="true" />
 		<allocation.vfill value="true" />
 		<text.layout.halign value="-1.0" />
 	</style>
-	
+
 	<style class="GreetingDialog::Heading" parents="Label">
 		<allocation.hfill value="true" />
 		<allocation.vfill value="true" />
@@ -420,58 +459,58 @@
 		<font.size value="24" />
 		<font.bold value="true" />
 	</style>
-	
+
 	<style class="GreetingDialog::Postscript" parents="Label">
 		<allocation.hfill value="true" />
 		<allocation.vfill value="true" />
 		<text.layout.halign value="1.0" />
 	</style>
-	
+
 	<style class="GreetingDialog::Hlink" parents="Hyperlink">
 		<allocation.hfill value="true" />
 		<allocation.vfill value="true" />
 		<text.layout.halign value="-1.0" />
 		<padding.left value="24" />
 	</style>
-	
+
 	<style class="GreetingDialog::PostscriptHlink" parents="Hyperlink">
 		<allocation.hfill value="true" />
 		<allocation.vfill value="true" />
 		<text.layout.halign value="1.0" />
 	</style>
-	
+
 	<!-- PluginWindow widgets -->
 	<style class="PluginWindow" parents="Window">
 		<allocation.hfill value="true" />
 		<allocation.vfill value="true" />
 		<text.layout.halign value="1.0" />
 	</style>
-	
+
 	<style class="PluginWindow::RackEarTop" parents="RackEars">
 		<font.size value="12" />
 	</style>
-	
+
 	<style class="PluginWindow::RackEarSide" parents="RackEars">
 		<font.size value="16" />
 	</style>
-	
+
 	<style class="PluginWindow::Bypass::Box" parents="Box">
 		<padding value="4" />
 		<allocation.hfill value="false" />
 		<allocation.vfill value="false" />
 	</style>
-	
+
 	<style class="PluginWindow::Bypass::Switch" parents="Switch">
 		<angle value="1" />
 		<size.range value="24" />
 	</style>
-	
+
 	<style class="PluginWindow::Bypass::Led" parents="Led">
 		<color value="led.cred" />
 		<led.color value="led.lred" />
 		<size value="8" />
 	</style>
-	
+
 	<style class="PluginWindow::Content" parents="Box">
 		<allocation.hfill value="true" />
 		<allocation.vfill value="true" />
@@ -479,7 +518,5 @@
 		<allocation.vexpand value="true" />
 		<padding value="2" />
 	</style>
-	
+
 </schema>
-
-
