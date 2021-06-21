@@ -2,22 +2,22 @@
 
 <window ui:inject="PluginWindow">
 	<!-- header new -->
-<vbox>
-	<!-- v1-->
-	<hbox height.min="44">
+	<vbox>
+		<!-- v1-->
+		<hbox height.min="44">
 			<grid rows="3" cols="9">
 				<cell width.min="106" rows="2" cols="1">
 
 					<hbox >
 						<multilabel padding.l="7">
-							<label font.name="lsp-icons" font.size="35" font.antialias="true" text="K" color="#239db5" />
-							<label font.name="lsp-icons" font.size="35" font.antialias="true" text="L" color="#a4ed3b" />
+							<label font.name="lsp-icons" font.size="35" font.antialias="true" text="K" color="#239db5"/>
+							<label font.name="lsp-icons" font.size="35" font.antialias="true" text="L" color="#a4ed3b"/>
 						</multilabel>
 						<void expand="true"/>
 					</hbox>
 				</cell>
 				<cell width.min="37" rows="2" cols="1"><void expand="true"/></cell>
-				<void />
+				<void/>
 				<cell rows="1" cols="6">
 					<hbox>
 						<void expand="true"/>
@@ -32,68 +32,120 @@
 						<void expand="true"/>
 						<hbox >
 							<label bg.color="bg" color="menu_icon" padding.t="4" halign="1" text="#"/>
-						<label bg.color="bg" color="fg2" padding.t="4" padding.l="3" padding.r="10" halign="1" text="MENU"/>
-					</hbox>
-					<label bg.color="bg" color="menu_icon" padding.t="4" halign="1" text="#"/>
+							<label bg.color="bg" color="fg2" padding.t="4" padding.l="3" padding.r="10" halign="1" text="MENU"/>
+						</hbox>
+						<label bg.color="bg" color="menu_icon" padding.t="4" halign="1" text="#"/>
 						<hbox >
 							<label bg.color="bg" color="fg2" padding.t="4" padding.l="3" padding.r="10" halign="1" text="RESET"/>
-						<label bg.color="bg" color="menu_icon" padding.t="4" halign="1" text="#"/>
-					</hbox>
-					<label bg.color="bg" color="fg2" padding.t="4" padding.l="3" padding.r="10" halign="1" text="SCALE"/>
+							<label bg.color="bg" color="menu_icon" padding.t="4" halign="1" text="#"/>
+						</hbox>
+						<label bg.color="bg" color="fg2" padding.t="4" padding.l="3" padding.r="10" halign="1" text="SCALE"/>
 						<hbox >
 							<label bg.color="bg" color="menu_icon" padding.t="4" halign="1" text="#"/>
-						<label bg.color="bg" color="fg2" padding.t="4" padding.l="3" padding.r="10" halign="1" text="ABOUT"/>
-					</hbox>
-					<button id="bypass" color="#962e30" hover.color="#b52325" bg.color="bg" text.color="#36211a" padding.t="4" padding.r="7" font.size="6" text="BYPASS" size="14"/>
+							<label bg.color="bg" color="fg2" padding.t="4" padding.l="3" padding.r="10" halign="1" text="ABOUT"/>
+						</hbox>
+						<button id="bypass" color="#962e30" hover.color="#b52325" bg.color="bg" text.color="#36211a" padding.t="4" padding.r="7" font.size="6" text="BYPASS" size="14"/>
 
 					</hbox>
 				</cell>
 
 			</grid>
 
-
-	</hbox>
-	<void height.min="4" fill="true"/>
-
-	<!-- old -->
-
-	<grid ui:inject="PluginWindow::Grid" rows="2" cols="4">
-
-		<cell cols="4" visibility=":_ui_mount_stud ieq 0">
-			<rack ui:id="rack_top"
-				ui:inject="PluginWindow::RackEarTop"
-				text="labels.rack.top" text.meta="true"
-				angle="1"
-			/>
-		</cell>
-
-		<rack ui:id="rack_left"
-			ui:inject="PluginWindow::RackEarSide"
-			visibility=":_ui_mount_stud ieq 1"
-			text="labels.rack.left" text.meta="true"
-			angle="2"
-		/>
-
-		<vbox ui:inject="PluginWindow::Bypass::Box" visibility="ex :bypass">
-			<multilabel>
-				<label font.name="lsp-icons" font.size="32" font.antialias="true" text="A" color="#239db5" />
-				<label font.name="lsp-icons" font.size="32" font.antialias="true" text="B" color="#a4ed3b" />
-			</multilabel>
-			<label ui:inject="PluginWindow::Bypass::Label" text="labels.bypass" />
-			<switch ui:inject="PluginWindow::Bypass::Switch" id="bypass" />
-			<led ui:inject="PluginWindow::Bypass::Led" id="bypass" />
-		</vbox>
-
-		<hbox ui:inject="PluginWindow::Content" ui:id="plugin_content">
 		</hbox>
+		<void height.min="4" fill="true"/>
+		<!-- v2-->
+		<hbox height.min="44">
+			<grid rows="3" cols="9">
+				<cell width.min="106" rows="2" cols="1">
 
-		<rack ui:id="rack_right"
-			ui:inject="PluginWindow::RackEarSide"
-			text="labels.rack.right" text.meta="true"
-			visibility=":_ui_mount_stud ieq 1"
-			angle="2"
-		/>
+					<hbox >
+						<multilabel padding.l="7">
+							<label font.name="lsp-icons" font.size="35" font.antialias="true" text="H" color="#239db5"/>
+							<label font.name="lsp-icons" font.size="35" font.antialias="true" text="J" color="#a4ed3b"/>
+							<label font.name="lsp-icons" font.size="35" font.antialias="true" text="I" color="#7d83a5"/>
+						</multilabel>
+						<void expand="true"/>
+					</hbox>
+				</cell>
+				<cell width.min="37" rows="2" cols="1"><void expand="true"/></cell>
+				<void/>
+				<cell rows="1" cols="6">
+					<hbox>
+						<void expand="true"/>
+						<label font.name="noto-NotoSansDisplay" color="#7d83a5" font.bold="true" padding.t="3" padding.b="1" padding.l="7" padding.r="7" halign="1" text="PHASE DETECTOR"/>
+						<label color="#373944" font.name="noto-NotoSansDisplay" text="|"/>
+						<label font.name="noto-NotoSansDisplay" font.bold="true" color="#238093" padding.t="3" padding.b="1" padding.l="7" padding.r="7" halign="1" text="PD1"/>
+					</hbox>
+				</cell>
+				<bevel expand="true" color="bg_box" width.min="20" height.min="20" halign="-1"/>
+				<cell rows="1" cols="6">
+					<hbox halign="1">
+						<void expand="true"/>
+						<hbox >
+							<label bg.color="bg" color="menu_icon" padding.t="4" halign="1" text="#"/>
+							<label bg.color="bg" color="fg2" padding.t="4" padding.l="3" padding.r="10" halign="1" text="MENU"/>
+						</hbox>
+						<hbox >
+							<label bg.color="bg" color="menu_icon" padding.t="4" halign="1" text="#"/>
+							<label bg.color="bg" color="fg2" padding.t="4" padding.l="3" padding.r="10" halign="1" text="SAVE"/>
+						</hbox>
+						<hbox >
+							<label bg.color="bg" color="menu_icon" padding.t="4" halign="1" text="#"/>
+							<label bg.color="bg" color="fg2" padding.t="4" padding.l="3" padding.r="10" halign="1" text="LOAD"/>
+						</hbox>
+						<hbox >
+							<label bg.color="bg" color="menu_icon" padding.t="4" halign="1" text="#"/>
+							<label bg.color="bg" color="fg2" padding.t="4" padding.l="3" padding.r="10" halign="1" text="RESET"/>
+						</hbox>
+						<hbox >
+							<label bg.color="bg" color="menu_icon" padding.t="4" halign="1" text="#"/>
+							<label bg.color="bg" color="fg2" padding.t="4" padding.l="3" padding.r="10" halign="1" text="ABOUT"/>
+						</hbox>
 
-	</grid>
-</vbox>
+					</hbox>
+				</cell>
+			</grid>
+		</hbox>
+		<void height.min="4" fill="true"/>
+		<hbox height.min="20" bg.color="bg_box">
+			<hbox halign="1" padding.l="7">
+				<label color="fg2" padding.t="3" padding.r="10" text="SCALE" font.size="9"/>
+				<label color="menu_icon" padding.r="5" expand="false" text="+"/>
+				<label color="menu_icon" padding.r="5" expand="false" text="-"/>
+			</hbox>
+			<hbox halign="1" padding.l="7">
+				<label color="fg2" padding.t="3" padding.r="10" text="FONT SCALE" font.size="9"/>
+				<label color="menu_icon" padding.r="5" expand="false" text="+"/>
+				<label color="menu_icon" padding.r="5" expand="false" text="-"/>
+			</hbox>
+			<void expand="true"/>
+			<button id="bypass" color="#962e30" hover.color="#b52325" text.color="#36211a" padding.r="7" font.size="6" text="BYPASS" size="14" halign="1"/>
+		</hbox>
+		<void height.min="4" fill="true"/>
+		<!-- old -->
+
+		<grid ui:inject="PluginWindow::Grid" rows="2" cols="4">
+
+			<cell cols="4" visibility=":_ui_mount_stud ieq 0">
+				<rack ui:id="rack_top" ui:inject="PluginWindow::RackEarTop" text="labels.rack.top" text.meta="true" angle="1"/>
+			</cell>
+
+			<rack ui:id="rack_left" ui:inject="PluginWindow::RackEarSide" visibility=":_ui_mount_stud ieq 1" text="labels.rack.left" text.meta="true" angle="2"/>
+
+			<vbox ui:inject="PluginWindow::Bypass::Box" visibility="ex :bypass">
+				<multilabel>
+					<label font.name="lsp-icons" font.size="32" font.antialias="true" text="A" color="#239db5"/>
+					<label font.name="lsp-icons" font.size="32" font.antialias="true" text="B" color="#a4ed3b"/>
+				</multilabel>
+				<label ui:inject="PluginWindow::Bypass::Label" text="labels.bypass"/>
+				<switch ui:inject="PluginWindow::Bypass::Switch" id="bypass"/>
+				<led ui:inject="PluginWindow::Bypass::Led" id="bypass"/>
+			</vbox>
+
+			<hbox ui:inject="PluginWindow::Content" ui:id="plugin_content"></hbox>
+
+			<rack ui:id="rack_right" ui:inject="PluginWindow::RackEarSide" text="labels.rack.right" text.meta="true" visibility=":_ui_mount_stud ieq 1" angle="2"/>
+
+		</grid>
+	</vbox>
 </window>
