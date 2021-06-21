@@ -7,8 +7,7 @@
 		<hbox height.min="44">
 			<grid rows="3" cols="9">
 				<cell width.min="106" rows="2" cols="1">
-
-					<hbox >
+					<hbox>
 						<multilabel padding.l="7">
 							<label font.name="lsp-icons" font.size="35" font.antialias="true" text="K" color="#239db5"/>
 							<label font.name="lsp-icons" font.size="35" font.antialias="true" text="L" color="#a4ed3b"/>
@@ -21,9 +20,17 @@
 				<cell rows="1" cols="6">
 					<hbox>
 						<void expand="true"/>
-						<label font.name="noto-NotoSansDisplay" color="#7d83a5" font.bold="true" padding.t="3" padding.b="1" padding.l="7" padding.r="7" halign="1" text="PHASE DETECTOR"/>
-						<label color="#373944" font.name="noto-NotoSansDisplay" text="|"/>
-						<label font.name="noto-NotoSansDisplay" font.bold="true" color="#238093" padding.t="3" padding.b="1" padding.l="7" padding.r="7" halign="1" text="PD1"/>
+						<label color="#7d83a5" font.bold="true" 
+							padding.t="3" padding.b="1" padding.l="7" padding.r="7" 
+							halign="1"
+							text="labels.rack.description" text.meta="true" text.adjust="toupper"
+						/>
+						<label color="#373944" text="|"/>
+						<label color="#238093" font.bold="true"
+							padding.t="3" padding.b="1" padding.l="7" padding.r="7"
+							halign="1"
+							text="labels.rack.acronym" text.meta="true" text.adjust="toupper"
+						/>
 					</hbox>
 				</cell>
 				<bevel expand="true" color="bg_box" width.min="20" height.min="20" halign="-1"/>
@@ -59,7 +66,7 @@
 				<cell width.min="106" rows="2" cols="1">
 
 					<hbox >
-						<multilabel padding.l="7">
+						<multilabel padding.l="7" bg.inherit="true">
 							<label font.name="lsp-icons" font.size="35" font.antialias="true" text="H" color="#239db5"/>
 							<label font.name="lsp-icons" font.size="35" font.antialias="true" text="J" color="#a4ed3b"/>
 							<label font.name="lsp-icons" font.size="35" font.antialias="true" text="I" color="#7d83a5"/>
@@ -72,9 +79,17 @@
 				<cell rows="1" cols="6">
 					<hbox>
 						<void expand="true"/>
-						<label font.name="noto-NotoSansDisplay" color="#7d83a5" font.bold="true" padding.t="3" padding.b="1" padding.l="7" padding.r="7" halign="1" text="PHASE DETECTOR"/>
-						<label color="#373944" font.name="noto-NotoSansDisplay" text="|"/>
-						<label font.name="noto-NotoSansDisplay" font.bold="true" color="#238093" padding.t="3" padding.b="1" padding.l="7" padding.r="7" halign="1" text="PD1"/>
+						<label color="#7d83a5" font.bold="true"
+							padding.t="3" padding.b="1" padding.l="7" padding.r="7"
+							halign="1"
+							text="labels.rack.description" text.meta="true" text.adjust="toupper"
+						/>
+						<label color="#373944" text="|"/>
+						<label color="#238093" font.bold="true"
+							padding.t="3" padding.b="1" padding.l="7" padding.r="7"
+							halign="1"
+							text="labels.rack.acronym" text.meta="true" text.adjust="toupper"
+						/>
 					</hbox>
 				</cell>
 				<bevel expand="true" color="bg_box" width.min="20" height.min="20" halign="-1"/>
