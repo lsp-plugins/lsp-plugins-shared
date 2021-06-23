@@ -35,6 +35,7 @@
 // LADSPA identifier allocation
 #define LSP_LADSPA_PHASE_DETECTOR_BASE      (LSP_LADSPA_BASE + 0)
 #define LSP_LADSPA_COMP_DELAY_BASE          (LSP_LADSPA_BASE + 1)
+#define LSP_SPECTRUM_ANALYZER_BASE          (LSP_LADSPA_BASE + 4)
 
 namespace lsp
 {
