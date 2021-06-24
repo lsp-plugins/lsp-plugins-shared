@@ -8,7 +8,7 @@
 			<grid rows="3" cols="9">
 				<cell width.min="106" rows="2" cols="1">
 					<hbox>
-						<multilabel padding.l="7">
+						<multilabel padding.l="7" font.scaling="1" >
 							<label font.name="lsp-icons" font.size="38" font.antialias="true" text="K" color="#239db5"/>
 							<label font.name="lsp-icons" font.size="38" font.antialias="true" text="L" color="#a4ed3b"/>
 						</multilabel>
@@ -29,31 +29,30 @@
 					</hbox>
 				</cell>
 				<bevel expand="true" color="bg_box" width.min="20" height.min="20" halign="-1"/>
-				<!-- menu box -->
-
-					<hbox halign="1">
-						<void expand="true"/>
-						<multilabel bg.color="bg" padding.l="7" hover="true" hover.color="menu_icon">
-							<label  font.name="lsp-icons" padding.t="4" color="menu_icon" font.antialias="true" text="T" halign="1" />
-							<label  color="fg2" padding.t="4" padding.l="3" padding.r="10" halign="1" text="MENU"/>
-						</multilabel>
-						<multilabel bg.color="bg" padding.l="7" hover="true" hover.color="menu_icon">
-							<label  font.name="lsp-icons" padding.t="4" color="menu_icon" font.antialias="true" text="S" halign="1" />
-							<label  color="fg2" padding.t="4" padding.l="3" padding.r="10" halign="1" text="SAVE"/>
-						</multilabel>
-						<multilabel bg.color="bg" padding.l="7" hover="true" hover.color="menu_icon">
-							<label  font.name="lsp-icons" padding.t="4" color="menu_icon" font.antialias="true" text="R" halign="1" />
-							<label  color="fg2" padding.t="4" padding.l="3" padding.r="10" halign="1" text="LOAD"/>
-						</multilabel>
-						<multilabel bg.color="bg" padding.l="7" hover="true" hover.color="menu_icon">
-							<label  font.name="lsp-icons" padding.t="4" color="menu_icon" font.antialias="true" text="X" halign="1" />
-							<label  color="fg2" padding.t="4" padding.l="3" padding.r="10" halign="1" text="RESET"/>
-						</multilabel>
-						<multilabel bg.color="bg" padding.l="7" hover="true" hover.color="menu_icon">
-							<label  font.name="lsp-icons" padding.t="4" color="menu_icon" font.antialias="true" text="P" halign="1" />
-							<label  color="fg2" padding.t="4" padding.l="3" padding.r="10" halign="1" text="ABOUT"/>
-						</multilabel>
-
+				
+				<!-- Menu box -->
+				<hbox halign="1">
+					<void expand="true"/>
+					<hbox bg.color="bg" solid="true">
+						<label  hover="true" color="menu_icon" hover.color="fg2" font.name="lsp-icons" padding.t="4" font.antialias="true" text="T" halign="1" />
+						<label  hover="true" color="fg2" hover.color="menu_icon" padding.t="4" padding.l="3" padding.r="10" halign="1" text="MENU"/>
+					</hbox>
+					<hbox bg.color="bg" solid="true">
+						<label  hover="true" color="menu_icon" hover.color="fg2" font.name="lsp-icons" padding.t="4" font.antialias="true" text="S" halign="1" />
+						<label  hover="true" color="fg2" hover.color="menu_icon" padding.t="4" padding.l="3" padding.r="10" halign="1" text="SAVE"/>
+					</hbox>
+					<hbox bg.color="bg" solid="true">
+						<label  hover="true" color="menu_icon" hover.color="fg2" font.name="lsp-icons" padding.t="4" font.antialias="true" text="R" halign="1" />
+						<label  hover="true" color="fg2" hover.color="menu_icon" padding.t="4" padding.l="3" padding.r="10" halign="1" text="LOAD"/>
+					</hbox>
+					<hbox bg.color="bg" solid="true">
+						<label  hover="true" color="menu_icon" hover.color="fg2" font.name="lsp-icons" padding.t="4" font.antialias="true" text="X" halign="1" />
+						<label  hover="true" color="fg2" hover.color="menu_icon" padding.t="4" padding.l="3" padding.r="10" halign="1" text="RESET"/>
+					</hbox>
+					<hbox bg.color="bg" solid="true">
+						<label  hover="true" color="menu_icon" hover.color="fg2" font.name="lsp-icons" padding.t="4" font.antialias="true" text="P" halign="1" />
+						<label  hover="true" color="fg2" hover.color="menu_icon" padding.t="4" padding.l="3" padding.r="10" halign="1" text="ABOUT"/>
+					</hbox>
 				</hbox>
 
 			</grid>
