@@ -174,7 +174,7 @@
 
 	"feedback": "Feedback",
 	"feed_gain": "Feed Gain",
-	
+
 	"fft": {
 		"envelope": "Envelope",
 		"fft": "FFT",
@@ -240,6 +240,14 @@
 		"trigger": "TRIGGER GRAPH"
 	},
 	"group": "Group",
+
+	"header": {
+		"about": "ABOUT",
+		"load": "LOAD",
+		"menu": "MENU",
+		"reset": "RESET",
+		"save": "SAVE"
+	},
 
 	"hold": "Hold",
 	"host_bpm": "Host BPM",
@@ -387,7 +395,7 @@
 
 	"q_hue": "Q, Hue",
 	"quality": "Quality",
-	
+
 	"rack": {
 		"acronym": "{@meta_plugin_acronym}",
 		"description": "{@meta_plugin_description}",

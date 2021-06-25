@@ -4,13 +4,13 @@
 	<!-- header new -->
 	<vbox>
 		<!-- v1-->
-		<hbox height.min="44">
+		<hbox height="44" expand="false" >
 			<grid rows="3" cols="9">
 				<cell width.min="106" rows="2" cols="1">
 					<hbox>
-						<multilabel padding.l="7" font.scaling="1" >
-							<label font.name="lsp-icons" font.size="38" font.antialias="true" text="K" color="#239db5"/>
-							<label font.name="lsp-icons" font.size="38" font.antialias="true" text="L" color="#a4ed3b"/>
+						<multilabel padding.l="6" padding.b="3" font.scaling="1" >
+							<label font.name="lsp-logo" font.size="34" font.antialias="true" text="A" color="lsp_logo"/>
+							<label font.name="lsp-logo" font.size="34" font.antialias="true" text="B" color="lsp_logo_cover"/>
 						</multilabel>
 						<void expand="true"/>
 					</hbox>
@@ -21,46 +21,46 @@
 					<hbox>
 						<void expand="true"/>
 						<!-- plugin name -->
-						<label color="#7d83a5" font.bold="true" padding.t="3" padding.b="1" padding.l="7" padding.r="7" halign="1" text="labels.rack.description" text.meta="true" text.adjust="toupper"/>
-						<label color="#373944" text="|"/>
-						<label color="#238093" font.bold="true" padding.t="3" padding.b="1" padding.l="7" padding.r="7" halign="1" text="labels.rack.acronym" text.meta="true" text.adjust="toupper"/>
+						<label color="plug_name" font.bold="true" font.size="14" halign="1" padding.t="2" padding.b="-1" padding.r="6" text="labels.rack.description" text.meta="true" text.adjust="toupper"/>
+						<label color="plug_name_sep" text="|"/>
+						<label color="plug_name_acr" font.bold="true" font.size="14" halign="1" padding.t="2" padding.b="-1" padding.l="6" padding.r="12" text="labels.rack.acronym" text.meta="true" text.adjust="toupper"/>
 						<!-- bypass icon -->
-						<label ui:id="bypass" font.name="lsp-icons" padding.t="3" hover="true" color="dark_green" hover.color="dark_red" padding.l="7" padding.r="7" font.size="12" font.antialias="true" text="W" halign="1"/>
+						<button id="bypass" font.name="lsp-icons" padding.t="3" hover="true" color="bg_box" hover.color="bg_box" border.color="bg_box" border.hover.color="bg_box" text.color="green" text.hover.color="red"  padding.r="6" font.size="12" font.antialias="true" text="5" halign="1"/>
 					</hbox>
 				</cell>
 				<bevel expand="true" color="bg_box" width.min="20" height.min="20" halign="-1"/>
-				
+
 				<!-- Menu box -->
-				<hbox halign="1">
+				<hbox bg.color="bg" halign="1">
 					<void expand="true"/>
-					<hbox bg.color="bg" solid="true">
-						<label  hover="true" color="menu_icon" hover.color="fg2" font.name="lsp-icons" padding.t="4" font.antialias="true" text="T" halign="1" />
-						<label  hover="true" color="fg2" hover.color="menu_icon" padding.t="4" padding.l="3" padding.r="10" halign="1" text="MENU"/>
+					<hbox solid="true" padding.r="10" padding.l="2">
+						<label  hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.t="1" font.antialias="true" text="0" halign="1" />
+						<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.l="5" font.size="14" padding.t="3" halign="1" text="labels.header.menu"/>
 					</hbox>
-					<hbox bg.color="bg" solid="true">
-						<label  hover="true" color="menu_icon" hover.color="fg2" font.name="lsp-icons" padding.t="4" font.antialias="true" text="S" halign="1" />
-						<label  hover="true" color="fg2" hover.color="menu_icon" padding.t="4" padding.l="3" padding.r="10" halign="1" text="SAVE"/>
+					<hbox solid="true" padding.r="10" >
+						<label  hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.t="1" font.antialias="true" text="1" halign="1" />
+						<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.l="5" font.size="14" padding.t="3" halign="1" text="labels.header.save"/>
 					</hbox>
-					<hbox bg.color="bg" solid="true">
-						<label  hover="true" color="menu_icon" hover.color="fg2" font.name="lsp-icons" padding.t="4" font.antialias="true" text="R" halign="1" />
-						<label  hover="true" color="fg2" hover.color="menu_icon" padding.t="4" padding.l="3" padding.r="10" halign="1" text="LOAD"/>
+					<hbox solid="true" padding.r="10" >
+						<label  hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.t="1" font.antialias="true" text="2" halign="1" />
+						<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.l="5" font.size="14" padding.t="3" halign="1" text="labels.header.load"/>
 					</hbox>
-					<hbox bg.color="bg" solid="true">
-						<label  hover="true" color="menu_icon" hover.color="fg2" font.name="lsp-icons" padding.t="4" font.antialias="true" text="X" halign="1" />
-						<label  hover="true" color="fg2" hover.color="menu_icon" padding.t="4" padding.l="3" padding.r="10" halign="1" text="RESET"/>
+					<hbox solid="true" padding.r="10" >
+						<label  hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.t="1" font.antialias="true" text="3" halign="1" />
+						<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.l="5" font.size="14" padding.t="3" halign="1" text="labels.header.reset"/>
 					</hbox>
-					<hbox bg.color="bg" solid="true">
-						<label  hover="true" color="menu_icon" hover.color="fg2" font.name="lsp-icons" padding.t="4" font.antialias="true" text="P" halign="1" />
-						<label  hover="true" color="fg2" hover.color="menu_icon" padding.t="4" padding.l="3" padding.r="10" halign="1" text="ABOUT"/>
+					<hbox solid="true" padding.r="6" >
+						<label  hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.t="1" font.antialias="true" text="4" halign="1" />
+						<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.l="5" font.size="14" padding.t="3" halign="1" text="labels.header.about"/>
 					</hbox>
 				</hbox>
 
 			</grid>
 
 		</hbox>
-		<void height.min="4" fill="true"/>
+		<void height="4"/>
 		<!-- old -->
-
+<!-- rack1
 		<grid ui:inject="PluginWindow::Grid" rows="2" cols="4">
 
 			<cell cols="4" visibility=":_ui_mount_stud ieq 0">
@@ -78,31 +78,34 @@
 				<switch ui:inject="PluginWindow::Bypass::Switch" id="bypass"/>
 				<led ui:inject="PluginWindow::Bypass::Led" id="bypass"/>
 			</vbox>
-
+-->
+<!-- plugin-content -->
 			<hbox ui:inject="PluginWindow::Content" ui:id="plugin_content"></hbox>
-
+<!-- rack2
 			<rack ui:id="rack_right" ui:inject="PluginWindow::RackEarSide" text="labels.rack.right" text.meta="true" visibility=":_ui_mount_stud ieq 1" angle="2"/>
 
 		</grid>
+	-->
+
 		<!-- Footer -->
 
 		<void height.min="4" fill="true"/>
-		<hbox height.min="20" bg.color="bg_box">
+		<hbox height="20" bg.color="bg_box">
 			<!-- scale icons +- -->
-			<hbox padding.t="3" halign="1" padding.l="7">
-				<label font.name="lsp-icons" color="fg" padding.r="10" font.size="16" font.antialias="true" text="Y"/>
-				<label id="scale_minus" font.name="lsp-icons" hover="true" color="menu_icon" hover.color="fg2" padding.r="5" expand="false" font.size="8" font.antialias="true" text="V"/>
-				<label id="scale_plus" font.name="lsp-icons" hover="true" color="menu_icon" hover.color="fg2" padding.r="5" expand="false" font.size="8" font.antialias="true" text="U"/>
+			<hbox halign="1" padding.l="6" padding.r="3" solid="true">
+				<label font.name="lsp-icons" hover="true" color="footer_icon" hover.color="footer_icon_hover" padding.r="10" font.size="12" font.antialias="true" text="7"/>
+				<label id="scale_minus" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.r="5" expand="false" font.size="8" font.antialias="true" text="B"/>
+				<label id="scale_plus" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.r="5" expand="false" font.size="8" font.antialias="true" text="C"/>
 			</hbox>
 			<!-- text scale icons +- -->
-			<hbox padding.t="3" halign="1" padding.l="7">
-				<label font.name="lsp-icons" color="fg" padding.r="10" font.size="16" font.antialias="true" text="Z"/>
-				<label id="scale_minus" font.name="lsp-icons" hover="true" color="menu_icon" hover.color="fg2" padding.r="5" expand="false" font.size="8" font.antialias="true" text="V"/>
-				<label id="text_scale_plus" font.name="lsp-icons" hover="true" color="menu_icon" hover.color="fg2" padding.r="5" expand="false" font.size="8" font.antialias="true" text="U"/>
+			<hbox halign="1" padding.l="6" solid="true">
+				<label font.name="lsp-icons" hover="true" color="footer_icon" hover.color="footer_icon_hover" padding.r="10" font.size="12" font.antialias="true" text="D"/>
+				<label id="scale_minus" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.r="5" expand="false" font.size="8" font.antialias="true" text="B"/>
+				<label id="text_scale_plus" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.r="5" expand="false" font.size="8" font.antialias="true" text="C"/>
 			</hbox>
 			<void expand="true"/>
 			<!-- help icon -->
-			<label id="help" font.name="lsp-icons" padding.t="3" hover="true" color="menu_icon" hover.color="fg2" padding.r="7" font.size="16" font.antialias="true" text="Q" halign="1"/>
+			<label id="help" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="menu_icon_hover" padding.r="6" font.size="12" font.antialias="true" text="6" halign="1"/>
 
 		</hbox>
 	</vbox>
