@@ -506,6 +506,26 @@
 		<led.color value="led.lred"/>
 		<size value="8"/>
 	</style>
+	
+	<style class="PluginWindow::Bypass::Button" parents="Button">
+		<down.colors value="true" />
+		<color value="bg_box" />
+		<down.color value="bg_box" />
+		<text.color value="#00cc00" />
+		<text.hover.color value="#ffff00" />
+		<text.down.color value="#cc0000" />
+		<text.down.hover.color value="#ff0000" />
+		<border.size value="0" />
+		<border.down.size value="0" />
+		<border.pressed.size value="0" />
+		<hole value="0" />
+		<hover value="true" />
+		<padding.top value="3" />
+	
+		<font.name value="lsp-icons" />
+		<font.size value="12" />
+		<font.antialias value="true" />
+	</style>
 
 	<style class="PluginWindow::Content" parents="Box">
 		<allocation.hfill value="true"/>

@@ -25,7 +25,7 @@
 						<label color="plug_name_sep" text="|"/>
 						<label color="plug_name_acr" font.bold="true" font.size="14" halign="1" padding.t="2" padding.b="-1" padding.l="6" padding.r="12" text="labels.rack.acronym" text.meta="true" text.adjust="toupper"/>
 						<!-- bypass icon -->
-						<button id="bypass" font.name="lsp-icons" padding.t="3" hover="true" color="bg_box" hover.color="bg_box" border.color="bg_box" border.hover.color="bg_box" text.color="green" text.hover.color="red"  padding.r="6" font.size="12" font.antialias="true" text="5" halign="1"/>
+						<button id="bypass" ui:inject="PluginWindow::Bypass::Button" text="5" halign="1" />
 					</hbox>
 				</cell>
 				<bevel expand="true" color="bg_box" width.min="20" height.min="20" halign="-1"/>
