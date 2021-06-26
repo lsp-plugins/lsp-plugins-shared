@@ -511,6 +511,8 @@
 		<down.colors value="true" />
 		<color value="bg_box" />
 		<down.color value="bg_box" />
+		<hover.color value="hv.fill" />
+		<down.hover.color value="hv.fill" />
 		<text.color value="#00cc00" />
 		<text.hover.color value="#ffff00" />
 		<text.down.color value="#cc0000" />
