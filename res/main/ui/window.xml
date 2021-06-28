@@ -2,94 +2,63 @@
 
 <window ui:inject="PluginWindow">
 	<!-- header new -->
-	<vbox>
+	<vbox spacing="4">
 		<!-- v1-->
-		<hbox height="44" expand="false" >
-			<grid rows="3" cols="9">
-				<cell width.min="106" rows="2" cols="1">
-					<hbox>
-						<multilabel padding.l="6" padding.b="3" font.scaling="1" >
-							<label font.name="lsp-logo" font.size="34" font.antialias="true" text="A" color="lsp_logo"/>
-							<label font.name="lsp-logo" font.size="34" font.antialias="true" text="B" color="lsp_logo_cover"/>
-						</multilabel>
-						<void expand="true"/>
-					</hbox>
-				</cell>
-				<cell width.min="37" rows="2" cols="1"><void expand="true"/></cell>
-				<void/>
-				<cell rows="1" cols="6">
-					<hbox>
-						<void expand="true"/>
-						<!-- plugin name -->
-						<label color="plug_name" font.bold="true" font.size="14" halign="1" padding.t="2" padding.b="-1" padding.r="6" text="labels.rack.description" text.meta="true" text.adjust="toupper"/>
-						<label color="plug_name_sep" text="|"/>
-						<label color="plug_name_acr" font.bold="true" font.size="14" halign="1" padding.t="2" padding.b="-1" padding.l="6" padding.r="12" text="labels.rack.acronym" text.meta="true" text.adjust="toupper"/>
-						<!-- bypass icon -->
-						<button id="bypass" ui:inject="PluginWindow::Bypass::Button" text="5" halign="1" />
-					</hbox>
-				</cell>
-				<bevel expand="true" color="bg_box" width.min="20" height.min="20" halign="-1"/>
-
-				<!-- Menu box -->
-				<hbox bg.color="bg" halign="1">
+		<grid rows="3" cols="9" height="44" expand="false" bg.color="bg_box" >
+			<cell width.min="106" rows="2" cols="1">
+				<hbox>
+					<multilabel padding.l="6" padding.b="3" font.scaling="1" >
+						<label font.name="lsp-logo" font.size="34" font.antialias="true" text="A" color="lsp_logo"/>
+						<label font.name="lsp-logo" font.size="34" font.antialias="true" text="B" color="lsp_logo_cover"/>
+					</multilabel>
 					<void expand="true"/>
-					<hbox ui:id="trg_main_menu" solid="true" padding.r="10" padding.l="2">
-						<label  hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.t="1" font.antialias="true" text="0" halign="1" />
-						<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.l="5" font.size="14" padding.t="3" halign="1" text="labels.header.menu"/>
-					</hbox>
-					<hbox ui:id="trg_export_settings" solid="true" padding.r="10" >
-						<label  hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.t="1" font.antialias="true" text="1" halign="1" />
-						<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.l="5" font.size="14" padding.t="3" halign="1" text="labels.header.save"/>
-					</hbox>
-					<hbox ui:id="trg_import_settings" solid="true" padding.r="10" >
-						<label  hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.t="1" font.antialias="true" text="2" halign="1" />
-						<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.l="5" font.size="14" padding.t="3" halign="1" text="labels.header.load"/>
-					</hbox>
-					<hbox ui:id="trg_reset_settings" solid="true" padding.r="10" >
-						<label  hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.t="1" font.antialias="true" text="3" halign="1" />
-						<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.l="5" font.size="14" padding.t="3" halign="1" text="labels.header.reset"/>
-					</hbox>
-					<hbox ui:id="trg_about" solid="true" padding.r="6" >
-						<label  hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.t="1" font.antialias="true" text="4" halign="1" />
-						<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.l="5" font.size="14" padding.t="3" halign="1" text="labels.header.about"/>
-					</hbox>
 				</hbox>
-
-			</grid>
-
-		</hbox>
-		<void height="4"/>
-		<!-- old -->
-<!-- rack1
-		<grid ui:inject="PluginWindow::Grid" rows="2" cols="4">
-
-			<cell cols="4" visibility=":_ui_mount_stud ieq 0">
-				<rack ui:id="rack_top" ui:inject="PluginWindow::RackEarTop" text="labels.rack.top" text.meta="true" angle="1"/>
 			</cell>
+			<cell width.min="37" rows="2" cols="1"><void expand="true"/></cell>
+			<void/>
+			<cell rows="1" cols="6">
+				<hbox>
+					<void expand="true"/>
+					<!-- plugin name -->
+					<label color="plug_name" font.bold="true" font.size="14" halign="1" padding.t="2" padding.b="-1" padding.r="6" text="labels.rack.description" text.meta="true" text.adjust="toupper"/>
+					<label color="plug_name_sep" text="|"/>
+					<label color="plug_name_acr" font.bold="true" font.size="14" halign="1" padding.t="2" padding.b="-1" padding.l="6" padding.r="12" text="labels.rack.acronym" text.meta="true" text.adjust="toupper"/>
+					<!-- bypass icon -->
+					<button id="bypass" ui:inject="PluginWindow::Bypass::Button" text="5" halign="1" />
+				</hbox>
+			</cell>
+			<bevel expand="true" color="bg_box" width.min="20" height.min="20" halign="-1"/>
 
-			<rack ui:id="rack_left" ui:inject="PluginWindow::RackEarSide" visibility=":_ui_mount_stud ieq 1" text="labels.rack.left" text.meta="true" angle="2"/>
-
-			<vbox ui:inject="PluginWindow::Bypass::Box" visibility="ex :bypass">
-				<multilabel>
-					<label font.name="lsp-icons" font.size="32" font.antialias="true" text="A" color="#239db5"/>
-					<label font.name="lsp-icons" font.size="32" font.antialias="true" text="B" color="#a4ed3b"/>
-				</multilabel>
-				<label ui:inject="PluginWindow::Bypass::Label" text="labels.bypass"/>
-				<switch ui:inject="PluginWindow::Bypass::Switch" id="bypass"/>
-				<led ui:inject="PluginWindow::Bypass::Led" id="bypass"/>
-			</vbox>
--->
-<!-- plugin-content -->
-			<hbox ui:inject="PluginWindow::Content" ui:id="plugin_content"></hbox>
-<!-- rack2
-			<rack ui:id="rack_right" ui:inject="PluginWindow::RackEarSide" text="labels.rack.right" text.meta="true" visibility=":_ui_mount_stud ieq 1" angle="2"/>
-
+			<!-- Menu box -->
+			<hbox bg.color="bg" halign="1">
+				<void expand="true"/>
+				<hbox ui:id="trg_main_menu" solid="true" padding.r="10" padding.l="2">
+					<label  hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.t="1" font.antialias="true" text="0" halign="1" />
+					<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.l="5" font.size="14" padding.t="3" halign="1" text="labels.header.menu"/>
+				</hbox>
+				<hbox ui:id="trg_export_settings" solid="true" padding.r="10" >
+					<label  hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.t="1" font.antialias="true" text="1" halign="1" />
+					<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.l="5" font.size="14" padding.t="3" halign="1" text="labels.header.save"/>
+				</hbox>
+				<hbox ui:id="trg_import_settings" solid="true" padding.r="10" >
+					<label  hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.t="1" font.antialias="true" text="2" halign="1" />
+					<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.l="5" font.size="14" padding.t="3" halign="1" text="labels.header.load"/>
+				</hbox>
+				<hbox ui:id="trg_reset_settings" solid="true" padding.r="10" >
+					<label  hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.t="1" font.antialias="true" text="3" halign="1" />
+					<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.l="5" font.size="14" padding.t="3" halign="1" text="labels.header.reset"/>
+				</hbox>
+				<hbox ui:id="trg_about" solid="true" padding.r="6" >
+					<label  hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.t="1" font.antialias="true" text="4" halign="1" />
+					<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.l="5" font.size="14" padding.t="3" halign="1" text="labels.header.about"/>
+				</hbox>
+			</hbox>
 		</grid>
-	-->
 
+		<!-- plugin-content -->
+		<hbox ui:inject="PluginWindow::Content" ui:id="plugin_content"></hbox>
+		
 		<!-- Footer -->
-
-		<void height.min="4" fill="true"/>
 		<hbox height="20" bg.color="bg_box">
 			<!-- scale icons +- -->
 			<hbox halign="1" padding.l="6" padding.r="3">

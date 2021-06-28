@@ -248,7 +248,7 @@
 	</style>
 
 	<style class="Grid" parents="root">
-		<bg.color value="bg_box"/>
+		<bg.inherit value="true"/>
 	</style>
 
 	<style class="Cell" parents="root">
