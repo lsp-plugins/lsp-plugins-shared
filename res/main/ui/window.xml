@@ -4,10 +4,10 @@
 	<!-- header new -->
 	<vbox spacing="4">
 		<!-- v1-->
-		<grid rows="3" cols="9" height="44" expand="false" bg.color="bg_box" >
+		<grid rows="3" cols="9" height="44" expand="false" bg.color="bg_light" >
 			<cell width.min="106" rows="2" cols="1">
 				<hbox>
-					<multilabel padding.l="6" padding.b="3" font.scaling="1" >
+					<multilabel padding.left="6" padding.bottom="3" font.scaling="1" >
 						<label font.name="lsp-logo" font.size="34" font.antialias="true" text="A" color="lsp_logo"/>
 						<label font.name="lsp-logo" font.size="34" font.antialias="true" text="B" color="lsp_logo_cover"/>
 					</multilabel>
@@ -20,61 +20,61 @@
 				<hbox>
 					<void expand="true"/>
 					<!-- plugin name -->
-					<label color="plug_name" font.bold="true" font.size="14" halign="1" padding.t="2" padding.b="-1" padding.r="6" text="labels.rack.description" text.meta="true" text.adjust="toupper"/>
+					<label color="plug_name" font.bold="true" font.size="14" halign="1" padding.top="2" padding.bottom="-1" padding.right="6" text="labels.rack.description" text.meta="true" text.adjust="toupper"/>
 					<label color="plug_name_sep" text="|"/>
-					<label color="plug_name_acr" font.bold="true" font.size="14" halign="1" padding.t="2" padding.b="-1" padding.l="6" padding.r="12" text="labels.rack.acronym" text.meta="true" text.adjust="toupper"/>
+					<label color="plug_name_acr" font.bold="true" font.size="14" halign="1" padding.top="2" padding.bottom="-1" padding.left="6" padding.right="12" text="labels.rack.acronym" text.meta="true" text.adjust="toupper"/>
 					<!-- bypass icon -->
 					<button id="bypass" ui:inject="PluginWindow::Bypass::Button" text="5" halign="1" />
 				</hbox>
 			</cell>
-			<bevel expand="true" color="bg_box" width.min="20" height.min="20" halign="-1"/>
+			<bevel expand="true" color="bg_light" width.min="20" height.min="20" halign="-1"/>
 
 			<!-- Menu box -->
 			<hbox bg.color="bg" halign="1">
 				<void expand="true"/>
-				<hbox ui:id="trg_main_menu" solid="true" padding.r="10" padding.l="2">
-					<label  hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.t="1" font.antialias="true" text="0" halign="1" />
-					<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.l="5" font.size="14" padding.t="3" halign="1" text="labels.header.menu"/>
+				<hbox ui:id="trg_main_menu" solid="true" padding.right="10" padding.left="2">
+					<label  hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.top="1" font.antialias="true" text="0" halign="1" />
+					<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.left="5" font.size="14" padding.top="3" halign="1" text="labels.header.menu"/>
 				</hbox>
-				<hbox ui:id="trg_export_settings" solid="true" padding.r="10" >
-					<label  hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.t="1" font.antialias="true" text="1" halign="1" />
-					<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.l="5" font.size="14" padding.t="3" halign="1" text="labels.header.save"/>
+				<hbox ui:id="trg_export_settings" solid="true" padding.right="10" >
+					<label  hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.top="1" font.antialias="true" text="1" halign="1" />
+					<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.left="5" font.size="14" padding.top="3" halign="1" text="labels.header.save"/>
 				</hbox>
-				<hbox ui:id="trg_import_settings" solid="true" padding.r="10" >
-					<label  hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.t="1" font.antialias="true" text="2" halign="1" />
-					<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.l="5" font.size="14" padding.t="3" halign="1" text="labels.header.load"/>
+				<hbox ui:id="trg_import_settings" solid="true" padding.right="10" >
+					<label  hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.top="1" font.antialias="true" text="2" halign="1" />
+					<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.left="5" font.size="14" padding.top="3" halign="1" text="labels.header.load"/>
 				</hbox>
-				<hbox ui:id="trg_reset_settings" solid="true" padding.r="10" >
-					<label  hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.t="1" font.antialias="true" text="3" halign="1" />
-					<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.l="5" font.size="14" padding.t="3" halign="1" text="labels.header.reset"/>
+				<hbox ui:id="trg_reset_settings" solid="true" padding.right="10" >
+					<label  hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.top="1" font.antialias="true" text="3" halign="1" />
+					<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.left="5" font.size="14" padding.top="3" halign="1" text="labels.header.reset"/>
 				</hbox>
-				<hbox ui:id="trg_about" solid="true" padding.r="6" >
-					<label  hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.t="1" font.antialias="true" text="4" halign="1" />
-					<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.l="5" font.size="14" padding.t="3" halign="1" text="labels.header.about"/>
+				<hbox ui:id="trg_about" solid="true" padding.right="6" >
+					<label  hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.top="1" font.antialias="true" text="4" halign="1" />
+					<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.left="5" font.size="14" padding.top="3" halign="1" text="labels.header.about"/>
 				</hbox>
 			</hbox>
 		</grid>
 
 		<!-- plugin-content -->
 		<hbox ui:inject="PluginWindow::Content" ui:id="plugin_content"></hbox>
-		
+
 		<!-- Footer -->
-		<hbox height="20" bg.color="bg_box">
+		<hbox height="20" bg.color="bg_light">
 			<!-- scale icons +- -->
-			<hbox halign="1" padding.l="6" padding.r="3">
-				<label ui:id="trg_ui_scaling" font.name="lsp-icons" hover="true" color="footer_icon" hover.color="footer_icon_hover" padding.r="10" font.size="12" font.antialias="true" text="7"/>
-				<label ui:id="trg_ui_zoom_in" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.r="5" expand="false" font.size="8" font.antialias="true" text="B"/>
-				<label ui:id="trg_ui_zoom_out" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.r="5" expand="false" font.size="8" font.antialias="true" text="C"/>
+			<hbox halign="1" padding.left="6" padding.right="3">
+				<label ui:id="trg_ui_scaling" font.name="lsp-icons" hover="true" color="footer_icon" hover.color="footer_icon_hover" padding.right="10" font.size="12" font.antialias="true" text="7"/>
+				<label ui:id="trg_ui_zoom_in" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.right="5" expand="false" font.size="8" font.antialias="true" text="B"/>
+				<label ui:id="trg_ui_zoom_out" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.right="5" expand="false" font.size="8" font.antialias="true" text="C"/>
 			</hbox>
 			<!-- text scale icons +- -->
-			<hbox halign="1" padding.l="6">
-				<label ui:id="trg_font_scaling" font.name="lsp-icons" hover="true" color="footer_icon" hover.color="footer_icon_hover" padding.r="10" font.size="12" font.antialias="true" text="D"/>
-				<label ui:id="trg_font_zoom_in" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.r="5" expand="false" font.size="8" font.antialias="true" text="B"/>
-				<label ui:id="trg_font_zoom_out" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.r="5" expand="false" font.size="8" font.antialias="true" text="C"/>
+			<hbox halign="1" padding.left="6">
+				<label ui:id="trg_font_scaling" font.name="lsp-icons" hover="true" color="footer_icon" hover.color="footer_icon_hover" padding.right="10" font.size="12" font.antialias="true" text="D"/>
+				<label ui:id="trg_font_zoom_in" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.right="5" expand="false" font.size="10" font.antialias="true" text="B"/>
+				<label ui:id="trg_font_zoom_out" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.right="5" expand="false" font.size="10" font.antialias="true" text="C"/>
 			</hbox>
 			<void expand="true"/>
 			<!-- help icon -->
-			<label ui:id="trg_plugin_manual" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="menu_icon_hover" padding.r="6" font.size="12" font.antialias="true" text="6" halign="1"/>
+			<label ui:id="trg_plugin_manual" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="menu_icon_hover" padding.right="6" font.size="12" font.antialias="true" text="6" halign="1"/>
 
 		</hbox>
 	</vbox>

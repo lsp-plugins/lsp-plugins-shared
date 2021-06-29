@@ -18,67 +18,53 @@
 	<!-- Color aliases -->
 	<colors>
 		<!-- Generic colors -->
-		<bright_red value="#ff8080"/>
-		<bright_green value="#80ff80"/>
-		<bright_blue value="#8080ff"/>
-		<bright_yellow value="#ffff80"/>
-		<bright_cyan value="#80ffff"/>
-		<bright_magenta value="#ff80ff"/>
-
 		<black value="#000000"/>
-		<red value="#ff0000"/>
-		<green value="#00ff00"/>
-		<blue value="#0000ff"/>
-		<yellow value="#ffff00"/>
-		<brown value="#884400"/>
-		<orange value="#ff8800"/>
-		<cyan value="#00ffff"/>
-		<magenta value="#ff00ff"/>
 		<white value="#ffffff"/>
-		<silver value="#cccccc"/>
-		<gray value="#888888"/>
-		<grey value="#888888"/>
 
-		<light_gray value="#cccccc"/>
-		<light_grey value="#cccccc"/>
+		<red value="#d52e35"/>
+		<orange value="#da7829"/>
+		<yellow value="#d1b01c"/>
+		<green value="#3fc72f"/>
+		<cyan value="#2abecc"/>
+		<blue value="#1c6ff5"/>
+		<violet value="#802aff"/>
+		<magenta value="#cc2264"/>
+		<gray value="#858585"/>
 
-		<medium_red value="#880000"/>
-		<medium_green value="#008800"/>
-		<medium_blue value="#000088"/>
-		<medium_yellow value="#888800"/>
-		<medium_cyan value="#008888"/>
-		<medium_magenta value="#880088"/>
-		<medium_gray value="#888888"/>
-		<medium_grey value="#888888"/>
+		<bright_red value="#fe343b"/>
+		<bright_orange value="#fe8f37"/>
+		<bright_yellow value="#f5de23"/>
+		<bright_green value="#4cf239"/>
+		<bright_cyan value="#33e7f8"/>
+		<bright_blue value="#2287ff"/>
+		<bright_violet value="#9c33ff"/>
+		<bright_magenta value="#f62877"/>
+		<bright_gray value="#989898"/>
 
-		<dark_red value="#ff0000"/>
-		<dark_green value="#00ff00"/>
-		<dark_blue value="#0000ff"/>
-		<dark_yellow value="#ffff00"/>
-		<dark_cyan value="#00ffff"/>
-		<dark_magenta value="#ff00ff"/>
-		<dark_gray value="#444444"/>
-		<dark_grey value="#444444"/>
+		<dark_red value="#ab292d"/>
+		<dark_orange value="#b2601e"/>
+		<dark_yellow value="#a58416"/>
+		<dark_green value="#319c25"/>
+		<dark_cyan value="#2195a0"/>
+		<dark_blue value="#1658c0"/>
+		<dark_violet value="#6421ec"/>
+		<dark_magenta value="#a21d50"/>
+		<dark_gray value="#737373"/>
 
-		<g_mesh value="#00c0ff"/>
+
 
 		<!-- Main colors -->
-		<bg_dark value="#121317"/>
 		<bg value="#1b1c22"/>
-		<bg2 value="#26282f"/>
 		<bg_name value="#373944"/>
-		<bg_box value="#25272e"/>
-		<fg value="#8088b3"/>
-		<fg2 value="#a8aed3"/>
-		<fg3 value="#7d83a5"/>
-		<fg4 value="#9ea6d1"/>
-		<bc value="#373943"/>
-		<bc2 value="#40424e"/>
+		<bg_light value="#25272e"/>
+		<border_color value="#373943" />
+		<text_basic value="#8088b3"/>
+		<text_second value="#a8aed3"/>
 		<lsp_logo value="#239db5"/>
 		<lsp_logo_cover value="#a4ed3b"/>
 		<menu_text value="#a8aed3"/>
 		<menu_text_hover value="#959abb"/>
-		<menu_icon value="#239fb5"/>
+		<menu_icon value="#239db5"/>
 		<menu_icon_hover value="#1f7f92"/>
 		<footer_icon value="#4c4f61"/>
 		<footer_icon_hover value="#747994"/>
@@ -89,32 +75,44 @@
 		<plug_name_acr value="#238093"/>
 
 		<!-- Knob -->
-		<kscale value="#00c0ff"/>
-		<kcap value="#474843"/>
+		<kscale value="#239db5"/>
+		<kcap value="#797d81"/>
 
 		<!-- Led -->
-		<led.cred value="#880000"/>
-		<led.lred value="#ff0000"/>
-		<led.c value="#008800"/>
-		<led.l value="#00cc00"/>
+		<led_cred value="#880000"/>
+		<led_lred value="#ff0000"/>
+		<led_c value="#008800"/>
+		<led_l value="#00cc00"/>
+		<PD1 value="#373944"/>
+		<PD1_led value="#2195a0"/>
+		<PD1_hole value="#373944"/>
 
 		<!-- Indicator -->
-		<ind.col value="#101010"/>
-		<ind.text value="#00ff00"/>
+		<ind_col value="#1f2025"/>
+		<ind_text value="#00ff00"/>
 
 		<!-- Hyperlinks -->
-		<hl.text value="#239db5"/>
-		<hl.hover value="#83ba2d"/>
-		<hl.sel value="#57b2a5"/>
+		<hl_text value="#1a7788"/>
+		<hl_hover value="#83ba2d"/>
+		<hl_sel value="#57b2a5"/>
+		<hl_border value="#1a7788"/>
 
 		<!-- Hover -->
-		<hv.text value="#a8aed3"/>
-		<hv.border value="#376576"/>
-		<hv.fill value="#264652"/>
+		<hv_text value="#a8aed3"/>
+		<hv_border value="#239db5"/>
+		<hv_fill value="#264652"/>
 
 		<!-- Misc -->
 		<activity value="#40424e"/>
 		<warn value="#ffff00"/>
+
+		<!-- Graph -->
+		<bg_graph value="#1f2025"/>
+		<mesh_graph value="#00c0ff"/>
+
+		<!-- Group -->
+		<text_group value="#9ea6d1"/>
+
 	</colors>
 
 	<!-- Root style -->
@@ -150,7 +148,7 @@
 	</style>
 
 	<style class="Button" parents="root">
-		<border.size value="1"/>
+		<border.size value="2"/>
 		<gradient value="false"/>
 		<hole value="false"/>
 		<hover value="true"/>
@@ -158,12 +156,12 @@
 		<text.down.shift value="0 0"/>
 		<text.pressed.shift value="1 1"/>
 		<bg.inherit value="true"/>
-		<border.color value="bc"/>
-		<border.hover.color value="hv.border"/>
-		<color value="bg2"/>
-		<hover.color value="hv.fill"/>
-		<text.color value="fg2"/>
-		<text.hover.color value="hv.text"/>
+		<border.color value="hl_border"/>
+		<border.hover.color value="hv_border"/>
+		<color value="bg"/>
+		<hover.color value="bg_light"/>
+		<text.color value="text_second"/>
+		<text.hover.color value="hv_text"/>
 	</style>
 
 	<style class="CheckBox" parents="root">
@@ -173,12 +171,12 @@
 		<check.radius value="0"/>
 		<check.gap.size value="2"/>
 
-		<border.color value="bc"/>
+		<border.color value="border_color"/>
 		<border.hover.color value="activity"/>
-		<fill.color value="bg2"/>
-		<fill.hover.color value="bg2"/>
-		<color value="fg"/>
-		<hover.color value="fg2"/>
+		<fill.color value="bg_light"/>
+		<fill.hover.color value="bg_light"/>
+		<color value="text_basic"/>
+		<hover.color value="text_second"/>
 	</style>
 
 	<style class="ComboBox" parents="root">
@@ -186,12 +184,12 @@
 		<border.gap.size value="2"/>
 		<border.radius value="0"/>
 
-		<color value="bg2"/>
-		<text.color value="fg"/>
-		<spin.color value="bg2"/>
-		<spin.text.color value="fg2"/>
-		<border.color value="bc"/>
-		<border.gap.color value="bg2"/>
+		<color value="bg_light"/>
+		<text.color value="text_basic"/>
+		<spin.color value="bg_light"/>
+		<spin.text.color value="text_second"/>
+		<border.color value="border_color"/>
+		<border.gap.color value="bg_light"/>
 	</style>
 
 	<style class="ComboBox::List" parents="root">
@@ -200,7 +198,7 @@
 		<border.radius value="0"/>
 
 		<list.bg.color value="bg"/>
-		<border.color value="bc"/>
+		<border.color value="border_color"/>
 	</style>
 
 	<style class="Edit" parents="root">
@@ -208,25 +206,26 @@
 		<border.gap.size value="2"/>
 		<border.radius value="0"/>
 
-		<color value="bg2"/>
-		<text.color value="fg2"/>
-		<cursor.color value="fg2"/>
-		<border.color value="bc"/>
-		<border.gap.color value="bg2"/>
+		<color value="bg_light"/>
+		<text.color value="text_second"/>
+		<cursor.color value="text_second"/>
+		<border.color value="border_color"/>
+		<border.gap.color value="bg_light"/>
 	</style>
 
 	<style class="Graph" parents="root">
-		<glass.visibility value="true"/>
-		<border.color value="bg_dark"/>
+		<glass.visibility value="false"/>
+		<border.color value="bg_graph"/>
 		<border.size value="0"/>
 		<border.radius value="0"/>
-		<color value="bg_dark"/>
-		<bg.inherit value="true"/>
+		<color value="bg_graph"/>
+		<bg.inherit value="false"/>
 		<text.radius value="0"/>
 	</style>
 
 	<style class="GraphAxis" parents="root">
 		<smooth value="false"/>
+		<color value="gray"/>
 	</style>
 
 	<style class="GraphMarker" parents="root">
@@ -235,7 +234,7 @@
 
 	<style class="GraphMesh" parents="root">
 		<smooth value="true"/>
-		<color value="g_mesh"/>
+		<color value="cyan"/>
 	</style>
 
 	<style class="GraphOrigin" parents="root">
@@ -258,36 +257,46 @@
 	<style class="Group" parents="root">
 		<color value="bg_name"/>
 		<border.size value="0"/>
-		<text.color value="fg4"/>
+		<text.color value="text_group"/>
+		<text.radius value="0"/>
 		<ipadding value="12"/>
 		<padding value="0"/>
 		<border.radius value="0"/>
-		<bg.color value="bg_box"/>
+		<bg.color value="bg_light"/>
+		<heading value="-1 1" />
 
 	</style>
 
 	<style class="Hyperlink" parents="root">
-		<text.color value="hl.text"/>
-		<text.hover.color value="hl.hover"/>
+		<text.color value="hl_text"/>
+		<text.hover.color value="hl_hover"/>
 	</style>
 
 	<style class="Indicator" parents="root">
-		<color value="ind.col"/>
-		<text.color value="ind.text"/>
+		<color value="ind_col"/>
+		<text.color value="ind_text"/>
+		<modern value="true"/>
+		<text.dark value="false"/>
+		<bg.inherit value="true"/>
 	</style>
 
 	<style class="Knob" parents="root">
 		<color value="bg"/>
 		<scale.color value="kscale"/>
-		<tip.color value="fg4"/>
-		<size.range.min value="24"/>
-		<size.range.max value="24"/>
-		<scale.size value="5"/>
+		<tip.color value="text_group"/>
+		<size.range.min value="21"/>
+		<size.range.max value="21"/>
+		<scale.size value="4"/>
 		<bg.inherit value="true"/>
+		<flat value="true"/>
+		<gap.size value="0"/>
+		<hole.size value="3"/>
+		<hole.color value="bg"/>
+		<scale.marks value="false"/>
 	</style>
 
 	<style class="Label" parents="root">
-		<text.color value="fg2"/>
+		<text.color value="text_second"/>
 		<allocation.hfill value="false"/>
 		<allocation.vfill value="false"/>
 		<bg.inherit value="true"/>
@@ -298,10 +307,11 @@
 	</style>
 
 	<style class="Led" parents="root">
-		<color value="led.c"/>
-		<led.color value="led.l"/>
+		<color value="led_c"/>
+		<led.color value="led_l"/>
 		<size value="8"/>
 		<bg.inherit value="true"/>
+
 	</style>
 
 	<style class="ListBox" parents="root">
@@ -309,18 +319,18 @@
 		<border.gap.size value="2"/>
 		<border.radius value="0"/>
 
-		<list.bg.color value="bg2"/>
-		<border.color value="bc"/>
+		<list.bg.color value="bg_light"/>
+		<border.color value="border_color"/>
 	</style>
 
 	<style class="ListBoxItem" parents="root">
 		<padding.top value="4"/>
 		<padding.bottom value="4"/>
 
-		<bg.color value="bg2"/>
-		<bg.selected.color value="bc"/>
-		<text.color value="fg2"/>
-		<text.selected.color value="fg2"/>
+		<bg.color value="bg_light"/>
+		<bg.selected.color value="border_color"/>
+		<text.color value="text_second"/>
+		<text.selected.color value="text_second"/>
 	</style>
 
 	<style class="Menu" parents="root">
@@ -328,14 +338,14 @@
 		<ipadding.top value="4"/>
 		<ipadding.bottom value="4"/>
 
-		<border.color value="bc"/>
-		<bg.color value="bg2"/>
+		<border.color value="border_color"/>
+		<bg.color value="bg_light"/>
 	</style>
 
 	<style class="MenuItem" parents="root">
 		<bg.selected.color value="bg"/>
-		<text.color value="fg2"/>
-		<text.selected.color value="fg"/>
+		<text.color value="text_second"/>
+		<text.selected.color value="text_basic"/>
 	</style>
 
 	<style class="RackEars" parents="root"></style>
@@ -347,23 +357,23 @@
 		<size.constraints.width.min value="16"/>
 		<size.constraints.height.min value="16"/>
 
-		<border.color value="bc"/>
+		<border.color value="border_color"/>
 		<inc.color value="bg"/>
 		<inc.active.color value="activity"/>
 		<dec.color value="bg"/>
 		<dec.active.color value="activity"/>
-		<button.color value="bg2"/>
+		<button.color value="bg_light"/>
 		<button.active.color value="activity"/>
-		<slider.color value="bc"/>
-		<slider.border.color value="bc"/>
+		<slider.color value="border_color"/>
+		<slider.border.color value="border_color"/>
 		<slider.active.color value="activity"/>
 		<border.gap.color value="bg"/>
-		<text.color value="fg"/>
-		<text.active.color value="bg2"/>
+		<text.color value="text_basic"/>
+		<text.active.color value="bg_light"/>
 	</style>
 
 	<style class="Separator" parents="root">
-		<color value="bc"/>
+		<color value="border_color"/>
 	</style>
 
 	<style class="Switch" parents="root"></style>
@@ -372,8 +382,8 @@
 	<style class="FileDialog::Bookmark" parents="Hyperlink"></style>
 
 	<style class="FileDialog::Bookmark.selected" parents="FileDialog::Bookmark">
-		<text.color value="hl.sel"/>
-		<bg.color value="bg2"/>
+		<text.color value="hl_sel"/>
+		<bg.color value="bg_light"/>
 	</style>
 
 	<style class="FileDialog::Warning" parents="root">
@@ -398,7 +408,7 @@
 	</style>
 
 	<style class="FileDialog::ExtCheck" parents="CheckBox">
-		<color value="fg"/>
+		<color value="text_basic"/>
 	</style>
 
 	<!-- MessageBox widgets -->
@@ -426,11 +436,11 @@
 	<style class="Value::PopupWindow::ValidInput" parents="Value::PopupWindow::Input"></style>
 
 	<style class="Value::PopupWindow::InvalidInput" parents="Value::PopupWindow::Input">
-		<text.color value="#ff0000"/>
+		<text.color value="bright_red"/>
 	</style>
 
 	<style class="Value::PopupWindow::MismatchInput" parents="Value::PopupWindow::Input">
-		<text.color value="#ffff00"/>
+		<text.color value="bright_yellow"/>
 	</style>
 
 	<style class="Value::PopupWindow::Apply" parents="Button"></style>
@@ -502,31 +512,32 @@
 	</style>
 
 	<style class="PluginWindow::Bypass::Led" parents="Led">
-		<color value="led.cred"/>
-		<led.color value="led.lred"/>
+		<color value="led_cred"/>
+		<led.color value="led_lred"/>
 		<size value="8"/>
 	</style>
-	
+
 	<style class="PluginWindow::Bypass::Button" parents="Button">
-		<down.colors value="true" />
-		<color value="bg_box" />
-		<down.color value="bg_box" />
-		<hover.color value="hv.fill" />
-		<down.hover.color value="hv.fill" />
-		<text.color value="#00cc00" />
-		<text.hover.color value="#ffff00" />
-		<text.down.color value="#cc0000" />
-		<text.down.hover.color value="#ff0000" />
-		<border.size value="0" />
-		<border.down.size value="0" />
-		<border.pressed.size value="0" />
-		<hole value="0" />
-		<hover value="true" />
-		<padding.top value="3" />
-	
-		<font.name value="lsp-icons" />
-		<font.size value="12" />
-		<font.antialias value="true" />
+		<down.colors value="true"/>
+		<color value="bg_light"/>
+		<down.color value="bg_light"/>
+		<hover.color value="bg_light"/>
+		<down.hover.color value="bg_light"/>
+		<text.color value="green"/>
+		<text.hover.color value="dark_green"/>
+		<text.down.color value="red"/>
+		<text.down.hover.color value="dark_red"/>
+		<border.size value="0"/>
+		<border.down.size value="0"/>
+		<border.pressed.size value="0"/>
+		<hole value="0"/>
+		<hover value="true"/>
+		<padding.top value="1"/>
+		<padding.right value="3"/>
+
+		<font.name value="lsp-icons"/>
+		<font.size value="12"/>
+		<font.antialias value="true"/>
 	</style>
 
 	<style class="PluginWindow::Content" parents="Box">
