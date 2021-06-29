@@ -135,6 +135,8 @@
 	<style class="MessageBox" parents="Window"></style>
 
 	<style class="PopupWindow" parents="Window"></style>
+	
+	<style class="Menu::Window" parents="Window"></style>
 
 	<!-- Simple widgets -->
 	<style class="Align" parents="root">
