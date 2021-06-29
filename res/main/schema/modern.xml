@@ -109,9 +109,9 @@
 		<!-- Graph -->
 		<bg_graph value="#1f2025"/>
 		<mesh_graph value="#00c0ff"/>
-		<graph_prim value="989898"/>
-		<graph_sec value="858585"/>
-		<graph_alt value="737373"/>
+		<graph_prim value="#989898"/>
+		<graph_sec value="#858585"/>
+		<graph_alt value="#737373"/>
 
 		<!-- Group -->
 		<text_group value="#9ea6d1"/>
