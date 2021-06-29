@@ -270,7 +270,9 @@
 		<border.radius value="0"/>
 		<bg.color value="bg_light"/>
 		<heading value="-1 1" />
-
+	</style>
+	
+	<style class="GraphGroup" parents="Group">
 	</style>
 
 	<style class="Hyperlink" parents="root">
@@ -456,6 +458,7 @@
 	<!-- GreetingDialog widgets -->
 	<style class="GreetingDialog" parents="Window">
 		<padding value="16"/>
+		<border.style value="dialog" />
 	</style>
 
 	<style class="GreetingDialog::Text" parents="Label">
@@ -489,6 +492,26 @@
 		<allocation.hfill value="true"/>
 		<allocation.vfill value="true"/>
 		<text.layout.halign value="1.0"/>
+	</style>
+	
+	<!-- AboutDialog widget -->
+	<style class="AboutDialog" parents="Window">
+		<padding value="16"/>
+		<border.style value="dialog" />
+	</style>
+	
+	<style class="AboutDialog::Heading" parents="Label">
+		<allocation.hfill value="true"/>
+		<allocation.vfill value="true"/>
+		<text.layout.halign value="-1.0"/>
+		<font.size value="24"/>
+		<font.bold value="true"/>
+	</style>
+	
+	<style class="AboutDialog::Text" parents="Label">
+		<allocation.hfill value="true"/>
+		<allocation.vfill value="true"/>
+		<text.layout.halign value="-1.0"/>
 	</style>
 
 	<!-- PluginWindow widgets -->

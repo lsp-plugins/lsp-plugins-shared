@@ -269,7 +269,15 @@
 		<border.radius value="10"/>
 		<bg.color value="bg"/>
 		<heading value="-1 0" />
-
+	</style>
+	
+	<style class="GraphGroup" parents="Group">
+		<color value="bg"/>
+		<bg.color value="bg"/>
+		<border.size value="0"/>
+		<text.color value="text_second"/>
+		<text.radius value="0"/>
+		<border.radius value="0"/>
 	</style>
 
 	<style class="Hyperlink" parents="root">

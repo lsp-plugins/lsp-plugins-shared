@@ -1,0 +1,11 @@
+<window ui:inject="AboutDialog" title="titles.about">
+	<vbox spacing="8">
+		<label ui:inject="AboutDialog::Heading" text="headings.about" text.meta="true" />
+		
+		<label ui:inject="AboutDialog::Text" text="TODO" />
+		
+		<align fill="true">
+			<button ui:id="submit" min_width="96" text="actions.close" />
+		</align>		
+	</vbox>
+</window>
