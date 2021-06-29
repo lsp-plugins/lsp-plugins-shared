@@ -3,183 +3,554 @@
 <schema>
 	<!-- Metadata -->
 	<meta>
-		<title value="schemas.legacy" />
+		<title value="schemas.legacy"/>
 	</meta>
 
 	<!-- Fonts -->
 	<fonts>
-		<lsp-icons src="builtin://fonts/lsp-icons.ttf" />
+		<lsp-logo src="builtin://fonts/lsp-logo.ttf"/>
+		<lsp-icons src="builtin://fonts/lsp-icons.ttf"/>
+		<noto-sans src="builtin://fonts/noto-sans-light.ttf"/>
+		<noto-sans-condensed src="builtin://fonts/noto-sans-condensed-light.ttf"/>
+		<noto-sans-display src="builtin://fonts/NotoSansDisplay-Regular.ttf"/>
 	</fonts>
 
 	<!-- Color aliases -->
 	<colors>
-		<!-- Background colors -->
-		<bg value="#1b1c22" />
-		<bg2 value="#2f3037" />
-		<bg3 value="#45464d" />
-		<fg value="#ebecee" />
-		<hole value="#000000" />
-		<glass value="#101010" />
-		<fgwarn value="#ffff00" />
-		
-		<!-- Label colors -->
-		<main_text value="#ebecee" />
-		<dark_text value="#1b1c22" />
-		<invalid_input value="#880000" />
-		
-		<!-- Knob colors -->
-		<knob_cap value="#474843" />
-		<knob_scale value="#00c0ff" />
-		
-		<!-- Hyperlink -->
-		<hlink_text value="#80ffff" />
-		<hlink_hover value="#ff8080" />
-		
+		<!-- Generic colors -->
+		<black value="#000000"/>
+		<white value="#ffffff"/>
+
+		<red value="#ff0000" />
+		<orange value="#ff8800" />
+		<yellow value="#ffff00" />
+		<green value="#00ff00" />
+		<cyan value="#00ffff" />
+		<blue value="#0000ff" />
+		<violet value="#802aff"/>
+		<magenta value="#aa00ff" />
+		<gray value="#888888" />
+
+		<bright_red value="#ff6262"/>
+		<bright_orange value="#ffcc62"/>
+		<bright_yellow value="#ffff62"/>
+		<bright_green value="#7cff7c"/>
+		<bright_cyan value="#7cffff"/>
+		<bright_blue value="#2d2dff"/>
+		<bright_violet value="#b92dff"/>
+		<bright_magenta value="#ff62ff"/>
+		<bright_gray value="#cccccc"/>
+
+		<dark_red value="#d20000"/>
+		<dark_orange value="#d28800"/>
+		<dark_yellow value="#d2d200"/>
+		<dark_green value="#00d200"/>
+		<dark_cyan value="#00d2d2"/>
+		<dark_blue value="#0000d2"/>
+		<dark_violet value="#8800d2"/>
+		<dark_magenta value="#d200d2"/>
+		<dark_gray value="#444444"/>
+
+		<!-- Main colors -->
+		<bg value="#1b1c22"/>
+		<bg_name value="#ebecee"/>
+		<bg_light value="#25272e"/>
+		<bg_schema value="#ff0000"/>
+		<border_color value="#373943" />
+		<text_basic value="#ebecee"/>
+		<text_second value="#ebecee"/>
+		<lsp_logo value="#ebecee"/>
+		<lsp_logo_cover value="#ffffff"/>
+		<menu_text value="#a8aed3"/>
+		<menu_text_hover value="#959abb"/>
+		<menu_icon value="#239db5"/>
+		<menu_icon_hover value="#1f7f92"/>
+		<footer_icon value="#4c4f61"/>
+		<footer_icon_hover value="#747994"/>
+		<footer_icon_rsz value="#244955"/>
+		<footer_icon_rsz_hover value="#239db5"/>
+		<plug_name value="#7d83a5"/>
+		<plug_name_sep value="#373944"/>
+		<plug_name_acr value="#238093"/>
+
+		<!-- Knob -->
+		<kscale value="#00c0ff"/>
+		<kcap value="#474843"/>
+
+		<!-- Led -->
+		<led_cred value="#880000"/>
+		<led_lred value="#ff0000"/>
+		<led_c value="#008800"/>
+		<led_l value="#00cc00"/>
+		<PD1 value="#ff0000"/>
+		<PD1_led value="#ff0000"/>
+		<PD1_hole value="#000000"/>
+
+		<!-- Indicator -->
+		<ind_col value="#101010" />
+		<ind_text value="#00ff00" />
+
+		<!-- Hyperlinks -->
+		<hl_text value="#1a7788"/>
+		<hl_hover value="#83ba2d"/>
+		<hl_sel value="#57b2a5"/>
+		<hl_border value="#1a7788"/>
+
+		<!-- Hover -->
+		<hv_text value="#a8aed3"/>
+		<hv_border value="#239db5"/>
+		<hv_fill value="#264652"/>
+
 		<!-- Misc -->
-		<activity0 value="#0088cc" />
-		<activity value="#00ccff" />
+		<activity value="#40424e"/>
+		<warn value="#ffff00"/>
+
+		<!-- Graph -->
+		<bg_graph value="#1f2025"/>
+		<mesh_graph value="#00c0ff"/>
+		<graph_prim value="#989898"/>
+		<graph_sec value="#858585"/>
+		<graph_alt value="#737373"/>
+
+		<!-- Group -->
+		<text_group value="#1b1c22"/>
+
 	</colors>
-	
+
 	<!-- Root style -->
 	<root>
-		<size.scaling value="1.0" />
-		<lang value="en_US" />
-		<bg.color value="bg" />
+		<size.scaling value="1.0"/>
+		<lang value="en_US"/>
+		<bg.color value="bg"/>
+		<font.name value="noto-sans-display"/>
+		<font.antialiasing value="true"/>
+		<font.size value="12.0"/>
 	</root>
-	
-	<!-- Nested style of window -->
-	<style class="Window" parents="root">
-	</style>
-	
-	<style class="FileDialog" parents="Window">
-	</style>
-	
-	<style class="MessageBox" parents="Window">
-	</style>
-	
-	<!-- Containers -->
-	<style class="Align" parents="root">
-	</style>
-	
+
+	<!-- Windows -->
+	<style class="Window" parents="root"></style>
+
+	<style class="FileDialog" parents="Window"></style>
+
+	<style class="MessageBox" parents="Window"></style>
+
+	<style class="PopupWindow" parents="Window"></style>
+
 	<!-- Simple widgets -->
-	<style class="Label" parents="root">
-		<text.color value="fg" />
+	<style class="Align" parents="root">
+		<bg.inherit value="true"/>
 	</style>
-	
-	<style class="Edit" parents="root">
-		<text.color value="bg" />
-		<color value="fg" />
-		<border.size value="0" />
+
+	<style class="Box" parents="root">
+		<bg.inherit value="true"/>
 	</style>
-	
-	<style class="ComboBox" parents="root">
-		<border.size value="0" />
-	
-		<text.color value="bg" />
-		<color value="fg" />
-		<border.gap.color value="fg" />
+
+	<style class="Void" parents="root">
+		<bg.inherit value="true"/>
 	</style>
-	
-	<style class="ComboBox::List" parents="root">
-		<border.radius value="2" />
-		<list.bg.color value="bg" />
-		<border.color value="fg" />
-	</style>
-	
+
 	<style class="Button" parents="root">
-		<text.color value="bg" />
+		<border.size value="3"/>
+		<gradient value="true"/>
+		<hole value="true"/>
+		<hover value="false"/>
+		<text.shift value="-1 -1"/>
+		<text.down.shift value="0 0"/>
+		<text.pressed.shift value="1 1"/>
+		<bg.inherit value="false"/>
+		<border.color value="gray"/>
+		<border.hover.color value="bright_gray"/>
+		<color value="gray"/>
+		<hover.color value="white"/>
+		<text.color value="black"/>
+		<text.hover.color value="black"/>
 	</style>
-	
-	<style class="ListBox" parents="root">
-		<list.bg.color value="bg" />
-		<border.color value="fg" />
-	</style>
-	
-	<style class="Indicator" parents="root">
-		<modern value="false" />
-	</style>
-	
-	<style class="Menu" parents="root">
-		<bg.color value="fg" />
-		<text.color value="bg" />
-	</style>
-	
-	<style class="MenuItem" parents="root">
-		<bg.selected.color value="activity" />
-		<text.color value="bg" />
-		<text.selected.color value="fg" />
-	</style>
-	
-	<style class="ListBoxItem" parents="root">
-		<bg.color value="bg" />
-		<bg.selected.color value="fg" />
-		<text.color value="fg" />
-		<text.selected.color value="bg" />
-	</style>
-	
-	<style class="ScrollBar" parents="root">
-		<size.constraints.width.min value="14" />
-		<size.constraints.height.min value="14" />
-		
-		<border.color value="fg" />
-		<inc.color value="bg" />
-		<inc.active.color value="activity" />
-		<dec.color value="bg" />
-		<dec.active.color value="activity" />
-		<button.color value="fg" />
-		<button.active.color value="activity" />
-		<slider.color value="fg" />
-		<slider.border.color value="fg" />
-		<slider.active.color value="activity" />
-		<border.gap.color value="bg" />
-		<text.color value="bg" />
-		<text.active.color value="bg" />
-	</style>
-	
+
 	<style class="CheckBox" parents="root">
-		<border.size value="1" />
-		<border.gap.size value="2" />
-		<check.gap.size value="2" />
-		<check.radius value="2" />
-		<border.radius value="4" />
-		
-		<border.color value="fg" />
-		<border.hover.color value="fg" />
-		<border.gap.color value="bg" />
-		<border.gap.hover.color value="bg" />
-		<fill.color value="bg" />
-		<fill.hover.color value="bg" />
-		<color value="activity0" />
-		<hover.color value="activity" />
+		<border.size value="1"/>
+		<border.gap.size value="0"/>
+		<border.radius value="0"/>
+		<check.radius value="0"/>
+		<check.gap.size value="2"/>
+
+		<border.color value="border_color"/>
+		<border.hover.color value="activity"/>
+		<fill.color value="bg_light"/>
+		<fill.hover.color value="bg_light"/>
+		<color value="text_basic"/>
+		<hover.color value="text_second"/>
 	</style>
-	
+
+	<style class="ComboBox" parents="root">
+		<border.size value="1"/>
+		<border.gap.size value="2"/>
+		<border.radius value="0"/>
+
+		<color value="bg_light"/>
+		<text.color value="text_basic"/>
+		<spin.color value="bg_light"/>
+		<spin.text.color value="text_second"/>
+		<border.color value="border_color"/>
+		<border.gap.color value="bg_light"/>
+	</style>
+
+	<style class="ComboBox::List" parents="root">
+		<border.size value="1"/>
+		<border.gap.size value="2"/>
+		<border.radius value="0"/>
+
+		<list.bg.color value="bg"/>
+		<border.color value="border_color"/>
+	</style>
+
+	<style class="Edit" parents="root">
+		<border.size value="1"/>
+		<border.gap.size value="2"/>
+		<border.radius value="0"/>
+
+		<color value="bg_light"/>
+		<text.color value="text_second"/>
+		<cursor.color value="text_second"/>
+		<border.color value="border_color"/>
+		<border.gap.color value="bg_light"/>
+	</style>
+
+	<style class="Graph" parents="root">
+		<glass.visibility value="true"/>
+		<border.color value="graph_border"/>
+		<border.size value="2"/>
+		<border.radius value="10"/>
+		<border.flat value="false"/>
+		<color value="black"/>
+		<bg.inherit value="false"/>
+		<text.radius value="0"/>
+	</style>
+
+	<style class="GraphAxis" parents="root">
+		<smooth value="false"/>
+		<color value="graph_sec"/>
+	</style>
+
+	<style class="GraphMarker" parents="root">
+		<smooth value="false"/>
+	</style>
+
+	<style class="GraphMesh" parents="root">
+		<smooth value="true"/>
+		<color value="cyan"/>
+	</style>
+
+	<style class="GraphOrigin" parents="root">
+		<radius value="2"/>
+		<smooth value="true"/>
+	</style>
+
+	<style class="GraphText" parents="root">
+		<padding value="2"/>
+	</style>
+
+	<style class="Grid" parents="root">
+		<bg.inherit value="true"/>
+	</style>
+
+	<style class="Cell" parents="root">
+		<bg.inherit value="true"/>
+	</style>
+
+	<style class="Group" parents="root">
+		<color value="bg_name"/>
+		<border.size value="2"/>
+		<text.color value="text_group"/>
+		<text.radius value="10"/>
+		<ipadding value="12"/>
+		<padding value="0"/>
+		<border.radius value="10"/>
+		<bg.color value="bg"/>
+		<heading value="-1 0" />
+
+	</style>
+
+	<style class="Hyperlink" parents="root">
+		<text.color value="hl_text"/>
+		<text.hover.color value="hl_hover"/>
+	</style>
+
+	<style class="Indicator" parents="root">
+		<color value="ind_col"/>
+		<text.color value="ind_text"/>
+		<modern value="false"/>
+		<text.dark value="true"/>
+		<bg.inherit value="false"/>
+	</style>
+
+	<style class="Knob" parents="root">
+		<color value="kcap"/>
+		<scale.color value="kscale"/>
+		<tip.color value="bg_name"/>
+		<size.range.min value="24"/>
+		<size.range.max value="24"/>
+		<scale.size value="5"/>
+		<bg.inherit value="true"/>
+		<flat value="false"/>
+		<gap.size value="2"/>
+		<hole.size value="1"/>
+		<hole.color value="black"/>
+		<scale.marks value="true"/>
+	</style>
+
+	<style class="Label" parents="root">
+		<text.color value="text_second"/>
+		<allocation.hfill value="false"/>
+		<allocation.vfill value="false"/>
+		<bg.inherit value="true"/>
+	</style>
+
+	<style class="MultiLabel" parents="root">
+		<bg.inherit value="true"/>
+	</style>
+
+	<style class="Led" parents="root">
+		<color value="led_c"/>
+		<led.color value="led_l"/>
+		<size value="8"/>
+		<bg.inherit value="true"/>
+
+	</style>
+
+	<style class="ListBox" parents="root">
+		<border.size value="1"/>
+		<border.gap.size value="2"/>
+		<border.radius value="0"/>
+
+		<list.bg.color value="bg_light"/>
+		<border.color value="border_color"/>
+	</style>
+
+	<style class="ListBoxItem" parents="root">
+		<padding.top value="4"/>
+		<padding.bottom value="4"/>
+
+		<bg.color value="bg_light"/>
+		<bg.selected.color value="border_color"/>
+		<text.color value="text_second"/>
+		<text.selected.color value="text_second"/>
+	</style>
+
+	<style class="Menu" parents="root">
+		<border.size value="1"/>
+		<ipadding.top value="4"/>
+		<ipadding.bottom value="4"/>
+
+		<border.color value="border_color"/>
+		<bg.color value="bg_light"/>
+	</style>
+
+	<style class="MenuItem" parents="root">
+		<bg.selected.color value="bg"/>
+		<text.color value="text_second"/>
+		<text.selected.color value="text_basic"/>
+	</style>
+
+	<style class="RackEars" parents="root"></style>
+
+	<style class="ScrollBar" parents="root">
+		<border.size value="1"/>
+		<border.gap.size value="1"/>
+		<border.radius value="0"/>
+		<size.constraints.width.min value="16"/>
+		<size.constraints.height.min value="16"/>
+
+		<border.color value="border_color"/>
+		<inc.color value="bg"/>
+		<inc.active.color value="activity"/>
+		<dec.color value="bg"/>
+		<dec.active.color value="activity"/>
+		<button.color value="bg_light"/>
+		<button.active.color value="activity"/>
+		<slider.color value="border_color"/>
+		<slider.border.color value="border_color"/>
+		<slider.active.color value="activity"/>
+		<border.gap.color value="bg"/>
+		<text.color value="text_basic"/>
+		<text.active.color value="bg_light"/>
+	</style>
+
 	<style class="Separator" parents="root">
-		<color value="fg" />
+		<color value="border_color"/>
 	</style>
-	
+
+	<style class="Switch" parents="root"></style>
+
 	<!-- FileDialog widgets -->
-	<style class="FileDialog::Bookmark" parents="root">
-		<text.color value="hlink_text" />
-		<text.hover.color value="hlink_hover" />
-	</style>
-	
+	<style class="FileDialog::Bookmark" parents="Hyperlink"></style>
+
 	<style class="FileDialog::Bookmark.selected" parents="FileDialog::Bookmark">
-		<bg.color value="bg2" />
+		<text.color value="hl_sel"/>
+		<bg.color value="bg_light"/>
 	</style>
-	
+
 	<style class="FileDialog::Warning" parents="root">
-		<text.color value="fgwarn" />
+		<text.color value="warn"/>
 	</style>
-	
+
+	<style class="FileDialog::ActionButton" parents="Button"></style>
+
+	<style class="FileDialog::NavButton" parents="Button"></style>
+
+	<style class="FileDialog::ActionAlign" parents="Align">
+		<layout.hscale value="0.0"/>
+		<layout.halign value="1.0"/>
+	</style>
+
+	<style class="FileDialog::ActionBox" parents="Box">
+		<spacing value="4"/>
+	</style>
+
+	<style class="FileDialog::NavBox" parents="Box">
+		<spacing value="2"/>
+	</style>
+
 	<style class="FileDialog::ExtCheck" parents="CheckBox">
+		<color value="text_basic"/>
 	</style>
-	
+
 	<!-- MessageBox widgets -->
-	<style class="MessageBox::Message" parents="Label">
+	<style class="MessageBox::Message" parents="Label"></style>
+
+	<style class="MessageBox::Heading" parents="Label"></style>
+
+	<style class="MessageBox::Button" parents="Button"></style>
+
+	<!-- Additional styles for value -->
+	<style class="Value::PopupWindow" parents="PopupWindow">
+		<padding value="2"/>
 	</style>
-	
-	<style class="MessageBox::Heading" parents="Label">
+
+	<style class="Value::PopupWindow::Box" parents="Box">
+		<orientation value="horizontal"/>
+		<spacing value="2"/>
 	</style>
+
+	<style class="Value::PopupWindow::Input" parents="Edit">
+		<spacing value="2"/>
+		<size.constraints.width.min value="64"/>
+	</style>
+
+	<style class="Value::PopupWindow::ValidInput" parents="Value::PopupWindow::Input"></style>
+
+	<style class="Value::PopupWindow::InvalidInput" parents="Value::PopupWindow::Input">
+		<text.color value="bright_red"/>
+	</style>
+
+	<style class="Value::PopupWindow::MismatchInput" parents="Value::PopupWindow::Input">
+		<text.color value="bright_yellow"/>
+	</style>
+
+	<style class="Value::PopupWindow::Apply" parents="Button"></style>
+
+	<style class="Value::PopupWindow::Cancel" parents="Button"></style>
+
+	<!-- GreetingDialog widgets -->
+	<style class="GreetingDialog" parents="Window">
+		<padding value="16"/>
+	</style>
+
+	<style class="GreetingDialog::Text" parents="Label">
+		<allocation.hfill value="true"/>
+		<allocation.vfill value="true"/>
+		<text.layout.halign value="-1.0"/>
+	</style>
+
+	<style class="GreetingDialog::Heading" parents="Label">
+		<allocation.hfill value="true"/>
+		<allocation.vfill value="true"/>
+		<text.layout.halign value="-1.0"/>
+		<font.size value="24"/>
+		<font.bold value="true"/>
+	</style>
+
+	<style class="GreetingDialog::Postscript" parents="Label">
+		<allocation.hfill value="true"/>
+		<allocation.vfill value="true"/>
+		<text.layout.halign value="1.0"/>
+	</style>
+
+	<style class="GreetingDialog::Hlink" parents="Hyperlink">
+		<allocation.hfill value="true"/>
+		<allocation.vfill value="true"/>
+		<text.layout.halign value="-1.0"/>
+		<padding.left value="24"/>
+	</style>
+
+	<style class="GreetingDialog::PostscriptHlink" parents="Hyperlink">
+		<allocation.hfill value="true"/>
+		<allocation.vfill value="true"/>
+		<text.layout.halign value="1.0"/>
+	</style>
+
+	<!-- PluginWindow widgets -->
+	<style class="PluginWindow" parents="Window">
+		<allocation.hfill value="true"/>
+		<allocation.vfill value="true"/>
+		<text.layout.halign value="1.0"/>
+	</style>
+
+	<style class="PluginWindow::RackEarTop" parents="RackEars">
+		<font.size value="12"/>
+	</style>
+
+	<style class="PluginWindow::RackEarSide" parents="RackEars">
+		<font.size value="16"/>
+	</style>
+
+	<style class="PluginWindow::Bypass::Box" parents="Box">
+		<padding value="4"/>
+		<allocation.hfill value="false"/>
+		<allocation.vfill value="false"/>
+	</style>
+
+	<style class="PluginWindow::Bypass::Switch" parents="Switch">
+		<angle value="1"/>
+		<size.range value="24"/>
+	</style>
+
+	<style class="PluginWindow::Bypass::Led" parents="Led">
+		<color value="led_cred"/>
+		<led.color value="led_lred"/>
+		<size value="8"/>
+	</style>
+
+	<style class="PluginWindow::Bypass::Button" parents="Button">
+		<down.colors value="true"/>
+		<color value="bg"/>
+		<down.color value="bg"/>
+		<hover.color value="bg"/>
+		<down.hover.color value="bg"/>
+		<text.color value="green"/>
+		<text.hover.color value="dark_green"/>
+		<text.down.color value="red"/>
+		<text.down.hover.color value="dark_red"/>
+		<border.size value="0"/>
+		<border.down.size value="0"/>
+		<border.pressed.size value="0"/>
+		<hole value="0"/>
+		<hover value="true"/>
+		<padding.top value="1"/>
+		<padding.right value="3"/>
+		<gradient value="false"/>
+		<text.shift value="0 0"/>
+
+		<font.name value="lsp-icons"/>
+		<font.size value="12"/>
+		<font.antialias value="true"/>
+	</style>
+
+	<style class="PluginWindow::Content" parents="Box">
+		<allocation.hfill value="true"/>
+		<allocation.vfill value="true"/>
+		<allocation.hexpand value="true"/>
+		<allocation.vexpand value="true"/>
+		<padding value="0"/>
+	</style>
+
 </schema>
-
-

@@ -4,7 +4,7 @@
 	<!-- header new -->
 	<vbox spacing="4">
 		<!-- v1-->
-		<grid rows="3" cols="9" height="44" expand="false" bg.color="bg_light" >
+		<grid rows="3" cols="9" height="44" expand="false" bg.color="bg_schema" >
 			<cell width.min="106" rows="2" cols="1">
 				<hbox>
 					<multilabel padding.left="6" padding.bottom="3" font.scaling="1" >
@@ -27,7 +27,7 @@
 					<button id="bypass" ui:inject="PluginWindow::Bypass::Button" text="5" halign="1" />
 				</hbox>
 			</cell>
-			<bevel expand="true" color="bg_light" width.min="20" height.min="20" halign="-1"/>
+			<bevel expand="true" color="bg_schema" width.min="20" height.min="20" halign="-1"/>
 
 			<!-- Menu box -->
 			<hbox bg.color="bg" halign="1">
@@ -59,7 +59,7 @@
 		<hbox ui:inject="PluginWindow::Content" ui:id="plugin_content"></hbox>
 
 		<!-- Footer -->
-		<hbox height="20" bg.color="bg_light">
+		<hbox height="20" bg.color="bg_schema">
 			<!-- scale icons +- -->
 			<hbox halign="1" padding.left="6" padding.right="3">
 				<label ui:id="trg_ui_scaling" font.name="lsp-icons" hover="true" color="footer_icon" hover.color="footer_icon_hover" padding.right="10" font.size="12" font.antialias="true" text="7"/>

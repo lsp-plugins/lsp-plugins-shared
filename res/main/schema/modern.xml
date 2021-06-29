@@ -57,6 +57,7 @@
 		<bg value="#1b1c22"/>
 		<bg_name value="#373944"/>
 		<bg_light value="#25272e"/>
+		<bg_schema value="#25272e"/>
 		<border_color value="#373943" />
 		<text_basic value="#8088b3"/>
 		<text_second value="#a8aed3"/>
