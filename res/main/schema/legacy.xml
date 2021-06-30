@@ -57,15 +57,15 @@
 		<bg_light value="#25272e"/>
 		<bg_schema value="#1b1c22"/>
 		<border_color value="#373943"/>
-		<text_basic value="#ebecee"/>
-		<text_second value="#cacbcd"/>
+		<text_prim value="#ebecee"/>
+		<text_sec value="#cacbcd"/>
 		<lsp_logo value="#00b1eb"/>
 		<lsp_logo_cover value="#00e2ff"/>
 		<menu_text value="#aaabac"/>
 		<menu_text_hover value="#ebecee"/>
 		<menu_icon value="#0082ac"/>
 		<menu_icon_hover value="#00b1eb"/>
-		<footer_icon value="#aaabac"/>
+		<footer_icon value="#909191"/>
 		<footer_icon_hover value="#ebecee"/>
 		<footer_icon_rsz value="#0082ac"/>
 		<footer_icon_rsz_hover value="#00b1eb"/>
@@ -74,7 +74,7 @@
 		<plug_name_acr value="#00b1eb"/>
 
 		<!-- Separator -->
-		<sep_hover_legacy value="#aaabac"/>
+		<sep_hover_legacy value="#ebecee"/>
 
 		<!-- Knob -->
 		<kscale value="#00c0ff"/>
@@ -182,8 +182,8 @@
 		<border.hover.color value="activity"/>
 		<fill.color value="bg_light"/>
 		<fill.hover.color value="bg_light"/>
-		<color value="text_basic"/>
-		<hover.color value="text_second"/>
+		<color value="text_prim"/>
+		<hover.color value="text_sec"/>
 	</style>
 
 	<style class="ComboBox" parents="root">
@@ -192,9 +192,9 @@
 		<border.radius value="0"/>
 
 		<color value="bg_light"/>
-		<text.color value="text_basic"/>
+		<text.color value="text_prim"/>
 		<spin.color value="bg_light"/>
-		<spin.text.color value="text_second"/>
+		<spin.text.color value="text_sec"/>
 		<border.color value="border_color"/>
 		<border.gap.color value="bg_light"/>
 	</style>
@@ -214,21 +214,21 @@
 		<border.radius value="0"/>
 
 		<color value="bg_light"/>
-		<text.color value="text_second"/>
-		<cursor.color value="text_second"/>
+		<text.color value="text_sec"/>
+		<cursor.color value="text_sec"/>
 		<border.color value="border_color"/>
 		<border.gap.color value="bg_light"/>
 	</style>
 
 	<style class="Graph" parents="root">
 		<glass.visibility value="true"/>
-		<border.color value="graph_border"/>
+		<border.color value="bg_name"/>
 		<border.size value="2"/>
 		<border.radius value="10"/>
-		<border.flat value="false"/>
 		<color value="black"/>
 		<bg.inherit value="false"/>
 		<text.radius value="0"/>
+		<border.flat value="true"/>
 	</style>
 
 	<style class="GraphAxis" parents="root">
@@ -272,15 +272,17 @@
 		<border.radius value="10"/>
 		<bg.color value="bg"/>
 		<heading value="-1 0"/>
+		<text.padding.left value="6"/>
 	</style>
 
 	<style class="GraphGroup" parents="Group">
 		<color value="bg"/>
 		<bg.color value="bg"/>
 		<border.size value="0"/>
-		<text.color value="text_second"/>
+		<text.color value="text_sec"/>
 		<text.radius value="0"/>
 		<border.radius value="0"/>
+		<text.padding.left value="2"/>
 	</style>
 
 	<style class="Hyperlink" parents="root">
@@ -312,7 +314,7 @@
 	</style>
 
 	<style class="Label" parents="root">
-		<text.color value="text_second"/>
+		<text.color value="text_sec"/>
 		<allocation.hfill value="false"/>
 		<allocation.vfill value="false"/>
 		<bg.inherit value="true"/>
@@ -345,8 +347,8 @@
 
 		<bg.color value="bg_light"/>
 		<bg.selected.color value="border_color"/>
-		<text.color value="text_second"/>
-		<text.selected.color value="text_second"/>
+		<text.color value="text_sec"/>
+		<text.selected.color value="text_sec"/>
 	</style>
 
 	<style class="Menu" parents="root">
@@ -360,8 +362,8 @@
 
 	<style class="MenuItem" parents="root">
 		<bg.selected.color value="bg"/>
-		<text.color value="text_second"/>
-		<text.selected.color value="text_basic"/>
+		<text.color value="text_sec"/>
+		<text.selected.color value="text_prim"/>
 	</style>
 
 	<style class="RackEars" parents="root"></style>
@@ -384,7 +386,7 @@
 		<slider.border.color value="border_color"/>
 		<slider.active.color value="activity"/>
 		<border.gap.color value="bg"/>
-		<text.color value="text_basic"/>
+		<text.color value="text_prim"/>
 		<text.active.color value="bg_light"/>
 	</style>
 
@@ -424,13 +426,14 @@
 	</style>
 
 	<style class="FileDialog::ExtCheck" parents="CheckBox">
-		<color value="text_basic"/>
+		<color value="text_prim"/>
 	</style>
 
 	<!-- Separator Header -->
 	<style class="PluginWindow::Hsep_header" parents="Separator">
 		<color value="sep_hover_legacy"/>
 		<visible value="true"/>
+		<thickness value="2"/>
 	</style>
 
 	<!-- MessageBox widgets -->
@@ -512,6 +515,7 @@
 		<allocation.hfill value="true"/>
 		<allocation.vfill value="true"/>
 		<text.layout.halign value="1.0"/>
+		<padding value="4"/>
 	</style>
 
 	<style class="PluginWindow::RackEarTop" parents="RackEars">

@@ -3,7 +3,7 @@
 <schema>
 	<!-- Metadata -->
 	<meta>
-		<title value="schemas.legacy_dark" />
+		<title value="schemas.legacy_dark"/>
 	</meta>
 
 	<!-- Fonts -->
@@ -21,61 +21,64 @@
 		<black value="#000000"/>
 		<white value="#ffffff"/>
 
-		<red value="#ff0000" />
-		<orange value="#ff8800" />
-		<yellow value="#ffff00" />
-		<green value="#00ff00" />
-		<cyan value="#00ffff" />
-		<blue value="#0000ff" />
+		<red value="#d52e35"/>
+		<orange value="#da7829"/>
+		<yellow value="#d1b01c"/>
+		<green value="#3fc72f"/>
+		<cyan value="#2abecc"/>
+		<blue value="#1c6ff5"/>
 		<violet value="#802aff"/>
-		<magenta value="#aa00ff" />
-		<gray value="#888888" />
+		<magenta value="#cc2264"/>
+		<gray value="#858585"/>
 
-		<bright_red value="#ff6262"/>
-		<bright_orange value="#ffcc62"/>
-		<bright_yellow value="#ffff62"/>
-		<bright_green value="#7cff7c"/>
-		<bright_cyan value="#7cffff"/>
-		<bright_blue value="#2d2dff"/>
-		<bright_violet value="#b92dff"/>
-		<bright_magenta value="#ff62ff"/>
-		<bright_gray value="#cccccc"/>
+		<bright_red value="#fe343b"/>
+		<bright_orange value="#fe8f37"/>
+		<bright_yellow value="#f5de23"/>
+		<bright_green value="#4cf239"/>
+		<bright_cyan value="#33e7f8"/>
+		<bright_blue value="#2287ff"/>
+		<bright_violet value="#9c33ff"/>
+		<bright_magenta value="#f62877"/>
+		<bright_gray value="#989898"/>
 
-		<dark_red value="#d20000"/>
-		<dark_orange value="#d28800"/>
-		<dark_yellow value="#d2d200"/>
-		<dark_green value="#00d200"/>
-		<dark_cyan value="#00d2d2"/>
-		<dark_blue value="#0000d2"/>
-		<dark_violet value="#8800d2"/>
-		<dark_magenta value="#d200d2"/>
-		<dark_gray value="#444444"/>
+		<dark_red value="#ab292d"/>
+		<dark_orange value="#b2601e"/>
+		<dark_yellow value="#a58416"/>
+		<dark_green value="#319c25"/>
+		<dark_cyan value="#2195a0"/>
+		<dark_blue value="#1658c0"/>
+		<dark_violet value="#6421ec"/>
+		<dark_magenta value="#a21d50"/>
+		<dark_gray value="#737373"/>
 
 		<!-- Main colors -->
 		<bg value="#1b1c22"/>
-		<bg_name value="#ebecee"/>
+		<bg_name value="#3b3d49"/>
 		<bg_light value="#25272e"/>
-		<bg_schema value="#ff0000"/>
-		<border_color value="#373943" />
-		<text_basic value="#ebecee"/>
-		<text_second value="#ebecee"/>
-		<lsp_logo value="#ebecee"/>
-		<lsp_logo_cover value="#ffffff"/>
-		<menu_text value="#a8aed3"/>
-		<menu_text_hover value="#959abb"/>
-		<menu_icon value="#239db5"/>
-		<menu_icon_hover value="#1f7f92"/>
-		<footer_icon value="#4c4f61"/>
-		<footer_icon_hover value="#747994"/>
-		<footer_icon_rsz value="#244955"/>
+		<bg_schema value="#1b1c22"/>
+		<border_color value="#373943"/>
+		<text_prim value="#71758c"/>
+		<text_sec value="#71758c"/>
+		<lsp_logo value="#239db5"/>
+		<lsp_logo_cover value="#a4ed3b"/>
+		<menu_text value="#71758c"/>
+		<menu_text_hover value="#9095b3"/>
+		<menu_icon value="#1f7f92"/>
+		<menu_icon_hover value="#239db5"/>
+		<footer_icon value="#525566"/>
+		<footer_icon_hover value="#9095b3"/>
+		<footer_icon_rsz value="#1f7f92"/>
 		<footer_icon_rsz_hover value="#239db5"/>
-		<plug_name value="#7d83a5"/>
-		<plug_name_sep value="#373944"/>
-		<plug_name_acr value="#238093"/>
+		<plug_name value="#9095b3"/>
+		<plug_name_sep value="#71758c"/>
+		<plug_name_acr value="#239db5"/>
+
+		<!-- Separator -->
+		<sep_hover_legacy value="#3b3d49"/>
 
 		<!-- Knob -->
-		<kscale value="#00c0ff"/>
-		<kcap value="#474843"/>
+		<kscale value="#239db5"/>
+		<kcap value="#3b3d49"/>
 
 		<!-- Led -->
 		<led_cred value="#880000"/>
@@ -87,18 +90,18 @@
 		<PD1_hole value="#000000"/>
 
 		<!-- Indicator -->
-		<ind_col value="#101010" />
-		<ind_text value="#00ff00" />
+		<ind_col value="#101010"/>
+		<ind_text value="#00ff00"/>
 
 		<!-- Hyperlinks -->
 		<hl_text value="#1a7788"/>
 		<hl_hover value="#83ba2d"/>
 		<hl_sel value="#57b2a5"/>
-		<hl_border value="#1a7788"/>
+		<hl_border value="#3b3d49"/>
 
 		<!-- Hover -->
 		<hv_text value="#a8aed3"/>
-		<hv_border value="#239db5"/>
+		<hv_border value="#4e5161"/>
 		<hv_fill value="#264652"/>
 
 		<!-- Misc -->
@@ -113,7 +116,7 @@
 		<graph_alt value="#737373"/>
 
 		<!-- Group -->
-		<text_group value="#1b1c22"/>
+		<text_group value="#8488a3"/>
 
 	</colors>
 
@@ -136,6 +139,8 @@
 
 	<style class="PopupWindow" parents="Window"></style>
 
+	<style class="Menu::Window" parents="Window"></style>
+
 	<!-- Simple widgets -->
 	<style class="Align" parents="root">
 		<bg.inherit value="true"/>
@@ -150,20 +155,20 @@
 	</style>
 
 	<style class="Button" parents="root">
-		<border.size value="3"/>
-		<gradient value="true"/>
-		<hole value="true"/>
-		<hover value="false"/>
-		<text.shift value="-1 -1"/>
+		<border.size value="2"/>
+		<gradient value="false"/>
+		<hole value="false"/>
+		<hover value="true"/>
+		<text.shift value="0 0"/>
 		<text.down.shift value="0 0"/>
 		<text.pressed.shift value="1 1"/>
-		<bg.inherit value="false"/>
-		<border.color value="gray"/>
-		<border.hover.color value="bright_gray"/>
-		<color value="gray"/>
-		<hover.color value="white"/>
-		<text.color value="black"/>
-		<text.hover.color value="black"/>
+		<bg.inherit value="true"/>
+		<border.color value="hl_border"/>
+		<border.hover.color value="hv_border"/>
+		<color value="bg"/>
+		<hover.color value="bg_light"/>
+		<text.color value="text_sec"/>
+		<text.hover.color value="hv_text"/>
 	</style>
 
 	<style class="CheckBox" parents="root">
@@ -177,8 +182,8 @@
 		<border.hover.color value="activity"/>
 		<fill.color value="bg_light"/>
 		<fill.hover.color value="bg_light"/>
-		<color value="text_basic"/>
-		<hover.color value="text_second"/>
+		<color value="text_prim"/>
+		<hover.color value="text_sec"/>
 	</style>
 
 	<style class="ComboBox" parents="root">
@@ -187,9 +192,9 @@
 		<border.radius value="0"/>
 
 		<color value="bg_light"/>
-		<text.color value="text_basic"/>
+		<text.color value="text_prim"/>
 		<spin.color value="bg_light"/>
-		<spin.text.color value="text_second"/>
+		<spin.text.color value="text_sec"/>
 		<border.color value="border_color"/>
 		<border.gap.color value="bg_light"/>
 	</style>
@@ -209,18 +214,18 @@
 		<border.radius value="0"/>
 
 		<color value="bg_light"/>
-		<text.color value="text_second"/>
-		<cursor.color value="text_second"/>
+		<text.color value="text_sec"/>
+		<cursor.color value="text_sec"/>
 		<border.color value="border_color"/>
 		<border.gap.color value="bg_light"/>
 	</style>
 
 	<style class="Graph" parents="root">
 		<glass.visibility value="true"/>
-		<border.color value="graph_border"/>
+		<border.color value="bg_name"/>
 		<border.size value="2"/>
 		<border.radius value="10"/>
-		<border.flat value="false"/>
+		<border.flat value="true"/>
 		<color value="black"/>
 		<bg.inherit value="false"/>
 		<text.radius value="0"/>
@@ -266,8 +271,18 @@
 		<padding value="0"/>
 		<border.radius value="10"/>
 		<bg.color value="bg"/>
-		<heading value="-1 0" />
+		<heading value="-1 0"/>
+		<text.padding.left value="6"/>
+	</style>
 
+	<style class="GraphGroup" parents="Group">
+		<color value="bg"/>
+		<bg.color value="bg"/>
+		<border.size value="0"/>
+		<text.color value="text_sec"/>
+		<text.radius value="0"/>
+		<border.radius value="0"/>
+		<text.padding.left value="2"/>
 	</style>
 
 	<style class="Hyperlink" parents="root">
@@ -286,7 +301,7 @@
 	<style class="Knob" parents="root">
 		<color value="kcap"/>
 		<scale.color value="kscale"/>
-		<tip.color value="bg_name"/>
+		<tip.color value="bg"/>
 		<size.range.min value="24"/>
 		<size.range.max value="24"/>
 		<scale.size value="5"/>
@@ -299,7 +314,7 @@
 	</style>
 
 	<style class="Label" parents="root">
-		<text.color value="text_second"/>
+		<text.color value="text_sec"/>
 		<allocation.hfill value="false"/>
 		<allocation.vfill value="false"/>
 		<bg.inherit value="true"/>
@@ -332,8 +347,8 @@
 
 		<bg.color value="bg_light"/>
 		<bg.selected.color value="border_color"/>
-		<text.color value="text_second"/>
-		<text.selected.color value="text_second"/>
+		<text.color value="text_sec"/>
+		<text.selected.color value="text_sec"/>
 	</style>
 
 	<style class="Menu" parents="root">
@@ -347,8 +362,8 @@
 
 	<style class="MenuItem" parents="root">
 		<bg.selected.color value="bg"/>
-		<text.color value="text_second"/>
-		<text.selected.color value="text_basic"/>
+		<text.color value="text_sec"/>
+		<text.selected.color value="text_prim"/>
 	</style>
 
 	<style class="RackEars" parents="root"></style>
@@ -371,7 +386,7 @@
 		<slider.border.color value="border_color"/>
 		<slider.active.color value="activity"/>
 		<border.gap.color value="bg"/>
-		<text.color value="text_basic"/>
+		<text.color value="text_prim"/>
 		<text.active.color value="bg_light"/>
 	</style>
 
@@ -411,7 +426,14 @@
 	</style>
 
 	<style class="FileDialog::ExtCheck" parents="CheckBox">
-		<color value="text_basic"/>
+		<color value="text_prim"/>
+	</style>
+
+	<!-- Separator Header -->
+	<style class="PluginWindow::Hsep_header" parents="Separator">
+		<color value="sep_hover_legacy"/>
+		<visible value="true"/>
+		<thickness value="2"/>
 	</style>
 
 	<!-- MessageBox widgets -->
@@ -493,6 +515,7 @@
 		<allocation.hfill value="true"/>
 		<allocation.vfill value="true"/>
 		<text.layout.halign value="1.0"/>
+		<padding value="4"/>
 	</style>
 
 	<style class="PluginWindow::RackEarTop" parents="RackEars">
@@ -533,13 +556,12 @@
 		<border.size value="0"/>
 		<border.down.size value="0"/>
 		<border.pressed.size value="0"/>
-		<hole value="0"/>
+		<hole value="false"/>
 		<hover value="true"/>
 		<padding.top value="1"/>
 		<padding.right value="3"/>
 		<gradient value="false"/>
 		<text.shift value="0 0"/>
-
 		<font.name value="lsp-icons"/>
 		<font.size value="12"/>
 		<font.antialias value="true"/>

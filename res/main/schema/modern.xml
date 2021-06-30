@@ -57,8 +57,8 @@
 		<bg_light value="#25272e"/>
 		<bg_schema value="#25272e"/>
 		<border_color value="#373943"/>
-		<text_basic value="#8088b3"/>
-		<text_second value="#a8aed3"/>
+		<text_prim value="#8088b3"/>
+		<text_sec value="#a8aed3"/>
 		<lsp_logo value="#239db5"/>
 		<lsp_logo_cover value="#a4ed3b"/>
 		<menu_text value="#a8aed3"/>
@@ -164,7 +164,7 @@
 		<border.hover.color value="hv_border"/>
 		<color value="bg"/>
 		<hover.color value="bg_light"/>
-		<text.color value="text_second"/>
+		<text.color value="text_sec"/>
 		<text.hover.color value="hv_text"/>
 	</style>
 
@@ -179,8 +179,8 @@
 		<border.hover.color value="activity"/>
 		<fill.color value="bg_light"/>
 		<fill.hover.color value="bg_light"/>
-		<color value="text_basic"/>
-		<hover.color value="text_second"/>
+		<color value="text_prim"/>
+		<hover.color value="text_sec"/>
 	</style>
 
 	<style class="ComboBox" parents="root">
@@ -189,9 +189,9 @@
 		<border.radius value="0"/>
 
 		<color value="bg_light"/>
-		<text.color value="text_basic"/>
+		<text.color value="text_prim"/>
 		<spin.color value="bg_light"/>
-		<spin.text.color value="text_second"/>
+		<spin.text.color value="text_sec"/>
 		<border.color value="border_color"/>
 		<border.gap.color value="bg_light"/>
 	</style>
@@ -211,8 +211,8 @@
 		<border.radius value="0"/>
 
 		<color value="bg_light"/>
-		<text.color value="text_second"/>
-		<cursor.color value="text_second"/>
+		<text.color value="text_sec"/>
+		<cursor.color value="text_sec"/>
 		<border.color value="border_color"/>
 		<border.gap.color value="bg_light"/>
 	</style>
@@ -311,7 +311,7 @@
 	</style>
 
 	<style class="Label" parents="root">
-		<text.color value="text_second"/>
+		<text.color value="text_sec"/>
 		<allocation.hfill value="false"/>
 		<allocation.vfill value="false"/>
 		<bg.inherit value="true"/>
@@ -344,8 +344,8 @@
 
 		<bg.color value="bg_light"/>
 		<bg.selected.color value="border_color"/>
-		<text.color value="text_second"/>
-		<text.selected.color value="text_second"/>
+		<text.color value="text_sec"/>
+		<text.selected.color value="text_sec"/>
 	</style>
 
 	<style class="Menu" parents="root">
@@ -359,8 +359,8 @@
 
 	<style class="MenuItem" parents="root">
 		<bg.selected.color value="bg"/>
-		<text.color value="text_second"/>
-		<text.selected.color value="text_basic"/>
+		<text.color value="text_sec"/>
+		<text.selected.color value="text_prim"/>
 	</style>
 
 	<style class="RackEars" parents="root"></style>
@@ -383,7 +383,7 @@
 		<slider.border.color value="border_color"/>
 		<slider.active.color value="activity"/>
 		<border.gap.color value="bg"/>
-		<text.color value="text_basic"/>
+		<text.color value="text_prim"/>
 		<text.active.color value="bg_light"/>
 	</style>
 
@@ -423,7 +423,7 @@
 	</style>
 
 	<style class="FileDialog::ExtCheck" parents="CheckBox">
-		<color value="text_basic"/>
+		<color value="text_prim"/>
 	</style>
 
 	<!-- Separator Header -->
@@ -532,6 +532,7 @@
 		<allocation.hfill value="true"/>
 		<allocation.vfill value="true"/>
 		<text.layout.halign value="1.0"/>
+		<padding value="0"/>
 	</style>
 
 	<style class="PluginWindow::RackEarTop" parents="RackEars">
