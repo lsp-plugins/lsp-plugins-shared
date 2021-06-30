@@ -63,8 +63,8 @@
 			<!-- scale icons +- -->
 			<hbox halign="1" padding.left="6" padding.right="3">
 				<label ui:id="trg_ui_scaling" font.name="lsp-icons" hover="true" color="footer_icon" hover.color="footer_icon_hover" padding.right="10" font.size="12" font.antialias="true" text="7"/>
-				<label ui:id="trg_ui_zoom_in" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.right="5" expand="false" font.size="8" font.antialias="true" text="B"/>
-				<label ui:id="trg_ui_zoom_out" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.right="5" expand="false" font.size="8" font.antialias="true" text="C"/>
+				<label ui:id="trg_ui_zoom_in" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.right="5" expand="false" font.size="10" font.antialias="true" text="B"/>
+				<label ui:id="trg_ui_zoom_out" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.right="5" expand="false" font.size="10" font.antialias="true" text="C"/>
 			</hbox>
 			<!-- text scale icons +- -->
 			<hbox halign="1" padding.left="6">
