@@ -3,7 +3,6 @@
 <window ui:inject="PluginWindow">
 	<!-- header new -->
 	<vbox spacing="4">
-		<!-- v1-->
 		<grid rows="3" cols="9" height="44" expand="false" bg.color="bg_schema" >
 			<cell width.min="106" rows="2" cols="1">
 				<hbox>
@@ -54,6 +53,7 @@
 				</hbox>
 			</hbox>
 		</grid>
+		<hsep ui:inject="PluginWindow::Hsep_header" />
 
 		<!-- plugin-content -->
 		<hbox ui:inject="PluginWindow::Content" ui:id="plugin_content"></hbox>
