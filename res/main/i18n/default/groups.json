@@ -31,6 +31,7 @@
 
 	"lchan": {
 		"distance": "Distance (left)",
+		"lchan": "left Channel",
 		"monitoring": "Monitoring (left)",
 		"samples": "Samples (left)",
 		"signal": "Signal (left)",
@@ -68,6 +69,7 @@
 	"rchan": {
 		"distance": "Distance (right)",
 		"monitoring": "Monitoring (right)",
+		"rchan": "Right Channel",
 		"samples": "Samples (right)",
 		"signal": "Signal (right)",
 		"time": "Time (right)"

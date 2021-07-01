@@ -54,6 +54,18 @@
 		<!-- Main colors -->
 		<bg value="#1b1c22"/>
 		<bg_name value="#373944"/>
+		<bg_name_pre_1 value="#514646"/>
+		<bg_name_pre_2 value="#465146"/>
+		<bg_name_pre_3 value="#514e46"/>
+		<bg_name_pre_4 value="#454555"/>
+		<bg_name_channel_1 value="#3e3636"/>
+		<bg_name_channel_2 value="#363e36"/>
+		<bg_name_channel_3 value="#3e3c36"/>
+		<bg_name_channel_4 value="#353541"/>
+		<bg_channel_1 value="#2a2424"/>
+		<bg_channel_2 value="#242a24"/>
+		<bg_channel_3 value="#2a2924"/>
+		<bg_channel_4 value="#24242c"/>
 		<bg_light value="#25272e"/>
 		<bg_schema value="#25272e"/>
 		<border_color value="#373943"/>
@@ -174,7 +186,6 @@
 		<border.radius value="0"/>
 		<check.radius value="0"/>
 		<check.gap.size value="2"/>
-
 		<border.color value="border_color"/>
 		<border.hover.color value="activity"/>
 		<fill.color value="bg_light"/>
@@ -187,13 +198,40 @@
 		<border.size value="1"/>
 		<border.gap.size value="2"/>
 		<border.radius value="0"/>
-
 		<color value="bg_light"/>
 		<text.color value="text_prim"/>
 		<spin.color value="bg_light"/>
 		<spin.text.color value="text_sec"/>
 		<border.color value="border_color"/>
 		<border.gap.color value="bg_light"/>
+	</style>
+
+	<style class="Label_Name_Channel_1" parents="root">
+		<bg.color value="bg_name_channel_1"/>
+		<hfill value="true"/>
+		<text.halign value="-1"/>
+		<text.adjust value="toupper"/>
+	</style>
+
+	<style class="Label_Name_Channel_2" parents="root">
+		<bg.color value="bg_name_channel_2"/>
+		<hfill value="true"/>
+		<text.halign value="-1"/>
+		<text.adjust value="toupper"/>
+	</style>
+
+	<style class="Label_Name_Channel_3" parents="Label">
+		<bg.color value="bg_name_channel_3"/>
+		<hfill value="true"/>
+		<text.halign value="-1"/>
+		<text.adjust value="toupper"/>
+	</style>
+
+	<style class="Label_Name_Channel_4" parents="Label">
+		<bg.color value="bg_name_channel_4"/>
+		<hfill value="true"/>
+		<text.halign value="-1"/>
+		<text.adjust value="toupper"/>
 	</style>
 
 	<style class="ComboBox::List" parents="root">
@@ -280,6 +318,26 @@
 		<border.radius value="0"/>
 		<bg.color value="bg_light"/>
 		<heading value="-1 1"/>
+	</style>
+
+	<style class="Channel_1_Group" parents="Group">
+		<color value="bg_name_channel_1"/>
+		<bg.color value="bg_channel_1"/>
+	</style>
+
+	<style class="Channel_2_Group" parents="Group">
+		<color value="bg_name_channel_2"/>
+		<bg.color value="bg_channel_2"/>
+	</style>
+
+	<style class="Channel_3_Group" parents="Group">
+		<color value="bg_name_channel_3"/>
+		<bg.color value="bg_channel_3"/>
+	</style>
+
+	<style class="Channel_4_Group" parents="Group">
+		<color value="bg_name_channel_4"/>
+		<bg.color value="bg_channel_4"/>
 	</style>
 
 	<style class="Hyperlink" parents="root">
@@ -425,9 +483,9 @@
 	<style class="FileDialog::ExtCheck" parents="CheckBox">
 		<color value="text_prim"/>
 	</style>
-	
+
 	<style class="FileDialog::Label" parents="Label"></style>
-	
+
 	<style class="FileDialog::FilterComboBox" parents="ComboBox"></style>
 
 	<!-- Separator Header -->
