@@ -425,6 +425,10 @@
 	<style class="FileDialog::ExtCheck" parents="CheckBox">
 		<color value="text_prim"/>
 	</style>
+	
+	<style class="FileDialog::Label" parents="Label"></style>
+	
+	<style class="FileDialog::FilterComboBox" parents="ComboBox"></style>
 
 	<!-- Separator Header -->
 	<style class="PluginWindow::Hsep_header" parents="Separator">
