@@ -327,9 +327,18 @@
 	<style class="Led" parents="root">
 		<color value="led_c"/>
 		<led.color value="led_l"/>
-		<size value="8"/>
+		<led value="8"/>
+		<size.constraints value="8"/>
 		<bg.inherit value="true"/>
-
+		<round value="true" />
+		<gradient value="true" />
+	</style>
+	
+	<style class="ButtonLed" parents="Led">
+		<size.constraints.width.min value="8"/>
+		<size.constraints.width.max value="8"/>
+		<size.constraints.height.min value="8"/>
+		<size.constraints.height.max value="8"/>
 	</style>
 
 	<style class="ListBox" parents="root">
