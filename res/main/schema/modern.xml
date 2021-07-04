@@ -204,7 +204,7 @@
 		<text.hover.color value="hv_text"/>
 	</style>
 
-	<style class="Button_Text" parents="root">
+	<style class="Button_Text" parents="Button">
 		<border.size value="2"/>
 		<gradient value="false"/>
 		<hole value="false"/>
@@ -219,10 +219,11 @@
 		<hover.color value="bg_light"/>
 		<text.color value="text_sec"/>
 		<text.hover.color value="hv_text"/>
-		<font value="10"/>
+		<font.size value="10"/>
 		<border.pressed.size value="2"/>
 		<border.down.size value="2"/>
-		<fill value="false"/>
+		<allocation.hfill value="false"/>
+		<allocation.vfill value="false"/>
 		<text.padding.left value="4"/>
 		<text.padding.right value="4"/>
 	</style>
@@ -339,43 +340,50 @@
 		<bg.color value="bg_light"/>
 		<heading value="-1 1"/>
 	</style>
+	
+	<style class="Channel_N_Group" parents="Group">
+		<layout.halign value="0" />
+		<layout.valign value="-1" />
+		<layout.hscale value="1" />
+		<layout.vscale value="0" />
+	</style>
 
-	<style class="Channel_1_Group" parents="Group">
+	<style class="Channel_1_Group" parents="Channel_N_Group">
 		<color value="mutted_red_sec"/>
 		<bg.color value="mutted_red_alt"/>
 	</style>
 
-	<style class="Channel_2_Group" parents="Group">
+	<style class="Channel_2_Group" parents="Channel_N_Group">
 		<color value="mutted_green_sec"/>
 		<bg.color value="mutted_green_alt"/>
 	</style>
 
-	<style class="Channel_3_Group" parents="Group">
+	<style class="Channel_3_Group" parents="Channel_N_Group">
 		<color value="mutted_blue_sec"/>
 		<bg.color value="mutted_blue_alt"/>
 	</style>
 
-	<style class="Channel_4_Group" parents="Group">
+	<style class="Channel_4_Group" parents="Channel_N_Group">
 		<color value="mutted_yellow_sec"/>
 		<bg.color value="mutted_yellow_alt"/>
 	</style>
 
-	<style class="Channel_5_Group" parents="Group">
+	<style class="Channel_5_Group" parents="Channel_N_Group">
 		<color value="mutted_magenta_sec"/>
 		<bg.color value="mutted_magenta_alt"/>
 	</style>
 
-	<style class="Channel_6_Group" parents="Group">
+	<style class="Channel_6_Group" parents="Channel_N_Group">
 		<color value="mutted_cyan_sec"/>
 		<bg.color value="mutted_cyan_alt"/>
 	</style>
 
-	<style class="Channel_7_Group" parents="Group">
+	<style class="Channel_7_Group" parents="Channel_N_Group">
 		<color value="mutted_violet_sec"/>
 		<bg.color value="mutted_violet_alt"/>
 	</style>
 
-	<style class="Channel_8_Group" parents="Group">
+	<style class="Channel_8_Group" parents="Channel_N_Group">
 		<color value="mutted_orange_sec"/>
 		<bg.color value="mutted_orange_alt"/>
 	</style>
@@ -497,15 +505,14 @@
 	<style class="LabelChannel" parents="Label">
 		<bg.inherit value="false"/>
 		<bg.color value="mutted_red_prim"/>
-		<hfill value="true"/>
+		<allocation.hfill value="true" />
 		<text.adjust value="toupper"/>
-		<htext value="-1"/>
+		<text.layout.halign value="-1"/>
 		<padding.left value="6"/>
-
 	</style>
 
 	<style class="LabelChannel_1" parents="LabelChannel">
-		<bg.color value="mutted_red_prim"/>
+		<bg.color value="mutted_red_prim" />
 	</style>
 
 	<style class="LabelChannel_2" parents="LabelChannel">
