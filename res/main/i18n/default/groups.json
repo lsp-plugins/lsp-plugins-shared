@@ -30,12 +30,12 @@
 	"latency": "Latency",
 
 	"lchan": {
-		"distance": "Distance (left)",
-		"lchan": "left Channel",
-		"monitoring": "Monitoring (left)",
-		"samples": "Samples (left)",
-		"signal": "Signal (left)",
-		"time": "Time (left)"
+		"distance": "Distance",
+		"lchan": "Left Channel",
+		"monitoring": "Monitoring",
+		"samples": "Samples",
+		"signal": "Signal",
+		"time": "Time"
 	},
 
 	"metering": "Metering",
@@ -67,12 +67,12 @@
 	"results": "Results",
 
 	"rchan": {
-		"distance": "Distance (right)",
-		"monitoring": "Monitoring (right)",
+		"distance": "Distance",
+		"monitoring": "Monitoring",
 		"rchan": "Right Channel",
-		"samples": "Samples (right)",
-		"signal": "Signal (right)",
-		"time": "Time (right)"
+		"samples": "Samples",
+		"signal": "Signal",
+		"time": "Time"
 	},
 
 	"sample_matrix": "Sample Matrix",

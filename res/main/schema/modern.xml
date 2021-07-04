@@ -51,21 +51,45 @@
 		<dark_magenta value="#a21d50"/>
 		<dark_gray value="#737373"/>
 
+		<mutted_red value="#a06c91"/>
+		<mutted_orange value="#a67b68"/>
+		<mutted_yellow value="#8b993f"/>
+		<mutted_green value="#2eaa80"/>
+		<mutted_cyan value="#239fb5"/>
+		<mutted_blue value="#3088cc"/>
+		<mutted_violet value="#794fc2"/>
+		<mutted_magenta value="#9e519a"/>
+
+		<mutted_red_prim value="#3a3742"/>
+		<mutted_orange_prim value="#3a3940"/>
+		<mutted_yellow_prim value="#383a41"/>
+		<mutted_green_prim value="#363b43"/>
+		<mutted_cyan_prim value="#333a46"/>
+		<mutted_blue_prim value="#343645"/>
+		<mutted_violet_prim value="#343445"/>
+		<mutted_magenta_prim value="#373544"/>
+
+		<mutted_red_sec value="#322f38"/>
+		<mutted_orange_sec value="#323136"/>
+		<mutted_yellow_sec value="#313336"/>
+		<mutted_green_sec value="#2e3439"/>
+		<mutted_cyan_sec value="#2b333c"/>
+		<mutted_blue_sec value="#2c2e3b"/>
+		<mutted_violet_sec value="#2c2c3b"/>
+		<mutted_magenta_sec value="#2f2d3a"/>
+
+		<mutted_red_alt value="#28252c"/>
+		<mutted_orange_alt value="#28272a"/>
+		<mutted_yellow_alt value="#27292a"/>
+		<mutted_green_alt value="#242a2d"/>
+		<mutted_cyan_alt value="#212930"/>
+		<mutted_blue_alt value="#22242f"/>
+		<mutted_violet_alt value="#22222f"/>
+		<mutted_magenta_alt value="#25232e"/>
+
 		<!-- Main colors -->
 		<bg value="#1b1c22"/>
 		<bg_name value="#373944"/>
-		<bg_name_pre_1 value="#514646"/>
-		<bg_name_pre_2 value="#465146"/>
-		<bg_name_pre_3 value="#514e46"/>
-		<bg_name_pre_4 value="#454555"/>
-		<bg_name_channel_1 value="#3e3636"/>
-		<bg_name_channel_2 value="#363e36"/>
-		<bg_name_channel_3 value="#3e3c36"/>
-		<bg_name_channel_4 value="#353541"/>
-		<bg_channel_1 value="#2a2424"/>
-		<bg_channel_2 value="#242a24"/>
-		<bg_channel_3 value="#2a2924"/>
-		<bg_channel_4 value="#24242c"/>
 		<bg_light value="#25272e"/>
 		<bg_schema value="#25272e"/>
 		<border_color value="#373943"/>
@@ -180,6 +204,29 @@
 		<text.hover.color value="hv_text"/>
 	</style>
 
+	<style class="Button_Text" parents="root">
+		<border.size value="2"/>
+		<gradient value="false"/>
+		<hole value="false"/>
+		<hover value="true"/>
+		<text.shift value="0 0"/>
+		<text.down.shift value="0 0"/>
+		<text.pressed.shift value="1 1"/>
+		<bg.inherit value="true"/>
+		<border.color value="hl_border"/>
+		<border.hover.color value="hv_border"/>
+		<color value="bg"/>
+		<hover.color value="bg_light"/>
+		<text.color value="text_sec"/>
+		<text.hover.color value="hv_text"/>
+		<font value="10"/>
+		<border.pressed.size value="2"/>
+		<border.down.size value="2"/>
+		<fill value="false"/>
+		<text.padding.left value="4"/>
+		<text.padding.right value="4"/>
+	</style>
+
 	<style class="CheckBox" parents="root">
 		<border.size value="1"/>
 		<border.gap.size value="0"/>
@@ -204,34 +251,6 @@
 		<spin.text.color value="text_sec"/>
 		<border.color value="border_color"/>
 		<border.gap.color value="bg_light"/>
-	</style>
-
-	<style class="Label_Name_Channel_1" parents="root">
-		<bg.color value="bg_name_channel_1"/>
-		<hfill value="true"/>
-		<text.halign value="-1"/>
-		<text.adjust value="toupper"/>
-	</style>
-
-	<style class="Label_Name_Channel_2" parents="root">
-		<bg.color value="bg_name_channel_2"/>
-		<hfill value="true"/>
-		<text.halign value="-1"/>
-		<text.adjust value="toupper"/>
-	</style>
-
-	<style class="Label_Name_Channel_3" parents="Label">
-		<bg.color value="bg_name_channel_3"/>
-		<hfill value="true"/>
-		<text.halign value="-1"/>
-		<text.adjust value="toupper"/>
-	</style>
-
-	<style class="Label_Name_Channel_4" parents="Label">
-		<bg.color value="bg_name_channel_4"/>
-		<hfill value="true"/>
-		<text.halign value="-1"/>
-		<text.adjust value="toupper"/>
 	</style>
 
 	<style class="ComboBox::List" parents="root">
@@ -306,6 +325,7 @@
 		<border.radius value="0"/>
 		<bg.color value="bg_light"/>
 		<heading value="-1 1"/>
+		<text.padding.left value="6"/>
 	</style>
 
 	<style class="GraphGroup" parents="Group">
@@ -321,23 +341,43 @@
 	</style>
 
 	<style class="Channel_1_Group" parents="Group">
-		<color value="bg_name_channel_1"/>
-		<bg.color value="bg_channel_1"/>
+		<color value="mutted_red_sec"/>
+		<bg.color value="mutted_red_alt"/>
 	</style>
 
 	<style class="Channel_2_Group" parents="Group">
-		<color value="bg_name_channel_2"/>
-		<bg.color value="bg_channel_2"/>
+		<color value="mutted_green_sec"/>
+		<bg.color value="mutted_green_alt"/>
 	</style>
 
 	<style class="Channel_3_Group" parents="Group">
-		<color value="bg_name_channel_3"/>
-		<bg.color value="bg_channel_3"/>
+		<color value="mutted_blue_sec"/>
+		<bg.color value="mutted_blue_alt"/>
 	</style>
 
 	<style class="Channel_4_Group" parents="Group">
-		<color value="bg_name_channel_4"/>
-		<bg.color value="bg_channel_4"/>
+		<color value="mutted_yellow_sec"/>
+		<bg.color value="mutted_yellow_alt"/>
+	</style>
+
+	<style class="Channel_5_Group" parents="Group">
+		<color value="mutted_magenta_sec"/>
+		<bg.color value="mutted_magenta_alt"/>
+	</style>
+
+	<style class="Channel_6_Group" parents="Group">
+		<color value="mutted_cyan_sec"/>
+		<bg.color value="mutted_cyan_alt"/>
+	</style>
+
+	<style class="Channel_7_Group" parents="Group">
+		<color value="mutted_violet_sec"/>
+		<bg.color value="mutted_violet_alt"/>
+	</style>
+
+	<style class="Channel_8_Group" parents="Group">
+		<color value="mutted_orange_sec"/>
+		<bg.color value="mutted_orange_alt"/>
 	</style>
 
 	<style class="Hyperlink" parents="root">
@@ -382,13 +422,13 @@
 	<style class="Led" parents="root">
 		<color value="led_c"/>
 		<led.color value="led_l"/>
-		<led value="2" />
+		<led value="2"/>
 		<bg.inherit value="true"/>
-		<border.size value="0" />
-		<round value="false" />
-		<gradient value="false" />
+		<border.size value="0"/>
+		<round value="false"/>
+		<gradient value="false"/>
 	</style>
-	
+
 	<style class="ButtonLed" parents="Led">
 		<size.constraints.width.min value="32"/>
 		<size.constraints.width.max value="32"/>
@@ -452,6 +492,48 @@
 		<border.gap.color value="bg"/>
 		<text.color value="text_prim"/>
 		<text.active.color value="bg_light"/>
+	</style>
+
+	<style class="LabelChannel" parents="Label">
+		<bg.inherit value="false"/>
+		<bg.color value="mutted_red_prim"/>
+		<hfill value="true"/>
+		<text.adjust value="toupper"/>
+		<htext value="-1"/>
+		<padding.left value="6"/>
+
+	</style>
+
+	<style class="LabelChannel_1" parents="LabelChannel">
+		<bg.color value="mutted_red_prim"/>
+	</style>
+
+	<style class="LabelChannel_2" parents="LabelChannel">
+		<bg.color value="mutted_green_prim"/>
+	</style>
+
+	<style class="LabelChannel_3" parents="LabelChannel">
+		<bg.color value="mutted_blue_prim"/>
+	</style>
+
+	<style class="LabelChannel_4" parents="LabelChannel">
+		<bg.color value="mutted_yellow_prim"/>
+	</style>
+
+	<style class="LabelChannel_5" parents="LabelChannel">
+		<bg.color value="mutted_magenta_prim"/>
+	</style>
+
+	<style class="LabelChannel_6" parents="LabelChannel">
+		<bg.color value="mutted_cyan_prim"/>
+	</style>
+
+	<style class="LabelChannel_7" parents="LabelChannel">
+		<bg.color value="mutted_violet_prim"/>
+	</style>
+
+	<style class="LabelChannel_8" parents="LabelChannel">
+		<bg.color value="mutted_orange_prim"/>
 	</style>
 
 	<style class="Separator" parents="root">
