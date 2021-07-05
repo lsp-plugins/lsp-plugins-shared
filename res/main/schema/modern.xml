@@ -405,6 +405,7 @@
 		<hole.size value="3"/>
 		<hole.color value="bg"/>
 		<scale.marks value="false"/>
+		<scale.brightness value="0.6"/>
 	</style>
 
 	<style class="Label" parents="root">
@@ -421,11 +422,12 @@
 	<style class="Led" parents="root">
 		<color value="led_c"/>
 		<led.color value="led_l"/>
-		<led value="2"/>
+		<led value="0"/>
 		<bg.inherit value="true"/>
 		<border.size value="0"/>
 		<round value="false"/>
 		<gradient value="false"/>
+		<hole value="false"/>
 	</style>
 
 	<style class="ButtonLed" parents="Led">

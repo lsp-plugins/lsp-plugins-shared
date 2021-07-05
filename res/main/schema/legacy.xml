@@ -97,11 +97,11 @@
 		<hl_text value="#1a7788"/>
 		<hl_hover value="#83ba2d"/>
 		<hl_sel value="#57b2a5"/>
-		<hl_border value="#1a7788"/>
+		<hl_border value="#6c6c6c"/>
 
 		<!-- Hover -->
 		<hv_text value="#a8aed3"/>
-		<hv_border value="#239db5"/>
+		<hv_border value="#8f8f8f"/>
 		<hv_fill value="#264652"/>
 
 		<!-- Misc -->
@@ -169,6 +169,30 @@
 		<hover.color value="white"/>
 		<text.color value="black"/>
 		<text.hover.color value="black"/>
+	</style>
+
+	<style class="Button_Text" parents="Button">
+		<border.size value="2"/>
+		<gradient value="false"/>
+		<hole value="false"/>
+		<hover value="true"/>
+		<text.shift value="0 0"/>
+		<text.down.shift value="0 0"/>
+		<text.pressed.shift value="1 1"/>
+		<bg.inherit value="true"/>
+		<border.color value="hl_border"/>
+		<border.hover.color value="hv_border"/>
+		<color value="bg"/>
+		<hover.color value="bg_light"/>
+		<text.color value="text_sec"/>
+		<text.hover.color value="hv_text"/>
+		<font.size value="10"/>
+		<border.pressed.size value="2"/>
+		<border.down.size value="2"/>
+		<allocation.hfill value="false"/>
+		<allocation.vfill value="false"/>
+		<text.padding.left value="4"/>
+		<text.padding.right value="4"/>
 	</style>
 
 	<style class="CheckBox" parents="root">
@@ -333,7 +357,7 @@
 		<round value="true" />
 		<gradient value="true" />
 	</style>
-	
+
 	<style class="ButtonLed" parents="Led">
 		<size.constraints.width.min value="8"/>
 		<size.constraints.width.max value="8"/>
@@ -437,9 +461,9 @@
 	<style class="FileDialog::ExtCheck" parents="CheckBox">
 		<color value="text_prim"/>
 	</style>
-	
+
 	<style class="FileDialog::Label" parents="Label"></style>
-	
+
 	<style class="FileDialog::FilterComboBox" parents="ComboBox"></style>
 
 	<!-- Separator Header -->
