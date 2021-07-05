@@ -51,15 +51,6 @@
 		<dark_magenta value="#a21d50"/>
 		<dark_gray value="#737373"/>
 
-		<mutted_red value="#a06c91"/>
-		<mutted_orange value="#a67b68"/>
-		<mutted_yellow value="#8b993f"/>
-		<mutted_green value="#2eaa80"/>
-		<mutted_cyan value="#239fb5"/>
-		<mutted_blue value="#3088cc"/>
-		<mutted_violet value="#794fc2"/>
-		<mutted_magenta value="#9e519a"/>
-
 		<mutted_red_prim value="#3a3742"/>
 		<mutted_orange_prim value="#3a3940"/>
 		<mutted_yellow_prim value="#383a41"/>
@@ -340,7 +331,7 @@
 		<bg.color value="bg_light"/>
 		<heading value="-1 1"/>
 	</style>
-	
+
 	<style class="Channel_N_Group" parents="Group">
 		<layout.halign value="0" />
 		<layout.valign value="-1" />
