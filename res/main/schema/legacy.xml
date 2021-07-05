@@ -243,6 +243,9 @@
 		<border.color value="border_color"/>
 		<border.gap.color value="bg_light"/>
 	</style>
+	
+	<style class="Fader" parents="root">
+	</style>
 
 	<style class="Graph" parents="root">
 		<glass.visibility value="true"/>
