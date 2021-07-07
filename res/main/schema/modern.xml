@@ -626,7 +626,7 @@
 	</style>
 
 	<style class="Value::PopupWindow::ValidInput" parents="Value::PopupWindow::Input">
-    <border.size value="2"/>
+		<border.size value="2"/>
 		<color value="bg"/>
 	</style>
 
