@@ -51,6 +51,42 @@
 		<dark_magenta value="#a21d50"/>
 		<dark_gray value="#737373"/>
 
+		<mutted_red value="#ba2c33"/>
+		<mutted_orange value="#be692a"/>
+		<mutted_yellow value="#b69a22"/>
+		<mutted_green value="#39ae2f"/>
+		<mutted_cyan value="#29a6b3"/>
+		<mutted_blue value="#1f62d6"/>
+		<mutted_violet value="#9f11df"/>
+		<mutted_magenta value="#b22359"/>
+
+		<mutted_red_prim value="#3a3742"/>
+		<mutted_orange_prim value="#3a3940"/>
+		<mutted_yellow_prim value="#383a41"/>
+		<mutted_green_prim value="#363b43"/>
+		<mutted_cyan_prim value="#333a46"/>
+		<mutted_blue_prim value="#343645"/>
+		<mutted_violet_prim value="#343445"/>
+		<mutted_magenta_prim value="#373544"/>
+
+		<mutted_red_sec value="#322f38"/>
+		<mutted_orange_sec value="#323136"/>
+		<mutted_yellow_sec value="#313336"/>
+		<mutted_green_sec value="#2e3439"/>
+		<mutted_cyan_sec value="#2b333c"/>
+		<mutted_blue_sec value="#2c2e3b"/>
+		<mutted_violet_sec value="#2c2c3b"/>
+		<mutted_magenta_sec value="#2f2d3a"/>
+
+		<mutted_red_alt value="#28252c"/>
+		<mutted_orange_alt value="#28272a"/>
+		<mutted_yellow_alt value="#27292a"/>
+		<mutted_green_alt value="#242a2d"/>
+		<mutted_cyan_alt value="#212930"/>
+		<mutted_blue_alt value="#22242f"/>
+		<mutted_violet_alt value="#22222f"/>
+		<mutted_magenta_alt value="#25232e"/>
+
 		<!-- Main colors -->
 		<bg value="#1b1c22"/>
 		<bg_name value="#3b3d49"/>
@@ -113,7 +149,11 @@
 		<mesh_graph value="#00c0ff"/>
 		<graph_prim value="#989898"/>
 		<graph_sec value="#858585"/>
-		<graph_alt value="#737373"/>
+		<graph_alt_1 value="#737373"/>
+		<graph_alt_2 value="#4f4f4f"/>
+		<graph_alt_3 value="#3d3d3d"/>
+		<graph_alt_4 value="#2b2b2b"/>
+		<graph_alt_5 value="#1a1a1a"/>
 
 		<!-- Group -->
 		<text_group value="#8488a3"/>
@@ -171,6 +211,30 @@
 		<text.hover.color value="hv_text"/>
 	</style>
 
+	<style class="Button_Text" parents="Button">
+		<border.size value="2"/>
+		<gradient value="false"/>
+		<hole value="false"/>
+		<hover value="true"/>
+		<text.shift value="0 0"/>
+		<text.down.shift value="0 0"/>
+		<text.pressed.shift value="1 1"/>
+		<bg.inherit value="true"/>
+		<border.color value="hl_border"/>
+		<border.hover.color value="hv_border"/>
+		<color value="bg"/>
+		<hover.color value="bg_light"/>
+		<text.color value="text_sec"/>
+		<text.hover.color value="hv_text"/>
+		<font.size value="10"/>
+		<border.pressed.size value="2"/>
+		<border.down.size value="2"/>
+		<allocation.hfill value="false"/>
+		<allocation.vfill value="false"/>
+		<text.padding.left value="4"/>
+		<text.padding.right value="4"/>
+	</style>
+
 	<style class="CheckBox" parents="root">
 		<border.size value="1"/>
 		<border.gap.size value="0"/>
@@ -219,7 +283,7 @@
 		<border.color value="border_color"/>
 		<border.gap.color value="bg_light"/>
 	</style>
-	
+
 	<style class="Fader" parents="root">
 	</style>
 
@@ -288,6 +352,53 @@
 		<text.padding.left value="2"/>
 	</style>
 
+	<style class="Channel_N_Group" parents="Group">
+		<layout.halign value="0" />
+		<layout.valign value="-1" />
+		<layout.hscale value="1" />
+		<layout.vscale value="0" />
+	</style>
+
+	<style class="Channel_1_Group" parents="Channel_N_Group">
+		<color value="bg_name"/>
+		<bg.color value="bg"/>
+	</style>
+
+	<style class="Channel_2_Group" parents="Channel_N_Group">
+		<color value="bg_name"/>
+		<bg.color value="bg"/>
+	</style>
+
+	<style class="Channel_3_Group" parents="Channel_N_Group">
+		<color value="bg_name"/>
+		<bg.color value="bg"/>
+	</style>
+
+	<style class="Channel_4_Group" parents="Channel_N_Group">
+		<color value="bg_name"/>
+		<bg.color value="bg"/>
+	</style>
+
+	<style class="Channel_5_Group" parents="Channel_N_Group">
+		<color value="bg_name"/>
+		<bg.color value="bgt"/>
+	</style>
+
+	<style class="Channel_6_Group" parents="Channel_N_Group">
+		<color value="bg_name"/>
+		<bg.color value="bg"/>
+	</style>
+
+	<style class="Channel_7_Group" parents="Channel_N_Group">
+		<color value="bg_name"/>
+		<bg.color value="bg"/>
+	</style>
+
+	<style class="Channel_8_Group" parents="Channel_N_Group">
+		<color value="bg_name"/>
+		<bg.color value="bg"/>
+	</style>
+
 	<style class="Hyperlink" parents="root">
 		<text.color value="hl_text"/>
 		<text.hover.color value="hl_hover"/>
@@ -336,7 +447,7 @@
 		<round value="true" />
 		<gradient value="true" />
 	</style>
-	
+
 	<style class="ButtonLed" parents="Led">
 		<size.constraints.width.min value="8"/>
 		<size.constraints.width.max value="8"/>
@@ -402,6 +513,47 @@
 		<text.active.color value="bg_light"/>
 	</style>
 
+	<style class="LabelChannel" parents="Label">
+		<bg.inherit value="false"/>
+		<bg.color value="bg"/>
+		<allocation.hfill value="true" />
+		<text.adjust value="toupper"/>
+		<text.layout.halign value="-1"/>
+		<padding.left value="6"/>
+	</style>
+
+	<style class="LabelChannel_1" parents="LabelChannel">
+		<bg.color value="bg" />
+	</style>
+
+	<style class="LabelChannel_2" parents="LabelChannel">
+		<bg.color value="bg"/>
+	</style>
+
+	<style class="LabelChannel_3" parents="LabelChannel">
+		<bg.color value="bg"/>
+	</style>
+
+	<style class="LabelChannel_4" parents="LabelChannel">
+		<bg.color value="bg"/>
+	</style>
+
+	<style class="LabelChannel_5" parents="LabelChannel">
+		<bg.color value="bg"/>
+	</style>
+
+	<style class="LabelChannel_6" parents="LabelChannel">
+		<bg.color value="bg"/>
+	</style>
+
+	<style class="LabelChannel_7" parents="LabelChannel">
+		<bg.color value="bg"/>
+	</style>
+
+	<style class="LabelChannel_8" parents="LabelChannel">
+		<bg.color value="bg"/>
+	</style>
+
 	<style class="Separator" parents="root">
 		<color value="border_color"/>
 	</style>
@@ -440,9 +592,9 @@
 	<style class="FileDialog::ExtCheck" parents="CheckBox">
 		<color value="text_prim"/>
 	</style>
-	
+
 	<style class="FileDialog::Label" parents="Label"></style>
-	
+
 	<style class="FileDialog::FilterComboBox" parents="ComboBox"></style>
 
 	<!-- Separator Header -->
@@ -462,11 +614,12 @@
 	<!-- Additional styles for value -->
 	<style class="Value::PopupWindow" parents="PopupWindow">
 		<padding value="2"/>
+		<bg.color value="bg_light"/>
 	</style>
 
 	<style class="Value::PopupWindow::Box" parents="Box">
 		<orientation value="horizontal"/>
-		<spacing value="2"/>
+		<spacing value="6"/>
 	</style>
 
 	<style class="Value::PopupWindow::Input" parents="Edit">
@@ -474,7 +627,10 @@
 		<size.constraints.width.min value="64"/>
 	</style>
 
-	<style class="Value::PopupWindow::ValidInput" parents="Value::PopupWindow::Input"></style>
+	<style class="Value::PopupWindow::ValidInput" parents="Value::PopupWindow::Input">
+    <border.size value="2"/>
+		<color value="bg"/>
+	</style>
 
 	<style class="Value::PopupWindow::InvalidInput" parents="Value::PopupWindow::Input">
 		<text.color value="bright_red"/>
@@ -484,9 +640,16 @@
 		<text.color value="bright_yellow"/>
 	</style>
 
-	<style class="Value::PopupWindow::Apply" parents="Button"></style>
+	<style class="Value::PopupWindow::Apply" parents="Button_Text">
+		<padding.left value="10"/>
+		<bg.inherit value="true"/>
+		<border.hover.color value="dark_green"/>
+	</style>
 
-	<style class="Value::PopupWindow::Cancel" parents="Button"></style>
+	<style class="Value::PopupWindow::Cancel" parents="Button_Text">
+		<bg.inherit value="true"/>
+		<border.hover.color value="dark_red"/>
+	</style>
 
 	<!-- GreetingDialog widgets -->
 	<style class="GreetingDialog" parents="Window">

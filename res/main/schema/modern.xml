@@ -27,7 +27,7 @@
 		<green value="#3fc72f"/>
 		<cyan value="#2abecc"/>
 		<blue value="#1c6ff5"/>
-		<violet value="#802aff"/>
+		<violet value="#b600ff"/>
 		<magenta value="#cc2264"/>
 		<gray value="#858585"/>
 
@@ -50,6 +50,15 @@
 		<dark_violet value="#6421ec"/>
 		<dark_magenta value="#a21d50"/>
 		<dark_gray value="#737373"/>
+
+		<mutted_red value="#ba2c33"/>
+		<mutted_orange value="#be692a"/>
+		<mutted_yellow value="#b69a22"/>
+		<mutted_green value="#39ae2f"/>
+		<mutted_cyan value="#29a6b3"/>
+		<mutted_blue value="#1f62d6"/>
+		<mutted_violet value="#9f11df"/>
+		<mutted_magenta value="#b22359"/>
 
 		<mutted_red_prim value="#3a3742"/>
 		<mutted_orange_prim value="#3a3940"/>
@@ -137,7 +146,11 @@
 		<mesh_graph value="#00c0ff"/>
 		<graph_prim value="#989898"/>
 		<graph_sec value="#858585"/>
-		<graph_alt value="#737373"/>
+		<graph_alt_1 value="#737373"/>
+		<graph_alt_2 value="#4f4f4f"/>
+		<graph_alt_3 value="#3d3d3d"/>
+		<graph_alt_4 value="#2b2b2b"/>
+		<graph_alt_5 value="#1a1a1a"/>
 
 		<!-- Group -->
 		<text_group value="#9ea6d1"/>
@@ -265,7 +278,7 @@
 		<border.color value="border_color"/>
 		<border.gap.color value="bg_light"/>
 	</style>
-	
+
 	<style class="Fader" parents="root">
 	</style>
 
@@ -438,6 +451,7 @@
 		<size.constraints.width.max value="32"/>
 		<size.constraints.height.min value="4"/>
 		<size.constraints.height.max value="4"/>
+		<padding.top value="10"/>
 	</style>
 
 	<style class="ListBox" parents="root">
@@ -598,11 +612,12 @@
 	<!-- Additional styles for value -->
 	<style class="Value::PopupWindow" parents="PopupWindow">
 		<padding value="2"/>
+		<bg.color value="bg_light"/>
 	</style>
 
 	<style class="Value::PopupWindow::Box" parents="Box">
 		<orientation value="horizontal"/>
-		<spacing value="2"/>
+		<spacing value="6"/>
 	</style>
 
 	<style class="Value::PopupWindow::Input" parents="Edit">
@@ -610,7 +625,10 @@
 		<size.constraints.width.min value="64"/>
 	</style>
 
-	<style class="Value::PopupWindow::ValidInput" parents="Value::PopupWindow::Input"></style>
+	<style class="Value::PopupWindow::ValidInput" parents="Value::PopupWindow::Input">
+    <border.size value="2"/>
+		<color value="bg"/>
+	</style>
 
 	<style class="Value::PopupWindow::InvalidInput" parents="Value::PopupWindow::Input">
 		<text.color value="bright_red"/>
@@ -620,9 +638,16 @@
 		<text.color value="bright_yellow"/>
 	</style>
 
-	<style class="Value::PopupWindow::Apply" parents="Button"></style>
+	<style class="Value::PopupWindow::Apply" parents="Button_Text">
+		<padding.left value="10"/>
+		<bg.inherit value="true"/>
+		<border.hover.color value="dark_green"/>
+	</style>
 
-	<style class="Value::PopupWindow::Cancel" parents="Button"></style>
+	<style class="Value::PopupWindow::Cancel" parents="Button_Text">
+		<bg.inherit value="true"/>
+		<border.hover.color value="dark_red"/>
+	</style>
 
 	<!-- GreetingDialog widgets -->
 	<style class="GreetingDialog" parents="Window">
