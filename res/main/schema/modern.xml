@@ -412,7 +412,6 @@
 		<color value="bg"/>
 		<scale.color value="kscale"/>
 		<tip.color value="text_group"/>
-		<balance.tip.color value="#ffffff"/> <!-- TODO -->
 		<size.range.min value="21"/>
 		<size.range.max value="21"/>
 		<scale.size value="4"/>
