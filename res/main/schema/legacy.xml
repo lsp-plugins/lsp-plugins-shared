@@ -90,7 +90,7 @@
 		<!-- Main colors -->
 		<bg value="#1b1c22"/>
 		<bg_name value="#ebecee"/>
-		<bg_light value="#25272e"/>
+		<bg_light value="#1b1c22"/>
 		<bg_schema value="#1b1c22"/>
 		<border_color value="#373943"/>
 		<text_prim value="#ebecee"/>
@@ -253,8 +253,8 @@
 	<style class="ComboBox" parents="root">
 		<border.size value="1"/>
 		<border.gap.size value="2"/>
-		<border.radius value="0"/>
-
+		<border.radius value="5"/>
+<pointer value="hyperlink"/>
 		<color value="bg_light"/>
 		<text.color value="text_prim"/>
 		<spin.color value="bg_light"/>
@@ -419,6 +419,7 @@
 		<size.range.min value="24"/>
 		<size.range.max value="24"/>
 		<scale.size value="5"/>
+		<pointer value="hyperlink"/>
 		<bg.inherit value="true"/>
 		<flat value="false"/>
 		<gap.size value="2"/>
