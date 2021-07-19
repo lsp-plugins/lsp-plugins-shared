@@ -90,7 +90,7 @@
 		<!-- Main colors -->
 		<bg value="#1b1c22"/>
 		<bg_name value="#ebecee"/>
-		<bg_light value="#1b1c22"/>
+		<bg_light value="#25272e"/>
 		<bg_schema value="#1b1c22"/>
 		<border_color value="#373943"/>
 		<text_prim value="#ebecee"/>
@@ -209,23 +209,41 @@
 		<hover.color value="bg_name"/>
 		<text.color value="text_sec"/>
 		<text.hover.color value="black"/>
+		<pointer value="hand"/>
 	</style>
 
 	<style class="Button_Text" parents="Button">
-		<border.size value="2"/>
-		<gradient value="false"/>
-		<hole value="false"/>
-		<hover value="true"/>
-		<text.shift value="0 0"/>
-		<text.down.shift value="0 0"/>
-		<text.pressed.shift value="1 1"/>
-		<bg.inherit value="true"/>
-		<border.color value="hl_border"/>
-		<border.hover.color value="hv_border"/>
-		<color value="bg"/>
-		<hover.color value="bg_name"/>
-		<text.color value="text_sec"/>
-		<text.hover.color value="black"/>
+		<font.size value="10"/>
+		<border.pressed.size value="2"/>
+		<border.down.size value="2"/>
+		<allocation.hfill value="false"/>
+		<allocation.vfill value="false"/>
+		<text.padding.left value="4"/>
+		<text.padding.right value="4"/>
+	</style>
+
+	<style class="Button_Freeze" parents="Button">
+		<flat value="false"/>
+		<gradient value="true"/>
+		<hole value="true"/>
+
+		<color value="bg_light"/>
+		<hover.color value="dark_cyan"/>
+		<down.color value="bright_cyan"/>
+		<down.hover.color value="dark_cyan"/>
+
+    <text.color value="bg"/>
+		<text.hover.color value="bg"/>
+		<text.down.color value="bg"/>
+		<text.down.hover.color value="bg"/>
+
+    <border.color value="bg"/>
+		<border.hover.color value="bg"/>
+    <border.down.color value="bg"/>
+		<border.down.hover.color value="bg"/>
+
+		<down value="true"/>
+		<down.colors value="true"/>
 		<font.size value="10"/>
 		<border.pressed.size value="2"/>
 		<border.down.size value="2"/>
@@ -241,7 +259,6 @@
 		<border.radius value="0"/>
 		<check.radius value="0"/>
 		<check.gap.size value="2"/>
-
 		<border.color value="border_color"/>
 		<border.hover.color value="activity"/>
 		<fill.color value="bg_light"/>
@@ -252,24 +269,26 @@
 
 	<style class="ComboBox" parents="root">
 		<border.size value="1"/>
-		<border.gap.size value="2"/>
+		<border.gap.size value="0"/>
 		<border.radius value="5"/>
-<pointer value="hyperlink"/>
-		<color value="bg_light"/>
-		<text.color value="text_prim"/>
-		<spin.color value="bg_light"/>
-		<spin.text.color value="text_sec"/>
-		<border.color value="border_color"/>
-		<border.gap.color value="bg_light"/>
+		<color value="bg_name"/>
+		<text.color value="bg"/>
+		<spin.color value="bg_name"/>
+		<spin.text.color value="bg"/>
+		<border.color value="bg"/>
+		<border.gap.color value="bg"/>
+		<pointer value="hand"/>
+		<bg.inherit value="true"/>
 	</style>
 
 	<style class="ComboBox::List" parents="root">
 		<border.size value="1"/>
-		<border.gap.size value="2"/>
-		<border.radius value="0"/>
-
+		<border.gap.size value="4"/>
+		<border.gap.color value="bg"/>
+		<border.radius value="3"/>
 		<list.bg.color value="bg"/>
-		<border.color value="border_color"/>
+		<border.color value="bg_name"/>
+		<pointer value="hand"/>
 	</style>
 
 	<style class="Edit" parents="root">
@@ -284,8 +303,7 @@
 		<border.gap.color value="bg_light"/>
 	</style>
 
-	<style class="Fader" parents="root">
-	</style>
+	<style class="Fader" parents="root"></style>
 
 	<style class="Graph" parents="root">
 		<glass.visibility value="true"/>
@@ -353,10 +371,10 @@
 	</style>
 
 	<style class="Channel_N_Group" parents="Group">
-		<layout.halign value="0" />
-		<layout.valign value="-1" />
-		<layout.hscale value="1" />
-		<layout.vscale value="0" />
+		<layout.halign value="0"/>
+		<layout.valign value="-1"/>
+		<layout.hscale value="1"/>
+		<layout.vscale value="0"/>
 	</style>
 
 	<style class="Channel_1_Group" parents="Channel_N_Group">
@@ -419,13 +437,13 @@
 		<size.range.min value="24"/>
 		<size.range.max value="24"/>
 		<scale.size value="5"/>
-		<pointer value="hyperlink"/>
 		<bg.inherit value="true"/>
 		<flat value="false"/>
 		<gap.size value="2"/>
 		<hole.size value="1"/>
 		<hole.color value="black"/>
 		<scale.marks value="true"/>
+		<pointer value="hand"/>
 	</style>
 
 	<style class="Label" parents="root">
@@ -445,8 +463,8 @@
 		<led value="8"/>
 		<size.constraints value="8"/>
 		<bg.inherit value="true"/>
-		<round value="true" />
-		<gradient value="true" />
+		<round value="true"/>
+		<gradient value="true"/>
 	</style>
 
 	<style class="ButtonLed" parents="Led">
@@ -454,6 +472,7 @@
 		<size.constraints.width.max value="8"/>
 		<size.constraints.height.min value="8"/>
 		<size.constraints.height.max value="8"/>
+		<pointer value="hand"/>
 	</style>
 
 	<style class="ListBox" parents="root">
@@ -517,14 +536,14 @@
 	<style class="LabelChannel" parents="Label">
 		<bg.inherit value="false"/>
 		<bg.color value="bg"/>
-		<allocation.hfill value="true" />
+		<allocation.hfill value="true"/>
 		<text.adjust value="toupper"/>
 		<text.layout.halign value="-1"/>
 		<padding.left value="6"/>
 	</style>
 
 	<style class="LabelChannel_1" parents="LabelChannel">
-		<bg.color value="bg" />
+		<bg.color value="bg"/>
 	</style>
 
 	<style class="LabelChannel_2" parents="LabelChannel">

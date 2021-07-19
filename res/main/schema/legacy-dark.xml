@@ -209,23 +209,41 @@
 		<hover.color value="bg_light"/>
 		<text.color value="text_sec"/>
 		<text.hover.color value="hv_text"/>
+		<pointer value="hand"/>
 	</style>
 
 	<style class="Button_Text" parents="Button">
-		<border.size value="2"/>
+		<font.size value="10"/>
+		<border.pressed.size value="2"/>
+		<border.down.size value="2"/>
+		<allocation.hfill value="false"/>
+		<allocation.vfill value="false"/>
+		<text.padding.left value="4"/>
+		<text.padding.right value="4"/>
+	</style>
+
+	<style class="Button_Freeze" parents="Button">
+		<flat value="false"/>
 		<gradient value="false"/>
 		<hole value="false"/>
-		<hover value="true"/>
-		<text.shift value="0 0"/>
-		<text.down.shift value="0 0"/>
-		<text.pressed.shift value="1 1"/>
-		<bg.inherit value="true"/>
-		<border.color value="hl_border"/>
-		<border.hover.color value="hv_border"/>
-		<color value="bg"/>
-		<hover.color value="bg_light"/>
-		<text.color value="text_sec"/>
-		<text.hover.color value="hv_text"/>
+
+		<color value="bg_light"/>
+		<hover.color value="mutted_cyan_sec"/>
+		<down.color value="dark_cyan"/>
+		<down.hover.color value="dark_cyan"/>
+
+    <text.color value="text_prim"/>
+		<text.hover.color value="text_sec"/>
+		<text.down.color value="bright_cyan"/>
+		<text.down.hover.color value="bright_cyan"/>
+
+    <border.color value="bg_name"/>
+		<border.hover.color value="mutted_cyan_prim"/>
+    <border.down.color value="bright_cyan"/>
+		<border.down.hover.color value="cyan"/>
+
+		<down value="true"/>
+		<down.colors value="true"/>
 		<font.size value="10"/>
 		<border.pressed.size value="2"/>
 		<border.down.size value="2"/>
@@ -252,24 +270,26 @@
 
 	<style class="ComboBox" parents="root">
 		<border.size value="1"/>
-		<border.gap.size value="2"/>
-		<border.radius value="0"/>
-
+		<border.gap.size value="0"/>
+		<border.radius value="5"/>
 		<color value="bg_light"/>
 		<text.color value="text_prim"/>
 		<spin.color value="bg_light"/>
 		<spin.text.color value="text_sec"/>
-		<border.color value="border_color"/>
-		<border.gap.color value="bg_light"/>
+		<border.color value="bg"/>
+		<border.gap.color value="bg"/>
+		<pointer value="hand"/>
+		<bg.inherit value="true"/>
 	</style>
 
 	<style class="ComboBox::List" parents="root">
 		<border.size value="1"/>
-		<border.gap.size value="2"/>
-		<border.radius value="0"/>
-
+		<border.gap.size value="4"/>
+		<border.gap.color value="bg"/>
+		<border.radius value="3"/>
 		<list.bg.color value="bg"/>
 		<border.color value="border_color"/>
+		<pointer value="hand"/>
 	</style>
 
 	<style class="Edit" parents="root">
@@ -425,6 +445,7 @@
 		<hole.size value="1"/>
 		<hole.color value="black"/>
 		<scale.marks value="true"/>
+		<pointer value="hand"/>
 	</style>
 
 	<style class="Label" parents="root">
@@ -454,6 +475,7 @@
 		<size.constraints.width.max value="8"/>
 		<size.constraints.height.min value="8"/>
 		<size.constraints.height.max value="8"/>
+		<pointer value="hand"/>
 	</style>
 
 	<style class="ListBox" parents="root">
