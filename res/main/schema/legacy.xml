@@ -347,6 +347,19 @@
 		<bg.inherit value="true"/>
 	</style>
 
+	<style class="ComboGroup" parents="root">
+		<color value="bg_name"/>
+		<border.size value="2"/>
+		<text.color value="text_group"/>
+		<text.radius value="10"/>
+		<ipadding value="12"/>
+		<padding value="0"/>
+		<border.radius value="10"/>
+		<bg.color value="bg"/>
+		<heading value="-1 0"/>
+		<text.padding.left value="6"/>
+	</style>
+
 	<style class="Group" parents="root">
 		<color value="bg_name"/>
 		<border.size value="2"/>
