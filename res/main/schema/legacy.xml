@@ -151,13 +151,13 @@
 		<!-- Graph -->
 		<bg_graph value="#1f2025"/>
 		<mesh_graph value="#00c0ff"/>
-		<graph_prim value="#989898"/>
-		<graph_sec value="#858585"/>
-		<graph_alt_1 value="#737373"/>
-		<graph_alt_2 value="#4f4f4f"/>
-		<graph_alt_3 value="#3d3d3d"/>
-		<graph_alt_4 value="#2b2b2b"/>
-		<graph_alt_5 value="#1a1a1a"/>
+		<graph_prim value="#a0a0a0"/>
+		<graph_sec value="#8d8d8d"/>
+		<graph_alt_1 value="#7a7a7a"/>
+		<graph_alt_2 value="#636363"/>
+		<graph_alt_3 value="#4f4f4f"/>
+		<graph_alt_4 value="#3f3f3f"/>
+		<graph_alt_5 value="#2c2c2c"/>
 
 		<!-- Group -->
 		<text_group value="#1b1c22"/>
@@ -217,7 +217,7 @@
 	</style>
 
 	<style class="Button_Gray" parents="Button">
-		<flat value="true"/>
+		<flat value="false"/>
 		<gradient value="true"/>
 		<hole value="false"/>
 
@@ -240,11 +240,11 @@
 
 		<hole.color value="bg"/>
 		<border.size value="0"/>
-		<led value="1"/>
+		<led value="2"/>
 		<led.color value="gray"/>
 	</style>
 
-	<style class="Button_Red" parents="Button_Gray">  
+	<style class="Button_Red" parents="Button_Gray">
   <color value="dark_red"/>
   <hover.color value="red"/>
   <down.color value="bright_red"/>
