@@ -96,6 +96,7 @@
 		<bg_name value="#373944"/>
 		<bg_light value="#25272e"/>
 		<bg_schema value="#25272e"/>
+		<bg_schema_name value="#373944"/>
 		<border_color value="#373943"/>
 		<text_prim value="#8088b3"/>
 		<text_sec value="#a8aed3"/>
@@ -214,128 +215,128 @@
 	</style>
 
 	<style class="Button_Gray" parents="Button">
-	  <flat value="false"/>
-	  <gradient value="false"/>
-	  <hole value="false"/>
+		<flat value="false"/>
+		<gradient value="false"/>
+		<hole value="false"/>
 
-	  <color value="dark_gray"/>
-	  <hover.color value="gray"/>
-	  <down.color value="bright_gray"/>
-	  <down.hover.color value="gray"/>
+		<color value="dark_gray"/>
+		<hover.color value="gray"/>
+		<down.color value="bright_gray"/>
+		<down.hover.color value="gray"/>
 
-	  <border.color value="mutted_gray_sec"/>
-	  <border.hover.color value="mutted_gray_prim"/>
-	  <border.down.color value="gray"/>
-	  <border.down.hover.color value="dark_gray"/>
+		<border.color value="mutted_gray_sec"/>
+		<border.hover.color value="mutted_gray_prim"/>
+		<border.down.color value="gray"/>
+		<border.down.hover.color value="dark_gray"/>
 
-	  <down value="true"/>
-	  <down.colors value="true"/>
-	  <border.pressed.size value="2"/>
-	  <border.down.size value="2"/>
-	  <allocation.hfill value="false"/>
-	  <allocation.vfill value="false"/>
+		<down value="true"/>
+		<down.colors value="true"/>
+		<border.pressed.size value="2"/>
+		<border.down.size value="2"/>
+		<allocation.hfill value="false"/>
+		<allocation.vfill value="false"/>
 
-	  <hole.color value="bg"/>
-	  <border.size value="2"/>
-	  <led value="0"/>
-	  <led.color value="gray"/>
+		<hole.color value="bg"/>
+		<border.size value="2"/>
+		<led value="0"/>
+		<led.color value="gray"/>
 	</style>
 
 	<style class="Button_Red" parents="Button_Gray">
-  <color value="dark_red"/>
-  <hover.color value="red"/>
-  <down.color value="bright_red"/>
-  <down.hover.color value="red"/>
-  <border.color value="mutted_red_sec"/>
-  <border.hover.color value="mutted_red_prim"/>
-  <border.down.color value="red"/>
-  <border.down.hover.color value="dark_red"/>
-  <led.color value="red"/>
-</style>
+		<color value="dark_red"/>
+		<hover.color value="red"/>
+		<down.color value="bright_red"/>
+		<down.hover.color value="red"/>
+		<border.color value="mutted_red_sec"/>
+		<border.hover.color value="mutted_red_prim"/>
+		<border.down.color value="red"/>
+		<border.down.hover.color value="dark_red"/>
+		<led.color value="red"/>
+	</style>
 
-<style class="Button_Orange" parents="Button_Gray">
-  <color value="dark_orange"/>
-  <hover.color value="orange"/>
-  <down.color value="bright_orange"/>
-  <down.hover.color value="orange"/>
-  <border.color value="mutted_orange_sec"/>
-  <border.hover.color value="mutted_orange_prim"/>
-  <border.down.color value="orange"/>
-  <border.down.hover.color value="dark_orange"/>
-  <led.color value="orange"/>
-</style>
+	<style class="Button_Orange" parents="Button_Gray">
+		<color value="dark_orange"/>
+		<hover.color value="orange"/>
+		<down.color value="bright_orange"/>
+		<down.hover.color value="orange"/>
+		<border.color value="mutted_orange_sec"/>
+		<border.hover.color value="mutted_orange_prim"/>
+		<border.down.color value="orange"/>
+		<border.down.hover.color value="dark_orange"/>
+		<led.color value="orange"/>
+	</style>
 
-<style class="Button_Yellow" parents="Button_Gray">
-  <color value="dark_yellow"/>
-  <hover.color value="yellow"/>
-  <down.color value="bright_yellow"/>
-  <down.hover.color value="yellow"/>
-  <border.color value="mutted_yellow_sec"/>
-  <border.hover.color value="mutted_yellow_prim"/>
-  <border.down.color value="yellow"/>
-  <border.down.hover.color value="dark_yellow"/>
-  <led.color value="yellow"/>
-</style>
+	<style class="Button_Yellow" parents="Button_Gray">
+		<color value="dark_yellow"/>
+		<hover.color value="yellow"/>
+		<down.color value="bright_yellow"/>
+		<down.hover.color value="yellow"/>
+		<border.color value="mutted_yellow_sec"/>
+		<border.hover.color value="mutted_yellow_prim"/>
+		<border.down.color value="yellow"/>
+		<border.down.hover.color value="dark_yellow"/>
+		<led.color value="yellow"/>
+	</style>
 
-<style class="Button_Green" parents="Button_Gray">
-  <color value="dark_green"/>
-  <hover.color value="green"/>
-  <down.color value="bright_green"/>
-  <down.hover.color value="green"/>
-  <border.color value="mutted_green_sec"/>
-  <border.hover.color value="mutted_green_prim"/>
-  <border.down.color value="green"/>
-  <border.down.hover.color value="dark_green"/>
-  <led.color value="green"/>
-</style>
+	<style class="Button_Green" parents="Button_Gray">
+		<color value="dark_green"/>
+		<hover.color value="green"/>
+		<down.color value="bright_green"/>
+		<down.hover.color value="green"/>
+		<border.color value="mutted_green_sec"/>
+		<border.hover.color value="mutted_green_prim"/>
+		<border.down.color value="green"/>
+		<border.down.hover.color value="dark_green"/>
+		<led.color value="green"/>
+	</style>
 
-<style class="Button_Cyan" parents="Button_Gray">
-  <color value="dark_cyan"/>
-  <hover.color value="cyan"/>
-  <down.color value="bright_cyan"/>
-  <down.hover.color value="cyan"/>
-  <border.color value="mutted_cyan_sec"/>
-  <border.hover.color value="mutted_cyan_prim"/>
-  <border.down.color value="cyan"/>
-  <border.down.hover.color value="dark_cyan"/>
-  <led.color value="cyan"/>
-</style>
+	<style class="Button_Cyan" parents="Button_Gray">
+		<color value="dark_cyan"/>
+		<hover.color value="cyan"/>
+		<down.color value="bright_cyan"/>
+		<down.hover.color value="cyan"/>
+		<border.color value="mutted_cyan_sec"/>
+		<border.hover.color value="mutted_cyan_prim"/>
+		<border.down.color value="cyan"/>
+		<border.down.hover.color value="dark_cyan"/>
+		<led.color value="cyan"/>
+	</style>
 
-<style class="Button_Blue" parents="Button_Gray">
-  <color value="dark_blue"/>
-  <hover.color value="blue"/>
-  <down.color value="bright_blue"/>
-  <down.hover.color value="blue"/>
-  <border.color value="mutted_blue_sec"/>
-  <border.hover.color value="mutted_blue_prim"/>
-  <border.down.color value="blue"/>
-  <border.down.hover.color value="dark_blue"/>
-  <led.color value="blue"/>
-</style>
+	<style class="Button_Blue" parents="Button_Gray">
+		<color value="dark_blue"/>
+		<hover.color value="blue"/>
+		<down.color value="bright_blue"/>
+		<down.hover.color value="blue"/>
+		<border.color value="mutted_blue_sec"/>
+		<border.hover.color value="mutted_blue_prim"/>
+		<border.down.color value="blue"/>
+		<border.down.hover.color value="dark_blue"/>
+		<led.color value="blue"/>
+	</style>
 
-<style class="Button_Violet" parents="Button_Gray">
-  <color value="dark_violet"/>
-  <hover.color value="violet"/>
-  <down.color value="bright_violet"/>
-  <down.hover.color value="violet"/>
-  <border.color value="mutted_violet_sec"/>
-  <border.hover.color value="mutted_violet_prim"/>
-  <border.down.color value="violet"/>
-  <border.down.hover.color value="dark_violet"/>
-  <led.color value="violet"/>
-</style>
+	<style class="Button_Violet" parents="Button_Gray">
+		<color value="dark_violet"/>
+		<hover.color value="violet"/>
+		<down.color value="bright_violet"/>
+		<down.hover.color value="violet"/>
+		<border.color value="mutted_violet_sec"/>
+		<border.hover.color value="mutted_violet_prim"/>
+		<border.down.color value="violet"/>
+		<border.down.hover.color value="dark_violet"/>
+		<led.color value="violet"/>
+	</style>
 
-<style class="Button_Magenta" parents="Button_Gray">
-  <color value="dark_magenta"/>
-  <hover.color value="magenta"/>
-  <down.color value="bright_magenta"/>
-  <down.hover.color value="magenta"/>
-  <border.color value="mutted_magenta_sec"/>
-  <border.hover.color value="mutted_magenta_prim"/>
-  <border.down.color value="magenta"/>
-  <border.down.hover.color value="dark_magenta"/>
-  <led.color value="magenta"/>
-</style>
+	<style class="Button_Magenta" parents="Button_Gray">
+		<color value="dark_magenta"/>
+		<hover.color value="magenta"/>
+		<down.color value="bright_magenta"/>
+		<down.hover.color value="magenta"/>
+		<border.color value="mutted_magenta_sec"/>
+		<border.hover.color value="mutted_magenta_prim"/>
+		<border.down.color value="magenta"/>
+		<border.down.hover.color value="dark_magenta"/>
+		<led.color value="magenta"/>
+	</style>
 
 	<style class="Button_Text" parents="Button">
 		<font.size value="10"/>
@@ -518,7 +519,7 @@
 
 	<style class="Graph" parents="root">
 		<glass.visibility value="false"/>
-		<border.color value="bg_graph"/>
+		<border.color value="bg_name"/>
 		<border.size value="0"/>
 		<border.radius value="0"/>
 		<color value="bg_graph"/>
@@ -585,14 +586,17 @@
 
 	<style class="GraphGroup" parents="Group">
 		<color value="bg_name"/>
-		<border.size value="0"/>
+		<bg.color value="bg_light"/>
+		<border.size value="1"/>
 		<text.color value="text_group"/>
 		<text.radius value="0"/>
 		<ipadding value="12"/>
 		<padding value="0"/>
 		<border.radius value="0"/>
-		<bg.color value="bg_light"/>
 		<heading value="-1 1"/>
+		<border.color value="bg_name"/>
+		<border.flat value="true"/>
+		<text.padding.left value="6"/>
 	</style>
 
 	<style class="Channel_N_Group" parents="Group">
