@@ -269,14 +269,14 @@
 
 	<style class="ComboBox" parents="root">
 		<border.size value="1"/>
-		<border.gap.size value="0"/>
+		<border.gap.size value="1"/>
 		<border.radius value="5"/>
 		<color value="bg_name"/>
 		<text.color value="bg"/>
 		<spin.color value="bg_name"/>
 		<spin.text.color value="bg"/>
 		<border.color value="bg"/>
-		<border.gap.color value="bg"/>
+		<border.gap.color value="bg_name"/>
 		<pointer value="hand"/>
 		<bg.inherit value="true"/>
 	</style>
@@ -492,34 +492,38 @@
 		<border.size value="1"/>
 		<border.gap.size value="2"/>
 		<border.radius value="0"/>
-
-		<list.bg.color value="bg_light"/>
-		<border.color value="border_color"/>
+		<list.bg.color value="bg"/>
+		<border.color value="bg_name"/>
 	</style>
 
 	<style class="ListBoxItem" parents="root">
 		<padding.top value="4"/>
 		<padding.bottom value="4"/>
-
-		<bg.color value="bg_light"/>
-		<bg.selected.color value="border_color"/>
+		<bg.color value="bg"/>
+		<bg.selected.color value="bg_name"/>
 		<text.color value="text_sec"/>
-		<text.selected.color value="text_sec"/>
+		<text.selected.color value="bg"/>
 	</style>
 
 	<style class="Menu" parents="root">
 		<border.size value="1"/>
 		<ipadding.top value="4"/>
 		<ipadding.bottom value="4"/>
-
-		<border.color value="border_color"/>
-		<bg.color value="bg_light"/>
+		<ipadding.left value="4"/>
+		<ipadding.right value="4"/>
+		<border.color value="bg_name"/>
+		<bg.color value="bg"/>
+		<border.radius value="3"/>
+		<scroll.color value="bg_name"/>
+		<scroll.text.color value="bg"/>
+		<scroll.selected.color value="text_sec"/>
+		<scroll.text.selected.color value="border_color"/>
 	</style>
 
 	<style class="MenuItem" parents="root">
-		<bg.selected.color value="bg"/>
+		<bg.selected.color value="bg_name"/>
 		<text.color value="text_sec"/>
-		<text.selected.color value="text_prim"/>
+		<text.selected.color value="bg"/>
 	</style>
 
 	<style class="RackEars" parents="root"></style>
@@ -530,7 +534,6 @@
 		<border.radius value="0"/>
 		<size.constraints.width.min value="16"/>
 		<size.constraints.height.min value="16"/>
-
 		<border.color value="border_color"/>
 		<inc.color value="bg"/>
 		<inc.active.color value="activity"/>

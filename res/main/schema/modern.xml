@@ -292,7 +292,6 @@
 		<border.size value="1"/>
 		<border.gap.size value="2"/>
 		<border.radius value="0"/>
-
 		<color value="bg_light"/>
 		<text.color value="text_sec"/>
 		<cursor.color value="text_sec"/>
@@ -343,7 +342,7 @@
 	<style class="Cell" parents="root">
 		<bg.inherit value="true"/>
 	</style>
-	
+
 	<style class="ComboGroup" parents="root">
 		<color value="bg_name"/>
 		<border.size value="0"/>
@@ -495,7 +494,6 @@
 		<border.size value="1"/>
 		<border.gap.size value="2"/>
 		<border.radius value="0"/>
-
 		<list.bg.color value="bg_light"/>
 		<border.color value="border_color"/>
 	</style>
@@ -503,26 +501,31 @@
 	<style class="ListBoxItem" parents="root">
 		<padding.top value="4"/>
 		<padding.bottom value="4"/>
-
 		<bg.color value="bg_light"/>
 		<bg.selected.color value="border_color"/>
-		<text.color value="text_sec"/>
+		<text.color value="text_prim"/>
 		<text.selected.color value="text_sec"/>
 	</style>
 
 	<style class="Menu" parents="root">
-		<border.size value="1"/>
+		<border.size value="0"/>
 		<ipadding.top value="4"/>
 		<ipadding.bottom value="4"/>
-
+		<ipadding.left value="0"/>
+		<ipadding.right value="0"/>
 		<border.color value="border_color"/>
 		<bg.color value="bg_light"/>
+
+		<scroll.color value="border_color"/>
+		<scroll.text.color value="text_prim"/>
+		<scroll.selected.color value="bg_name"/>
+		<scroll.text.selected.color value="text_sec"/>
 	</style>
 
 	<style class="MenuItem" parents="root">
-		<bg.selected.color value="bg"/>
-		<text.color value="text_sec"/>
-		<text.selected.color value="text_prim"/>
+		<bg.selected.color value="border_color"/>
+		<text.color value="text_prim"/>
+		<text.selected.color value="text_sec"/>
 	</style>
 
 	<style class="RackEars" parents="root"></style>
@@ -533,7 +536,6 @@
 		<border.radius value="0"/>
 		<size.constraints.width.min value="16"/>
 		<size.constraints.height.min value="16"/>
-
 		<border.color value="border_color"/>
 		<inc.color value="bg"/>
 		<inc.active.color value="activity"/>
