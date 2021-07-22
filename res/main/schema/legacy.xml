@@ -100,6 +100,7 @@
 		<border_color value="#373943"/>
 		<text_prim value="#ebecee"/>
 		<text_sec value="#cacbcd"/>
+		<text_icon value="#ebecee"/>
 		<lsp_logo value="#00b1eb"/>
 		<lsp_logo_cover value="#00e2ff"/>
 		<menu_text value="#aaabac"/>
@@ -600,7 +601,7 @@
 		<ipadding value="0"/>
 		<padding value="0"/>
 		<heading value="-1 1"/>
-		<border.flat value="false"/>		
+		<border.flat value="false"/>
 		<text.padding.left value="2"/>
 	</style>
 
