@@ -188,6 +188,53 @@
 	<style class="Align" parents="root">
 		<bg.inherit value="true"/>
 	</style>
+	
+	<style class="AudioChannel" parents="root">
+	</style>
+	
+	<style class="AudioSample" parents="root">
+		<stereo_groups value="true" />
+	</style>
+	
+	<style class="AudioSample::Channel1" parents="AudioChannel">
+		<color value="red" />
+		<wave.border.color value="bright_red" />
+	</style>
+	
+	<style class="AudioSample::Channel2" parents="AudioChannel">
+		<color value="orange" />
+		<wave.border.color value="bright_orange" />
+	</style>
+	
+	<style class="AudioSample::Channel3" parents="AudioChannel">
+		<color value="yellow" />
+		<wave.border.color value="bright_yellow" />
+	</style>
+	
+	<style class="AudioSample::Channel4" parents="AudioChannel">
+		<color value="green" />
+		<wave.border.color value="bright_green" />
+	</style>
+	
+	<style class="AudioSample::Channel5" parents="AudioChannel">
+		<color value="cyan" />
+		<wave.border.color value="bright_cyan" />
+	</style>
+	
+	<style class="AudioSample::Channel6" parents="AudioChannel">
+		<color value="blue" />
+		<wave.border.color value="bright_blue" />
+	</style>
+	
+	<style class="AudioSample::Channel7" parents="AudioChannel">
+		<color value="magenta" />
+		<wave.border.color value="bright_magenta" />
+	</style>
+	
+	<style class="AudioSample::Channel8" parents="AudioChannel">
+		<color value="violet" />
+		<wave.border.color value="bright_violet" />
+	</style>
 
 	<style class="Box" parents="root">
 		<bg.inherit value="true"/>

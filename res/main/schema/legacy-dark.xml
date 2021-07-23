@@ -191,6 +191,45 @@
 	<style class="Align" parents="root">
 		<bg.inherit value="true"/>
 	</style>
+	
+	<style class="AudioChannel" parents="root">
+	</style>
+	
+	<style class="AudioSample" parents="root">
+		<stereo_groups value="true" />
+	</style>
+	
+	<style class="AudioSample::Channel1" parents="AudioChannel">
+		<color value="mutted_red_prim" />
+	</style>
+	
+	<style class="AudioSample::Channel2" parents="AudioChannel">
+		<color value="mutted_orange_prim" />
+	</style>
+	
+	<style class="AudioSample::Channel3" parents="AudioChannel">
+		<color value="mutted_yellow_prim" />
+	</style>
+	
+	<style class="AudioSample::Channel4" parents="AudioChannel">
+		<color value="mutted_green_prim" />
+	</style>
+	
+	<style class="AudioSample::Channel5" parents="AudioChannel">
+		<color value="mutted_cyan_prim" />
+	</style>
+	
+	<style class="AudioSample::Channel6" parents="AudioChannel">
+		<color value="mutted_blue_prim" />
+	</style>
+	
+	<style class="AudioSample::Channel7" parents="AudioChannel">
+		<color value="mutted_magenta_prim" />
+	</style>
+	
+	<style class="AudioSample::Channel8" parents="AudioChannel">
+		<color value="mutted_violet_prim" />
+	</style>
 
 	<style class="Box" parents="root">
 		<bg.inherit value="true"/>
