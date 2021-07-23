@@ -540,6 +540,7 @@
 
 	<style class="GraphMarker" parents="root">
 		<smooth value="false"/>
+		<color value="white"/>
 	</style>
 
 	<style class="GraphMesh" parents="root">
