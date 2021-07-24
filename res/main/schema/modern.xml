@@ -194,6 +194,21 @@
 	
 	<style class="AudioSample" parents="root">
 		<stereo_groups value="true" />
+		<label.0.layout.halign value="-1" />
+		<label.0.layout.valign value="1" />
+		<label.0.visible value="true" />
+		
+		<label.1.layout.halign value="1" />
+		<label.1.layout.valign value="1" />
+		<label.1.visible value="true" />
+		
+		<label.2.layout.halign value="-1" />
+		<label.2.layout.valign value="-1" />
+		<label.2.visible value="true" />
+		
+		<label.3.layout.halign value="1" />
+		<label.3.layout.valign value="-1" />
+		<label.3.visible value="true" />
 	</style>
 	
 	<style class="AudioSample::Channel1" parents="AudioChannel">

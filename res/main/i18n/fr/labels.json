@@ -42,6 +42,14 @@
 	
 	"amplitude": "Amplitude",
 	
+	"asample": {
+		"fname": "{@file_name}",
+		"duration": "{@length_cut} / {@length}",
+		"head": "{@head_cut} / {@fade_in}",
+		"tail": "{@tail_cut} / {@fade_out}",
+		"misc": ""
+	},
+	
 	"att_ack": "Att",
 	"attack": "Attaque",
 	"attack:db_ms": "Attaque\n(dB, ms)",
