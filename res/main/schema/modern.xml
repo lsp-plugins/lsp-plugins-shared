@@ -211,6 +211,18 @@
 		<label.3.visible value="true" />
 	</style>
 	
+	<style class="AudioSample::ok" parents="AudioSample">
+		<main.color value="green" />
+	</style>
+	
+	<style class="AudioSample::info" parents="AudioSample">
+		<main.color value="yellow" />
+	</style>
+	
+	<style class="AudioSample::error" parents="AudioSample">
+		<main.color value="red" />
+	</style>
+	
 	<style class="AudioSample::Channel1" parents="AudioChannel">
 		<color value="red" />
 		<wave.border.color value="bright_red" />
