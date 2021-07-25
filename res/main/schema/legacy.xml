@@ -560,7 +560,19 @@
 		<border.gap.color value="bg_light"/>
 	</style>
 
-	<style class="Fader" parents="root"></style>
+	<style class="Fader" parents="root">
+		<scale.color value="black" />
+		<scale.border.gradient value="true" />
+		<scale.border.size value="3" />
+		<scale.border.radius value="5" />
+		<scale.width value="-1" />
+		
+		<button.color value="#cccccc" />
+		<button.border.gradient value="true" />
+		<button.border.size value="3" />
+		<button.border.radius value="2" />
+		<button.width value="12" />
+	</style>
 
 	<style class="Graph" parents="root">
 		<glass.visibility value="true"/>
