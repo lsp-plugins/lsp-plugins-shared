@@ -188,76 +188,76 @@
 	<style class="Align" parents="root">
 		<bg.inherit value="true"/>
 	</style>
-	
+
 	<style class="AudioChannel" parents="root">
 	</style>
-	
+
 	<style class="AudioSample" parents="root">
 		<stereo_groups value="true" />
 		<label.0.layout.halign value="-1" />
 		<label.0.layout.valign value="1" />
 		<label.0.visible value="true" />
-		
+
 		<label.1.layout.halign value="1" />
 		<label.1.layout.valign value="1" />
 		<label.1.visible value="true" />
-		
+
 		<label.2.layout.halign value="-1" />
 		<label.2.layout.valign value="-1" />
 		<label.2.visible value="true" />
-		
+
 		<label.3.layout.halign value="1" />
 		<label.3.layout.valign value="-1" />
 		<label.3.visible value="true" />
 	</style>
-	
+
 	<style class="AudioSample::ok" parents="AudioSample">
 		<main.color value="green" />
 	</style>
-	
+
 	<style class="AudioSample::info" parents="AudioSample">
 		<main.color value="yellow" />
 	</style>
-	
+
 	<style class="AudioSample::error" parents="AudioSample">
 		<main.color value="red" />
 	</style>
-	
+
 	<style class="AudioSample::Channel1" parents="AudioChannel">
 		<color value="red" />
 		<wave.border.color value="bright_red" />
 	</style>
-	
+
 	<style class="AudioSample::Channel2" parents="AudioChannel">
 		<color value="orange" />
 		<wave.border.color value="bright_orange" />
 	</style>
-	
+
 	<style class="AudioSample::Channel3" parents="AudioChannel">
 		<color value="yellow" />
 		<wave.border.color value="bright_yellow" />
 	</style>
-	
+
 	<style class="AudioSample::Channel4" parents="AudioChannel">
 		<color value="green" />
 		<wave.border.color value="bright_green" />
 	</style>
-	
+
 	<style class="AudioSample::Channel5" parents="AudioChannel">
 		<color value="cyan" />
 		<wave.border.color value="bright_cyan" />
 	</style>
-	
+
 	<style class="AudioSample::Channel6" parents="AudioChannel">
 		<color value="blue" />
 		<wave.border.color value="bright_blue" />
 	</style>
-	
+
 	<style class="AudioSample::Channel7" parents="AudioChannel">
 		<color value="magenta" />
 		<wave.border.color value="bright_magenta" />
 	</style>
-	
+
 	<style class="AudioSample::Channel8" parents="AudioChannel">
 		<color value="violet" />
 		<wave.border.color value="bright_violet" />
@@ -423,6 +423,35 @@
 		<text.padding.right value="4"/>
 	</style>
 
+	<style class="Button_ON_OFF" parents="Button">
+		<font.size value="10"/>
+		<text.color value="bg"/>
+		<text value="ON"/>
+		<color value="red"/>
+		<hover.color value="mutted_red_sec"/>
+		<down.color value="dark_red"/>
+		<down.hover.color value="dark_red"/>
+		<text.down.color value="bright_red"/>
+		<text.down.hover.color value="bright_red"/>
+		<border.hover.color value="mutted_red_prim"/>
+		<border.down.color value="bright_red"/>
+		<border.down.hover.color value="red"/>
+
+		<border.pressed.size value="2"/>
+		<border.down.size value="2"/>
+		<allocation.hfill value="false"/>
+		<allocation.vfill value="false"/>
+		<text.padding.left value="4"/>
+		<text.padding.right value="4"/>
+		<down value="true"/>
+		<size.constraints.width.min value="50"/>
+		<size.constraints.width.max value="50"/>
+		<size.constraints.height.min value="16"/>
+		<size.constraints.height.max value="16"/>
+	</style>
+
+
+
 	<style class="Button_Text_Gray" parents="Button">
 		<flat value="false"/>
 		<gradient value="false"/>
@@ -453,6 +482,7 @@
 		<text.padding.left value="4"/>
 		<text.padding.right value="4"/>
 	</style>
+
 
 	<style class="Button_Text_Cyan" parents="Button_Text_Gray">
 		<hover.color value="mutted_cyan_sec"/>
