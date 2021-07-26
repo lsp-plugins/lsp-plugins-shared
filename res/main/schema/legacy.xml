@@ -191,42 +191,42 @@
 	<style class="Align" parents="root">
 		<bg.inherit value="true"/>
 	</style>
-	
+
 	<style class="AudioChannel" parents="root">
 	</style>
-	
+
 	<style class="AudioSample" parents="root">
 		<stereo_groups value="true" />
 	</style>
-	
+
 	<style class="AudioSample::Channel1" parents="AudioChannel">
 		<color value="mutted_red_prim" />
 	</style>
-	
+
 	<style class="AudioSample::Channel2" parents="AudioChannel">
 		<color value="mutted_orange_prim" />
 	</style>
-	
+
 	<style class="AudioSample::Channel3" parents="AudioChannel">
 		<color value="mutted_yellow_prim" />
 	</style>
-	
+
 	<style class="AudioSample::Channel4" parents="AudioChannel">
 		<color value="mutted_green_prim" />
 	</style>
-	
+
 	<style class="AudioSample::Channel5" parents="AudioChannel">
 		<color value="mutted_cyan_prim" />
 	</style>
-	
+
 	<style class="AudioSample::Channel6" parents="AudioChannel">
 		<color value="mutted_blue_prim" />
 	</style>
-	
+
 	<style class="AudioSample::Channel7" parents="AudioChannel">
 		<color value="mutted_magenta_prim" />
 	</style>
-	
+
 	<style class="AudioSample::Channel8" parents="AudioChannel">
 		<color value="mutted_violet_prim" />
 	</style>
@@ -389,6 +389,130 @@
 		<allocation.vfill value="false"/>
 		<text.padding.left value="4"/>
 		<text.padding.right value="4"/>
+	</style>
+
+	<style class="Button_Cycle" parents="Button">
+		<font.size value="8"/>
+		<down.colors value="true"/>
+		<flat value="false"/>
+		<gradient value="true"/>
+		<hole value="true"/>
+
+		<color value="mutted_red_prim"/>
+		<hover.color value="dark_red"/>
+		<down.color value="bright_red"/>
+		<down.hover.color value="red"/>
+
+		<text.color value="bg"/>
+		<text.hover.color value="bg"/>
+		<text.down.color value="bg"/>
+		<text.down.hover.color value="bg"/>
+
+		<border.color value="mutted_red_sec"/>
+		<border.hover.color value="mutted_red_prim"/>
+		<border.down.color value="dark_red"/>
+		<border.down.hover.color value="mutted_red_prim"/>
+
+		<border.pressed.size value="2"/>
+		<border.down.size value="2"/>
+		<allocation.hfill value="false"/>
+		<allocation.vfill value="false"/>
+		<text.padding.left value="4"/>
+		<text.padding.right value="4"/>
+		<down value="true"/>
+	</style>
+
+	<style class="Button_On" parents="Button">
+		<font.size value="8"/>
+		<down.colors value="true"/>
+		<flat value="false"/>
+		<gradient value="true"/>
+		<hole value="true"/>
+
+		<color value="mutted_green_prim"/>
+		<hover.color value="dark_green"/>
+		<down.color value="bright_green"/>
+		<down.hover.color value="green"/>
+
+		<text.color value="bg"/>
+		<text.hover.color value="bg"/>
+		<text.down.color value="bg"/>
+		<text.down.hover.color value="bg"/>
+
+		<border.color value="mutted_green_sec"/>
+		<border.hover.color value="mutted_green_prim"/>
+		<border.down.color value="dark_green"/>
+		<border.down.hover.color value="mutted_green_prim"/>
+
+		<border.pressed.size value="2"/>
+		<border.down.size value="2"/>
+		<allocation.hfill value="false"/>
+		<allocation.vfill value="false"/>
+		<text.padding.left value="4"/>
+		<text.padding.right value="4"/>
+		<down value="true"/>
+	</style>
+
+	<style class="Button_Solo" parents="Button">
+		<font.size value="8"/>
+		<down.colors value="true"/>
+		<flat value="false"/>
+		<gradient value="true"/>
+		<hole value="true"/>
+
+		<color value="mutted_yellow_prim"/>
+		<hover.color value="dark_yellow"/>
+		<down.color value="bright_yellow"/>
+		<down.hover.color value="yellow"/>
+
+		<text.color value="bg"/>
+		<text.hover.color value="bg"/>
+		<text.down.color value="bg"/>
+		<text.down.hover.color value="bg"/>
+
+		<border.color value="mutted_yellow_sec"/>
+		<border.hover.color value="mutted_yellow_prim"/>
+		<border.down.color value="dark_yellow"/>
+		<border.down.hover.color value="mutted_yellow_prim"/>
+
+		<border.pressed.size value="2"/>
+		<border.down.size value="2"/>
+		<allocation.hfill value="false"/>
+		<allocation.vfill value="false"/>
+		<text.padding.left value="4"/>
+		<text.padding.right value="4"/>
+		<down value="true"/>
+	</style>
+
+	<style class="Button_Hold" parents="Button">
+		<font.size value="8"/>
+		<down.colors value="true"/>
+		<flat value="false"/>
+		<gradient value="true"/>
+		<hole value="true"/>
+
+		<color value="mutted_cyan_prim"/>
+		<hover.color value="dark_cyan"/>
+		<down.color value="bright_cyan"/>
+		<down.hover.color value="cyan"/>
+
+		<text.color value="bg"/>
+		<text.hover.color value="bg"/>
+		<text.down.color value="bg"/>
+		<text.down.hover.color value="bg"/>
+
+		<border.color value="mutted_cyan_sec"/>
+		<border.hover.color value="mutted_cyan_prim"/>
+		<border.down.color value="dark_cyan"/>
+		<border.down.hover.color value="mutted_cyan_prim"/>
+
+		<border.pressed.size value="2"/>
+		<border.down.size value="2"/>
+		<allocation.hfill value="false"/>
+		<allocation.vfill value="false"/>
+		<text.padding.left value="4"/>
+		<text.padding.right value="4"/>
+		<down value="true"/>
 	</style>
 
 	<style class="Button_Text_Gray" parents="Button">
@@ -566,7 +690,7 @@
 		<scale.border.size value="3" />
 		<scale.border.radius value="5" />
 		<scale.width value="-1" />
-		
+
 		<button.color value="#cccccc" />
 		<button.border.gradient value="true" />
 		<button.border.size value="3" />

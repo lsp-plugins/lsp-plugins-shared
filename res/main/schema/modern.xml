@@ -189,78 +189,77 @@
 		<bg.inherit value="true"/>
 	</style>
 
-	<style class="AudioChannel" parents="root">
-	</style>
+	<style class="AudioChannel" parents="root"></style>
 
 	<style class="AudioSample" parents="root">
-		<stereo_groups value="true" />
-		<label.0.layout.halign value="-1" />
-		<label.0.layout.valign value="1" />
-		<label.0.visible value="true" />
+		<stereo_groups value="true"/>
+		<label.0.layout.halign value="-1"/>
+		<label.0.layout.valign value="1"/>
+		<label.0.visible value="true"/>
 
-		<label.1.layout.halign value="1" />
-		<label.1.layout.valign value="1" />
-		<label.1.visible value="true" />
+		<label.1.layout.halign value="1"/>
+		<label.1.layout.valign value="1"/>
+		<label.1.visible value="true"/>
 
-		<label.2.layout.halign value="-1" />
-		<label.2.layout.valign value="-1" />
-		<label.2.visible value="true" />
+		<label.2.layout.halign value="-1"/>
+		<label.2.layout.valign value="-1"/>
+		<label.2.visible value="true"/>
 
-		<label.3.layout.halign value="1" />
-		<label.3.layout.valign value="-1" />
-		<label.3.visible value="true" />
+		<label.3.layout.halign value="1"/>
+		<label.3.layout.valign value="-1"/>
+		<label.3.visible value="true"/>
 	</style>
 
 	<style class="AudioSample::ok" parents="AudioSample">
-		<main.color value="green" />
+		<main.color value="green"/>
 	</style>
 
 	<style class="AudioSample::info" parents="AudioSample">
-		<main.color value="yellow" />
+		<main.color value="yellow"/>
 	</style>
 
 	<style class="AudioSample::error" parents="AudioSample">
-		<main.color value="red" />
+		<main.color value="red"/>
 	</style>
 
 	<style class="AudioSample::Channel1" parents="AudioChannel">
-		<color value="red" />
-		<wave.border.color value="bright_red" />
+		<color value="red"/>
+		<wave.border.color value="bright_red"/>
 	</style>
 
 	<style class="AudioSample::Channel2" parents="AudioChannel">
-		<color value="orange" />
-		<wave.border.color value="bright_orange" />
+		<color value="orange"/>
+		<wave.border.color value="bright_orange"/>
 	</style>
 
 	<style class="AudioSample::Channel3" parents="AudioChannel">
-		<color value="yellow" />
-		<wave.border.color value="bright_yellow" />
+		<color value="yellow"/>
+		<wave.border.color value="bright_yellow"/>
 	</style>
 
 	<style class="AudioSample::Channel4" parents="AudioChannel">
-		<color value="green" />
-		<wave.border.color value="bright_green" />
+		<color value="green"/>
+		<wave.border.color value="bright_green"/>
 	</style>
 
 	<style class="AudioSample::Channel5" parents="AudioChannel">
-		<color value="cyan" />
-		<wave.border.color value="bright_cyan" />
+		<color value="cyan"/>
+		<wave.border.color value="bright_cyan"/>
 	</style>
 
 	<style class="AudioSample::Channel6" parents="AudioChannel">
-		<color value="blue" />
-		<wave.border.color value="bright_blue" />
+		<color value="blue"/>
+		<wave.border.color value="bright_blue"/>
 	</style>
 
 	<style class="AudioSample::Channel7" parents="AudioChannel">
-		<color value="magenta" />
-		<wave.border.color value="bright_magenta" />
+		<color value="magenta"/>
+		<wave.border.color value="bright_magenta"/>
 	</style>
 
 	<style class="AudioSample::Channel8" parents="AudioChannel">
-		<color value="violet" />
-		<wave.border.color value="bright_violet" />
+		<color value="violet"/>
+		<wave.border.color value="bright_violet"/>
 	</style>
 
 	<style class="Box" parents="root">
@@ -423,19 +422,24 @@
 		<text.padding.right value="4"/>
 	</style>
 
-	<style class="Button_ON_OFF" parents="Button">
-		<font.size value="10"/>
+	<style class="Button_Cycle" parents="Button">
+		<font.size value="8"/>
+		<down.colors value="true"/>
+
+		<color value="mutted_red_prim"/>
+		<hover.color value="dark_red"/>
+		<down.color value="bright_red"/>
+		<down.hover.color value="red"/>
+
 		<text.color value="bg"/>
-		<text value="ON"/>
-		<color value="red"/>
-		<hover.color value="mutted_red_sec"/>
-		<down.color value="dark_red"/>
-		<down.hover.color value="dark_red"/>
-		<text.down.color value="bright_red"/>
-		<text.down.hover.color value="bright_red"/>
+		<text.hover.color value="bg"/>
+		<text.down.color value="bg"/>
+		<text.down.hover.color value="bg"/>
+
+		<border.color value="mutted_red_sec"/>
 		<border.hover.color value="mutted_red_prim"/>
-		<border.down.color value="bright_red"/>
-		<border.down.hover.color value="red"/>
+		<border.down.color value="dark_red"/>
+		<border.down.hover.color value="mutted_red_prim"/>
 
 		<border.pressed.size value="2"/>
 		<border.down.size value="2"/>
@@ -444,13 +448,91 @@
 		<text.padding.left value="4"/>
 		<text.padding.right value="4"/>
 		<down value="true"/>
-		<size.constraints.width.min value="50"/>
-		<size.constraints.width.max value="50"/>
-		<size.constraints.height.min value="16"/>
-		<size.constraints.height.max value="16"/>
 	</style>
 
+	<style class="Button_On" parents="Button">
+		<font.size value="8"/>
+		<down.colors value="true"/>
 
+		<color value="mutted_green_prim"/>
+		<hover.color value="dark_green"/>
+		<down.color value="bright_green"/>
+		<down.hover.color value="green"/>
+
+		<text.color value="bg"/>
+		<text.hover.color value="bg"/>
+		<text.down.color value="bg"/>
+		<text.down.hover.color value="bg"/>
+
+		<border.color value="mutted_green_sec"/>
+		<border.hover.color value="mutted_green_prim"/>
+		<border.down.color value="dark_green"/>
+		<border.down.hover.color value="mutted_green_prim"/>
+
+		<border.pressed.size value="2"/>
+		<border.down.size value="2"/>
+		<allocation.hfill value="false"/>
+		<allocation.vfill value="false"/>
+		<text.padding.left value="4"/>
+		<text.padding.right value="4"/>
+		<down value="true"/>
+	</style>
+
+	<style class="Button_Solo" parents="Button">
+		<font.size value="8"/>
+		<down.colors value="true"/>
+
+		<color value="mutted_yellow_prim"/>
+		<hover.color value="dark_yellow"/>
+		<down.color value="bright_yellow"/>
+		<down.hover.color value="yellow"/>
+
+		<text.color value="bg"/>
+		<text.hover.color value="bg"/>
+		<text.down.color value="bg"/>
+		<text.down.hover.color value="bg"/>
+
+		<border.color value="mutted_yellow_sec"/>
+		<border.hover.color value="mutted_yellow_prim"/>
+		<border.down.color value="dark_yellow"/>
+		<border.down.hover.color value="mutted_yellow_prim"/>
+
+		<border.pressed.size value="2"/>
+		<border.down.size value="2"/>
+		<allocation.hfill value="false"/>
+		<allocation.vfill value="false"/>
+		<text.padding.left value="4"/>
+		<text.padding.right value="4"/>
+		<down value="true"/>
+	</style>
+
+	<style class="Button_Hold" parents="Button">
+		<font.size value="8"/>
+		<down.colors value="true"/>
+
+		<color value="mutted_cyan_prim"/>
+		<hover.color value="dark_cyan"/>
+		<down.color value="bright_cyan"/>
+		<down.hover.color value="cyan"/>
+
+		<text.color value="bg"/>
+		<text.hover.color value="bg"/>
+		<text.down.color value="bg"/>
+		<text.down.hover.color value="bg"/>
+
+		<border.color value="mutted_cyan_sec"/>
+		<border.hover.color value="mutted_cyan_prim"/>
+		<border.down.color value="dark_cyan"/>
+		<border.down.hover.color value="mutted_cyan_prim"/>
+
+		<border.pressed.size value="2"/>
+		<border.down.size value="2"/>
+		<allocation.hfill value="false"/>
+		<allocation.vfill value="false"/>
+		<text.padding.left value="4"/>
+		<text.padding.right value="4"/>
+		<down value="true"/>
+	</style>
 
 	<style class="Button_Text_Gray" parents="Button">
 		<flat value="false"/>
@@ -482,7 +564,6 @@
 		<text.padding.left value="4"/>
 		<text.padding.right value="4"/>
 	</style>
-
 
 	<style class="Button_Text_Cyan" parents="Button_Text_Gray">
 		<hover.color value="mutted_cyan_sec"/>
@@ -621,17 +702,17 @@
 	</style>
 
 	<style class="Fader" parents="root">
-		<scale.color value="kscale" />
-		<scale.border.gradient value="false" />
-		<scale.border.size value="0" />
-		<scale.border.radius value="0" />
-		<scale.width value="8" />
-		
-		<button.color value="bg" />
-		<button.border.gradient value="false" />
-		<button.border.size value="0" />
-		<button.border.radius value="0" />
-		<button.width value="8" />
+		<scale.color value="kscale"/>
+		<scale.border.gradient value="false"/>
+		<scale.border.size value="0"/>
+		<scale.border.radius value="0"/>
+		<scale.width value="8"/>
+
+		<button.color value="bg"/>
+		<button.border.gradient value="false"/>
+		<button.border.size value="0"/>
+		<button.border.radius value="0"/>
+		<button.width value="8"/>
 	</style>
 
 	<style class="Graph" parents="root">
