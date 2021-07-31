@@ -922,6 +922,46 @@
 		<bg.inherit value="true"/>
 		<border.hover.color value="dark_red"/>
 	</style>
+	
+	<!-- Additional styles for midinote -->
+	<style class="MidiNote::PopupWindow" parents="PopupWindow">
+		<padding value="2"/>
+		<bg.color value="bg_light"/>
+	</style>
+
+	<style class="MidiNote::PopupWindow::Box" parents="Box">
+		<orientation value="horizontal"/>
+		<spacing value="6"/>
+	</style>
+
+	<style class="MidiNote::PopupWindow::Input" parents="Edit">
+		<spacing value="2"/>
+		<size.constraints.width.min value="64"/>
+	</style>
+
+	<style class="MidiNote::PopupWindow::ValidInput" parents="Value::PopupWindow::Input">
+		<border.size value="2"/>
+		<color value="bg"/>
+	</style>
+
+	<style class="MidiNote::PopupWindow::InvalidInput" parents="Value::PopupWindow::Input">
+		<text.color value="bright_red"/>
+	</style>
+
+	<style class="MidiNote::PopupWindow::MismatchInput" parents="Value::PopupWindow::Input">
+		<text.color value="bright_yellow"/>
+	</style>
+
+	<style class="MidiNote:PopupWindow::Apply" parents="Button">
+		<padding.left value="10"/>
+		<bg.inherit value="true"/>
+		<border.hover.color value="dark_green"/>
+	</style>
+
+	<style class="MidiNote::PopupWindow::Cancel" parents="Button">
+		<bg.inherit value="true"/>
+		<border.hover.color value="dark_red"/>
+	</style>
 
 	<!-- GreetingDialog widgets -->
 	<style class="GreetingDialog" parents="Window">
