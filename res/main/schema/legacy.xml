@@ -691,6 +691,9 @@
 		<round value="true"/>
 		<gradient value="true"/>
 	</style>
+	
+	<style class="LedMeter" parents="root">
+	</style>
 
 	<style class="ButtonLed" parents="Led">
 		<size.constraints.width.min value="8"/>
