@@ -609,11 +609,6 @@
 		"linear": "Linear",
 		"parabolic": "Parabolic",
 		"sine": "Sine"
-	},
-	
-	"trigger": {
-		"inst": "Instrument",
-		"trig": "Trigger"
 	}
 }
 

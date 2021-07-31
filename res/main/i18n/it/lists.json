@@ -527,11 +527,6 @@
 		},
 		"spectralizer": "Spectralizer",
 		"spectralizer_s": "Spectralizer Stereo"
-	},
-	
-	"trigger": {
-		"inst": "Strumento",
-		"trig": "Trigger"
 	}
 }
 

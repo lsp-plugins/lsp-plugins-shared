@@ -527,11 +527,6 @@
 		},
 		"spectralizer": "Espectralizador",
 		"spectralizer_s": "Espectralizador Estéreo"
-	},
-	
-	"trigger": {
-		"inst": "Instrumento",
-		"trig": "Disparador"
 	}
 }
 

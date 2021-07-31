@@ -562,10 +562,5 @@
 		"linear": "Linéaire",
 		"parabolic": "Parabolique",
 		"sine": "Sinusoïdal"
-	},
-	
-	"trigger": {
-		"inst": "Instrument",
-		"trig": "Déclencheur"
 	}
 }
