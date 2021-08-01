@@ -163,6 +163,11 @@
 
 		<!-- Group -->
 		<text_group value="#1b1c22"/>
+		
+		<!-- Metering -->
+		<meter_red value="#ff0000" />
+		<meter_yellow value="#ffff00" />
+		<meter_normal value="#00ff00" />
 
 	</colors>
 
@@ -693,6 +698,11 @@
 	</style>
 	
 	<style class="LedMeter" parents="root">
+		<text.visible value="true" />
+	</style>
+	
+	<style class="LedMeterChannel" parents="root">
+		<text.visible value="true" />
 	</style>
 
 	<style class="ButtonLed" parents="Led">
