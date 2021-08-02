@@ -385,33 +385,6 @@
 		"none": "None"
 	},
 	
-	"para_eq": {
-		"flt_0:7": "Filters 0-7",
-		"flt_16:23": "Filters 16-23",
-		"flt_24:31": "Filters 24-31",
-		"flt_8:15": "Filters 8-15",
-		
-		"flt_l_0:7": "Filters Left 0-7",
-		"flt_l_16:23": "Filters Left 16-23",
-		"flt_l_24:31": "Filters Left 24-31",
-		"flt_l_8:15": "Filters Left 8-15",
-		
-		"flt_m_0:7": "Filters Mid 0-7",
-		"flt_m_16:23": "Filters Mid 16-23",
-		"flt_m_24:31": "Filters Mid 24-31",
-		"flt_m_8:15": "Filters Mid 8-15",
-		
-		"flt_r_0:7": "Filters Right 0-7",
-		"flt_r_16:23": "Filters Right 16-23",
-		"flt_r_24:31": "Filters Right 24-31",
-		"flt_r_8:15": "Filters Right 8-15",
-		
-		"flt_s_0:7": "Filters Side 0-7",
-		"flt_s_16:23": "Filters Side 16-23",
-		"flt_s_24:31": "Filters Side 24-31",
-		"flt_s_8:15": "Filters Side 8-15"
-	},
-	
 	"profiler": {
 		"algo": {
 			"edt0": "EDT0",

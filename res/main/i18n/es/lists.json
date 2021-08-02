@@ -311,33 +311,6 @@
 		"none": "Ninguno"
 	},
 	
-	"para_eq": {
-		"flt_0:7": "Filtros 0-7",
-		"flt_16:23": "Filtros 16-23",
-		"flt_24:31": "Filtros 24-31",
-		"flt_8:15": "Filtros 8-15",
-		
-		"flt_l_0:7": "Filtros Izquierda 0-7",
-		"flt_l_16:23": "Filtros Izquierda 16-23",
-		"flt_l_24:31": "Filtros Izquierda 24-31",
-		"flt_l_8:15": "Filtros Izquierda 8-15",
-		
-		"flt_m_0:7": "Filtros Medio 0-7",
-		"flt_m_16:23": "Filtros Medio 16-23",
-		"flt_m_24:31": "Filtros Medio 24-31",
-		"flt_m_8:15": "Filtros Medio 8-15",
-		
-		"flt_r_0:7": "Filtros Derecha 0-7",
-		"flt_r_16:23": "Filtros Derecha 16-23",
-		"flt_r_24:31": "Filtros Derecha 24-31",
-		"flt_r_8:15": "Filtros Derecha 8-15",
-		
-		"flt_s_0:7": "Filtros Lateral 0-7",
-		"flt_s_16:23": "Filtros Lateral 16-23",
-		"flt_s_24:31": "Filtros Lateral 24-31",
-		"flt_s_8:15": "Filtros Lateral 8-15"
-	},
-	
 	"profiler": {
 		"algo": {
 			"edt0": "EDT0",
