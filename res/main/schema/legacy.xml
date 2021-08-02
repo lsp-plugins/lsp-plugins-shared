@@ -163,11 +163,17 @@
 
 		<!-- Group -->
 		<text_group value="#1b1c22"/>
-		
-		<!-- Metering -->
-		<meter_red value="#ff0000" />
-		<meter_yellow value="#ffff00" />
-		<meter_normal value="#00ff00" />
+
+		<!-- Channel Left -->
+		 <left_channel value="#ff0000"/>
+		<!-- Channel Right -->
+		<right_channel value="#00ffff"/>
+		<!-- Channel mid -->
+		 <mid_channel value="#0000ff"/>
+		<!-- Channel side -->
+		<side_channel value="#00ff00"/>
+		<!-- Channel dry -->
+		<dry_channel value="#ffff00"/>
 
 	</colors>
 
@@ -287,7 +293,7 @@
 
 	</style>
 
-	<style class="Button_Gray" parents="Button">
+	<style class="Button_gray" parents="Button">
 
 	  <down.color value="bright_gray"/>
 	  <down.hover.color value="gray"/>
@@ -300,7 +306,7 @@
 	  <led.color value="gray"/>
 	</style>
 
-	<style class="Button_Red" parents="Button">
+	<style class="Button_red" parents="Button">
 
 	  <down.color value="bright_red"/>
 	  <down.hover.color value="red"/>
@@ -313,7 +319,7 @@
 	  <led.color value="red"/>
 	</style>
 
-	<style class="Button_Orange" parents="Button">
+	<style class="Button_orange" parents="Button">
 
 	  <down.color value="bright_orange"/>
 	  <down.hover.color value="orange"/>
@@ -326,7 +332,7 @@
 	  <led.color value="orange"/>
 	</style>
 
-	<style class="Button_Yellow" parents="Button">
+	<style class="Button_yellow" parents="Button">
 
 	  <down.color value="bright_yellow"/>
 	  <down.hover.color value="yellow"/>
@@ -339,7 +345,7 @@
 	  <led.color value="yellow"/>
 	</style>
 
-	<style class="Button_Green" parents="Button">
+	<style class="Button_green" parents="Button">
 
 	  <down.color value="bright_green"/>
 	  <down.hover.color value="green"/>
@@ -352,7 +358,7 @@
 	  <led.color value="green"/>
 	</style>
 
-	<style class="Button_Cyan" parents="Button">
+	<style class="Button_cyan" parents="Button">
 
 	  <down.color value="bright_cyan"/>
 	  <down.hover.color value="cyan"/>
@@ -365,7 +371,7 @@
 	  <led.color value="cyan"/>
 	</style>
 
-	<style class="Button_Blue" parents="Button">
+	<style class="Button_blue" parents="Button">
 
 	  <down.color value="bright_blue"/>
 	  <down.hover.color value="blue"/>
@@ -378,7 +384,7 @@
 	  <led.color value="blue"/>
 	</style>
 
-	<style class="Button_Violet" parents="Button">
+	<style class="Button_violet" parents="Button">
 
 	  <down.color value="bright_violet"/>
 	  <down.hover.color value="violet"/>
@@ -391,7 +397,7 @@
 	  <led.color value="violet"/>
 	</style>
 
-	<style class="Button_Magenta" parents="Button">
+	<style class="Button_magenta" parents="Button">
 
 	  <down.color value="bright_magenta"/>
 	  <down.hover.color value="magenta"/>
@@ -404,43 +410,123 @@
 	  <led.color value="magenta"/>
 	</style>
 
-	<style class="Button_Gray_8" parents="Button_Gray">
+	<style class="Button_left" parents="Button">
+		<down.color value="dark_red"/>
+		<down.hover.color value="dark_red"/>
+
+		<text.down.color value="bright_red"/>
+		<text.down.hover.color value="bright_red"/>
+
+		<border.down.color value="bright_red"/>
+		<border.down.hover.color value="red"/>
+		<led.color value="red"/>
+	</style>
+
+	<style class="Button_right" parents="Button">
+		<down.color value="dark_cyan"/>
+		<down.hover.color value="dark_cyan"/>
+
+		<text.down.color value="bright_cyan"/>
+		<text.down.hover.color value="bright_cyan"/>
+
+		<border.down.color value="bright_cyan"/>
+		<border.down.hover.color value="cyan"/>
+		<led.color value="cyan"/>
+	</style>
+
+	<style class="Button_mid" parents="Button">
+		<down.color value="dark_blue"/>
+		<down.hover.color value="dark_magenta"/>
+
+		<text.down.color value="bright_blue"/>
+		<text.down.hover.color value="bright_blue"/>
+
+		<border.down.color value="bright_blue"/>
+		<border.down.hover.color value="blue"/>
+		<led.color value="blue"/>
+	</style>
+
+	<style class="Button_side" parents="Button">
+		<down.color value="dark_green"/>
+		<down.hover.color value="dark_green"/>
+
+		<text.down.color value="bright_green"/>
+		<text.down.hover.color value="bright_green"/>
+
+		<border.down.color value="bright_green"/>
+		<border.down.hover.color value="green"/>
+		<led.color value="green"/>
+	</style>
+
+	<style class="Button_dry" parents="Button">
+		<down.color value="dark_yellow"/>
+		<down.hover.color value="dark_yellow"/>
+
+		<text.down.color value="bright_yellow"/>
+		<text.down.hover.color value="bright_yellow"/>
+
+		<border.down.color value="bright_yellow"/>
+		<border.down.hover.color value="yellow"/>
+		<led.color value="yellow"/>
+	</style>
+
+	<style class="Button_gray_8" parents="Button_gray">
 		<font.size value="8"/>
 	</style>
 
-	<style class="Button_Red_8" parents="Button_Red">
+	<style class="Button_red_8" parents="Button_red">
 		<font.size value="8"/>
 	</style>
 
-	<style class="Button_Green_8" parents="Button_Green">
+	<style class="Button_green_8" parents="Button_green">
 		<font.size value="8"/>
 	</style>
 
-	<style class="Button_Orange_8" parents="Button_Orange">
+	<style class="Button_orange_8" parents="Button_orange">
 		<font.size value="8"/>
 	</style>
 
-	<style class="Button_Yellow_8" parents="Button_Yellow">
+	<style class="Button_yellow_8" parents="Button_yellow">
 		<font.size value="8"/>
 	</style>
 
-	<style class="Button_Cyan_8" parents="Button_Cyan">
+	<style class="Button_cyan_8" parents="Button_cyan">
 		<font.size value="8"/>
 	</style>
 
-	<style class="Button_Blue_8" parents="Button_Blue">
+	<style class="Button_blue_8" parents="Button_blue">
 		<font.size value="8"/>
 	</style>
 
-	<style class="Button_Violet_8" parents="Button_Violet">
+	<style class="Button_violet_8" parents="Button_violet">
 		<font.size value="8"/>
 	</style>
 
-	<style class="Button_Magenta_8" parents="Button_Magenta">
+	<style class="Button_magenta_8" parents="Button_magenta">
 		<font.size value="8"/>
 	</style>
 
-	<style class="Button_Cycle" parents="Button_Gray_8">
+	<style class="Button_left_8" parents="Button_left">
+		<font.size value="8"/>
+	</style>
+
+	<style class="Button_right_8" parents="Button_right">
+		<font.size value="8"/>
+	</style>
+
+	<style class="Button_side_8" parents="Button_side">
+		<font.size value="8"/>
+	</style>
+
+	<style class="Button_mid_8" parents="Button_mid">
+		<font.size value="8"/>
+	</style>
+
+	<style class="Button_dry_8" parents="Button_dry">
+		<font.size value="8"/>
+	</style>
+
+	<style class="Button_Cycle" parents="Button_gray_8">
 		<down.color value="dark_red"/>
 		<down.hover.color value="dark_red"/>
 
@@ -696,14 +782,6 @@
 		<round value="true"/>
 		<gradient value="true"/>
 	</style>
-	
-	<style class="LedMeter" parents="root">
-		<text.visible value="true" />
-	</style>
-	
-	<style class="LedMeterChannel" parents="root">
-		<text.visible value="true" />
-	</style>
 
 	<style class="ButtonLed" parents="Led">
 		<size.constraints.width.min value="8"/>
@@ -912,7 +990,7 @@
 		<bg.inherit value="true"/>
 		<border.hover.color value="dark_red"/>
 	</style>
-	
+
 	<!-- Additional styles for midinote -->
 	<style class="MidiNote::PopupWindow" parents="PopupWindow">
 		<padding value="2"/>
