@@ -39,13 +39,6 @@
 		"on": "вкл"
 	},
 
-	"compressor": {
-		"down_ward": "Пониж",
-		"downward": "Понижающий",
-		"up_ward": "Повыш",
-		"upward": "Повышающий"
-	},
-	
 	"crossover": {
 		"sel": {
 			"left": "Процессор (левый)",

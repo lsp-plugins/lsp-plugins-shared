@@ -39,13 +39,6 @@
 		"on": "on"
 	},
 
-	"compressor": {
-		"down_ward": "Down",
-		"downward": "Downward",
-		"up_ward": "Up",
-		"upward": "Upward"
-	},
-	
 	"crossover": {
 		"sel": {
 			"left": "Processor Left",

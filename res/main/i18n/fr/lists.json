@@ -4,13 +4,6 @@
 		"on": "on"
 	},
 
-	"compressor": {
-		"down_ward": "Baisse",
-		"downward": "À la baisse",
-		"up_ward": "Hausse",
-		"upward": "À la hausse"
-	},
-	
 	"crossover": {
 		"sel": {
 			"left": "Processeur gauche",
