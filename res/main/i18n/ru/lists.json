@@ -69,13 +69,6 @@
         }
 	},
 	
-	"dyna_proc": {
-		"left": "Левый",
-		"middle": "Центр",
-		"right": "Правый",
-		"side": "Сторона"
-	},
-	
 	"expander": {
 		"down_ward": "Пониж",
 		"downward": "Понижающий",

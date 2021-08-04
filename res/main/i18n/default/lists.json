@@ -69,13 +69,6 @@
         }
 	},
 	
-	"dyna_proc": {
-		"left": "Left",
-		"middle": "Middle",
-		"right": "Right",
-		"side": "Side"
-	},
-	
 	"expander": {
 		"down_ward": "Down",
 		"downward": "Downward",

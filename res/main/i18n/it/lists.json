@@ -18,13 +18,6 @@
         }
 	},
 	
-	"dyna_proc": {
-		"left": "Sinistra",
-		"middle": "Centro",
-		"right": "Destra",
-		"side": "Laterale"
-	},
-	
 	"expander": {
 		"down_ward": "Giù",
 		"downward": "Verso il basso",

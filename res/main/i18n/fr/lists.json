@@ -34,13 +34,6 @@
         }
 	},
 	
-	"dyna_proc": {
-		"left": "Gauche",
-		"middle": "Milieu",
-		"right": "Droite",
-		"side": "Côté"
-	},
-	
 	"expander": {
 		"down_ward": "Baisse",
 		"downward": "À la baisse",
