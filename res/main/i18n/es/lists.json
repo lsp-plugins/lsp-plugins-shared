@@ -150,32 +150,6 @@
 		"t8": "Pista 8"
 	},
 	
-	"graph_eq": {
-		"bands_0:15": "Bandas 0-15",
-		"bands_16:31": "Bandas 16-31",
-		"bands_l": "Bandas Izquierda",
-		"bands_l_0:15": "Bandas Izquierda 0-15",
-		"bands_l_16:31": "Bandas Izquierda 16-31",
-		"bands_m": "Bandas Medio",
-		"bands_m_0:15": "Bandas Medio 0-15",
-		"bands_m_16:31": "Bandas Medio 16-31",
-		"bands_r": "Bandas Derecha",
-		"bands_r_0:15": "Bandas Derecha 0-15",
-		"bands_r_16:31": "Bandas Derecha 16-31",
-		"bands_s": "Bandas Lateral",
-		"bands_s_0:15": "Bandas Lateral 0-15",
-		"bands_s_16:31": "Bandas Lateral 16-31",
-		
-		"slope": {
-			"bt48": "BT48",
-			"bt72": "BT72",
-			"bt96": "BT96",
-			"mt48": "MT48",
-			"mt72": "MT72",
-			"mt96": "MT96"
-		}
-	},
-	
 	"limiter": {
         "exp_duck": "Exp Atenuado",
         "exp_tail": "Exp Cola",
