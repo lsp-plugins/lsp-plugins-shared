@@ -156,23 +156,6 @@
 		}
 	},
 	
-	"limiter": {
-        "exp_duck": "Exp duck",
-        "exp_tail": "Exp queue",
-        "exp_thin": "Exp mince",
-        "exp_wide": "Exp large",
-        
-		"herm_duck": "Herm duck",
-        "herm_tail": "Herm queue",
-        "herm_thin": "Herm mince",
-        "herm_wide": "Herm large",
-
-        "line_duck": "Ligne duck",
-        "line_tail": "Ligne queue",
-        "line_thin": "Ligne mince",
-        "line_wide": "Ligne large"
-	},
-	
 	"mb_comp": {
 		"band0": "Bande 0",
 		"band1": "Bande 1",

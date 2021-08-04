@@ -129,23 +129,6 @@
 		"t8": "Pista 8"
 	},
 	
-	"limiter": {
-        "exp_duck": "Exp Atenuado",
-        "exp_tail": "Exp Cola",
-        "exp_thin": "Exp Estrecho",
-        "exp_wide": "Exp Ancho",
-        
-		"herm_duck": "Herm Atenuado",
-        "herm_tail": "Herm Cola",
-        "herm_thin": "Herm Estrecho",
-        "herm_wide": "Herm Ancho",
-
-        "line_duck": "Line Atenuado",
-        "line_tail": "Line Cola",
-        "line_thin": "Line Estrecho",
-        "line_wide": "Line Ancho"
-	},
-	
 	"mb_comp": {
 		"band0": "Banda 0",
 		"band1": "Banda 1",

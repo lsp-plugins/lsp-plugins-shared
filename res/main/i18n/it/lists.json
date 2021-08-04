@@ -129,23 +129,6 @@
 		"t8": "Traccia 8"
 	},
 	
-	"limiter": {
-        "exp_duck": "Exp Duck",
-        "exp_tail": "Exp Tail",
-        "exp_thin": "Exp Thin",
-        "exp_wide": "Exp Wide",
-        
-		"herm_duck": "Herm Duck",
-        "herm_tail": "Herm Tail",
-        "herm_thin": "Herm Thin",
-        "herm_wide": "Herm Wide",
-
-        "line_duck": "Line Duck",
-        "line_tail": "Line Tail",
-        "line_thin": "Line Thin",
-        "line_wide": "Line Wide"
-	},
-	
 	"mb_comp": {
 		"band0": "Banda 0",
 		"band1": "Banda 1",
