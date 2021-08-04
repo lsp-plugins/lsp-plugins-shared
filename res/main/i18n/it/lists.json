@@ -18,13 +18,6 @@
         }
 	},
 	
-	"expander": {
-		"down_ward": "Giù",
-		"downward": "Verso il basso",
-		"up_ward": "Su",
-		"upward": "Verso l'alto'"
-	},
-	
 	"eq": {
 		"flt": {
 			"allpass": "Passa tutto",

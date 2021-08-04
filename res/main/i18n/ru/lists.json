@@ -69,13 +69,6 @@
         }
 	},
 	
-	"expander": {
-		"down_ward": "Пониж",
-		"downward": "Понижающий",
-		"up_ward": "Повыш",
-		"upward": "Повышающий"
-	},
-	
 	"eq": {
 		"flt": {
 			"allpass": "ППФ",

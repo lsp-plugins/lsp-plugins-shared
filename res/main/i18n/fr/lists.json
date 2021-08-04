@@ -34,13 +34,6 @@
         }
 	},
 	
-	"expander": {
-		"down_ward": "Baisse",
-		"downward": "À la baisse",
-		"up_ward": "Hausse",
-		"upward": "À la hausse"
-	},
-	
 	"eq": {
 		"flt": {
 			"allpass": "Passe-tout",
