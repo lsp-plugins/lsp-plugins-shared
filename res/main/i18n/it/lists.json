@@ -409,19 +409,6 @@
 		"uniform": "Uniforme"
 	},
 	
-	"slap_delay": {
-		"lines_0:3": "Linee di Ritardo 0-3",
-		"lines_4:7": "Linee di Ritardo 4-7",
-		"lines_8:11": "Linee di Ritardo 8-11",
-		"lines_12:15": "Linee di Ritardo 12-15",
-		"modes": {
-			"distance": "Distanza",
-			"notes": "Note",
-			"off": "Off",
-			"time": "Tempo"
-		}
-	},
-	
 	"spectrum": {
 		"analyzer": "Analizzatore",
 		"analyzer_s": "Analizzatore Stereo",

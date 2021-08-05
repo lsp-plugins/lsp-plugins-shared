@@ -409,19 +409,6 @@
 		"uniform": "Uniforme"
 	},
 	
-	"slap_delay": {
-		"lines_0:3": "Líneas Delay 0-3",
-		"lines_4:7": "Líneas Delay 4-7",
-		"lines_8:11": "Líneas Delay 8-11",
-		"lines_12:15": "Líneas Delay 12-15",
-		"modes": {
-			"distance": "Distancia",
-			"notes": "Notas",
-			"off": "Off",
-			"time": "Tiempo"
-		}
-	},
-	
 	"spectrum": {
 		"analyzer": "Analizador",
 		"analyzer_s": "Analizador Estéreo",
