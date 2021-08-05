@@ -190,28 +190,6 @@
 		"modern": "Moderno"
 	},
 	
-	"oscillator": {
-		"add": "Añadir",
-        "bl_rect": "Banda Limitada Rectangular",
-        "bl_saw": "Banda Limitada Sierra",
-        "bl_trap": "Banda Limitada Trapezoidal",
-        "bl_pulse": "Banda Limitada Tren de Impulsos",
-        "bl_para": "Banda Limitada Parabólica",
-        "cos": "Coseno",
-        "mul": "Multiplica",
-        "pulse": "Tren de Impulsos",
-        "para": "Parabólica",
-        "rect": "Rectangular",
-        "rep": "Reemplazar",
-        "saw": "Sierra",
-        "sin": "Seno",
-        "sqr_sin": "Seno Cuadrado",
-        "sqr_cos": "Coseno Cuadrado",
-        "trap": "Trapezoidal",
-        "wave_dc": "Onda DC",
-        "zero_dc": "Cero DC"
-	},
-	
 	"oversampler": {
 		"full": {
 			"2x2": "Completo x2(2L)",

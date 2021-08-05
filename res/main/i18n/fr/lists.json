@@ -217,28 +217,6 @@
 		"modern": "Moderne"
 	},
 	
-	"oscillator": {
-		"add": "Ajouter",
-        "bl_rect": "Bande limité rectangulaire",
-        "bl_saw": "Bande limité dents de scie",
-        "bl_trap": "Bande limité trapézoïde",
-        "bl_pulse": "Bande limité train d'impulsions",
-        "bl_para": "Bande limité parabolique",
-        "cos": "Cosinus",
-        "mul": "Multiplie",
-        "pulse": "Train d'impulsions",
-        "para": "Parabolique",
-        "rect": "Rectangulaire",
-        "rep": "Remplacer",
-        "saw": "Dents de scie",
-        "sin": "Sinusoïde",
-        "sqr_sin": "Sinusoïde carrée",
-        "sqr_cos": "Cosinus carré",
-        "trap": "Trapézoïde",
-        "wave_dc": "Onde DC",
-        "zero_dc": "Zéro DC"
-	},
-	
 	"oversampler": {
 		"full": {
 			"2x2": "Complet x2(2L)",

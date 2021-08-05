@@ -190,28 +190,6 @@
 		"modern": "Moderno"
 	},
 	
-	"oscillator": {
-		"add": "Sovrapponi",
-        "bl_rect": "Rettangolare Passa Banda ",
-        "bl_saw": "Dente di Sega Passa Banda ",
-        "bl_trap": "Trapezoidale Passa Banda ",
-        "bl_pulse": "Treno di Impulsi Passa Banda ",
-        "bl_para": "Parabolico Passa Banda",
-        "cos": "Coseno",
-        "mul": "Moltiplica",
-        "pulse": "Treno di Impulsi",
-        "para": "Parabolico",
-        "rect": "Rettangolare",
-        "rep": "Rimpiazza",
-        "saw": "Dente di Sega",
-        "sin": "Seno",
-        "sqr_sin": "Seno Quadrato",
-        "sqr_cos": "Coseno Quadrato",
-        "trap": "Trapezoidale",
-        "wave_dc": "DC dell'Onda'",
-        "zero_dc": "Zero DC"
-	},
-	
 	"oversampler": {
 		"full": {
 			"2x2": "Completo x2(2L)",
