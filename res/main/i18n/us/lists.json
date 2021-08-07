@@ -283,34 +283,6 @@
 		"none": "None"
 	},
 	
-	"profiler": {
-		"algo": {
-			"edt0": "EDT0",
-			"edt1": "EDT1",
-			"rt10": "RT10",
-			"rt20": "RT20",
-			"rt30": "RT30"
-		},
-		"fmt": {
-			"lti_all": "LTI All (*.wav)",
-			"lti_auto": "Auto (*.wav)",
-			"lti_coarse": "LTI Coarse (*.wav)",
-			"lti_rt": "LTI RT (*.wav)",
-			"all": "All Info (*.lspc)"
-		},
-		"st": {
-			"cal": "Calibration",
-			"conv": "Convolving",
-			"det": "Latency Detection",
-			"idle": "Idle",
-			"post": "Postprocessing",
-			"pre": "Preprocessing",
-			"rec": "Recording",
-			"save": "Saving",
-			"wait": "Waiting"
-		}
-	},
-	
 	"room_bld": {
 		"capt": {
 			"ab": "AB",

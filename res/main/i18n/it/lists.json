@@ -209,34 +209,6 @@
 		"none": "None"
 	},
 	
-	"profiler": {
-		"algo": {
-			"edt0": "EDT0",
-			"edt1": "EDT1",
-			"rt10": "RT10",
-			"rt20": "RT20",
-			"rt30": "RT30"
-		},
-		"fmt": {
-			"lti_all": "LTI Completo (*.wav)",
-			"lti_auto": "Auto (*.wav)",
-			"lti_coarse": "LTI Approssimato (*.wav)",
-			"lti_rt": "LTI RT (*.wav)",
-			"all": "Tutti i dati (*.lspc)"
-		},
-		"st": {
-			"cal": "Calibrazione",
-			"conv": "Convoluzione",
-			"det": "Misura latenza",
-			"idle": "Attesa",
-			"post": "Postprocessamento",
-			"pre": "Preprocessamento",
-			"rec": "Cattura",
-			"save": "Salvataggio",
-			"wait": "Attesa"
-		}
-	},
-	
 	"room_bld": {
 		"capt": {
 			"ab": "AB",
