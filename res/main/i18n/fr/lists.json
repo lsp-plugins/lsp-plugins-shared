@@ -4,22 +4,6 @@
 		"on": "on"
 	},
 
-	"crossover": {
-		"sel": {
-			"left": "Processeur gauche",
-			"mid": "Processeur centre",
-			"right": "Processeur droit",
-			"side": "Processeur côté"
-		},
-		"slope": {
-			"24dbo": "24 dB/oct",
-			"48dbo": "48 dB/oct",
-			"72dbo": "72 dB/oct",
-			"96dbo": "96 dB/oct",
-			"off": "Off"
-		}
-	},
-	
 	"dither": {
         "none": "Aucun",
         "bits": {
