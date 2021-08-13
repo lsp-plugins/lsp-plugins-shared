@@ -1,18 +1,232 @@
 {
-	"crossover": {
-		"sel": {
-			"left": "Processor Left",
-			"mid": "Processor Middle",
-			"right": "Processor Right",
-			"side": "Processor Side"
+	"bool": {
+		"off": "off",
+		"on": "on"
+	},
+	
+	"dither": {
+        "none": "None",
+        "bits": {
+	        "11": "11bit",
+	        "12": "12bit",
+	        "15": "15bit",
+	        "16": "16bit",
+	        "23": "23bit",
+	        "24": "24bit",
+	        "7": "7bit",
+	        "8": "8bit"
+        }
+	},
+	
+	"eq": {
+		"flt": {
+			"allpass": "Allpass",
+			"allpass2": "Allpass2",
+			"bandpass": "Bandpass",
+			"bell": "Bell",
+			"envelope": "Envelope",
+			"hipass": "Hi-pass",
+			"hishelf": "Hi-shelf",
+			"ladpass": "Ladder-pass",
+			"ladrej": "Ladder-rej",
+			"lopass": "Lo-pass",
+			"loshelf": "Lo-shelf",
+			"notch": "Notch",
+			"off": "Off",
+			"resonance": "Resonance"
+		},
+		"mode": {
+			"rlc_bt": "RLC (BT)",
+			"rlc_mt": "RLC (MT)",
+			"bwc_bt": "BWC (BT)",
+			"bwc_mt": "BWC (MT)",
+			"lrx_bt": "LRX (BT)",
+			"lrx_mt": "LRX (MT)",
+			"apo_dr": "APO (DR)"
+		},
+		"pos": {
+		    "post_eq": "Post-eq",
+			"pre_eq": "Pre-eq"
 		},
 		"slope": {
+			"6dbo": "6 dB/oct",
+			"12dbo": "12 dB/oct",
+			"18dbo": "18 dB/oct",
 			"24dbo": "24 dB/oct",
-			"48dbo": "48 dB/oct",
-			"72dbo": "72 dB/oct",
-			"96dbo": "96 dB/oct",
-			"off": "Off"
+			"30dbo": "30 dB/oct",
+			"36dbo": "36 dB/oct",
+			"off": "Off",
+			"x1": "x1",
+			"x2": "x2",
+			"x3": "x3",
+			"x4": "x4"
+		},
+		"type": {
+			"fir": "FIR",
+			"fft": "FFT",
+			"iir": "IIR",
+			"spm": "SPM"
 		}
+	},
+	
+	"fft": {
+		"env": {
+			"blue": "Blue noise",
+			"brown": "Brown noise",
+			"falloff_4_5db": "4.5 dB/oct fall-off",
+			"pink": "Pink noise",
+			"raise_4_5db": "4.5 dB/oct raise",
+			"violet": "Violet noise",
+			"white": "White noise"
+		},
+		"wnd": {
+			"bartlett_fejer": "Bartlett-Fejer",
+			"bartlett_hann": "Bartlett-Hann",
+			"blackman": "Blackman",
+			"blackman_harris": "Blackman-Harris",
+			"blackman_nuttall": "Blackman-Nuttall",
+			"cosine": "Cosine",
+			"cubic": "Cubic Hermite Spline",
+			"flat_top": "Flat top",
+			"gauss": "Gaussian",
+			"hamming": "Hamming",
+			"hann": "Hann",
+			"hann_poisson": "Hann-Poisson",
+			"lanczos": "Lanczos",
+			"nuttall": "Nuttall",
+			"parzen": "Parzen",
+			"poisson": "Poisson",
+			"rectangular": "Rectangular",
+			"sqr_cosine": "Squared cosine",
+			"triangular": "Triangular",
+			"tukey": "Tukey",
+			"welch": "Welch"
+		}
+	},
+	
+	"file": {
+		"f1": "File 1",
+		"f1l": "File 1 Left",
+		"f1r": "File 1 Right",
+		"f2": "File 2",
+		"f2l": "File 2 Left",
+		"f2r": "File 2 Right",
+		"f3": "File 3",
+		"f3l": "File 3 Left",
+		"f3r": "File 3 Right",
+		"f4": "File 4",
+		"f4l": "File 4 Left",
+		"f4r": "File 4 Right",
+		
+		"left": "Left",
+		"none": "None",
+		"right": "Right",
+		
+		"t1": "Track 1",
+		"t2": "Track 2",
+		"t3": "Track 3",
+		"t4": "Track 4",
+		"t5": "Track 5",
+		"t6": "Track 6",
+		"t7": "Track 7",
+		"t8": "Track 8"
+	},
+	
+	"metering": {
+		"fft": {
+			"off": "Off",
+			"post_eq": "Post-eq",
+			"pre_eq": "Pre-eq"
+		}
+	},
+	
+	"multiband": {
+		"classic": "Classic",
+		"modern": "Modern"
+	},
+	
+	"oversampler": {
+		"full": {
+			"2x2": "Full x2(2L)",
+			"2x3": "Full x2(3L)",
+			"3x2": "Full x3(2L)",
+			"3x3": "Full x3(3L)",
+			"4x2": "Full x4(2L)",
+			"4x3": "Full x4(3L)",
+			"6x2": "Full x6(2L)",
+			"6x3": "Full x6(3L)",
+			"8x2": "Full x8(2L)",
+			"8x3": "Full x8(3L)"
+		},
+		"half": {
+			"2x2": "Half x2(2L)",
+			"2x3": "Half x2(3L)",
+			"3x2": "Half x3(2L)",
+			"3x3": "Half x3(3L)",
+			"4x2": "Half x4(2L)",
+			"4x3": "Half x4(3L)",
+			"6x2": "Half x6(2L)",
+			"6x3": "Half x6(3L)",
+			"8x2": "Half x8(2L)",
+			"8x3": "Half x8(3L)"
+		},
+		"normal": {
+			"2x2": "x2(2L)",
+			"2x3": "x2(3L)",
+			"3x2": "x3(2L)",
+			"3x3": "x3(3L)",
+			"4x2": "x4(2L)",
+			"4x3": "x4(3L)",
+			"6x2": "x6(2L)",
+			"6x3": "x6(3L)",
+			"8x2": "x8(2L)",
+			"8x3": "x8(3L)",
+
+			"x2": "x2",
+			"x3": "x3",
+			"x4": "x4",
+			"x6": "x6",
+			"x8": "x8"
+		},
+		"none": "None"
+	},
+	
+	"sidechain": {
+		"boost": {
+			"brown_bt": "Brown BT",
+			"brown_mt": "Brown MT",
+			"none": "None",
+			"pink_bt": "Pink BT",
+			"pink_mt": "Pink MT"
+		},
+		"external": "External",
+		"feed_back": "Feed-back",
+		"feed_forward": "Feed-forward",
+		"internal": "Internal",
+		"left": "Left",
+		"lowpass": "Low-Pass",
+		"middle": "Middle",
+		"peak": "Peak",
+		"right": "Right",
+		"rms": "RMS",
+		"side": "Side",
+		"uniform": "Uniform"
+	},
+	
+	"spectrum": {
+		"analyzer": "Analyzer",
+		"analyzer_s": "Analyzer Stereo",
+		"mastering": "Mastering",
+		"mastering_s": "Mastering Stereo",
+		"spc": {
+			"color": "Color",
+			"fog": "Fog",
+			"lightness": "Lightness",
+			"lightning": "Lightning",
+			"rainbow": "Rainbow"
+		},
+		"spectralizer": "Spectralizer",
+		"spectralizer_s": "Spectralizer Stereo"
 	}
 }
 
