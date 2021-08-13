@@ -390,14 +390,6 @@
 		},
 		"spectralizer": "Spectralizer",
 		"spectralizer_s": "Spectralizer Stereo"
-	},
-	
-	"surge": {
-		"cubic": "Cubic",
-		"gaussian": "Gaussian",
-		"linear": "Linear",
-		"parabolic": "Parabolic",
-		"sine": "Sine"
 	}
 }
 
