@@ -147,15 +147,6 @@
 		"t8": "Track 8"
 	},
 	
-	"lcomp": {
-		"curve": {
-			"flat": "Plat",
-			"fm": "Fletcher-Munson",
-			"iso226": "ISO 226:2003",
-			"rd": "Robinson-Dadson"
-		}
-	},
-	
 	"metering": {
 		"fft": {
 			"off": "Off",
