@@ -636,6 +636,7 @@
 
 	<style class="GraphText" parents="root">
 		<padding value="2"/>
+		<color value="graph_prim" />
 	</style>
 
 	<style class="Grid" parents="root">
