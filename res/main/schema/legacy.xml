@@ -164,17 +164,17 @@
 		<!-- Group -->
 		<text_group value="#1b1c22"/>
 
-		<!-- Channel Left -->
-		 <left_channel value="#ff0000"/>
-		<!-- Channel Right -->
+		<!-- Audio Channels -->
+		<left_channel value="#ff0000"/>
 		<right_channel value="#00ffff"/>
-		<!-- Channel mid -->
-		 <mid_channel value="#0000ff"/>
-		<!-- Channel side -->
+		<mid_channel value="#0000ff"/>
 		<side_channel value="#00ff00"/>
-		<!-- Channel dry -->
 		<dry_channel value="#ffff00"/>
 
+		<!-- Metering -->
+		<meter_red value="#ff0000" />
+		<meter_yellow value="#ffff00" />
+		<meter_normal value="#00ff00" />
 	</colors>
 
 	<!-- Root style -->
@@ -768,6 +768,14 @@
 		<allocation.hfill value="false"/>
 		<allocation.vfill value="false"/>
 		<bg.inherit value="true"/>
+	</style>
+
+	<style class="LedMeter" parents="root">
+		<text.visible value="true" />
+	</style>
+
+	<style class="LedMeterChannel" parents="root">
+		<text.visible value="true" />
 	</style>
 
 	<style class="MultiLabel" parents="root">
