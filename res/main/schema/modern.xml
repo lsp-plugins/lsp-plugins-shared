@@ -638,6 +638,18 @@
 		<smooth value="false"/>
 		<color value="graph_sec"/>
 	</style>
+	
+	<style class="GraphDot" parents="root">
+		<smooth value="true"/>
+		<border.size value="10" />
+		<size value="3" />
+		<color value="cyan"/>
+		<border.color value="cyan"/>
+		<hover.size value="3" />
+		<hover.border.size value="14" />
+		<hover.color value="cyan"/>
+		<hover.border.color value="cyan"/>
+	</style>
 
 	<style class="GraphMarker" parents="root">
 		<smooth value="false"/>
