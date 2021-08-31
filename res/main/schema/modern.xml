@@ -162,8 +162,12 @@
 		<text_group value="#9ea6d1"/>
 
 		<!-- Audio Channels -->
+		<left_channel_in value="#ba2c33"/>
+		<right_channel_in value="#39ae2f"/>
 		<left_channel value="#ba2c33"/>
 		<right_channel value="#39ae2f"/>
+		<mid_channel_in value="#1f62d6"/>
+		<side_channel_in value="#b22359"/>
 		<mid_channel value="#1f62d6"/>
 		<side_channel value="#b22359"/>
 		<dry_channel value="#b69a22"/>
