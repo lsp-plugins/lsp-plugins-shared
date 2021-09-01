@@ -44,9 +44,9 @@
 	
 	"asample": {
 		"fname": "{@file_name}",
-		"duration": "{@length_cut} / {@length}",
-		"head": "{@head_cut} / {@fade_in}",
-		"tail": "{@tail_cut} / {@fade_out}",
+		"duration": "{@length_cut%.1f} / {@length%.1f}",
+		"head": "{@head_cut%.1f} / {@fade_in%.1f}",
+		"tail": "{@tail_cut%.1f} / {@fade_out%.1f}",
 		"misc": ""
 	},
 	
