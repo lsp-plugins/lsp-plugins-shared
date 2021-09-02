@@ -876,6 +876,10 @@
 		<text.color value="text_prim"/>
 		<text.active.color value="bg_light"/>
 	</style>
+	
+	<style class="TempoTap" parents="Button">
+		<mode value="trigger" />
+	</style>
 
 	<style class="LabelChannel" parents="Label">
 		<bg.inherit value="false"/>
