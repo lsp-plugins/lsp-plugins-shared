@@ -265,22 +265,21 @@
 		<bg.inherit value="true"/>
 
 		<border.color value="dark_gray"/>
-	  <border.hover.color value="gray"/>
-	  <border.down.color value="bright_gray"/>
-	  <border.down.hover.color value="gray"/>
+		<border.hover.color value="gray"/>
+		<border.down.color value="bright_gray"/>
+		<border.down.hover.color value="gray"/>
 
 		<color value="bg_light"/>
-	  <hover.color value="dark_gray"/>
-	  <down.color value="bright_gray"/>
-	  <down.hover.color value="dark_gray"/>
+		<hover.color value="dark_gray"/>
+		<down.color value="bright_gray"/>
+		<down.hover.color value="dark_gray"/>
 
 		<text.color value="bg"/>
-	  <text.hover.color value="bg"/>
+		<text.hover.color value="bg"/>
 		<text.down.color value="bg"/>
 		<text.down.hover.color value="bg"/>
 
 		<pointer value="hand"/>
-		<down value="true"/>
 		<down.colors value="true"/>
 		<flat value="true"/>
 		<allocation.hfill value="false"/>

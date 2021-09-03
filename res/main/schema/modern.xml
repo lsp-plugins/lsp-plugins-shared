@@ -312,7 +312,6 @@
 		<text.down.hover.color value="bright_gray"/>
 
 		<pointer value="hand"/>
-		<down value="true"/>
 		<down.colors value="true"/>
 		<flat value="false"/>
 		<allocation.hfill value="false"/>
