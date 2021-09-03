@@ -29,7 +29,7 @@
 		<blue value="#1c6ff5"/>
 		<violet value="#b600ff"/>
 		<magenta value="#cc2264"/>
-		<gray value="#767985"/>
+		<gray value="#6f7185"/>
 
 		<bright_red value="#fe343b"/>
 		<bright_orange value="#fe8f37"/>
@@ -39,7 +39,7 @@
 		<bright_blue value="#2287ff"/>
 		<bright_violet value="#9c33ff"/>
 		<bright_magenta value="#f62877"/>
-		<bright_gray value="#868a98"/>
+		<bright_gray value="#808299"/>
 
 		<dark_red value="#ab292d"/>
 		<dark_orange value="#b2601e"/>
@@ -49,7 +49,7 @@
 		<dark_blue value="#1658c0"/>
 		<dark_violet value="#6421ec"/>
 		<dark_magenta value="#a21d50"/>
-		<dark_gray value="#666873"/>
+		<dark_gray value="#606173"/>
 
 		<mutted_red value="#ba2c33"/>
 		<mutted_orange value="#be692a"/>
