@@ -152,14 +152,13 @@
 
 		<!-- Graph -->
 		<bg_graph value="#1f2025"/>
-		<mesh_graph value="#00c0ff"/>
-		<graph_prim value="#a0a0a0"/>
-		<graph_sec value="#8d8d8d"/>
-		<graph_alt_1 value="#7a7a7a"/>
-		<graph_alt_2 value="#636363"/>
-		<graph_alt_3 value="#4f4f4f"/>
-		<graph_alt_4 value="#3f3f3f"/>
-		<graph_alt_5 value="#2c2c2c"/>
+		<mesh_graph value="#d52e35"/>
+		<graph_prim value="#636363"/>
+		<graph_sec value="#3f3f3f"/>
+		<graph_alt_1 value="#383838"/>
+		<graph_alt_2 value="#323232"/>
+		<graph_alt_3 value="#2c2c2c"/>
+		<graph_marker value="#f2f2f2"/>
 
 		<!-- Group -->
 		<text_group value="#1b1c22"/>
@@ -622,7 +621,7 @@
 		<smooth value="false"/>
 		<color value="graph_sec"/>
 	</style>
-	
+
 	<style class="GraphDot" parents="root">
 		<smooth value="true"/>
 		<border.size value="10" />
@@ -637,7 +636,7 @@
 
 	<style class="GraphMarker" parents="root">
 		<smooth value="false"/>
-		<color value="white"/>
+		<color value="graph_marker"/>
 	</style>
 
 	<style class="GraphMesh" parents="root">
@@ -876,7 +875,7 @@
 		<text.color value="text_prim"/>
 		<text.active.color value="bg_light"/>
 	</style>
-	
+
 	<style class="TempoTap" parents="Button">
 		<mode value="trigger" />
 	</style>
