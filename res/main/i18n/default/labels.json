@@ -41,7 +41,7 @@
 	"alr": "ALR",
 
 	"amplitude": "Amplitude",
-	
+
 	"asample": {
 		"fname": "{@file_name}",
 		"duration": "{@length_cut%.1f} / {@length%.1f}",
@@ -337,6 +337,7 @@
 
 	"mus": {
 		"note": "Note",
+		"octave": "Octave",
 		"bpm": "BPM",
 		"pitch": "Pitch",
 		"tempo": "Tempo",

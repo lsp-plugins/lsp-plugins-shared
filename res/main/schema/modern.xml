@@ -206,6 +206,13 @@
 	<style class="AudioChannel" parents="root"></style>
 
 	<style class="AudioSample" parents="root">
+
+		<border.color value="bg_name"/>
+		<border.size value="0"/>
+		<border.radius value="0"/>
+		<color value="bg_graph"/>
+		<bg.inherit value="false"/>
+		<text.radius value="0"/>
 		<stereo_groups value="true"/>
 		<label.0.layout.halign value="-1"/>
 		<label.0.layout.valign value="1"/>
@@ -634,6 +641,7 @@
 		<color value="bg_graph"/>
 		<bg.inherit value="false"/>
 		<text.radius value="0"/>
+		<border.flat value="true"/>
 	</style>
 
 	<style class="GraphAxis" parents="root">
@@ -830,7 +838,7 @@
 		<hole value="false"/>
 	</style>
 
-	<style class="ButtonLed" parents="Led">
+	<style class="Button_Led" parents="Led">
 		<size.constraints.width.min value="32"/>
 		<size.constraints.width.max value="32"/>
 		<size.constraints.height.min value="4"/>

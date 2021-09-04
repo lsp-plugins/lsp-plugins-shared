@@ -210,6 +210,13 @@
 
 	<style class="AudioSample" parents="root">
 		<stereo_groups value="true"/>
+		<border.color value="#ffffff"/>
+		<border.size value="2"/>
+		<border.radius value="10"/>
+		<color value="black"/>
+		<bg.inherit value="false"/>
+		<text.radius value="0"/>
+		<border.flat value="true"/>
 	</style>
 
 	<style class="AudioSample::Channel1" parents="AudioChannel">
@@ -265,17 +272,17 @@
 		<bg.inherit value="true"/>
 
 		<border.color value="dark_gray"/>
-		<border.hover.color value="gray"/>
-		<border.down.color value="bright_gray"/>
-		<border.down.hover.color value="gray"/>
+	  <border.hover.color value="gray"/>
+	  <border.down.color value="bright_gray"/>
+	  <border.down.hover.color value="gray"/>
 
 		<color value="bg_light"/>
-		<hover.color value="dark_gray"/>
-		<down.color value="bright_gray"/>
-		<down.hover.color value="dark_gray"/>
+	  <hover.color value="dark_gray"/>
+	  <down.color value="bright_gray"/>
+	  <down.hover.color value="dark_gray"/>
 
 		<text.color value="bg"/>
-		<text.hover.color value="bg"/>
+	  <text.hover.color value="bg"/>
 		<text.down.color value="bg"/>
 		<text.down.hover.color value="bg"/>
 

@@ -210,6 +210,13 @@
 
 	<style class="AudioSample" parents="root">
 		<stereo_groups value="true"/>
+		<border.color value="bg_name"/>
+		<border.size value="2"/>
+		<border.radius value="10"/>
+		<border.flat value="true"/>
+		<color value="bg"/>
+		<bg.inherit value="false"/>
+		<text.radius value="0"/>
 	</style>
 
 	<style class="AudioSample::Channel1" parents="AudioChannel">
@@ -287,7 +294,8 @@
 
 		<hole.color value="bg"/>
 		<led value="0"/>
-		<led.color value="gray"/>
+    <led.color value="gray"/>
+
 		<font.size value="10"/>
 		<text.padding.left value="4"/>
 		<text.padding.right value="4"/>
