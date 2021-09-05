@@ -214,6 +214,8 @@
 		<bg.inherit value="false"/>
 		<text.radius value="0"/>
 		<stereo_groups value="true"/>
+		<glass value="false"/>
+
 		<label.0.layout.halign value="-1"/>
 		<label.0.layout.valign value="1"/>
 		<label.0.visible value="true"/>
@@ -229,6 +231,7 @@
 		<label.3.layout.halign value="1"/>
 		<label.3.layout.valign value="-1"/>
 		<label.3.visible value="true"/>
+		<pointer value="hand"/>
 	</style>
 
 	<style class="AudioSample::ok" parents="AudioSample">
@@ -700,6 +703,9 @@
 		<bg.color value="bg_light"/>
 		<heading value="-1 1"/>
 		<text.padding.left value="6"/>
+		<pointer value="hand"/>
+		<spin.color value="text_group"/>
+		<spin.spacing value="6"/>
 	</style>
 
 	<style class="Group" parents="root">
@@ -707,7 +713,7 @@
 		<border.size value="0"/>
 		<text.color value="text_group"/>
 		<text.radius value="0"/>
-		<ipadding value="12"/>
+		<ipadding value="6"/>
 		<padding value="0"/>
 		<border.radius value="0"/>
 		<bg.color value="bg_light"/>

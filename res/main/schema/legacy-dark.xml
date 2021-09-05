@@ -132,8 +132,8 @@
 		<PD1_hole value="#000000"/>
 
 		<!-- Indicator -->
-		<ind_col value="#101010"/>
-		<ind_text value="#3fc72f"/>
+		<ind_col value="#25272e"/>
+		<ind_text value="#319c25"/>
 
 		<!-- Hyperlinks -->
 		<hl_text value="#1a7788"/>
@@ -151,7 +151,7 @@
 		<warn value="#ffff00"/>
 
 		<!-- Graph -->
-		<bg_graph value="#1f2025"/>
+		<bg_graph value="#1d1e25"/>
 		<mesh_graph value="#d52e35"/>
 		<graph_prim value="#63667b"/>
 		<graph_sec value="#3d3f4b"/>
@@ -214,9 +214,27 @@
 		<border.size value="2"/>
 		<border.radius value="10"/>
 		<border.flat value="true"/>
-		<color value="bg"/>
+		<color value="bg_graph"/>
 		<bg.inherit value="false"/>
 		<text.radius value="0"/>
+		<glass value="false"/>
+
+		<label.0.layout.halign value="-1"/>
+		<label.0.layout.valign value="1"/>
+		<label.0.visible value="true"/>
+
+		<label.1.layout.halign value="1"/>
+		<label.1.layout.valign value="1"/>
+		<label.1.visible value="true"/>
+
+		<label.2.layout.halign value="-1"/>
+		<label.2.layout.valign value="-1"/>
+		<label.2.visible value="true"/>
+
+		<label.3.layout.halign value="1"/>
+		<label.3.layout.valign value="-1"/>
+		<label.3.visible value="true"/>
+		<pointer value="hand"/>
 	</style>
 
 	<style class="AudioSample::Channel1" parents="AudioChannel">
@@ -670,6 +688,9 @@
 		<bg.color value="bg"/>
 		<heading value="-1 0"/>
 		<text.padding.left value="6"/>
+		<pointer value="hand"/>
+		<spin.color value="text_group"/>
+		<spin.spacing value="6"/>
 	</style>
 
 	<style class="Group" parents="root">
@@ -755,7 +776,7 @@
 		<color value="ind_col"/>
 		<text.color value="ind_text"/>
 		<modern value="false"/>
-		<text.dark value="true"/>
+		<text.dark value="false"/>
 		<bg.inherit value="false"/>
 	</style>
 

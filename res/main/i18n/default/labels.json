@@ -321,6 +321,7 @@
 
 	"midi": {
 		"midi_num": "MIDI #",
+		"midi_number": "MIDI Number",
 		"note_off": "Note off",
 		"note_on": "Note on",
 		"velocity": "Velocity"
