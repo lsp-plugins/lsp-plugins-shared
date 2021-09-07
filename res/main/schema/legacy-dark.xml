@@ -121,6 +121,7 @@
 		<!-- Knob -->
 		<kscale value="#239db5"/>
 		<kcap value="#3b3d49"/>
+		<velocity value="#cc2264"/>
 
 		<!-- Led -->
 		<led_cred value="#880000"/>
@@ -178,6 +179,19 @@
 		<meter_red value="#ff0000" />
 		<meter_yellow value="#ffff00" />
 		<meter_normal value="#00ff00" />
+
+		<!-- AudioSample -->
+		<as_ch1 value="#67282e" />
+		<as_ch2 value="#295f2c" />
+		<as_ch3 value="#665714" />
+		<as_ch4 value="#663914" />
+		<as_ch5 value="#13585e" />
+		<as_ch6 value="#0c2e66" />
+		<as_ch7 value="#661132" />
+		<as_ch8 value="#490066" />
+		<fade_in value="#2abecc"/>
+		<fade_out value="#2abecc"/>
+
 	</colors>
 
 	<!-- Root style -->
@@ -206,18 +220,34 @@
 		<bg.inherit value="true"/>
 	</style>
 
-	<style class="AudioChannel" parents="root"></style>
+	<style class="AudioChannel" parents="root">
+
+		<fade_in.color value="#aa2abecc"/>
+		<fade_out.color value="#aa2abecc"/>
+		<fade_in.border.color value="#aa2abecc"/>
+		<fade_out.border.color value="#aa2abecc"/>
+
+	</style>
 
 	<style class="AudioSample" parents="root">
+
 		<stereo_groups value="true"/>
 		<border.color value="bg_name"/>
 		<border.size value="2"/>
 		<border.radius value="10"/>
-		<border.flat value="true"/>
 		<color value="bg_graph"/>
 		<bg.inherit value="false"/>
 		<text.radius value="0"/>
 		<glass value="false"/>
+		<border.flat value="true"/>
+		<label.bg.color value="#4414151a"/>
+		<ipadding value="0"/>
+
+		<line.color value="bg_name"/>
+		<line.width value="2"/>
+		<fade_in.border value="0"/>
+		<fade_out.border value="0"/>
+		<wave.border value="2"/>
 
 		<label.0.layout.halign value="-1"/>
 		<label.0.layout.valign value="1"/>
@@ -237,36 +267,56 @@
 		<pointer value="hand"/>
 	</style>
 
+	<style class="AudioSample::ok" parents="AudioSample">
+		<main.color value="cyan"/>
+	</style>
+
+	<style class="AudioSample::info" parents="AudioSample">
+		<main.color value="yellow"/>
+	</style>
+
+	<style class="AudioSample::error" parents="AudioSample">
+		<main.color value="red"/>
+	</style>
+
 	<style class="AudioSample::Channel1" parents="AudioChannel">
-		<color value="mutted_red_prim"/>
+		<color value="as_ch1"/>
+		<wave.border.color value="dark_red"/>
 	</style>
 
 	<style class="AudioSample::Channel2" parents="AudioChannel">
-		<color value="mutted_orange_prim"/>
+		<color value="as_ch2"/>
+		<wave.border.color value="dark_green"/>
 	</style>
 
 	<style class="AudioSample::Channel3" parents="AudioChannel">
-		<color value="mutted_yellow_prim"/>
+		<color value="as_ch3"/>
+		<wave.border.color value="dark_yellow"/>
 	</style>
 
 	<style class="AudioSample::Channel4" parents="AudioChannel">
-		<color value="mutted_green_prim"/>
+		<color value="as_ch4"/>
+		<wave.border.color value="dark_orange"/>
 	</style>
 
 	<style class="AudioSample::Channel5" parents="AudioChannel">
-		<color value="mutted_cyan_prim"/>
+		<color value="as_ch5"/>
+		<wave.border.color value="dark_cyan"/>
 	</style>
 
 	<style class="AudioSample::Channel6" parents="AudioChannel">
-		<color value="mutted_blue_prim"/>
+		<color value="as_ch6"/>
+		<wave.border.color value="dark_blue"/>
 	</style>
 
 	<style class="AudioSample::Channel7" parents="AudioChannel">
-		<color value="mutted_magenta_prim"/>
+		<color value="as_ch7"/>
+		<wave.border.color value="dark_magenta"/>
 	</style>
 
 	<style class="AudioSample::Channel8" parents="AudioChannel">
-		<color value="mutted_violet_prim"/>
+		<color value="as_ch8"/>
+		<wave.border.color value="dark_violet"/>
 	</style>
 
 	<style class="Box" parents="root">
@@ -693,6 +743,16 @@
 		<spin.spacing value="6"/>
 	</style>
 
+	<style class="ComboGroup::List" parents="root">
+		<border.size value="1"/>
+		<border.gap.size value="4"/>
+		<border.gap.color value="bg"/>
+		<border.radius value="3"/>
+		<list.bg.color value="bg"/>
+		<border.color value="border_color"/>
+		<pointer value="hand"/>
+	</style>
+
 	<style class="Group" parents="root">
 		<color value="bg_name"/>
 		<border.size value="2"/>
@@ -749,7 +809,7 @@
 
 	<style class="Channel_5_Group" parents="Channel_N_Group">
 		<color value="bg_name"/>
-		<bg.color value="bgt"/>
+		<bg.color value="bg"/>
 	</style>
 
 	<style class="Channel_6_Group" parents="Channel_N_Group">

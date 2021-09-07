@@ -121,6 +121,7 @@
 		<!-- Knob -->
 		<kscale value="#00c0ff"/>
 		<kcap value="#474843"/>
+		<velocity value="#aa00ff"/>
 
 		<!-- Led -->
 		<led_cred value="#880000"/>
@@ -178,6 +179,19 @@
 		<meter_red value="#ff0000" />
 		<meter_yellow value="#ffff00" />
 		<meter_normal value="#00ff00" />
+
+		<!-- AudioSample -->
+		<as_ch1 value="#660000" />
+		<as_ch2 value="#006666" />
+		<as_ch3 value="#666600" />
+		<as_ch4 value="#663600" />
+		<as_ch5 value="#006600" />
+		<as_ch6 value="#000066" />
+		<as_ch7 value="#440066" />
+		<as_ch8 value="#290066" />
+		<fade_in value="#ffff00"/>
+		<fade_out value="#ffff00"/>
+
 	</colors>
 
 	<!-- Root style -->
@@ -206,9 +220,17 @@
 		<bg.inherit value="true"/>
 	</style>
 
-	<style class="AudioChannel" parents="root"></style>
+	<style class="AudioChannel" parents="root">
+
+		<fade_in.color value="#88ffff00"/>
+		<fade_out.color value="#88ffff00"/>
+<fade_in.border.color value="#ffff00"/>
+<fade_out.border.color value="#ffff00"/>
+
+	</style>
 
 	<style class="AudioSample" parents="root">
+
 		<stereo_groups value="true"/>
 		<border.color value="#ffffff"/>
 		<border.size value="2"/>
@@ -216,8 +238,16 @@
 		<color value="black"/>
 		<bg.inherit value="false"/>
 		<text.radius value="0"/>
-		<border.flat value="true"/>
 		<glass value="true"/>
+		<border.flat value="true"/>
+		<label.bg.color value="#44000000"/>
+		<ipadding value="1"/>
+
+		<line.color value="white"/>
+		<line.width value="1"/>
+		<fade_in.border value="1"/>
+		<fade_out.border value="1"/>
+		<wave.border value="1"/>
 
 		<label.0.layout.halign value="-1"/>
 		<label.0.layout.valign value="1"/>
@@ -237,36 +267,56 @@
 		<pointer value="hand"/>
 	</style>
 
+	<style class="AudioSample::ok" parents="AudioSample">
+		<main.color value="green"/>
+	</style>
+
+	<style class="AudioSample::info" parents="AudioSample">
+		<main.color value="yellow"/>
+	</style>
+
+	<style class="AudioSample::error" parents="AudioSample">
+		<main.color value="red"/>
+	</style>
+
 	<style class="AudioSample::Channel1" parents="AudioChannel">
-		<color value="mutted_red_prim"/>
+		<color value="as_ch1"/>
+		<wave.border.color value="red"/>
 	</style>
 
 	<style class="AudioSample::Channel2" parents="AudioChannel">
-		<color value="mutted_orange_prim"/>
+		<color value="as_ch2"/>
+		<wave.border.color value="cyan"/>
 	</style>
 
 	<style class="AudioSample::Channel3" parents="AudioChannel">
-		<color value="mutted_yellow_prim"/>
+		<color value="as_ch3"/>
+		<wave.border.color value="yellow"/>
 	</style>
 
 	<style class="AudioSample::Channel4" parents="AudioChannel">
-		<color value="mutted_green_prim"/>
+		<color value="as_ch4"/>
+		<wave.border.color value="orange"/>
 	</style>
 
 	<style class="AudioSample::Channel5" parents="AudioChannel">
-		<color value="mutted_cyan_prim"/>
+		<color value="as_ch5"/>
+		<wave.border.color value="green"/>
 	</style>
 
 	<style class="AudioSample::Channel6" parents="AudioChannel">
-		<color value="mutted_blue_prim"/>
+		<color value="as_ch6"/>
+		<wave.border.color value="blue"/>
 	</style>
 
 	<style class="AudioSample::Channel7" parents="AudioChannel">
-		<color value="mutted_magenta_prim"/>
+		<color value="as_ch7"/>
+		<wave.border.color value="magenta"/>
 	</style>
 
 	<style class="AudioSample::Channel8" parents="AudioChannel">
-		<color value="mutted_violet_prim"/>
+		<color value="as_ch8"/>
+		<wave.border.color value="violet"/>
 	</style>
 
 	<style class="Box" parents="root">
@@ -700,6 +750,16 @@
 		<pointer value="hand"/>
 		<spin.color value="text_group"/>
 		<spin.spacing value="6"/>
+	</style>
+
+	<style class="ComboGroup::List" parents="root">
+		<border.size value="1"/>
+		<border.gap.size value="4"/>
+		<border.gap.color value="bg"/>
+		<border.radius value="3"/>
+		<list.bg.color value="bg"/>
+		<border.color value="bg_name"/>
+		<pointer value="hand"/>
 	</style>
 
 	<style class="Group" parents="root">
