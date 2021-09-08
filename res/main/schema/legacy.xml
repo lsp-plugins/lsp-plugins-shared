@@ -124,10 +124,14 @@
 		<velocity value="#aa00ff"/>
 
 		<!-- Led -->
-		<led_cred value="#880000"/>
+		<led_cred value="#990000"/>
 		<led_lred value="#ff0000"/>
-		<led_c value="#008800"/>
-		<led_l value="#00cc00"/>
+		<led_bcred value="#6e0000"/>
+		<led_blred value="#cc0000"/>
+		<led_c value="#009900"/>
+		<led_l value="#00ff00"/>
+		<led_bc value="#006e00"/>
+		<led_bl value="#00cc00"/>
 		<PD1 value="#ff0000"/>
 		<PD1_led value="#ff0000"/>
 		<PD1_hole value="#000000"/>
@@ -1214,6 +1218,8 @@
 	<style class="PluginWindow::Bypass::Led" parents="Led">
 		<color value="led_cred"/>
 		<led.color value="led_lred"/>
+		<border.color value="led_bc"/>
+		<led.border.color value="led_bl"/>
 		<size value="8"/>
 	</style>
 

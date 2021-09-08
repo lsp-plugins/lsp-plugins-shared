@@ -121,10 +121,14 @@
 		<velocity value="#cc2264"/>
 
 		<!-- Led -->
-		<led_cred value="#880000"/>
-		<led_lred value="#ff0000"/>
-		<led_c value="#008800"/>
+		<led_cred value="#4a4d5c"/>
+		<led_lred value="#cc0000"/>
+		<led_bcred value="#363843"/>
+		<led_blred value="#b00000"/>
+		<led_c value="#4a4d5c"/>
 		<led_l value="#00cc00"/>
+		<led_bc value="#363843"/>
+		<led_bl value="#00b000"/>
 		<PD1 value="#373944"/>
 		<PD1_led value="#2195a0"/>
 		<PD1_hole value="#373944"/>
@@ -894,9 +898,11 @@
 	<style class="Led" parents="root">
 		<color value="led_c"/>
 		<led.color value="led_l"/>
+		<border.color value="led_bc"/>
+		<led.border.color value="led_bl"/>
 		<led value="0"/>
 		<bg.inherit value="true"/>
-		<border.size value="0"/>
+		<border.size value="2"/>
 		<round value="false"/>
 		<gradient value="false"/>
 		<hole value="false"/>
