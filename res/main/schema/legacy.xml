@@ -697,7 +697,7 @@
 
 	<style class="GraphAxis" parents="root">
 		<smooth value="false"/>
-		<color value="graph_sec"/>
+		<color value="graph_prim"/>
 	</style>
 
 	<style class="GraphDot" parents="root">
