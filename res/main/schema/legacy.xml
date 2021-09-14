@@ -51,45 +51,39 @@
 		<dark_magenta value="#d200d2"/>
 		<dark_gray value="#444444"/>
 
-		<mutted_red value="#ff0000"/>
-		<mutted_orange value="#ff8800"/>
-		<mutted_yellow value="#ffff00"/>
-		<mutted_green value="#00ff00"/>
-		<mutted_cyan value="#00ffff"/>
-		<mutted_blue value="#0000ff"/>
-		<mutted_violet value="#802aff"/>
-		<mutted_magenta value="#aa00ff"/>
-		<mutted_gray value="#969696"/>
+		<!-- ChannelGroup -->
 
-		<mutted_red_prim value="#3a3742"/>
-		<mutted_orange_prim value="#3a3940"/>
-		<mutted_yellow_prim value="#383a41"/>
-		<mutted_green_prim value="#363b43"/>
-		<mutted_cyan_prim value="#333a46"/>
-		<mutted_blue_prim value="#343645"/>
-		<mutted_violet_prim value="#343445"/>
-		<mutted_magenta_prim value="#373544"/>
-		<mutted_gray_prim value="#393939"/>
+		<channel_group_red_bg value="#2b2628"/>
+		<channel_group_orange_bg value="#2a2627"/>
+		<channel_group_yellow_bg value="#282726"/>
+		<channel_group_green_bg value="#242827"/>
+		<channel_group_cyan_bg value="#21282c"/>
+		<channel_group_blue_bg value="#242530"/>
+		<channel_group_violet_bg value="#28262d"/>
+		<channel_group_magenta_bg value="#2b262a"/>
+		<channel_group_gray_bg value="#26272e"/>
 
-		<mutted_red_sec value="#322f38"/>
-		<mutted_orange_sec value="#323136"/>
-		<mutted_yellow_sec value="#313336"/>
-		<mutted_green_sec value="#2e3439"/>
-		<mutted_cyan_sec value="#2b333c"/>
-		<mutted_blue_sec value="#2c2e3b"/>
-		<mutted_violet_sec value="#2c2c3b"/>
-		<mutted_magenta_sec value="#2f2d3a"/>
-		<mutted_gray_sec value="#323232"/>
+		<channel_group_red value="#342d30"/>
+		<channel_group_orange value="#332e2f"/>
+		<channel_group_yellow value="#302f2e"/>
+		<channel_group_green value="#2c302f"/>
+		<channel_group_cyan value="#283135"/>
+		<channel_group_blue value="#2b2d3b"/>
+		<channel_group_violet value="#3b3741"/>
+		<channel_group_magenta value="#3e363c"/>
+		<channel_group_gray value="#2e2f38"/>
 
-		<mutted_red_alt value="#28252c"/>
-		<mutted_orange_alt value="#28272a"/>
-		<mutted_yellow_alt value="#27292a"/>
-		<mutted_green_alt value="#242a2d"/>
-		<mutted_cyan_alt value="#212930"/>
-		<mutted_blue_alt value="#22242f"/>
-		<mutted_violet_alt value="#22222f"/>
-		<mutted_magenta_alt value="#25232e"/>
-		<mutted_gray_alt value="#282828"/>
+		<!-- LabelChannel -->
+
+		<label_channel_red value="#3e363a"/>
+		<label_channel_orange value="#3d3738"/>
+		<label_channel_yellow value="#3a3837"/>
+		<label_channel_green value="#343a39"/>
+		<label_channel_cyan value="#303a40"/>
+		<label_channel_blue value="#323547"/>
+		<label_channel_violet value="#3b3741"/>
+		<label_channel_magenta value="#3e363c"/>
+		<label_channel_gray value="#363843"/>
 
 		<!-- Main colors -->
 		<bg value="#1b1c22"/>
@@ -121,20 +115,12 @@
 		<!-- Knob -->
 		<kscale value="#00c0ff"/>
 		<kcap value="#474843"/>
-		<velocity value="#aa00ff"/>
 
 		<!-- Led -->
-		<led_cred value="#990000"/>
-		<led_lred value="#ff0000"/>
-		<led_bcred value="#6e0000"/>
-		<led_blred value="#cc0000"/>
 		<led_c value="#009900"/>
 		<led_l value="#00ff00"/>
 		<led_bc value="#006e00"/>
 		<led_bl value="#00cc00"/>
-		<PD1 value="#ff0000"/>
-		<PD1_led value="#ff0000"/>
-		<PD1_hole value="#000000"/>
 
 		<!-- Indicator -->
 		<ind_col value="#101010"/>
@@ -178,6 +164,53 @@
 		<mid_channel value="#0000ff"/>
 		<side_channel value="#00ff00"/>
 		<dry_channel value="#ffff00"/>
+
+		<!-- Knob and meshes colors -->
+
+
+		<mono_in value="#aa0000"/>
+		<mono value="#ff0000"/>
+
+		<left_in value="#aa0000"/>
+		<right_in value="#00aaaa"/>
+
+		<left value="#ff0000"/>
+		<right value="#00ffff"/>
+
+		<mid_in value="#0080aa"/>
+		<side_in value="#008000"/>
+
+		<mid value="#00c0ff"/>
+		<side value="#00cc00"/>
+
+		<velocity value="#aa00ff"/>
+
+		<balance value="#ffa200"/>
+		<balance_l value="#ffa200"/>
+		<balance_r value="#f1c100"/>
+
+		<envelope value="#9441ff"/>
+		<envelope_1 value="#9441ff"/>
+		<envelope_2 value="#8339e1"/>
+
+		<sidechain value="#ff5400"/>
+		<sidechain_1 value="#ff5400"/>
+		<sidechain_2 value="#e14a00"/>
+
+		<treshold value="#e200ff"/>
+		<treshold_1 value="#e200ff"/>
+		<treshold_2 value="#e200ff"/>
+
+		<attack value="#ff006b"/>
+		<attack_1 value="#ff006b"/>
+		<attack_2 value="#ff006b"/>
+
+		<release value="#00f189"/>
+		<release_1 value="#00f189"/>
+		<release_2 value="#00f189"/>
+
+		<dry value="#fff600"/>
+		<wet value="#0092ff"/>
 
 		<!-- Metering -->
 		<meter_red value="#ff0000" />
@@ -332,9 +365,9 @@
 	</style>
 
 	<style class="Button" parents="root">
-		<border.size value="0"/>
-		<border.pressed.size value="0"/>
-		<border.down.size value="0"/>
+		<border.size value="2"/>
+		<border.pressed.size value="2"/>
+		<border.down.size value="2"/>
 		<gradient value="true"/>
 		<hole value="false"/>
 		<hover value="true"/>
@@ -343,7 +376,7 @@
 		<text.pressed.shift value="1 1"/>
 		<bg.inherit value="true"/>
 
-		<border.color value="dark_gray"/>
+		<border.color value="gray"/>
 	  <border.hover.color value="gray"/>
 	  <border.down.color value="bright_gray"/>
 	  <border.down.hover.color value="gray"/>
@@ -360,12 +393,12 @@
 
 		<pointer value="hand"/>
 		<down.colors value="true"/>
-		<flat value="true"/>
+		<flat value="false"/>
 		<allocation.hfill value="false"/>
 		<allocation.vfill value="false"/>
 
 		<hole.color value="bg"/>
-		<led value="2"/>
+		<led value="0"/>
 		<led.color value="gray"/>
 
 		<font.size value="10"/>
@@ -491,12 +524,24 @@
 	  <led.color value="magenta"/>
 	</style>
 
+	<style class="Button_mono" parents="Button">
+		<down.color value="dark_red"/>
+		<down.hover.color value="dark_red"/>
+
+		<text.down.color value="bg"/>
+		<text.down.hover.color value="bg"/>
+
+		<border.down.color value="bright_red"/>
+		<border.down.hover.color value="red"/>
+		<led.color value="red"/>
+	</style>
+
 	<style class="Button_left" parents="Button">
 		<down.color value="dark_red"/>
 		<down.hover.color value="dark_red"/>
 
-		<text.down.color value="bright_red"/>
-		<text.down.hover.color value="bright_red"/>
+		<text.down.color value="bg"/>
+		<text.down.hover.color value="bg"/>
 
 		<border.down.color value="bright_red"/>
 		<border.down.hover.color value="red"/>
@@ -504,35 +549,35 @@
 	</style>
 
 	<style class="Button_right" parents="Button">
-		<down.color value="dark_cyan"/>
-		<down.hover.color value="dark_cyan"/>
-
-		<text.down.color value="bright_cyan"/>
-		<text.down.hover.color value="bright_cyan"/>
-
-		<border.down.color value="bright_cyan"/>
-		<border.down.hover.color value="cyan"/>
-		<led.color value="cyan"/>
-	</style>
-
-	<style class="Button_mid" parents="Button">
 		<down.color value="dark_blue"/>
-		<down.hover.color value="dark_magenta"/>
+		<down.hover.color value="dark_blue"/>
 
-		<text.down.color value="bright_blue"/>
-		<text.down.hover.color value="bright_blue"/>
+		<text.down.color value="bg"/>
+		<text.down.hover.color value="bg"/>
 
 		<border.down.color value="bright_blue"/>
 		<border.down.hover.color value="blue"/>
 		<led.color value="blue"/>
 	</style>
 
+	<style class="Button_mid" parents="Button">
+		<down.color value="dark_cyan"/>
+		<down.hover.color value="dark_cyan"/>
+
+		<text.down.color value="bg"/>
+		<text.down.hover.color value="bg"/>
+
+		<border.down.color value="bright_cyan"/>
+		<border.down.hover.color value="cyan"/>
+		<led.color value="cyan"/>
+	</style>
+
 	<style class="Button_side" parents="Button">
 		<down.color value="dark_green"/>
 		<down.hover.color value="dark_green"/>
 
-		<text.down.color value="bright_green"/>
-		<text.down.hover.color value="bright_green"/>
+		<text.down.color value="bg"/>
+		<text.down.hover.color value="bg"/>
 
 		<border.down.color value="bright_green"/>
 		<border.down.hover.color value="green"/>
@@ -543,8 +588,8 @@
 		<down.color value="dark_yellow"/>
 		<down.hover.color value="dark_yellow"/>
 
-		<text.down.color value="bright_yellow"/>
-		<text.down.hover.color value="bright_yellow"/>
+		<text.down.color value="bg"/>
+		<text.down.hover.color value="bg"/>
 
 		<border.down.color value="bright_yellow"/>
 		<border.down.hover.color value="yellow"/>
@@ -793,12 +838,7 @@
 		<text.padding.left value="2"/>
 	</style>
 
-	<style class="Channel_N_Group" parents="Group">
-		<layout.halign value="0"/>
-		<layout.valign value="-1"/>
-		<layout.hscale value="1"/>
-		<layout.vscale value="0"/>
-	</style>
+	<style class="Channel_N_Group" parents="Group"></style>
 
 	<style class="Channel_1_Group" parents="Channel_N_Group">
 		<color value="bg_name"/>
@@ -891,11 +931,71 @@
 	<style class="Led" parents="root">
 		<color value="led_c"/>
 		<led.color value="led_l"/>
-		<led value="8"/>
-		<size.constraints value="8"/>
+		<border.color value="led_bc"/>
+		<led.border.color value="led_bl"/>
+		<led value="4"/>
+		<size.constraints value="8 8"/>
 		<bg.inherit value="true"/>
+		<border.size value="0"/>
 		<round value="true"/>
 		<gradient value="true"/>
+		<hole value="false"/>
+	</style>
+
+	<style class="Led_red" parents="root">
+		<color value="dark_red"/>
+		<border.color value="dark_red"/>
+		<led.color value="red"/>
+		<led.border.color value="bright_red"/>
+	</style>
+
+	<style class="Led_blue" parents="root">
+		<color value="dark_blue"/>
+		<border.color value="dark_blue"/>
+		<led.color value="blue"/>
+		<led.border.color value="bright_blue"/>
+	</style>
+
+	<style class="Led_green" parents="root">
+		<color value="dark_green"/>
+		<border.color value="dark_green"/>
+		<led.color value="green"/>
+		<led.border.color value="bright_green"/>
+	</style>
+
+	<style class="Led_yellow" parents="root">
+		<color value="dark_yellow"/>
+		<border.color value="dark_yellow"/>
+		<led.color value="yellow"/>
+		<led.border.color value="bright_yellow"/>
+	</style>
+
+	<style class="Led_magenta" parents="root">
+		<color value="dark_magenta"/>
+		<border.color value="dark_magenta"/>
+		<led.color value="magenta"/>
+		<led.border.color value="bright_magenta"/>
+	</style>
+
+	<style class="Led_cyan" parents="root">
+		<color value="dark_cyan"/>
+		<border.color value="dark_cyan"/>
+		<led.color value="cyan"/>
+		<led.border.color value="bright_cyan"/>
+	</style>
+
+	<style class="Led_violet" parents="root">
+		<color value="dark_violet"/>
+		<border.color value="dark_violet"/>
+		<led.color value="violet"/>
+		<led.border.color value="bright_violet"/>
+	</style>
+
+	<style class="Led_orange" parents="root">
+		<color value="dark_orange"/>
+		<border.color value="dark_orange"/>
+		<led.color value="orange"/>
+		<led.border.color value="bright_orange"/>
 	</style>
 
 	<style class="ButtonLed" parents="Led">
@@ -903,7 +1003,6 @@
 		<size.constraints.width.max value="8"/>
 		<size.constraints.height.min value="8"/>
 		<size.constraints.height.max value="8"/>
-		<pointer value="hand"/>
 	</style>
 
 	<style class="ListBox" parents="root">
@@ -1216,10 +1315,10 @@
 	</style>
 
 	<style class="PluginWindow::Bypass::Led" parents="Led">
-		<color value="led_cred"/>
-		<led.color value="led_lred"/>
-		<border.color value="led_bc"/>
-		<led.border.color value="led_bl"/>
+		<color value="dark_red"/>
+		<led.color value="red"/>
+		<border.color value="red"/>
+		<led.border.color value="bright_red"/>
 		<size value="8"/>
 	</style>
 

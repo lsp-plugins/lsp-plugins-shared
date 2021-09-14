@@ -21,75 +21,69 @@
 		<black value="#000000"/>
 		<white value="#ffffff"/>
 
-		<red value="#d52e35"/>
-		<orange value="#da7829"/>
-		<yellow value="#d1b01c"/>
-		<green value="#3fc72f"/>
-		<cyan value="#2abecc"/>
-		<blue value="#1c6ff5"/>
-		<violet value="#802aff"/>
-		<magenta value="#cc2264"/>
+		<red value="#e53f40"/>
+		<orange value="#c26412"/>
+		<yellow value="#977c00"/>
+		<green value="#009600"/>
+		<cyan value="#00909e"/>
+		<blue value="#377bff"/>
+		<violet value="#c728ff"/>
+		<magenta value="#e23c75"/>
 		<gray value="#6f7185"/>
 
-		<bright_red value="#fe343b"/>
-		<bright_orange value="#fe8f37"/>
-		<bright_yellow value="#f5de23"/>
-		<bright_green value="#4cf239"/>
-		<bright_cyan value="#33e7f8"/>
-		<bright_blue value="#2287ff"/>
-		<bright_violet value="#9c33ff"/>
-		<bright_magenta value="#f62877"/>
+		<bright_red value="#fd5652"/>
+		<bright_orange value="#da7829"/>
+		<bright_yellow value="#ad9000"/>
+		<bright_green value="#0aab04"/>
+		<bright_cyan value="#00a4b2"/>
+		<bright_blue value="#568eff"/>
+		<bright_violet value="#df45ff"/>
+		<bright_magenta value="#fa5589"/>
 		<bright_gray value="#808299"/>
 
-		<dark_red value="#ab292d"/>
-		<dark_orange value="#b2601e"/>
-		<dark_yellow value="#a58416"/>
-		<dark_green value="#319c25"/>
-		<dark_cyan value="#2195a0"/>
-		<dark_blue value="#1658c0"/>
-		<dark_violet value="#6421ec"/>
-		<dark_magenta value="#a21d50"/>
+		<dark_red value="#95333b"/>
+		<dark_orange value="#7c491b"/>
+		<dark_yellow value="#635500"/>
+		<dark_green value="#006509"/>
+		<dark_cyan value="#00626b"/>
+		<dark_blue value="#1457a4"/>
+		<dark_violet value="#8a1ab7"/>
+		<dark_magenta value="#943059"/>
 		<dark_gray value="#606173"/>
 
-		<mutted_red value="#ba2c33"/>
-		<mutted_orange value="#be692a"/>
-		<mutted_yellow value="#b69a22"/>
-		<mutted_green value="#39ae2f"/>
-		<mutted_cyan value="#29a6b3"/>
-		<mutted_blue value="#1f62d6"/>
-		<mutted_violet value="#9f11df"/>
-		<mutted_magenta value="#b22359"/>
-		<mutted_gray value="#969696"/>
+		<!-- ChannelGroup -->
 
-		<mutted_red_prim value="#3a3742"/>
-		<mutted_orange_prim value="#3a3940"/>
-		<mutted_yellow_prim value="#383a41"/>
-		<mutted_green_prim value="#363b43"/>
-		<mutted_cyan_prim value="#333a46"/>
-		<mutted_blue_prim value="#343645"/>
-		<mutted_violet_prim value="#343445"/>
-		<mutted_magenta_prim value="#373544"/>
-		<mutted_gray_prim value="#393939"/>
+		<channel_group_red_bg value="#2b2628"/>
+		<channel_group_orange_bg value="#2a2627"/>
+		<channel_group_yellow_bg value="#282726"/>
+		<channel_group_green_bg value="#242827"/>
+		<channel_group_cyan_bg value="#21282c"/>
+		<channel_group_blue_bg value="#242530"/>
+		<channel_group_violet_bg value="#28262d"/>
+		<channel_group_magenta_bg value="#2b262a"/>
+		<channel_group_gray_bg value="#26272e"/>
 
-		<mutted_red_sec value="#322f38"/>
-		<mutted_orange_sec value="#323136"/>
-		<mutted_yellow_sec value="#313336"/>
-		<mutted_green_sec value="#2e3439"/>
-		<mutted_cyan_sec value="#2b333c"/>
-		<mutted_blue_sec value="#2c2e3b"/>
-		<mutted_violet_sec value="#2c2c3b"/>
-		<mutted_magenta_sec value="#2f2d3a"/>
-		<mutted_gray_sec value="#323232"/>
+		<channel_group_red value="#342d30"/>
+		<channel_group_orange value="#332e2f"/>
+		<channel_group_yellow value="#302f2e"/>
+		<channel_group_green value="#2c302f"/>
+		<channel_group_cyan value="#283135"/>
+		<channel_group_blue value="#2b2d3b"/>
+		<channel_group_violet value="#3b3741"/>
+		<channel_group_magenta value="#3e363c"/>
+		<channel_group_gray value="#2e2f38"/>
 
-		<mutted_red_alt value="#28252c"/>
-		<mutted_orange_alt value="#28272a"/>
-		<mutted_yellow_alt value="#27292a"/>
-		<mutted_green_alt value="#242a2d"/>
-		<mutted_cyan_alt value="#212930"/>
-		<mutted_blue_alt value="#22242f"/>
-		<mutted_violet_alt value="#22222f"/>
-		<mutted_magenta_alt value="#25232e"/>
-		<mutted_gray_alt value="#282828"/>
+		<!-- LabelChannel -->
+
+		<label_channel_red value="#3e363a"/>
+		<label_channel_orange value="#3d3738"/>
+		<label_channel_yellow value="#3a3837"/>
+		<label_channel_green value="#343a39"/>
+		<label_channel_cyan value="#303a40"/>
+		<label_channel_blue value="#323547"/>
+		<label_channel_violet value="#3b3741"/>
+		<label_channel_magenta value="#3e363c"/>
+		<label_channel_gray value="#363843"/>
 
 		<!-- Main colors -->
 		<bg value="#1b1c22"/>
@@ -121,20 +115,12 @@
 		<!-- Knob -->
 		<kscale value="#239db5"/>
 		<kcap value="#3b3d49"/>
-		<velocity value="#cc2264"/>
 
 		<!-- Led -->
-		<led_cred value="#4a4d5c"/>
-		<led_lred value="#cc0000"/>
-		<led_bcred value="#363843"/>
-		<led_blred value="#b00000"/>
-		<led_c value="#4a4d5c"/>
-		<led_l value="#00cc00"/>
-		<led_bc value="#363843"/>
-		<led_bl value="#00b000"/>
-		<PD1 value="#373944"/>
-		<PD1_led value="#2195a0"/>
-		<PD1_hole value="#373944"/>
+		<led_c value="#2b2d35"/>
+		<led_l value="#00909e"/>
+		<led_bc value="#373944"/>
+		<led_bl value="#00a4b2"/>
 
 		<!-- Indicator -->
 		<ind_col value="#25272e"/>
@@ -179,6 +165,51 @@
 		<side_channel value="#b22359"/>
 		<dry_channel value="#b69a22"/>
 
+		<!-- Knob and meshes colors -->
+		<mono_in value="#bf6455"/>
+		<mono value="#d8412a"/>
+
+		<left_in value="#bf6455"/>
+		<right_in value="#717eae"/>
+
+		<left value="#d8412a"/>
+		<right value="#5072f4"/>
+
+		<mid_in value="#52888e"/>
+		<side_in value="#538c50"/>
+
+		<mid value="#0090a1"/>
+		<side value="#009700"/>
+
+		<velocity value="#da404a"/>
+
+		<balance value="#b07000"/>
+		<balance_l value="#b07000"/>
+		<balance_r value="#868200"/>
+
+		<envelope value="#9e60ee"/>
+		<envelope_1 value="#9e60ee"/>
+		<envelope_2 value="#8d76aa"/>
+
+		<sidechain value="#c65219"/>
+		<sidechain_1 value="#c65219"/>
+		<sidechain_2 value="#b36c49"/>
+
+		<treshold value="#c344d3"/>
+		<treshold_1 value="#c344d3"/>
+		<treshold_2 value="#c344d3"/>
+
+		<attack value="#c2487b"/>
+		<attack_1 value="#c2487b"/>
+		<attack_2 value="#c2487b"/>
+
+		<release value="#009555"/>
+		<release_1 value="#009555"/>
+		<release_2 value="#009555"/>
+
+		<dry value="#8c8700"/>
+		<wet value="#368ccc"/>
+
 		<!-- Metering -->
 		<meter_red value="#ff0000" />
 		<meter_yellow value="#ffff00" />
@@ -186,13 +217,13 @@
 
 		<!-- AudioSample -->
 		<as_ch1 value="#67282e" />
-		<as_ch2 value="#295f2c" />
-		<as_ch3 value="#665714" />
-		<as_ch4 value="#663914" />
-		<as_ch5 value="#13585e" />
-		<as_ch6 value="#0c2e66" />
-		<as_ch7 value="#661132" />
-		<as_ch8 value="#490066" />
+		<as_ch2 value="#223c76" />
+		<as_ch3 value="#0e4716" />
+		<as_ch4 value="#493c00" />
+		<as_ch5 value="#701c3a" />
+		<as_ch6 value="#00464c" />
+		<as_ch7 value="#601c7d" />
+		<as_ch8 value="#5d310c" />
 		<fade_in value="#2abecc"/>
 		<fade_out value="#2abecc"/>
 
@@ -290,37 +321,37 @@
 
 	<style class="AudioSample::Channel2" parents="AudioChannel">
 		<color value="as_ch2"/>
-		<wave.border.color value="dark_green"/>
+		<wave.border.color value="dark_blue"/>
 	</style>
 
 	<style class="AudioSample::Channel3" parents="AudioChannel">
 		<color value="as_ch3"/>
-		<wave.border.color value="dark_yellow"/>
+		<wave.border.color value="dark_green"/>
 	</style>
 
 	<style class="AudioSample::Channel4" parents="AudioChannel">
 		<color value="as_ch4"/>
-		<wave.border.color value="dark_orange"/>
+		<wave.border.color value="dark_yellow"/>
 	</style>
 
 	<style class="AudioSample::Channel5" parents="AudioChannel">
 		<color value="as_ch5"/>
-		<wave.border.color value="dark_cyan"/>
+		<wave.border.color value="dark_magenta"/>
 	</style>
 
 	<style class="AudioSample::Channel6" parents="AudioChannel">
 		<color value="as_ch6"/>
-		<wave.border.color value="dark_blue"/>
+		<wave.border.color value="dark_cyan"/>
 	</style>
 
 	<style class="AudioSample::Channel7" parents="AudioChannel">
 		<color value="as_ch7"/>
-		<wave.border.color value="dark_magenta"/>
+		<wave.border.color value="dark_violet"/>
 	</style>
 
 	<style class="AudioSample::Channel8" parents="AudioChannel">
 		<color value="as_ch8"/>
-		<wave.border.color value="dark_violet"/>
+		<wave.border.color value="dark_orange"/>
 	</style>
 
 	<style class="Box" parents="root">
@@ -344,19 +375,19 @@
 		<bg.inherit value="true"/>
 
 		<border.color value="bg_name"/>
-		<border.hover.color value="mutted_gray_prim"/>
-		<border.down.color value="bright_gray"/>
-		<border.down.hover.color value="gray"/>
+		<border.hover.color value="bright_gray"/>
+		<border.down.color value="bright_cyan"/>
+		<border.down.hover.color value="cyan"/>
 
 		<color value="bg_light"/>
-		<hover.color value="mutted_gray_sec"/>
-		<down.color value="dark_gray"/>
-		<down.hover.color value="dark_gray"/>
+		<hover.color value="bg_name"/>
+		<down.color value="dark_cyan"/>
+		<down.hover.color value="dark_cyan"/>
 
 		<text.color value="text_prim"/>
 		<text.hover.color value="text_sec"/>
-		<text.down.color value="bright_gray"/>
-		<text.down.hover.color value="bright_gray"/>
+		<text.down.color value="bright_cyan"/>
+		<text.down.hover.color value="bright_cyan"/>
 
 		<pointer value="hand"/>
 		<down.colors value="true"/>
@@ -366,7 +397,7 @@
 
 		<hole.color value="bg"/>
 		<led value="0"/>
-    <led.color value="gray"/>
+    <led.color value="cyan"/>
 
 		<font.size value="10"/>
 		<text.padding.left value="4"/>
@@ -483,6 +514,18 @@
 		<led.color value="magenta"/>
 	</style>
 
+	<style class="Button_mono" parents="Button">
+		<down.color value="dark_red"/>
+		<down.hover.color value="dark_red"/>
+
+		<text.down.color value="bright_red"/>
+		<text.down.hover.color value="bright_red"/>
+
+		<border.down.color value="bright_red"/>
+		<border.down.hover.color value="red"/>
+		<led.color value="red"/>
+	</style>
+
 	<style class="Button_left" parents="Button">
 		<down.color value="dark_red"/>
 		<down.hover.color value="dark_red"/>
@@ -496,6 +539,18 @@
 	</style>
 
 	<style class="Button_right" parents="Button">
+		<down.color value="dark_blue"/>
+		<down.hover.color value="dark_blue"/>
+
+		<text.down.color value="bright_blue"/>
+		<text.down.hover.color value="bright_blue"/>
+
+		<border.down.color value="bright_blue"/>
+		<border.down.hover.color value="blue"/>
+		<led.color value="blue"/>
+	</style>
+
+	<style class="Button_side" parents="Button">
 		<down.color value="dark_green"/>
 		<down.hover.color value="dark_green"/>
 
@@ -507,28 +562,16 @@
 		<led.color value="green"/>
 	</style>
 
-	<style class="Button_side" parents="Button">
-		<down.color value="dark_magenta"/>
-		<down.hover.color value="dark_magenta"/>
-
-		<text.down.color value="bright_magenta"/>
-		<text.down.hover.color value="bright_magenta"/>
-
-		<border.down.color value="bright_magenta"/>
-		<border.down.hover.color value="magenta"/>
-		<led.color value="magenta"/>
-	</style>
-
 	<style class="Button_mid" parents="Button">
-		<down.color value="dark_blue"/>
-		<down.hover.color value="dark_blue"/>
+		<down.color value="dark_cyan"/>
+		<down.hover.color value="dark_cyan"/>
 
-		<text.down.color value="bright_blue"/>
-		<text.down.hover.color value="bright_blue"/>
+		<text.down.color value="bright_cyan"/>
+		<text.down.hover.color value="bright_cyan"/>
 
-		<border.down.color value="bright_blue"/>
-		<border.down.hover.color value="blue"/>
-		<led.color value="blue"/>
+		<border.down.color value="bright_cyan"/>
+		<border.down.hover.color value="cyan"/>
+		<led.color value="cyan"/>
 	</style>
 
 	<style class="Button_dry" parents="Button">
@@ -784,12 +827,7 @@
 		<text.padding.left value="2"/>
 	</style>
 
-	<style class="Channel_N_Group" parents="Group">
-		<layout.halign value="0"/>
-		<layout.valign value="-1"/>
-		<layout.hscale value="1"/>
-		<layout.vscale value="0"/>
-	</style>
+	<style class="Channel_N_Group" parents="Group"></style>
 
 	<style class="Channel_1_Group" parents="Channel_N_Group">
 		<color value="bg_name"/>
@@ -884,13 +922,69 @@
 		<led.color value="led_l"/>
 		<border.color value="led_bc"/>
 		<led.border.color value="led_bl"/>
-		<size value="8"/>
 		<led value="8"/>
-		<size.constraints value="8"/>
+		<size.constraints value="8 8"/>
 		<bg.inherit value="true"/>
+		<border.size value="0"/>
 		<round value="true"/>
 		<gradient value="false"/>
 		<hole value="false"/>
+	</style>
+
+	<style class="Led_red" parents="root">
+		<color value="led_c"/>
+		<border.color value="led_bc"/>
+		<led.color value="red"/>
+		<led.border.color value="bright_red"/>
+	</style>
+
+	<style class="Led_blue" parents="root">
+		<color value="led_c"/>
+		<border.color value="led_bc"/>
+		<led.color value="blue"/>
+		<led.border.color value="bright_blue"/>
+	</style>
+
+	<style class="Led_green" parents="root">
+		<color value="led_c"/>
+		<border.color value="led_bc"/>
+		<led.color value="green"/>
+		<led.border.color value="bright_green"/>
+	</style>
+
+	<style class="Led_yellow" parents="root">
+		<color value="led_c"/>
+		<border.color value="led_bc"/>
+		<led.color value="yellow"/>
+		<led.border.color value="bright_yellow"/>
+	</style>
+
+	<style class="Led_magenta" parents="root">
+		<color value="led_c"/>
+		<border.color value="led_bc"/>
+		<led.color value="magenta"/>
+		<led.border.color value="bright_magenta"/>
+	</style>
+
+	<style class="Led_cyan" parents="root">
+		<color value="led_c"/>
+		<border.color value="led_bc"/>
+		<led.color value="cyan"/>
+		<led.border.color value="bright_cyan"/>
+	</style>
+
+	<style class="Led_violet" parents="root">
+		<color value="led_c"/>
+		<border.color value="led_bc"/>
+		<led.color value="violet"/>
+		<led.border.color value="bright_violet"/>
+	</style>
+
+	<style class="Led_orange" parents="root">
+		<color value="led_c"/>
+		<border.color value="led_bc"/>
+		<led.color value="orange"/>
+		<led.border.color value="bright_orange"/>
 	</style>
 
 	<style class="ButtonLed" parents="Led">
@@ -1213,7 +1307,7 @@
 
 	<style class="PluginWindow::Bypass::Led" parents="Led">
 		<color value="led_cred"/>
-		<led.color value="led_lred"/>
+		<led.color value="red"/>
 		<size value="8"/>
 	</style>
 
