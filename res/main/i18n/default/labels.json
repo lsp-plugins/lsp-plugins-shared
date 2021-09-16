@@ -225,6 +225,7 @@
 	},
 
 	"frequency": "Frequency",
+	"freq_gain": "Freq, Gain",
 	"freq_gain:hz_db": "Freq, Gain\n(Hz, dB)",
 
 	"gain": "Gain",
@@ -261,6 +262,8 @@
 	"host_bpm": "Host BPM",
 
 	"hysteresis": "Hysteresis",
+
+	"hz_db": "(Hz, dB)",
 
 	"input": "Input",
 	"input_level:db": "Input Level (dB)",
@@ -403,6 +406,7 @@
 	},
 	"progress": "Progress",
 
+  "q": "Q",
 	"q_hue": "Q, Hue",
 	"quality": "Quality",
 

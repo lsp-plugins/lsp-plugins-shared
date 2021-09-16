@@ -894,6 +894,7 @@
 	<style class="LedMeter" parents="root">
 		<text.visible value="true" />
 		<color value="bg_schema"/>
+		<bg.color value="bg_schema"/>
 	</style>
 
 	<style class="LedMeterChannel" parents="root">
