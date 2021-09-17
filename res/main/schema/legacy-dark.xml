@@ -143,7 +143,7 @@
 
 		<!-- Graph -->
 		<bg_graph value="#1d1e25"/>
-		<mesh_graph value="#d52e35"/>
+		<graph_mesh value="#d52e35"/>
 		<graph_prim value="#63667b"/>
 		<graph_sec value="#3d3f4b"/>
 		<graph_alt_1 value="#353841"/>
@@ -709,13 +709,14 @@
 		<scale.border.radius value="5"/>
 		<scale.width value="-1"/>
 		<scale.border.color value="bg_name"/>
-		<scale.brightness value="0.75"/>
+		<scale.brightness value="1.5"/>
 
-		<button.color value="text_prim"/>
-		<button.border.gradient value="true"/>
-		<button.border.size value="3"/>
-		<button.border.radius value="2"/>
-		<button.width value="12"/>
+		<button.color value="bg"/>
+		<button.border.color value="bg_name"/>
+		<button.border.gradient value="false"/>
+		<button.border.size value="2"/>
+		<button.border.radius value="3"/>
+		<button.width value="4"/>
 	</style>
 
 	<style class="Graph" parents="root">
@@ -907,10 +908,29 @@
 
 	<style class="LedMeter" parents="root">
 		<text.visible value="true" />
+		<color value="bg"/>
+		<bg.color value="bg"/>
 	</style>
 
 	<style class="LedMeterChannel" parents="root">
 		<text.visible value="true" />
+		<value value="0.0f, 0.0f, 1.0f"/>
+	  <peak value="0.0f"/>
+	  <balance value="0.5f"/>
+	  <color value="white"/>
+	  <value.color value="cyan"/>
+	  <peak.color value="red"/>
+	  <text.color value="cyan"/>
+	  <balance.color value="yellow"/>
+	  <peak.visible value="false"/>
+	  <balance.visible value="false"/>
+	  <reversive value="false"/>
+	  <active value="true"/>
+	  <segments.min value="12"/>
+	  <constraints value="20, -1, 20, -1"/>
+	  <font value="9.0f"/>
+	  <border value="2"/>
+	  <angle value="0"/>
 	</style>
 
 	<style class="MultiLabel" parents="root">

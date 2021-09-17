@@ -143,7 +143,7 @@
 
 		<!-- Graph -->
 		<bg_graph value="#1f2025"/>
-		<mesh_graph value="#d52e35"/>
+		<graph_mesh value="#d52e35"/>
 		<graph_prim value="#636363"/>
 		<graph_sec value="#3f3f3f"/>
 		<graph_alt_1 value="#383838"/>
@@ -918,10 +918,29 @@
 
 	<style class="LedMeter" parents="root">
 		<text.visible value="true" />
+		<color value="bg"/>
+		<bg.color value="bg"/>
 	</style>
 
 	<style class="LedMeterChannel" parents="root">
 		<text.visible value="true" />
+		<value value="0.0f, 0.0f, 1.0f"/>
+	  <peak value="0.0f"/>
+	  <balance value="0.5f"/>
+	  <color value="white"/>
+	  <value.color value="cyan"/>
+	  <peak.color value="red"/>
+	  <text.color value="cyan"/>
+	  <balance.color value="yellow"/>
+	  <peak.visible value="false"/>
+	  <balance.visible value="false"/>
+	  <reversive value="false"/>
+	  <active value="true"/>
+	  <segments.min value="12"/>
+	  <constraints value="20, -1, 20, -1"/>
+	  <font value="9.0f"/>
+	  <border value="2"/>
+	  <angle value="0"/>
 	</style>
 
 	<style class="MultiLabel" parents="root">

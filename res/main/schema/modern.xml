@@ -140,7 +140,7 @@
 
 		<!-- Graph -->
 		<bg_graph value="#1f2025"/>
-		<mesh_graph value="#d52e35"/>
+		<graph_mesh value="#d52e35"/>
 		<graph_prim value="#63667b"/>
 		<graph_sec value="#3d3f4b"/>
 		<graph_alt_1 value="#353841"/>
