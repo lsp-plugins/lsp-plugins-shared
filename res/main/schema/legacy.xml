@@ -239,6 +239,7 @@
 		<font.name value="noto-sans-display"/>
 		<font.antialiasing value="true"/>
 		<font.size value="12.0"/>
+		<color.hue.control value="HSL" />
 	</root>
 
 	<!-- Windows -->
