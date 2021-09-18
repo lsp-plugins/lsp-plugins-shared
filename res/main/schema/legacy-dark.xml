@@ -143,13 +143,13 @@
 
 		<!-- Graph -->
 		<bg_graph value="#1d1e25"/>
-		<graph_mesh value="#d52e35"/>
+		<graph_mesh value="#239db5"/>
 		<graph_prim value="#63667b"/>
 		<graph_sec value="#3d3f4b"/>
 		<graph_alt_1 value="#353841"/>
 		<graph_alt_2 value="#31323b"/>
 		<graph_alt_3 value="#2a2c34"/>
-		<graph_marker value="#b5bae0"/>
+		<graph_marker value="#dc615a"/>
 
 		<!-- Group -->
 		<text_group value="#8488a3"/>
@@ -737,12 +737,12 @@
 
 	<style class="GraphDot" parents="root">
 		<smooth value="true"/>
-		<border.size value="10" />
+		<border.size value="5" />
 		<size value="3" />
 		<color value="cyan"/>
 		<border.color value="cyan"/>
 		<hover.size value="3" />
-		<hover.border.size value="14" />
+		<hover.border.size value="10" />
 		<hover.color value="cyan"/>
 		<hover.border.color value="cyan"/>
 	</style>
