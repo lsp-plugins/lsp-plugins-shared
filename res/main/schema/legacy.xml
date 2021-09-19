@@ -144,6 +144,7 @@
 		<!-- Graph -->
 		<bg_graph value="#1f2025"/>
 		<graph_mesh value="#00c0ff"/>
+		<graph_center value="#07c2ff"/>
 		<graph_prim value="#636363"/>
 		<graph_sec value="#3f3f3f"/>
 		<graph_alt_1 value="#383838"/>
@@ -228,6 +229,10 @@
 		<as_ch8 value="#290066" />
 		<fade_in value="#ffff00"/>
 		<fade_out value="#ffff00"/>
+
+		<!-- Cycle colors -->
+		<cycle value="#ff0000"/>
+		<graph_marker_cycle value="#d20000"/>
 
 	</colors>
 
@@ -359,6 +364,11 @@
 
 	<style class="Box" parents="root">
 		<bg.inherit value="true"/>
+	</style>
+
+	<style class="Bevel_cycle" parents="root">
+		<bg.color value="bg"/>
+		<color value="#ff000000"/>
 	</style>
 
 	<style class="Void" parents="root">

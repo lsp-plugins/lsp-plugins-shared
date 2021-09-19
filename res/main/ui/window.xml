@@ -26,11 +26,11 @@
 					<button id="bypass" ui:inject="PluginWindow::Bypass::Button" text="5" halign="1" />
 				</hbox>
 			</cell>
-			<bevel expand="true" color="bg_schema" width.min="20" height.min="20" halign="-1"/>
+			<label/>
 
 			<!-- Menu box -->
 			<hbox bg.color="bg" halign="1">
-				<void expand="true"/>
+				<bevel expand="true" color="bg_schema" width.min="20" height.min="20" halign="-1"/>
 				<hbox ui:id="trg_main_menu" solid="true" padding.right="10" padding.left="2" pointer="hand">
 					<label  hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.top="1" font.antialias="true" text="0" halign="1" />
 					<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.left="5" font.size="14" padding.top="3" halign="1" text="labels.header.menu"/>
@@ -58,6 +58,7 @@
 		<!-- plugin-content -->
 		<hbox ui:inject="PluginWindow::Content" ui:id="plugin_content"></hbox>
 
+		<hsep ui:inject="PluginWindow::Hsep_header" />
 		<!-- Footer -->
 		<hbox height="20" bg.color="bg_schema">
 			<!-- scale icons +- -->
