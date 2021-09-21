@@ -167,8 +167,6 @@
 		<dry_channel value="#ffff00"/>
 
 		<!-- Knob and meshes colors -->
-
-
 		<mono_in value="#aa0000"/>
 		<mono value="#ff0000"/>
 
@@ -213,6 +211,42 @@
 		<dry value="#fff600"/>
 		<wet value="#0092ff"/>
 
+		<!-- Inactive colors -->
+		<cycle_inactive value="#888888"/>
+		<mono_in_inactive value="#6c544f"/>
+		<mono_inactive value="#66504a"/>
+
+		<left_in_inactive value="#bf6455"/>
+		<right_in_inactive value="#55596c"/>
+
+		<left_inactive value="#66504a"/>
+		<right_inactive value="#545568"/>
+
+		<mid_in_inactive value="#425f62"/>
+		<side_in_inactive value="#4f5e4d"/>
+
+		<mid_inactive value="#446065"/>
+		<side_inactive value="#525f4e"/>
+
+		<velocity_inactive value="#68504e"/>
+
+		<balance_inactive value="#645748"/>
+		<balance_l_inactive value="#645748"/>
+		<balance_r_inactive value="#5d5a47"/>
+
+		<envelope_inactive value="#5f5669"/>
+
+		<sidechain_inactive value="#645046"/>
+
+		<treshold_inactive value="#625263"/>
+
+		<attack_inactive value="#644c54"/>
+
+		<release_inactive value="#4b6052"/>
+
+		<dry_inactive value="#605d4a"/>
+		<wet_inactive value="#505f70"/>
+
 		<!-- Metering -->
 		<meter_red value="#ff0000" />
 		<meter_yellow value="#ffff00" />
@@ -232,7 +266,11 @@
 
 		<!-- Cycle colors -->
 		<cycle value="#ff0000"/>
+		<graph_marker_mono value="#d20000"/>
+		<graph_marker_left value="#d20000"/>
+		<graph_marker_right value="#00d2d2"/>
 		<graph_marker_cycle value="#d20000"/>
+		<graph_mesh_cycle value="#00c0ff"/>
 
 	</colors>
 
