@@ -14,6 +14,11 @@
 		<noto-sans-condensed src="builtin://fonts/noto-sans-condensed-light.ttf"/>
 		<noto-sans-display src="builtin://fonts/NotoSansDisplay-Regular.ttf"/>
 	</fonts>
+	
+	<!-- Constants -->
+	<constants>
+		<bg_darken value="1.0" />
+	</constants>
 
 	<!-- Color aliases -->
 	<colors>
