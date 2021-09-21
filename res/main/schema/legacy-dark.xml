@@ -114,6 +114,7 @@
 
 		<!-- Knob -->
 		<kscale value="#239db5"/>
+		<kscale_inactive value="#4b666d"/>
 		<kcap value="#3b3d49"/>
 
 		<!-- Led -->
