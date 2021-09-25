@@ -909,6 +909,45 @@
 		<color value="channel_group_orange"/>
 		<bg.color value="channel_group_orange_bg"/>
 	</style>
+	
+	<style class="FileButton" parents="root">
+		<color value="bg_light" />
+		<inv.color value="bg_light" />
+		<text.color value="bg_light" />
+		<text.inv.color value="bg_light" />
+		<line.color value="text_sec" />
+		<line.inv.color value="text_sec" />
+	</style>
+	
+	<style class="FileButton::Select" parents="FileButton">
+	</style>
+	
+	<style class="FileButton::Progress" parents="FileButton">
+		<color value="green" />
+		<inv.color value="yellow" />
+		<text.color value="green" />
+		<text.inv.color value="yellow" />
+		<line.color value="bg" />
+		<line.inv.color value="bg" />
+	</style>
+	
+	<style class="FileButton::Success" parents="FileButton">
+		<color value="green" />
+		<text.color value="green" />
+		<inv.color value="green" />
+		<text.inv.color value="green" />
+		<line.color value="bg" />
+		<line.inv.color value="bg" />
+	</style>
+	
+	<style class="FileButton::Error" parents="FileButton">
+		<color value="red" />
+		<inv.color value="red" />
+		<text.color value="red" />
+		<text.inv.color value="red" />
+		<line.color value="bg" />
+		<line.inv.color value="bg" />
+	</style>
 
 	<style class="Hyperlink" parents="root">
 		<text.color value="hl_text"/>
