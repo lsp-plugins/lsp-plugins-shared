@@ -14,7 +14,7 @@
 		<noto-sans-condensed src="builtin://fonts/noto-sans-condensed-light.ttf"/>
 		<noto-sans-display src="builtin://fonts/NotoSansDisplay-Regular.ttf"/>
 	</fonts>
-	
+
 	<!-- Constants -->
 	<constants>
 		<bg_darken value="1.0" />
@@ -202,9 +202,9 @@
 		<sidechain_1 value="#ff5400"/>
 		<sidechain_2 value="#e14a00"/>
 
-		<treshold value="#e200ff"/>
-		<treshold_1 value="#e200ff"/>
-		<treshold_2 value="#e200ff"/>
+		<threshold value="#e200ff"/>
+		<threshold_1 value="#e200ff"/>
+		<threshold_2 value="#e200ff"/>
 
 		<attack value="#ff006b"/>
 		<attack_1 value="#ff006b"/>
@@ -244,7 +244,7 @@
 
 		<sidechain_inactive value="#645046"/>
 
-		<treshold_inactive value="#625263"/>
+		<threshold_inactive value="#625263"/>
 
 		<attack_inactive value="#644c54"/>
 
@@ -707,6 +707,62 @@
 		<font.size value="8"/>
 	</style>
 
+	<style class="Button_gray_6" parents="Button_gray">
+	  <font.size value="6"/>
+	</style>
+
+	<style class="Button_red_6" parents="Button_red">
+	  <font.size value="6"/>
+	</style>
+
+	<style class="Button_green_6" parents="Button_green">
+	  <font.size value="6"/>
+	</style>
+
+	<style class="Button_orange_6" parents="Button_orange">
+	  <font.size value="6"/>
+	</style>
+
+	<style class="Button_yellow_6" parents="Button_yellow">
+	  <font.size value="6"/>
+	</style>
+
+	<style class="Button_cyan_6" parents="Button_cyan">
+	  <font.size value="6"/>
+	</style>
+
+	<style class="Button_blue_6" parents="Button_blue">
+	  <font.size value="6"/>
+	</style>
+
+	<style class="Button_violet_6" parents="Button_violet">
+	  <font.size value="6"/>
+	</style>
+
+	<style class="Button_magenta_6" parents="Button_magenta">
+	  <font.size value="6"/>
+	</style>
+
+	<style class="Button_left_6" parents="Button_left">
+	  <font.size value="6"/>
+	</style>
+
+	<style class="Button_right_6" parents="Button_right">
+	  <font.size value="6"/>
+	</style>
+
+	<style class="Button_side_6" parents="Button_side">
+	  <font.size value="6"/>
+	</style>
+
+	<style class="Button_mid_6" parents="Button_mid">
+	  <font.size value="6"/>
+	</style>
+
+	<style class="Button_dry_6" parents="Button_dry">
+	  <font.size value="6"/>
+	</style>
+
 	<style class="Button_Cycle" parents="Button_gray_8">
 		<down.color value="dark_red"/>
 		<down.hover.color value="dark_red"/>
@@ -716,6 +772,10 @@
 
 		<border.down.color value="bright_red"/>
 		<border.down.hover.color value="red"/>
+	</style>
+
+	<style class="Button_Cycle_6" parents="Button_Cycle">
+		<font.size value="6"/>
 	</style>
 
 	<style class="CheckBox" parents="root">
@@ -934,7 +994,7 @@
 		<color value="bg_name"/>
 		<bg.color value="bg"/>
 	</style>
-	
+
 	<style class="FileButton" parents="root">
 		<color value="bg_light" />
 		<inv.color value="bg_light" />
@@ -943,10 +1003,10 @@
 		<line.color value="text_sec" />
 		<line.inv.color value="text_sec" />
 	</style>
-	
+
 	<style class="FileButton::Select" parents="FileButton">
 	</style>
-	
+
 	<style class="FileButton::Progress" parents="FileButton">
 		<color value="green" />
 		<inv.color value="yellow" />
@@ -955,7 +1015,7 @@
 		<line.color value="bg" />
 		<line.inv.color value="bg" />
 	</style>
-	
+
 	<style class="FileButton::Success" parents="FileButton">
 		<color value="green" />
 		<text.color value="green" />
@@ -964,7 +1024,7 @@
 		<line.color value="bg" />
 		<line.inv.color value="bg" />
 	</style>
-	
+
 	<style class="FileButton::Error" parents="FileButton">
 		<color value="red" />
 		<inv.color value="red" />
