@@ -323,12 +323,10 @@
 	</style>
 
 	<style class="AudioChannel" parents="root">
-
 		<fade_in.color value="#aa2abecc"/>
 		<fade_out.color value="#aa2abecc"/>
 		<fade_in.border.color value="#aa2abecc"/>
 		<fade_out.border.color value="#aa2abecc"/>
-
 	</style>
 
 	<style class="AudioSample" parents="root">
