@@ -156,9 +156,9 @@
 		<graph_marker value="#95333b"/>
 		
 		<!-- Area3d -->
-		<area3d_x value="#ff0000" />
-		<area3d_y value="#00ff00" />
-		<area3d_z value="#0000ff" />
+		<area3d_x value="#e53f40" />
+		<area3d_y value="#009600" />
+		<area3d_z value="#377bff" />
 
 		<!-- Group -->
 		<text_group value="#9ea6d1"/>
