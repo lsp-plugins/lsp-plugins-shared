@@ -218,6 +218,9 @@
 		<wet value="#368ccc"/>
 
 		<!-- Inactive colors -->
+		<fader value="#000000"/>
+		<fader_inactive value="#000000"/>
+
 		<cycle_inactive value="#6f7185"/>
 		<mono_in_inactive value="#6c544f"/>
 		<mono_inactive value="#66504a"/>
@@ -827,6 +830,7 @@
 		<scale.width value="-1"/>
 		<scale.border.color value="bg_name"/>
 		<scale.brightness value="1.5"/>
+		<bg.inherit value="true"/>
 
 		<button.color value="bg"/>
 		<button.border.color value="bg_name"/>

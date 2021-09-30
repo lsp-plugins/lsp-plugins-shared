@@ -204,6 +204,9 @@
 		<wet value="#368ccc"/>
 
 		<!-- Inactive colors -->
+		<fader value="#3496ab"/>
+		<fader_inactive value="#4b666d"/>
+
 		<cycle_inactive value="#6f7185"/>
 		<mono_in_inactive value="#6c544f"/>
 		<mono_inactive value="#66504a"/>
@@ -804,13 +807,14 @@
 	</style>
 
 	<style class="Fader" parents="root">
-		<scale.color value="kscale"/>
+		<scale.color value="fader"/>
 		<scale.border.gradient value="false"/>
 		<scale.border.size value="0"/>
 		<scale.border.radius value="0"/>
 		<scale.width value="8"/>
 		<scale.border.color value="bg"/>
 		<scale.brightness value="0.6"/>
+		<bg.inherit value="true"/>
 
 		<button.color value="bg"/>
 		<button.border.gradient value="false"/>
