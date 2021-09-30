@@ -154,6 +154,11 @@
 		<graph_alt_2 value="#31323b"/>
 		<graph_alt_3 value="#2a2c34"/>
 		<graph_marker value="#95333b"/>
+		
+		<!-- Area3d -->
+		<area3d_x value="#e53f40" />
+		<area3d_y value="#009600" />
+		<area3d_z value="#377bff" />
 
 		<!-- Group -->
 		<text_group value="#9ea6d1"/>
@@ -294,6 +299,16 @@
 	<!-- Simple widgets -->
 	<style class="Align" parents="root">
 		<bg.inherit value="true"/>
+	</style>
+	
+	<style class="Area3D" parents="root">
+		<glass.visibility value="false"/>
+		<border.color value="bg_name"/>
+		<border.size value="0"/>
+		<border.radius value="0"/>
+		<color value="bg_graph"/>
+		<bg.inherit value="false"/>
+		<border.flat value="true"/>
 	</style>
 
 	<style class="AudioChannel" parents="root">
