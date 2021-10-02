@@ -10,8 +10,6 @@
 	<fonts>
 		<lsp-logo src="builtin://fonts/lsp-logo.ttf"/>
 		<lsp-icons src="builtin://fonts/lsp-icons.ttf"/>
-		<noto-sans src="builtin://fonts/noto-sans-light.ttf"/>
-		<noto-sans-condensed src="builtin://fonts/noto-sans-condensed-light.ttf"/>
 		<noto-sans-display src="builtin://fonts/NotoSansDisplay-Regular.ttf"/>
 	</fonts>
 
@@ -1041,6 +1039,12 @@
 		<text.inv.color value="red" />
 		<line.color value="bg" />
 		<line.inv.color value="bg" />
+	</style>
+
+	<style class="Fraction" parents="root">
+		<color value="text_sec" />
+		<num.color value="text_sec" />
+		<den.color value="text_sec" />
 	</style>
 
 	<style class="Hyperlink" parents="root">

@@ -10,8 +10,6 @@
 	<fonts>
 		<lsp-logo src="builtin://fonts/lsp-logo.ttf"/>
 		<lsp-icons src="builtin://fonts/lsp-icons.ttf"/>
-		<noto-sans src="builtin://fonts/noto-sans-light.ttf"/>
-		<noto-sans-condensed src="builtin://fonts/noto-sans-condensed-light.ttf"/>
 		<noto-sans-display src="builtin://fonts/NotoSansDisplay-Regular.ttf"/>
 	</fonts>
 
@@ -163,7 +161,7 @@
 		<!-- Group -->
 		<text_group value="#9ea6d1"/>
 
-    <!-- Knob and meshes colors -->
+    	<!-- Knob and meshes colors -->
 		<mono_in value="#bf6455"/>
 		<mono value="#d8412a"/>
 
@@ -1027,6 +1025,12 @@
 		<line.color value="bg" />
 		<line.inv.color value="bg" />
 	</style>
+	
+	<style class="Fraction" parents="root">
+		<color value="text_sec" />
+		<num.color value="text_sec" />
+		<den.color value="text_sec" />
+	</style>
 
 	<style class="Hyperlink" parents="root">
 		<text.color value="hl_text"/>
@@ -1073,25 +1077,24 @@
 	</style>
 
 	<style class="LedMeterChannel" parents="root">
-	<text.visible value="true" />
-	<value value="0.0f, 0.0f, 1.0f"/>
-  <peak value="0.0f"/>
-  <balance value="0.5f"/>
-  <color value="white"/>
-  <value.color value="cyan"/>
-  <peak.color value="red"/>
-  <text.color value="cyan"/>
-  <balance.color value="yellow"/>
-  <peak.visible value="false"/>
-  <balance.visible value="false"/>
-  <reversive value="false"/>
-  <active value="true"/>
-  <segments.min value="12"/>
-  <constraints value="20, -1, 20, -1"/>
-  <font value="9.0f"/>
-  <border value="2"/>
-  <angle value="0"/>
-
+		<text.visible value="true" />
+		<value value="0.0f, 0.0f, 1.0f"/>
+		<peak value="0.0f"/>
+		<balance value="0.5f"/>
+		<color value="white"/>
+		<value.color value="cyan"/>
+		<peak.color value="red"/>
+		<text.color value="cyan"/>
+		<balance.color value="yellow"/>
+		<peak.visible value="false"/>
+		<balance.visible value="false"/>
+		<reversive value="false"/>
+		<active value="true"/>
+		<segments.min value="12"/>
+		<constraints value="20, -1, 20, -1"/>
+		<font value="9.0f"/>
+		<border value="2"/>
+		<angle value="0"/>
 	</style>
 
 	<style class="MultiLabel" parents="root">
