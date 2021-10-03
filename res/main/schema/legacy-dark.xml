@@ -155,7 +155,7 @@
 		<graph_alt_2 value="#31323b"/>
 		<graph_alt_3 value="#2a2c34"/>
 		<graph_marker value="#dc615a"/>
-		
+
 		<!-- Area3d -->
 		<area3d_x value="#ff0000" />
 		<area3d_y value="#00ff00" />
@@ -312,7 +312,7 @@
 	<style class="Align" parents="root">
 		<bg.inherit value="true"/>
 	</style>
-	
+
 	<style class="Area3D" parents="root">
 		<glass.visibility value="false"/>
 		<border.color value="bg_name"/>
@@ -1045,6 +1045,8 @@
 		<color value="text_sec" />
 		<num.color value="text_sec" />
 		<den.color value="text_sec" />
+		<bg.inherit value="true"/>
+		<pointer value="hand"/>
 	</style>
 
 	<style class="Hyperlink" parents="root">
