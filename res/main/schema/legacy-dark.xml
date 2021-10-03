@@ -1300,6 +1300,12 @@
 	<style class="LabelChannel_8" parents="LabelChannel">
 		<bg.color value="bg"/>
 	</style>
+	
+	<style class="Origin3D" parents="root">
+		<x.color value="area3d_x" />
+		<y.color value="area3d_y" />
+		<z.color value="area3d_z" />
+	</style>
 
 	<style class="Separator" parents="root">
 		<color value="border_color"/>
