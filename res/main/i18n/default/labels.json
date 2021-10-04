@@ -188,6 +188,8 @@
 		"fft": "FFT",
 		"fft:": "FFT:",
 		"frame": "FFT Frame",
+		"fft_in": "FFT In",
+		"fft_out": "FFT Out",
 		"tolerance": "Tolerance",
 		"window": "Window"
 	},
