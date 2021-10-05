@@ -1315,6 +1315,12 @@
 		<color value="border_color"/>
 		<thickness value="1"/>
 	</style>
+	
+	<style class="Source3D" parents="root">
+		<color value="cyan" />
+		<line.color value="cyan" />
+		<point.color value="cyan" />
+	</style>
 
 	<style class="Switch" parents="root"></style>
 
