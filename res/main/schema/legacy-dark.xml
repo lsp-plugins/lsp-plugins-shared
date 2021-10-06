@@ -787,6 +787,12 @@
 	<style class="Button_Cycle_6" parents="Button_Cycle">
 		<font.size value="6"/>
 	</style>
+	
+	<style class="Capture3D" parents="root">
+		<color value="cyan" />
+		<line.color value="cyan" />
+		<point.color value="cyan" />
+	</style>
 
 	<style class="CheckBox" parents="root">
 		<border.size value="1"/>
