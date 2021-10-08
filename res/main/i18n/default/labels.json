@@ -78,6 +78,10 @@
 	"capsule": "Capsule",
 
 	"chan": {
+		"active_num_id_L_eft": "Active #{@id} L",
+		"active_num_id_M_id": "Active #{@id} M",
+		"active_num_id_R_ight": "Active #{@id} R",
+		"active_num_id_S_ide": "Active #{@id} S",
 		":db": "(dB)",
 		"Ext_ernal": "Ext",
 		"H_old": "H",
