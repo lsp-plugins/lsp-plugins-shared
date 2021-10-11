@@ -1412,6 +1412,9 @@
 		<y.color value="area3d_y" />
 		<z.color value="area3d_z" />
 	</style>
+	
+	<style class="ProgressBar" parents="root">
+	</style>
 
 	<style class="Separator" parents="root">
 		<color value="border_color"/>

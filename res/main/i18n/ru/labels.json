@@ -586,7 +586,7 @@
 		"worst": "Худшее",
 		"x_k": "{@value}к",
 		"x_khz": "{@value} кГц",
-		"x_pc": "{@value} %"
+		"x_pc": "{@value%.2f} %"
 	},
 	
 	"warning": {

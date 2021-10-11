@@ -552,7 +552,7 @@
 		"worst": "Peor",
 		"x_k": "{@value}k",
 		"x_khz": "{@value} kHz",
-		"x_pc": "{@value} %"
+		"x_pc": "{@value%.2f} %"
 	},
 	
 	"working_area": "Zona trabajo",
