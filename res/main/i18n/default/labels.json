@@ -78,6 +78,7 @@
 	"capsule": "Capsule",
 
 	"chan": {
+		"active_num_id": "Active #{@id}",
 		"active_num_id_L_eft": "Active #{@id} L",
 		"active_num_id_M_id": "Active #{@id} M",
 		"active_num_id_R_ight": "Active #{@id} R",

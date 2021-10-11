@@ -745,6 +745,10 @@
 		<font.size value="8"/>
 	</style>
 
+	<style class="Button_mono_8" parents="Button_mono">
+		<font.size value="8"/>
+	</style>
+
 	<style class="Button_left_8" parents="Button_left">
 		<font.size value="8"/>
 	</style>
@@ -799,6 +803,10 @@
 
 	<style class="Button_magenta_6" parents="Button_magenta">
 	  <font.size value="6"/>
+	</style>
+
+	<style class="Button_mono_6" parents="Button_mono">
+		<font.size value="6"/>
 	</style>
 
 	<style class="Button_left_6" parents="Button_left">
