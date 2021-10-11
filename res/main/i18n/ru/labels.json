@@ -585,7 +585,8 @@
 		"selected": "Выбранное",
 		"worst": "Худшее",
 		"x_k": "{@value}к",
-		"x_khz": "{@value} кГц"
+		"x_khz": "{@value} кГц",
+		"x_pc": "{@value} %"
 	},
 	
 	"warning": {

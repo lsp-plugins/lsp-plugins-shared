@@ -554,7 +554,8 @@
 		"selected": "Selezionato",
 		"worst": "Peggiore",
 		"x_k": "{@value}k",
-		"x_khz": "{@value} kHz"
+		"x_khz": "{@value} kHz",
+		"x_pc": "{@value} %"
 	},
 	
 	"working_area": "Area lavoro",

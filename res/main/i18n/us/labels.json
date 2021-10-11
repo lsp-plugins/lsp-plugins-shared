@@ -585,7 +585,8 @@
 		"selected": "Selected",
 		"worst": "Worst",
 		"x_k": "{@value}k",
-		"x_khz": "{@value} kHz"
+		"x_khz": "{@value} kHz",
+		"x_pc": "{@value} %"
 	},
 
 	"warning": {
