@@ -191,6 +191,10 @@
 		"none": "Выкл"
 	},
 	
+	"rendering": {
+		"glx_opengl_v2": "OpenGL 2.0 (GLX)"
+	},
+	
 	"sidechain": {
 		"boost": {
 			"brown_bt": "Броуновский БП",
