@@ -111,6 +111,9 @@
 		<plug_name value="#ebecee"/>
 		<plug_name_sep value="#aaabac"/>
 		<plug_name_acr value="#00b1eb"/>
+		
+		<button_face value="#cccccc" />
+		<button_hface value="#eeeeee" />
 
 		<!-- Separator -->
 		<sep_hover_legacy value="#ebecee"/>
@@ -450,8 +453,8 @@
 	  <border.down.color value="bright_gray"/>
 	  <border.down.hover.color value="gray"/>
 
-		<color value="bg_light"/>
-	  <hover.color value="dark_gray"/>
+		<color value="button_face"/>
+	  <hover.color value="button_hface"/>
 	  <down.color value="bright_gray"/>
 	  <down.hover.color value="dark_gray"/>
 

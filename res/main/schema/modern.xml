@@ -1112,6 +1112,11 @@
 		<text.inv.color value="text_sec" />
 		<line.color value="bg_schema" />
 		<line.inv.color value="bg_schema" />
+		<border.size value="2"/>
+		<border.pressed.size value="3"/>
+		<border.color value="bg_name" />
+		<border.inv.color value="bg_name" />
+		<gradient value="false" />
 	</style>
 
 	<style class="FileButton::Select" parents="FileButton">
