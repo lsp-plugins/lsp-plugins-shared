@@ -1106,33 +1106,33 @@
 	</style>
 
 	<style class="FileButton" parents="root">
-		<color value="bg_light" />
-		<inv.color value="bg_light" />
-		<text.color value="bg_light" />
-		<text.inv.color value="bg_light" />
-		<line.color value="text_sec" />
-		<line.inv.color value="text_sec" />
+		<color value="text_sec" />
+		<inv.color value="text_sec" />
+		<text.color value="text_sec" />
+		<text.inv.color value="text_sec" />
+		<line.color value="bg_schema" />
+		<line.inv.color value="bg_schema" />
 	</style>
 
 	<style class="FileButton::Select" parents="FileButton">
 	</style>
 
 	<style class="FileButton::Progress" parents="FileButton">
-		<color value="green" />
-		<inv.color value="yellow" />
-		<text.color value="green" />
-		<text.inv.color value="yellow" />
-		<line.color value="bg" />
-		<line.inv.color value="bg" />
+		<color value="cyan" />
+		<inv.color value="orange" />
+		<text.color value="cyan" />
+		<text.inv.color value="orange" />
+		<line.color value="bg_schema" />
+		<line.inv.color value="bg_schema" />
 	</style>
 
 	<style class="FileButton::Success" parents="FileButton">
-		<color value="green" />
-		<text.color value="green" />
-		<inv.color value="green" />
-		<text.inv.color value="green" />
-		<line.color value="bg" />
-		<line.inv.color value="bg" />
+		<color value="cyan" />
+		<text.color value="cyan" />
+		<inv.color value="cyan" />
+		<text.inv.color value="cyan" />
+		<line.color value="bg_schema" />
+		<line.inv.color value="bg_schema" />
 	</style>
 
 	<style class="FileButton::Error" parents="FileButton">
@@ -1140,8 +1140,8 @@
 		<inv.color value="red" />
 		<text.color value="red" />
 		<text.inv.color value="red" />
-		<line.color value="bg" />
-		<line.inv.color value="bg" />
+		<line.color value="bg_schema" />
+		<line.inv.color value="bg_schema" />
 	</style>
 
 	<style class="Fraction" parents="root">
@@ -1412,7 +1412,7 @@
 		<y.color value="area3d_y" />
 		<z.color value="area3d_z" />
 	</style>
-	
+
 	<style class="ProgressBar" parents="root">
 	</style>
 

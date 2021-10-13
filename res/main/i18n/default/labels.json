@@ -156,6 +156,7 @@
 	"click_or_drag_to_load": "Click or drag to load",
 
 	"coarse_ir_duration": "Coarse\nIR Duration (s)",
+	"coarse_ir_duration_sline": "Coarse IR Duration (s)",
 	"coarse_duration": "Coarse\nDuration",
 
 	"curve": "Curve",
@@ -183,6 +184,7 @@
 	"enable": "Enable",
 
 	"energy_decay_linear_correlation": "Energy Decay\nLinear Correlation",
+	"energy_decay_linear_correlation_sline": "Energy Decay Linear Correlation",
 
 	"equalizer": "Equalizer",
 	"equalizer:db": "Equalizer (dB)",
@@ -363,6 +365,8 @@
 	"muting": "Muting",
 
 	"noise_floor": "Noise Floor",
+	"noise_floor_left": "Noise Floor Left",
+	"noise_floor_right": "Noise Floor Right",
 
 	"normalize": "Normalize",
 
@@ -452,6 +456,7 @@
 	"result": "Result",
 
 	"reverberation_time:s": "Reverberation\nTime (s)",
+	"reverberation_time:s_sline": "Reverberation time (s)",
 
 	"right": "Right",
 
