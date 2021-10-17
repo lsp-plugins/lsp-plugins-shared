@@ -1128,6 +1128,13 @@
 		<text.inv.color value="text_sec" />
 		<line.color value="bg_schema" />
 		<line.inv.color value="bg_schema" />
+		<border.size value="0"/>
+		<border.pressed.size value="2"/>
+		<border.color value="bg_schema" />
+		<border.inv.color value="bg_schema" />
+		<gradient value="false" />
+		<bg.inherit value="true" />
+		<pointer value="true" />
 	</style>
 
 	<style class="FileButton::Select" parents="FileButton">
@@ -1427,7 +1434,15 @@
 	</style>
 
 	<style class="ProgressBar" parents="root">
-	</style>
+		<border.radius value="4"/>
+		<border.size value="2"/>
+		<border.gap.size value="0"/>
+		<border.color value="bg_name"/>
+		<color value="bg_light"/>
+		<text.color value="text_sec"/>
+		<inv.color value="bg_graph"/>
+		<text.inv.color value="text_prim"/>
+	</style>>
 
 	<style class="Separator" parents="root">
 		<color value="border_color"/>

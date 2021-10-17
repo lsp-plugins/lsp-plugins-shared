@@ -535,6 +535,7 @@
 		"pan_right": "Pan Right",
 		"peak": "Peak",
 		"phase": "Phase",
+		"phase_invert": "Phase Invert",
 		"positive": "Positive",
 		"positive_width": "Positive Width",
 		"raise": "Raise",

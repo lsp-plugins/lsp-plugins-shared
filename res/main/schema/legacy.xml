@@ -111,7 +111,7 @@
 		<plug_name value="#ebecee"/>
 		<plug_name_sep value="#aaabac"/>
 		<plug_name_acr value="#00b1eb"/>
-		
+
 		<button_face value="#cccccc" />
 		<button_hface value="#eeeeee" />
 
@@ -1139,6 +1139,8 @@
 		<text.inv.color value="bg_light" />
 		<line.color value="text_sec" />
 		<line.inv.color value="text_sec" />
+		<bg.inherit value="true" />
+		<pointer value="true" />
 	</style>
 
 	<style class="FileButton::Select" parents="FileButton">
@@ -1434,8 +1436,16 @@
 		<y.color value="area3d_y" />
 		<z.color value="area3d_z" />
 	</style>
-	
+
 	<style class="ProgressBar" parents="root">
+		<border.radius value="4"/>
+		<border.size value="1"/>
+		<border.gap.size value="1"/>
+		<border.color value="#444444"/>
+		<color value="#008800"/>
+		<text.color value="#ffffff"/>
+		<inv.color value="#ffffff"/>
+		<text.inv.color value="#000000"/>
 	</style>
 
 	<style class="Separator" parents="root">
