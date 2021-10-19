@@ -259,6 +259,16 @@
 		<dry_inactive value="#605d4a"/>
 		<wet_inactive value="#505f70"/>
 
+		<red_inactive value="#6f5152"/>
+		<orange_inactive value="#665550"/>
+		<yellow_inactive value="#5d5850"/>
+		<green_inactive value="#4f5e50"/>
+		<cyan_inactive value="#4f5d61"/>
+		<blue_inactive value="#4f5877"/>
+		<violet_inactive value="#664e77"/>
+		<magenta_inactive value="#6e5058"/>
+		<gray_inactive value="#4f5055"/>
+
 		<!-- Metering -->
 		<meter_red value="#ff0000" />
 		<meter_yellow value="#ffff00" />
