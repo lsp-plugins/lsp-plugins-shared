@@ -78,12 +78,11 @@
 	"capsule": "Capsule",
 
 	"chan": {
-		"active_num_id": "Active #{@id}",
-		"active_num_id_L_eft": "Active #{@id} L",
-		"active_num_id_M_id": "Active #{@id} M",
-		"active_num_id_R_ight": "Active #{@id} R",
-		"active_num_id_S_ide": "Active #{@id} S",
 		":db": "(dB)",
+		"Ch_1": "Ch1",
+		"Ch_2": "Ch2",
+		"Ch_3": "Ch3",
+		"Ch_4": "Ch4",
 		"Ext_ernal": "Ext",
 		"H_old": "H",
 		"L_eft": "L",
@@ -99,12 +98,19 @@
 		"S_ide": "S",
 		"S_ide:": "S:",
 		"S_olo": "S",
+		"active_num_id": "Active #{@id}",
+		"active_num_id_L_eft": "Active #{@id} L",
+		"active_num_id_M_id": "Active #{@id} M",
+		"active_num_id_R_ight": "Active #{@id} R",
+		"active_num_id_S_ide": "Active #{@id} S",
 		"channel_n": "Channel {@id}",
 		"external_sc": "External",
 		"external_sc_left": "Left External",
 		"external_sc_mid": "Mid External",
 		"external_sc_right": "Right External",
 		"external_sc_side": "Side External",
+		"freeze": "Freeze",
+		"frz": "Frz",
 		"hold": "Hold",
 		"hue": "Hue",
 		"id": "{@id}",
@@ -198,9 +204,9 @@
 		"envelope": "Envelope",
 		"fft": "FFT",
 		"fft:": "FFT:",
-		"frame": "FFT Frame",
 		"fft_in": "FFT In",
 		"fft_out": "FFT Out",
+		"frame": "FFT Frame",
 		"tolerance": "Tolerance",
 		"window": "Window"
 	},
@@ -245,6 +251,8 @@
 	"gain_": "Gain",
 	"gain:db": "Gain\n(dB)",
 
+	"global_settings": "Global Settings",
+
 	"graphs": {
 		"compression": "COMPRESSION",
 		"correlation": "CORRELATION GRAPH",
@@ -256,6 +264,7 @@
 		"gating": "GATING",
 		"left_channel": "LEFT CHANNEL",
 		"oscillator_waveform": "OSCILLATOR WAVEFORM",
+		"oscilloscope": "OSCILLOSCOPE GRAPH",
 		"right_channel": "RIGHT CHANNEL",
 		"spectrum": "SPECTRUM GRAPH",
 		"time": "TIME GRAPH",
@@ -270,6 +279,8 @@
 		"reset": "RESET",
 		"save": "SAVE"
 	},
+	
+	"history": "History",
 
 	"hold": "Hold",
 	"host_bpm": "Host BPM",
@@ -380,6 +391,28 @@
 
 	"offset": "Offset",
 	"offset:samp": "Offset (samp)",
+
+	"oscilloscope": {
+		"H_orizontal": "H",
+		"T_ime": "T",
+		"V_ertical": "V",
+		"division": "Division",
+		"horizontal": "Horizontal",
+		"max_dots": "Max Dots",
+		"mode": "Mode",
+		"oversampler_mode": "Oversampler",
+		"position": "Position",
+		"sweep_type": "Sweep Type",
+		"trigger_hold_time": "Hold Time",
+		"trigger_hysteresis": "Hysteresis",
+		"trigger_input": "Input",
+		"trigger_level": "Level",
+		"trigger_mode": "Mode",
+		"trigger_reset": "Reset",
+		"trigger_type": "Edge Type",
+		"vertical": "Vertical",
+		"xy_sweep": "XY Sweep"
+	},
 
 	"output": "Output",
 	"output:db": "Output (dB)",
@@ -634,6 +667,8 @@
 	},
 
 	"working_area": "Working area",
+
+	"X_Y_EXT": "X | Y | EXT",
 
 	"zone": "Zone",
 	"zoom": "Zoom"

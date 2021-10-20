@@ -79,13 +79,17 @@
 	
 	"chan": {
 		":db": "(дБ)",
+		"Ch_1": "Кан1",
+		"Ch_2": "Кан2",
+		"Ch_3": "Кан3",
+		"Ch_4": "Кан4",
 		"Ext_ernal": "Внеш",
 		"H_old": "У",
 		"L_eft": "Л",
 		"L_eft:": "Л:",
-		"M_ute": "Г",
 		"M_id": "Ц",
 		"M_id:": "Ц:",
+		"M_ute": "Г",
 		"OFF": "ВЫКЛ",
 		"ON": "ВКЛ",
 		"P_hase": "Ф",
@@ -96,6 +100,8 @@
 		"S_olo": "С",
 		"channel_n": "Канал {@id}",
 		"external_sc": "Внешняя",
+		"freeze": "Удерж",
+		"frz": "Уд",
 		"hold": "Удерж",
 		"hue": "Тон",
 		"id": "{@id}",
@@ -181,6 +187,7 @@
 	"export": "Экспорт",
 	
 	"feedback": "Обратная связь",
+	"feed_gain": "Глубина ОС",
 
 	"fft": {
 		"envelope": "Огибающая",
@@ -229,7 +236,9 @@
 	"gain": "Усиление",
 	"gain_": "Усил",
 	"gain:db": "Усиление\n(дБ)",
-	
+
+	"global_settings": "Общие настройки",
+
 	"graphs": {
 		"compression": "КОМПРЕССИЯ",
 		"correlation": "ГРАФИК КОРРЕЛЯЦИИ",
@@ -241,12 +250,15 @@
 		"gating": "ГЕЙТИРОВАНИЕ",
 		"left_channel": "ЛЕВЫЙ КАНАЛ",
 		"oscillator_waveform": "ФОРМА ВОЛНЫ ГЕНЕРАТОРА",
+		"oscilloscope": "ГРАФИК ОСЦИЛЛОСКОПА",
 		"right_channel": "ПРАВЫЙ КАНАЛ",
 		"spectrum": "СПЕКТРАЛЬНЫЙ ГРАФИК",
 		"time": "ВРЕМЕННОЙ ГРАФИК",
 		"trigger": "ГРАФИК ТРИГГЕРА"
 	},
 	"group": "Группа",
+
+	"history": "История",
 
 	"hold": "Удерживать",
 	"host_bpm": "УВМ хоста",
@@ -351,7 +363,26 @@
 	
 	"offset": "Смещение",
 	"offset:samp": "Смещение (отсч)",
-	
+
+	"oscilloscope": {
+		"division": "Деление",
+		"horizontal": "Горизонталь",
+		"max_dots": "Макс точек",
+		"mode": "Режим",
+		"oversampler_mode": "Оверсемплинг",
+		"position": "Position",
+		"sweep_type": "Ход луча",
+		"trigger_hold_time": "Время удерж",
+		"trigger_hysteresis": "Гистерезис",
+		"trigger_input": "Вход",
+		"trigger_level": "Уровень",
+		"trigger_mode": "Режим",
+		"trigger_reset": "Сброс",
+		"trigger_type": "Событие",
+		"vertical": "Вертикаль",
+		"xy_sweep": "XY Ход"
+	},
+
 	"output": "Выход",
 	"output:db": "Выход (дБ)",
 	"oversampling": "Передискретизация",
@@ -597,7 +628,9 @@
 	},
 	
 	"working_area": "Рабочая область",
-	
+
+	"X_Y_EXT": "X | Y | ВНЕШ",
+
 	"zone": "Зона",
 	"zoom": "Масш"
 }

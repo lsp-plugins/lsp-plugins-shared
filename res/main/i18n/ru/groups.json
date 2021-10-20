@@ -42,6 +42,12 @@
 	"monitoring": "Мониторинг",
 	
 	"oscillator_function": "Функция осциллятора",
+	"oscilloscope": {
+		"coupling": "Связь",
+		"operation": "Операция",
+		"trigger": "Триггер"
+	},
+
 	"output": "Выход",
 	"outputs": "Выходы",
 	
@@ -49,7 +55,7 @@
 	
 	"plug": {
 		"calibrator": "Калибратор",
-		"compressor": "Компрессор",	
+		"compressor": "Компрессор",
 		"expander": "Экспандер",
 		"gate": "Гейт",
 		"latency_detector": "Детектор задержки",

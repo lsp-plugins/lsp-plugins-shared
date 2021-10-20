@@ -41,7 +41,7 @@
 	"alr": "ALR",
 
 	"amplitude": "Amplitude",
-	
+
 	"asample": {
 		"fname": "{@file_name}",
 		"duration": "{@length_cut%.1f} / {@length%.1f}",
@@ -79,6 +79,10 @@
 
 	"chan": {
 		":db": "(dB)",
+		"Ch_1": "Ch1",
+		"Ch_2": "Ch2",
+		"Ch_3": "Ch3",
+		"Ch_4": "Ch4",
 		"Ext_ernal": "Ext",
 		"H_old": "H",
 		"L_eft": "L",
@@ -94,8 +98,19 @@
 		"S_ide": "S",
 		"S_ide:": "S:",
 		"S_olo": "S",
+		"active_num_id": "Active #{@id}",
+		"active_num_id_L_eft": "Active #{@id} L",
+		"active_num_id_M_id": "Active #{@id} M",
+		"active_num_id_R_ight": "Active #{@id} R",
+		"active_num_id_S_ide": "Active #{@id} S",
 		"channel_n": "Channel {@id}",
 		"external_sc": "External",
+		"external_sc_left": "Left External",
+		"external_sc_mid": "Mid External",
+		"external_sc_right": "Right External",
+		"external_sc_side": "Side External",
+		"freeze": "Freeze",
+		"frz": "Frz",
 		"hold": "Hold",
 		"hue": "Hue",
 		"id": "{@id}",
@@ -147,6 +162,7 @@
 	"click_or_drag_to_load": "Click or drag to load",
 
 	"coarse_ir_duration": "Coarse\nIR Duration (s)",
+	"coarse_ir_duration_sline": "Coarse IR Duration (s)",
 	"coarse_duration": "Coarse\nDuration",
 
 	"curve": "Curve",
@@ -174,6 +190,7 @@
 	"enable": "Enable",
 
 	"energy_decay_linear_correlation": "Energy Decay\nLinear Correlation",
+	"energy_decay_linear_correlation_sline": "Energy Decay Linear Correlation",
 
 	"equalizer": "Equalizer",
 	"equalizer:db": "Equalizer (dB)",
@@ -187,6 +204,8 @@
 		"envelope": "Envelope",
 		"fft": "FFT",
 		"fft:": "FFT:",
+		"fft_in": "FFT In",
+		"fft_out": "FFT Out",
 		"frame": "FFT Frame",
 		"tolerance": "Tolerance",
 		"window": "Window"
@@ -219,16 +238,20 @@
 		"low_cut": "Low cut",
 		"middle": "Middle",
 		"presence": "Presence",
+		"show_": "Show",
 		"subs": "Subs",
 		"treble": "Treble"
 	},
 
 	"frequency": "Frequency",
+	"freq_gain": "Freq, Gain",
 	"freq_gain:hz_db": "Freq, Gain\n(Hz, dB)",
 
 	"gain": "Gain",
 	"gain_": "Gain",
 	"gain:db": "Gain\n(dB)",
+
+	"global_settings": "Global Settings",
 
 	"graphs": {
 		"compression": "COMPRESSION",
@@ -241,6 +264,7 @@
 		"gating": "GATING",
 		"left_channel": "LEFT CHANNEL",
 		"oscillator_waveform": "OSCILLATOR WAVEFORM",
+		"oscilloscope": "OSCILLOSCOPE GRAPH",
 		"right_channel": "RIGHT CHANNEL",
 		"spectrum": "SPECTRUM GRAPH",
 		"time": "TIME GRAPH",
@@ -248,10 +272,22 @@
 	},
 	"group": "Group",
 
+	"header": {
+		"about": "ABOUT",
+		"load": "LOAD",
+		"menu": "MENU",
+		"reset": "RESET",
+		"save": "SAVE"
+	},
+	
+	"history": "History",
+
 	"hold": "Hold",
 	"host_bpm": "Host BPM",
 
 	"hysteresis": "Hysteresis",
+
+	"hz_db": "(Hz, dB)",
 
 	"input": "Input",
 	"input_level:db": "Input Level (dB)",
@@ -312,6 +348,7 @@
 
 	"midi": {
 		"midi_num": "MIDI #",
+		"midi_number": "MIDI Number",
 		"note_off": "Note off",
 		"note_on": "Note on",
 		"velocity": "Velocity"
@@ -328,6 +365,7 @@
 
 	"mus": {
 		"note": "Note",
+		"octave": "Octave",
 		"bpm": "BPM",
 		"pitch": "Pitch",
 		"tempo": "Tempo",
@@ -338,6 +376,8 @@
 	"muting": "Muting",
 
 	"noise_floor": "Noise Floor",
+	"noise_floor_left": "Noise Floor Left",
+	"noise_floor_right": "Noise Floor Right",
 
 	"normalize": "Normalize",
 
@@ -351,6 +391,28 @@
 
 	"offset": "Offset",
 	"offset:samp": "Offset (samp)",
+
+	"oscilloscope": {
+		"H_orizontal": "H",
+		"T_ime": "T",
+		"V_ertical": "V",
+		"division": "Division",
+		"horizontal": "Horizontal",
+		"max_dots": "Max Dots",
+		"mode": "Mode",
+		"oversampler_mode": "Oversampler",
+		"position": "Position",
+		"sweep_type": "Sweep Type",
+		"trigger_hold_time": "Hold Time",
+		"trigger_hysteresis": "Hysteresis",
+		"trigger_input": "Input",
+		"trigger_level": "Level",
+		"trigger_mode": "Mode",
+		"trigger_reset": "Reset",
+		"trigger_type": "Edge Type",
+		"vertical": "Vertical",
+		"xy_sweep": "XY Sweep"
+	},
 
 	"output": "Output",
 	"output:db": "Output (dB)",
@@ -392,11 +454,15 @@
 	},
 	"progress": "Progress",
 
+	"q": "Q",
 	"q_hue": "Q, Hue",
 	"quality": "Quality",
-	
+
 	"rack": {
+		"acronym": "{@meta_plugin_acronym}",
+		"description": "{@meta_plugin_description}",
 		"left": "{@meta_pkg_brand}",
+		"name": "{@meta_plugin_name}",
 		"right": "{@meta_plugin_acronym}",
 		"top": "{@meta_pkg_brand} {@meta_plugin_acronym}"
 	},
@@ -423,6 +489,7 @@
 	"result": "Result",
 
 	"reverberation_time:s": "Reverberation\nTime (s)",
+	"reverberation_time:s_sline": "Reverberation time (s)",
 
 	"right": "Right",
 
@@ -491,6 +558,7 @@
 		"in_lr": "In L/R",
 		"invert": "Invert",
 		"mono": "Mono",
+		"negative": "Negative",
 		"negative_width": "Negative Width",
 		"out_lr": "Out L/R",
 		"pan": "Pan",
@@ -500,6 +568,8 @@
 		"pan_right": "Pan Right",
 		"peak": "Peak",
 		"phase": "Phase",
+		"phase_invert": "Phase Invert",
+		"positive": "Positive",
 		"positive_width": "Positive Width",
 		"raise": "Raise",
 		"reference": "Reference",
@@ -597,6 +667,8 @@
 	},
 
 	"working_area": "Working area",
+
+	"X_Y_EXT": "X | Y | EXT",
 
 	"zone": "Zone",
 	"zoom": "Zoom"
