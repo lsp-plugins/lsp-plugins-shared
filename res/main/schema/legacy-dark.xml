@@ -111,6 +111,7 @@
 		<plug_name value="#9095b3"/>
 		<plug_name_sep value="#71758c"/>
 		<plug_name_acr value="#239db5"/>
+		<osc_bg_gray value="#25272e"/>
 
 		<!-- Separator -->
 		<sep_hover_legacy value="#3b3d49"/>
@@ -154,6 +155,7 @@
 		<graph_alt_1 value="#353841"/>
 		<graph_alt_2 value="#31323b"/>
 		<graph_alt_3 value="#2a2c34"/>
+		<graph_alt_4 value="#23252b"/>
 		<graph_marker value="#dc615a"/>
 
 		<!-- Area3d -->
