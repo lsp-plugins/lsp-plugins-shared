@@ -34,14 +34,14 @@
 	"Tri_gger": "Триг",
 
 	"absolute_threshold": "Абс порог",
-	
+
 	"active": "Активно",
 	"actual_duration": "Действительная\nдлительность (с)",
-	
+
 	"alr": "АРУ",
-	
+
 	"amplitude": "Амплитуда",
-	
+
 	"asample": {
 		"fname": "{@file_name}",
 		"duration": "{@length_cut%.1f} / {@length%.1f}",
@@ -49,34 +49,34 @@
 		"tail": "{@tail_cut%.1f} / {@fade_out%.1f}",
 		"misc": ""
 	},
-	
+
 	"att_ack": "Атак",
 	"attack": "Атака",
 	"attack:db_ms": "Атака\n(дБ, мс)",
 	"attack_release:ms_ms": "Атака,\nВыключение\n(мс, мс)",
-	
+
 	"automatic_extension": "Автоматическое расширение",
-	
+
 	"balance": "Баланс",
-	
+
 	"band": "Полоса",
 	"band_hue": "Полоса, Тон",
-	
+
 	"bool": {
 		"off": "выкл",
 		"on": "вкл"
 	},
-	
+
 	"boost": "Повышение",
 	"boost_": "Повыш",
 	"bookmark_list": "Закладки",
-	
+
 	"bypass": "Обход",
-	
+
 	"capture": "Захват",
 	"capture:": "Захват:",
 	"capsule": "Капсюль",
-	
+
 	"chan": {
 		":db": "(дБ)",
 		"Ch_1": "Кан1",
@@ -98,8 +98,17 @@
 		"S_ide": "С",
 		"S_ide:": "С:",
 		"S_olo": "С",
+		"active_num_id": "Активный №{@id}",
+		"active_num_id_L_eft": "Активный №{@id} Л",
+		"active_num_id_M_id": "Активный №{@id} Ц",
+		"active_num_id_R_ight": "Активный №{@id} П",
+		"active_num_id_S_ide": "Активный №{@id} С",
 		"channel_n": "Канал {@id}",
 		"external_sc": "Внешняя",
+		"external_sc_left": "Внешняя слева",
+		"external_sc_mid": "Вшешняя центр",
+		"external_sc_right": "Вшеншняя справа",
+		"external_sc_side": "Внешняя сторона",
 		"freeze": "Удерж",
 		"frz": "Уд",
 		"hold": "Удерж",
@@ -143,29 +152,30 @@
 	},
 	"channel": "Канал",
 	"channels": "Каналы",
-	
+
 	"clear": "Очистить",
-	
+
 	"contour:": "Контур:",
 	"controls": "Управление",
 	"ctl": "Упр",
-	
+
 	"click_or_drag_to_load": "Клик или притащить файл",
-	
+
 	"coarse_ir_duration": "Приблизительная\nдлительность ИО (с)",
+	"coarse_ir_duration_sline": "Приблизительная длительность ИО (s)",
 	"coarse_duration": "Приблизительная\nдлительность",
-	
+
 	"curve": "Кривая",
-	
+
 	"dc_offset": "Смещение",
 	"dc_reference": "Точка отсчёта",
-	
+
 	"delay": "Задержка",
 	"delay:ms": "Задержка (мс)",
 	"delay_line_processing": "Обработка линии задержки",
 	"delay_time_formula": "Формула времени задержки",
 	"delay_reference": "Ссылка на задержку",
-	
+
 	"direct_out": "Прямой вых",
 	"direct_output": "Прямой выход",
 	"direct_output_": "Прямой выход:",
@@ -174,18 +184,19 @@
 	"dither": "Дизеринг",
 	"dither:": "Дизеринг:",
 	"dithering": "Дизеринг",
-	
+
 	"dynamics": "Динамика",
-	
+
 	"enable": "Включить",
-	
+
 	"energy_decay_linear_correlation": "Линейная корреляция\nзатухания энергии",
-	
+	"energy_decay_linear_correlation_sline": "Линейная корреляция затухания энергии",
+
 	"equalizer": "Эквалайзер",
 	"equalizer:db": "Эквалайзер (дБ)",
-	
+
 	"export": "Экспорт",
-	
+
 	"feedback": "Обратная связь",
 	"feed_gain": "Глубина ОС",
 
@@ -193,6 +204,8 @@
 		"envelope": "Огибающая",
 		"fft": "БПФ",
 		"fft:": "БПФ:",
+		"fft_in": "БПФ Вх",
+		"fft_out": "БПФ Вых",
 		"frame": "Кадр БПФ",
 		"tolerance": "Точность",
 		"window": "Окно"
@@ -207,7 +220,7 @@
 	"file_name": "Имя файла",
 	"filter": "Фильтр",
 	"filters": "Фильтры",
-	
+
 	"flt": {
 		"10k": "10к",
 		"1k": "1к",
@@ -229,10 +242,11 @@
 		"subs": "Суббас",
 		"treble": "Верха"
 	},
-	
+
 	"frequency": "Частота",
+	"freq_gain": "Част, Усил",
 	"freq_gain:hz_db": "Част, Усил\n(Гц, дБ)",
-	
+
 	"gain": "Усиление",
 	"gain_": "Усил",
 	"gain:db": "Усиление\n(дБ)",
@@ -257,21 +271,29 @@
 		"trigger": "ГРАФИК ТРИГГЕРА"
 	},
 	"group": "Группа",
+	
+	"header": {
+		"about": "ИНФО",
+		"load": "ЗАГР",
+		"menu": "МЕНЮ",
+		"reset": "СБРОС",
+		"save": "СОХР"
+    },
 
 	"history": "История",
 
 	"hold": "Удерживать",
 	"host_bpm": "УВМ хоста",
-	
+
 	"hysteresis": "Гистерезис",
-	
+
 	"input": "Вход",
 	"input_level:db": "Входной уровень (дБ)",
 	"input:db": "Вход (дБ)",
 	"instrument_num": "№ инструмента",
 
 	"ir_equalizer": "Эквализация ИО",
-	
+
 	"knee": "Колено",
 	"knee_:db": "Колено\n(дБ)",
 
@@ -281,12 +303,12 @@
 	"listen": "Слушать",
 	"location": "Местоположение",
 	"log_scale": "Лог масштаб",
-	
+
 	"lookahead": "Предсказание",
-	
+
 	"makeup": "Коррекция",
 	"makeup_:db": "Коррекция\n(дБ)",
-	
+
 	"material": {
 		"absorption": "Поглощение",
 		"diffusion": "Рассеяние",
@@ -305,7 +327,7 @@
 	"max_delay:s": "Макс задержка (с)",
 	"max_latency": "Макс задержка",
 	"max_time": "Макс время",
-	
+
 	"measure": "Измерить",
 	"memory:mb": "Память (МБ)",
 	"metering": {
@@ -319,40 +341,44 @@
 		"selector": "Селектор",
 		"shift": "Смещение"
 	},
-	
+
 	"mic_rophone_direction": "Напр микрофона",
-	
+
 	"midi": {
 		"midi_num": "№ MIDI",
+		"midi_number": "Номер MIDI",
 		"note_off": "Нота выкл",
 		"note_on": "Нота вкл",
 		"velocity": "Сила"
 	},
 	"mix": "Микс",
 	"mix_gain": "Громкость",
-	
+
 	"mode": "Режим",
 	"mode:": "Режим:",
 	"model": "Модель",
 	"model:": "Модель:",
-	
+
 	"ms_listen": "Слушать ЦС",
-	
+
 	"mus": {
 		"note": "Нота",
+		"octave": "Октава",
 		"bpm": "УВМ",
 		"pitch": "Высота",
 		"tempo": "Темп",
 		"tone": "Тон"
 	},
-	
+
 	"mute": "Глушение",
 	"muting": "Глушение",
-	
-	"normalize": "Нормализация",
-	
+
 	"noise_floor": "Шумовой порог",
-	
+	"noise_floor_left": "Шумовой порог левый",
+	"noise_floor_right": "Шумовой порог правый",
+
+	"normalize": "Нормализация",
+
 	"obj": {
 		"disabled": "Отключен",
 		"enabled": "Включен",
@@ -360,11 +386,14 @@
 		"object": "Объект",
 		"object:": "Объект:"
 	},
-	
+
 	"offset": "Смещение",
 	"offset:samp": "Смещение (отсч)",
 
 	"oscilloscope": {
+		"H_orizontal": "H",
+		"T_ime": "T",
+		"V_ertical": "V",
 		"division": "Деление",
 		"horizontal": "Горизонталь",
 		"max_dots": "Макс точек",
@@ -386,12 +415,12 @@
 	"output": "Выход",
 	"output:db": "Выход (дБ)",
 	"oversampling": "Передискретизация",
-	
+
 	"panning": "Панорама",
 	"panorama": "Панорама",
 	"panorama:pc": "Панорама (%)",
 	"pause": "Пауза",
-	
+
 	"plug": {
 		"calibrator": "Калибратор",
 		"compressor": "Компрессор",	
@@ -402,11 +431,11 @@
 		"surge_filter": "Фильтр всплесков",
 		"trigger": "Триггер"
 	},
-	
+
 	"postprocess": "Постобработка",
-	
+
 	"preamp": "Предусиление",
-	
+
 	"predelay": "П/задержка",
 	"prof": {
 		"calibrating": "КАЛИБРОВКА",
@@ -422,43 +451,48 @@
 		"waiting": "ОЖИДАНИЕ"
 	},
 	"progress": "Прогресс",
-	
+
+	"q": "Q",
 	"q_hue": "Добр, Тон",
 	"quality": "Качество",
-	
+
 	"rack": {
+		"acronym": "{@meta_plugin_acronym}",
+		"description": "{@meta_plugin_description}",
 		"left": "{@meta_pkg_brand}",
+		"name": "{@meta_plugin_name}",
 		"right": "{@meta_plugin_acronym}",
 		"top": "{@meta_pkg_brand} {@meta_plugin_acronym}"
 	},
-	
+
 	"ramp": "Сглаж",
 	"range": "Диапазон",
 	"range_id": "Граница {@id}",
 	"ranges": "Диапазоны",
-	
+
 	"ratio": "Наклон",
 	"ratio_high": "Наклон верх",
 	"ratio_low": "Наклон низ",
 	"ratio_knee:db": "Наклон,\nКолено (dB)",
-	
+
 	"reduction": "Понижение",
-	
+
 	"reflections": "Отражения",
-	
+
 	"relative_paths": "Относительные пути",
 	"rel_ease": "Выкл",
 	"release": "Выключение",
 	"release:db_ms": "Выключение\n(дБ, мс)",
 	"reset": "Сбросить",
 	"result": "Результат",
-	
+
 	"reverberation_time:s": "Время\nреверберации (с)",
-	
+	"reverberation_time:s_sline": "Время реверберации (с)",
+
 	"right": "Право",
-	
+
 	"room_orientation:": "Ориентация комнаты:",
-	
+
 	"samples": "Отсчёты",
 	"samples:samp": "Отсчёты (шт)",
 	"save": "Сохранить",
@@ -476,12 +510,12 @@
 		"sc_preamp": "Предусил БЦ",
 		"type": "Тип"
 	},
-	
+
 	"sc_boost": "Усиление БЦ",
 	"sc_boost:": "Усиление БЦ:",
 
 	"sc_preamp_makeup:db_db": "Усиление БЦ,\nКорректировка\n(дБ, дБ)",
-	
+
 	"sel_time": "Выбр время",
 	"setup": "Настройка",
 	"search": "Поиск",
@@ -500,10 +534,10 @@
 		"tail_cut": "Кон срез"
 	},
 	"settings": "Настройки",
-	
+
 	"side_direction": "Напр бокового",
 	"sidechain": "Боковая цепь",
-	
+
 	"signal": {
 		"M_iddle": "Ц",
 		"P_hase": "Ф",
@@ -522,6 +556,7 @@
 		"in_lr": "Вх Л/П",
 		"invert": "Инвертировать",
 		"mono": "Моно",
+		"negative": "Отрицательный",
 		"negative_width": "Отриц ширина",
 		"out_lr": "Вых Л/П",
 		"pan": "Панорама",
@@ -531,6 +566,8 @@
 		"pan_right": "Пан прав",
 		"peak": "Пик",
 		"phase": "Фаза",
+		"phase_invert": "Инверсия фазы",
+		"positive": "Положительный",
 		"positive_width": "Полож ширина",
 		"raise": "Подъём",
 		"reference": "Калибровка",
@@ -541,12 +578,12 @@
 		"wet": "Обраб",
 		"wet:db": "Обраб\n(дБ)"
 	},
-	
+
 	"slope": "Крутизна",
 
 	"source": "Источник",
 	"source:": "Источник:",
-	
+
 	"specials": {
 		"idx": "{@id}",
 		"idx:": "{@id}:",
@@ -554,25 +591,25 @@
 	},
 	"spectrogram": "Спектрограмма",
 	"spread": "Разброс",
-	
+
 	"src": {
 		"disabled": "Выключен",
 		"enabled": "Включен"
 	},
-	
+
 	"status": "Статус",
-	
+
 	"stereo_link": "Стереосвязь",
 	"stop": "Стоп",
 	"stretch": "Растяжение",
-	
+
 	"sync": "Синхр",
-	
+
 	"temperature": "Температура",
 	"tempo": "Темп",
 	"tempo_based_delay": "Задержка по темпу",
 	"tempo_based_feedback_delay": "Задержка по темпу обратной связи",
-	
+
 	"thr_eshold": "Пор",
 	"threads": "Потоков",
 	"threshold": "Порог",
@@ -580,14 +617,14 @@
 	"thresh_old": "Порог",
 	"thresh_old:db": "Порог\n(дБ)",
 	"thresh_zone:db_db": "Порог,\nЗона\n(дБ, дБ)",
-	
+
 	"time": "Время",
 	"time_:ms": "Время (мс)",
 	"time_drifting": "Плав по темпу",
 	"time:ms": "Время\n(мс)",
-	
+
 	"type": "Тип",
-	
+
 	"units": {
 		":db": "(дБ)",
 		":hz": "(Гц)",
@@ -602,7 +639,7 @@
 		"millimeters": "Миллиметры",
 		"samples": "Отсчёты"
 	},
-	
+
 	"value": "Значение",
 	"values": {
 		"best": "Лучшее",
@@ -619,14 +656,14 @@
 		"x_khz": "{@value} кГц",
 		"x_pc": "{@value%.2f} %"
 	},
-	
+
 	"warning": {
 		"all_values_good": "Все параметры в допустимых пределах.",
 		"delay_out_of_range": "Внимание! Задержка вне допустимого диапазона.",
 		"feedback_out_of_range": "Внимание! Задержка обратной связи\nвне допустимого дипазона.",
 		"loop_in_delay": "Внимание! Циклическая ссылка в цепочке\nссылок на линии задержки."
 	},
-	
+
 	"working_area": "Рабочая область",
 
 	"X_Y_EXT": "X | Y | ВНЕШ",
