@@ -1386,9 +1386,11 @@
 		<bg.color value="label_channel_red"/>
 		<allocation.hfill value="true"/>
 		<allocation.vfill value="false"/>
-		<text.adjust value="toupper"/>
+		<text.adjust value="toupper"/>		
 		<text.layout.halign value="-1"/>
 		<padding.left value="6"/>
+		<padding.top value="3"/>
+		<padding.bottom value="1"/>
 		<vexpand value="false"/>
 	</style>
 

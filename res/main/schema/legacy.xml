@@ -1408,7 +1408,7 @@
 		<allocation.hfill value="true"/>
 		<text.adjust value="toupper"/>
 		<text.layout.halign value="-1"/>
-		<padding.left value="6"/>
+		<padding.left value="0"/>
 	</style>
 
 	<style class="LabelChannel_1" parents="LabelChannel">
