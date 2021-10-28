@@ -1405,10 +1405,6 @@
 
 	<style class="Menu" parents="root">
 		<border.size value="1"/>
-		<ipadding.top value="4"/>
-		<ipadding.bottom value="4"/>
-		<ipadding.left value="4"/>
-		<ipadding.right value="4"/>
 		<border.color value="bg_name"/>
 		<bg.color value="bg"/>
 		<border.radius value="3"/>
