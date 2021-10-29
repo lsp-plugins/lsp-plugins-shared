@@ -1421,6 +1421,8 @@
 	</style>
 
 	<style class="RackEars" parents="root"></style>
+	
+	<style class="ScrollArea" parents="root"></style>
 
 	<style class="ScrollBar" parents="root">
 		<border.size value="1"/>
