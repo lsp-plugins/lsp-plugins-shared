@@ -1015,14 +1015,14 @@
 
 	<style class="Edit" parents="root">
 		<border.size value="1"/>
-		<border.gap.size value="2"/>
-		<border.radius value="0"/>
+		<border.gap.size value="1"/>
+		<border.radius value="5"/>
 
-		<color value="bg_light"/>
-		<text.color value="text_sec"/>
-		<cursor.color value="text_sec"/>
-		<border.color value="border_color"/>
-		<border.gap.color value="bg_light"/>
+		<color value="bg_name"/>
+		<text.color value="bg"/>
+		<cursor.color value="bg"/>
+		<border.color value="bg"/>
+		<border.gap.color value="bg_name"/>
 	</style>
 
 	<style class="Fader" parents="root">
@@ -1425,22 +1425,22 @@
 	<style class="ScrollBar" parents="root">
 		<border.size value="1"/>
 		<border.gap.size value="1"/>
-		<border.radius value="0"/>
+		<border.radius value="5"/>
 		<size.constraints.width.min value="16"/>
 		<size.constraints.height.min value="16"/>
-		<border.color value="border_color"/>
+		<border.color value="bg_name"/>
 		<inc.color value="bg"/>
-		<inc.active.color value="activity"/>
+		<inc.active.color value="cyan"/>
 		<dec.color value="bg"/>
-		<dec.active.color value="activity"/>
-		<button.color value="bg_light"/>
-		<button.active.color value="activity"/>
-		<slider.color value="border_color"/>
-		<slider.border.color value="border_color"/>
-		<slider.active.color value="activity"/>
+		<dec.active.color value="cyan"/>
+		<button.color value="bg_name"/>
+		<button.active.color value="cyan"/>
+		<slider.color value="bg_name"/>
+		<slider.border.color value="bg_name"/>
+		<slider.active.color value="cyan"/>
 		<border.gap.color value="bg"/>
-		<text.color value="text_prim"/>
-		<text.active.color value="bg_light"/>
+		<text.color value="bg"/>
+		<text.active.color value="bg_name"/>
 	</style>
 
 	<style class="TempoTap" parents="Button">
@@ -1553,7 +1553,13 @@
 
 	<style class="FileDialog::Label" parents="Label"></style>
 
-	<style class="FileDialog::FilterComboBox" parents="ComboBox"></style>
+	<style class="FileDialog::FilterComboBox" parents="ComboBox">
+		<color value="bg_name"/>
+		<spin.color value="bg_name"/>
+		<border.gap.color value="bg_name"/>
+		<border.color value="bg"/>
+		<border.size value="1"/>
+	</style>
 
 	<!-- Separator Header -->
 	<style class="PluginWindow::Hsep_header" parents="Separator">

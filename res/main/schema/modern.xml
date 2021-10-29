@@ -1540,7 +1540,13 @@
 
 	<style class="FileDialog::Label" parents="Label"></style>
 
-	<style class="FileDialog::FilterComboBox" parents="ComboBox"></style>
+	<style class="FileDialog::FilterComboBox" parents="ComboBox">
+<color value="bg_light"/>
+<spin.color value="bg_light"/>
+<border.gap.color value="bg_light"/>
+<border.color value="border_color"/>
+<border.size value="1"/>
+	</style>
 
 	<!-- Separator Header -->
 	<style class="PluginWindow::Hsep_header" parents="Separator">
