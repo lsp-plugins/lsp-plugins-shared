@@ -1506,47 +1506,65 @@
 	<style class="Switch" parents="root"></style>
 
 	<!-- FileDialog widgets -->
+	<style class="FileDialog::ActionAlign" parents="Align">
+		<layout.hscale value="0.0"/>
+		<layout.halign value="1.0"/>
+	</style>
+	
+	<style class="FileDialog::ActionBox" parents="Box">
+		<spacing value="4"/>
+	</style>
+
+	<style class="FileDialog::ActionButton" parents="Button"></style>
+	
 	<style class="FileDialog::Bookmark" parents="Hyperlink"></style>
 
 	<style class="FileDialog::Bookmark.selected" parents="FileDialog::Bookmark">
 		<text.color value="hl_sel"/>
 		<bg.color value="bg_light"/>
 	</style>
-
-	<style class="FileDialog::Warning" parents="root">
-		<text.color value="warn"/>
+	
+	<style class="FileDialog::BookmarkArea" parents="ScrollArea"></style>
+	
+	<style class="FileDialog::BookmarkBox" parents="Box"></style>
+	
+	<style class="FileDialog::ExtCheck" parents="CheckBox">
+		<color value="text_prim"/>
 	</style>
-
-	<style class="FileDialog::ActionButton" parents="Button"></style>
-
-	<style class="FileDialog::NavButton" parents="Button"></style>
-
-	<style class="FileDialog::ActionAlign" parents="Align">
-		<layout.hscale value="0.0"/>
-		<layout.halign value="1.0"/>
+	
+	<style class="FileDialog::FileList" parents="ListBox"></style>
+	
+	<style class="FileDialog::FilterComboBox" parents="ComboBox">
+		<color value="bg_light"/>
+		<spin.color value="bg_light"/>
+		<border.gap.color value="bg_light"/>
+		<border.color value="border_color"/>
+		<border.size value="1"/>
 	</style>
-
-	<style class="FileDialog::ActionBox" parents="Box">
-		<spacing value="4"/>
-	</style>
+	
+	<style class="FileDialog::Label" parents="Label"></style>
+	
+	<style class="FileDialog::MainGrid" parents="Grid"></style>
 
 	<style class="FileDialog::NavBox" parents="Box">
 		<spacing value="2"/>
 	</style>
 
-	<style class="FileDialog::ExtCheck" parents="CheckBox">
-		<color value="text_prim"/>
+	<style class="FileDialog::NavButton" parents="Button"></style>
+	
+	<style class="FileDialog::NavLabel" parents="Label"></style>
+	
+	<style class="FileDialog::OptionBox" parents="Box"></style>
+	
+	<style class="FileDialog::OptionSeparator" parents="Separator"></style>
+	
+	<style class="FileDialog::Path" parents="Edit"></style>
+	
+	<style class="FileDialog::Warning" parents="root">
+		<text.color value="warn"/>
 	</style>
-
-	<style class="FileDialog::Label" parents="Label"></style>
-
-	<style class="FileDialog::FilterComboBox" parents="ComboBox">
-<color value="bg_light"/>
-<spin.color value="bg_light"/>
-<border.gap.color value="bg_light"/>
-<border.color value="border_color"/>
-<border.size value="1"/>
-	</style>
+	
+	<style class="FileDialog::WarningBox" parents="Box"></style>
 
 	<!-- Separator Header -->
 	<style class="PluginWindow::Hsep_header" parents="Separator">
