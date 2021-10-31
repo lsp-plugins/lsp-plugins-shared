@@ -37,6 +37,8 @@
 	
 	"active": "Attivo",
 	"actual_duration": "Durata\nEffettiva (s)",
+
+	"alr": "ALR",
 	
 	"amplitude": "Ampiezza",
 	
@@ -96,8 +98,19 @@
 		"S_ide": "L",
 		"S_ide:": "L:",
 		"S_olo": "S",
+		"active_num_id": "Attivo #{@id}",
+		"active_num_id_L_eft": "Attivo #{@id} L",
+		"active_num_id_M_id": "Attivo #{@id} M",
+		"active_num_id_R_ight": "Attivo #{@id} R",
+		"active_num_id_S_ide": "Attivo #{@id} S",
 		"channel_n": "Canale {@id}",
 		"external_sc": "Esterno",
+		"external_sc_left": "Esterno Sinistro",
+		"external_sc_mid": "Esterno Medio",
+		"external_sc_right": "Esterno Destro",
+		"external_sc_side": "Esterno Lato",
+		"freeze": "Freeze",
+		"frz": "Frz",
 		"hold": "Fissa",
 		"hue": "Colore",
 		"id": "{@id}",
@@ -122,6 +135,7 @@
 		"on": "On",
 		"out": "Out",
 		"output": "Uscita",
+		"phase": "Fase",
 		"pitch": "Tono",
 		"pitch_left": "Tono Sinistra",
 		"pitch_mid": "Tono Centro",
@@ -133,19 +147,22 @@
 		"side": "Laterale",
 		"side_on": "Laterale on",
 		"solo": "Solo",
-		"solo_hold": "Solo/Mantieni"
+		"solo_hold": "Solo/Mantieni",
+		"volume": "Volume"
 	},
 	"channel": "Canale",
 	"channels": "Canali",
 	
 	"clear": "Pulisci",
 	
+	"contour:": "Contorno:",
 	"controls": "Controlli",
 	"ctl": "Ctl",
 	
 	"click_or_drag_to_load": "Click o trascina per caricare",
 	
 	"coarse_ir_duration": "Durata RI\nApprossimativa (s)",
+	"coarse_ir_duration_sline": "Durata RI Approssimativa (s)",
 	"coarse_duration": "Durata\nApprossimativa",
 	
 	"curve": "Curva",
@@ -173,19 +190,22 @@
 	"enable": "Abilita",
 	
 	"energy_decay_linear_correlation": "Decadimento Energia\nCorrelazione Lineare",
+	"energy_decay_linear_correlation_sline": "Decadimento Energia Correlazione Lineare",
 	
 	"equalizer": "Equalizzatore",
 	"equalizer:db": "Equalizzatore (dB)",
 	
 	"export": "Esporta",
 	
-	"feedback": "feed-back",
+	"feedback": "Feedback",
 	"feed_gain": "Guadagno Feed",
 
 	"fft": {
 		"envelope": "Inviluppo",
 		"fft": "FFT",
 		"fft:": "FFT:",
+		"fft_in": "FFT In",
+		"fft_out": "FFT Out",
 		"frame": "Larghezza FFT",
 		"tolerance": "Tolleranza",
 		"window": "Finestra"
@@ -218,16 +238,20 @@
 		"low_cut": "Taglio bassi",
 		"middle": "Medi",
 		"presence": "Presenza",
+		"show_": "Mostra",
 		"subs": "Subs",
 		"treble": "Alti"
 	},
 	
 	"frequency": "Frequenza",
+	"freq_gain": "Freq, Guadagno",
 	"freq_gain:hz_db": "Freq, Guadagno\n(Hz, dB)",
 	
 	"gain": "Guadagno",
 	"gain_": "Guadagno",
 	"gain:db": "Guadagno\n(dB)",
+
+	"global_settings": "Impostanzioni Globali",
 	
 	"graphs": {
 		"compression": "COMPRESSIONE",
@@ -247,11 +271,23 @@
 		"trigger": "GRAFICO TRIGGER"
 	},
 	"group": "Gruppo",
+
+	"header": {
+		"about": "INFORMAZIONI",
+		"load": "CARICA",
+		"menu": "MENU",
+		"reset": "RESET",
+		"save": "SALVA"
+	},
+
+	"history": "Storia",
 	
 	"hold": "Mantieni",
 	"host_bpm": "BPM Host",
 	
 	"hysteresis": "Isteresi",
+
+	"hz_db": "(Hz, dB)",
 	
 	"input": "Entrata",
 	"input_level:db": "Livello d'entrata' (dB)",
@@ -295,6 +331,7 @@
 	"max_time": "Tempo massimo",
 	
 	"measure": "Misura",
+	"memory:mb": "Memoria (MB)",
 	"metering": {
 		"channel": "Canale",
 		"frequency": "Frequenza",
@@ -311,6 +348,7 @@
 	
 	"midi": {
 		"midi_num": "MIDI #",
+		"midi_number": "Numero MIDI",
 		"note_off": "Note off",
 		"note_on": "Note on",
 		"velocity": "Intensità"
@@ -327,6 +365,7 @@
 	
 	"mus": {
 		"note": "Nota",
+		"octave": "Ottava",
 		"bpm": "BPM",
 		"pitch": "Tono",
 		"tempo": "Tempo",
@@ -337,6 +376,8 @@
 	"muting": "Silenziando",
 	
 	"noise_floor": "Fondo Rumore",
+	"noise_floor_left": "Fondo Rumore Sinistro",
+	"noise_floor_right": "Fondo Rumore Destro",
 	
 	"normalize": "Normalizza",
 	
@@ -389,6 +430,7 @@
 		"gate": "Gate",
 		"latency_detector": "Latency Detector",
 		"limiter": "Limitatore",
+		"surge_filter": "Filtro Sovraccarico",
 		"trigger": "Trigger"
 	},
 	
@@ -412,11 +454,15 @@
 	},
 	"progress": "Progresso",
 	
+	"q": "Q",
 	"q_hue": "Q, Colore",
 	"quality": "Qualità",
 	
 	"rack": {
+		"acronym": "{@meta_plugin_acronym}",
+		"description": "{@meta_plugin_description}",
 		"left": "{@meta_pkg_brand}",
+		"name": "{@meta_plugin_name}",
 		"right": "{@meta_plugin_acronym}",
 		"top": "{@meta_pkg_brand} {@meta_plugin_acronym}"
 	},
@@ -440,8 +486,10 @@
 	"release": "Rilascio",
 	"release:db_ms": "Rilascio\n(dB, ms)",
 	"reset": "Reset",
+	"result": "Risultato",
 	
 	"reverberation_time:s": "Tempo\nRiverberazione (s)",
+	"reverberation_time:s_sline": "Tempo Riverberazione (s)",
 	
 	"right": "Destra",
 	
@@ -497,26 +545,36 @@
 		"P_hase": "F",
 		"S_ide": "L",
 		"amplitude": "Ampiezza",
+		"clip": "Clip",
+		"clipping": "Clipping",
 		"dry": "Dry",
 		"dry:db": "Dry\n(dB)",
 		"dry_pan": "Dry pan",
 		"duty_ratio": "Ciclo di lavoro",
+		"envelope": "Inviluppo",
 		"fade_in": "Dissolvenza ad aprire",
 		"fade_out": "Dissolvenza",
 		"fall": "Caduta",
 		"in_lr": "In L/R",
 		"invert": "Inverti",
 		"mono": "Mono",
+		"negative": "Negativo",
 		"negative_width": "Larghezza Negativa",
 		"out_lr": "Uscita S/D",
 		"pan": "Pan",
 		"pan_l": "Pan S",
 		"pan_left": "Pan a Sinistra",
 		"pan_r": "Pan D",
+		"pan_right": "Pan a Destra",
 		"peak": "Picco",
 		"phase": "Fase",
+		"phase_invert": "Inversion Fase",
+		"positive": "Positivo",
 		"positive_width": "Larghezza Positiva",
 		"raise": "Eleva",
+		"reference": "Referenza",
+		"relative": "Relativo",
+		"rms": "RMS"
 		"stereo": "Stereo",
 		"width": "Larghezza",
 		"wet": "Wet",
@@ -551,6 +609,8 @@
 	
 	"temperature": "Temperatura",
 	"tempo": "Tempo",
+	"tempo_based_delay": "Delay a Tempo",
+	"tempo_based_feedback_delay": "Feedback Delay a Tempo",
 	
 	"thr_eshold": "Thr",
 	"threads": "Threads",
@@ -565,7 +625,7 @@
 	"time_drifting": "Deriva temporale",
 	"time:ms": "Tempo\n(ms)",
 	
-	"type": "Ti[p]",
+	"type": "Tipo",
 	
 	"units": {
 		":db": "(dB)",
@@ -607,6 +667,8 @@
 	},
 	
 	"working_area": "Area lavoro",
+
+	"X_Y_EXT": "X | Y | EXT",
 	
 	"zone": "Zona",
 	"zoom": "Zoom"

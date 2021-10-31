@@ -21,6 +21,8 @@
 	
 	"gain": "Guadagno",
 	"general": "Generale",
+
+	"global_delay_ctr": "Controlli globali della Linea di Ritardo",
 	
 	"impulse_response": "Risposta all'impulso'",
 	"instrument_mixer": "Mixer dello strumento",
@@ -28,11 +30,12 @@
 	"latency": "Latenza",
 	
 	"lchan": {
-		"distance": "Distanza (sinistra)",
-		"monitoring": "Monitoraggio (sinistra)",
-		"samples": "Campioni (sinistra)",
-		"signal": "Segnale (sinistra)",
-		"time": "Tempo (sinistra)"
+		"distance": "Distanza",
+		"lchan": "Canale Sinistro",
+		"monitoring": "Monitoraggio",
+		"samples": "Campioni",
+		"signal": "Segnale",
+		"time": "Tempo"
 	},
 	
 	"metering": "Metering",
@@ -56,9 +59,9 @@
 		"compressor": "Compressore",	
 		"expander": "Expander",
 		"gate": "Gate",
-		"latency_detector": "Latency Detector",
-		"limiter": "Limiter",
-		"processor": "Processor",
+		"latency_detector": "Detettore Latenza",
+		"limiter": "Limitatore",
+		"processor": "Processore",
 		"trigger": "Trigger"
 	},
 	
@@ -70,11 +73,12 @@
 	"results": "Risultati",
 	
 	"rchan": {
-		"distance": "Distanza (destra)",
-		"monitoring": "Monitoraggio (destra)",
-		"samples": "Campioni (destra)",
-		"signal": "Segnale (destra)",
-		"time": "Tempo (destra)"
+		"distance": "Distanza",
+		"monitoring": "Monitoraggio",
+		"rchan": "Canale Destro",
+		"samples": "Campioni",
+		"signal": "Segnale",
+		"time": "Tempo"
 	},
 	
 	"sample_matrix": "Matrice dei Campioni",

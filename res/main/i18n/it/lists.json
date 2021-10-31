@@ -64,7 +64,8 @@
 		"type": {
 			"fir": "FIR",
 			"fft": "FFT",
-			"iir": "IIR"
+			"iir": "IIR",
+			"spm": "SPM"
 		}
 	},
 	
@@ -85,6 +86,7 @@
 			"blackman_harris": "Blackman-Harris",
 			"blackman_nuttall": "Blackman-Nuttall",
 			"cosine": "Coseno",
+			"cubic": "Hermite Spline Cubica",
 			"flat_top": "Massimamente Piatta",
 			"gauss": "Gaussiana",
 			"hamming": "Hamming",
@@ -95,6 +97,7 @@
 			"parzen": "Parzen",
 			"poisson": "Poisson",
 			"rectangular": "Rettangolare",
+			"sqr_cosine": "Coseno quadro",
 			"triangular": "Triangolare",
 			"tukey": "Tukey",
 			"welch": "Welch"
@@ -168,6 +171,17 @@
 			"8x3": "Metà x8(3L)"
 		},
 		"normal": {
+			"2x2": "x2(2L)",
+			"2x3": "x2(3L)",
+			"3x2": "x3(2L)",
+			"3x3": "x3(3L)",
+			"4x2": "x4(2L)",
+			"4x3": "x4(3L)",
+			"6x2": "x6(2L)",
+			"6x3": "x6(3L)",
+			"8x2": "x8(2L)",
+			"8x3": "x8(3L)",
+
 			"x2": "x2",
 			"x3": "x3",
 			"x4": "x4",

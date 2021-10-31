@@ -1,5 +1,19 @@
 {
+	"load": {
+		"error": "Errore",
+		"load": "Carica",
+		"loaded": "Caricato",
+		"loading": "Caricamento"
+	},
+
 	"loading": "Caricamento...",
+
+	"save": {
+		"error": "Errore",
+		"save": "Salva",
+		"saved": "Salvato",
+		"saving": "Salvataggio"
+	},
 	
 	"std": {
         "ok": "Successo",
