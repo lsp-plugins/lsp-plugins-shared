@@ -30,7 +30,7 @@
 
 			<!-- Menu box -->
 			<hbox bg.color="bg" halign="1">
-				<bevel expand="true" color="bg_schema" width.min="20" height.min="20" halign="-1"/>
+				<bevel expand="true" color="bg_schema" width.min="24" height.min="20" halign="-1"/>
 				<hbox ui:id="trg_main_menu" solid="true" padding.right="10" padding.left="2" pointer="hand">
 					<label  hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.top="1" font.antialias="true" text="0" halign="1" />
 					<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.left="5" font.size="14" padding.top="3" halign="1" text="labels.header.menu"/>
