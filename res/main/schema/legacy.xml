@@ -1780,4 +1780,19 @@
 		<padding value="0"/>
 	</style>
 
+	<style class="PluginWindow::ResetMenu" parents="Menu">
+		<bg.color value="yellow" />
+		<ipadding.top value="0"/>
+		<ipadding.bottom value="0"/>
+		<ipadding.left value="0"/>
+		<ipadding.right value="0"/>
+	</style>
+	
+	<style class="PluginWindow::ResetMenu::Reset" parents="MenuItem">
+		<bg.color value="yellow" />
+		<bg.selected.color value="red"/>
+		<text.color value="bg"/>
+		<text.selected.color value="bg"/>
+	</style>
+	
 </schema>
