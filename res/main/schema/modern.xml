@@ -1677,6 +1677,8 @@
 	<style class="GreetingDialog" parents="Window">
 		<padding value="16"/>
 		<border.style value="dialog"/>
+		<layout.hscale value="1.0"/>
+		<layout.vscale value="1.0"/>
 	</style>
 
 	<style class="GreetingDialog::Text" parents="Label">
@@ -1716,6 +1718,8 @@
 	<style class="AboutDialog" parents="Window">
 		<padding value="16"/>
 		<border.style value="dialog"/>
+		<layout.hscale value="1.0"/>
+		<layout.vscale value="1.0"/>
 	</style>
 
 	<style class="AboutDialog::Heading" parents="Label">
@@ -1730,6 +1734,13 @@
 		<allocation.hfill value="true"/>
 		<allocation.vfill value="true"/>
 		<text.layout.halign value="-1.0"/>
+	</style>
+	
+	<style class="AboutDialog::Hlink" parents="Hyperlink">
+		<allocation.hfill value="true"/>
+		<allocation.vfill value="true"/>
+		<text.layout.halign value="-1.0"/>
+		<padding.left value="24"/>
 	</style>
 
 	<!-- PluginWindow widgets -->

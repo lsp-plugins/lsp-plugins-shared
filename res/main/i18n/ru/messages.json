@@ -1,4 +1,23 @@
 {
+	"about": {
+		"copyright": "(C) {@meta_pkg_copyright} 2015-2022.",
+		"description": "Коллекция аудио-плагинов с открытым исходным кодом.",
+		"info": {
+			"pkg_name": "Название пакета:",
+			"pkg_version": "Версия пакета:",
+			"plug_name": "Название плагина:",
+			"plug_version": "Версия плагина:"
+		},
+		"values": {
+			"pkg_name": "{@meta_pkg_full_name}",
+			"pkg_version": "{@meta_pkg_version}",
+			"plug_name": "{@meta_plugin_description}",
+			"plug_version": "{@meta_plugin_version}"
+		},
+		"license": "Распространяется согласно уловиям GNU Lesser Public License v3 (LGPLv3):",
+		"license_url": "https://www.gnu.org/licenses/lgpl-3.0.ru.html",
+		"support": "Поддержать проект:"
+	},
 	"file": {
 		"confirm_load": "Вы на самом деле хотите загрузить выбранный файл?",
 		"confirm_overwrite": "Выбранный файл уже существует. Переписать?",

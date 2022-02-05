@@ -1,11 +1,79 @@
 <window ui:inject="AboutDialog" title="titles.about">
-	<vbox spacing="8">
-		<label ui:inject="AboutDialog::Heading" text="headings.about" text.meta="true" />
-		
-		<label ui:inject="AboutDialog::Text" text="TODO" />
-		
-		<align fill="true">
-			<button ui:id="submit" min_width="96" text="actions.close" />
-		</align>		
-	</vbox>
+	<grid rows="2" cols="2" spacing="8" expand="true" fill="true">
+		<align halign="0" valign="-1">
+			<multilabel font.scaling="1" >
+				<label font.name="lsp-logo" font.size="256" font.antialias="true" text="C" color="lsp_logo"/>
+				<label font.name="lsp-logo" font.size="256" font.antialias="true" text="D" color="lsp_logo"/>
+				<label font.name="lsp-logo" font.size="256" font.antialias="true" text="E" color="lsp_logo_cover"/>
+			</multilabel>
+		</align>
+		<align fill="true" valign="-1" hexpand="true">
+			<grid rows="15" cols="2" hspacing="4" vspacing="4">
+				<cell cols="2">
+					<label ui:inject="AboutDialog::Heading" text="headings.about" text.meta="true" />
+				</cell>
+				
+				<ui:with text.meta="true" url.meta="true">
+					<cell cols="2">
+						<label ui:inject="AboutDialog::Text" text="messages.about.copyright" />
+					</cell>
+					
+					<cell cols="2">
+						<label ui:inject="AboutDialog::Text" text="messages.about.description" />
+					</cell>
+					
+					<cell cols="2">
+						<hlink ui:inject="AboutDialog::Hlink"
+							text="messages.site"
+							url="messages.site"
+						/>
+					</cell>
+					
+					<label ui:inject="AboutDialog::Text" text="messages.about.info.pkg_name" />
+					<label ui:inject="AboutDialog::Text" text="messages.about.values.pkg_name" />
+					
+					<label ui:inject="AboutDialog::Text" text="messages.about.info.pkg_version" />
+					<label ui:inject="AboutDialog::Text" text="messages.about.values.pkg_version" />
+					
+					<label ui:inject="AboutDialog::Text" text="messages.about.info.plug_name" />
+					<label ui:inject="AboutDialog::Text" text="messages.about.values.plug_name" />
+					
+					<label ui:inject="AboutDialog::Text" text="messages.about.info.plug_version" />
+					<label ui:inject="AboutDialog::Text" text="messages.about.values.plug_version" />
+					
+					<cell cols="2">
+						<label ui:inject="AboutDialog::Text" text="messages.about.license" />
+					</cell>
+					
+					<cell cols="2">
+						<hlink ui:inject="AboutDialog::Hlink"
+							text="messages.about.license_url"
+							url="messages.about.license_url"
+						/>
+					</cell>
+					
+					<cell cols="2">
+						<label ui:inject="AboutDialog::Text" text="messages.about.support" />
+					</cell>
+					
+					<ui:for id="i" first="0" last="4">
+						<cell cols="2">
+							<hlink ui:inject="AboutDialog::Hlink"
+								text="project.donations.${i}"
+								url="project.donations.${i}"
+								text.meta="true"
+								url.meta="true"
+							/>
+						</cell>
+					</ui:for>
+					
+				</ui:with>
+			</grid>
+		</align>
+		<cell cols="2">
+			<align fill="true" halign="1">
+				<button ui:id="submit" min_width="96" text="actions.close" />
+			</align>
+		</cell>
+	</grid>
 </window>
