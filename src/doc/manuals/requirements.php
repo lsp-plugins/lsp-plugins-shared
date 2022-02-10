@@ -1,1 +1,1 @@
-<?php file_content('README.txt', 'system requirements'); ?>
+<?php file_content('README.md', 'system requirements'); ?>

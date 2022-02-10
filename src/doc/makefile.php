@@ -9,9 +9,9 @@
 	// Include configuration
 	require_once("${PHPDIR}/config/plugins.php");
 	sort_plugins();
-	
+
 	require_once("${PHPDIR}/config/menu.php");
-	
+
 	// Generate list of files
 	$ITEMS      = array();
 	$HTML_FILES = array('$(HTMLDIR)/index.html');
@@ -28,24 +28,30 @@
 ?>
 # Auto generated makefile, do not edit
 
+ifneq ($(VERBOSE),1)
+.SILENT:
+endif
+
 FILE        = $(@:$(HTMLDIR)/%.html=%.html)
 PAGE        = $(patsubst %.html,%,$(notdir $(@)))
 DIR         = $(@:$(HTMLDIR)/%=%)
-HTMLDIR    := $(BUILDDIR)/html
-DIRS       := <?php print(implode(" \\\n\t\t", $HTML_DIRS) . "\n") ?>
-FILES      := <?php print(implode(" \\\n\t\t", $HTML_FILES) . "\n") ?>
+HTMLDIR    := \
+		$(BUILDDIR)/html
+DIRS       := \
+		<?php print(implode(" \\\n\t\t", $HTML_DIRS) . "\n") ?>
+FILES      := \
+		<?php print(implode(" \\\n\t\t", $HTML_FILES) . "\n") ?>
 
-.PHONY: all target
+.PHONY: all
+.DEFAULT_GOAL = all
 
 all: $(FILES)
-
-target: all
 
 # Common rules
 $(DIRS):
 	@echo "  mkdir $(DIR)"
-	@mkdir -p $(@)  
+	mkdir -p $(@)
 
 $(FILES): $(DIRS)
 	@echo "  $(PHP) $(FILE)"
-	@$(PHP) -f index.php $(PAGE) >$(@)
+	$(PHP) -f index.php $(PAGE) >$(@)

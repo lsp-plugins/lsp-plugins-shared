@@ -60,7 +60,7 @@
 				<?php 
 				    if ($MENUITEM['parent'] != 'plugins')
 				        echo '<h1>' . htmlspecialchars($HEADER) . '</h1>';
-			        require("./manuals/${MENUITEM['path']}/${FILENAME}.php");
+				    require("./manuals/${MENUITEM['path']}/${FILENAME}.php");
 				?>
 			</div>
 			

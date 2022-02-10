@@ -13,5 +13,9 @@ information is available at official site: <a href="https://lsp-plug.in/">https:
 <p>Below the text of license used by <b>LSP Plugins</b> is present.</p>
 
 <pre>
-<?php file_content('LICENSE.txt'); ?>
+<?php file_content('COPYING.LESSER'); ?>
+<pre>
+
+<pre>
+<?php file_content('COPYING'); ?>
 </pre>

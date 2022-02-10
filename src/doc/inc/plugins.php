@@ -27,13 +27,13 @@
 			echo "<h1>" . $plugin['name'] . "</h1>\n";
 			
 			$fmt = array();
-			if (isset($plugin['fmt_ladspa']) && ($plugin['fmt_ladspa'] > 0))
+			if (isset($plugin['ladspa_label']) && ($plugin['ladspa_label'] > 0))
 				array_push($fmt, 'LADSPA');
-			if ((isset($plugin['fmt_lv2'])) && (strlen($plugin['fmt_lv2']) > 0))
+			if ((isset($plugin['lv2_uri'])) && (strlen($plugin['lv2_uri']) > 0))
 				array_push($fmt, 'LV2');
 			if ((isset($plugin['fmt_vst'])) && (strlen($plugin['fmt_vst']) > 0))
 				array_push($fmt, 'LinuxVST');
-			if (isset($plugin['fmt_jack']) && ($plugin['fmt_jack']))
+			if (isset($plugin['vst2_uid']) && (strlen($plugin['vst2_uid']) > 0))
 				array_push($fmt, 'JACK');
 		
 			echo "<img class=\"plugin\" src=\"${DOCROOT}img/plugins/{$plugin['id']}.png\" alt=\"{$plugin['name']}\">\n";

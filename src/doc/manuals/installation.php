@@ -1,1 +1,1 @@
-<?php file_content('README.txt', 'installation'); ?>
+<?php file_content('README.md', 'installation'); ?>

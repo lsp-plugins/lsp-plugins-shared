@@ -1,14 +1,17 @@
 <?php
-	function file_emit_line(&$state, $line = '')
+	function file_emit_line(&$state, $line = '', $tag = null)
 	{
 		$s     = &$state['state'];
 		if (count($s) <= 0)
 			return;
 		
-		print('<' . end($s) . '>');
+		if ((!isset($tag)) || ($tag == null))
+			$tag = $s;
+		
+		print('<' . end($tag) . '>');
 		print(htmlspecialchars($state['line'] . $line));
 		$state['line'] = '';
-		print('</' . end($s) . ">\n");
+		print('</' . end($tag) . ">\n");
 		
 		array_pop($s);
 	}
@@ -74,6 +77,16 @@
 			else
 				file_append_line($state, $match[1] . "\n");
 		}
+		elseif ($last == 'pre-q')
+		{
+			if (!preg_match('/^```.*$/', $line, $match))
+			{
+				file_emit_line($state, "", "pre");
+				$state['unget'] = null;
+			}
+			else
+				file_append_line($state, $match[1] . "\n");
+		}
 		else
 		{
 			if (preg_match('/^\s*\*\s(.*)\s*$/', $line, $match))
@@ -84,6 +97,8 @@
 			}
 			elseif (preg_match('/^ {2}(.*)$/', $line, $match))
 				file_append_line($state, $match[1] . "\n", 'pre');
+			elseif (preg_match('/^```.*$/', $line, $match))
+				file_append_line($state, "\n", 'pre-q');
 			else
 				file_append_line($state, $line, 'p');
 		}
@@ -107,6 +122,7 @@
 		else
 		{
 			$pattern = '/^\={1,}\s*' . $section . '\s*\={1,}\s*$/i';
+			$pattern2 = '/^#{1,}\s*' . $section . '\s*$/i';
 			$search  = true;
 			$state   = array(
 				'line' => '',
@@ -121,11 +137,15 @@
 				{
 					if (preg_match($pattern, $line))
 						$search = false;
+					elseif (preg_match($pattern, $line))
+						$search = false;
 				}
 				else
 				{
 					$state['unget'] = null;
 					if (preg_match('/^\={1,}\s*.+\s*\={1,}\s*$/', $line))
+						break;
+					if (preg_match('/^#{1,}\s*.+$/', $line))
 						break;
 
 					file_process_string($state, $line);

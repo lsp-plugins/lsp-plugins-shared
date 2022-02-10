@@ -1,1 +1,1 @@
-<?php file_content('README.txt', 'building'); ?>
+<?php file_content('README.md', 'building'); ?>

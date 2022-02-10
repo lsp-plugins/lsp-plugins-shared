@@ -1,1 +1,1 @@
-<?php file_content('README.txt', 'profiling \/ debugging'); ?>
+<?php file_content('README.md', 'profiling \/ debugging'); ?>
