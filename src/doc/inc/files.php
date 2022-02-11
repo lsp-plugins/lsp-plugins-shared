@@ -5,13 +5,13 @@
 		if (count($s) <= 0)
 			return;
 		
-		if ((!isset($tag)) || ($tag == null))
-			$tag = $s;
+		if (!isset($tag))
+			$tag = end($s);
 		
-		print('<' . end($tag) . '>');
+		print('<' . $tag . '>');
 		print(htmlspecialchars($state['line'] . $line));
 		$state['line'] = '';
-		print('</' . end($tag) . ">\n");
+		print('</' . $tag . ">\n");
 		
 		array_pop($s);
 	}
@@ -79,13 +79,12 @@
 		}
 		elseif ($last == 'pre-q')
 		{
-			if (!preg_match('/^```.*$/', $line, $match))
+			if (preg_match('/^```.*$/', $line, $match))
 			{
 				file_emit_line($state, "", "pre");
-				$state['unget'] = null;
 			}
 			else
-				file_append_line($state, $match[1] . "\n");
+				file_append_line($state, $line . "\n");
 		}
 		else
 		{
@@ -122,7 +121,7 @@
 		else
 		{
 			$pattern = '/^\={1,}\s*' . $section . '\s*\={1,}\s*$/i';
-			$pattern2 = '/^#{1,}\s*' . $section . '\s*$/i';
+			$pattern2 = '/^\#{1,}\s*' . $section . '\s*$/i';
 			$search  = true;
 			$state   = array(
 				'line' => '',
@@ -133,19 +132,20 @@
 			while ((isset($state['unget'])) || (!feof($fd)))
 			{
 				$line = isset($state['unget']) ? $state['unget'] : fgets($fd);
+				$state['unget'] = null;
+				
 				if ($search)
 				{
 					if (preg_match($pattern, $line))
 						$search = false;
-					elseif (preg_match($pattern, $line))
+					elseif (preg_match($pattern2, $line))
 						$search = false;
 				}
 				else
 				{
-					$state['unget'] = null;
 					if (preg_match('/^\={1,}\s*.+\s*\={1,}\s*$/', $line))
 						break;
-					if (preg_match('/^#{1,}\s*.+$/', $line))
+					if (preg_match('/^\#{1,}\s*.+$/', $line))
 						break;
 
 					file_process_string($state, $line);

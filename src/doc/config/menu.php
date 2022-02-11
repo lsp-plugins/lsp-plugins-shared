@@ -11,7 +11,7 @@
 	{
 		// Remove _xN, _mono, _stereo, _midi, _do, _ls, _ms postfixes from plugin name
 		$page_id = preg_replace('/(?:_x\d+)?(?:_midi)?(?:_mono|_stereo|_do|_lr|_ms)?$/', '', $plugin['id']);
-		def_menu_item('plugins', $plugin['id'], $plugin['description'] . ' - ' . $plugin['name'], $page_id);
+		def_menu_item('plugins', $plugin['id'], $plugin['description'], $page_id);
 	}
 	
 	def_menu_item('', 'tutorials', 'Tutorials and Tips');

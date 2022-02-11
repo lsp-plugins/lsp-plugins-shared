@@ -16,7 +16,7 @@
 	
 	function plugin_header()
 	{
-		global $PLUGINS, $PAGE, $DOCROOT;
+		global $PACKAGE, $PLUGINS, $PAGE, $DOCROOT;
 
 		// Output plugin
 		foreach ($PLUGINS as $plugin)
@@ -24,7 +24,7 @@
 			if ($plugin['id'] != $PAGE)
 				continue;
 			
-			echo "<h1>" . $plugin['name'] . "</h1>\n";
+			echo "<h1>" . htmlspecialchars($plugin['description']) . "</h1>\n";
 			
 			$fmt = array();
 			if (isset($plugin['ladspa_label']) && ($plugin['ladspa_label'] > 0))
@@ -36,11 +36,14 @@
 			if (isset($plugin['vst2_uid']) && (strlen($plugin['vst2_uid']) > 0))
 				array_push($fmt, 'JACK');
 		
+			$full_name = htmlspecialchars("{$PACKAGE['short']} {$plugin['description']} ({$plugin['acronym']})");
+			$author = htmlspecialchars($plugin['author']);
+			
 			echo "<img class=\"plugin\" src=\"${DOCROOT}img/plugins/{$plugin['id']}.png\" alt=\"{$plugin['name']}\">\n";
-			echo "<p><b>Detailed:&nbsp;</b>LSP {$plugin['description']} - {$plugin['name']} ({$plugin['acronym']})</p>\n";
+			echo "<p><b>Detailed:&nbsp;</b>{$full_name}</p>\n";
 			echo "<p><b>Formats:&nbsp;</b>" . implode(',&nbsp;', $fmt) . "</p>\n";
 			echo "<p><b>Categories:&nbsp;</b>" . implode(',&nbsp;', $plugin['groups']) . "</p>\n";
-			echo "<p><b>Developer:&nbsp;</b>{$plugin['author']}</p>\n";
+			echo "<p><b>Developer:&nbsp;</b>{$author}</p>\n";
 			echo "<p><b>Description:&nbsp;</b></p>\n";
 			break;
 		}
@@ -54,12 +57,13 @@
 	
 	function plugin_ref($id)
 	{
-		global $DOCROOT;
+		global $DOCROOT, $PACKAGE;
 		$page       = find_menu_item($id);
 		if (!isset($page))
 			return;
 		
-		print("<b><a href=\"${DOCROOT}html/plugins/${page['id']}.html\">LSP " . htmlspecialchars($page['text']) . "</a></b>");
+		$header = htmlspecialchars("{$PACKAGE['short']} {$page['text']}");
+		print("<b><a href=\"${DOCROOT}html/plugins/${page['id']}.html\">{$header}</a></b>");
 	}
 
 ?>
