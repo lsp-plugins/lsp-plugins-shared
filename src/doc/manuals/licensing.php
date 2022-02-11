@@ -14,7 +14,7 @@ information is available at official site: <a href="https://lsp-plug.in/">https:
 
 <pre>
 <?php file_content('COPYING.LESSER'); ?>
-<pre>
+</pre>
 
 <pre>
 <?php file_content('COPYING'); ?>
