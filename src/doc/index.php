@@ -47,7 +47,8 @@
 		<div class="lsp-content smooth">
 			<!-- Header -->
 			<div id="header">
-				<img src="<?= $DOCROOT ?>img/header.png" alt="Linux Studio Plugins Project" >
+				<div class="header-box">
+				</div>
 			</div>
 
 			<!-- Navigation top -->
