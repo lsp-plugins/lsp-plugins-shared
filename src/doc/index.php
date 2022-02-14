@@ -11,10 +11,10 @@
 	// Include configuration
 	require_once('config/plugins.php');
 	sort_plugins();
-	
+
 	require_once('config/menu.php');
 	require_once('config/youtube.php');
-	
+
 	// Determine current page
 	$PAGE       = isset($argv[1]) ? $argv[1] : 'index';
 	$MENUITEM   = find_menu_item($PAGE);
@@ -27,7 +27,7 @@
 	        'path' => '',
 	        'file' => $PAGE
 	    );
-	
+
 	$DOCROOT    = ((strlen($MENUITEM['root']) > 0) ? ($MENUITEM['root'] . '/') : '');
 	$HEADER		= $MENUITEM['text'];
 	$FILENAME   = (isset($MENUITEM['file'])) ? $MENUITEM['file'] : $PAGE;
@@ -40,7 +40,7 @@
 		<title>Linux Studio Plugins Project</title>
 
 		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-
+		<link rel="shortcut icon" href="<?=$DOCROOT?>img/LSP_favicon.png"/>
 		<link rel="stylesheet" href="<?= $DOCROOT ?>css/style.css" type="text/css">
 	</head>
 	<body>
@@ -49,12 +49,12 @@
 			<div id="header">
 				<img src="<?= $DOCROOT ?>img/header.png" alt="Linux Studio Plugins Project" >
 			</div>
-			
+
 			<!-- Navigation top -->
 			<div id="menu" class="smooth">
 				<?php require("./manuals/menu.php"); ?>
 			</div>
-		
+
 			<!-- Main content -->
 			<div id="main" class="main smooth">
 				<?php
@@ -63,11 +63,13 @@
 				    require("./manuals/${MENUITEM['path']}/${FILENAME}.php");
 				?>
 			</div>
-			
+
 			<!-- Footer -->
 			<div id="footer">
+				<div style="padding:0 10px 10px 10px">
 				<p>(C) Linux Studio Plugins Project, 2015-<?= date('Y') ?></p>
 				<p>All rights reserved</p>
+				</div>
 			</div>
 		</div>
 	</body>
