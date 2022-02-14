@@ -44,34 +44,29 @@
 		<link rel="stylesheet" href="<?= $DOCROOT ?>css/style.css" type="text/css">
 	</head>
 	<body>
-		<div id="body">
+		<div class="lsp-content smooth">
 			<!-- Header -->
 			<div id="header">
 				<img src="<?= $DOCROOT ?>img/header.png" alt="Linux Studio Plugins Project" >
 			</div>
 			
 			<!-- Navigation top -->
-			<div id="menu">
+			<div id="menu" class="smooth">
 				<?php require("./manuals/menu.php"); ?>
 			</div>
 		
 			<!-- Main content -->
-			<div id="main">
-				<?php 
+			<div id="main" class="main smooth">
+				<?php
 				    if ($MENUITEM['parent'] != 'plugins')
 				        echo '<h1>' . htmlspecialchars($HEADER) . '</h1>';
 				    require("./manuals/${MENUITEM['path']}/${FILENAME}.php");
 				?>
 			</div>
 			
-			<!-- Navigation bottom -->
-			<div id="menu">
-				<?php require("./manuals/menu.php"); ?>
-			</div>
-		
 			<!-- Footer -->
 			<div id="footer">
-				<p>(C) Linux Studio Plugins, 2015-2016</p>
+				<p>(C) Linux Studio Plugins Project, 2015-<?= date('Y') ?></p>
 				<p>All rights reserved</p>
 			</div>
 		</div>
