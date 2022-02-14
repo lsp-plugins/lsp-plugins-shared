@@ -68,7 +68,7 @@
 			<!-- Footer -->
 			<div id="footer">
 				<div style="padding:0 10px 10px 10px">
-				<p>(C) Linux Studio Plugins Project, 2015-<?= date('Y') ?></p>
+				<p>&copy; Linux Studio Plugins Project, 2015-<?= date('Y') ?></p>
 				<p>All rights reserved</p>
 				</div>
 			</div>
