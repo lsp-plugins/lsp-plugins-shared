@@ -8,7 +8,7 @@
 			</multilabel>
 		</align>
 		<align fill="true" valign="-1" hexpand="true">
-			<grid rows="15" cols="2" hspacing="4" vspacing="4">
+			<grid rows="16" cols="2" hspacing="4" vspacing="4">
 				<cell cols="2">
 					<label ui:inject="AboutDialog::Heading" text="headings.about" text.meta="true" />
 				</cell>
@@ -40,6 +40,10 @@
 					
 					<label ui:inject="AboutDialog::Text" text="messages.about.info.plug_version" />
 					<label ui:inject="AboutDialog::Text" text="messages.about.values.plug_version" />
+					
+					<cell cols="2">
+						<label ui:inject="AboutDialog::Text" text="bundles.${bundle_id}.description" />
+					</cell>
 					
 					<cell cols="2">
 						<label ui:inject="AboutDialog::Text" text="messages.about.license" />
