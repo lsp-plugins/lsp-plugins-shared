@@ -61,42 +61,32 @@
 
 <div class="grid-2col-man">
 	<div class="thc-descr">
+	  <p>File widget - init condition:</p>
+		<img class="plugin" style="max-width: 100%;" src="<?= $CTL ?>file_unloaded.png">
+	  <p>File widget - error message:</p>
+		<img class="plugin" style="max-width: 100%;" src="<?= $CTL ?>file_error.png">
+		<p>File widget - file loaded:</p>
+		<img class="plugin" style="max-width: 100%;" src="<?= $CTL ?>file_loaded.png">
+	</div>
+
+	<div class="thc-descr">
 <p>AudioFile widget is used for loading and editing audio files. It tells to the plugin the actual location of file on
 file system.</p>
-<p>By default there is no file associated with plugin, so the file widget displays
-<b style="color: #00c000">'Click to load'</b> text.</p>
-</div>
-
-<div class="thc-descr">
-<!-- <div class="images"> -->
-	<img src="<?= $CTL ?>file_unloaded.png">
-</div>
-
-<div class="thc-descr">
+<p>By default there is no file associated with plugin, so the file widget displays <b style="color: #00909e">'Click or drug to load'</b> text.</p>
+<br>
 <p>By clicking left mouse button on the widget you may open file choosing dialog and select the file
 to use by plugin.</p>
 <p>After the path to the file will be passed to plugin, the plugin starts to load the file, and the status
 displayed by the file widget changes. If file was successfully loaded, file widget will display
 the corresponding content of the file and it's name (without path). On error, error message is displayed
 with red color.</p>
-</div>
-
-<div class="thc-descr">
-<!-- <div class="images"> -->
-	<img src="<?= $CTL ?>file_error.png">
-</div>
-
-<div class="thc-descr">
+<br>
 <p>By clicking right mouse button, popup dialog appears that allows to cut, copy, paste and clear contents of widget</p>
 <p>There is also the way to force plugin to unload file. For this purpose simply double-click by right
 mouse button on widget's area if popup menu does not appear.</p>
-<p>Example of file widget:</p>
 </div>
 
-<div class="thc-descr">
-<!-- <div class="images"> -->
-	<img src="<?= $CTL ?>file_loaded.png">
-</div>
+
 </div>
 
 <h2>Button</h2>
@@ -120,13 +110,21 @@ mouse cursor outside widget's area and back.</p>
 
 <p>For space economy and clarity improving purposes buttons may be combined with LEDs.</p>
 
-<p>Here is example of different button widgets:</p>
+<p style="text-align:center">Here is example of different button widgets:</p>
 <div class="images">
-	<img src="<?= $CTL ?>button.png">
-	<img src="<?= $CTL ?>button_pressed.png">
-	<img src="<?= $CTL ?>button_led_blue.png">
-	<img src="<?= $CTL ?>button_led_green.png">
-	<img src="<?= $CTL ?>button_led_yellow.png">
+  <img src="<?= $CTL ?>button_tap.png">
+	<img src="<?= $CTL ?>button_active.png">
+	<img src="<?= $CTL ?>button_blank.png">
+	<img src="<?= $CTL ?>button_lcf.png">
+	<img src="<?= $CTL ?>button_l_r.png">
+	<img src="<?= $CTL ?>button_l_r_sm.png">
+	<img src="<?= $CTL ?>button_mag_sm.png">
+	<img src="<?= $CTL ?>button_on_s_m.png">
+	<img src="<?= $CTL ?>button_on_s_m_2.png">
+	<img src="<?= $CTL ?>button_on_s_m_3.png">
+	<img src="<?= $CTL ?>button_sc_sm.png">
+	<img src="<?= $CTL ?>button_side_on.png">
+
 </div>
 
 <h2>Combo</h2>
@@ -138,7 +136,7 @@ may be selected at the same time.</p>
 <p>It is very useful for defining controls that use enumerations or for switching between different
 control groups.</p>
 
-<p>Here is example of combo box widgets:</p>
+<p style="text-align:center">Here is example of combo box widgets:</p>
 <div class="images">
 	<img src="<?= $CTL ?>combo.png">
 </div>
@@ -148,14 +146,14 @@ control groups.</p>
 <p>Combo group is a <b>Group</b> control that allows to select the displayed content by calling a drop-down list.
 The drop-down list is accessible by clicking with left mouse button the header header of the group.</p>
 
-<p>Here is example of combo group widget:</p>
+<p style="text-align:center">Here is example of combo group widget:</p>
 <div class="images">
-	<img src="<?= $CTL ?>combo_group.png">
+	<img class="border" src="<?= $CTL ?>combo_group.png">
 </div>
 
-<p>When clicking the group header, we get all possible variants for choosing widget groups for displaying:</p>
+<p style="text-align:center">When clicking the group header, we get all possible variants for choosing widget groups for displaying:</p>
 <div class="images">
-	<img src="<?= $CTL ?>combo_group_select.png">
+	<img class="border" src="<?= $CTL ?>combo_group_select.png">
 </div>
 
 <h2>Fader</h2>
@@ -190,9 +188,14 @@ or denominator with left mouse button, popup list box appears that allows to qui
 in the DSP core of plugin. It may contain lines, text labels, different curves (meshes),
 markers and dots.</p>
 
-<p>Example of graph widget:</p>
+<p style="text-align:center">Example of graph widget:</p>
+<div class="grid-2col-man">
 <div class="images">
 	<img src="<?= $CTL ?>graph.png">
+</div>
+<div class="images">
+	<img src="<?= $CTL ?>graph_osc.png">
+</div>
 </div>
 
 <p>All elements of graph except dots can not change input parameters of plugin. Dots may control
@@ -209,7 +212,7 @@ left-clicking, this makes the change of parameters more accurate. The movement m
 by pressing the opposite button of the mouse.</p>
 <p>Additional tolerance for mouse scroll may be achieved by pressing shift key on keyboard</p>
 
-<p>Example showing dot controls:</p>
+<p style="text-align:center">Example showing dot controls:</p>
 <div class="images">
 	<img src="<?= $CTL ?>dots.png">
 </div>
@@ -219,9 +222,9 @@ by pressing the opposite button of the mouse.</p>
 <p>Group widget is a special widget that allows to visually distinguish set of widgets that
 control parameters of some device or set of similar devices.</p>
 
-<p>Example showing controls consolidated into group:</p>
+<p style="text-align:center">Example showing controls consolidated into group:</p>
 <div class="images">
-	<img src="<?= $CTL ?>group.png">
+	<img class="border" src="<?= $CTL ?>group.png">
 </div>
 
 <h2>Indicator</h2>

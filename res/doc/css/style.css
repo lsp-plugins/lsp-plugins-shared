@@ -119,6 +119,10 @@ img.plugin {
   border: 2px solid #1b1c22;
 }
 
+img.border {  
+  border: 2px solid #1b1c22;
+}
+
 pre {
   font-size: 12px;
   border: 2px solid #1b1c22;
@@ -714,6 +718,10 @@ a img:hover {
   /*display: flow-root;*/
 }
 
+h2 {
+  border-bottom: 2px solid #373944;
+}
+
 div.menu {
   display: block;
 }
@@ -766,6 +774,11 @@ div.plugin_select div {
   width: 304px;
   margin: 0 auto;
   display: block;
+}
+
+.images {
+  margin: 0 auto;
+  width: fit-content;
 }
 
 .feedback-submit {
