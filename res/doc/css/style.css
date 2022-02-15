@@ -111,9 +111,12 @@ img.portrait {
 img.plugin {
   height: auto;
   max-height: 100%;
-  max-width: 100%;
+  max-width: 450px;
   object-fit: contain;
   width: auto;
+  float: left;
+  margin: 0 25px 10px 0;
+  border: 2px solid #1b1c22;
 }
 
 pre {
@@ -384,7 +387,6 @@ a img:hover {
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
 }
-
 
 .lpa {
   background: url(../svg/lpa.png) no-repeat top left;
@@ -982,7 +984,6 @@ tr.stroke {
   padding: 0;
   text-transform: uppercase;
   text-align: left !important;
-
 }
 
 .menu-mob-popup li {
@@ -1025,6 +1026,15 @@ tr.stroke {
   grid-gap: 8px 6px;
   grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
   /*grid-template-rows: repeat(2, 203px);*/
+}
+
+.grid-2col-man {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 8px 6px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /*grid-template-rows: repeat(2, 203px);*/
+  padding: 8px 8px 0px 0px;
 }
 
 .grid-2col .ti-box-youtube {
@@ -1354,9 +1364,9 @@ tr.stroke {
 }
 
 @media only screen and (min-width : 353px) and (max-width : 768px) {
-
-pre {
-  font-size: 11px;}
+  pre {
+    font-size: 11px;
+  }
 }
 
 @media only screen and (min-width : 711px) and (max-width : 768px) {
@@ -1364,7 +1374,6 @@ pre {
     font-size: 13px;
     max-width: 768px;
   }
-
 
   .ti-box-youtube {
     height: 198px;
@@ -1638,9 +1647,14 @@ pre {
     margin: 0 auto !important;
   }
 
-  .lpa, .bou, .pay, .eth, .ptr, .lpa:hover, .bou:hover, .pay:hover, .eth:hover, .ptr:hover { display: table; margin-bottom: 10px;}
-  .sup-container {display: inline-block;}
+  .lpa, .bou, .pay, .eth, .ptr, .lpa:hover, .bou:hover, .pay:hover, .eth:hover, .ptr:hover {
+    display: table;
+    margin-bottom: 10px;
+  }
 
+  .sup-container {
+    display: inline-block;
+  }
 }
 
 @media only screen and (min-width : 0px) and (max-width : 550px) {

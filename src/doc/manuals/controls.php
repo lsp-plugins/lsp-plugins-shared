@@ -1,9 +1,12 @@
 <?php
 	$CTL = $RES_ROOT . "/img/controls/";
 ?>
-<p>The following picture demonstrates typical Graphical User Interface (GUI) of plugin:</p>
-<img src="<?= $RES_ROOT ?>/img/plugins/phase_detector.png">
-
+<div class="grid-2col-man">
+	<div class="thc-descr">
+	<p>The following picture demonstrates typical Graphical User Interface (GUI) of plugin:</p>
+	<img class="plugin" style="max-width: 100%;" src="<?= $RES_ROOT ?>/img/plugins/phase_detector.png">
+	</div>
+<div class="thc-descr">
 <p>Each plugin consists of the following elements:</p>
 <ul>
 	<li><b>AudioFile</b> - audio file chooser and editor.</li>
@@ -27,6 +30,8 @@
 	<li><b>Sample Editor</b> - sample editor.</li>
 	<li><b>Switch</b> - Switch control.</li>
 </ul>
+</div>
+</div>
 
 <p>Colors of widgets may vary but the color scheme of widgets often follows these rules:</p>
 <ul>
@@ -34,11 +39,18 @@
 	<li>Widgets that control parameters of one object often have similar colors.</li>
 	<li>Widgets associated with audio channels often use the following color scheme:</li>
 	<ul>
-		<li><b style="color:#0000ff">Blue</b> and <b style="color:#ff00ff">Magenta</b> - for thresholds.</li>
-		<li><b style="color:#00c0ff">Sapphirine</b> - for mono channel, stereo channel (when both left and right channels are controlled at same time), middle channel.</li>
-		<li><b style="color:#ff0000">Red</b> - for left channel in stero pair.</li>
-		<li><b style="color:#00ffff">Cyan</b> - for right channel in stereo pair, direct output channel.</li>
-		<li><b style="color:#00cc00">Green</b> - for side channel or sidechain.</li>
+		<li><b style="color:#c344d3">Moderate magenta</b> - for thresholds.</li>
+		<li><b style="color:#bf6455">Moderate red</b> - for mono channel and stereo channel (when both left and right channels are controlled at same time).</li>
+		<li><b style="color:#d8412a">Strong red</b> and <b style="color:#5072f4">Soft blue</b> - for left and right channels in stereo pair, direct output channel.</li>
+		<li><b style="color:#0090a1">Dark cyan</b> and <b style="color:#009700">Dark lime green</b> - for middle and side channels.</li>
+		<li><b style="color:#d8412a">Strong red</b> - for left channel in stero pair.</li>
+		<li><b style="color:#5072f4">Soft blue</b> - for right channel </li>
+		<li><b style="color:#da404a"/>Bright red</b> - for velocity.</li>
+		<li><b style="color:#b07000"/>Dark orange</b> - for balance.</li>
+		<li><b style="color:#9e60ee"/>Soft violet</b> - for envelopes.</li>
+		<li><b style="color:#c65219"/>Strong orange</b> - for sidechain.</li>
+	  <li><b style="color:#c2487b"/>Moderate pink</b> and <b style="color:#009555"/>Lime green</b>- for attack and release.</li>
+		<li><b style="color:#8c8700"/>Olive tone</b> and <b style="color:#368ccc"/>Moderate blue</b> - for dry and wet.</li>
 	</ul>
 	<li>Each widget that allows to set continuous parameters has corresponding label displaying it's current value and, optionally, units</li>
 </ul>
@@ -47,33 +59,44 @@
 
 <h2>AudioFile</h2>
 
+<div class="grid-2col-man">
+	<div class="thc-descr">
 <p>AudioFile widget is used for loading and editing audio files. It tells to the plugin the actual location of file on
 file system.</p>
-
 <p>By default there is no file associated with plugin, so the file widget displays
 <b style="color: #00c000">'Click to load'</b> text.</p>
-<div class="images">
+</div>
+
+<div class="thc-descr">
+<!-- <div class="images"> -->
 	<img src="<?= $CTL ?>file_unloaded.png">
 </div>
 
+<div class="thc-descr">
 <p>By clicking left mouse button on the widget you may open file choosing dialog and select the file
 to use by plugin.</p>
-
 <p>After the path to the file will be passed to plugin, the plugin starts to load the file, and the status
 displayed by the file widget changes. If file was successfully loaded, file widget will display
 the corresponding content of the file and it's name (without path). On error, error message is displayed
 with red color.</p>
-<div class="images">
+</div>
+
+<div class="thc-descr">
+<!-- <div class="images"> -->
 	<img src="<?= $CTL ?>file_error.png">
 </div>
 
+<div class="thc-descr">
 <p>By clicking right mouse button, popup dialog appears that allows to cut, copy, paste and clear contents of widget</p>
 <p>There is also the way to force plugin to unload file. For this purpose simply double-click by right
 mouse button on widget's area if popup menu does not appear.</p>
-
 <p>Example of file widget:</p>
-<div class="images">
+</div>
+
+<div class="thc-descr">
+<!-- <div class="images"> -->
 	<img src="<?= $CTL ?>file_loaded.png">
+</div>
 </div>
 
 <h2>Button</h2>
@@ -138,7 +161,7 @@ The drop-down list is accessible by clicking with left mouse button the header h
 <h2>Fader</h2>
 <p>The Fader widget allows to adjust value for continuous parameters in the pre-defined range.</p>
 <p>It is possible to achieve more precision by using the right mouse button instead of left when changing fader's value.</p>
-<p>To cancel editing, the opposite mouse button should be pressed (right if used left and vice verse).</p> 
+<p>To cancel editing, the opposite mouse button should be pressed (right if used left and vice verse).</p>
 <p>To reset parameter to it's default value, issue double click by the left mouse button.</p>
 <div class="images">
 	<img src="<?= $CTL ?>fader.png">
@@ -184,7 +207,7 @@ done by left-clicking on the dot, holding mouse button and moving mouse cursor o
 widget's area. Also, additional tolerance may be reached by right-clicking the dot instead of
 left-clicking, this makes the change of parameters more accurate. The movement may be cancelled
 by pressing the opposite button of the mouse.</p>
-<p>Additional tolerance for mouse scroll may be achieved by pressing shift key on keyboard</p> 
+<p>Additional tolerance for mouse scroll may be achieved by pressing shift key on keyboard</p>
 
 <p>Example showing dot controls:</p>
 <div class="images">
@@ -239,7 +262,7 @@ adjustment, shift key may be pressed on keyboard. To accelerate the adjustment, 
 knob's scale. Also, additionally mouse button may be hold and parameter will be adjusted by moving mouse
 clockwise/counter-clockwise.</p>
 <p>To reset parameter to it's default value, left mouse button double click may be issued.</p>
- 
+
 <p>Example showing knob controls:</p>
 <div class="images">
 	<img src="<?= $CTL ?>knob_blue.png">
@@ -329,8 +352,8 @@ configuration file contents:</p>
 #   VST identifier:      jav8
 #   LADSPA identifier:   5002065
 #
-# (C) Linux Studio Plugins Project 
-#   https://lsp-plug.in/ 
+# (C) Linux Studio Plugins Project
+#   https://lsp-plug.in/
 #
 #-------------------------------------------------------------------------------
 
@@ -395,12 +418,3 @@ is mostly used as bypass control for bypassing the processed by plugin signal.</
 <div class="images">
 	<img src="<?= $CTL ?>switch.png">
 </div>
-
-
-
-
-
-
-
-
-
