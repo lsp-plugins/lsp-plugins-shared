@@ -38,13 +38,13 @@ git checkout -b &lt;your-branch&gt; origin/devel
 	<img src="<?= $IMG ?>eclipse-new-project.png">
 </div>
 
-<p>Now, complete project structure is visible in the <b>Project explorer</b> view.</p> 
+<p>Now, complete project structure is visible in the <b>Project explorer</b> view.</p>
 <div class="images">
 	<img src="<?= $IMG ?>eclipse-project-explorer.png">
 </div>
 
 <p>We just need to configure project build. For this case, select <b>Project</b> &rarr; <b>Properties</b> menu,
-the project configuration dialog should appear:</p> 
+the project configuration dialog should appear:</p>
 <div class="images">
 	<img src="<?= $IMG ?>eclipse-project-properties.png">
 </div>
@@ -150,13 +150,7 @@ mtest --nofork --debug standalone --args impulse_reverb_stereo
 <p>Now click <b>Apply</b> and <b>Debug</b> buttons to start debugging. The example command line will start a standalone
 <b>Impulse Reverb Stereo</b> plugin that runs under JACK server:</p>
 <div class="images">
-	<img src="<?= $IMG ?>eclipse-mtest-plugin.png">
+	<img class="border" src="<?= $IMG ?>eclipse-mtest-plugin.png">
 </div>
 
 <p>Happy Development!</p>
-
-
-
-
-
-

@@ -38,7 +38,7 @@ $CTL = $RES_ROOT . "/img/tutorials/";
 </p>
 
 <p>
-	<img src="<?= $RES_ROOT ?>/img/tutorials/lsp-sampler-hydrogen-kit.png">
+	<img class="border" src="<?= $RES_ROOT ?>/img/tutorials/lsp-sampler-hydrogen-kit.png">
 </p>
 
 <ul>
@@ -127,7 +127,7 @@ $CTL = $RES_ROOT . "/img/tutorials/";
 			<li><b>Instrument 17</b> Note: <em>F 4</em></li>
 			<li><b>Instrument 18</b> Note: <em>F# 4</em></li>
 		</ul>
-	
+
 	<li>Now play the corresponding note on your midi keyboard or the Ardour
 		piano roll and you should hear the appropriate drum sample.</li>
 </ul>
