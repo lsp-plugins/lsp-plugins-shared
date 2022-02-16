@@ -165,6 +165,9 @@ The drop-down list is accessible by clicking with left mouse button the header h
 	<img src="<?= $CTL ?>fader.png">
 </div>
 
+
+<div class="grid-3col center_left">
+	<div>
 <h2>FileSaver</h2>
 <p>This widget allows to choose the file and tell plugin to save some data to it. It also allows to display progress
 and status of operation.</p>
@@ -173,13 +176,17 @@ and status of operation.</p>
 	<img src="<?= $CTL ?>save_v2.png">
 	<img src="<?= $CTL ?>save_v3.png">
 </div>
+</div>
 
+<div>
 <h2>Fraction</h2>
 <p>This widget allows to set-up time signature of the audio that is present as a fraction where top and bottom parts are
 integer values. Both numerator and denominator of fraction is adjustable by mouse wheel. Also, when clicking numerator
 or denominator with left mouse button, popup list box appears that allows to quickly set the required value.</p>
 <div class="images">
 	<img src="<?= $CTL ?>fraction.png">
+</div>
+</div>
 </div>
 
 <h2>Graph</h2>
@@ -231,7 +238,7 @@ control parameters of some device or set of similar devices.</p>
 
 <p>Indicators are widgets that display measured or computed value by the plugin.</p>
 
-<p>Example of indicator widget:</p>
+<p style="text-align:center">Example of indicator widget:</p>
 <div class="images">
 	<img src="<?= $CTL ?>indicator.png">
 </div>
@@ -246,7 +253,7 @@ available in <a href="https://harrisonconsoles.com/">Mixbus DAW</a> as the relat
 <p>Because inline display is an LV2-specific exension, it is available only for LV2 version of LSP plugins.
 But standalone JACK versions of plugins that support inline displays in LV2, draw them on window's icon.</p>
 
-<p>Example of inline displays:</p>
+<p style="text-align:center">Example of inline displays:</p>
 <div class="images">
 	<img src="<?= $CTL ?>inline_display1.png">
 	<img src="<?= $CTL ?>inline_display2.png">
@@ -266,36 +273,48 @@ knob's scale. Also, additionally mouse button may be hold and parameter will be 
 clockwise/counter-clockwise.</p>
 <p>To reset parameter to it's default value, left mouse button double click may be issued.</p>
 
-<p>Example showing knob controls:</p>
+<p style="text-align:center">Example showing knob controls:</p>
 <div class="images">
 	<img src="<?= $CTL ?>knob_blue.png">
+	<img src="<?= $CTL ?>knob_cyan.png">
 	<img src="<?= $CTL ?>knob_green.png">
+	<img src="<?= $CTL ?>knob_orange.png">
+	<img src="<?= $CTL ?>knob_red.png">
+	<img src="<?= $CTL ?>knob_yellow.png">
 </div>
 
+<div class="grid-2col center_left" >
+	<div>
 <h2>Label</h2>
 <p>Labels are widgets that display static text information.<p>
 
 <p>Example of label widgets:</p>
-<div class="images">
-	<img src="<?= $CTL ?>labels.png">
+<div >
+	<img class="border" src="<?= $CTL ?>labels.png">
 </div>
-
+</div>
+<div>
 <h2>Led</h2>
 <p>LEDs are used to display state of binary output parameter.<p>
 <p>Example of LEDs:</p>
-<div class="images">
-	<img src="<?= $CTL ?>led_dark.png">
-	<img src="<?= $CTL ?>led_bright.png">
+<div >
+	<img class="border" src="<?= $CTL ?>leds.png">
 </div>
+</div>
+
+
+</div>
+
 
 <h2>Meter</h2>
 <p>Meters are used for metering some values (mostly, levels of the audio signal). They may contain yellow
 and red zones. They respectivelly show that signal exceeds -6dB and 0dB levels.<p>
-<p>Example of meters:</p>
+<p style="text-align:center">Example of meters:</p>
 <div class="images">
-	<img src="<?= $CTL ?>vu_meters.png">
-	<img src="<?= $CTL ?>vu_meters_red.png">
+	<img style="margin-right:10px;" src="<?= $CTL ?>meter_mono.png">
+	<img  src="<?= $CTL ?>meter_stereo.png">
 </div>
+
 
 <h2>Parameter</h2>
 <p>Parameters are widgets that display the actual value and measuring units of some controlled parameter.

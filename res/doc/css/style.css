@@ -119,7 +119,7 @@ img.plugin {
   border: 2px solid #1b1c22;
 }
 
-img.border {  
+img.border {
   border: 2px solid #1b1c22;
 }
 
@@ -1050,8 +1050,20 @@ tr.stroke {
   padding: 8px 8px 0px 0px;
 }
 
-.grid-2col .ti-box-youtube {
+.grid-3col {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 8px 6px;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  /*grid-template-rows: repeat(2, 203px);*/
+}
+
+.grid-2col, .grid-3col, .ti-box-youtube {
   padding: 8px 8px 0px 0px;
+}
+
+.center_left, .center_left p {
+  text-align: center !important;
 }
 
 .tile-inside {
@@ -1480,6 +1492,7 @@ tr.stroke {
 }
 
 @media only screen and (min-width : 551px) and (max-width : 710px) {
+
   .lsp-content {
     font-size: 13px;
     max-width: 710px;
