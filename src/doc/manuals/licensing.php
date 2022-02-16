@@ -1,6 +1,6 @@
 <p>The LSP project is an open-source project and cares about quality of developed software.</p>
 
-<p>Still there is no absolute warranty about stability of the software on different platforms, 
+<p>Still there is no absolute warranty about stability of the software on different platforms,
 so you're using this software on your own risk.</p>
 
 <p>The source code takes a lot of time to develop, so the project uses donation model to
@@ -12,10 +12,10 @@ information is available at official site: <a href="https://lsp-plug.in/">https:
 
 <p>Below the text of license used by <b>LSP Plugins</b> is present.</p>
 
-<pre>
+<pre style="width: fit-content; margin: 0 auto;">
 <?php file_content('COPYING.LESSER'); ?>
 </pre>
 
-<pre>
+<pre style="width: fit-content; margin: 0 auto;">
 <?php file_content('COPYING'); ?>
 </pre>

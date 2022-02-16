@@ -319,10 +319,10 @@ and red zones. They respectivelly show that signal exceeds -6dB and 0dB levels.<
 <h2>Parameter</h2>
 <p>Parameters are widgets that display the actual value and measuring units of some controlled parameter.
 It is possible do double-click the parameter and enter it's value manually in the popup window.
-<p>
-	<img src="<?= $CTL ?>params.png">
-	<img src="<?= $CTL ?>param_enter.png">
-</p>
+<div class="images">
+	<img class="border" style="margin-right: 10px;" src="<?= $CTL ?>params.png">
+	<img class="border" src="<?= $CTL ?>param_enter.png">
+</div>
 
 <h2>Progress Bar</h2>
 <p>
@@ -430,7 +430,7 @@ unlike AudioFile widget, it does not allow to load files from file system.</p>
 <b style="color: #00c000">'No data'</b> text.</p>
 <p>Example of sample editor widget:</p>
 <div class="images">
-	<img src="<?= $CTL ?>sample_editor.png">
+	<img class="border" src="<?= $CTL ?>sample_editor.png">
 </div>
 
 <h2>Switch</h2>
