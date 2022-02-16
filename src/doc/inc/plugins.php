@@ -27,13 +27,13 @@
 			echo "<h1>" . htmlspecialchars($plugin['description']) . "</h1>\n";
 			
 			$fmt = array();
-			if (isset($plugin['ladspa_label']) && ($plugin['ladspa_label'] > 0))
+			if (isset($plugin['ladspa_label']) && (strlen($plugin['ladspa_label']) > 0))
 				array_push($fmt, 'LADSPA');
 			if ((isset($plugin['lv2_uri'])) && (strlen($plugin['lv2_uri']) > 0))
 				array_push($fmt, 'LV2');
-			if ((isset($plugin['fmt_vst'])) && (strlen($plugin['fmt_vst']) > 0))
-				array_push($fmt, 'LinuxVST');
-			if (isset($plugin['vst2_uid']) && (strlen($plugin['vst2_uid']) > 0))
+			if ((isset($plugin['vst2_uid'])) && (strlen($plugin['vst2_uid']) > 0))
+				array_push($fmt, 'VST2');
+			if (isset($plugin['jack']) && ($plugin['jack']))
 				array_push($fmt, 'JACK');
 		
 			$full_name = htmlspecialchars("{$PACKAGE['short']} {$plugin['description']} ({$plugin['acronym']})");

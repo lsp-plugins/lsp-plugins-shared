@@ -9,26 +9,27 @@
 <div class="thc-descr">
 <p>Each plugin consists of the following elements:</p>
 <ul>
-	<li><b>AudioFile</b> - audio file chooser and editor.</li>
-	<li><b>Button</b> - button control.</li>
-	<li><b>Combo</b> - combo box control.</li>
-	<li><b>Combo Group</b> - combo group control.</li>
-	<li><b>Fader</b> - fader control.</li>
-	<li><b>File Saver</b> - file saving control.</li>
-	<li><b>Fraction</b> - control for setting musical time signature.</li>
-	<li><b>Graph</b> - graphical output area.</li>
-	<li><b>Group</b> - group control.</li>
-	<li><b>Indicator</b> - digital LED indicator.</li>
-	<li><b>Inline Display</b> - inline display.</li>
-	<li><b>Knob</b> - rotating knob control.</li>
-	<li><b>Label</b> - label with text information.</li>
-	<li><b>Led</b> - LED.</li>
-	<li><b>Meter</b> - metering control.</li>
-	<li><b>Parameter</b> - the value of controllable parameter.</li>
-	<li><b>Progress Bar</b> - progress control.</li>
-	<li><b>Rack</b> - Rack ears with menu and mounting studs.</li>
-	<li><b>Sample Editor</b> - sample editor.</li>
-	<li><b>Switch</b> - Switch control.</li>
+	<li><b>Audio File</b> &ndash; audio file chooser and editor.</li>
+	<li><b>Button</b> &ndash; button control.</li>
+	<li><b>Combo</b> &ndash; combo box control.</li>
+	<li><b>Combo Group</b> &ndash; combo group control.</li>
+	<li><b>Fader</b> &ndash; fader control.</li>
+	<li><b>File Saver</b> &ndash; file saving control.</li>
+	<li><b>Footer</b> &ndash; plugin footer.</li>
+	<li><b>Fraction</b> &ndash; control for setting musical time signature.</li>
+	<li><b>Graph</b> &ndash; graphical output area.</li>
+	<li><b>Group</b> &ndash; group control.</li>
+	<li><b>Header</b> &ndash; plugin header.</li>
+	<li><b>Indicator</b> &ndash; digital LED indicator.</li>
+	<li><b>Inline Display</b> &ndash; inline display.</li>
+	<li><b>Knob</b> &ndash; rotating knob control.</li>
+	<li><b>Label</b> &ndash; label with text information.</li>
+	<li><b>Led</b> &ndash; LED.</li>
+	<li><b>Meter</b> &ndash; metering control.</li>
+	<li><b>Parameter</b> &ndash; the value of controllable parameter.</li>
+	<li><b>Progress Bar</b> &ndash; progress control.</li>
+	<li><b>Sample Editor</b> &ndash; sample editor.</li>
+	<li><b>Switch</b> &ndash; Switch control.</li>
 </ul>
 </div>
 </div>
@@ -39,80 +40,98 @@
 	<li>Widgets that control parameters of one object often have similar colors.</li>
 	<li>Widgets associated with audio channels often use the following color scheme:</li>
 	<ul>
-		<li><b style="color:#c344d3">Moderate magenta</b> - for thresholds.</li>
-		<li><b style="color:#bf6455">Moderate red</b> - for mono channel and stereo channel (when both left and right channels are controlled at same time).</li>
-		<li><b style="color:#d8412a">Strong red</b> and <b style="color:#5072f4">Soft blue</b> - for left and right channels in stereo pair, direct output channel.</li>
-		<li><b style="color:#0090a1">Dark cyan</b> and <b style="color:#009700">Dark lime green</b> - for middle and side channels.</li>
-		<li><b style="color:#d8412a">Strong red</b> - for left channel in stero pair.</li>
-		<li><b style="color:#5072f4">Soft blue</b> - for right channel </li>
-		<li><b style="color:#da404a"/>Bright red</b> - for velocity.</li>
-		<li><b style="color:#b07000"/>Dark orange</b> - for balance.</li>
-		<li><b style="color:#9e60ee"/>Soft violet</b> - for envelopes.</li>
-		<li><b style="color:#c65219"/>Strong orange</b> - for sidechain.</li>
-	  <li><b style="color:#c2487b"/>Moderate pink</b> and <b style="color:#009555"/>Lime green</b>- for attack and release.</li>
-		<li><b style="color:#8c8700"/>Olive tone</b> and <b style="color:#368ccc"/>Moderate blue</b> - for dry and wet.</li>
+		<li><b style="color:#c344d3">Moderate magenta</b> &ndash; for thresholds.</li>
+		<li><b style="color:#bf6455">Moderate red</b> &ndash; for mono channel and stereo channel (when both left and right channels are controlled at same time).</li>
+		<li><b style="color:#d8412a">Strong red</b> and <b style="color:#5072f4">Soft blue</b> &ndash; for left and right channels in stereo pair, direct output channel.</li>
+		<li><b style="color:#0090a1">Dark cyan</b> and <b style="color:#009700">Dark lime green</b> &ndash; for middle and side channels.</li>
+		<li><b style="color:#d8412a">Strong red</b> &ndash; for left channel in stero pair.</li>
+		<li><b style="color:#5072f4">Soft blue</b> &ndash; for right channel </li>
+		<li><b style="color:#da404a"/>Bright red</b> &ndash; for velocity.</li>
+		<li><b style="color:#b07000"/>Dark orange</b> &ndash; for balance.</li>
+		<li><b style="color:#9e60ee"/>Soft violet</b> &ndash; for envelopes.</li>
+		<li><b style="color:#c65219"/>Strong orange</b> &ndash; for sidechain.</li>
+		<li><b style="color:#c2487b"/>Moderate pink</b> and <b style="color:#009555"/>Lime green</b>&ndash; for attack and release.</li>
+		<li><b style="color:#8c8700"/>Olive tone</b> and <b style="color:#368ccc"/>Moderate blue</b> &ndash; for dry and wet.</li>
 	</ul>
-	<li>Each widget that allows to set continuous parameters has corresponding label displaying it's current value and, optionally, units</li>
+	<li>
+		Each widget that allows to set continuous parameters has corresponding label displaying it's current value and, 
+		optionally, units.
+	</li>
 </ul>
 
 <p>Below the detailed description of controls is present.</p>
 
-<h2>AudioFile</h2>
+<h2>Audio File</h2>
 
 <div class="grid-2col-man">
 	<div class="thc-descr">
-	  <p>File widget - init condition:</p>
+		<p>File widget &ndash; initial condition:</p>
 		<img class="plugin" style="max-width: 100%;" src="<?= $CTL ?>file_unloaded.png">
-	  <p>File widget - error message:</p>
+		<p>File widget &ndash; error message:</p>
 		<img class="plugin" style="max-width: 100%;" src="<?= $CTL ?>file_error.png">
-		<p>File widget - file loaded:</p>
+		<p>File widget &ndash; file loaded:</p>
 		<img class="plugin" style="max-width: 100%;" src="<?= $CTL ?>file_loaded.png">
 	</div>
 
 	<div class="thc-descr">
-<p>AudioFile widget is used for loading and editing audio files. It tells to the plugin the actual location of file on
-file system.</p>
-<p>By default there is no file associated with plugin, so the file widget displays <b style="color: #00909e">'Click or drug to load'</b> text.</p>
-<br>
-<p>By clicking left mouse button on the widget you may open file choosing dialog and select the file
-to use by plugin.</p>
-<p>After the path to the file will be passed to plugin, the plugin starts to load the file, and the status
-displayed by the file widget changes. If file was successfully loaded, file widget will display
-the corresponding content of the file and it's name (without path). On error, error message is displayed
-with red color.</p>
-<br>
-<p>By clicking right mouse button, popup dialog appears that allows to cut, copy, paste and clear contents of widget</p>
-<p>There is also the way to force plugin to unload file. For this purpose simply double-click by right
-mouse button on widget's area if popup menu does not appear.</p>
-</div>
-
-
+		<p>
+			AudioFile widget is used for loading and editing audio files. It tells to the plugin the actual location of file on
+			file system.
+		</p>
+		<p>
+			By default there is no file associated with plugin, so the file widget displays 
+			<b style="color: #00909e">'Click or drug to load'</b> text.
+		</p>
+		<br>
+		<p>
+			By clicking left mouse button on the widget you may open file choosing dialog and select the file to use by plugin.
+		</p>
+		<p>
+			After the path to the file will be passed to plugin, the plugin starts to load the file, and the status
+			displayed by the file widget changes. If file was successfully loaded, file widget will display
+			the corresponding content of the file and it's name (without path). On error, error message is displayed
+			with red color.
+		</p>
+		<br>
+		<p>
+			By clicking right mouse button, popup dialog appears that allows to cut, copy, paste and clear contents of widget
+		</p>
+		<p>
+			There is also the way to force plugin to unload file. For this purpose simply double-click by right
+			mouse button on widget's area if popup menu does not appear.
+		</p>
+	</div>
 </div>
 
 <h2>Button</h2>
 
-<p>Buttons are mostly used to turn on/turn off some binary parameter. Rarely they are also used for switching between different processing modes
-(See <?php plugin_ref('comp_delay_mono'); ?> plugin for example). There are two different types of buttons:</p>
+<p>
+	Buttons are mostly used to turn on/turn off some binary parameter. Rarely they are also used for switching between 
+	different processing modes (See <?php plugin_ref('comp_delay_mono'); ?> plugin for example). There are two different 
+	types of buttons:
+</p>
 <ul>
 	<li><b>push/pop</b> - these buttons allow to change the state of parameter and keep it until next button push occurs.</li>
 	<li><b>trigger</b> - these buttons allow to trigger some event while the button is pressed and return to initial state when the button is released.</li>
 </ul>
-
-<p>Push/pop buttons may be pressed by left mouse button click and do not affect
-any parameter changes until the left mouse button is released over the button widget.
-It is possible to cancel button press by moving mouse cursor out of the widget's area
-or by additionally pressing right mouse button.</p>
-
-<p>Trigger buttons have radically different behaviour. They trigger event on left mouse
-button click and every time they fall into pushed state. So there is possible to trigger
-sequence of events by pressing left mouse button over the button and repeatedly moving
-mouse cursor outside widget's area and back.</p>
+<p>
+	Push/pop buttons may be pressed by left mouse button click and do not affect
+	any parameter changes until the left mouse button is released over the button widget.
+	It is possible to cancel button press by moving mouse cursor out of the widget's area
+	or by additionally pressing right mouse button.
+</p>
+<p>
+	Trigger buttons have radically different behaviour. They trigger event on left mouse
+	button click and every time they fall into pushed state. So there is possible to trigger
+	sequence of events by pressing left mouse button over the button and repeatedly moving
+	mouse cursor outside widget's area and back.
+</p>
 
 <p>For space economy and clarity improving purposes buttons may be combined with LEDs.</p>
 
 <p style="text-align:center">Here is example of different button widgets:</p>
 <div class="images">
-  <img src="<?= $CTL ?>button_tap.png">
+	<img src="<?= $CTL ?>button_tap.png">
 	<img src="<?= $CTL ?>button_active.png">
 	<img src="<?= $CTL ?>button_blank.png">
 	<img src="<?= $CTL ?>button_lcf.png">
@@ -124,7 +143,6 @@ mouse cursor outside widget's area and back.</p>
 	<img src="<?= $CTL ?>button_on_s_m_3.png">
 	<img src="<?= $CTL ?>button_sc_sm.png">
 	<img src="<?= $CTL ?>button_side_on.png">
-
 </div>
 
 <h2>Combo</h2>
@@ -166,34 +184,45 @@ The drop-down list is accessible by clicking with left mouse button the header h
 </div>
 
 
-<div class="grid-3col center_left">
-	<div>
-<h2>FileSaver</h2>
-<p>This widget allows to choose the file and tell plugin to save some data to it. It also allows to display progress
-and status of operation.</p>
+<h2>File Saver</h2>
+<p>
+	This widget allows to choose the file and tell plugin to save some data to it. It also allows to display progress
+	and status of operation.
+</p>
 <div class="images">
 	<img src="<?= $CTL ?>save_v1.png">
 	<img src="<?= $CTL ?>save_v2.png">
 	<img src="<?= $CTL ?>save_v3.png">
 </div>
+
+<h2>Footer</h2>
+<p>The footer is located at the bottom of plugin and allows to adjust some parameters available in the main menu:</p>
+<ul>
+	<li>Show manual for the plugin.</li>
+	<li>Adjust the UI scaling for high-DPI displays.</li>
+	<li>Adjust the font scaling for people with disabled vision.</li>
+</ul>
+
+<div class="images">
+	<img src="<?= $CTL ?>footer.png">
 </div>
 
-<div>
 <h2>Fraction</h2>
-<p>This widget allows to set-up time signature of the audio that is present as a fraction where top and bottom parts are
-integer values. Both numerator and denominator of fraction is adjustable by mouse wheel. Also, when clicking numerator
-or denominator with left mouse button, popup list box appears that allows to quickly set the required value.</p>
+<p>
+	This widget allows to set-up time signature of the audio that is present as a fraction where top and bottom parts are
+	integer values. Both numerator and denominator of fraction is adjustable by mouse wheel. Also, when clicking numerator
+	or denominator with left mouse button, popup list box appears that allows to quickly set the required value.
+</p>
 <div class="images">
 	<img src="<?= $CTL ?>fraction.png">
 </div>
-</div>
-</div>
 
 <h2>Graph</h2>
-
-<p>Graph is special widget for displaying graphical information about processes that flow
-in the DSP core of plugin. It may contain lines, text labels, different curves (meshes),
-markers and dots.</p>
+<p>
+	Graph is special widget for displaying graphical information about processes that flow
+	in the DSP core of plugin. It may contain lines, text labels, different curves (meshes),
+	markers and dots.
+</p>
 
 <p style="text-align:center">Example of graph widget:</p>
 <div class="grid-2col-man">
@@ -205,8 +234,10 @@ markers and dots.</p>
 </div>
 </div>
 
-<p>All elements of graph except dots can not change input parameters of plugin. Dots may control
-simultaneously up to three parameters by the following events:</p>
+<p>
+	All elements of graph except dots can not change input parameters of plugin. Dots may control
+	simultaneously up to three parameters by the following events:
+</p>
 <ul>
 	<li>moving dot horizontally;</li>
 	<li>moving dot vertically;</li>
@@ -234,136 +265,62 @@ control parameters of some device or set of similar devices.</p>
 	<img class="border" src="<?= $CTL ?>group.png">
 </div>
 
-<h2>Indicator</h2>
-
-<p>Indicators are widgets that display measured or computed value by the plugin.</p>
-
-<p style="text-align:center">Example of indicator widget:</p>
-<div class="images">
-	<img src="<?= $CTL ?>indicator.png">
-</div>
-
-<h2>Inline display</h2>
-
-<p>Inline displays are not widgets or elements of plugin's UI at all. Instead of this, they're part of
-the host UI since the <a href="https://ardour.org/">Ardour DAW</a> implemented Inline Display extension for
-LV2 format.</p>
-<p>So they're available in the Ardour's mixer strip even if UI is not shown. Inline displays also are
-available in <a href="https://harrisonconsoles.com/">Mixbus DAW</a> as the relative to Ardour product.</p>
-<p>Because inline display is an LV2-specific exension, it is available only for LV2 version of LSP plugins.
-But standalone JACK versions of plugins that support inline displays in LV2, draw them on window's icon.</p>
-
-<p style="text-align:center">Example of inline displays:</p>
-<div class="images">
-	<img src="<?= $CTL ?>inline_display1.png">
-	<img src="<?= $CTL ?>inline_display2.png">
-</div>
-
-<h2>Knob</h2>
-<p>Knobs are the mostly used controls by plugin GUIs. They allow to adjust value for continuous parameters
-in the pre-defined range. Higlighted part of the knob's scale shows deviation from it's zero position.
-There are many ways to adjust the controlled parameter.<p>
-<p>The first way to change the parameter is performing left mouse click on the knob's cap, holding mouse
-button and moving cursor up and down. To apply more accurate adjustment, right button of mouse may be pressed
-while moving cursor.</p>
-<p>The second way to change parameter's value may be reached by using mouse scroll. To perform more accurate
-adjustment, shift key may be pressed on keyboard. To accelerate the adjustment, control key may be pressed on keyboard.</p>
-<p>For all knobs (especially when they are stiff) quick adjustment of parameter may be achived by left-clicking
-knob's scale. Also, additionally mouse button may be hold and parameter will be adjusted by moving mouse
-clockwise/counter-clockwise.</p>
-<p>To reset parameter to it's default value, left mouse button double click may be issued.</p>
-
-<p style="text-align:center">Example showing knob controls:</p>
-<div class="images">
-	<img src="<?= $CTL ?>knob_blue.png">
-	<img src="<?= $CTL ?>knob_cyan.png">
-	<img src="<?= $CTL ?>knob_green.png">
-	<img src="<?= $CTL ?>knob_orange.png">
-	<img src="<?= $CTL ?>knob_red.png">
-	<img src="<?= $CTL ?>knob_yellow.png">
-</div>
-
-<div class="grid-2col center_left" >
-	<div>
-<h2>Label</h2>
-<p>Labels are widgets that display static text information.<p>
-
-<p>Example of label widgets:</p>
-<div >
-	<img class="border" src="<?= $CTL ?>labels.png">
-</div>
-</div>
-<div>
-<h2>Led</h2>
-<p>LEDs are used to display state of binary output parameter.<p>
-<p>Example of LEDs:</p>
-<div >
-	<img class="border" src="<?= $CTL ?>leds.png">
-</div>
-</div>
-
-
-</div>
-
-
-<h2>Meter</h2>
-<p>Meters are used for metering some values (mostly, levels of the audio signal). They may contain yellow
-and red zones. They respectivelly show that signal exceeds -6dB and 0dB levels.<p>
-<p style="text-align:center">Example of meters:</p>
-<div class="images">
-	<img style="margin-right:10px;" src="<?= $CTL ?>meter_mono.png">
-	<img  src="<?= $CTL ?>meter_stereo.png">
-</div>
-
-
-<h2>Parameter</h2>
-<p>Parameters are widgets that display the actual value and measuring units of some controlled parameter.
-It is possible do double-click the parameter and enter it's value manually in the popup window.
-<div class="images">
-	<img class="border" style="margin-right: 10px;" src="<?= $CTL ?>params.png">
-	<img class="border" src="<?= $CTL ?>param_enter.png">
-</div>
-
-<h2>Progress Bar</h2>
+<h2>Header</h2>
 <p>
-  Progress Bar is a widget for monitoring execution progress of offline tasks.
-  It shows the actual completion percentage of the background job.
-<p>
-<p>Example of progress bar:</p>
-<div class="images">
-	<img src="<?= $CTL ?>progress_bar.png">
-</div>
-
-<h2>Rack</h2>
-<p>Rack ears contain the logo 'LSP' in the left part of UI and it's short model code in the right part of UI</p>
-<div class="images">
-	<img src="<?= $CTL ?>rack_left.png">
-	<img src="<?= $CTL ?>rack_right.png">
-</div>
+	Header delivers the basic information about the plugin and allow to perform primary control over the plugin settings.
+	It consists of the following elements:
+</p>
+<ul>
+	<li><b>LSP Logo</b> at the left</li>
+	<li><b>Plugin name</b> at the top</li>
+	<li><b>Plugin model</b> code near to the plugin name.</li>
+	<li><b>Bypass button</b> at ther right of the plugin name.</li>
+	<li><b>Main menu bar</b> that consists of the following elements:</li>
+	<ul>
+		<li><b>Menu</b> &ndash; triggers the main plugin menu.</li>
+		<li><b>Save</b> &ndash; launches the dialog that allows to save the configuration of plugin to confiruation file.</li>
+		<li><b>Load</b> &ndash; launches the dialog that allows to load the configuration of plugin from confiruation file.</li>
+		<li><b>Reset</b> &ndash; resets the state of plugin to the default. Requires a confirmation as a protection from accidental click.</li>
+		<li><b>About</b> &ndash; shows the dialog which displays all necessary information about the plugin</li>
+	</ul>
+</ul>
+<p>The main menu allows to peform the following actions on plugin instance:</p>
+<ul>
+	<li>Show manual for the plugin and for the controls.</li>
+	<li>Export plugin settings to file and clipboard.</li>
+	<li>Import plugin settings from file or clipboard or some special file format (like Hydrogen drumkits or RoomEqWizard filters).</li>
+	<li>Create an internal state dump of plugin for shipping an issue report to developers.</li>
+	<li>Select the default lanuguage of the user interface.</li>
+	<li>Adjust the UI scaling for high-DPI displays.</li>
+	<li>Adjust the font scaling for people with disabled vision.</li>
+	<li>Change the visual schema for widgets.</li>
+	<li>Select the 3D rendering backend if plugin requires 3D rendering.</li>
+	<li>Apply different built-in presets if they are present and supported by the plugin.</li>
+</ul>
 
 <p>Plugins typically use the folowing model code format: <b>XXXX&nbsp;MM&nbsp;NN&nbsp;CC</b>, where:</p>
 <ul>
-	<li><b>XXXX</b> - arconym from the full name of plugin, for example <b>GE</b> for <b>Grafischer Entzerrer</b>.</li>
-	<li><b>MM</b> - modifiers that show additional facilities of plugin like <b>M</b> (MIDI) or <b>SC</b> (Side chain)</li>
-	<li><b>NN</b> - number of devices that work simultaneously. For example, <b>16</b> filters for the equalizer.</li>
-	<li><b>CC</b> - channels that plugin operates:</li>
+	<li><b>XXXX</b> &ndash; arconym from the full name of plugin, for example <b>GE</b> for <b>Grafischer Entzerrer</b>.</li>
+	<li><b>MM</b> &ndash; modifiers that show additional facilities of plugin like <b>M</b> (MIDI) or <b>SC</b> (Side chain)</li>
+	<li><b>NN</b> &ndash; number of devices that work simultaneously. For example, <b>16</b> filters for the equalizer.</li>
+	<li><b>CC</b> &ndash; channels that plugin operates:</li>
 	<ul>
-		<li><b>M</b> - mono;</li>
-		<li><b>S</b> - stereo;</li>
-		<li><b>D</b> - stereo with additional direct output channel;</li>
-		<li><b>LR</b> - stereo, but separately left and right channels;</li>
-		<li><b>MS</b> - middle and side channels.</li>
+		<li><b>M</b> &ndash; mono;</li>
+		<li><b>S</b> &ndash; stereo;</li>
+		<li><b>D</b> &ndash; stereo with additional direct output channel;</li>
+		<li><b>LR</b> &ndash; stereo, but separately left and right channels;</li>
+		<li><b>MS</b> &ndash; middle and side channels.</li>
 	</ul>
 </ul>
 
-<p>The second function of logo and model bars is showing context menu that allows to save or load state of all
-plugin's parameters to/from plain text file:</p>
 <div class="images">
-	<img src="<?= $CTL ?>context_menu.png">
+	<img src="<?= $CTL ?>menu_bar.png">
 </div>
 
-<p>The content of text file can be manually edited. Each parameter has detailed description. Example of the
-configuration file contents:</p>
+<p>
+	The content of the exported/imported text file can be manually edited. 
+	Each parameter has detailed description. Below an example of the configuration file is present:
+</p>
 <pre>
 #-------------------------------------------------------------------------------
 #
@@ -415,10 +372,96 @@ g_out = 1.000000
 #-------------------------------------------------------------------------------
 </pre>
 
-<p>Additionally, the short form of rack may be turned on by pressing <b>'Toggle rack mount'</b>
-from the context menu:</p>
+<h2>Indicator</h2>
+
+<p>Indicators are widgets that display measured or computed value by the plugin.</p>
+
+<p style="text-align:center">Example of indicator widget:</p>
 <div class="images">
-	<img src="<?= $CTL ?>rack_top.png">
+	<img src="<?= $CTL ?>indicator.png">
+</div>
+
+<h2>Inline display</h2>
+
+<p>Inline displays are not widgets or elements of plugin's UI at all. Instead of this, they're part of
+the host UI since the <a href="https://ardour.org/">Ardour DAW</a> implemented Inline Display extension for
+LV2 format.</p>
+<p>So they're available in the Ardour's mixer strip even if UI is not shown. Inline displays also are
+available in <a href="https://harrisonconsoles.com/">Mixbus DAW</a> as the relative to Ardour product.</p>
+<p>Because inline display is an LV2-specific exension, it is available only for LV2 version of LSP plugins.
+But standalone JACK versions of plugins that support inline displays in LV2, draw them on window's icon.</p>
+
+<p style="text-align:center">Example of inline displays:</p>
+<div class="images">
+	<img src="<?= $CTL ?>inline_display1.png">
+	<img src="<?= $CTL ?>inline_display2.png">
+</div>
+
+<h2>Knob</h2>
+<p>Knobs are the mostly used controls by plugin GUIs. They allow to adjust value for continuous parameters
+in the pre-defined range. Higlighted part of the knob's scale shows deviation from it's zero position.
+There are many ways to adjust the controlled parameter.<p>
+<p>The first way to change the parameter is performing left mouse click on the knob's cap, holding mouse
+button and moving cursor up and down. To apply more accurate adjustment, right button of mouse may be pressed
+while moving cursor.</p>
+<p>The second way to change parameter's value may be reached by using mouse scroll. To perform more accurate
+adjustment, shift key may be pressed on keyboard. To accelerate the adjustment, control key may be pressed on keyboard.</p>
+<p>For all knobs (especially when they are stiff) quick adjustment of parameter may be achived by left-clicking
+knob's scale. Also, additionally mouse button may be hold and parameter will be adjusted by moving mouse
+clockwise/counter-clockwise.</p>
+<p>To reset parameter to it's default value, left mouse button double click may be issued.</p>
+
+<p style="text-align:center">Example showing knob controls:</p>
+<div class="images">
+	<img src="<?= $CTL ?>knob_blue.png">
+	<img src="<?= $CTL ?>knob_cyan.png">
+	<img src="<?= $CTL ?>knob_green.png">
+	<img src="<?= $CTL ?>knob_orange.png">
+	<img src="<?= $CTL ?>knob_red.png">
+	<img src="<?= $CTL ?>knob_yellow.png">
+</div>
+
+<h2>Label</h2>
+<p>Labels are widgets that display static text information.<p>
+
+<p>Example of label widgets:</p>
+<div >
+	<img class="border" src="<?= $CTL ?>labels.png">
+</div>
+
+<h2>Led</h2>
+<p>LEDs are used to display state of binary output parameter.<p>
+<p>Example of LEDs:</p>
+<div >
+	<img class="border" src="<?= $CTL ?>leds.png">
+</div>
+
+<h2>Meter</h2>
+<p>Meters are used for metering some values (mostly, levels of the audio signal). They may contain yellow
+and red zones. They respectivelly show that signal exceeds -6dB and 0dB levels.<p>
+<p style="text-align:center">Example of meters:</p>
+<div class="images">
+	<img style="margin-right:10px;" src="<?= $CTL ?>meter_mono.png">
+	<img  src="<?= $CTL ?>meter_stereo.png">
+</div>
+
+
+<h2>Parameter</h2>
+<p>Parameters are widgets that display the actual value and measuring units of some controlled parameter.
+It is possible do double-click the parameter and enter it's value manually in the popup window.
+<div class="images">
+	<img class="border" style="margin-right: 10px;" src="<?= $CTL ?>params.png">
+	<img class="border" src="<?= $CTL ?>param_enter.png">
+</div>
+
+<h2>Progress Bar</h2>
+<p>
+	Progress Bar is a widget for monitoring execution progress of offline tasks.
+	It shows the actual completion percentage of the background job.
+<p>
+<p>Example of progress bar:</p>
+<div class="images">
+	<img src="<?= $CTL ?>progress_bar.png">
 </div>
 
 <h2>Sample Editor</h2>
