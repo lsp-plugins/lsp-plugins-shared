@@ -1,4 +1,4 @@
-<p><img src="<?= $DOCROOT ?>img/logo.png" style="width:20%; height:20%"></p>
+<p><img src="<?= $DOCROOT ?>img/box.png" class="bundle-box" ></p>
 <p><b>LSP (Linux Studio Plugins)</b> is a collection of open-source plugins compatible with following formats:</p>
 <ul>
 	<li><b>LADSPA</b> - set of plugins for <a href="https://en.wikipedia.org/wiki/LADSPA">Linux Audio Developer's Simple Plugin API</a></li>
