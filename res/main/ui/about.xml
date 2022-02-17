@@ -8,7 +8,7 @@
 			</multilabel>
 		</align>
 		<align fill="true" valign="-1" hexpand="true">
-			<grid rows="16" cols="2" hspacing="4" vspacing="4">
+			<grid rows="17" cols="2" hspacing="4" vspacing="4">
 				<cell cols="2">
 					<label ui:inject="AboutDialog::Heading" text="headings.about" text.meta="true" />
 				</cell>
@@ -60,7 +60,7 @@
 						<label ui:inject="AboutDialog::Text" text="messages.about.support" />
 					</cell>
 					
-					<ui:for id="i" first="0" last="4">
+					<ui:for id="i" first="0" count="5">
 						<cell cols="2">
 							<hlink ui:inject="AboutDialog::Hlink"
 								text="project.donations.${i}"

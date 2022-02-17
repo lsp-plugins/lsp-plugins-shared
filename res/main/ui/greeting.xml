@@ -7,7 +7,7 @@
 		<label ui:inject="GreetingDialog::Text" text="messages.greetings.1" text.meta="true" />
 		<label ui:inject="GreetingDialog::Text" text="messages.greetings.2" text.meta="true" />
 
-		<ui:for id="i" first="0" last="4">
+		<ui:for id="i" first="0" count="5">
 			<hlink ui:inject="GreetingDialog::Hlink"
 				text="project.donations.${i}"
 				url="project.donations.${i}"
