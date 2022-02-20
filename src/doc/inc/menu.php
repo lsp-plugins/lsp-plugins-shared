@@ -23,7 +23,7 @@
 			}
 		}
 	
- 		return $result;
+		return $result;
 	}
 
 	function def_menu_item($parent, $id, $text, $file = null)
@@ -31,14 +31,14 @@
 		global $MENU;
 		
 		$item = array(
-					'id' => $id,
-					'parent' => ((isset($parent)) && (strlen($parent) > 0)) ? $parent : null,
-					'text' => $text,
-					'root' => '',
-					'path' => '',
-					'file' => isset($file) ? $file : $id
-				);
-		
+			'id' => $id,
+			'parent' => ((isset($parent)) && (strlen($parent) > 0)) ? $parent : null,
+			'text' => $text,
+			'root' => '',
+			'path' => '',
+			'file' => isset($file) ? $file : $id
+		);
+
 		if ((!isset($parent)) || (strlen($parent) <= 0))
 		{
 		    $item['root']    = '..';
