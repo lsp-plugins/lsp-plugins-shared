@@ -29,7 +29,6 @@
 	<li><b>Parameter</b> &ndash; the value of controllable parameter.</li>
 	<li><b>Progress Bar</b> &ndash; progress control.</li>
 	<li><b>Sample Editor</b> &ndash; sample editor.</li>
-	<li><b>Switch</b> &ndash; Switch control.</li>
 </ul>
 </div>
 </div>
@@ -474,12 +473,4 @@ unlike AudioFile widget, it does not allow to load files from file system.</p>
 <p>Example of sample editor widget:</p>
 <div class="images">
 	<img class="border" src="<?= $CTL ?>sample_editor.png">
-</div>
-
-<h2>Switch</h2>
-<p>Switch is an alternative to the button widget but has different graphic presentation. It
-is mostly used as bypass control for bypassing the processed by plugin signal.</p>
-
-<div class="images">
-	<img src="<?= $CTL ?>switch.png">
 </div>
