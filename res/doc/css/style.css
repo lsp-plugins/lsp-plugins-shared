@@ -116,11 +116,11 @@ img.plugin {
   width: auto;
   float: left;
   margin: 0 25px 10px 0;
-  border: 2px solid #1b1c22;
+  border: 2px solid #373944;
 }
 
 img.border {
-  border: 2px solid #1b1c22;
+  border: 2px solid #373944;
 }
 
 pre {
@@ -228,9 +228,10 @@ a img:hover {
 .header-box {
   background: url(../img/header.png) #25272e no-repeat top left;
   background-size: cover;
-  height: 192px;
-  /*border-bottom: 6px #1b1c22 solid;*/
-  margin-bottom: 6px;
+  height: 244px;
+  border-top: 6px #101114 solid;
+  border-bottom: 6px #101114 solid;
+  /* margin-bottom: 6px; */
   position: relative;
 }
 
@@ -512,6 +513,7 @@ a img:hover {
   background-size: contain;
   display: block !important;
   margin: 8px 8px 8px 0;
+  min-width: 335px;
 }
 
 .m-cover {
@@ -1492,7 +1494,6 @@ tr.stroke {
 }
 
 @media only screen and (min-width : 551px) and (max-width : 710px) {
-
   .lsp-content {
     font-size: 13px;
     max-width: 710px;

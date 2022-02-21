@@ -53,7 +53,7 @@
 		<li><b style="color:#8c8700"/>Olive tone</b> and <b style="color:#368ccc"/>Moderate blue</b> &ndash; for dry and wet.</li>
 	</ul>
 	<li>
-		Each widget that allows to set continuous parameters has corresponding label displaying it's current value and, 
+		Each widget that allows to set continuous parameters has corresponding label displaying it's current value and,
 		optionally, units.
 	</li>
 </ul>
@@ -78,7 +78,7 @@
 			file system.
 		</p>
 		<p>
-			By default there is no file associated with plugin, so the file widget displays 
+			By default there is no file associated with plugin, so the file widget displays
 			<b style="color: #00909e">'Click or drug to load'</b> text.
 		</p>
 		<br>
@@ -105,8 +105,8 @@
 <h2>Button</h2>
 
 <p>
-	Buttons are mostly used to turn on/turn off some binary parameter. Rarely they are also used for switching between 
-	different processing modes (See <?php plugin_ref('comp_delay_mono'); ?> plugin for example). There are two different 
+	Buttons are mostly used to turn on/turn off some binary parameter. Rarely they are also used for switching between
+	different processing modes (See <?php plugin_ref('comp_delay_mono'); ?> plugin for example). There are two different
 	types of buttons:
 </p>
 <ul>
@@ -203,7 +203,7 @@ The drop-down list is accessible by clicking with left mouse button the header h
 </ul>
 
 <div class="images">
-	<img src="<?= $CTL ?>footer.png">
+	<img class="border" src="<?= $CTL ?>footer.png">
 </div>
 
 <h2>Fraction</h2>
@@ -313,11 +313,11 @@ control parameters of some device or set of similar devices.</p>
 </ul>
 
 <div class="images">
-	<img src="<?= $CTL ?>menu_bar.png">
+	<img class="border" src="<?= $CTL ?>menu_bar.png">
 </div>
 
 <p>
-	The content of the exported/imported text file can be manually edited. 
+	The content of the exported/imported text file can be manually edited.
 	Each parameter has detailed description. Below an example of the configuration file is present:
 </p>
 <pre>
@@ -421,17 +421,17 @@ clockwise/counter-clockwise.</p>
 </div>
 
 <h2>Label</h2>
-<p>Labels are widgets that display static text information.<p>
+<p style="text-align:center">Labels are widgets that display static text information.<p>
 
-<p>Example of label widgets:</p>
-<div >
+<p style="text-align:center">Example of label widgets:</p>
+<div class="images">
 	<img class="border" src="<?= $CTL ?>labels.png">
 </div>
 
 <h2>Led</h2>
-<p>LEDs are used to display state of binary output parameter.<p>
-<p>Example of LEDs:</p>
-<div >
+<p style="text-align:center">LEDs are used to display state of binary output parameter.<p>
+<p style="text-align:center">Example of LEDs:</p>
+<div class="images">
 	<img class="border" src="<?= $CTL ?>leds.png">
 </div>
 
