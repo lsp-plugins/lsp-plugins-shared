@@ -18,29 +18,23 @@
 # along with lsp-plugin-shared.  If not, see <https://www.gnu.org/licenses/>.
 #
 
-# Variables that describe dependencies
-LSP_COMMON_LIB_VERSION     := 1.0.14
-LSP_COMMON_LIB_NAME        := lsp-common-lib
-LSP_COMMON_LIB_TYPE        := hdr
-LSP_COMMON_LIB_URL         := git@github.com:lsp-plugins/$(LSP_COMMON_LIB_NAME).git
+# List of dependencies
+DEPENDENCIES = \
+  LIBPTHREAD \
+  LSP_COMMON_LIB \
+  LSP_PLUGIN_FW
 
-LSP_TEST_FW_VERSION        := 1.0.8
-LSP_TEST_FW_NAME           := lsp-test-fw
-LSP_TEST_FW_TYPE           := src
-LSP_TEST_FW_URL            := git@github.com:lsp-plugins/$(LSP_TEST_FW_NAME).git
+TEST_DEPENDENCIES = \
+  LSP_TEST_FW
 
-LSP_PLUGIN_FW_VERSION      := 0.5.0
-LSP_PLUGIN_FW_NAME         := lsp-plugin-fw
-LSP_PLUGIN_FW_TYPE         := hdr
-LSP_PLUGIN_FW_URL          := git@github.com:lsp-plugins/$(LSP_PLUGIN_FW_NAME).git
+# Platform-dependent
+ifeq ($(PLATFORM),Windows)
+  TEST_DEPENDENCIES += \
+    LIBSHLWAPI
+endif
 
-LIBPTHREAD_VERSION         := system
-LIBPTHREAD_NAME            := libpthread
-LIBPTHREAD_TYPE            := opt
-LIBPTHREAD_LDFLAGS         := -lpthread
-
-LIBSHLWAPI_VERSION         := system
-LIBSHLWAPI_NAME            := libshlwapi
-LIBSHLWAPI_TYPE            := opt
-LIBSHLWAPI_LDFLAGS         := -lshlwapi
-
+# Overall system dependencies
+ALL_DEPENDENCIES = \
+  $(DEPENDENCIES) \
+  $(TEST_DEPENDENCIES) \
+  LIBSHLWAPI

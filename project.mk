@@ -29,23 +29,3 @@ ARTIFACT_EXPORT_ALL         = 1
 # Weak property
 DEMO_TEST                  := 1
 
-# List of dependencies
-DEPENDENCIES = \
-  LIBPTHREAD \
-  LSP_COMMON_LIB \
-  LSP_PLUGIN_FW
-
-TEST_DEPENDENCIES = \
-  LSP_TEST_FW
-
-# Platform-dependent
-ifeq ($(PLATFORM),Windows)
-  TEST_DEPENDENCIES += \
-    LIBSHLWAPI
-endif
-
-# Overall system dependencies
-ALL_DEPENDENCIES = \
-  $(DEPENDENCIES) \
-  $(TEST_DEPENDENCIES) \
-  LIBSHLWAPI
