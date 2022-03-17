@@ -1,0 +1,42 @@
+{
+	"about": {
+		"copyright": "(C) {@meta_pkg_copyright} 2015-2022.",
+		"description": "Questa è una raccolta di plugin audio open-source.",
+		"info": {
+			"pkg_name": "Nome del pacchetto:",
+			"pkg_version": "Version del pacchetto:",
+			"plug_name": "Nome del plugin:",
+			"plug_version": "Versione del plugin:"
+		},
+		"values": {
+			"pkg_name": "{@meta_pkg_full_name}",
+			"pkg_version": "{@meta_pkg_version}",
+			"plug_name": "{@meta_plugin_description}",
+			"plug_version": "{@meta_plugin_version}"
+		},
+		"license": "Distributo secondo i termini della licenza GNU Lesser Public License v3 (LGPLv3):",
+		"license_url": "https://www.gnu.org/licenses/lgpl-3.0.en.html",
+		"support": "Supporta il progetto:"
+	},
+	"file": {
+		"confirm_load": "Vuoi veramente caricare il file selezionato?",
+		"confirm_overwrite": "Il file selezionato è già esistente. Sovrascrivere?",
+		
+		"invalid_name": "Il file inserito è invalido",
+		
+		"not_exists": "Il file inserito non esiste",
+		"not_specified": "Il nome del file non è specificato"
+	},
+	
+	"greetings": {
+		"0": "Hai aggiornato i plugin alla versione {@meta_pkg_version}!",
+		"1": "Il progetto '{@meta_pkg_full_name}' è un progetto non-commerciale e ha bisogno di supporto finanziario per continuare lo sviluppo.",
+		"2": "Puoi aiutare questa raccolta opensource di plugin a crescere visitando il seguente link e donando al progetto:",
+		"3": "Ricorda che subscription e piccole donazioni regolari danno più benefici al progetto rispetto a grandi donazioni singole.",
+		"4": "Al fine di non infastidire, questa finestra sarà mostrata solo al seguito di ogni aggiornamento dei plugin.",
+		"5": "Grazie in anticipo."
+	},
+	
+	"postscript": "{@meta_pkg_full_name}",
+	"site": "{@meta_pkg_site}"
+}

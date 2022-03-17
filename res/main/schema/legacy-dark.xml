@@ -1,0 +1,1819 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<schema>
+	<!-- Metadata -->
+	<meta>
+		<title value="schemas.legacy_dark"/>
+	</meta>
+
+	<!-- Fonts -->
+	<fonts>
+		<lsp-logo src="builtin://fonts/lsp-logo.ttf"/>
+		<lsp-icons src="builtin://fonts/lsp-icons.ttf"/>
+		<noto-sans-display src="builtin://fonts/NotoSansDisplay-Regular.ttf"/>
+	</fonts>
+
+	<!-- Constants -->
+	<constants>
+		<bg_darken value="1.0" />
+	</constants>
+
+	<!-- Color aliases -->
+	<colors>
+		<!-- Generic colors -->
+		<black value="#000000"/>
+		<white value="#ffffff"/>
+
+		<red value="#e53f40"/>
+		<orange value="#c26412"/>
+		<yellow value="#977c00"/>
+		<green value="#009600"/>
+		<cyan value="#00909e"/>
+		<blue value="#377bff"/>
+		<violet value="#c728ff"/>
+		<magenta value="#e23c75"/>
+		<gray value="#6f7185"/>
+
+		<bright_red value="#fd5652"/>
+		<bright_orange value="#da7829"/>
+		<bright_yellow value="#ad9000"/>
+		<bright_green value="#0aab04"/>
+		<bright_cyan value="#00a4b2"/>
+		<bright_blue value="#568eff"/>
+		<bright_violet value="#df45ff"/>
+		<bright_magenta value="#fa5589"/>
+		<bright_gray value="#808299"/>
+
+		<dark_red value="#95333b"/>
+		<dark_orange value="#7c491b"/>
+		<dark_yellow value="#635500"/>
+		<dark_green value="#006509"/>
+		<dark_cyan value="#00626b"/>
+		<dark_blue value="#1457a4"/>
+		<dark_violet value="#8a1ab7"/>
+		<dark_magenta value="#943059"/>
+		<dark_gray value="#606173"/>
+
+		<!-- ChannelGroup -->
+
+		<channel_group_red_bg value="#2b2628"/>
+		<channel_group_orange_bg value="#2a2627"/>
+		<channel_group_yellow_bg value="#282726"/>
+		<channel_group_green_bg value="#242827"/>
+		<channel_group_cyan_bg value="#21282c"/>
+		<channel_group_blue_bg value="#242530"/>
+		<channel_group_violet_bg value="#28262d"/>
+		<channel_group_magenta_bg value="#2b262a"/>
+		<channel_group_gray_bg value="#26272e"/>
+
+		<channel_group_red value="#342d30"/>
+		<channel_group_orange value="#332e2f"/>
+		<channel_group_yellow value="#302f2e"/>
+		<channel_group_green value="#2c302f"/>
+		<channel_group_cyan value="#283135"/>
+		<channel_group_blue value="#2b2d3b"/>
+		<channel_group_violet value="#3b3741"/>
+		<channel_group_magenta value="#3e363c"/>
+		<channel_group_gray value="#2e2f38"/>
+
+		<!-- LabelChannel -->
+
+		<label_channel_red value="#3e363a"/>
+		<label_channel_orange value="#3d3738"/>
+		<label_channel_yellow value="#3a3837"/>
+		<label_channel_green value="#343a39"/>
+		<label_channel_cyan value="#303a40"/>
+		<label_channel_blue value="#323547"/>
+		<label_channel_violet value="#3b3741"/>
+		<label_channel_magenta value="#3e363c"/>
+		<label_channel_gray value="#363843"/>
+
+		<!-- Main colors -->
+		<bg value="#1b1c22"/>
+		<bg_name value="#3b3d49"/>
+		<bg_light value="#25272e"/>
+		<bg_schema value="#1b1c22"/>
+		<bg_schema_name value="#1b1c22"/>
+		<border_color value="#373943"/>
+		<text_prim value="#71758c"/>
+		<text_sec value="#71758c"/>
+		<text_icon value="#9095b3"/>
+		<lsp_logo value="#239db5"/>
+		<lsp_logo_cover value="#a4ed3b"/>
+		<menu_text value="#71758c"/>
+		<menu_text_hover value="#9095b3"/>
+		<menu_icon value="#1f7f92"/>
+		<menu_icon_hover value="#239db5"/>
+		<footer_icon value="#525566"/>
+		<footer_icon_hover value="#9095b3"/>
+		<footer_icon_rsz value="#1f7f92"/>
+		<footer_icon_rsz_hover value="#239db5"/>
+		<plug_name value="#9095b3"/>
+		<plug_name_sep value="#71758c"/>
+		<plug_name_acr value="#239db5"/>
+		<osc_bg_gray value="#25272e"/>
+
+		<!-- Separator -->
+		<sep_hover_legacy value="#3b3d49"/>
+
+		<!-- Knob -->
+		<kscale value="#239db5"/>
+		<kscale_inactive value="#4b666d"/>
+		<kcap value="#3b3d49"/>
+
+		<!-- Led -->
+		<led_c value="#2b2d35"/>
+		<led_l value="#00909e"/>
+		<led_bc value="#373944"/>
+		<led_bl value="#00a4b2"/>
+
+		<!-- Indicator -->
+		<ind_col value="#25272e"/>
+		<ind_text value="#319c25"/>
+
+		<!-- Hyperlinks -->
+		<hl_text value="#1a7788"/>
+		<hl_hover value="#83ba2d"/>
+		<hl_sel value="#57b2a5"/>
+		<hl_border value="#3b3d49"/>
+
+		<!-- Hover -->
+		<hv_text value="#a8aed3"/>
+		<hv_border value="#4e5161"/>
+		<hv_fill value="#264652"/>
+
+		<!-- Misc -->
+		<activity value="#40424e"/>
+		<warn value="#ffff00"/>
+
+		<!-- Graph -->
+		<bg_graph value="#1d1e25"/>
+		<graph_mesh value="#00a4b2"/>
+		<graph_center value="#00a4b2"/>
+		<graph_prim value="#63667b"/>
+		<graph_sec value="#3d3f4b"/>
+		<graph_alt_1 value="#353841"/>
+		<graph_alt_2 value="#31323b"/>
+		<graph_alt_3 value="#2a2c34"/>
+		<graph_alt_4 value="#23252b"/>
+		<graph_marker value="#dc615a"/>
+
+		<!-- Area3d -->
+		<area3d_x value="#ff0000" />
+		<area3d_y value="#00ff00" />
+		<area3d_z value="#0000ff" />
+
+		<!-- Group -->
+		<text_group value="#8488a3"/>
+
+		<!-- Audio Channels -->
+		<left_channel_in value="#d52e35"/>
+		<right_channel_in value="#1c6ff5"/>
+		<left_channel value="#d52e35"/>
+		<right_channel value="#1c6ff5"/>
+		<mid_channel_in value="#1f62d6"/>
+		<side_channel_in value="#b22359"/>
+		<mid_channel value="#1f62d6"/>
+		<side_channel value="#b22359"/>
+		<dry_channel value="#b69a22"/>
+
+		<!-- Knob and meshes colors -->
+		<mono_in value="#bf6455"/>
+		<mono value="#d8412a"/>
+
+		<left_in value="#bf6455"/>
+		<right_in value="#717eae"/>
+
+		<left value="#d8412a"/>
+		<right value="#5072f4"/>
+
+		<mid_in value="#52888e"/>
+		<side_in value="#538c50"/>
+
+		<mid value="#0090a1"/>
+		<side value="#009700"/>
+
+		<velocity value="#da404a"/>
+
+		<balance value="#b07000"/>
+		<balance_l value="#b07000"/>
+		<balance_r value="#868200"/>
+
+		<envelope value="#9e60ee"/>
+		<envelope_1 value="#9e60ee"/>
+		<envelope_2 value="#8d76aa"/>
+
+		<sidechain value="#c65219"/>
+		<sidechain_1 value="#c65219"/>
+		<sidechain_2 value="#b36c49"/>
+
+		<threshold value="#c344d3"/>
+		<threshold_1 value="#c344d3"/>
+		<threshold_2 value="#c344d3"/>
+
+		<attack value="#c2487b"/>
+		<attack_1 value="#c2487b"/>
+		<attack_2 value="#c2487b"/>
+
+		<release value="#009555"/>
+		<release_1 value="#009555"/>
+		<release_2 value="#009555"/>
+
+		<dry value="#8c8700"/>
+		<wet value="#368ccc"/>
+
+		<!-- Inactive colors -->
+		<fader value="#000000"/>
+		<fader_inactive value="#000000"/>
+
+		<cycle_inactive value="#6f7185"/>
+		<mono_in_inactive value="#6c544f"/>
+		<mono_inactive value="#66504a"/>
+
+		<left_in_inactive value="#bf6455"/>
+		<right_in_inactive value="#55596c"/>
+
+		<left_inactive value="#66504a"/>
+		<right_inactive value="#545568"/>
+
+		<mid_in_inactive value="#425f62"/>
+		<side_in_inactive value="#4f5e4d"/>
+
+		<mid_inactive value="#446065"/>
+		<side_inactive value="#525f4e"/>
+
+		<velocity_inactive value="#68504e"/>
+
+		<balance_inactive value="#645748"/>
+		<balance_l_inactive value="#645748"/>
+		<balance_r_inactive value="#5d5a47"/>
+
+		<envelope_inactive value="#5f5669"/>
+
+		<sidechain_inactive value="#645046"/>
+
+		<threshold_inactive value="#625263"/>
+
+		<attack_inactive value="#644c54"/>
+
+		<release_inactive value="#4b6052"/>
+
+		<dry_inactive value="#605d4a"/>
+		<wet_inactive value="#505f70"/>
+
+		<red_inactive value="#6f5152"/>
+		<orange_inactive value="#665550"/>
+		<yellow_inactive value="#5d5850"/>
+		<green_inactive value="#4f5e50"/>
+		<cyan_inactive value="#4f5d61"/>
+		<blue_inactive value="#4f5877"/>
+		<violet_inactive value="#664e77"/>
+		<magenta_inactive value="#6e5058"/>
+		<gray_inactive value="#4f5055"/>
+
+		<!-- Metering -->
+		<meter_red value="#ff0000" />
+		<meter_yellow value="#ffff00" />
+		<meter_normal value="#00ff00" />
+
+		<!-- AudioSample -->
+		<as_ch1 value="#67282e" />
+		<as_ch2 value="#223c76" />
+		<as_ch3 value="#0e4716" />
+		<as_ch4 value="#493c00" />
+		<as_ch5 value="#701c3a" />
+		<as_ch6 value="#00464c" />
+		<as_ch7 value="#601c7d" />
+		<as_ch8 value="#5d310c" />
+		<fade_in value="#2abecc"/>
+		<fade_out value="#2abecc"/>
+
+		<!-- Cycle colors -->
+		<cycle value="#d8412a"/>
+		<graph_marker_mono value="#bf6455"/>
+		<graph_marker_left value="#bf6455"/>
+		<graph_marker_right value="#6c75c3"/>
+		<graph_marker_cycle value="#95333b"/>
+		<graph_mesh_cycle value="#d8412a"/>
+
+	</colors>
+
+	<!-- Root style -->
+	<root>
+		<size.scaling value="1.0"/>
+		<lang value="en_US"/>
+		<bg.color value="bg"/>
+		<font.name value="noto-sans-display"/>
+		<font.antialiasing value="true"/>
+		<font.size value="12.0"/>
+		<color.hue.control value="HCL" />
+	</root>
+
+	<!-- Windows -->
+	<style class="Window" parents="root"></style>
+
+	<style class="FileDialog" parents="Window"></style>
+
+	<style class="MessageBox" parents="Window"></style>
+
+	<style class="PopupWindow" parents="Window"></style>
+
+	<style class="Menu::Window" parents="Window"></style>
+
+	<!-- Simple widgets -->
+	<style class="Align" parents="root">
+		<bg.inherit value="true"/>
+	</style>
+
+	<style class="Area3D" parents="root">
+		<glass.visibility value="false"/>
+		<border.color value="bg_name"/>
+		<border.size value="2"/>
+		<border.radius value="10"/>
+		<border.flat value="true"/>
+		<color value="bg"/>
+		<bg.inherit value="false"/>
+	</style>
+
+	<style class="AudioChannel" parents="root">
+		<fade_in.color value="#aa2abecc"/>
+		<fade_out.color value="#aa2abecc"/>
+		<fade_in.border.color value="#aa2abecc"/>
+		<fade_out.border.color value="#aa2abecc"/>
+	</style>
+
+	<style class="AudioSample" parents="root">
+
+		<stereo_groups value="true"/>
+		<border.color value="bg_name"/>
+		<border.size value="2"/>
+		<border.radius value="10"/>
+		<color value="bg_graph"/>
+		<bg.inherit value="false"/>
+		<text.radius value="0"/>
+		<glass value="false"/>
+		<border.flat value="true"/>
+		<label.bg.color value="#4414151a"/>
+		<ipadding value="0"/>
+
+		<line.color value="bg_name"/>
+		<line.width value="2"/>
+		<fade_in.border value="0"/>
+		<fade_out.border value="0"/>
+		<wave.border value="2"/>
+
+		<label.0.layout.halign value="-1"/>
+		<label.0.layout.valign value="1"/>
+		<label.0.visible value="true"/>
+
+		<label.1.layout.halign value="1"/>
+		<label.1.layout.valign value="1"/>
+		<label.1.visible value="true"/>
+
+		<label.2.layout.halign value="-1"/>
+		<label.2.layout.valign value="-1"/>
+		<label.2.visible value="true"/>
+
+		<label.3.layout.halign value="1"/>
+		<label.3.layout.valign value="-1"/>
+		<label.3.visible value="true"/>
+		<pointer value="hand"/>
+	</style>
+
+	<style class="AudioSample::ok" parents="AudioSample">
+		<main.color value="cyan"/>
+	</style>
+
+	<style class="AudioSample::info" parents="AudioSample">
+		<main.color value="yellow"/>
+	</style>
+
+	<style class="AudioSample::error" parents="AudioSample">
+		<main.color value="red"/>
+	</style>
+
+	<style class="AudioSample::Channel1" parents="AudioChannel">
+		<color value="as_ch1"/>
+		<wave.border.color value="dark_red"/>
+	</style>
+
+	<style class="AudioSample::Channel2" parents="AudioChannel">
+		<color value="as_ch2"/>
+		<wave.border.color value="dark_blue"/>
+	</style>
+
+	<style class="AudioSample::Channel3" parents="AudioChannel">
+		<color value="as_ch3"/>
+		<wave.border.color value="dark_green"/>
+	</style>
+
+	<style class="AudioSample::Channel4" parents="AudioChannel">
+		<color value="as_ch4"/>
+		<wave.border.color value="dark_yellow"/>
+	</style>
+
+	<style class="AudioSample::Channel5" parents="AudioChannel">
+		<color value="as_ch5"/>
+		<wave.border.color value="dark_magenta"/>
+	</style>
+
+	<style class="AudioSample::Channel6" parents="AudioChannel">
+		<color value="as_ch6"/>
+		<wave.border.color value="dark_cyan"/>
+	</style>
+
+	<style class="AudioSample::Channel7" parents="AudioChannel">
+		<color value="as_ch7"/>
+		<wave.border.color value="dark_violet"/>
+	</style>
+
+	<style class="AudioSample::Channel8" parents="AudioChannel">
+		<color value="as_ch8"/>
+		<wave.border.color value="dark_orange"/>
+	</style>
+
+	<style class="Box" parents="root">
+		<bg.inherit value="true"/>
+	</style>
+
+	<style class="Bevel_cycle" parents="root">
+		<bg.color value="bg"/>
+		<color value="#ff000000"/>
+	</style>
+
+	<style class="Void" parents="root">
+		<bg.inherit value="true"/>
+	</style>
+
+	<style class="Button" parents="root">
+		<border.size value="2"/>
+		<border.pressed.size value="2"/>
+		<border.down.size value="2"/>
+		<gradient value="false"/>
+		<hole value="false"/>
+		<hover value="true"/>
+		<text.shift value="0 0"/>
+		<text.down.shift value="0 0"/>
+		<text.pressed.shift value="1 1"/>
+		<bg.inherit value="true"/>
+
+		<border.color value="bg_name"/>
+		<border.hover.color value="bright_gray"/>
+		<border.down.color value="bright_cyan"/>
+		<border.down.hover.color value="cyan"/>
+
+		<color value="bg_light"/>
+		<hover.color value="bg_name"/>
+		<down.color value="dark_cyan"/>
+		<down.hover.color value="dark_cyan"/>
+
+		<text.color value="text_prim"/>
+		<text.hover.color value="text_sec"/>
+		<text.down.color value="bright_cyan"/>
+		<text.down.hover.color value="bright_cyan"/>
+
+		<pointer value="hand"/>
+		<down.colors value="true"/>
+		<flat value="false"/>
+		<allocation.hfill value="false"/>
+		<allocation.vfill value="false"/>
+
+		<hole.color value="bg"/>
+		<led value="0"/>
+    <led.color value="cyan"/>
+
+		<font.size value="10"/>
+		<text.padding.left value="4"/>
+		<text.padding.right value="4"/>
+
+	</style>
+
+	<style class="Button_gray" parents="Button">
+		<down.color value="dark_gray"/>
+	<down.hover.color value="dark_gray"/>
+
+	<text.down.color value="bright_gray"/>
+	<text.down.hover.color value="bright_gray"/>
+
+	<border.down.color value="bright_gray"/>
+	<border.down.hover.color value="gray"/>
+		<led.color value="gray"/>
+	</style>
+
+	<style class="Button_red" parents="Button">
+		<down.color value="dark_red"/>
+	<down.hover.color value="dark_red"/>
+
+	<text.down.color value="bright_red"/>
+	<text.down.hover.color value="bright_red"/>
+
+	<border.down.color value="bright_red"/>
+	<border.down.hover.color value="red"/>
+		<led.color value="red"/>
+	</style>
+
+	<style class="Button_orange" parents="Button">
+		<down.color value="dark_orange"/>
+	<down.hover.color value="dark_orange"/>
+
+	<text.down.color value="bright_orange"/>
+	<text.down.hover.color value="bright_orange"/>
+
+	<border.down.color value="bright_orange"/>
+	<border.down.hover.color value="orange"/>
+		<led.color value="orange"/>
+	</style>
+
+	<style class="Button_yellow" parents="Button">
+		<down.color value="dark_yellow"/>
+		<down.hover.color value="dark_yellow"/>
+
+		<text.down.color value="bright_yellow"/>
+		<text.down.hover.color value="bright_yellow"/>
+
+		<border.down.color value="bright_yellow"/>
+		<border.down.hover.color value="yellow"/>
+		<led.color value="yellow"/>
+	</style>
+
+	<style class="Button_green" parents="Button">
+		<down.color value="dark_green"/>
+		<down.hover.color value="dark_green"/>
+
+		<text.down.color value="bright_green"/>
+		<text.down.hover.color value="bright_green"/>
+
+		<border.down.color value="bright_green"/>
+		<border.down.hover.color value="green"/>
+		<led.color value="green"/>
+	</style>
+
+	<style class="Button_cyan" parents="Button">
+		<down.color value="dark_cyan"/>
+		<down.hover.color value="dark_cyan"/>
+
+		<text.down.color value="bright_cyan"/>
+		<text.down.hover.color value="bright_cyan"/>
+
+		<border.down.color value="bright_cyan"/>
+		<border.down.hover.color value="cyan"/>
+
+		<led.color value="cyan"/>
+
+	</style>
+
+	<style class="Button_blue" parents="Button">
+		<down.color value="dark_blue"/>
+		<down.hover.color value="dark_blue"/>
+
+		<text.down.color value="bright_blue"/>
+		<text.down.hover.color value="bright_blue"/>
+
+		<border.down.color value="bright_blue"/>
+		<border.down.hover.color value="blue"/>
+	</style>
+
+	<style class="Button_violet" parents="Button">
+		<down.color value="dark_violet"/>
+		<down.hover.color value="dark_violet"/>
+
+		<text.down.color value="bright_violet"/>
+		<text.down.hover.color value="bright_violet"/>
+
+		<border.down.color value="bright_violet"/>
+		<border.down.hover.color value="violet"/>
+		<led.color value="violet"/>
+	</style>
+
+	<style class="Button_magenta" parents="Button">
+		<down.color value="dark_magenta"/>
+		<down.hover.color value="dark_magenta"/>
+
+		<text.down.color value="bright_magenta"/>
+		<text.down.hover.color value="bright_magenta"/>
+
+		<border.down.color value="bright_magenta"/>
+		<border.down.hover.color value="magenta"/>
+		<led.color value="magenta"/>
+	</style>
+
+	<style class="Button_mono" parents="Button">
+		<down.color value="dark_red"/>
+		<down.hover.color value="dark_red"/>
+
+		<text.down.color value="bright_red"/>
+		<text.down.hover.color value="bright_red"/>
+
+		<border.down.color value="bright_red"/>
+		<border.down.hover.color value="red"/>
+		<led.color value="red"/>
+	</style>
+
+	<style class="Button_left" parents="Button">
+		<down.color value="dark_red"/>
+		<down.hover.color value="dark_red"/>
+
+		<text.down.color value="bright_red"/>
+		<text.down.hover.color value="bright_red"/>
+
+		<border.down.color value="bright_red"/>
+		<border.down.hover.color value="red"/>
+		<led.color value="red"/>
+	</style>
+
+	<style class="Button_right" parents="Button">
+		<down.color value="dark_blue"/>
+		<down.hover.color value="dark_blue"/>
+
+		<text.down.color value="bright_blue"/>
+		<text.down.hover.color value="bright_blue"/>
+
+		<border.down.color value="bright_blue"/>
+		<border.down.hover.color value="blue"/>
+		<led.color value="blue"/>
+	</style>
+
+	<style class="Button_side" parents="Button">
+		<down.color value="dark_green"/>
+		<down.hover.color value="dark_green"/>
+
+		<text.down.color value="bright_green"/>
+		<text.down.hover.color value="bright_green"/>
+
+		<border.down.color value="bright_green"/>
+		<border.down.hover.color value="green"/>
+		<led.color value="green"/>
+	</style>
+
+	<style class="Button_mid" parents="Button">
+		<down.color value="dark_cyan"/>
+		<down.hover.color value="dark_cyan"/>
+
+		<text.down.color value="bright_cyan"/>
+		<text.down.hover.color value="bright_cyan"/>
+
+		<border.down.color value="bright_cyan"/>
+		<border.down.hover.color value="cyan"/>
+		<led.color value="cyan"/>
+	</style>
+
+	<style class="Button_dry" parents="Button">
+		<down.color value="dark_yellow"/>
+		<down.hover.color value="dark_yellow"/>
+
+		<text.down.color value="bright_yellow"/>
+		<text.down.hover.color value="bright_yellow"/>
+
+		<border.down.color value="bright_yellow"/>
+		<border.down.hover.color value="yellow"/>
+		<led.color value="yellow"/>
+	</style>
+
+	<style class="Button_ne_left" parents="Button">
+		<color value="dark_red"/>
+
+		<text.color value="bright_red"/>
+
+		<border.color value="bright_red"/>
+		<led.color value="red"/>
+		<down.color value="dark_red"/>
+		<down.hover.color value="dark_red"/>
+
+		<text.down.color value="bright_red"/>
+		<text.down.hover.color value="bright_red"/>
+
+		<border.down.color value="bright_red"/>
+		<border.down.hover.color value="red"/>
+	</style>
+
+	<style class="Button_ne_right" parents="Button">
+		<color value="dark_blue"/>
+
+		<text.color value="bright_blue"/>
+
+		<border.color value="bright_blue"/>
+		<led.color value="blue"/>
+		<down.color value="dark_blue"/>
+		<down.hover.color value="dark_blue"/>
+
+		<text.down.color value="bright_blue"/>
+		<text.down.hover.color value="bright_blue"/>
+
+		<border.down.color value="bright_blue"/>
+		<border.down.hover.color value="blue"/>
+	</style>
+
+	<style class="Button_ne_side" parents="Button">
+		<color value="dark_green"/>
+
+		<text.color value="bright_green"/>
+
+		<border.color value="bright_green"/>
+		<led.color value="green"/>
+		<down.color value="dark_green"/>
+		<down.hover.color value="dark_green"/>
+
+		<text.down.color value="bright_green"/>
+		<text.down.hover.color value="bright_green"/>
+
+		<border.down.color value="bright_green"/>
+		<border.down.hover.color value="green"/>
+
+	</style>
+
+	<style class="Button_ne_mid" parents="Button">
+		<color value="dark_cyan"/>
+
+		<text.color value="bright_cyan"/>
+
+		<border.color value="bright_cyan"/>
+		<led.color value="cyan"/>
+		<down.color value="dark_cyan"/>
+		<down.hover.color value="dark_cyan"/>
+
+		<text.down.color value="bright_cyan"/>
+		<text.down.hover.color value="bright_cyan"/>
+
+		<border.down.color value="bright_cyan"/>
+		<border.down.hover.color value="cyan"/>
+	</style>
+
+	<style class="Button_ne_dry" parents="Button">
+		<color value="dark_yellow"/>
+
+		<text.color value="bright_yellow"/>
+
+		<border.color value="bright_yellow"/>
+		<led.color value="yellow"/>
+		<down.color value="dark_yellow"/>
+		<down.hover.color value="dark_yellow"/>
+
+		<text.down.color value="bright_yellow"/>
+		<text.down.hover.color value="bright_yellow"/>
+
+		<border.down.color value="bright_yellow"/>
+		<border.down.hover.color value="yellow"/>
+	</style>
+
+	<style class="Button_ne_Cycle" parents="Button_gray_8">
+		<color value="dark_red"/>
+		<text.color value="bright_red"/>
+		<border.color value="bright_red"/>
+		<led.color value="red"/>
+		<down.color value="dark_red"/>
+		<down.hover.color value="dark_red"/>
+
+		<text.down.color value="bright_red"/>
+		<text.down.hover.color value="bright_red"/>
+
+		<border.down.color value="bright_red"/>
+		<border.down.hover.color value="red"/>
+	</style>
+
+	<style class="Button_gray_8" parents="Button_gray">
+		<font.size value="8"/>
+	</style>
+
+	<style class="Button_red_8" parents="Button_red">
+		<font.size value="8"/>
+	</style>
+
+	<style class="Button_green_8" parents="Button_green">
+		<font.size value="8"/>
+	</style>
+
+	<style class="Button_orange_8" parents="Button_orange">
+		<font.size value="8"/>
+	</style>
+
+	<style class="Button_yellow_8" parents="Button_yellow">
+		<font.size value="8"/>
+	</style>
+
+	<style class="Button_cyan_8" parents="Button_cyan">
+		<font.size value="8"/>
+	</style>
+
+	<style class="Button_blue_8" parents="Button_blue">
+		<font.size value="8"/>
+	</style>
+
+	<style class="Button_violet_8" parents="Button_violet">
+		<font.size value="8"/>
+	</style>
+
+	<style class="Button_magenta_8" parents="Button_magenta">
+		<font.size value="8"/>
+	</style>
+
+	<style class="Button_mono_8" parents="Button_mono">
+		<font.size value="8"/>
+	</style>
+
+	<style class="Button_left_8" parents="Button_left">
+		<font.size value="8"/>
+	</style>
+
+	<style class="Button_right_8" parents="Button_right">
+		<font.size value="8"/>
+	</style>
+
+	<style class="Button_side_8" parents="Button_side">
+		<font.size value="8"/>
+	</style>
+
+	<style class="Button_mid_8" parents="Button_mid">
+		<font.size value="8"/>
+	</style>
+
+	<style class="Button_dry_8" parents="Button_dry">
+		<font.size value="8"/>
+	</style>
+
+	<style class="Button_gray_6" parents="Button_gray">
+	  <font.size value="6"/>
+	</style>
+
+	<style class="Button_red_6" parents="Button_red">
+	  <font.size value="6"/>
+	</style>
+
+	<style class="Button_green_6" parents="Button_green">
+	  <font.size value="6"/>
+	</style>
+
+	<style class="Button_orange_6" parents="Button_orange">
+	  <font.size value="6"/>
+	</style>
+
+	<style class="Button_yellow_6" parents="Button_yellow">
+	  <font.size value="6"/>
+	</style>
+
+	<style class="Button_cyan_6" parents="Button_cyan">
+	  <font.size value="6"/>
+	</style>
+
+	<style class="Button_blue_6" parents="Button_blue">
+	  <font.size value="6"/>
+	</style>
+
+	<style class="Button_violet_6" parents="Button_violet">
+	  <font.size value="6"/>
+	</style>
+
+	<style class="Button_magenta_6" parents="Button_magenta">
+	  <font.size value="6"/>
+	</style>
+
+	<style class="Button_mono_6" parents="Button_mono">
+		<font.size value="6"/>
+	</style>
+
+	<style class="Button_left_6" parents="Button_left">
+	  <font.size value="6"/>
+	</style>
+
+	<style class="Button_right_6" parents="Button_right">
+	  <font.size value="6"/>
+	</style>
+
+	<style class="Button_side_6" parents="Button_side">
+	  <font.size value="6"/>
+	</style>
+
+	<style class="Button_mid_6" parents="Button_mid">
+	  <font.size value="6"/>
+	</style>
+
+	<style class="Button_dry_6" parents="Button_dry">
+	  <font.size value="6"/>
+	</style>
+
+	<style class="Button_ne_left_8" parents="Button_ne_left">
+	  <font.size value="8"/>
+	</style>
+
+	<style class="Button_ne_right_8" parents="Button_ne_right">
+	  <font.size value="8"/>
+	</style>
+
+	<style class="Button_ne_side_8" parents="Button_ne_side">
+	  <font.size value="8"/>
+	</style>
+
+	<style class="Button_ne_mid_8" parents="Button_ne_mid">
+	  <font.size value="8"/>
+	</style>
+
+	<style class="Button_ne_dry_8" parents="Button_ne_dry">
+	  <font.size value="8"/>
+	</style>
+
+	<style class="Button_ne_left_6" parents="Button_ne_left">
+	  <font.size value="6"/>
+	</style>
+
+	<style class="Button_ne_right_6" parents="Button_ne_right">
+	  <font.size value="6"/>
+	</style>
+
+	<style class="Button_ne_side_6" parents="Button_ne_side">
+	  <font.size value="6"/>
+	</style>
+
+	<style class="Button_ne_mid_6" parents="Button_ne_mid">
+	  <font.size value="6"/>
+	</style>
+
+	<style class="Button_ne_dry_6" parents="Button_ne_dry">
+	  <font.size value="6"/>
+	</style>
+
+	<style class="Button_Cycle" parents="Button_gray_8">
+		<down.color value="dark_red"/>
+		<down.hover.color value="dark_red"/>
+
+		<text.down.color value="bright_red"/>
+		<text.down.hover.color value="bright_red"/>
+
+		<border.down.color value="bright_red"/>
+		<border.down.hover.color value="red"/>
+	</style>
+
+
+	<style class="Button_Cycle_8" parents="Button_Cycle">
+		<font.size value="8"/>
+	</style>
+
+	<style class="Button_Cycle_6" parents="Button_Cycle">
+		<font.size value="6"/>
+	</style>
+
+	<style class="Button_ne_Cycle_8" parents="Button_ne_Cycle">
+		<font.size value="8"/>
+	</style>
+
+	<style class="Button_ne_Cycle_6" parents="Button_ne_Cycle">
+		<font.size value="6"/>
+	</style>
+
+	<style class="Capture3D" parents="root">
+		<color value="cyan" />
+		<line.color value="cyan" />
+		<point.color value="cyan" />
+	</style>
+
+	<style class="CheckBox" parents="root">
+		<border.size value="1"/>
+		<border.gap.size value="0"/>
+		<border.radius value="0"/>
+		<check.radius value="0"/>
+		<check.gap.size value="2"/>
+		<border.color value="border_color"/>
+		<border.hover.color value="activity"/>
+		<fill.color value="bg_light"/>
+		<fill.hover.color value="bg_light"/>
+		<color value="text_prim"/>
+		<hover.color value="text_sec"/>
+	</style>
+
+	<style class="ComboBox" parents="root">
+		<border.size value="1"/>
+		<border.gap.size value="1"/>
+		<border.radius value="5"/>
+		<color value="bg_light"/>
+		<text.color value="text_prim"/>
+		<spin.color value="bg_light"/>
+		<spin.text.color value="text_sec"/>
+		<border.color value="bg"/>
+		<border.gap.color value="bg_light"/>
+		<pointer value="hand"/>
+		<bg.inherit value="true"/>
+	</style>
+
+	<style class="ComboBox::List" parents="root">
+		<border.size value="1"/>
+		<border.gap.size value="4"/>
+		<border.gap.color value="bg"/>
+		<border.radius value="3"/>
+		<list.bg.color value="bg"/>
+		<border.color value="border_color"/>
+		<pointer value="hand"/>
+	</style>
+
+	<style class="Edit" parents="root">
+		<border.size value="1"/>
+		<border.gap.size value="1"/>
+		<border.radius value="5"/>
+		<color value="bg_light"/>
+		<text.color value="text_sec"/>
+		<cursor.color value="text_sec"/>
+		<border.color value="border_color"/>
+		<border.gap.color value="bg_light"/>
+	</style>
+
+	<style class="Fader" parents="root">
+		<scale.color value="bg"/>
+		<scale.border.gradient value="false"/>
+		<scale.border.size value="2"/>
+		<scale.border.radius value="5"/>
+		<scale.width value="-1"/>
+		<scale.border.color value="bg_name"/>
+		<scale.brightness value="1.5"/>
+		<bg.inherit value="true"/>
+
+		<button.color value="bg"/>
+		<button.border.color value="bg_name"/>
+		<button.border.gradient value="false"/>
+		<button.border.size value="2"/>
+		<button.border.radius value="3"/>
+		<button.width value="4"/>
+	</style>
+
+	<style class="Graph" parents="root">
+		<glass.visibility value="false"/>
+		<border.color value="bg_name"/>
+		<border.size value="2"/>
+		<border.radius value="10"/>
+		<border.flat value="true"/>
+		<color value="bg"/>
+		<bg.inherit value="false"/>
+		<text.radius value="0"/>
+	</style>
+
+	<style class="GraphAxis" parents="root">
+		<smooth value="false"/>
+		<color value="graph_prim"/>
+	</style>
+
+	<style class="GraphDot" parents="root">
+		<smooth value="true"/>
+		<border.size value="5" />
+		<size value="3" />
+		<color value="cyan"/>
+		<border.color value="cyan"/>
+		<hover.size value="3" />
+		<hover.border.size value="10" />
+		<hover.color value="cyan"/>
+		<hover.border.color value="cyan"/>
+	</style>
+
+	<style class="GraphMarker" parents="root">
+		<smooth value="false"/>
+		<color value="graph_marker"/>
+	</style>
+
+	<style class="GraphMesh" parents="root">
+		<smooth value="true"/>
+		<color value="cyan"/>
+	</style>
+
+	<style class="GraphOrigin" parents="root">
+		<radius value="2"/>
+		<smooth value="true"/>
+	</style>
+
+	<style class="GraphText" parents="root">
+		<padding value="2"/>
+		<color value="graph_prim" />
+	</style>
+
+	<style class="Grid" parents="root">
+		<bg.inherit value="true"/>
+	</style>
+
+	<style class="Cell" parents="root">
+		<bg.inherit value="true"/>
+	</style>
+
+	<style class="ComboGroup" parents="root">
+		<color value="bg_name"/>
+		<border.size value="2"/>
+		<text.color value="text_group"/>
+		<text.radius value="10"/>
+		<ipadding value="12"/>
+		<padding value="0"/>
+		<border.radius value="10"/>
+		<bg.color value="bg"/>
+		<heading value="-1 0"/>
+		<text.padding.left value="6"/>
+		<pointer value="hand"/>
+		<spin.color value="text_group"/>
+		<spin.spacing value="6"/>
+	</style>
+
+	<style class="ComboGroup::List" parents="root">
+		<border.size value="1"/>
+		<border.gap.size value="4"/>
+		<border.gap.color value="bg"/>
+		<border.radius value="3"/>
+		<list.bg.color value="bg"/>
+		<border.color value="border_color"/>
+		<pointer value="hand"/>
+	</style>
+
+	<style class="Group" parents="root">
+		<color value="bg_name"/>
+		<border.size value="2"/>
+		<text.color value="text_group"/>
+		<text.radius value="10"/>
+		<ipadding value="12"/>
+		<padding value="0"/>
+		<border.radius value="10"/>
+		<bg.color value="bg"/>
+		<heading value="-1 0"/>
+		<text.padding.left value="6"/>
+	</style>
+
+	<style class="GraphGroup" parents="Group">
+		<color value="bg"/>
+		<bg.color value="bg"/>
+		<border.size value="0"/>
+		<text.color value="text_sec"/>
+		<text.radius value="0"/>
+		<border.radius value="0"/>
+		<ipadding value="0"/>
+		<padding value="0"/>
+		<heading value="-1 1"/>
+		<border.flat value="false"/>
+		<text.padding.left value="2"/>
+	</style>
+
+	<style class="Channel_N_Group" parents="Group"></style>
+
+	<style class="Channel_1_Group" parents="Channel_N_Group">
+		<color value="bg_name"/>
+		<bg.color value="bg"/>
+	</style>
+
+	<style class="Channel_2_Group" parents="Channel_N_Group">
+		<color value="bg_name"/>
+		<bg.color value="bg"/>
+	</style>
+
+	<style class="Channel_3_Group" parents="Channel_N_Group">
+		<color value="bg_name"/>
+		<bg.color value="bg"/>
+	</style>
+
+	<style class="Channel_4_Group" parents="Channel_N_Group">
+		<color value="bg_name"/>
+		<bg.color value="bg"/>
+	</style>
+
+	<style class="Channel_5_Group" parents="Channel_N_Group">
+		<color value="bg_name"/>
+		<bg.color value="bg"/>
+	</style>
+
+	<style class="Channel_6_Group" parents="Channel_N_Group">
+		<color value="bg_name"/>
+		<bg.color value="bg"/>
+	</style>
+
+	<style class="Channel_7_Group" parents="Channel_N_Group">
+		<color value="bg_name"/>
+		<bg.color value="bg"/>
+	</style>
+
+	<style class="Channel_8_Group" parents="Channel_N_Group">
+		<color value="bg_name"/>
+		<bg.color value="bg"/>
+	</style>
+
+	<style class="FileButton" parents="root">
+		<color value="text_sec" />
+		<inv.color value="text_sec" />
+		<text.color value="text_sec" />
+		<text.inv.color value="text_sec" />
+		<line.color value="bg_schema" />
+		<line.inv.color value="bg_schema" />
+		<border.size value="0"/>
+		<border.pressed.size value="2"/>
+		<border.color value="bg_schema" />
+		<border.inv.color value="bg_schema" />
+		<gradient value="false" />
+		<bg.inherit value="true" />
+		<pointer value="true" />
+	</style>
+
+	<style class="FileButton::Select" parents="FileButton">
+	</style>
+
+	<style class="FileButton::Progress" parents="FileButton">
+		<color value="cyan" />
+		<inv.color value="orange" />
+		<text.color value="cyan" />
+		<text.inv.color value="orange" />
+		<line.color value="bg_schema" />
+		<line.inv.color value="bg_schema" />
+	</style>
+
+	<style class="FileButton::Success" parents="FileButton">
+		<color value="cyan" />
+		<text.color value="cyan" />
+		<inv.color value="cyan" />
+		<text.inv.color value="cyan" />
+		<line.color value="bg_schema" />
+		<line.inv.color value="bg_schema" />
+	</style>
+
+	<style class="FileButton::Error" parents="FileButton">
+		<color value="red" />
+		<inv.color value="red" />
+		<text.color value="red" />
+		<text.inv.color value="red" />
+		<line.color value="bg_schema" />
+		<line.inv.color value="bg_schema" />
+	</style>
+
+	<style class="Fraction" parents="root">
+		<color value="text_sec" />
+		<num.color value="text_sec" />
+		<den.color value="text_sec" />
+		<bg.inherit value="true"/>
+		<pointer value="hand"/>
+	</style>
+
+	<style class="Hyperlink" parents="root">
+		<text.color value="hl_text"/>
+		<text.hover.color value="hl_hover"/>
+	</style>
+
+	<style class="Indicator" parents="root">
+		<color value="ind_col"/>
+		<text.color value="ind_text"/>
+		<modern value="false"/>
+		<text.dark value="false"/>
+		<bg.inherit value="false"/>
+	</style>
+
+	<style class="Knob" parents="root">
+		<color value="kcap"/>
+		<scale.color value="kscale"/>
+		<tip.color value="bg"/>
+		<size.range.min value="24"/>
+		<size.range.max value="24"/>
+		<scale.size value="5"/>
+		<bg.inherit value="true"/>
+		<flat value="false"/>
+		<gap.size value="2"/>
+		<hole.size value="1"/>
+		<hole.color value="black"/>
+		<scale.marks value="true"/>
+		<pointer value="hand"/>
+	</style>
+
+	<style class="Label" parents="root">
+		<text.color value="text_sec"/>
+		<allocation.hfill value="false"/>
+		<allocation.vfill value="false"/>
+		<bg.inherit value="true"/>
+	</style>
+
+	<style class="LedMeter" parents="root">
+		<text.visible value="true" />
+		<color value="bg"/>
+		<bg.color value="bg"/>
+	</style>
+
+	<style class="LedMeterChannel" parents="root">
+		<text.visible value="true" />
+		<value value="0.0f, 0.0f, 1.0f"/>
+	  <peak value="0.0f"/>
+	  <balance value="0.5f"/>
+	  <color value="white"/>
+	  <value.color value="cyan"/>
+	  <peak.color value="red"/>
+	  <text.color value="cyan"/>
+	  <balance.color value="yellow"/>
+	  <peak.visible value="false"/>
+	  <balance.visible value="false"/>
+	  <reversive value="false"/>
+	  <active value="true"/>
+	  <segments.min value="12"/>
+	  <constraints value="20, -1, 20, -1"/>
+	  <font value="9.0f"/>
+	  <border value="2"/>
+	  <angle value="0"/>
+	</style>
+
+	<style class="MultiLabel" parents="root">
+		<bg.inherit value="true"/>
+	</style>
+
+	<style class="Led" parents="root">
+		<color value="led_c"/>
+		<led.color value="led_l"/>
+		<border.color value="led_bc"/>
+		<led.border.color value="led_bl"/>
+		<led value="4"/>
+		<size.constraints value="8 8"/>
+		<bg.inherit value="true"/>
+		<border.size value="0"/>
+		<round value="true"/>
+		<gradient value="false"/>
+		<hole value="false"/>
+	</style>
+
+	<style class="Led_red" parents="root">
+		<color value="led_c"/>
+		<border.color value="led_bc"/>
+		<led.color value="red"/>
+		<led.border.color value="bright_red"/>
+	</style>
+
+	<style class="Led_blue" parents="root">
+		<color value="led_c"/>
+		<border.color value="led_bc"/>
+		<led.color value="blue"/>
+		<led.border.color value="bright_blue"/>
+	</style>
+
+	<style class="Led_green" parents="root">
+		<color value="led_c"/>
+		<border.color value="led_bc"/>
+		<led.color value="green"/>
+		<led.border.color value="bright_green"/>
+	</style>
+
+	<style class="Led_yellow" parents="root">
+		<color value="led_c"/>
+		<border.color value="led_bc"/>
+		<led.color value="yellow"/>
+		<led.border.color value="bright_yellow"/>
+	</style>
+
+	<style class="Led_magenta" parents="root">
+		<color value="led_c"/>
+		<border.color value="led_bc"/>
+		<led.color value="magenta"/>
+		<led.border.color value="bright_magenta"/>
+	</style>
+
+	<style class="Led_cyan" parents="root">
+		<color value="led_c"/>
+		<border.color value="led_bc"/>
+		<led.color value="cyan"/>
+		<led.border.color value="bright_cyan"/>
+	</style>
+
+	<style class="Led_violet" parents="root">
+		<color value="led_c"/>
+		<border.color value="led_bc"/>
+		<led.color value="violet"/>
+		<led.border.color value="bright_violet"/>
+	</style>
+
+	<style class="Led_orange" parents="root">
+		<color value="led_c"/>
+		<border.color value="led_bc"/>
+		<led.color value="orange"/>
+		<led.border.color value="bright_orange"/>
+	</style>
+
+	<style class="ButtonLed" parents="Led">
+		<size.constraints.width.min value="8"/>
+		<size.constraints.width.max value="8"/>
+		<size.constraints.height.min value="8"/>
+		<size.constraints.height.max value="8"/>
+		<pointer value="hand"/>
+	</style>
+
+	<style class="ListBox" parents="root">
+		<border.size value="1"/>
+		<border.gap.size value="2"/>
+		<border.radius value="0"/>
+		<list.bg.color value="bg_light"/>
+		<border.color value="border_color"/>
+	</style>
+
+	<style class="ListBoxItem" parents="root">
+		<padding.top value="4"/>
+		<padding.bottom value="4"/>
+		<bg.color value="bg"/>
+		<bg.selected.color value="border_color"/>
+		<text.color value="text_prim"/>
+		<text.selected.color value="text_sec"/>
+	</style>
+
+	<style class="Menu" parents="root">
+		<border.size value="1"/>
+		<border.color value="border_color"/>
+		<bg.color value="bg"/>
+		<border.radius value="3"/>
+		<scroll.color value="border_color"/>
+		<scroll.text.color value="bg"/>
+		<scroll.selected.color value="border_color"/>
+		<scroll.text.selected.color value="bg_light"/>
+	</style>
+
+	<style class="MenuItem" parents="root">
+		<bg.selected.color value="border_color"/>
+		<text.color value="text_prim"/>
+		<text.selected.color value="text_sec"/>
+	</style>
+
+	<style class="RackEars" parents="root"></style>
+	
+	<style class="ScrollArea" parents="root"></style>
+
+	<style class="ScrollBar" parents="root">
+		<border.size value="1"/>
+		<border.gap.size value="1"/>
+		<border.radius value="0"/>
+		<size.constraints.width.min value="16"/>
+		<size.constraints.height.min value="16"/>
+
+		<border.color value="border_color"/>
+		<inc.color value="bg"/>
+		<inc.active.color value="activity"/>
+		<dec.color value="bg"/>
+		<dec.active.color value="activity"/>
+		<button.color value="bg_light"/>
+		<button.active.color value="activity"/>
+		<slider.color value="border_color"/>
+		<slider.border.color value="border_color"/>
+		<slider.active.color value="activity"/>
+		<border.gap.color value="bg"/>
+		<text.color value="text_prim"/>
+		<text.active.color value="bg_light"/>
+	</style>
+
+	<style class="TempoTap" parents="Button">
+		<mode value="trigger" />
+	</style>
+
+	<style class="LabelChannel" parents="Label">
+		<bg.inherit value="false"/>
+		<bg.color value="bg"/>
+		<allocation.hfill value="true"/>
+		<text.adjust value="toupper"/>
+		<text.layout.halign value="-1"/>
+		<padding.left value="0"/>
+	</style>
+
+	<style class="LabelChannel_1" parents="LabelChannel">
+		<bg.color value="bg"/>
+	</style>
+
+	<style class="LabelChannel_2" parents="LabelChannel">
+		<bg.color value="bg"/>
+	</style>
+
+	<style class="LabelChannel_3" parents="LabelChannel">
+		<bg.color value="bg"/>
+	</style>
+
+	<style class="LabelChannel_4" parents="LabelChannel">
+		<bg.color value="bg"/>
+	</style>
+
+	<style class="LabelChannel_5" parents="LabelChannel">
+		<bg.color value="bg"/>
+	</style>
+
+	<style class="LabelChannel_6" parents="LabelChannel">
+		<bg.color value="bg"/>
+	</style>
+
+	<style class="LabelChannel_7" parents="LabelChannel">
+		<bg.color value="bg"/>
+	</style>
+
+	<style class="LabelChannel_8" parents="LabelChannel">
+		<bg.color value="bg"/>
+	</style>
+
+	<style class="Origin3D" parents="root">
+		<x.color value="area3d_x" />
+		<y.color value="area3d_y" />
+		<z.color value="area3d_z" />
+	</style>
+
+	<style class="ProgressBar" parents="root">
+		<border.radius value="4"/>
+		<border.size value="2"/>
+		<border.gap.size value="0"/>
+		<border.color value="bg_name"/>
+		<color value="bg_light"/>
+		<text.color value="text_sec"/>
+		<inv.color value="bg_graph"/>
+		<text.inv.color value="text_prim"/>
+	</style>>
+
+	<style class="Separator" parents="root">
+		<color value="border_color"/>
+		<thickness value="1"/>
+	</style>
+
+	<style class="Source3D" parents="root">
+		<color value="cyan" />
+		<line.color value="cyan" />
+		<point.color value="cyan" />
+	</style>
+
+	<style class="Switch" parents="root"></style>
+
+	<!-- FileDialog widgets -->
+	<style class="FileDialog::ActionAlign" parents="Align">
+		<layout.hscale value="0.0"/>
+		<layout.halign value="1.0"/>
+	</style>
+
+	<style class="FileDialog::ActionButton" parents="Button"></style>
+	
+	<style class="FileDialog::ActionBox" parents="Box">
+		<spacing value="4"/>
+	</style>
+	
+	<style class="FileDialog::Bookmark" parents="Hyperlink"></style>
+
+	<style class="FileDialog::Bookmark.selected" parents="FileDialog::Bookmark">
+		<text.color value="hl_sel"/>
+		<bg.color value="bg_light"/>
+	</style>
+
+	<style class="FileDialog::BookmarkArea" parents="ScrollArea"></style>
+	
+	<style class="FileDialog::BookmarkBox" parents="Box"></style>
+
+	<style class="FileDialog::ExtCheck" parents="CheckBox">
+		<color value="text_prim"/>
+	</style>
+	
+	<style class="FileDialog::FileList" parents="ListBox"></style>
+
+	<style class="FileDialog::FilterComboBox" parents="ComboBox">
+		<border.color value="border_color"/>
+	</style>
+	
+	<style class="FileDialog::Label" parents="Label"></style>
+	
+	<style class="FileDialog::MainGrid" parents="Grid"></style>
+	
+	<style class="FileDialog::NavBox" parents="Box">
+		<spacing value="2"/>
+	</style>
+
+	<style class="FileDialog::NavButton" parents="Button"></style>
+	
+	<style class="FileDialog::NavLabel" parents="Label"></style>
+	
+	<style class="FileDialog::OptionBox" parents="Box"></style>
+	
+	<style class="FileDialog::OptionSeparator" parents="Separator"></style>
+	
+	<style class="FileDialog::Path" parents="Edit"></style>
+	
+	<style class="FileDialog::Warning" parents="root">
+		<text.color value="warn"/>
+	</style>
+
+	<style class="FileDialog::WarningBox" parents="Box"></style>
+
+	<!-- Separator Header -->
+	<style class="PluginWindow::Hsep_header" parents="Separator">
+		<color value="sep_hover_legacy"/>
+		<visible value="true"/>
+		<thickness value="2"/>
+	</style>
+
+	<!-- MessageBox widgets -->
+	<style class="MessageBox::Message" parents="Label"></style>
+
+	<style class="MessageBox::Heading" parents="Label"></style>
+
+	<style class="MessageBox::Button" parents="Button"></style>
+
+	<!-- Additional styles for value -->
+	<style class="Value::PopupWindow" parents="PopupWindow">
+		<padding value="2"/>
+		<bg.color value="bg_light"/>
+	</style>
+
+	<style class="Value::PopupWindow::Box" parents="Box">
+		<orientation value="horizontal"/>
+		<spacing value="6"/>
+	</style>
+
+	<style class="Value::PopupWindow::Input" parents="Edit">
+		<spacing value="2"/>
+		<size.constraints.width.min value="64"/>
+	</style>
+
+	<style class="Value::PopupWindow::ValidInput" parents="Value::PopupWindow::Input">
+		<border.size value="2"/>
+		<color value="bg"/>
+	</style>
+
+	<style class="Value::PopupWindow::InvalidInput" parents="Value::PopupWindow::Input">
+		<text.color value="bright_red"/>
+	</style>
+
+	<style class="Value::PopupWindow::MismatchInput" parents="Value::PopupWindow::Input">
+		<text.color value="bright_yellow"/>
+	</style>
+
+	<style class="Value::PopupWindow::Apply" parents="Button">
+		<padding.left value="10"/>
+		<bg.inherit value="true"/>
+		<border.hover.color value="dark_green"/>
+	</style>
+
+	<style class="Value::PopupWindow::Cancel" parents="Button">
+		<bg.inherit value="true"/>
+		<border.hover.color value="dark_red"/>
+	</style>
+
+	<!-- Additional styles for midinote -->
+	<style class="MidiNote::PopupWindow" parents="PopupWindow">
+		<padding value="2"/>
+		<bg.color value="bg_light"/>
+	</style>
+
+	<style class="MidiNote::PopupWindow::Box" parents="Box">
+		<orientation value="horizontal"/>
+		<spacing value="6"/>
+	</style>
+
+	<style class="MidiNote::PopupWindow::Input" parents="Edit">
+		<spacing value="2"/>
+		<size.constraints.width.min value="64"/>
+	</style>
+
+	<style class="MidiNote::PopupWindow::ValidInput" parents="Value::PopupWindow::Input">
+		<border.size value="2"/>
+		<color value="bg"/>
+	</style>
+
+	<style class="MidiNote::PopupWindow::InvalidInput" parents="Value::PopupWindow::Input">
+		<text.color value="bright_red"/>
+	</style>
+
+	<style class="MidiNote::PopupWindow::MismatchInput" parents="Value::PopupWindow::Input">
+		<text.color value="bright_yellow"/>
+	</style>
+
+	<style class="MidiNote::PopupWindow::Apply" parents="Button">
+		<padding.left value="10"/>
+		<bg.inherit value="true"/>
+		<border.hover.color value="dark_green"/>
+	</style>
+
+	<style class="MidiNote::PopupWindow::Cancel" parents="Button">
+		<bg.inherit value="true"/>
+		<border.hover.color value="dark_red"/>
+	</style>
+
+	<!-- GreetingDialog widgets -->
+	<style class="GreetingDialog" parents="Window">
+		<padding value="16"/>
+		<layout.hscale value="1.0"/>
+		<layout.vscale value="1.0"/>
+	</style>
+
+	<style class="GreetingDialog::Text" parents="Label">
+		<allocation.hfill value="true"/>
+		<allocation.vfill value="true"/>
+		<text.layout.halign value="-1.0"/>
+	</style>
+
+	<style class="GreetingDialog::Heading" parents="Label">
+		<allocation.hfill value="true"/>
+		<allocation.vfill value="true"/>
+		<text.layout.halign value="-1.0"/>
+		<font.size value="24"/>
+		<font.bold value="true"/>
+	</style>
+
+	<style class="GreetingDialog::Postscript" parents="Label">
+		<allocation.hfill value="true"/>
+		<allocation.vfill value="true"/>
+		<text.layout.halign value="1.0"/>
+	</style>
+
+	<style class="GreetingDialog::Hlink" parents="Hyperlink">
+		<allocation.hfill value="true"/>
+		<allocation.vfill value="true"/>
+		<text.layout.halign value="-1.0"/>
+		<padding.left value="24"/>
+	</style>
+
+	<style class="GreetingDialog::PostscriptHlink" parents="Hyperlink">
+		<allocation.hfill value="true"/>
+		<allocation.vfill value="true"/>
+		<text.layout.halign value="1.0"/>
+	</style>
+	
+	<!-- AboutDialog widget -->
+	<style class="AboutDialog" parents="Window">
+		<padding value="16"/>
+		<border.style value="dialog"/>
+		<layout.hscale value="1.0"/>
+		<layout.vscale value="1.0"/>
+	</style>
+
+	<style class="AboutDialog::Heading" parents="Label">
+		<allocation.hfill value="true"/>
+		<allocation.vfill value="true"/>
+		<text.layout.halign value="-1.0"/>
+		<font.size value="24"/>
+		<font.bold value="true"/>
+	</style>
+
+	<style class="AboutDialog::Text" parents="Label">
+		<allocation.hfill value="true"/>
+		<allocation.vfill value="true"/>
+		<text.layout.halign value="-1.0"/>
+	</style>
+	
+	<style class="AboutDialog::Hlink" parents="Hyperlink">
+		<allocation.hfill value="true"/>
+		<allocation.vfill value="true"/>
+		<text.layout.halign value="-1.0"/>
+		<padding.left value="24"/>
+	</style>
+
+	<!-- PluginWindow widgets -->
+	<style class="PluginWindow" parents="Window">
+		<allocation.hfill value="true"/>
+		<allocation.vfill value="true"/>
+		<text.layout.halign value="1.0"/>
+		<padding value="4"/>
+	</style>
+
+	<style class="PluginWindow::RackEarTop" parents="RackEars">
+		<font.size value="12"/>
+	</style>
+
+	<style class="PluginWindow::RackEarSide" parents="RackEars">
+		<font.size value="16"/>
+	</style>
+
+	<style class="PluginWindow::Bypass::Box" parents="Box">
+		<padding value="4"/>
+		<allocation.hfill value="false"/>
+		<allocation.vfill value="false"/>
+	</style>
+
+	<style class="PluginWindow::Bypass::Switch" parents="Switch">
+		<angle value="1"/>
+		<size.range value="24"/>
+	</style>
+
+	<style class="PluginWindow::Bypass::Led" parents="Led">
+		<color value="led_cred"/>
+		<led.color value="red"/>
+		<size value="8"/>
+	</style>
+
+	<style class="PluginWindow::Bypass::Button" parents="Button">
+		<down.colors value="true"/>
+		<color value="bg"/>
+		<down.color value="bg"/>
+		<hover.color value="bg"/>
+		<down.hover.color value="bg"/>
+		<text.color value="green"/>
+		<text.hover.color value="dark_green"/>
+		<text.down.color value="red"/>
+		<text.down.hover.color value="dark_red"/>
+		<border.size value="0"/>
+		<border.down.size value="0"/>
+		<border.pressed.size value="0"/>
+		<hole value="false"/>
+		<hover value="true"/>
+		<padding.top value="1"/>
+		<padding.right value="3"/>
+		<gradient value="false"/>
+		<text.shift value="0 0"/>
+		<font.name value="lsp-icons"/>
+		<font.size value="12"/>
+		<font.antialias value="true"/>
+	</style>
+
+	<style class="PluginWindow::Content" parents="Box">
+		<allocation.hfill value="true"/>
+		<allocation.vfill value="true"/>
+		<allocation.hexpand value="true"/>
+		<allocation.vexpand value="true"/>
+		<padding value="0"/>
+	</style>
+
+	<style class="PluginWindow::ResetMenu" parents="Menu">
+		<bg.color value="yellow" />
+		<ipadding.top value="0"/>
+		<ipadding.bottom value="0"/>
+		<ipadding.left value="0"/>
+		<ipadding.right value="0"/>
+	</style>
+	
+	<style class="PluginWindow::ResetMenu::Reset" parents="MenuItem">
+		<bg.color value="yellow" />
+		<bg.selected.color value="red"/>
+		<text.color value="bg"/>
+		<text.selected.color value="bg"/>
+	</style>
+	
+</schema>

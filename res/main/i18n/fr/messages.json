@@ -1,0 +1,42 @@
+{
+	"about": {
+		"copyright": "(C) {@meta_pkg_copyright} 2015-2022.",
+		"description": "This is a collection of open-source audio plugins.",
+		"info": {
+			"pkg_name": "Package name:",
+			"pkg_version": "Package version:",
+			"plug_name": "Plugin name:",
+			"plug_version": "Plugin version:"
+		},
+		"values": {
+			"pkg_name": "{@meta_pkg_full_name}",
+			"pkg_version": "{@meta_pkg_version}",
+			"plug_name": "{@meta_plugin_description}",
+			"plug_version": "{@meta_plugin_version}"
+		},
+		"license": "Licensed under the terms of GNU Lesser Public License v3 (LGPLv3):",
+		"license_url": "https://www.gnu.org/licenses/lgpl-3.0.fr.html",
+		"support": "Support the project:"
+	},
+	"file": {
+		"confirm_load": "Voulez-vous vraiment charger le fichier sélectionné ?",
+		"confirm_overwrite": "Le fichier sélectionné existe déjà. L'écraser ?",
+		
+		"invalid_name": "Le nom de fichier saisi n'est pas valide",
+		
+		"not_exists": "Le dossier sélectionné n'existe pas",
+		"not_specified": "Le nom du fichier n'est pas précisé"
+	},
+	
+	"greetings": {
+		"0": "Vous venez de mettre à jour les greffons à la version {@meta_pkg_version} !",
+		"1": "'{@meta_pkg_full_name}' est un projet non commercial et a besoin d'un soutien financier pour la poursuite de son développement.",
+		"2": "Vous pouvez aider la collection de greffons libres à se développer en visitant le lien suivant et en soumettant des dons au projet :",
+		"3": "N'oubliez pas que la souscription et les petits dons réguliers apporteront davantage au projet que les dons ponctuels.",
+		"4": "Pour ne pas être très ennuyeux, ce dialogue ne sera affiché qu'après chaque mise à jour de version des greffons.",
+		"5": "Merci d'avance."
+	},
+	
+	"postscript": "{@meta_pkg_full_name}",
+	"site": "{@meta_pkg_site}"
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<window ui:inject="GreetingDialog" title="titles.update_notification">
+	<vbox spacing="8">
+		<label ui:inject="GreetingDialog::Heading" text="headings.greetings" text.meta="true" />
+		<label ui:inject="GreetingDialog::Text" text="messages.greetings.0" text.meta="true" font.b="true" />
+		<label ui:inject="GreetingDialog::Text" text="messages.greetings.1" text.meta="true" />
+		<label ui:inject="GreetingDialog::Text" text="messages.greetings.2" text.meta="true" />
+
+		<ui:for id="i" first="0" count="5">
+			<hlink ui:inject="GreetingDialog::Hlink"
+				text="project.donations.${i}"
+				url="project.donations.${i}"
+				text.meta="true"
+				url.meta="true"
+			/>
+		</ui:for>
+
+		<label ui:inject="GreetingDialog::Text" text="messages.greetings.3" text.meta="true" />
+		<label ui:inject="GreetingDialog::Text" text="messages.greetings.4" text.meta="true" />
+
+		<label ui:inject="GreetingDialog::Postscript" text="messages.greetings.5" text.meta="true" />
+		<label ui:inject="GreetingDialog::Postscript" text="messages.postscript" text.meta="true" />
+		<hlink ui:inject="GreetingDialog::PostscriptHlink" text="messages.site" url="messages.site"
+			text.meta="true"
+			url.meta="true"
+		/>
+
+		<align fill="true">
+			<button ui:id="submit" min_width="96" text="actions.close" />
+		</align>
+	</vbox>
+</window>

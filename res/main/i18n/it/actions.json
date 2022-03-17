@@ -1,0 +1,95 @@
+{
+	"3d_rendering": "Rendering 3D",
+
+	"apply": "Applica",
+	
+	"cancel": "Cancella",
+	"close": "Chiudi",
+	
+	"confirm": {
+		"no": "No",
+		"yes": "Si"
+	},
+	
+	"debug_dump": "Salvataggio per debug",
+	
+	"edit": {
+		"clear": "Pulisci",
+		"copy": "Copia",
+		"cut": "Taglia",
+		"delete": "Rimuovi",
+		"move_down": "Muovi sotto",
+		"move_first": "Muovi all'inizio",
+		"move_last": "Muovi alla fine",
+		"move_up": "Muovi su",
+		"paste": "Incolla"
+	},
+	
+	"export": "Esporta",
+	"export_settings_to_clipboard": "Esporta i settaggi negli appunti",
+	"export_settings_to_file": "Esporta i settaggi su file...",
+
+	"font_scaling": {
+		"select": "Scala caratteri",
+		"value:pc": "{@value} %",
+		"zoom_in": "Ingrandisci",
+		"zoom_out": "Rimpicciolisci"
+	},
+
+	"freeze": "Congela",
+	
+	"import": "Importa",
+	"import_hydrogen_drumkit_file": "File drumkit di Hydrogen...",
+	"import_installed_hydrogen_drumkit": "Drumkit di Hydrogen installato",
+	"import_settings_from_clipboard": "Importa i settaggi dagli appunti",
+	"import_settings_from_file": "Importa i settaggi da file...",
+	"import_rew_filter_file": "File filtro REW...",
+
+	"listen": "Audiziona",
+	"link": {
+		"copy": "Copia link",
+		"follow": "Segui link"
+	},
+	
+	"load": "Carica",
+	"load_preset": "Carica preset",
+	
+	"measure": "Misura",
+	
+	"nav": {
+		"go": "Su",
+		"up": "Giu"
+	},
+	
+	"ok": "OK",
+	"open": "Apri",
+	
+	"plugin_manual": "Manuale plugin",
+	"postprocess": "Post-processa",
+	"profile": "Profila",
+	
+	"reset": "Reset",
+	"run_stop": "Run/Stop",
+	
+	"save": "Salva",
+	
+	"select_language": "Seleziona lingua",
+	
+	"tap": "Tap",
+	"to_bookmarks": "+Preferiti",
+	"toggle_rack_mount": "Cambia a rack mount",
+
+	"ui_manual": "Manuale UI",
+	
+	"ui_scaling": {
+		"prefer_host": "Preferisci host",
+		"select": "UI scaling",
+		"value:pc": "{@value} %",
+		"zoom_in": "Ingrandisci",
+		"zoom_out": "Rimpicciolisci"
+	},
+	
+	"visual_schema": {
+		"select": "Schema Visuale"
+	}
+}

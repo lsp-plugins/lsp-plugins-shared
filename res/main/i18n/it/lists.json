@@ -1,0 +1,236 @@
+{
+	"bool": {
+		"off": "off",
+		"on": "on"
+	},
+
+	"dither": {
+        "none": "Nessuno",
+        "bits": {
+	        "11": "11bit",
+	        "12": "12bit",
+	        "15": "15bit",
+	        "16": "16bit",
+	        "23": "23bit",
+	        "24": "24bit",
+	        "7": "7bit",
+	        "8": "8bit"
+        }
+	},
+	
+	"eq": {
+		"flt": {
+			"allpass": "Passa tutto",
+			"allpass2": "Passa tutto2",
+			"bandpass": "Passa banda",
+			"bell": "Campana",
+			"envelope": "Inviluppo",
+			"hipass": "Passa alto",
+			"hishelf": "Hi-shelf",
+			"ladpass": "Ladder-pass",
+			"ladrej": "Ladder-rej",
+			"lopass": "Passa basso",
+			"loshelf": "Lo-shelf",
+			"notch": "Notch",
+			"off": "Off",
+			"resonance": "Risonanza"
+		},
+		"mode": {
+			"rlc_bt": "RLC (BT)",
+			"rlc_mt": "RLC (MT)",
+			"bwc_bt": "BWC (BT)",
+			"bwc_mt": "BWC (MT)",
+			"lrx_bt": "LRX (BT)",
+			"lrx_mt": "LRX (MT)",
+			"apo_dr": "APO (DR)"
+		},
+		"pos": {
+		    "post_eq": "Post-eq",
+			"pre_eq": "Pre-eq"
+		},
+		"slope": {
+			"6dbo": "6 dB/oct",
+			"12dbo": "12 dB/oct",
+			"18dbo": "18 dB/oct",
+			"24dbo": "24 dB/oct",
+			"30dbo": "30 dB/oct",
+			"36dbo": "36 dB/oct",
+			"off": "Off",
+			"x1": "x1",
+			"x2": "x2",
+			"x3": "x3",
+			"x4": "x4"
+		},
+		"type": {
+			"fir": "FIR",
+			"fft": "FFT",
+			"iir": "IIR",
+			"spm": "SPM"
+		}
+	},
+	
+	"fft": {
+		"env": {
+			"blue": "Rumore blu",
+			"brown": "Rumore marrone",
+			"falloff_4_5db": "attenuazione 4.5 dB/oct",
+			"pink": "Rumore rosa",
+			"raise_4_5db": "guadagno 4.5 dB/oct",
+			"violet": "Rumore viola",
+			"white": "Rumore bianco"
+		},
+		"wnd": {
+			"bartlett_fejer": "Bartlett-Fejer",
+			"bartlett_hann": "Bartlett-Hann",
+			"blackman": "Blackman",
+			"blackman_harris": "Blackman-Harris",
+			"blackman_nuttall": "Blackman-Nuttall",
+			"cosine": "Coseno",
+			"cubic": "Hermite Spline Cubica",
+			"flat_top": "Massimamente Piatta",
+			"gauss": "Gaussiana",
+			"hamming": "Hamming",
+			"hann": "Hann",
+			"hann_poisson": "Hann-Poisson",
+			"lanczos": "Lanczos",
+			"nuttall": "Nuttall",
+			"parzen": "Parzen",
+			"poisson": "Poisson",
+			"rectangular": "Rettangolare",
+			"sqr_cosine": "Coseno quadro",
+			"triangular": "Triangolare",
+			"tukey": "Tukey",
+			"welch": "Welch"
+		}
+	},
+	
+	"file": {
+		"f1": "File 1",
+		"f1l": "File 1 Sinistra",
+		"f1r": "File 1 Destra",
+		"f2": "File 2",
+		"f2l": "File 2 Sinistra",
+		"f2r": "File 2 Destra",
+		"f3": "File 3",
+		"f3l": "File 3 Sinistra",
+		"f3r": "File 3 Destra",
+		"f4": "File 4",
+		"f4l": "File 4 Sinistra",
+		"f4r": "File 4 Destra",
+		
+		"left": "Sinistra",
+		"none": "Nessuno",
+		"right": "Destra",
+		
+		"t1": "Traccia 1",
+		"t2": "Traccia 2",
+		"t3": "Traccia 3",
+		"t4": "Traccia 4",
+		"t5": "Traccia 5",
+		"t6": "Traccia 6",
+		"t7": "Traccia 7",
+		"t8": "Traccia 8"
+	},
+	
+	"metering": {
+		"fft": {
+			"off": "Off",
+			"post_eq": "Post-eq",
+			"pre_eq": "Pre-eq"
+		}
+	},
+	
+	"multiband": {
+		"classic": "Classico",
+		"modern": "Moderno"
+	},
+	
+	"oversampler": {
+		"full": {
+			"2x2": "Completo x2(2L)",
+			"2x3": "Completo x2(3L)",
+			"3x2": "Completo x3(2L)",
+			"3x3": "Completo x3(3L)",
+			"4x2": "Completo x4(2L)",
+			"4x3": "Completo x4(3L)",
+			"6x2": "Completo x6(2L)",
+			"6x3": "Completo x6(3L)",
+			"8x2": "Completo x8(2L)",
+			"8x3": "Completo x8(3L)"
+		},
+		"half": {
+			"2x2": "Metà x2(2L)",
+			"2x3": "Metà x2(3L)",
+			"3x2": "Metà x3(2L)",
+			"3x3": "Metà x3(3L)",
+			"4x2": "Metà x4(2L)",
+			"4x3": "Metà x4(3L)",
+			"6x2": "Metà x6(2L)",
+			"6x3": "Metà x6(3L)",
+			"8x2": "Metà x8(2L)",
+			"8x3": "Metà x8(3L)"
+		},
+		"normal": {
+			"2x2": "x2(2L)",
+			"2x3": "x2(3L)",
+			"3x2": "x3(2L)",
+			"3x3": "x3(3L)",
+			"4x2": "x4(2L)",
+			"4x3": "x4(3L)",
+			"6x2": "x6(2L)",
+			"6x3": "x6(3L)",
+			"8x2": "x8(2L)",
+			"8x3": "x8(3L)",
+
+			"x2": "x2",
+			"x3": "x3",
+			"x4": "x4",
+			"x6": "x6",
+			"x8": "x8"
+		},
+		"none": "None"
+	},
+	
+	"rendering": {
+		"glx_opengl_v2": "OpenGL 2.0 (GLX)"
+	},
+	
+	"sidechain": {
+		"boost": {
+			"brown_bt": "BT Marrone",
+			"brown_mt": "MT Marrone",
+			"none": "Nessuno",
+			"pink_bt": "BT Rosa",
+			"pink_mt": "MT Rosa"
+		},
+		"external": "Esterno",
+		"feed_back": "Feed-back",
+		"feed_forward": "Feed-forward",
+		"internal": "Interno",
+		"left": "Sinistra",
+		"lowpass": "Passa Basso",
+		"middle": "Centro",
+		"peak": "Picco",
+		"right": "Destra",
+		"rms": "RMS",
+		"side": "Laterale",
+		"uniform": "Uniforme"
+	},
+	
+	"spectrum": {
+		"analyzer": "Analizzatore",
+		"analyzer_s": "Analizzatore Stereo",
+		"mastering": "Mastering",
+		"mastering_s": "Mastering Stereo",
+		"spc": {
+			"color": "Colore",
+			"fog": "Nebbia",
+			"lightness": "Leggerezza",
+			"lightning": "Fulmine",
+			"rainbow": "Arcobaleno"
+		},
+		"spectralizer": "Spectralizer",
+		"spectralizer_s": "Spectralizer Stereo"
+	}
+}
+
