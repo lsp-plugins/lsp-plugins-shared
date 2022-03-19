@@ -32,6 +32,8 @@ else
   X_CXX_TOOL         := g++
   X_AS_TOOL          := as
   X_AR_TOOL          := ar
+  X_LD_TOOL          := ld
+  X_PKG_CONFIG       := pkg-config
 endif
 
 X_GIT_TOOL         := git
@@ -64,7 +66,7 @@ FLAG_RELRO          = -Wl,-z,relro,-z,now
 FLAG_STDLIB         = -lc
 CFLAGS_EXT          = $(ARCHITECTURE_CFLAGS)
 CXXFLAGS_EXT        = $(ARCHITECTURE_CFLAGS)
-LDFLAGS_EXT         =
+LDFLAGS_EXT         = $(ARCHITECTURE_LDFLAGS)
 
 ifeq ($(PLATFORM),Solaris)
   FLAG_RELRO          =
