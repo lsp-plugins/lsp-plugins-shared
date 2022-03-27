@@ -23,10 +23,14 @@ ifneq ($(VERBOSE),1)
 .SILENT:
 endif
 
-DESTDIR        :=
-ETCDIR         := /etc
-SHAREDDIR      := /usr/local/share
-FILES          :=
+MODDIR                  = $(CURDIR)/..
+CONFIG                 := $(MODDIR)/.config.mk
+DESTDIR                :=
+ETCDIR                 := /etc
+SHAREDDIR              := /usr/local/share
+FILES                  :=
+
+include $(CONFIG)
 
 XDG_ICON_PATH   = $(DESTDIR)$(SHAREDDIR)/icons/hicolor
 XDG_MENU_PATH   = $(DESTDIR)$(ETCDIR)/xdg/menus/applications-merged
