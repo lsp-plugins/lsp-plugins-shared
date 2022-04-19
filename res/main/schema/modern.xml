@@ -989,14 +989,15 @@
 	</style>
 
 	<style class="Edit" parents="root">
-		<border.size value="1"/>
-		<border.gap.size value="2"/>
+		<border.size value="0"/>
+		<border.gap.size value="3"/>
 		<border.radius value="0"/>
-		<color value="bg_light"/>
+		<color value="bg"/>
 		<text.color value="text_sec"/>
+		<border.color value="bg_light"/>
 		<cursor.color value="text_sec"/>
-		<border.color value="border_color"/>
-		<border.gap.color value="bg_light"/>
+		<border.gap.color value="bg"/>
+		<bg.inherit value="true"/>
 	</style>
 
 	<style class="Fader" parents="root">
@@ -1560,7 +1561,27 @@
 	
 	<style class="FileDialog::OptionSeparator" parents="Separator"></style>
 	
-	<style class="FileDialog::Path" parents="Edit"></style>
+	<style class="FileDialog::Path" parents="Edit">
+		<border.size value="1"/>
+		<border.gap.size value="2"/>
+		<border.radius value="0"/>
+		<color value="bg_light"/>
+		<text.color value="text_sec"/>
+		<cursor.color value="text_sec"/>
+		<border.color value="border_color"/>
+		<border.gap.color value="bg_light"/>
+	</style>
+	
+	<style class="FileDialog::Search" parents="Edit">
+		<border.size value="1"/>
+		<border.gap.size value="2"/>
+		<border.radius value="0"/>
+		<color value="bg_light"/>
+		<text.color value="text_sec"/>
+		<cursor.color value="text_sec"/>
+		<border.color value="border_color"/>
+		<border.gap.color value="bg_light"/>
+	</style>
 	
 	<style class="FileDialog::Warning" parents="root">
 		<text.color value="warn"/>
