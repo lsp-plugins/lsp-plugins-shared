@@ -5,6 +5,7 @@
 === 1.0.2 ===
 - Fixed the icon installation script.
 - Added different icons for branding into the code tree.
+- Fixed typo in Wavefront Object File Format name.
 
 === 1.0.1 ===
 * Update build.

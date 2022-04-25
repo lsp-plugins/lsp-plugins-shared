@@ -1,6 +1,6 @@
 {
 	"3d": {
-		"wavefont": "Formato file per fronte d'onda 3D (*.obj)"
+		"wavefront": "Formato file per fronte d'onda 3D (*.obj)"
 	},
 	"all": "Qualsiasi file (*.*)",
 	"audio": {

@@ -1,6 +1,6 @@
 {
 	"3d": {
-		"wavefont": "Файл описания 3D-геометрии Wavefont (*.obj)"
+		"wavefront": "Файл описания 3D-геометрии Wavefront (*.obj)"
 	},
 	"all": "Все файлы (*.*)",
 	"audio": {

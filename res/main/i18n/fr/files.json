@@ -1,6 +1,6 @@
 {
 	"3d": {
-		"wavefont": "Format de fichier Wavefont 3D (*.obj)"
+		"wavefront": "Format de fichier Wavefront 3D (*.obj)"
 	},
 	"all": "Tous les fichiers (*.*)",
 	"audio": {
