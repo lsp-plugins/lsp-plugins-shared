@@ -1848,11 +1848,11 @@
 	</style>
 	
 	<style class="PluginWindow::StatusBar::Label::OK" parents="PluginWindow::StatusBar::Label">
-		<text.color value="dark_green" />
+		<text.color value="green" />
 	</style>
 	
 	<style class="PluginWindow::StatusBar::Label::FAIL" parents="PluginWindow::StatusBar::Label">
-		<text.color value="dark_red" />
+		<text.color value="red" />
 	</style>
 
 </schema>
