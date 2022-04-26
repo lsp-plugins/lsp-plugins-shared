@@ -1842,5 +1842,17 @@
 		<text.color value="bg"/>
 		<text.selected.color value="bg"/>
 	</style>
+	
+	<style class="PluginWindow::StatusBar::Label" parents="Label">
+		<text.color value="footer_icon" />
+	</style>
+	
+	<style class="PluginWindow::StatusBar::Label::OK" parents="PluginWindow::StatusBar::Label">
+		<text.color value="dark_green" />
+	</style>
+	
+	<style class="PluginWindow::StatusBar::Label::FAIL" parents="PluginWindow::StatusBar::Label">
+		<text.color value="dark_red" />
+	</style>
 
 </schema>

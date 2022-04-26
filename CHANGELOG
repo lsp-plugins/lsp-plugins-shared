@@ -6,6 +6,7 @@
 - Fixed the icon installation script.
 - Added different icons for branding into the code tree.
 - Fixed typo in Wavefront Object File Format name.
+- Added support of JACK status indication.
 
 === 1.0.1 ===
 * Update build.
