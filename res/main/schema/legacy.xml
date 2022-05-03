@@ -1573,7 +1573,29 @@
 	
 	<style class="FileDialog::OptionSeparator" parents="Separator"></style>
 
-	<style class="FileDialog::Path" parents="Edit"></style>	
+	<style class="FileDialog::Path" parents="Edit">
+		<border.size value="1"/>
+		<border.gap.size value="1"/>
+		<border.radius value="5"/>
+
+		<color value="bg_name"/>
+		<text.color value="bg"/>
+		<cursor.color value="bg"/>
+		<border.color value="bg"/>
+		<border.gap.color value="bg_name"/>
+	</style>	
+	
+	<style class="FileDialog::Search" parents="Edit">
+		<border.size value="1"/>
+		<border.gap.size value="1"/>
+		<border.radius value="5"/>
+
+		<color value="bg_name"/>
+		<text.color value="bg"/>
+		<cursor.color value="bg"/>
+		<border.color value="bg"/>
+		<border.gap.color value="bg_name"/>
+	</style>
 	
 	<style class="FileDialog::Warning" parents="root">
 		<text.color value="warn"/>
@@ -1824,6 +1846,18 @@
 		<bg.selected.color value="red"/>
 		<text.color value="bg"/>
 		<text.selected.color value="bg"/>
+	</style>
+
+	<style class="PluginWindow::StatusBar::Label" parents="Label">
+		<text.color value="footer_icon" />
+	</style>
+	
+	<style class="PluginWindow::StatusBar::Label::OK" parents="PluginWindow::StatusBar::Label">
+		<text.color value="green" />
+	</style>
+	
+	<style class="PluginWindow::StatusBar::Label::FAIL" parents="PluginWindow::StatusBar::Label">
+		<text.color value="red" />
 	</style>
 	
 </schema>

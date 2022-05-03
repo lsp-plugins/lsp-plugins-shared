@@ -1,4 +1,10 @@
 {
+	"jack": {
+		"label": "JACK:",
+		"off": "OFF",
+		"on": "ON"
+	},
+	
 	"load": {
 		"error": "Error",
 		"load": "Load",

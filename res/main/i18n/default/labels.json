@@ -374,6 +374,8 @@
 
 	"mute": "Mute",
 	"muting": "Muting",
+	
+	"name": "Name",
 
 	"noise_floor": "Noise Floor",
 	"noise_floor_left": "Noise Floor Left",
