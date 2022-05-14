@@ -1,0 +1,46 @@
+{
+	"bar": "Takt",
+	"beat": "Schlag",
+	"bpm": "BPM",
+	"bytes": "B",
+	
+	"cent": "cent",
+	"cm": "cm",
+	
+	"db": "dB",
+	"deg": "°",
+	"degc": "°C",
+	"degf": "°F",
+	"degk": "°K",
+	"degr": "°R",
+	
+	"gain": "G",
+	"gbytes": "GB",
+	
+	"hz": "Hz",
+	"inch": "\"",
+	
+	"kbytes": "kB",
+	"khz": "kHz",
+	"km": "km",
+	"kmph": "km/h",
+
+	"m": "m",
+	"mbytes": "MB",
+	"mhz": "MHz",
+	"min": "min",
+	"mps": "m/s",
+	"mm": "mm",
+	"ms": "ms",
+	
+	"oct": "Okt",
+	
+	"pc": "%",
+	
+	"s": "s",
+	"samp": "samp",
+	"seconds": "Sekunden",
+	"st": "st",
+	
+	"tbytes": "TB"
+}

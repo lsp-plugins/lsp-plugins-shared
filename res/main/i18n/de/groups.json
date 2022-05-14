@@ -1,0 +1,99 @@
+{
+	"alr": "ALR",
+	"analysis": "Analyse",
+	"audio_channel": "Audiokanal",
+	"audio_channels": "Audiokanäle",
+	"audio_output": "Audioausgang",
+
+	"bands": "Bänder",
+
+	"controls": "Steuerung",
+
+	"chan": {
+		"master": "Masterkanal"
+	},
+
+	"channel": "Kanal",
+	"channel_n": "Kanal {@id}",
+	"channels": "Kanäle",
+
+	"distance": "Entfernung",
+
+	"gain": "Gain",
+	"general": "Allgemein",
+
+	"global_delay_ctr": "Globale Delaykontrolle",
+
+	"impulse_response": "Impulsantwort",
+	"instrument_mixer": "Instrumentmixer",
+
+	"latency": "Latenz",
+
+	"lchan": {
+		"distance": "Entfernung",
+		"lchan": "Linker Kanal",
+		"monitoring": "Monitor",
+		"samples": "Samples",
+		"signal": "Signal",
+		"time": "Zeit"
+	},
+
+	"metering": "Abmessen",
+	"midi_setup": "MIDI-Einstellung",
+	"monitoring": "Monitor",
+
+	"oscillator_function": "Oszillatorfunktion",
+	"oscilloscope": {
+		"coupling": "Kopplung",
+		"operation": "Operation",
+		"trigger": "Trigger"
+	},
+
+	"output": "Ausgang",
+	"outputs": "Ausgänge",
+
+	"parameters": "Parameter",
+
+	"plug": {
+		"calibrator": "Kalibrator",
+		"compressor": "Kompressor",
+		"expander": "Expander",
+		"gate": "Gate",
+		"latency_detector": "Latenzdetektor",
+		"limiter": "Limiter",
+		"processor": "Processor",
+		"trigger": "Trigger"
+	},
+
+	"processor": "Processor",
+	"processors": "Processors",
+
+	"rendering": "Rendern",
+
+	"results": "Ergebnisse",
+
+	"rchan": {
+		"distance": "Entfernung",
+		"monitoring": "Monitor",
+		"rchan": "Rechter Kanal",
+		"samples": "Samples",
+		"signal": "Signal",
+		"time": "Zeit"
+	},
+
+	"sample_matrix": "Samplematrix",
+	"sample_n": "Sample {@id}",
+	"samples": "Samples",
+
+	"sidechain": "Sidechain",
+	"signal": "Signal",
+	"signal_n": "Signal {@id}",
+	"signals": "Signale",
+
+	"test_signal": "Testsignal",
+	"tempo_settings": "Tempoeinstellungen",
+
+	"time": "Zeit",
+
+	"wet_signal_eq": "Ausgleich des Effektsignals"
+}

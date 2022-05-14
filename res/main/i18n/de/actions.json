@@ -1,1 +1,95 @@
+{
+	"3d_rendering": "3D Render",
 
+	"apply": "Übernehmen",
+	
+	"cancel": "Abbrechen",
+	"close": "Schließen",
+	
+	"confirm": {
+		"no": "Nein",
+		"yes": "Ja"
+	},
+	
+	"debug_dump": "Speicherabbild erzeugen",
+	
+	"edit": {
+		"clear": "Leeren",
+		"copy": "Kopieren",
+		"cut": "Ausschneiden",
+		"delete": "Löschen",
+		"move_down": "Nach oben",
+		"move_first": "Als erstes",
+		"move_last": "Als letztes",
+		"move_up": "Nach unten",
+		"paste": "Einfügen"
+	},
+	
+	"export": "Exportieren",
+	"export_settings_to_clipboard": "Exportiere Einstellungen in die Zwischenablage",
+	"export_settings_to_file": "Exportiere Einstellungen in Datei...",
+	
+	"font_scaling": {
+		"select": "Schriftskalierung",
+		"value:pc": "{@value} %",
+		"zoom_in": "Hineinzoomen",
+		"zoom_out": "Herauszoomen"
+	},
+	
+	"freeze": "Einfrieren",
+	
+	"import": "Importieren",
+	"import_hydrogen_drumkit_file": "Hydrogen drumkit Datei...",
+	"import_installed_hydrogen_drumkit": "Installiertes Hydrogen drumkit",
+	"import_settings_from_clipboard": "Importiere Einstellungen aus der Zwischenablage",
+	"import_settings_from_file": "Importiere Einstellungen aus Datei...",
+	"import_rew_filter_file": "REW filter Datei...",
+
+	"listen": "Anhören",
+	"link": {
+		"copy": "Link kopieren",
+		"follow": "Link folgen"
+	},
+	
+	"load": "Laden",
+	"load_preset": "Voreinstellung laden",
+	
+	"measure": "Measure",
+	
+	"nav": {
+		"go": "Los",
+		"up": "Hoch"
+	},
+	
+	"ok": "OK",
+	"open": "Öffnen",
+	
+	"plugin_manual": "Pluginhandbuch",
+	"postprocess": "Post-process",
+	"profile": "Profil",
+	
+	"reset": "Zurücksetzen",
+	"run_stop": "Run/Stop",
+
+	"save": "Speichern",
+	
+	"select_language": "Sprache auswählen",
+
+	"tap": "Tap",
+	"to_bookmarks": "+Lesezeichen",
+	"toggle_rack_mount": "Rack Mount anzeigen",
+	
+	"ui_manual": "UI-Handbuch",
+	
+	"ui_scaling": {
+		"prefer_host": "Hosteinstellungen",
+		"select": "UI-Skalierung",
+		"value:pc": "{@value} %",
+		"zoom_in": "Hineinzoomen",
+		"zoom_out": "Herauszoomen"
+	},
+	
+	"visual_schema": {
+		"select": "Erscheinungsbild"
+	}
+}

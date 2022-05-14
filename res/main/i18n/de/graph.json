@@ -1,0 +1,37 @@
+{
+	"values": {
+		"1k": "1k",
+		"10k": "10k",
+		"idL_eft": "{@id}L",
+		"idM_id": "{@id}M",
+		"idR_ight": "{@id}R",
+		"idS_ide": "{@id}S",
+		"x:db": "{@value} dB",
+		"x:hz": "{@value} Hz",
+		"x:s": "{@value} s",
+		"x_T": "{@value}T",
+		"x_k": "{@value}k"
+	},
+	
+	"axis": {
+		"+phase": "+phase",
+		"-phase": "-phase",
+		"amplitude": "Amplitude",
+		"chan": {
+			"left": "links",
+			"right": "rechts"
+		},
+		"in": "in",
+		"level": "Level",
+		"out": "out",
+		"period": "period",
+		"reverb_time": "Halldauer",
+		"time": "Zeit"
+	},
+
+	"units": {
+		"db": "dB",
+		"hz": "Hz",
+		"s": "s"
+	}
+}
