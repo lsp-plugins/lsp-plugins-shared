@@ -3,6 +3,7 @@
 *******************************************************************************
 
 === 1.0.3 ===
+* Added german translations (contributed by Johannes Guenther).
 
 === 1.0.2 ===
 * Added support of JACK connection status indication.

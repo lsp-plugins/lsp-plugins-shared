@@ -1,0 +1,12 @@
+{
+	"language": "Sprache",
+
+	"target": {
+		"de": "Deutsch",
+		"es": "Spanisch",
+		"fr": "Französisch",
+		"it": "Italienisch",
+		"ru": "Russisch",
+		"us": "Englisch (US)"
+	}
+}
