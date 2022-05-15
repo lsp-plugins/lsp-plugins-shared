@@ -2,11 +2,11 @@
 	"language": "Sprache",
 
 	"target": {
-		"es": "Español",
-		"fr": "Français",
-		"it": "Italiano",
-		"ru": "Русский",
-		"us": "English (US)",
-		"de": "Deutsch"
+		"de": "Deutsch",
+		"es": "Spanisch",
+		"fr": "Französisch",
+		"it": "Italienisch",
+		"ru": "Russisch",
+		"us": "Englisch (US)"
 	}
 }
