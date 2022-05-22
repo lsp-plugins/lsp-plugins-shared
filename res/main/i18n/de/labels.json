@@ -428,6 +428,7 @@
 	"plug": {
 		"calibrator": "Kalibrator",
 		"compressor": "Kompressor",
+		"dyna_processor": "Dynamischer Prozessor",
 		"expander": "Expander",
 		"gate": "Gate",
 		"latency_detector": "Latenzdetektor",
