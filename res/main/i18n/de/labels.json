@@ -9,8 +9,8 @@
 		"move_x": "Bewege X",
 		"move_y": "Bewege Y",
 		"move_z": "Bewege Z",
-		"pitch": "Tonhöhe",
-		"roll": "Roll",
+		"pitch": "Stampfe",
+		"roll": "Rolle",
 		"s_ize_x:": "Gr X:",
 		"s_ize_y:": "Gr Y:",
 		"s_ize_z:": "Gr Z:",
@@ -24,7 +24,7 @@
 		"shape": "Form",
 		"x_axis": "X-Achse",
 		"y_axis": "Y-Achse",
-		"yaw": "Rotieren",
+		"yaw": "Gierung",
 		"z_axis": "Z-Achse"
 	},
 
@@ -533,6 +533,7 @@
 		"head_cut": "Head cut",
 		"listen": "Anhören",
 		"makeup": "Makeup",
+		"pitch": "Tonhöhe",
 		"predelay": "Vorverzögerung",
 		"reverse": "Rückwärts",
 		"sample_num": "Sample #",
