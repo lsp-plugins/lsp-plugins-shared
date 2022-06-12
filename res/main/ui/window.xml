@@ -82,6 +82,8 @@
 			<void width="12" />
 			<!-- help icon -->
 			<label ui:id="trg_plugin_manual" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="menu_icon_hover" padding.right="6" font.size="12" font.antialias="true" text="6" halign="1" pointer="hand"/>
+			<!-- sizing icon -->
+			<label ui:id="trg_window_scale" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="menu_icon_hover" padding.right="6" font.size="12" font.antialias="true" text="6" halign="1" pointer="size_nesw"/>
 
 		</hbox>
 	</vbox>
