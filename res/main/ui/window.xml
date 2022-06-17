@@ -79,13 +79,17 @@
 			<void expand="true"/>
 			
 			<!-- Jack status -->
-			<hbox ui:id="jack_indicator" visibility="false" spacing="6" padding.right="12">
+			<hbox ui:id="jack_indicator" visibility="false" spacing="6" padding.right="6">
 				<label text="statuses.jack.label" ui:inject="PluginWindow::StatusBar::Label" />
 				<label ui:id="jack_status" text="statuses.jack.off" ui:inject="PluginWindow::StatusBar::Label" />
 			</hbox>
 
 			<!-- Help icon -->
-			<label ui:id="trg_plugin_manual" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="menu_icon_hover" font.size="12" font.antialias="true" text="6" halign="1" pointer="hand"/>
+			<label ui:id="trg_plugin_manual"
+				font.name="lsp-icons" font.size="12" font.antialias="true"
+				text="6"
+				hover="true" color="footer_icon_rsz" hover.color="menu_icon_hover"
+				halign="1" pointer="hand" />
 			
 			<!-- sizing icon -->
 			<label ui:id="trg_window_scale"
