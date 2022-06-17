@@ -647,6 +647,7 @@
 	"thr_eshold_num_id":	"Thr #{@id}",
 	"threads": "Threads",
 	"threshold": "Threshold",
+	"threshold:db": "Threshold\n(dB)",
 	"thresh_gain:db_db": "Thresh, Gain\n(dB, dB)",
 	"thresh_old": "Thresh",
 	"thresh_old:db": "Thresh\n(dB)",
