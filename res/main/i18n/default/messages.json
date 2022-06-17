@@ -33,12 +33,12 @@
 		"1": "The '{@meta_pkg_full_name}' is non-commercial project and needs financial support for the further development.",
 		"2": "You may help the open source collection of plugins to grow by visiting the following link and submitting donations to the project:",
 		"3": "Remember that subscription and regular small donations will give more benefits to the project than one-time donations.",
-		"4": "To not to be very annoying, this dialog will be shown only after each version update of plugins.",
-		"5": "Thanks in advance.",
-		"6": "IMPORTANT!",
-		"7": "According to sanctions against Russian Federation, any foreign currency payments are blocked.",
-		"8": "The project accepts cryptocurrency dontations only. We hope that all other type of donations will be back soon.",
-		"9": "The LSP Plugins Project is speaking out against any armored conflicts."
+		"4": "IMPORTANT!",
+		"5": "According to sanctions against Russian Federation, any foreign currency payments are blocked.",
+		"6": "The project accepts cryptocurrency dontations only. We hope that all other type of donations will be back soon.",
+		"7": "The LSP Plugins Project is speaking out against any armored conflicts.",
+		"8": "To not to be very annoying, this dialog will be shown only after each version update of plugins.",
+		"9": "Thanks in advance."
 	},
 
 	"postscript": "{@meta_pkg_full_name}",
