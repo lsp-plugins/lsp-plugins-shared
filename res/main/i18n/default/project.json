@@ -2,13 +2,11 @@
 	"acronym": "LSP",
 
 	"donations": {
-		"0": "https://liberapay.com/sadko4u/donate",
-		"1": "https://www.patreon.com/sadko4u",
-		"2": "https://paypal.me/sadko4u",
-		"3": "https://etherscan.io/address/0x079b24da78d78302cd3cfbb80c728cd554606cc6",
-		"4": "https://salt.bountysource.com/teams/lsp-plugins"
+		"0": "https://www.blockchain.com/btc/address/15X3AfDRF3EshSLBoK8UfHAsFr2TQsH8pk",
+		"1": "https://etherscan.io/address/0x079b24da78d78302cd3cfbb80c728cd554606cc6",
+		"2": "https://www.patreon.com/sadko4u"
 	},
-	
+
 	"name": "Linux Studio Plugins Project",
 	"url": "https://lsp-plug.in/"
 }

@@ -374,12 +374,39 @@
 
 	"mute": "Mute",
 	"muting": "Muting",
-	
+
 	"name": "Name",
 
 	"noise_floor": "Noise Floor",
 	"noise_floor_left": "Noise Floor Left",
 	"noise_floor_right": "Noise Floor Right",
+
+	"noise_generator": {
+		"channel_selector": "Channel Selector",
+		"global": "Global",
+		"general": "General",
+		"N_type": "Noise Type",
+		"N_mode": "Noise Mode",
+		"N_amplitude": "Noise Amplitude",
+		"N_offset": "Noise Offset",
+		"M_inaudible": "Make Inaudible",
+		"N_specs": "Noise Specific Controls",
+		"distribution": "Distribution",
+		"V_type": "Type",
+		"V_window": "Window",
+		"V_delta": "Delta",
+		"V_crush": "Crush",
+		"V_crush_prob": "Crush Probability",
+		"color": "Color",
+		"slope_npn": "Slope",
+		"slope_dbo": "Slope",
+		"slope_dbd": "Slope",
+		"channel": "Channel",
+		"channel_controls": "Channel Controls",
+		"use_global": "Use Global",
+		"solo": "Solo",
+		"mute": "Mute"
+	},
 
 	"normalize": "Normalize",
 
