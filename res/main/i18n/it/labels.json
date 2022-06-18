@@ -378,6 +378,30 @@
 	"noise_floor": "Fondo Rumore",
 	"noise_floor_left": "Fondo Rumore Sinistro",
 	"noise_floor_right": "Fondo Rumore Destro",
+
+	"noise_generator": {
+		"general": "Generale",
+		"N_type": "Tipo di Rumore",
+		"N_mode": "Modo Rumore",
+		"N_amplitude": "Ampiezza Rumore",
+		"N_offset": "Offset Rumore",
+		"M_inaudible": "Rendi Inaudible",
+		"N_specs": "Controlli Specifici del Rumore",
+		"distribution": "Distribuzione",
+		"V_type": "Tipo",
+		"V_window": "Finestra",
+		"V_delta": "Delta",
+		"V_crush": "Crush",
+		"V_crush_prob": "Probabilità Crush",
+		"color": "Colore",
+		"slope_npn": "Pendenza",
+		"slope_dbo": "Pendenza",
+		"slope_dbd": "Pendenza",
+		"channel": "Canale",
+		"channel_controls": "Controlli Canale",
+		"solo": "Solo",
+		"mute": "Muto"
+	},
 	
 	"normalize": "Normalizza",
 	
