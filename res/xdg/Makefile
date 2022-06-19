@@ -66,7 +66,7 @@ install_xdg:
 	cp -f icons/lsp-plugins/128x128.png  "$(XDG_ICON_PATH)/128x128/apps/lsp-plugins.png"
 	cp -f icons/lsp-plugins/256x256.png  "$(XDG_ICON_PATH)/256x256/apps/lsp-plugins.png"
 	cp -f icons/lsp-plugins/scalable.svg "$(XDG_ICON_PATH)/scalable/apps/lsp-plugins.svg"
-	cp $(FILES) "$(XDG_APP_PATH)/"
+	cp -f $(FILES) "$(XDG_APP_PATH)/"
 	cp -f dirs/lsp-plugins.directory     "$(XDG_DIR_PATH)/lsp-plugins.directory"
 	cat menus/lsp-plugins.menu | sed -E "s/<\\?filelist\\?>/$(XDG_FILE_LIST)/g" > "$(XDG_MENU_PATH)/lsp-plugins.menu"
 
