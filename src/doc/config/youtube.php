@@ -22,7 +22,8 @@ $YOUTUBE = array(
 	'CuySiF1VSj8' => 'Surge Filter & Loudness Compensator',
 	'g8cShrKtmKo' => 'Crossover',
 	'mEP1WyLFruY' => 'Artistic Delay',
-	'MCIpQebU5o4' => 'Oscilloscope'
+	'MCIpQebU5o4' => 'Oscilloscope',
+	'6ZuW28u1qns' => 'Multiband Dynamic Processor'
 );
 
 ?>
