@@ -1,0 +1,27 @@
+{
+	"3d": {
+		"wavefront": "Wavefront 3D Dateiformat (*.obj)"
+	},
+	"all": "Jede Datei (*.*)",
+	"audio": {
+		"all": "Audiodateien (*.wav, *.mp3)",
+		"audio_lspc": "Alle unterstützten Audiocontainer (*.wav, *.lspc)",
+		"supported": "Alle unterstützten Audiodateien (*.wav)",
+		"wave": "Wave Audiodateiformat (*.wav)"
+	},
+	"config": {
+		"lsp": "LSP plugin Konfigurationsdatei (*.cfg)",
+		"lspc": "LSP Datensegmentformat (*.lspc)"
+	},
+	"hydrogen": {
+		"xml": "Hydrogen drumkit Dateibeschreibung (*.xml)"
+	},
+	"roomeqwizard": {
+		"all": "Alle REW Filtereinstellungen (*.req, *.txt)",
+		"req": "REW binäre Filtereinstellungen (*.req)",
+		"txt": "REW Textfiltereinstellungen (*.txt)"
+	},
+	"text": {
+		"txt": "Textdateien (*.txt)"
+	}
+}

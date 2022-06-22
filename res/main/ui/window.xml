@@ -60,29 +60,44 @@
 
 		<hsep ui:inject="PluginWindow::Hsep_header" />
 		<!-- Footer -->
-		<hbox height="20" bg.color="bg_schema">
-			<!-- scale icons +- -->
-			<hbox halign="1" padding.left="6" padding.right="3">
+		<hbox height="20" bg.color="bg_schema" spacing="6">
+			<!-- Sscale icons + and - -->
+			<hbox padding.left="6">
 				<label ui:id="trg_ui_scaling" font.name="lsp-icons" hover="true" color="footer_icon" hover.color="footer_icon_hover" padding.right="10" font.size="12" font.antialias="true" text="7" pointer="hand"/>
 				<label ui:id="trg_ui_zoom_in" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.right="5" expand="false" font.size="10" font.antialias="true" text="B" pointer="hand"/>
 				<label ui:id="trg_ui_zoom_out" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.right="5" expand="false" font.size="10" font.antialias="true" text="C" pointer="hand"/>
 			</hbox>
-			<!-- text scale icons +- -->
-			<hbox halign="1" padding.left="6">
+			
+			<!-- Text scale icons + and - -->
+			<hbox padding.left="3">
 				<label ui:id="trg_font_scaling" font.name="lsp-icons" hover="true" color="footer_icon" hover.color="footer_icon_hover" padding.right="10" font.size="12" font.antialias="true" text="D" pointer="hand"/>
 				<label ui:id="trg_font_zoom_in" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.right="5" expand="false" font.size="10" font.antialias="true" text="B" pointer="hand"/>
 				<label ui:id="trg_font_zoom_out" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.right="5" expand="false" font.size="10" font.antialias="true" text="C" pointer="hand"/>
 			</hbox>
+			
+			<!-- Empty filler -->
 			<void expand="true"/>
+			
 			<!-- Jack status -->
-			<hbox ui:id="jack_indicator" visibility="false" spacing="6">
+			<hbox ui:id="jack_indicator" visibility="false" spacing="6" padding.right="6">
 				<label text="statuses.jack.label" ui:inject="PluginWindow::StatusBar::Label" />
 				<label ui:id="jack_status" text="statuses.jack.off" ui:inject="PluginWindow::StatusBar::Label" />
 			</hbox>
-			<void width="12" />
-			<!-- help icon -->
-			<label ui:id="trg_plugin_manual" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="menu_icon_hover" padding.right="6" font.size="12" font.antialias="true" text="6" halign="1" pointer="hand"/>
 
+			<!-- Help icon -->
+			<label ui:id="trg_plugin_manual"
+				font.name="lsp-icons" font.size="12" font.antialias="true"
+				text="6"
+				hover="true" color="footer_icon_rsz" hover.color="menu_icon_hover"
+				halign="1" pointer="hand" />
+			
+			<!-- sizing icon -->
+			<label ui:id="trg_window_scale"
+				font.name="lsp-icons" font.size="12" font.antialias="true"
+				text="F"
+				hover="true" color="footer_icon_rsz" hover.color="menu_icon_hover"
+				halign="1" pointer="size_nwse"
+				fill="true" ipadding.right="6" />
 		</hbox>
 	</vbox>
 </window>

@@ -1,0 +1,20 @@
+{
+	"about": "Über",
+	
+	"attention": "Achtung",
+	
+	"confirmation": "Bestätigung",
+	
+	"export_settings": "Exporteinstellungen",
+	
+	"import_hydrogen_drumkit": "Importiere Hydrogen drumkit",
+	"import_rew_filter_settings": "Importiere REW Filtereinstellungen",
+	"import_settings": "Importeinstellungen",
+	
+	"load_audio_file": "Lade Audiodatei",
+	"load_from_file": "Lade aus Datei",
+	
+	"save_to_file": "Speichere in Datei",
+	
+	"update_notification": "Update-Benachrichtigung"
+}

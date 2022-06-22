@@ -425,7 +425,8 @@
 
 	"plug": {
 		"calibrator": "Калибратор",
-		"compressor": "Компрессор",	
+		"compressor": "Компрессор",
+		"dyna_processor": "Динамический процессор",	
 		"expander": "Экспандер",
 		"gate": "Гейт",
 		"latency_detector": "Детектор задержки",
@@ -530,6 +531,7 @@
 		"head_cut": "Нач срез",
 		"listen": "Слушать",
 		"makeup": "Громк",
+		"pitch": "Высота",
 		"predelay": "Задерж",
 		"reverse": "Реверс",
 		"sample_num": "№ сэмпла",

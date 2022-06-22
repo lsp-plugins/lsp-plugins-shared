@@ -1,0 +1,42 @@
+{
+	"about": {
+		"copyright": "(C) {@meta_pkg_copyright} 2015-2022.",
+		"description": "Dies ist eine Sammlung von quelloffenen Audio-Plugins.",
+		"info": {
+			"pkg_name": "Paketname:",
+			"pkg_version": "Paketversion:",
+			"plug_name": "Pluginname:",
+			"plug_version": "Pluginversion:"
+		},
+		"values": {
+			"pkg_name": "{@meta_pkg_artifact_name}",
+			"pkg_version": "{@meta_pkg_version}",
+			"plug_name": "{@meta_plugin_description}",
+			"plug_version": "{@meta_plugin_version}"
+		},
+		"license": "Lizensiert unter den Bedingungen der GNU Lesser Public License v3 (LGPLv3):",
+		"license_url": "https://www.gnu.org/licenses/lgpl-3.0.en.html",
+		"support": "Unterstütze das Projekt:"
+	},
+	"file": {
+		"confirm_load": "Möchten Sie wirklich die ausgewählte Datei laden?",
+		"confirm_overwrite": "Die ausgewählte Datei existiert bereits. Überschreiben?",
+		
+		"invalid_name": "Der eingebene Dateiname ist nicht zulässig",
+		
+		"not_exists": "Die ausgewählte Datei existiert nicht",
+		"not_specified": "Der Dateiname ist nicht festgelegt"
+	},
+	
+	"greetings": {
+		"0": "Sie haben die Plugins soeben auf Version {@meta_pkg_version} geupdated!",
+		"1": "The '{@meta_pkg_full_name}' ist ein unkommerzielles Projekt und benötigt finanzielle Unterstützung für die weitere Entwicklung.",
+		"2": "Sie können dieser quelloffenen Pluginsammlung beim Wachsen helfen! Klicken Sie auf den Link und spenden Sie dem Projekt:",
+		"3": "Bedenken Sie, dass ein Abonnement bzw. regelmäßige Kleinspenden diesem Projekt mehr helfen als einmalige Zuwendungen.",
+		"4": "Um nicht allzu nervig zu sein, wird dieser Dialog nur einmal nach jedem Update angezeigt.",
+		"5": "Dank im Voraus."
+	},
+	
+	"postscript": "{@meta_pkg_full_name}",
+	"site": "{@meta_pkg_site}"
+}
