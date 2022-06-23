@@ -30,7 +30,7 @@ namespace lsp
             "v_sadovnikov",
             "SadKo",
             "Vladimir Sadovnikov",
-            "lsp.plugin@gmail.com",
+            "lsp.plugin+sadko@gmail.com",
             "http://lsp-plug.in/"
         };
 
