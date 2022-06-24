@@ -382,6 +382,8 @@
 	"noise_floor_right": "Noise Floor Right",
 
 	"noise_generator": {
+		"channel_selector": "Channel Selector",
+		"global": "Global",
 		"general": "General",
 		"N_type": "Noise Type",
 		"N_mode": "Noise Mode",
@@ -401,6 +403,7 @@
 		"slope_dbd": "Slope",
 		"channel": "Channel",
 		"channel_controls": "Channel Controls",
+		"use_global": "Use Global",
 		"solo": "Solo",
 		"mute": "Mute"
 	},
@@ -558,6 +561,7 @@
 		"head_cut": "Head cut",
 		"listen": "Listen",
 		"makeup": "Makeup",
+		"pitch": "Pitch",
 		"predelay": "Pre-delay",
 		"reverse": "Reverse",
 		"sample_num": "Sample #",

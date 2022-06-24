@@ -279,7 +279,7 @@
 		"reset": "RESET",
 		"save": "SAVE"
 	},
-	
+
 	"history": "History",
 
 	"hold": "Hold",
@@ -505,6 +505,7 @@
 	"ratio": "Ratio",
 	"ratio_high": "Ratio high",
 	"ratio_low": "Ratio low",
+	"ratio_low_high": "Ratio low,\nRatio high",
 	"ratio_knee:db": "Ratio,\nKnee (dB)",
 
 	"reduction": "Reduction",
@@ -644,8 +645,10 @@
 	"tempo_based_feedback_delay": "Tempo-Based Feedback Delay",
 
 	"thr_eshold": "Thr",
+	"thr_eshold_num_id": "Thr #{@id}",
 	"threads": "Threads",
 	"threshold": "Threshold",
+	"threshold:db": "Threshold\n(dB)",
 	"thresh_gain:db_db": "Thresh, Gain\n(dB, dB)",
 	"thresh_old": "Thresh",
 	"thresh_old:db": "Thresh\n(dB)",
