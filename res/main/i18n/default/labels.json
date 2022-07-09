@@ -527,6 +527,7 @@
 	"search": "Search",
 	"sedit": {
 		"active": "Active",
+		"compensate": "Compensate",
 		"disabled": "Disabled",
 		"enabled": "Enabled",
 		"fade_in": "Fade in",
@@ -538,6 +539,11 @@
 		"predelay": "Pre-delay",
 		"reverse": "Reverse",
 		"sample_num": "Sample #",
+		"stretch": "Stretch",
+		"stretch_chunk": "Chunk size",
+		"stretch_end": "End",
+		"stretch_fade": "Fade length",
+		"stretch_start": "Start",
 		"tail_cut": "Tail cut"
 	},
 	"settings": "Settings",
