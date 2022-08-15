@@ -208,13 +208,13 @@
 		"feed_forward": "Feed-forward",
 		"internal": "Intern",
 		"left": "Links",
-		"lowpass": "Low-Pass",
+		"lpf": "LPF",
 		"middle": "Mitte",
 		"peak": "Peak",
 		"right": "Rechts",
 		"rms": "RMS",
 		"side": "Seite",
-		"uniform": "Uniform"
+		"sma": "SMA"
 	},
 	
 	"spectrum": {
