@@ -271,14 +271,14 @@
 		"trigger": "ГРАФИК ТРИГГЕРА"
 	},
 	"group": "Группа",
-	
+
 	"header": {
 		"about": "ИНФО",
 		"load": "ЗАГР",
 		"menu": "МЕНЮ",
 		"reset": "СБРОС",
 		"save": "СОХР"
-    },
+	},
 
 	"history": "История",
 
@@ -286,6 +286,8 @@
 	"host_bpm": "УВМ хоста",
 
 	"hysteresis": "Гистерезис",
+
+	"hz_db": "(Гц, дБ)",
 
 	"input": "Вход",
 	"input_level:db": "Входной уровень (дБ)",
@@ -372,7 +374,7 @@
 
 	"mute": "Глушение",
 	"muting": "Глушение",
-	
+
 	"name": "Название",
 
 	"noise_floor": "Шумовой порог",
@@ -401,7 +403,7 @@
 		"max_dots": "Макс точек",
 		"mode": "Режим",
 		"oversampler_mode": "Оверсемплинг",
-		"position": "Position",
+		"position": "Позиция",
 		"sweep_type": "Ход луча",
 		"trigger_hold_time": "Время удерж",
 		"trigger_hysteresis": "Гистерезис",
@@ -615,8 +617,10 @@
 	"tempo_based_feedback_delay": "Задержка по темпу обратной связи",
 
 	"thr_eshold": "Пор",
+	"thr_eshold_num_id": "Пор №{@id}",
 	"threads": "Потоков",
 	"threshold": "Порог",
+	"threshold:db": "Порог\n(дБ)",
 	"thresh_gain:db_db": "Порог, Усил\n(дБ, дБ)",
 	"thresh_old": "Порог",
 	"thresh_old:db": "Порог\n(дБ)",

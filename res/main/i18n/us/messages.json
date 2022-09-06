@@ -21,13 +21,13 @@
 	"file": {
 		"confirm_load": "Do you really want to load the selected file?",
 		"confirm_overwrite": "The selected file already exists. Overwrite?",
-		
+
 		"invalid_name": "The entered file name is not valid",
-		
+
 		"not_exists": "The selected file does not exist",
 		"not_specified": "The file name is not specified"
 	},
-	
+
 	"greetings": {
 		"0": "You've just updated plugins to version {@meta_pkg_version}!",
 		"1": "The '{@meta_pkg_full_name}' is non-commercial project and needs financial support for the further development.",
@@ -40,7 +40,7 @@
 		"8": "To not to be very annoying, this dialog will be shown only after each version update of plugins.",
 		"9": "Thanks in advance."
 	},
-	
+
 	"postscript": "{@meta_pkg_full_name}",
 	"site": "{@meta_pkg_site}"
 }

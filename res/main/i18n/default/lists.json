@@ -3,7 +3,7 @@
 		"off": "off",
 		"on": "on"
 	},
-	
+
 	"dither": {
         "none": "None",
         "bits": {
@@ -208,13 +208,13 @@
 		"feed_forward": "Feed-forward",
 		"internal": "Internal",
 		"left": "Left",
-		"lowpass": "Low-Pass",
+		"lpf": "LPF",
 		"middle": "Middle",
 		"peak": "Peak",
 		"right": "Right",
 		"rms": "RMS",
 		"side": "Side",
-		"uniform": "Uniform"
+		"sma": "SMA"
 	},
 	
 	"spectrum": {

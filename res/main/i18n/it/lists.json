@@ -208,13 +208,13 @@
 		"feed_forward": "Feed-forward",
 		"internal": "Interno",
 		"left": "Sinistra",
-		"lowpass": "Passa Basso",
+		"lpf": "LPF",
 		"middle": "Centro",
 		"peak": "Picco",
 		"right": "Destra",
 		"rms": "RMS",
 		"side": "Laterale",
-		"uniform": "Uniforme"
+		"sma": "SMA"
 	},
 	
 	"spectrum": {

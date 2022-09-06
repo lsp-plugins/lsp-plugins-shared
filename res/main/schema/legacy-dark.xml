@@ -15,7 +15,7 @@
 
 	<!-- Constants -->
 	<constants>
-		<bg_darken value="1.0" />
+		<bg_darken value="1.0"/>
 	</constants>
 
 	<!-- Color aliases -->
@@ -159,9 +159,9 @@
 		<graph_marker value="#dc615a"/>
 
 		<!-- Area3d -->
-		<area3d_x value="#ff0000" />
-		<area3d_y value="#00ff00" />
-		<area3d_z value="#0000ff" />
+		<area3d_x value="#ff0000"/>
+		<area3d_y value="#00ff00"/>
+		<area3d_z value="#0000ff"/>
 
 		<!-- Group -->
 		<text_group value="#8488a3"/>
@@ -272,19 +272,19 @@
 		<gray_inactive value="#4f5055"/>
 
 		<!-- Metering -->
-		<meter_red value="#ff0000" />
-		<meter_yellow value="#ffff00" />
-		<meter_normal value="#00ff00" />
+		<meter_red value="#ff0000"/>
+		<meter_yellow value="#ffff00"/>
+		<meter_normal value="#00ff00"/>
 
 		<!-- AudioSample -->
-		<as_ch1 value="#67282e" />
-		<as_ch2 value="#223c76" />
-		<as_ch3 value="#0e4716" />
-		<as_ch4 value="#493c00" />
-		<as_ch5 value="#701c3a" />
-		<as_ch6 value="#00464c" />
-		<as_ch7 value="#601c7d" />
-		<as_ch8 value="#5d310c" />
+		<as_ch1 value="#67282e"/>
+		<as_ch2 value="#223c76"/>
+		<as_ch3 value="#0e4716"/>
+		<as_ch4 value="#493c00"/>
+		<as_ch5 value="#701c3a"/>
+		<as_ch6 value="#00464c"/>
+		<as_ch7 value="#601c7d"/>
+		<as_ch8 value="#5d310c"/>
 		<fade_in value="#2abecc"/>
 		<fade_out value="#2abecc"/>
 
@@ -306,7 +306,7 @@
 		<font.name value="noto-sans-display"/>
 		<font.antialiasing value="true"/>
 		<font.size value="12.0"/>
-		<color.hue.control value="HCL" />
+		<color.hue.control value="HCL"/>
 	</root>
 
 	<!-- Windows -->
@@ -480,7 +480,7 @@
 
 		<hole.color value="bg"/>
 		<led value="0"/>
-    <led.color value="cyan"/>
+		<led.color value="cyan"/>
 
 		<font.size value="10"/>
 		<text.padding.left value="4"/>
@@ -490,37 +490,37 @@
 
 	<style class="Button_gray" parents="Button">
 		<down.color value="dark_gray"/>
-	<down.hover.color value="dark_gray"/>
+		<down.hover.color value="dark_gray"/>
 
-	<text.down.color value="bright_gray"/>
-	<text.down.hover.color value="bright_gray"/>
+		<text.down.color value="bright_gray"/>
+		<text.down.hover.color value="bright_gray"/>
 
-	<border.down.color value="bright_gray"/>
-	<border.down.hover.color value="gray"/>
+		<border.down.color value="bright_gray"/>
+		<border.down.hover.color value="gray"/>
 		<led.color value="gray"/>
 	</style>
 
 	<style class="Button_red" parents="Button">
 		<down.color value="dark_red"/>
-	<down.hover.color value="dark_red"/>
+		<down.hover.color value="dark_red"/>
 
-	<text.down.color value="bright_red"/>
-	<text.down.hover.color value="bright_red"/>
+		<text.down.color value="bright_red"/>
+		<text.down.hover.color value="bright_red"/>
 
-	<border.down.color value="bright_red"/>
-	<border.down.hover.color value="red"/>
+		<border.down.color value="bright_red"/>
+		<border.down.hover.color value="red"/>
 		<led.color value="red"/>
 	</style>
 
 	<style class="Button_orange" parents="Button">
 		<down.color value="dark_orange"/>
-	<down.hover.color value="dark_orange"/>
+		<down.hover.color value="dark_orange"/>
 
-	<text.down.color value="bright_orange"/>
-	<text.down.hover.color value="bright_orange"/>
+		<text.down.color value="bright_orange"/>
+		<text.down.hover.color value="bright_orange"/>
 
-	<border.down.color value="bright_orange"/>
-	<border.down.hover.color value="orange"/>
+		<border.down.color value="bright_orange"/>
+		<border.down.hover.color value="orange"/>
 		<led.color value="orange"/>
 	</style>
 
@@ -831,39 +831,39 @@
 	</style>
 
 	<style class="Button_gray_6" parents="Button_gray">
-	  <font.size value="6"/>
+		<font.size value="6"/>
 	</style>
 
 	<style class="Button_red_6" parents="Button_red">
-	  <font.size value="6"/>
+		<font.size value="6"/>
 	</style>
 
 	<style class="Button_green_6" parents="Button_green">
-	  <font.size value="6"/>
+		<font.size value="6"/>
 	</style>
 
 	<style class="Button_orange_6" parents="Button_orange">
-	  <font.size value="6"/>
+		<font.size value="6"/>
 	</style>
 
 	<style class="Button_yellow_6" parents="Button_yellow">
-	  <font.size value="6"/>
+		<font.size value="6"/>
 	</style>
 
 	<style class="Button_cyan_6" parents="Button_cyan">
-	  <font.size value="6"/>
+		<font.size value="6"/>
 	</style>
 
 	<style class="Button_blue_6" parents="Button_blue">
-	  <font.size value="6"/>
+		<font.size value="6"/>
 	</style>
 
 	<style class="Button_violet_6" parents="Button_violet">
-	  <font.size value="6"/>
+		<font.size value="6"/>
 	</style>
 
 	<style class="Button_magenta_6" parents="Button_magenta">
-	  <font.size value="6"/>
+		<font.size value="6"/>
 	</style>
 
 	<style class="Button_mono_6" parents="Button_mono">
@@ -871,63 +871,63 @@
 	</style>
 
 	<style class="Button_left_6" parents="Button_left">
-	  <font.size value="6"/>
+		<font.size value="6"/>
 	</style>
 
 	<style class="Button_right_6" parents="Button_right">
-	  <font.size value="6"/>
+		<font.size value="6"/>
 	</style>
 
 	<style class="Button_side_6" parents="Button_side">
-	  <font.size value="6"/>
+		<font.size value="6"/>
 	</style>
 
 	<style class="Button_mid_6" parents="Button_mid">
-	  <font.size value="6"/>
+		<font.size value="6"/>
 	</style>
 
 	<style class="Button_dry_6" parents="Button_dry">
-	  <font.size value="6"/>
+		<font.size value="6"/>
 	</style>
 
 	<style class="Button_ne_left_8" parents="Button_ne_left">
-	  <font.size value="8"/>
+		<font.size value="8"/>
 	</style>
 
 	<style class="Button_ne_right_8" parents="Button_ne_right">
-	  <font.size value="8"/>
+		<font.size value="8"/>
 	</style>
 
 	<style class="Button_ne_side_8" parents="Button_ne_side">
-	  <font.size value="8"/>
+		<font.size value="8"/>
 	</style>
 
 	<style class="Button_ne_mid_8" parents="Button_ne_mid">
-	  <font.size value="8"/>
+		<font.size value="8"/>
 	</style>
 
 	<style class="Button_ne_dry_8" parents="Button_ne_dry">
-	  <font.size value="8"/>
+		<font.size value="8"/>
 	</style>
 
 	<style class="Button_ne_left_6" parents="Button_ne_left">
-	  <font.size value="6"/>
+		<font.size value="6"/>
 	</style>
 
 	<style class="Button_ne_right_6" parents="Button_ne_right">
-	  <font.size value="6"/>
+		<font.size value="6"/>
 	</style>
 
 	<style class="Button_ne_side_6" parents="Button_ne_side">
-	  <font.size value="6"/>
+		<font.size value="6"/>
 	</style>
 
 	<style class="Button_ne_mid_6" parents="Button_ne_mid">
-	  <font.size value="6"/>
+		<font.size value="6"/>
 	</style>
 
 	<style class="Button_ne_dry_6" parents="Button_ne_dry">
-	  <font.size value="6"/>
+		<font.size value="6"/>
 	</style>
 
 	<style class="Button_Cycle" parents="Button_gray_8">
@@ -940,7 +940,6 @@
 		<border.down.color value="bright_red"/>
 		<border.down.hover.color value="red"/>
 	</style>
-
 
 	<style class="Button_Cycle_8" parents="Button_Cycle">
 		<font.size value="8"/>
@@ -959,9 +958,9 @@
 	</style>
 
 	<style class="Capture3D" parents="root">
-		<color value="cyan" />
-		<line.color value="cyan" />
-		<point.color value="cyan" />
+		<color value="cyan"/>
+		<line.color value="cyan"/>
+		<point.color value="cyan"/>
 	</style>
 
 	<style class="CheckBox" parents="root">
@@ -1049,12 +1048,12 @@
 
 	<style class="GraphDot" parents="root">
 		<smooth value="true"/>
-		<border.size value="5" />
-		<size value="3" />
+		<border.size value="5"/>
+		<size value="3"/>
 		<color value="cyan"/>
 		<border.color value="cyan"/>
-		<hover.size value="3" />
-		<hover.border.size value="10" />
+		<hover.size value="3"/>
+		<hover.border.size value="10"/>
 		<hover.color value="cyan"/>
 		<hover.border.color value="cyan"/>
 	</style>
@@ -1076,7 +1075,7 @@
 
 	<style class="GraphText" parents="root">
 		<padding value="2"/>
-		<color value="graph_prim" />
+		<color value="graph_prim"/>
 	</style>
 
 	<style class="Grid" parents="root">
@@ -1183,55 +1182,54 @@
 	</style>
 
 	<style class="FileButton" parents="root">
-		<color value="text_sec" />
-		<inv.color value="text_sec" />
-		<text.color value="text_sec" />
-		<text.inv.color value="text_sec" />
-		<line.color value="bg_schema" />
-		<line.inv.color value="bg_schema" />
+		<color value="text_sec"/>
+		<inv.color value="text_sec"/>
+		<text.color value="text_sec"/>
+		<text.inv.color value="text_sec"/>
+		<line.color value="bg_schema"/>
+		<line.inv.color value="bg_schema"/>
 		<border.size value="0"/>
 		<border.pressed.size value="2"/>
-		<border.color value="bg_schema" />
-		<border.inv.color value="bg_schema" />
-		<gradient value="false" />
-		<bg.inherit value="true" />
-		<pointer value="true" />
+		<border.color value="bg_schema"/>
+		<border.inv.color value="bg_schema"/>
+		<gradient value="false"/>
+		<bg.inherit value="true"/>
+		<pointer value="true"/>
 	</style>
 
-	<style class="FileButton::Select" parents="FileButton">
-	</style>
+	<style class="FileButton::Select" parents="FileButton"></style>
 
 	<style class="FileButton::Progress" parents="FileButton">
-		<color value="cyan" />
-		<inv.color value="orange" />
-		<text.color value="cyan" />
-		<text.inv.color value="orange" />
-		<line.color value="bg_schema" />
-		<line.inv.color value="bg_schema" />
+		<color value="cyan"/>
+		<inv.color value="orange"/>
+		<text.color value="cyan"/>
+		<text.inv.color value="orange"/>
+		<line.color value="bg_schema"/>
+		<line.inv.color value="bg_schema"/>
 	</style>
 
 	<style class="FileButton::Success" parents="FileButton">
-		<color value="cyan" />
-		<text.color value="cyan" />
-		<inv.color value="cyan" />
-		<text.inv.color value="cyan" />
-		<line.color value="bg_schema" />
-		<line.inv.color value="bg_schema" />
+		<color value="cyan"/>
+		<text.color value="cyan"/>
+		<inv.color value="cyan"/>
+		<text.inv.color value="cyan"/>
+		<line.color value="bg_schema"/>
+		<line.inv.color value="bg_schema"/>
 	</style>
 
 	<style class="FileButton::Error" parents="FileButton">
-		<color value="red" />
-		<inv.color value="red" />
-		<text.color value="red" />
-		<text.inv.color value="red" />
-		<line.color value="bg_schema" />
-		<line.inv.color value="bg_schema" />
+		<color value="red"/>
+		<inv.color value="red"/>
+		<text.color value="red"/>
+		<text.inv.color value="red"/>
+		<line.color value="bg_schema"/>
+		<line.inv.color value="bg_schema"/>
 	</style>
 
 	<style class="Fraction" parents="root">
-		<color value="text_sec" />
-		<num.color value="text_sec" />
-		<den.color value="text_sec" />
+		<color value="text_sec"/>
+		<num.color value="text_sec"/>
+		<den.color value="text_sec"/>
 		<bg.inherit value="true"/>
 		<pointer value="hand"/>
 	</style>
@@ -1273,30 +1271,30 @@
 	</style>
 
 	<style class="LedMeter" parents="root">
-		<text.visible value="true" />
+		<text.visible value="true"/>
 		<color value="bg"/>
 		<bg.color value="bg"/>
 	</style>
 
 	<style class="LedMeterChannel" parents="root">
-		<text.visible value="true" />
+		<text.visible value="true"/>
 		<value value="0.0f, 0.0f, 1.0f"/>
-	  <peak value="0.0f"/>
-	  <balance value="0.5f"/>
-	  <color value="white"/>
-	  <value.color value="cyan"/>
-	  <peak.color value="red"/>
-	  <text.color value="cyan"/>
-	  <balance.color value="yellow"/>
-	  <peak.visible value="false"/>
-	  <balance.visible value="false"/>
-	  <reversive value="false"/>
-	  <active value="true"/>
-	  <segments.min value="12"/>
-	  <constraints value="20, -1, 20, -1"/>
-	  <font value="9.0f"/>
-	  <border value="2"/>
-	  <angle value="0"/>
+		<peak value="0.0f"/>
+		<balance value="0.5f"/>
+		<color value="white"/>
+		<value.color value="cyan"/>
+		<peak.color value="red"/>
+		<text.color value="cyan"/>
+		<balance.color value="yellow"/>
+		<peak.visible value="false"/>
+		<balance.visible value="false"/>
+		<reversive value="false"/>
+		<active value="true"/>
+		<segments.min value="12"/>
+		<constraints value="20, -1, 20, -1"/>
+		<font value="9.0f"/>
+		<border value="2"/>
+		<angle value="0"/>
 	</style>
 
 	<style class="MultiLabel" parents="root">
@@ -1396,6 +1394,8 @@
 		<bg.selected.color value="border_color"/>
 		<text.color value="text_prim"/>
 		<text.selected.color value="text_sec"/>
+		<bg.hover.color value="bg_light"/>
+		<text.hover.color value="text_sec"/>
 	</style>
 
 	<style class="Menu" parents="root">
@@ -1416,7 +1416,7 @@
 	</style>
 
 	<style class="RackEars" parents="root"></style>
-	
+
 	<style class="ScrollArea" parents="root"></style>
 
 	<style class="ScrollBar" parents="root">
@@ -1442,7 +1442,7 @@
 	</style>
 
 	<style class="TempoTap" parents="Button">
-		<mode value="trigger" />
+		<mode value="trigger"/>
 	</style>
 
 	<style class="LabelChannel" parents="Label">
@@ -1487,9 +1487,9 @@
 	</style>
 
 	<style class="Origin3D" parents="root">
-		<x.color value="area3d_x" />
-		<y.color value="area3d_y" />
-		<z.color value="area3d_z" />
+		<x.color value="area3d_x"/>
+		<y.color value="area3d_y"/>
+		<z.color value="area3d_z"/>
 	</style>
 
 	<style class="ProgressBar" parents="root">
@@ -1509,9 +1509,9 @@
 	</style>
 
 	<style class="Source3D" parents="root">
-		<color value="cyan" />
-		<line.color value="cyan" />
-		<point.color value="cyan" />
+		<color value="cyan"/>
+		<line.color value="cyan"/>
+		<point.color value="cyan"/>
 	</style>
 
 	<style class="Switch" parents="root"></style>
@@ -1523,11 +1523,11 @@
 	</style>
 
 	<style class="FileDialog::ActionButton" parents="Button"></style>
-	
+
 	<style class="FileDialog::ActionBox" parents="Box">
 		<spacing value="4"/>
 	</style>
-	
+
 	<style class="FileDialog::Bookmark" parents="Hyperlink"></style>
 
 	<style class="FileDialog::Bookmark.selected" parents="FileDialog::Bookmark">
@@ -1536,35 +1536,35 @@
 	</style>
 
 	<style class="FileDialog::BookmarkArea" parents="ScrollArea"></style>
-	
+
 	<style class="FileDialog::BookmarkBox" parents="Box"></style>
 
 	<style class="FileDialog::ExtCheck" parents="CheckBox">
 		<color value="text_prim"/>
 	</style>
-	
+
 	<style class="FileDialog::FileList" parents="ListBox"></style>
 
 	<style class="FileDialog::FilterComboBox" parents="ComboBox">
 		<border.color value="border_color"/>
 	</style>
-	
+
 	<style class="FileDialog::Label" parents="Label"></style>
-	
+
 	<style class="FileDialog::MainGrid" parents="Grid"></style>
-	
+
 	<style class="FileDialog::NavBox" parents="Box">
 		<spacing value="2"/>
 	</style>
 
 	<style class="FileDialog::NavButton" parents="Button"></style>
-	
+
 	<style class="FileDialog::NavLabel" parents="Label"></style>
-	
+
 	<style class="FileDialog::OptionBox" parents="Box"></style>
-	
+
 	<style class="FileDialog::OptionSeparator" parents="Separator"></style>
-	
+
 	<style class="FileDialog::Path" parents="Edit">
 		<border.size value="1"/>
 		<border.gap.size value="1"/>
@@ -1575,7 +1575,7 @@
 		<border.color value="border_color"/>
 		<border.gap.color value="bg_light"/>
 	</style>
-	
+
 	<style class="FileDialog::Search" parents="Edit">
 		<border.size value="1"/>
 		<border.gap.size value="1"/>
@@ -1586,7 +1586,7 @@
 		<border.color value="border_color"/>
 		<border.gap.color value="bg_light"/>
 	</style>
-	
+
 	<style class="FileDialog::Warning" parents="root">
 		<text.color value="warn"/>
 	</style>
@@ -1726,7 +1726,7 @@
 		<allocation.vfill value="true"/>
 		<text.layout.halign value="1.0"/>
 	</style>
-	
+
 	<!-- AboutDialog widget -->
 	<style class="AboutDialog" parents="Window">
 		<padding value="16"/>
@@ -1748,7 +1748,7 @@
 		<allocation.vfill value="true"/>
 		<text.layout.halign value="-1.0"/>
 	</style>
-	
+
 	<style class="AboutDialog::Hlink" parents="Hyperlink">
 		<allocation.hfill value="true"/>
 		<allocation.vfill value="true"/>
@@ -1822,30 +1822,30 @@
 	</style>
 
 	<style class="PluginWindow::ResetMenu" parents="Menu">
-		<bg.color value="yellow" />
+		<bg.color value="yellow"/>
 		<ipadding.top value="0"/>
 		<ipadding.bottom value="0"/>
 		<ipadding.left value="0"/>
 		<ipadding.right value="0"/>
 	</style>
-	
+
 	<style class="PluginWindow::ResetMenu::Reset" parents="MenuItem">
-		<bg.color value="yellow" />
+		<bg.color value="yellow"/>
 		<bg.selected.color value="red"/>
 		<text.color value="bg"/>
 		<text.selected.color value="bg"/>
 	</style>
 
 	<style class="PluginWindow::StatusBar::Label" parents="Label">
-		<text.color value="footer_icon" />
+		<text.color value="footer_icon"/>
 	</style>
-	
+
 	<style class="PluginWindow::StatusBar::Label::OK" parents="PluginWindow::StatusBar::Label">
-		<text.color value="green" />
+		<text.color value="green"/>
 	</style>
-	
+
 	<style class="PluginWindow::StatusBar::Label::FAIL" parents="PluginWindow::StatusBar::Label">
-		<text.color value="red" />
+		<text.color value="red"/>
 	</style>
-	
+
 </schema>

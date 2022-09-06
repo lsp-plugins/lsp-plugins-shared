@@ -194,13 +194,13 @@
 		"feed_forward": "Inyección",
 		"internal": "Interno",
 		"left": "Izquierda",
-		"lowpass": "Paso Bajo",
+		"lpf": "LPF",
 		"middle": "Centro",
 		"peak": "Pico",
 		"right": "Derecha",
 		"rms": "RMS",
 		"side": "Lateral",
-		"uniform": "Uniforme"
+		"sma": "SMA"
 	},
 	
 	"spectrum": {
