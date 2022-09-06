@@ -60,7 +60,7 @@
 						<label ui:inject="AboutDialog::Text" text="messages.about.support" />
 					</cell>
 					
-					<ui:for id="i" first="0" count="5">
+					<ui:for id="i" first="0" count="3">
 						<cell cols="2">
 							<hlink ui:inject="AboutDialog::Hlink"
 								text="project.donations.${i}"
