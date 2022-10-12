@@ -1532,6 +1532,11 @@
 	<style class="FileDialog::BookmarkArea" parents="ScrollArea"></style>
 
 	<style class="FileDialog::BookmarkBox" parents="Box"></style>
+	
+	<style class="FileDialog::BookmarkLabel" parents="Label">
+		<allocation.hfill value="true" />
+		<text.layout.halign value="-1.0f" />
+	</style>
 
 	<style class="FileDialog::ExtCheck" parents="CheckBox">
 		<color value="text_prim"/>
@@ -1548,7 +1553,7 @@
 	</style>
 
 	<style class="FileDialog::Label" parents="Label"></style>
-
+	
 	<style class="FileDialog::MainGrid" parents="Grid"></style>
 
 	<style class="FileDialog::NavBox" parents="Box">
