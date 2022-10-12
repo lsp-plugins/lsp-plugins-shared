@@ -671,6 +671,7 @@
 		"x_khz": "{@value} кГц",
 		"x_pc": "{@value%.2f} %"
 	},
+	"volume_list": "Томы",
 
 	"warning": {
 		"all_values_good": "Все параметры в допустимых пределах.",

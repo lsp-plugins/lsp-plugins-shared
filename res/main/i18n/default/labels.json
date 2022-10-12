@@ -672,6 +672,7 @@
 		"x_khz": "{@value} kHz",
 		"x_pc": "{@value%.2f} %"
 	},
+	"volume_list": "Volumes",
 
 	"warning": {
 		"all_values_good": "All values are in acceptable range.",
