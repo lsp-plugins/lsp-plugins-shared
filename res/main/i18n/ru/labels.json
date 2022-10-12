@@ -526,6 +526,7 @@
 	"search": "Поиск",
 	"sedit": {
 		"active": "Активен",
+		"compensate": "Компенсация",
 		"disabled": "Выключен",
 		"enabled": "Включён",
 		"fade_in": "Нараст",
@@ -537,6 +538,12 @@
 		"predelay": "Задерж",
 		"reverse": "Реверс",
 		"sample_num": "№ сэмпла",
+		"stretch": "Растяжение",
+		"stretch_chunk": "Размер блока",
+		"stretch_end": "Конец",
+		"stretch_fade": "Длина затухания",
+		"stretch_fade_type": "Тип затухания",
+		"stretch_start": "Start",
 		"tail_cut": "Кон срез"
 	},
 	"settings": "Настройки",

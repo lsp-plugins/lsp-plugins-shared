@@ -69,6 +69,11 @@
 		}
 	},
 	
+	"fade": {
+		"const_power": "Constant power",
+		"linear": "Linear"
+	},
+	
 	"fft": {
 		"env": {
 			"blue": "Blue noise",
