@@ -543,6 +543,7 @@
 		"stretch_chunk": "Chunk size",
 		"stretch_end": "End",
 		"stretch_fade": "Fade length",
+		"stretch_fade_type": "Fade type",
 		"stretch_start": "Start",
 		"tail_cut": "Tail cut"
 	},
