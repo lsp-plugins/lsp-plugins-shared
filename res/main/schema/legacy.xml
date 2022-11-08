@@ -343,6 +343,10 @@
 		<fade_out.color value="#88ffff00"/>
 		<fade_in.border.color value="#ffff00"/>
 		<fade_out.border.color value="#ffff00"/>
+		<stretch.color value="#8800ff00" />
+		<stretch.border.color value="#00ff00" />
+		<loop.color value="#8800ffff" />
+		<loop.border.color value="#00ffff" />
 	</style>
 
 	<style class="AudioSample" parents="root">
@@ -364,6 +368,8 @@
 		<fade_in.border value="1"/>
 		<fade_out.border value="1"/>
 		<wave.border value="1"/>
+		<stretch.border value="1" />
+		<loop.border value="1" />
 
 		<label.0.layout.halign value="-1"/>
 		<label.0.layout.valign value="1"/>
