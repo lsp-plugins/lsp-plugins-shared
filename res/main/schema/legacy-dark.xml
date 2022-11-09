@@ -287,6 +287,8 @@
 		<as_ch8 value="#5d310c"/>
 		<fade_in value="#2abecc"/>
 		<fade_out value="#2abecc"/>
+		<stretch value="#a49851" />
+		<loop value="#23b270" />
 
 		<!-- Cycle colors -->
 		<cycle value="#d8412a"/>
@@ -336,14 +338,22 @@
 	</style>
 
 	<style class="AudioChannel" parents="root">
-		<fade_in.color value="#aa2abecc"/>
-		<fade_out.color value="#aa2abecc"/>
-		<fade_in.border.color value="#aa2abecc"/>
-		<fade_out.border.color value="#aa2abecc"/>
-		<stretch.color value="#8800ff00" />
-		<stretch.border.color value="#00ff00" />
-		<loop.color value="#8800ffff" />
-		<loop.border.color value="#00ffff" />
+		<head_cut.color value="#dd2abecc"/>
+		<head_cut.border.color value="#882abecc"/>
+		<tail_cut.color value="#dd2abecc"/>
+		<tail_cut.border.color value="#882abecc"/>
+		<fade_in.color value="#dd2abecc"/>
+		<fade_out.color value="#dd2abecc"/>
+		<fade_in.border.color value="#882abecc"/>
+		<fade_out.border.color value="#882abecc"/>
+		<stretch.color value="#cca49851" />
+		<stretch.border.color value="#44a49851" />
+		<stretch.color.off value="#eea49851" />
+		<stretch.border.color.off value="#bba49851" />
+		<loop.color value="#dd23b270" />
+		<loop.border.color value="#8823b270" />
+		<loop.color.off value="#ee23b270" />
+		<loop.border.color.off value="#bb23b270" />
 	</style>
 
 	<style class="AudioSample" parents="root">
@@ -673,6 +683,30 @@
 		<border.down.color value="bright_yellow"/>
 		<border.down.hover.color value="yellow"/>
 		<led.color value="yellow"/>
+	</style>
+
+	<style class="Button_stretch" parents="Button">
+		<down.color value="#5e562b"/>
+		<down.hover.color value="#5e562b"/>
+
+		<text.down.color value="#a49851"/>
+		<text.down.hover.color value="#a49851"/>
+
+		<border.down.color value="#a49851"/>
+		<border.down.hover.color value="#8b8144"/>
+		<led.color value="#8b8144"/>
+	</style>
+
+	<style class="Button_loop" parents="Button">
+		<down.color value="#0f633c"/>
+		<down.hover.color value="#0f633c"/>
+
+		<text.down.color value="#23b270"/>
+		<text.down.hover.color value="#23b270"/>
+
+		<border.down.color value="#23b270"/>
+		<border.down.hover.color value="#1b935c"/>
+		<led.color value="#1b935c"/>
 	</style>
 
 	<style class="Button_ne_left" parents="Button">
@@ -1544,7 +1578,7 @@
 	<style class="FileDialog::BookmarkArea" parents="ScrollArea"></style>
 
 	<style class="FileDialog::BookmarkBox" parents="Box"></style>
-	
+
 	<style class="FileDialog::BookmarkLabel" parents="Label">
 		<allocation.hfill value="true" />
 		<text.layout.halign value="-1.0f" />

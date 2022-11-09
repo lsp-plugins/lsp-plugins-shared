@@ -290,6 +290,8 @@
 		<as_ch8 value="#290066" />
 		<fade_in value="#ffff00"/>
 		<fade_out value="#ffff00"/>
+		<stretch value="#0088ff" />
+		<loop value="#8800ff" />
 
 		<!-- Cycle colors -->
 		<cycle value="#ff0000"/>
@@ -339,14 +341,22 @@
 	</style>
 
 	<style class="AudioChannel" parents="root">
+		<head_cut.color value="#88ffff00"/>
+		<head_cut.border.color value="#ffff00"/>
+		<tail_cut.color value="#88ffff00"/>
+		<tail_cut.border.color value="#ffff00"/>
 		<fade_in.color value="#88ffff00"/>
 		<fade_out.color value="#88ffff00"/>
 		<fade_in.border.color value="#ffff00"/>
 		<fade_out.border.color value="#ffff00"/>
-		<stretch.color value="#8800ff00" />
-		<stretch.border.color value="#00ff00" />
-		<loop.color value="#8800ffff" />
-		<loop.border.color value="#00ffff" />
+		<stretch.color value="#880088ff" />
+		<stretch.border.color value="#0088ff" />
+		<stretch.color.off value="#ee0088ff" />
+		<stretch.border.color.off value="#880088ff" />
+		<loop.color value="#888800ff" />
+		<loop.border.color value="#8800ff" />
+		<loop.color.off value="#ee8800ff" />
+		<loop.border.color.off value="#888800ff" />
 	</style>
 
 	<style class="AudioSample" parents="root">
@@ -684,6 +694,30 @@
 		<border.down.color value="bright_yellow"/>
 		<border.down.hover.color value="yellow"/>
 		<led.color value="yellow"/>
+	</style>
+
+	<style class="Button_stretch" parents="Button">
+		<down.color value="#0070d2"/>
+		<down.hover.color value="#0070d2"/>
+
+		<text.down.color value="bg"/>
+		<text.down.hover.color value="bg"/>
+
+		<border.down.color value="#0088ff"/>
+		<border.down.hover.color value="#007ce9"/>
+		<led.color value="#007ce9"/>
+	</style>
+
+	<style class="Button_loop" parents="Button">
+		<down.color value="#7000d2"/>
+		<down.hover.color value="#7000d2"/>
+
+		<text.down.color value="bg"/>
+		<text.down.hover.color value="bg"/>
+
+		<border.down.color value="#8800ff"/>
+		<border.down.hover.color value="#7c00e9"/>
+		<led.color value="#7c00e9"/>
 	</style>
 
 	<style class="Button_ne_left" parents="Button">
@@ -1550,7 +1584,7 @@
 	<style class="FileDialog::BookmarkArea" parents="ScrollArea"></style>
 
 	<style class="FileDialog::BookmarkBox" parents="Box"></style>
-	
+
 	<style class="FileDialog::BookmarkLabel" parents="Label">
 		<allocation.hfill value="true" />
 		<text.layout.halign value="-1.0f" />
