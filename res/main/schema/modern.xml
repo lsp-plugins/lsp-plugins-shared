@@ -285,6 +285,15 @@
 		<graph_marker_cycle value="#bf6455"/>
 		<graph_mesh_cycle value="#d8412a"/>
 
+		<!-- Stretch and loop colors -->
+		<stretch_color avalue="#cca49851" />
+		<stretch_border_color avalue="#44a49851" />
+		<stretch_color_off avalue="#eea49851" />
+		<stretch_border_color_off avalue="#bba49851" />
+		<loop_color avalue="#dd23b270" />
+		<loop_border_color avalue="#8823b270" />
+		<loop_color_off avalue="#ee23b270" />
+		<loop_border_color_off avalue="#bb23b270" />
 	</colors>
 
 	<!-- Root style -->
@@ -333,14 +342,11 @@
 		<fade_out.color value="#dd2abecc"/>
 		<fade_in.border.color value="#882abecc"/>
 		<fade_out.border.color value="#882abecc"/>
-		<stretch.color value="#cca49851" />
-		<stretch.border.color value="#44a49851" />
-		<stretch.color.off value="#eea49851" />
-		<stretch.border.color.off value="#bba49851" />
-		<loop.color value="#dd23b270" />
-		<loop.border.color value="#8823b270" />
-		<loop.color.off value="#ee23b270" />
-		<loop.border.color.off value="#bb23b270" />
+		
+		<stretch.color value="stretch_color" />
+		<stretch.border.color value="stretch_border_color" />
+		<loop.color value="loop_color" />
+		<loop.border.color value="loop_border_color" />
 	</style>
 
 	<style class="AudioSample" parents="root">
@@ -364,6 +370,11 @@
 		<wave.border value="2"/>
 		<stretch.border value="1" />
 		<loop.border value="1" />
+
+		<stretch.color value="stretch_color" />
+		<stretch.border.color value="stretch_border_color" />
+		<loop.color value="loop_color" />
+		<loop.border.color value="loop_border_color" />
 
 		<label.0.layout.halign value="-1"/>
 		<label.0.layout.valign value="1"/>
