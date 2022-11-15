@@ -1582,11 +1582,15 @@
 
 	<style class="TabControl" parents="root">
 		<border.color value="#888888" />
+		<heading.color value="bg_name" />
+		<heading.gap.color value="bg_name" />
 		<border.size value="0" />
 		<border.radius value="0" />
 		<tab.spacing value="4" />
-		<head.spacing value="-1" />
+		<heading.spacing value="2" />
 		<tab.joint value="true" />
+		<heading.fill value="true" />
+		<heading.gap.fill value="true" />
 	</style>
 
 	<!-- FileDialog widgets -->
