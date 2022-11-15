@@ -342,7 +342,7 @@
 		<fade_out.color value="#dd2abecc"/>
 		<fade_in.border.color value="#882abecc"/>
 		<fade_out.border.color value="#882abecc"/>
-		
+
 		<stretch.color value="stretch_color" />
 		<stretch.border.color value="stretch_border_color" />
 		<loop.color value="loop_color" />
@@ -1146,7 +1146,7 @@
 		<border.color value="bg_light"/>
 		<pointer value="hand"/>
 	</style>
-	
+
 	<style class="Group" parents="root">
 		<color value="bg_name"/>
 		<border.size value="0"/>
@@ -1558,29 +1558,33 @@
 	</style>
 
 	<style class="Switch" parents="root"></style>
-	
+
 	<style class="Tab" parents="root">
-		<color value="#cccccc" />
-		<selected.color value="#ffffff" />
-		<hover.color value="#00ccff" />
-		
+		<color value="bg_schema" />
+		<selected.color value="bg_name" />
+		<hover.color value="bg_name" />
+
 		<border.color value="#888888" />
 		<border.selected.color value="#000000" />
 		<border.hover.color value="#eeeeee" />
-		
-		<text.color value="#888888" />
-		<text.selected.color value="#000000" />
-		<text.hover.color value="#eeeeee" />
-		
-		<border.size value="1" />
-		<border.radius value="4" />
+
+		<text.color value="text_prim" />
+		<text.selected.color value="text_group" />
+		<text.hover.color value="text_prim" />
+		<text.padding.left value="6"/>
+		<text.padding.right value="6"/>
+
+		<pointer value="hand"/>
+
+		<border.size value="0" />
+		<border.radius value="0" />
 	</style>
-	
+
 	<style class="TabControl" parents="root">
 		<border.color value="#888888" />
-		<border.size value="2" />
-		<border.radius value="10" />
-		<tab.spacing value="1" />
+		<border.size value="0" />
+		<border.radius value="0" />
+		<tab.spacing value="4" />
 		<head.spacing value="-1" />
 		<tab.joint value="true" />
 	</style>
