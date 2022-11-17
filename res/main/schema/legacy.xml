@@ -1604,6 +1604,7 @@
 		<tab.spacing value="4" />
 		<head.spacing value="-1" />
 		<tab.joint value="true" />
+		<heading.spacing value="0" />
 		<heading.gap value="0" />
 		<heading.fill value="false" />
 		<heading.spacing.fill value="false" />
