@@ -97,6 +97,7 @@
 		<border_color value="#373943"/>
 		<text_prim value="#8088b3"/>
 		<text_sec value="#a8aed3"/>
+		<text_tab value="#585d7b"/>
 		<text_icon value="#747994"/>
 		<lsp_logo value="#239db5"/>
 		<lsp_logo_cover value="#a4ed3b"/>
@@ -1568,20 +1569,19 @@
 		<border.selected.color value="#000000" />
 		<border.hover.color value="#eeeeee" />
 
-		<text.color value="text_prim" />
+		<text.color value="text_tab" />
 		<text.selected.color value="text_group" />
 		<text.hover.color value="text_prim" />
 		<text.padding.left value="6"/>
 		<text.padding.right value="6"/>
-
-		<pointer value="hand"/>
+		<text.padding.bottom value="0"/>
 
 		<border.size value="0" />
 		<border.radius value="0" />
 	</style>
 
 	<style class="TabControl" parents="root">
-		<border.color value="#888888" />
+		<border.color value="bg_name" />
 		<heading.color value="bg_name" />
 		<heading.spacing.color value="bg_name" />
 		<heading.gap.color value="bg_schema" />
@@ -1591,8 +1591,9 @@
 		<heading.spacing value="2" />
 		<heading.gap value="4" />
 		<tab.joint value="true" />
-		<heading.fill value="true" />
+		<heading.fill value="false" />
 		<heading.spacing.fill value="true" />
+		<pointer value="hand"/>
 	</style>
 
 	<!-- FileDialog widgets -->
