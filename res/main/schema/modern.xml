@@ -1574,6 +1574,7 @@
 		<text.hover.color value="text_prim" />
 		<text.padding.left value="6"/>
 		<text.padding.right value="6"/>
+		<text.padding.top value="2"/>
 		<text.padding.bottom value="0"/>
 
 		<border.size value="0" />
