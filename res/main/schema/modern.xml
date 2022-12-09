@@ -348,6 +348,8 @@
 		<stretch.border.color value="stretch_border_color" />
 		<loop.color value="loop_color" />
 		<loop.border.color value="loop_border_color" />
+		<play.border value="1" />
+		<play.color value="bright_cyan" />
 	</style>
 
 	<style class="AudioSample" parents="root">
@@ -369,8 +371,11 @@
 		<fade_in.border value="0"/>
 		<fade_out.border value="0"/>
 		<wave.border value="2"/>
-		<stretch.border value="1" />
-		<loop.border value="1" />
+		<stretch.border value="0" />
+		<loop.border value="0" />
+
+		<play.border value="1" />
+		<play.color value="bright_cyan" />
 
 		<stretch.color value="stretch_color" />
 		<stretch.border.color value="stretch_border_color" />
