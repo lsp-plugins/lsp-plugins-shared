@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<preview halign="-1" valign="-1">
+	<vbox>
+		<label ui:inject="FileDialog::FilePreview::Heading" text="labels.file_preview.audio_channels" hfill="true" />
+		<label ui:inject="FileDialog::FilePreview::Value" ui:id="audio_channels" />
+		<label ui:inject="FileDialog::FilePreview::Heading" text="labels.file_preview.sample_rate" />
+		<label ui:inject="FileDialog::FilePreview::Value" ui:id="sample_rate" />
+		<label ui:inject="FileDialog::FilePreview::Heading" text="labels.file_preview.sample_format" />
+		<label ui:inject="FileDialog::FilePreview::Value" ui:id="sample_format" />
+		<label ui:inject="FileDialog::FilePreview::Heading" text="labels.file_preview.duration" />
+		<label ui:inject="FileDialog::FilePreview::Value" ui:id="duration" />
+		
+		<grid rows="3" cols="2">
+			<cell cols="2">
+				<fader ui:id="play_position" />
+			</cell>
+			<button ui:id="play_pause" text="actions.file_preview.play" />
+			<button ui:id="stop" text="actions.file_preview.stop" />
+			<cell cols="2">
+				<hbox>
+					<check ui:id="auto_play" id="_ui_preview_auto_play" />
+					<label text="labels.file_preview.auto_play" />
+				</hbox>
+			</cell>
+		</grid>
+	</vbox>
+</preview>

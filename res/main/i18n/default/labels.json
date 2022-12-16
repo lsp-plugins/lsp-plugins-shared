@@ -218,7 +218,14 @@
 	},
 	"file_list": "File list",
 	"file_name": "File name",
-	"file_preview": "File preview",
+	"file_preview": {
+		"": "File preview",
+		"audio_channels": "Audio channels:",
+		"auto_play": "Automatic play",
+		"duration": "Duration:",
+		"sample_format": "Sample format:",
+		"sample_rate": "Sample rate:"
+	},
 	"filter": "Filter",
 	"filters": "Filters",
 
