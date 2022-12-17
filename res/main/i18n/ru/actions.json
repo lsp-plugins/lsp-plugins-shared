@@ -29,6 +29,12 @@
 	"export_settings_to_clipboard": "Экпорт настроек в буфер обмена",
 	"export_settings_to_file": "Экспорт настроек в файл...",
 	
+	"file_preview": {
+		"pause": "Пауза",
+		"play": "Играть",
+		"stop": "Стоп"
+	},
+	
 	"font_scaling": {
 		"select": "Масштаб шрифтов",
 		"value:pc": "{@value} %",

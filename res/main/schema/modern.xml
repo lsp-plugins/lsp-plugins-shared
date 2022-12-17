@@ -1643,6 +1643,8 @@
 	</style>
 	
 	<style class="FileDialog::FilePreview::Value" parents="Label">
+		<allocation.hfill value="true" />
+		<padding.left value="16" />
 		<text.layout.halign value="-1" />
 	</style>
 

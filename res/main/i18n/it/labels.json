@@ -655,6 +655,7 @@
 		"fmt_value": "{@value}",
 		"selected": "Selezionato",
 		"worst": "Peggiore",
+		"x_hz": "{@value} Hz",
 		"x_k": "{@value}k",
 		"x_khz": "{@value} kHz",
 		"x_pc": "{@value%.2f} %"
