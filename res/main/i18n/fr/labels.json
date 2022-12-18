@@ -620,6 +620,7 @@
 		"fmt_value": "{@value}",
 		"selected": "Sélectionné",
 		"worst": "Pire",
+		"x_hz": "{@value} Hz",
 		"x_k": "{@value}k",
 		"x_khz": "{@value} kHz",
 		"x_pc": "{@value%.2f} %"

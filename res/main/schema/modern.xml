@@ -1635,6 +1635,18 @@
 	</style>
 
 	<style class="FileDialog::FileList" parents="ListBox"></style>
+	
+	<style class="FileDialog::FilePreview::Heading" parents="Label">
+		<allocation.hfill value="true" />
+		<text.layout.halign value="-1" />
+		<font.bold value="true" />
+	</style>
+	
+	<style class="FileDialog::FilePreview::Value" parents="Label">
+		<allocation.hfill value="true" />
+		<padding.left value="16" />
+		<text.layout.halign value="-1" />
+	</style>
 
 	<style class="FileDialog::FilterComboBox" parents="ComboBox">
 		<color value="bg_light"/>

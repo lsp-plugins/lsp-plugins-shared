@@ -218,7 +218,32 @@
 	},
 	"file_list": "File list",
 	"file_name": "File name",
-	"file_preview": "File preview",
+	"file_preview": {
+		"": "File preview",
+		"audio_channels": "Audio channels:",
+		"auto_play": "Autoplay",
+		"duration": "Duration:",
+		"n_a": "n/a",
+		"sample_format": 
+		{
+			"": "Sample format:",
+			"f32": "32-bit float",
+			"f64": "64-bit float",
+			"s16": "16-bit signed integer",
+			"s24": "24-bit signed integer",
+			"s32": "32-bit signed integer",
+			"s8": "8-bit signed integer",
+			"u16": "16-bit unsigned integer",
+			"u24": "24-bit unsigned integer",
+			"u32": "32-bit unsigned integer",
+			"u8": "8-bit unsigned integer",
+			"unknown": "unknown"
+		},
+		"sample_rate": "Sample rate:",
+		"time_hms": "{@hour^0%2d}:{@min^0%2d}:{@sec^0%2d}.{@msec^0%3d}",
+		"time_ms": "{@min^0%2d}:{@sec^0%2d}.{@msec^0%3d}",
+		"time_s": "{@sec^0%2d}.{@msec^0%3d}"
+	},
 	"filter": "Filter",
 	"filters": "Filters",
 
@@ -675,6 +700,7 @@
 		"fmt_value": "{@value}",
 		"selected": "Selected",
 		"worst": "Worst",
+		"x_hz": "{@value} Hz",
 		"x_k": "{@value}k",
 		"x_khz": "{@value} kHz",
 		"x_pc": "{@value%.2f} %"
