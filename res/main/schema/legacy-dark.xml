@@ -97,6 +97,7 @@
 		<border_color value="#373943"/>
 		<text_prim value="#71758c"/>
 		<text_sec value="#71758c"/>
+		<text_tab value="#585d7b"/>
 		<text_icon value="#9095b3"/>
 		<lsp_logo value="#239db5"/>
 		<lsp_logo_cover value="#a4ed3b"/>
@@ -287,6 +288,8 @@
 		<as_ch8 value="#5d310c"/>
 		<fade_in value="#2abecc"/>
 		<fade_out value="#2abecc"/>
+		<stretch value="#a49851"/>
+		<loop value="#23b270"/>
 
 		<!-- Cycle colors -->
 		<cycle value="#d8412a"/>
@@ -296,6 +299,15 @@
 		<graph_marker_cycle value="#95333b"/>
 		<graph_mesh_cycle value="#d8412a"/>
 
+		<!-- Stretch and loop colors -->
+		<stretch_color avalue="#cca49851"/>
+		<stretch_border_color avalue="#44a49851"/>
+		<stretch_color_off avalue="#eea49851"/>
+		<stretch_border_color_off avalue="#bba49851"/>
+		<loop_color avalue="#dd23b270"/>
+		<loop_border_color avalue="#8823b270"/>
+		<loop_color_off avalue="#ee23b270"/>
+		<loop_border_color_off avalue="#bb23b270"/>
 	</colors>
 
 	<!-- Root style -->
@@ -336,10 +348,21 @@
 	</style>
 
 	<style class="AudioChannel" parents="root">
-		<fade_in.color value="#aa2abecc"/>
-		<fade_out.color value="#aa2abecc"/>
-		<fade_in.border.color value="#aa2abecc"/>
-		<fade_out.border.color value="#aa2abecc"/>
+		<head_cut.color value="#dd2abecc"/>
+		<head_cut.border.color value="#882abecc"/>
+		<tail_cut.color value="#dd2abecc"/>
+		<tail_cut.border.color value="#882abecc"/>
+		<fade_in.color value="#dd2abecc"/>
+		<fade_out.color value="#dd2abecc"/>
+		<fade_in.border.color value="#882abecc"/>
+		<fade_out.border.color value="#882abecc"/>
+
+		<stretch.color value="stretch_color"/>
+		<stretch.border.color value="stretch_border_color"/>
+		<loop.color value="loop_color"/>
+		<loop.border.color value="loop_border_color"/>
+		<play.border value="1"/>
+		<play.color value="bright_cyan"/>
 	</style>
 
 	<style class="AudioSample" parents="root">
@@ -361,6 +384,16 @@
 		<fade_in.border value="0"/>
 		<fade_out.border value="0"/>
 		<wave.border value="2"/>
+		<stretch.border value="0"/>
+		<loop.border value="0"/>
+
+		<play.border value="1"/>
+		<play.color value="bright_cyan"/>
+
+		<stretch.color value="stretch_color"/>
+		<stretch.border.color value="stretch_border_color"/>
+		<loop.color value="loop_color"/>
+		<loop.border.color value="loop_border_color"/>
 
 		<label.0.layout.halign value="-1"/>
 		<label.0.layout.valign value="1"/>
@@ -667,6 +700,30 @@
 		<border.down.color value="bright_yellow"/>
 		<border.down.hover.color value="yellow"/>
 		<led.color value="yellow"/>
+	</style>
+
+	<style class="Button_stretch" parents="Button">
+		<down.color value="#5e562b"/>
+		<down.hover.color value="#5e562b"/>
+
+		<text.down.color value="#a49851"/>
+		<text.down.hover.color value="#a49851"/>
+
+		<border.down.color value="#a49851"/>
+		<border.down.hover.color value="#8b8144"/>
+		<led.color value="#8b8144"/>
+	</style>
+
+	<style class="Button_loop" parents="Button">
+		<down.color value="#0f633c"/>
+		<down.hover.color value="#0f633c"/>
+
+		<text.down.color value="#23b270"/>
+		<text.down.hover.color value="#23b270"/>
+
+		<border.down.color value="#23b270"/>
+		<border.down.hover.color value="#1b935c"/>
+		<led.color value="#1b935c"/>
 	</style>
 
 	<style class="Button_ne_left" parents="Button">
@@ -1028,6 +1085,15 @@
 		<button.border.size value="2"/>
 		<button.border.radius value="3"/>
 		<button.width value="4"/>
+	</style>
+
+	<style class="Fader_play" parents="Fader">
+		<button.border.size value="0"/>
+		<button.border.radius value="5"/>
+		<button.radius value="5"/>
+		<button.width value="8"/>
+		<button.color value="bg_name"/>
+		<button.aspect value="0.125" />
 	</style>
 
 	<style class="Graph" parents="root">
@@ -1516,6 +1582,43 @@
 
 	<style class="Switch" parents="root"></style>
 
+	<style class="Tab" parents="root">
+		<color value="bg_light"/>
+		<selected.color value="bg_name"/>
+		<hover.color value="bg_name"/>
+
+		<border.color value="#888888"/>
+		<border.selected.color value="#000000"/>
+		<border.hover.color value="#eeeeee"/>
+
+		<text.color value="text_tab"/>
+		<text.selected.color value="text_group"/>
+		<text.hover.color value="text_prim"/>
+
+		<text.padding.bottom value="0"/>
+		<text.padding.top value="0"/>
+
+		<border.size value="0"/>
+		<border.radius value="4"/>
+	</style>
+
+	<style class="TabControl" parents="root">
+		<border.color value="bg_name"/>
+		<heading.color value="bg_name"/>
+		<heading.spacing.color value="bg_name"/>
+		<heading.gap.color value="bg_schema"/>
+		<border.size value="2"/>
+		<border.radius value="10"/>
+		<tab.spacing value="4"/>
+		<head.spacing value="-1"/>
+		<tab.joint value="true"/>
+		<heading.spacing value="0"/>
+		<heading.gap value="0"/>
+		<heading.fill value="false"/>
+		<heading.spacing.fill value="false"/>
+		<pointer value="hand"/>
+	</style>
+
 	<!-- FileDialog widgets -->
 	<style class="FileDialog::ActionAlign" parents="Align">
 		<layout.hscale value="0.0"/>
@@ -1539,11 +1642,34 @@
 
 	<style class="FileDialog::BookmarkBox" parents="Box"></style>
 
+	<style class="FileDialog::BookmarkLabel" parents="Label">
+		<allocation.hfill value="true"/>
+		<text.layout.halign value="-1.0f"/>
+	</style>
+
 	<style class="FileDialog::ExtCheck" parents="CheckBox">
 		<color value="text_prim"/>
 	</style>
 
 	<style class="FileDialog::FileList" parents="ListBox"></style>
+
+	<style class="FileDialog::PreviewAlign" parents="Align">
+		<allocation.hreduce value="true"/>
+	</style>
+
+	<style class="FileDialog::FilePreview::Heading" parents="Label">
+		<allocation.hfill value="false"/>
+		<text.layout.halign value="-1"/>
+		<font.bold value="true"/>
+		<text.color value="text_prim"/>
+	</style>
+
+	<style class="FileDialog::FilePreview::Value" parents="Label">
+		<allocation.hfill value="true"/>
+		<padding.left value="6"/>
+		<text.layout.halign value="1"/>
+		<text.color value="text_prim"/>
+	</style>
 
 	<style class="FileDialog::FilterComboBox" parents="ComboBox">
 		<border.color value="border_color"/>

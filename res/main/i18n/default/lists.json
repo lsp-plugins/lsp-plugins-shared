@@ -69,6 +69,11 @@
 		}
 	},
 	
+	"fade": {
+		"const_power": "Constant power",
+		"linear": "Linear"
+	},
+	
 	"fft": {
 		"env": {
 			"blue": "Blue noise",
@@ -209,7 +214,9 @@
 		"internal": "Internal",
 		"left": "Left",
 		"lpf": "LPF",
+		"max": "Max",
 		"middle": "Middle",
+		"min": "Min",
 		"peak": "Peak",
 		"right": "Right",
 		"rms": "RMS",

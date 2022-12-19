@@ -218,6 +218,32 @@
 	},
 	"file_list": "Список файлов",
 	"file_name": "Имя файла",
+	"file_preview": {
+		"": "Свойства файла",
+		"audio_channels": "Аудиодорожек:",
+		"auto_play": "Автозапуск",
+		"duration": "Длительность:",
+		"n_a": "--",
+		"sample_format":
+		{
+			"": "Формат семпла:",
+			"f32": "32-bit float",
+			"f64": "64-bit float",
+			"s16": "16-bit sint",
+			"s24": "24-bit sint",
+			"s32": "32-bit sint",
+			"s8": "8-bit sint",
+			"u16": "16-bit uint",
+			"u24": "24-bit uint",
+			"u32": "32-bit uint",
+			"u8": "8-bit uint",
+			"unknown": "неизвестный"
+		},
+		"sample_rate": "Дискретизация:",
+		"time_hms": "{@hour}:{@min^0%2d}:{@sec^0%2d}.{@msec^0%3d} ч",
+		"time_ms": "{@min}:{@sec^0%2d}.{@msec^0%3d} м",
+		"time_s": "{@sec}.{@msec^0%3d} с"
+	},
 	"filter": "Фильтр",
 	"filters": "Фильтры",
 
@@ -428,7 +454,7 @@
 	"plug": {
 		"calibrator": "Калибратор",
 		"compressor": "Компрессор",
-		"dyna_processor": "Динамический процессор",	
+		"dyna_processor": "Динамический процессор",
 		"expander": "Экспандер",
 		"gate": "Гейт",
 		"latency_detector": "Детектор задержки",
@@ -526,6 +552,7 @@
 	"search": "Поиск",
 	"sedit": {
 		"active": "Активен",
+		"compensate": "Компенсация",
 		"disabled": "Выключен",
 		"enabled": "Включён",
 		"fade_in": "Нараст",
@@ -537,6 +564,12 @@
 		"predelay": "Задерж",
 		"reverse": "Реверс",
 		"sample_num": "№ сэмпла",
+		"stretch": "Растяжение",
+		"stretch_chunk": "Размер блока",
+		"stretch_end": "Конец",
+		"stretch_fade": "Длина затухания",
+		"stretch_fade_type": "Тип затухания",
+		"stretch_start": "Start",
 		"tail_cut": "Кон срез"
 	},
 	"settings": "Настройки",
@@ -593,7 +626,7 @@
 	"specials": {
 		"idx": "{@id}",
 		"idx:": "{@id}:",
-		"num": "№"	
+		"num": "№"
 	},
 	"spectrogram": "Спектрограмма",
 	"spread": "Разброс",
@@ -660,10 +693,12 @@
 		"fmt_value": "{@value}",
 		"selected": "Выбранное",
 		"worst": "Худшее",
+		"x_hz": "{@value} Гц",
 		"x_k": "{@value}к",
 		"x_khz": "{@value} кГц",
 		"x_pc": "{@value%.2f} %"
 	},
+	"volume_list": "Томы",
 
 	"warning": {
 		"all_values_good": "Все параметры в допустимых пределах.",

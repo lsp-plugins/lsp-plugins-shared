@@ -218,6 +218,32 @@
 	},
 	"file_list": "File list",
 	"file_name": "File name",
+	"file_preview": {
+		"": "File properties",
+		"audio_channels": "Audio channels:",
+		"auto_play": "Autoplay",
+		"duration": "Duration:",
+		"n_a": "--",
+		"sample_format":
+		{
+			"": "Sample format:",
+			"f32": "32-bit float",
+			"f64": "64-bit float",
+			"s16": "16-bit sint",
+			"s24": "24-bit sint",
+			"s32": "32-bit sint",
+			"s8": "8-bit sint",
+			"u16": "16-bit uint",
+			"u24": "24-bit uint",
+			"u32": "32-bit uint",
+			"u8": "8-bit uint",
+			"unknown": "unknown"
+		},
+		"sample_rate": "Sample rate:",
+		"time_hms": "{@hour}:{@min^0%2d}:{@sec^0%2d}.{@msec^0%3d} h",
+		"time_ms": "{@min}:{@sec^0%2d}.{@msec^0%3d} m",
+		"time_s": "{@sec}.{@msec^0%3d} s"
+	},
 	"filter": "Filter",
 	"filters": "Filters",
 
@@ -381,33 +407,6 @@
 	"noise_floor_left": "Noise Floor Left",
 	"noise_floor_right": "Noise Floor Right",
 
-	"noise_generator": {
-		"channel_selector": "Channel Selector",
-		"global": "Global",
-		"general": "General",
-		"N_type": "Noise Type",
-		"N_mode": "Noise Mode",
-		"N_amplitude": "Noise Amplitude",
-		"N_offset": "Noise Offset",
-		"M_inaudible": "Make Inaudible",
-		"N_specs": "Noise Specific Controls",
-		"distribution": "Distribution",
-		"V_type": "Type",
-		"V_window": "Window",
-		"V_delta": "Delta",
-		"V_crush": "Crush",
-		"V_crush_prob": "Crush Probability",
-		"color": "Color",
-		"slope_npn": "Slope",
-		"slope_dbo": "Slope",
-		"slope_dbd": "Slope",
-		"channel": "Channel",
-		"channel_controls": "Channel Controls",
-		"use_global": "Use Global",
-		"solo": "Solo",
-		"mute": "Mute"
-	},
-
 	"normalize": "Normalize",
 
 	"obj": {
@@ -554,6 +553,7 @@
 	"search": "Search",
 	"sedit": {
 		"active": "Active",
+		"compensate": "Compensate",
 		"disabled": "Disabled",
 		"enabled": "Enabled",
 		"fade_in": "Fade in",
@@ -565,6 +565,12 @@
 		"predelay": "Pre-delay",
 		"reverse": "Reverse",
 		"sample_num": "Sample #",
+		"stretch": "Stretch",
+		"stretch_chunk": "Chunk size",
+		"stretch_end": "End",
+		"stretch_fade": "Fade length",
+		"stretch_fade_type": "Fade type",
+		"stretch_start": "Start",
 		"tail_cut": "Tail cut"
 	},
 	"settings": "Settings",
@@ -688,10 +694,12 @@
 		"fmt_value": "{@value}",
 		"selected": "Selected",
 		"worst": "Worst",
+		"x_hz": "{@value} Hz",
 		"x_k": "{@value}k",
 		"x_khz": "{@value} kHz",
 		"x_pc": "{@value%.2f} %"
 	},
+	"volume_list": "Volumes",
 
 	"warning": {
 		"all_values_good": "All values are in acceptable range.",

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<preview hscale="1" valign="-1" pad.l="6">
+	<vbox>
+		<hbox pad.b="4">
+			<label ui:inject="FileDialog::FilePreview::Heading" text="labels.file_preview.audio_channels"/>
+			<label ui:inject="FileDialog::FilePreview::Value" ui:id="audio_channels"/>
+		</hbox>
+		<hbox pad.b="4">
+			<label ui:inject="FileDialog::FilePreview::Heading" text="labels.file_preview.sample_rate"/>
+			<label ui:inject="FileDialog::FilePreview::Value" ui:id="sample_rate"/>
+		</hbox>
+		<hbox pad.b="4">
+			<label ui:inject="FileDialog::FilePreview::Heading" text="labels.file_preview.sample_format"/>
+			<label ui:inject="FileDialog::FilePreview::Value" ui:id="sample_format" width.min="57"/>
+		</hbox>
+		<hbox pad.b="10">
+			<label ui:inject="FileDialog::FilePreview::Heading" text="labels.file_preview.duration"/>
+			<label ui:inject="FileDialog::FilePreview::Value" ui:id="duration" />
+		</hbox>
+
+		<grid rows="2" cols="3">
+			<cell cols="3" pad.b="4">
+				<fader ui:id="play_position" ui:inject="Fader_play" />
+			</cell>
+			<button ui:id="play_pause" text="actions.file_preview.play" width.min="50" pad.r="6" hfill="false" hreduce="true"/>
+			<button ui:id="stop" text="actions.file_preview.stop" width.min="50" pad.r="6" hfill="false" hreduce="true"/>
+			<button ui:id="auto_play" text="labels.file_preview.auto_play" id="_ui_preview_auto_play" bg.color="red" hfill="true"/>
+		</grid>
+	</vbox>
+</preview>
