@@ -114,7 +114,6 @@
 		<plug_name_acr value="#238093"/>
 		<osc_bg_gray value="#25272e"/>
 
-
 		<!-- Knob -->
 		<kscale value="#3496ab"/>
 		<kscale_inactive value="#4b666d"/>
@@ -275,8 +274,8 @@
 		<as_ch8 value="#5d310c"/>
 		<fade_in value="#2abecc"/>
 		<fade_out value="#2abecc"/>
-		<stretch value="#a49851" />
-		<loop value="#23b270" />
+		<stretch value="#a49851"/>
+		<loop value="#23b270"/>
 
 		<!-- Cycle colors -->
 		<cycle value="#d8412a"/>
@@ -287,14 +286,14 @@
 		<graph_mesh_cycle value="#d8412a"/>
 
 		<!-- Stretch and loop colors -->
-		<stretch_color avalue="#cca49851" />
-		<stretch_border_color avalue="#44a49851" />
-		<stretch_color_off avalue="#eea49851" />
-		<stretch_border_color_off avalue="#bba49851" />
-		<loop_color avalue="#dd23b270" />
-		<loop_border_color avalue="#8823b270" />
-		<loop_color_off avalue="#ee23b270" />
-		<loop_border_color_off avalue="#bb23b270" />
+		<stretch_color avalue="#cca49851"/>
+		<stretch_border_color avalue="#44a49851"/>
+		<stretch_color_off avalue="#eea49851"/>
+		<stretch_border_color_off avalue="#bba49851"/>
+		<loop_color avalue="#dd23b270"/>
+		<loop_border_color avalue="#8823b270"/>
+		<loop_color_off avalue="#ee23b270"/>
+		<loop_border_color_off avalue="#bb23b270"/>
 	</colors>
 
 	<!-- Root style -->
@@ -344,12 +343,12 @@
 		<fade_in.border.color value="#882abecc"/>
 		<fade_out.border.color value="#882abecc"/>
 
-		<stretch.color value="stretch_color" />
-		<stretch.border.color value="stretch_border_color" />
-		<loop.color value="loop_color" />
-		<loop.border.color value="loop_border_color" />
-		<play.border value="1" />
-		<play.color value="bright_cyan" />
+		<stretch.color value="stretch_color"/>
+		<stretch.border.color value="stretch_border_color"/>
+		<loop.color value="loop_color"/>
+		<loop.border.color value="loop_border_color"/>
+		<play.border value="1"/>
+		<play.color value="bright_cyan"/>
 	</style>
 
 	<style class="AudioSample" parents="root">
@@ -371,16 +370,16 @@
 		<fade_in.border value="0"/>
 		<fade_out.border value="0"/>
 		<wave.border value="2"/>
-		<stretch.border value="0" />
-		<loop.border value="0" />
+		<stretch.border value="0"/>
+		<loop.border value="0"/>
 
-		<play.border value="1" />
-		<play.color value="bright_cyan" />
+		<play.border value="1"/>
+		<play.color value="bright_cyan"/>
 
-		<stretch.color value="stretch_color" />
-		<stretch.border.color value="stretch_border_color" />
-		<loop.color value="loop_color" />
-		<loop.border.color value="loop_border_color" />
+		<stretch.color value="stretch_color"/>
+		<stretch.border.color value="stretch_border_color"/>
+		<loop.color value="loop_color"/>
+		<loop.border.color value="loop_border_color"/>
 
 		<label.0.layout.halign value="-1"/>
 		<label.0.layout.valign value="1"/>
@@ -1072,6 +1071,15 @@
 		<button.width value="8"/>
 	</style>
 
+	<style class="Fader_play" parents="Fader">
+		<button.border.size value="0"/>
+		<button.border.radius value="0"/>
+		<button.radius value="0"/>
+		<button.width value="4"/>
+		<button.color value="fader"/>
+		<button.aspect value="0.125" />
+	</style>
+
 	<style class="Graph" parents="root">
 		<glass.visibility value="false"/>
 		<border.color value="bg_name"/>
@@ -1566,39 +1574,39 @@
 	<style class="Switch" parents="root"></style>
 
 	<style class="Tab" parents="root">
-		<color value="bg_schema" />
-		<selected.color value="bg_name" />
-		<hover.color value="bg_name" />
+		<color value="bg_schema"/>
+		<selected.color value="bg_name"/>
+		<hover.color value="bg_name"/>
 
-		<border.color value="#888888" />
-		<border.selected.color value="#000000" />
-		<border.hover.color value="#eeeeee" />
+		<border.color value="#888888"/>
+		<border.selected.color value="#000000"/>
+		<border.hover.color value="#eeeeee"/>
 
-		<text.color value="text_tab" />
-		<text.selected.color value="text_group" />
-		<text.hover.color value="text_prim" />
+		<text.color value="text_tab"/>
+		<text.selected.color value="text_group"/>
+		<text.hover.color value="text_prim"/>
 		<text.padding.left value="6"/>
 		<text.padding.right value="6"/>
 		<text.padding.top value="2"/>
 		<text.padding.bottom value="0"/>
 
-		<border.size value="0" />
-		<border.radius value="0" />
+		<border.size value="0"/>
+		<border.radius value="0"/>
 	</style>
 
 	<style class="TabControl" parents="root">
-		<border.color value="bg_name" />
-		<heading.color value="bg_name" />
-		<heading.spacing.color value="bg_name" />
-		<heading.gap.color value="bg_schema" />
-		<border.size value="0" />
-		<border.radius value="0" />
-		<tab.spacing value="4" />
-		<heading.spacing value="2" />
-		<heading.gap value="4" />
-		<tab.joint value="true" />
-		<heading.fill value="false" />
-		<heading.spacing.fill value="true" />
+		<border.color value="bg_name"/>
+		<heading.color value="bg_name"/>
+		<heading.spacing.color value="bg_name"/>
+		<heading.gap.color value="bg_schema"/>
+		<border.size value="0"/>
+		<border.radius value="0"/>
+		<tab.spacing value="4"/>
+		<heading.spacing value="2"/>
+		<heading.gap value="4"/>
+		<tab.joint value="true"/>
+		<heading.fill value="false"/>
+		<heading.spacing.fill value="true"/>
 		<pointer value="hand"/>
 	</style>
 
@@ -1626,26 +1634,33 @@
 	<style class="FileDialog::BookmarkBox" parents="Box"></style>
 
 	<style class="FileDialog::BookmarkLabel" parents="Label">
-		<allocation.hfill value="true" />
-		<text.layout.halign value="-1.0f" />
+		<allocation.hfill value="true"/>
+		<text.layout.halign value="-1.0f"/>
 	</style>
 
 	<style class="FileDialog::ExtCheck" parents="CheckBox">
 		<color value="text_prim"/>
 	</style>
 
-	<style class="FileDialog::FileList" parents="ListBox"></style>
-	
-	<style class="FileDialog::FilePreview::Heading" parents="Label">
-		<allocation.hfill value="true" />
-		<text.layout.halign value="-1" />
-		<font.bold value="true" />
+	<style class="FileDialog::FileList" parents="ListBox">
 	</style>
-	
+
+	<style class="FileDialog::PreviewAlign" parents="Align">
+		<allocation.hreduce value="true"/>
+	</style>
+
+	<style class="FileDialog::FilePreview::Heading" parents="Label">
+		<allocation.hfill value="true"/>
+		<text.layout.halign value="-1"/>
+		<font.bold value="false"/>
+		<text.color value="text_prim"/>
+	</style>
+
 	<style class="FileDialog::FilePreview::Value" parents="Label">
-		<allocation.hfill value="true" />
-		<padding.left value="16" />
-		<text.layout.halign value="-1" />
+		<allocation.hfill value="true"/>
+		<padding.left value="6"/>
+		<text.layout.halign value="1"/>
+		<text.color value="text_prim"/>
 	</style>
 
 	<style class="FileDialog::FilterComboBox" parents="ComboBox">
@@ -1940,7 +1955,7 @@
 	</style>
 
 	<style class="PluginWindow::ResetMenu" parents="Menu">
-		<bg.color value="yellow" />
+		<bg.color value="yellow"/>
 		<ipadding.top value="0"/>
 		<ipadding.bottom value="0"/>
 		<ipadding.left value="0"/>
@@ -1948,22 +1963,22 @@
 	</style>
 
 	<style class="PluginWindow::ResetMenu::Reset" parents="MenuItem">
-		<bg.color value="yellow" />
+		<bg.color value="yellow"/>
 		<bg.selected.color value="red"/>
 		<text.color value="bg"/>
 		<text.selected.color value="bg"/>
 	</style>
 
 	<style class="PluginWindow::StatusBar::Label" parents="Label">
-		<text.color value="footer_icon" />
+		<text.color value="footer_icon"/>
 	</style>
 
 	<style class="PluginWindow::StatusBar::Label::OK" parents="PluginWindow::StatusBar::Label">
-		<text.color value="green" />
+		<text.color value="green"/>
 	</style>
 
 	<style class="PluginWindow::StatusBar::Label::FAIL" parents="PluginWindow::StatusBar::Label">
-		<text.color value="red" />
+		<text.color value="red"/>
 	</style>
 
 </schema>
