@@ -29,6 +29,7 @@
 	<li><b>Parameter</b> &ndash; the value of controllable parameter.</li>
 	<li><b>Progress Bar</b> &ndash; progress control.</li>
 	<li><b>Sample Editor</b> &ndash; sample editor.</li>
+	<li><b>Tab Control</b> &ndash; tab control.</li>
 </ul>
 </div>
 </div>
@@ -474,3 +475,14 @@ unlike AudioFile widget, it does not allow to load files from file system.</p>
 <div class="images">
 	<img class="border" src="<?= $CTL ?>sample_editor.png">
 </div>
+
+<h2>Tab Control</h2>
+
+<p>Tab control allows to group multiple elements into tabs. When a specific tab is active, the only set of
+   controls that belong to the tab becomes visible.</p>
+
+<p>Example of the tab control:</p>
+<div class="images">
+	<img class="border" src="<?= $CTL ?>tab_control.png">
+</div>
+
