@@ -79,6 +79,11 @@
 	"to_bookmarks": "+Bookmarks",
 	"toggle_rack_mount": "Toggle rack mount",
 	
+	"ui_behavior": {
+		"": "UI behavior",
+		"ediable_knob_scale": "Editable knob scale"
+	},
+	
 	"ui_manual": "UI manual",
 	
 	"ui_scaling": {
