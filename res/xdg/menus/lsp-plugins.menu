@@ -7,7 +7,9 @@
       <Name>lsp-plugins</Name>
       <Directory>lsp-plugins.directory</Directory>
       <Include>
-        <?filelist?>
+        <And>
+          <Category>X-LSP-Plugins</Category>
+        </And>
       </Include>
     </Menu>
   </Menu>
