@@ -61,6 +61,7 @@
 #define LSP_LADSPA_OSCILLOSCOPE_BASE        (LSP_LADSPA_BASE + 108)
 #define LSP_LADSPA_MB_DYNA_PROCESSOR_BASE   (LSP_LADSPA_BASE + 120)
 #define LSP_LADSPA_NOISE_GENERATOR_BASE     (LSP_LADSPA_BASE + 128)
+#define LSP_LADSPA_MIXER_BASE               (LSP_LADSPA_BASE + 140)
 
 namespace lsp
 {
@@ -68,8 +69,8 @@ namespace lsp
     {
         extern const meta::person_t         v_sadovnikov;
         extern const meta::person_t         s_tronci;
-    }
-}
+    } /* namespace developers */
+} /* namespace lsp */
 
 
 #endif /* LSP_PLUG_IN_SHARED_META_DEVELOPERS_H_ */
