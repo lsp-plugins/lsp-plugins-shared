@@ -1974,4 +1974,12 @@
 		<text.color value="red"/>
 	</style>
 
+	<!-- UserPathsDialog widgets -->
+	<style class="UserPathsDialog" parents="Window">
+		<padding value="16"/>
+		<border.style value="dialog"/>
+		<layout.hscale value="1.0"/>
+		<layout.vscale value="1.0"/>
+	</style>
+	
 </schema>

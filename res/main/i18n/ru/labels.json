@@ -449,6 +449,10 @@
 	"panning": "Панорама",
 	"panorama": "Панорама",
 	"panorama:pc": "Панорама (%)",
+	"paths": {
+		"user_hydrogen_kits": "Путь к пользовательским файлам Hydrogen:",
+		"user_hydrogen_kits_override": "Путь к файлам замещения файлов Hydrogen:"
+	},
 	"pause": "Пауза",
 
 	"plug": {

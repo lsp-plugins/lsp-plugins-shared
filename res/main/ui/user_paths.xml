@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<window ui:inject="UserPathsDialog">
+	<vbox spacing="4">
+		<label text="labels.paths.user_hydrogen_kits" />
+		<edit ui:id="user_hydrogen_kit_path" />
+		<label text="labels.paths.user_hydrogen_kits_override" />
+		<edit ui:id="override_hydrogen_kit_path" />
+		<hbox>
+			<check ui:id="override_hydrogen_kits_check" />
+			<label text="actions.ui_behavior.override_hydrogen_kits" />
+		</hbox>
+		<hbox>
+			<button ui:id="submit" text="actions.apply" />
+			<button ui:id="cancel" text="actions.cancel" />
+		</hbox>
+	</vbox>
+</window>

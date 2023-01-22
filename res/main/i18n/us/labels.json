@@ -449,6 +449,10 @@
 	"panning": "Panning",
 	"panorama": "Panorama",
 	"panorama:pc": "Panorama (%)",
+	"paths": {
+		"user_hydrogen_kits": "User Hydrogen kits path:",
+		"user_hydrogen_kits_override": "Override Hydrogen kits path:"
+	},
 	"pause": "Pause",
 
 	"plug": {

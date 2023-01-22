@@ -81,7 +81,8 @@
 	
 	"ui_behavior": {
 		"": "UI behavior",
-		"ediable_knob_scale": "Editable knob scale"
+		"ediable_knob_scale": "Editable knob scale",
+		"override_hydrogen_kits": "Override Hydrogen kits"
 	},
 	
 	"ui_manual": "UI manual",
@@ -93,6 +94,8 @@
 		"zoom_in": "Zoom in",
 		"zoom_out": "Zoom out"
 	},
+	
+	"user_paths": "User paths...",
 	
 	"visual_schema": {
 		"select": "Visual Schema"
