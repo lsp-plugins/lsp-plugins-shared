@@ -182,6 +182,11 @@
 	},
 
 	"file": "Archivo",
+	"file_display": {
+		"custom": "{@title} *",
+		"system": "{@title} /",
+		"user": "{@title} ~"
+	},
 	"file_list": "Lista archivos",
 	"file_name": "Nombre archivo",
 	"filter": "Filtro",

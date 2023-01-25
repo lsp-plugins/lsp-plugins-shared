@@ -213,6 +213,7 @@
 
 	"file": "Datei",
 	"file_display": {
+		"custom": "{@title} *",
 		"system": "{@title} /",
 		"user": "{@title} ~"
 	},
