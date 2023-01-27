@@ -367,6 +367,8 @@
 
 	<style class="AudioSample" parents="root">
 
+		<main.font.name value="noto-sans-display"/>
+	  <label.font.name value="noto-sans-display"/>
 		<stereo_groups value="true"/>
 		<border.color value="bg_name"/>
 		<border.size value="2"/>
@@ -1976,10 +1978,10 @@
 
 	<!-- UserPathsDialog widgets -->
 	<style class="UserPathsDialog" parents="Window">
-		<padding value="16"/>
+		<padding value="8"/>
 		<border.style value="dialog"/>
 		<layout.hscale value="1.0"/>
 		<layout.vscale value="1.0"/>
 	</style>
-	
+
 </schema>
