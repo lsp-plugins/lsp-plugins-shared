@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
 
-<window ui:inject="UserPathsDialog">
+<window ui:inject="UserPathsDialog" title="headings.user_paths">
 
 	<grid rows="3" cols="1" spacing="8" expand="true" fill="true">
 		<cell vfill="false" vexpand="false">
-			<vbox >
-				<label text="labels.paths.user_hydrogen_kits" pad.b="4"/>
+			<vbox spacing="4">
+				<label text="labels.paths.user_hydrogen_kits" text.halign="-1" hfill="true" />
 				<edit ui:inject="FileDialog::Path" ui:id="user_hydrogen_kit_path" width.min="420"/>
 			</vbox>
 		</cell>
 		<cell expand="true">
-			<vbox vfill="false" vexpand="false">
-				<label text="labels.paths.user_hydrogen_kits_override" pad.b="4"/>
+			<vbox vfill="false" vexpand="false" spacing="4">
+				<label text="labels.paths.user_hydrogen_kits_override" text.halign="-1" hfill="true" />
 				<edit ui:inject="FileDialog::Search" ui:id="override_hydrogen_kit_path" width.min="420"/>
 			</vbox>
 		</cell>
