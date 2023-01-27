@@ -27,7 +27,7 @@
 			echo "<h1>" . htmlspecialchars($plugin['description']) . "</h1>\n";
 			
 			$fmt = array();
-			if (isset($plugin['clap']) && ($plugin['clap']))
+			if (isset($plugin['clap_uid']) && ($plugin['clap_uid']))
 				array_push($fmt, 'CLAP');
 			if (isset($plugin['jack']) && ($plugin['jack']))
 				array_push($fmt, 'JACK');
