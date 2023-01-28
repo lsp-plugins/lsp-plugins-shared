@@ -31,7 +31,7 @@ LSP_TEST_FW_TYPE           := src
 LSP_TEST_FW_URL_RO         := https://github.com/lsp-plugins/$(LSP_TEST_FW_NAME).git
 LSP_TEST_FW_URL_RW         := git@github.com:lsp-plugins/$(LSP_TEST_FW_NAME).git
 
-LSP_PLUGIN_FW_VERSION      := 1.0.8
+LSP_PLUGIN_FW_VERSION      := 1.0.9
 LSP_PLUGIN_FW_NAME         := lsp-plugin-fw
 LSP_PLUGIN_FW_TYPE         := src
 LSP_PLUGIN_FW_URL_RO       := https://github.com/lsp-plugins/$(LSP_PLUGIN_FW_NAME).git
