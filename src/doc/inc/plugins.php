@@ -27,14 +27,16 @@
 			echo "<h1>" . htmlspecialchars($plugin['description']) . "</h1>\n";
 			
 			$fmt = array();
-			if (isset($plugin['ladspa_label']) && (strlen($plugin['ladspa_label']) > 0))
-				array_push($fmt, 'LADSPA');
-			if ((isset($plugin['lv2_uri'])) && (strlen($plugin['lv2_uri']) > 0))
-				array_push($fmt, 'LV2');
-			if ((isset($plugin['vst2_uid'])) && (strlen($plugin['vst2_uid']) > 0))
-				array_push($fmt, 'VST2');
+			if (isset($plugin['clap_uid']) && ($plugin['clap_uid']))
+				array_push($fmt, '<a href="https://github.com/free-audio/clap" target="_blank">CLAP</a>');
 			if (isset($plugin['jack']) && ($plugin['jack']))
-				array_push($fmt, 'JACK');
+				array_push($fmt, '<a href="https://jackaudio.org" target="_blank">JACK</a>');
+			if (isset($plugin['ladspa_label']) && (strlen($plugin['ladspa_label']) > 0))
+				array_push($fmt, '<a href="https://en.wikipedia.org/wiki/LADSPA" target="_blank">LADSPA</a>');
+			if ((isset($plugin['lv2_uri'])) && (strlen($plugin['lv2_uri']) > 0))
+				array_push($fmt, '<a href="https://lv2plug.in/" target="_blank">LV2</a>');
+			if ((isset($plugin['vst2_uid'])) && (strlen($plugin['vst2_uid']) > 0))
+				array_push($fmt, '<a href="https://www.steinberg.net/" target="_blank">VST2</a>');
 		
 			$full_name = htmlspecialchars("{$PACKAGE['short']} {$plugin['description']} ({$plugin['acronym']})");
 			$author = htmlspecialchars($plugin['author']);

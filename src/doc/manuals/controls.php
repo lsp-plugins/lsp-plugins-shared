@@ -29,6 +29,7 @@
 	<li><b>Parameter</b> &ndash; the value of controllable parameter.</li>
 	<li><b>Progress Bar</b> &ndash; progress control.</li>
 	<li><b>Sample Editor</b> &ndash; sample editor.</li>
+	<li><b>Tab Control</b> &ndash; tab control.</li>
 </ul>
 </div>
 </div>
@@ -408,7 +409,12 @@ adjustment, shift key may be pressed on keyboard. To accelerate the adjustment, 
 <p>For all knobs (especially when they are stiff) quick adjustment of parameter may be achived by left-clicking
 knob's scale. Also, additionally mouse button may be hold and parameter will be adjusted by moving mouse
 clockwise/counter-clockwise.</p>
+<p>Note, that knob scale actions can be enabled or disabled by the additional 'UI behavior' &rarr; 'Editable knob scale' option.</p>
 <p>To reset parameter to it's default value, left mouse button double click may be issued.</p>
+<p>Note that in most cases additional 'Parameter' widget that displays the actual value of the parameteris
+located nearby the knob . While the knob widget allows to adjust the value with some step, the 'Parameter'
+widget allows to set the precise value by double-clicking the displayed value and entering the new desired
+value by the keyboard.</p>
 
 <p style="text-align:center">Example showing knob controls:</p>
 <div class="images">
@@ -474,3 +480,14 @@ unlike AudioFile widget, it does not allow to load files from file system.</p>
 <div class="images">
 	<img class="border" src="<?= $CTL ?>sample_editor.png">
 </div>
+
+<h2>Tab Control</h2>
+
+<p>Tab control allows to group multiple elements into tabs. When a specific tab is active, the only set of
+   controls that belong to the tab becomes visible.</p>
+
+<p>Example of the tab control:</p>
+<div class="images">
+	<img class="border" src="<?= $CTL ?>tab_control.png">
+</div>
+

@@ -79,6 +79,12 @@
 	"to_bookmarks": "+Bookmarks",
 	"toggle_rack_mount": "Toggle rack mount",
 	
+	"ui_behavior": {
+		"": "UI behavior",
+		"ediable_knob_scale": "Editable knob scale",
+		"override_hydrogen_kits": "Override Hydrogen kits"
+	},
+	
 	"ui_manual": "UI manual",
 	
 	"ui_scaling": {
@@ -88,6 +94,8 @@
 		"zoom_in": "Zoom in",
 		"zoom_out": "Zoom out"
 	},
+	
+	"user_paths": "User paths...",
 	
 	"visual_schema": {
 		"select": "Visual Schema"

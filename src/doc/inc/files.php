@@ -1,4 +1,22 @@
 <?php
+	function process_http_refs($text)
+	{
+		$match = array();
+		
+		if (preg_match('/^(.*)\[([^\]]+)\]\s*\(([^\)]+)\)(.*)$/', $text, $match))
+		{
+			$text = process_http_refs($match[1]) .
+				'<a href="' . htmlspecialchars($match[3]) . '">' .
+					htmlspecialchars($match[2]) .
+				'</a>' .
+				process_http_refs($match[4]);
+		}
+		else {
+			$text = htmlspecialchars($text);
+		}
+		return $text;
+	}
+
 	function file_emit_line(&$state, $line = '', $tag = null)
 	{
 		$s     = &$state['state'];
@@ -9,7 +27,7 @@
 			$tag = end($s);
 		
 		print('<' . $tag . '>');
-		print(htmlspecialchars($state['line'] . $line));
+		print(process_http_refs($state['line'] . $line));
 		$state['line'] = '';
 		print('</' . $tag . ">\n");
 		

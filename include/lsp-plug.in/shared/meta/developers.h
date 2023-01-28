@@ -31,6 +31,7 @@
 #define LSP_LV2_URI(id)                     LSP_BASE_URI "plugins/lv2/" id
 #define LSP_LADSPA_URI(id)                  LSP_BASE_URI "plugins/ladspa/" id
 #define LSP_LV2UI_URI(id)                   LSP_BASE_URI "ui/lv2/" id
+#define LSP_CLAP_URI(id)                    "in.lsp-plug." id
 
 // LADSPA identifier allocation
 #define LSP_LADSPA_PHASE_DETECTOR_BASE      (LSP_LADSPA_BASE + 0)
@@ -60,6 +61,7 @@
 #define LSP_LADSPA_OSCILLOSCOPE_BASE        (LSP_LADSPA_BASE + 108)
 #define LSP_LADSPA_MB_DYNA_PROCESSOR_BASE   (LSP_LADSPA_BASE + 120)
 #define LSP_LADSPA_NOISE_GENERATOR_BASE     (LSP_LADSPA_BASE + 128)
+#define LSP_LADSPA_MIXER_BASE               (LSP_LADSPA_BASE + 140)
 
 namespace lsp
 {
@@ -67,8 +69,8 @@ namespace lsp
     {
         extern const meta::person_t         v_sadovnikov;
         extern const meta::person_t         s_tronci;
-    }
-}
+    } /* namespace developers */
+} /* namespace lsp */
 
 
 #endif /* LSP_PLUG_IN_SHARED_META_DEVELOPERS_H_ */

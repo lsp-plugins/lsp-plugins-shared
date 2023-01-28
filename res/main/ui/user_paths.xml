@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<window ui:inject="UserPathsDialog" title="headings.user_paths">
+
+	<grid rows="3" cols="1" spacing="8" expand="true" fill="true">
+		<cell vfill="false" vexpand="false">
+			<vbox spacing="4">
+				<label text="labels.paths.user_hydrogen_kits" text.halign="-1" hfill="true" />
+				<edit ui:inject="FileDialog::Path" ui:id="user_hydrogen_kit_path" width.min="420"/>
+			</vbox>
+		</cell>
+		<cell expand="true">
+			<vbox vfill="false" vexpand="false" spacing="4">
+				<label text="labels.paths.user_hydrogen_kits_override" text.halign="-1" hfill="true" />
+				<edit ui:inject="FileDialog::Search" ui:id="override_hydrogen_kit_path" width.min="420"/>
+			</vbox>
+		</cell>
+		<cell vfill="false" vexpand="false">
+			<hbox vfill="false" vexpand="false">
+				<hbox hexpand="false">
+					<check ui:id="override_hydrogen_kits_check" pad.r="4"/>
+					<label text="actions.ui_behavior.override_hydrogen_kits" hexpand="false"/>
+				</hbox>
+				<void hexpand="true"/>
+				<hbox hexpand="false">
+					<button ui:id="submit" text="actions.apply" width="96" pad.r="4"/>
+					<button ui:id="cancel" text="actions.cancel" width="96"/>
+				</hbox>
+			</hbox>
+		</cell>
+	</grid>
+
+</window>

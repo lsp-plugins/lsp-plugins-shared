@@ -370,6 +370,8 @@
 
 	<style class="AudioSample" parents="root">
 
+		<main.font.name value="noto-sans-display"/>
+	  <label.font.name value="noto-sans-display"/>
 		<stereo_groups value="true"/>
 		<border.color value="#ffffff"/>
 		<border.size value="2"/>
@@ -1103,7 +1105,7 @@
 		<button.border.radius value="2"/>
 		<button.radius value="3"/>
 		<button.width value="12"/>
-		<button.color value="fader"/>		
+		<button.color value="fader"/>
 		<button.aspect value="0.125" />
 	</style>
 
@@ -1984,6 +1986,14 @@
 
 	<style class="PluginWindow::StatusBar::Label::FAIL" parents="PluginWindow::StatusBar::Label">
 		<text.color value="red"/>
+	</style>
+
+	<!-- UserPathsDialog widgets -->
+	<style class="UserPathsDialog" parents="Window">
+		<padding value="8"/>
+		<border.style value="dialog"/>
+		<layout.hscale value="1.0"/>
+		<layout.vscale value="1.0"/>
 	</style>
 
 </schema>
