@@ -1109,6 +1109,12 @@
 		<button.aspect value="0.125" />
 	</style>
 
+	<style class="Fader_balance" parents="Fader">
+		<scale.color value="balance"/>
+		<balance.color.custom value="true"/>
+		<balance.color value="balance" />
+	</style>
+
 	<style class="Graph" parents="root">
 		<glass.visibility value="true"/>
 		<border.color value="bg_name"/>
