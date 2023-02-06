@@ -1,1 +1,1 @@
-<?php file_content('README.md', 'versioning'); ?>
+<?php file_content($README_FILE, 'versioning'); ?>
