@@ -1490,8 +1490,13 @@
 
 	<style class="MenuItem" parents="root">
 		<bg.selected.color value="bg_name"/>
+		<unchecked.draw value="false" />
 		<text.color value="text_sec"/>
 		<text.selected.color value="bg"/>
+	</style>
+	
+	<style class="MenuItemChecked" parents="MenuItem">
+		<unchecked.draw value="true" />
 	</style>
 
 	<style class="RackEars" parents="root"></style>
