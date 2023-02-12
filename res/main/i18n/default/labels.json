@@ -55,6 +55,7 @@
 	"attack:db_ms": "Attack\n(dB, ms)",
 	"attack_release:ms_ms": "Attack,\nRelease\n(ms, ms)",
 
+	"auto": "Auto",
 	"automatic_extension": "Automatic extension",
 
 	"balance": "Balance",
