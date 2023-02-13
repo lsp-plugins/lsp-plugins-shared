@@ -150,6 +150,27 @@
 		"modern": "Современный"
 	},
 	
+	"notes": {
+		"display": {
+			"full": "{@frequency} Гц\n{@note}{@octave}{@cents}",
+			"unknown": "{@frequency} Гц"
+		},
+		"names": {
+			"a": "A",
+			"a#": "A#",
+			"b": "B",
+			"c": "C",
+			"c#": "C#",
+			"d": "D",
+			"d#": "D#",
+			"e": "E",
+			"f": "F",
+			"f#": "F#",
+			"g": "G",
+			"g#": "G#"
+		}
+	},
+	
 	"oversampler": {
 		"full": {
 			"2x2": "Полн x2(2Л)",
