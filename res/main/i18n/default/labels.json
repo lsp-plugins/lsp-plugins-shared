@@ -387,6 +387,7 @@
 	"mix_gain": "Mix Gain",
 
 	"mode": "Mode",
+	"mode_slope": "Mode, Slope",
 	"mode:": "Mode:",
 	"model": "Model",
 	"model:": "Model:",
