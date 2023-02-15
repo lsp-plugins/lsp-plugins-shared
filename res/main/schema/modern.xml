@@ -1482,8 +1482,13 @@
 		<unchecked.draw value="true" />
 	</style>
 
-	<style class="Graph::MenuItemChecked" parents="MenuItemChecked">
-		<padding value="0"/>
+	<style class="Graph::MenuItem" parents="MenuItem">
+		<padding.left value="2" />
+		<padding.right value="16" />
+	</style>
+	
+	<style class="Graph::MenuItemChecked" parents="Graph::MenuItem">
+		<unchecked.draw value="true" />
 	</style>
 
 	<style class="RackEars" parents="root"></style>
