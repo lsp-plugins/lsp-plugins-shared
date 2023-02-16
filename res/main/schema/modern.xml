@@ -1482,18 +1482,11 @@
 		<check.color value="text_prim"/>
 		<check.bg.color value="bg_light"/>
 		<check.border.color value="border_color"/>
+		<padding.left value="26" />
+		<padding.right value="16" />
 	</style>
 
 	<style class="MenuItemChecked" parents="MenuItem">
-		<unchecked.draw value="true"/>
-	</style>
-
-	<style class="Graph::MenuItem" parents="MenuItem">
-		<padding.left value="6"/>
-		<padding.right value="16"/>
-	</style>
-
-	<style class="Graph::MenuItemChecked" parents="Graph::MenuItem">
 		<unchecked.draw value="true"/>
 	</style>
 
