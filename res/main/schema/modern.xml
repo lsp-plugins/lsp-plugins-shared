@@ -354,7 +354,7 @@
 	<style class="AudioSample" parents="root">
 
 		<main.font.name value="noto-sans-display"/>
-	  <label.font.name value="noto-sans-display"/>
+		<label.font.name value="noto-sans-display"/>
 		<stereo_groups value="true"/>
 		<border.color value="bg_name"/>
 		<border.size value="0"/>
@@ -1079,13 +1079,13 @@
 		<button.radius value="0"/>
 		<button.width value="4"/>
 		<button.color value="fader"/>
-		<button.aspect value="0.125" />
+		<button.aspect value="0.125"/>
 	</style>
 
 	<style class="Fader_balance" parents="Fader">
 		<scale.color value="balance"/>
 		<balance.color.custom value="true"/>
-		<balance.color value="balance" />
+		<balance.color value="balance"/>
 	</style>
 
 	<style class="Graph" parents="root">
@@ -1469,26 +1469,32 @@
 		<scroll.text.color value="text_prim"/>
 		<scroll.selected.color value="border_color"/>
 		<scroll.text.selected.color value="text_sec"/>
+		<check.border.radius value="0"/>
+		<check.border.gap value="2"/>
+		<spacing value="6"/>
 	</style>
 
 	<style class="MenuItem" parents="root">
 		<bg.selected.color value="border_color"/>
-		<unchecked.draw value="false" />
+		<unchecked.draw value="false"/>
 		<text.color value="text_prim"/>
 		<text.selected.color value="text_sec"/>
+		<check.color value="text_prim"/>
+		<check.bg.color value="bg_light"/>
+		<check.border.color value="border_color"/>
 	</style>
 
 	<style class="MenuItemChecked" parents="MenuItem">
-		<unchecked.draw value="true" />
+		<unchecked.draw value="true"/>
 	</style>
 
 	<style class="Graph::MenuItem" parents="MenuItem">
-		<padding.left value="2" />
-		<padding.right value="16" />
+		<padding.left value="6"/>
+		<padding.right value="16"/>
 	</style>
-	
+
 	<style class="Graph::MenuItemChecked" parents="Graph::MenuItem">
-		<unchecked.draw value="true" />
+		<unchecked.draw value="true"/>
 	</style>
 
 	<style class="RackEars" parents="root"></style>
@@ -1664,8 +1670,7 @@
 		<color value="text_prim"/>
 	</style>
 
-	<style class="FileDialog::FileList" parents="ListBox">
-	</style>
+	<style class="FileDialog::FileList" parents="ListBox"></style>
 
 	<style class="FileDialog::PreviewAlign" parents="Align">
 		<allocation.hreduce value="true"/>
