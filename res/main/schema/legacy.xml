@@ -1486,6 +1486,9 @@
 		<scroll.text.color value="bg"/>
 		<scroll.selected.color value="text_sec"/>
 		<scroll.text.selected.color value="border_color"/>
+		<check.border.radius value="3"/>
+		<check.border.gap value="1"/>
+		<spacing value="4"/>
 	</style>
 
 	<style class="MenuItem" parents="root">
@@ -1493,8 +1496,13 @@
 		<unchecked.draw value="false" />
 		<text.color value="text_sec"/>
 		<text.selected.color value="bg"/>
+		<check.color value="#00ccff"/>
+		<check.bg.color value="#ffffff"/>
+		<check.border.color value="#000000"/>
+		<padding.left value="26" />
+		<padding.right value="16" />
 	</style>
-	
+
 	<style class="MenuItemChecked" parents="MenuItem">
 		<unchecked.draw value="true" />
 	</style>
