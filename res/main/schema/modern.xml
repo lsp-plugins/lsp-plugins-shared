@@ -1469,6 +1469,8 @@
 		<scroll.text.color value="text_prim"/>
 		<scroll.selected.color value="border_color"/>
 		<scroll.text.selected.color value="text_sec"/>
+		<check.unchecked.draw value="true"/>
+		<radio.unchecked.draw value="false"/>
 		<check.border.radius value="0"/>
 		<check.border.gap value="2"/>
 		<spacing value="6"/>
@@ -1476,7 +1478,6 @@
 
 	<style class="MenuItem" parents="root">
 		<bg.selected.color value="border_color"/>
-		<unchecked.draw value="false"/>
 		<text.color value="text_prim"/>
 		<text.selected.color value="text_sec"/>
 		<check.color value="text_prim"/>
@@ -1484,10 +1485,6 @@
 		<check.border.color value="border_color"/>
 		<padding.left value="26" />
 		<padding.right value="16" />
-	</style>
-
-	<style class="MenuItemChecked" parents="MenuItem">
-		<unchecked.draw value="true"/>
 	</style>
 
 	<style class="RackEars" parents="root"></style>

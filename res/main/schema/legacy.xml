@@ -1493,18 +1493,15 @@
 
 	<style class="MenuItem" parents="root">
 		<bg.selected.color value="bg_name"/>
-		<unchecked.draw value="false" />
 		<text.color value="text_sec"/>
 		<text.selected.color value="bg"/>
+		<check.unchecked.draw value="true"/>
+		<radio.unchecked.draw value="false"/>
 		<check.color value="#00ccff"/>
 		<check.bg.color value="#ffffff"/>
 		<check.border.color value="#000000"/>
 		<padding.left value="26" />
 		<padding.right value="16" />
-	</style>
-
-	<style class="MenuItemChecked" parents="MenuItem">
-		<unchecked.draw value="true" />
 	</style>
 
 	<style class="RackEars" parents="root"></style>
