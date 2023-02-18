@@ -243,22 +243,6 @@
 		"rms": "СКЗ",
 		"side": "Сторона",
 		"sma": "ПСС"
-	},
-	
-	"spectrum": {
-		"analyzer": "Анализатор",
-		"analyzer_s": "Стереоанализатор",
-		"mastering": "Мастеринг",
-		"mastering_s": "Стереомастеринг",
-		"spc": {
-			"color": "Цвет",
-			"fog": "Туман",
-			"lightness": "Яркость",
-			"lightning": "Молния",
-			"rainbow": "Радуга"
-		},
-		"spectralizer": "Спектрализатор",
-		"spectralizer_s": "Стереоспектрализатор"
 	}
 }
 

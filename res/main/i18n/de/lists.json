@@ -217,22 +217,6 @@
 		"rms": "RMS",
 		"side": "Seite",
 		"sma": "SMA"
-	},
-	
-	"spectrum": {
-		"analyzer": "Analysator",
-		"analyzer_s": "Analysator Stereo",
-		"mastering": "Mastering",
-		"mastering_s": "Mastering Stereo",
-		"spc": {
-			"color": "Color",
-			"fog": "Fog",
-			"lightness": "Lightness",
-			"lightning": "Lightning",
-			"rainbow": "Rainbow"
-		},
-		"spectralizer": "Spectralizer",
-		"spectralizer_s": "Spectralizer Stereo"
 	}
 }
 
