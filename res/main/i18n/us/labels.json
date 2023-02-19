@@ -127,6 +127,7 @@
 		"left_on": "Left on",
 		"mid": "Mid",
 		"mid_on": "Mid on",
+		"mid_side": "Mid/Side",
 		"middle": "Middle",
 		"mute": "Mute",
 		"num_id": "#{@id}",
