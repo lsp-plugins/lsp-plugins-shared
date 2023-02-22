@@ -1136,6 +1136,7 @@
 		<border.size value="10"/>
 		<size value="3"/>
 		<color value="cyan"/>
+		<step.accel value="1.0" />
 		<border.color value="cyan"/>
 		<hover.size value="3"/>
 		<hover.border.size value="14"/>
@@ -1145,6 +1146,7 @@
 
 	<style class="GraphMarker" parents="root">
 		<smooth value="false"/>
+		<step.accel value="1.0" />
 		<color value="graph_marker"/>
 	</style>
 
