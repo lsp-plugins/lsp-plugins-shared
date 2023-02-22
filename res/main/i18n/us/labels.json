@@ -365,7 +365,9 @@
 	"memory:mb": "Memory (MB)",
 	"metering": {
 		"channel": "Channel",
+		"fft_frequency": "FFT Frequency",
 		"frequency": "Frequency",
+		"fft_frequency:hz": "FFT Frequency (Hz)",
 		"frequency:hz": "Frequency (Hz)",
 		"level": "Level",
 		"level:db": "Level (dB)",
