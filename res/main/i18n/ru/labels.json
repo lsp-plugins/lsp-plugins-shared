@@ -369,7 +369,6 @@
 		"frequency": "Частота",
 		"frequency:hz": "Частота (Гц)",
 		"fft_frequency:hz": "Частота БПФ (Гц)",
-		"frequency:hz": "Frequency (Hz)",
 		"level": "Уровень",
 		"level:db": "Уровень (дБ)",
 		"preamp": "Предусиление",
