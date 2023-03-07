@@ -200,6 +200,7 @@
 		<velocity value="#aa00ff"/>
 
 		<balance value="#ffa200"/>
+		<fader_balance value="#000000"/>
 		<balance_l value="#ffa200"/>
 		<balance_r value="#f1c100"/>
 
@@ -227,8 +228,8 @@
 		<wet value="#0092ff"/>
 
 		<!-- Inactive colors -->
-		<fader value="#ebecee"/>
-		<fader_inactive value="#ebecee"/>
+		<fader value="#000000"/>
+		<fader_inactive value="#000000"/>
 
 		<cycle_inactive value="#888888"/>
 		<mono_in_inactive value="#6c544f"/>
@@ -1110,9 +1111,9 @@
 	</style>
 
 	<style class="Fader_balance" parents="Fader">
-		<scale.color value="balance"/>
+		<scale.color value="fader_balance"/>
 		<balance.color.custom value="true"/>
-		<balance.color value="balance" />
+		<balance.color value="fader_balance" />
 	</style>
 
 	<style class="Graph" parents="root">
