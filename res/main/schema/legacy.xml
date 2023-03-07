@@ -16,6 +16,7 @@
 	<!-- Constants -->
 	<constants>
 		<bg_darken value="1.0"/>
+		<led_darken value="1.0"/>
 	</constants>
 
 	<!-- Color aliases -->
