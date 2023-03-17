@@ -147,6 +147,7 @@
 		"pitch_mid": "Pitch Mid",
 		"pitch_right": "Pitch Right",
 		"pitch_side": "Pitch Side",
+		"rand_id": "Randomized #{@id}",
 		"right": "Right",
 		"right_on": "Right on",
 		"shift": "Shift",
@@ -513,6 +514,8 @@
 	"range": "Range",
 	"range_id": "Range {@id}",
 	"ranges": "Ranges",
+
+	"rating": "Rating",
 
 	"ratio": "Ratio",
 	"ratio_high": "Ratio high",
