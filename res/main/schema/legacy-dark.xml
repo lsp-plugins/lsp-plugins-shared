@@ -15,7 +15,7 @@
 
 	<!-- Constants -->
 	<constants>
-		<bg_darken value="1.0"/>		
+		<bg_darken value="1.0"/>
 		<led_darken value="1.0"/>
 	</constants>
 
@@ -310,6 +310,11 @@
 		<loop_border_color avalue="#8823b270"/>
 		<loop_color_off avalue="#ee23b270"/>
 		<loop_border_color_off avalue="#bb23b270"/>
+
+		<!-- Button color -->
+		<button_inactive_border value="#3b3d49"/>
+		<button_inactive value="#25272e"/>
+
 	</colors>
 
 	<!-- Root style -->

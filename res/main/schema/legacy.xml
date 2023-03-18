@@ -313,6 +313,11 @@
 		<loop_border_color avalue="#008800ff"/>
 		<loop_color_off avalue="#ee8800ff"/>
 		<loop_border_color_off avalue="#888800ff"/>
+
+		<!-- Button color -->
+		<button_inactive_border value="#eeeeee"/>
+		<button_inactive value="#cccccc"/>
+
 	</colors>
 
 	<!-- Root style -->
