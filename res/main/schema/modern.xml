@@ -297,7 +297,15 @@
 		<loop_color_off avalue="#ee23b270"/>
 		<loop_border_color_off avalue="#bb23b270"/>
 
-		<!-- Button color -->
+		<!-- Button colors -->
+		<button_cyan_rating_color value="#25272e"/>
+		<button_cyan_rating_border_color value="#373944"/>
+		<button_cyan_rating_hover_color value="#373944"/>
+		<button_cyan_rating_border_hover_color value="#808299"/>
+		<button_cyan_rating_down_color value="#00626b"/>
+		<button_cyan_rating_down_border_color value="#00a4b2"/>
+		<button_cyan_rating_down_hover_color value="#00626b"/>
+		<button_cyan_rating_down_border_hover_color value="#00909e"/>
 		<button_inactive_border value="#373944"/>
 		<button_inactive value="#25272e"/>
 

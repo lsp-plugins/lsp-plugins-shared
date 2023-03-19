@@ -314,7 +314,15 @@
 		<loop_color_off avalue="#ee8800ff"/>
 		<loop_border_color_off avalue="#888800ff"/>
 
-		<!-- Button color -->
+		<!-- Button colors -->
+		<button_cyan_rating_color value="#cccccc"/>
+		<button_cyan_rating_border_color value="#888888"/>
+		<button_cyan_rating_hover_color value="#eeeeee"/>
+		<button_cyan_rating_border_hover_color value="#888888"/>
+		<button_cyan_rating_down_color value="#7cffff"/>
+		<button_cyan_rating_down_border_color value="#7cffff"/>
+		<button_cyan_rating_down_hover_color value="#00ffff"/>
+		<button_cyan_rating_down_border_hover_color value="#00ffff"/>
 		<button_inactive_border value="#eeeeee"/>
 		<button_inactive value="#cccccc"/>
 
@@ -378,7 +386,7 @@
 	<style class="AudioSample" parents="root">
 
 		<main.font.name value="noto-sans-display"/>
-	  <label.font.name value="noto-sans-display"/>
+		<label.font.name value="noto-sans-display"/>
 		<stereo_groups value="true"/>
 		<border.color value="#ffffff"/>
 		<border.size value="2"/>
@@ -1113,13 +1121,13 @@
 		<button.radius value="3"/>
 		<button.width value="12"/>
 		<button.color value="fader"/>
-		<button.aspect value="0.125" />
+		<button.aspect value="0.125"/>
 	</style>
 
 	<style class="Fader_balance" parents="Fader">
 		<scale.color value="fader_balance"/>
 		<balance.color.custom value="true"/>
-		<balance.color value="fader_balance" />
+		<balance.color value="fader_balance"/>
 	</style>
 
 	<style class="Graph" parents="root">
@@ -1143,7 +1151,7 @@
 		<border.size value="10"/>
 		<size value="3"/>
 		<color value="cyan"/>
-		<step.accel value="1.0" />
+		<step.accel value="1.0"/>
 		<border.color value="cyan"/>
 		<hover.size value="3"/>
 		<hover.border.size value="14"/>
@@ -1153,7 +1161,7 @@
 
 	<style class="GraphMarker" parents="root">
 		<smooth value="false"/>
-		<step.accel value="1.0" />
+		<step.accel value="1.0"/>
 		<color value="graph_marker"/>
 	</style>
 
@@ -1509,8 +1517,8 @@
 		<check.color value="#00ccff"/>
 		<check.bg.color value="#ffffff"/>
 		<check.border.color value="#000000"/>
-		<padding.left value="26" />
-		<padding.right value="16" />
+		<padding.left value="26"/>
+		<padding.right value="16"/>
 	</style>
 
 	<style class="RackEars" parents="root"></style>
