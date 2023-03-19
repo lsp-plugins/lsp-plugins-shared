@@ -93,7 +93,7 @@
 				$state['unget'] = $line;
 			}
 			else
-				file_append_line($state, $match[1] . "\n");
+				file_append_line($state, rtrim($match[1]) . "\n");
 		}
 		elseif ($last == 'pre-q')
 		{
@@ -102,7 +102,7 @@
 				file_emit_line($state, "", "pre");
 			}
 			else
-				file_append_line($state, $line . "\n");
+				file_append_line($state, rtrim($line) . "\n");
 		}
 		else
 		{

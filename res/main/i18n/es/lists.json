@@ -203,22 +203,6 @@
 		"rms": "RMS",
 		"side": "Lateral",
 		"sma": "SMA"
-	},
-	
-	"spectrum": {
-		"analyzer": "Analizador",
-		"analyzer_s": "Analizador Estéreo",
-		"mastering": "Masterizado",
-		"mastering_s": "Masterizado Estéreo",
-		"spc": {
-			"color": "Color",
-			"fog": "Niebla",
-			"lightness": "Ligereza",
-			"lightning": "Rayo",
-			"rainbow": "Arcoiris"
-		},
-		"spectralizer": "Espectralizador",
-		"spectralizer_s": "Espectralizador Estéreo"
 	}
 }
 

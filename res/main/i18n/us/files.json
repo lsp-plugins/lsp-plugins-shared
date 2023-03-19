@@ -21,6 +21,7 @@
 		"req": "REW binary filter settings (*.req)",
 		"txt": "REW text filter settings (*.txt)"
 	},
+	"sfz": "SFZ files (*.sfz)",
 	"text": {
 		"txt": "Text files (*.txt)"
 	}

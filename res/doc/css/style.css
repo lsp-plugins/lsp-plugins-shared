@@ -21,7 +21,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/::-webkit-scrollbar-button {
+::-webkit-scrollbar-button {
   background-image: url('');
   background-repeat: no-repeat;
   width: 6px;
@@ -110,10 +110,9 @@ img.portrait {
 
 img.plugin {
   height: auto;
-  max-height: 100%;
   max-width: 450px;
   object-fit: contain;
-  width: auto;
+  width: 100%;
   float: left;
   margin: 0 25px 10px 0;
   border: 2px solid #373944;

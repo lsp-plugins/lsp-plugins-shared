@@ -16,6 +16,7 @@
 	<!-- Constants -->
 	<constants>
 		<bg_darken value="0.75"/>
+		<led_darken value="0.75"/>
 	</constants>
 
 	<!-- Color aliases -->
@@ -183,6 +184,7 @@
 		<velocity value="#da404a"/>
 
 		<balance value="#b07000"/>
+		<fader_balance value="#b07000"/>
 		<balance_l value="#b07000"/>
 		<balance_r value="#868200"/>
 
@@ -211,7 +213,7 @@
 
 		<!-- Inactive colors -->
 		<fader value="#3496ab"/>
-		<fader_inactive value="#4b666d"/>
+		<fader_inactive value="#6f7185"/>
 
 		<cycle_inactive value="#6f7185"/>
 		<mono_in_inactive value="#6c544f"/>
@@ -294,6 +296,19 @@
 		<loop_border_color avalue="#8823b270"/>
 		<loop_color_off avalue="#ee23b270"/>
 		<loop_border_color_off avalue="#bb23b270"/>
+
+		<!-- Button colors -->
+		<button_cyan_rating_color value="#25272e"/>
+		<button_cyan_rating_border_color value="#373944"/>
+		<button_cyan_rating_hover_color value="#373944"/>
+		<button_cyan_rating_border_hover_color value="#808299"/>
+		<button_cyan_rating_down_color value="#00626b"/>
+		<button_cyan_rating_down_border_color value="#00a4b2"/>
+		<button_cyan_rating_down_hover_color value="#00626b"/>
+		<button_cyan_rating_down_border_hover_color value="#00909e"/>
+		<button_inactive_border value="#373944"/>
+		<button_inactive value="#25272e"/>
+
 	</colors>
 
 	<!-- Root style -->
@@ -354,7 +369,7 @@
 	<style class="AudioSample" parents="root">
 
 		<main.font.name value="noto-sans-display"/>
-	  <label.font.name value="noto-sans-display"/>
+		<label.font.name value="noto-sans-display"/>
 		<stereo_groups value="true"/>
 		<border.color value="bg_name"/>
 		<border.size value="0"/>
@@ -1079,7 +1094,13 @@
 		<button.radius value="0"/>
 		<button.width value="4"/>
 		<button.color value="fader"/>
-		<button.aspect value="0.125" />
+		<button.aspect value="0.125"/>
+	</style>
+
+	<style class="Fader_balance" parents="Fader">
+		<scale.color value="fader_balance"/>
+		<balance.color.custom value="true"/>
+		<balance.color value="fader_balance"/>
 	</style>
 
 	<style class="Graph" parents="root">
@@ -1103,6 +1124,7 @@
 		<border.size value="5"/>
 		<size value="3"/>
 		<color value="cyan"/>
+		<step.accel value="1.0" />
 		<border.color value="cyan"/>
 		<hover.size value="3"/>
 		<hover.border.size value="10"/>
@@ -1112,6 +1134,7 @@
 
 	<style class="GraphMarker" parents="root">
 		<smooth value="false"/>
+		<step.accel value="1.0" />
 		<color value="graph_marker"/>
 	</style>
 
@@ -1463,12 +1486,22 @@
 		<scroll.text.color value="text_prim"/>
 		<scroll.selected.color value="border_color"/>
 		<scroll.text.selected.color value="text_sec"/>
+		<check.unchecked.draw value="true"/>
+		<radio.unchecked.draw value="false"/>
+		<check.border.radius value="0"/>
+		<check.border.gap value="2"/>
+		<spacing value="6"/>
 	</style>
 
 	<style class="MenuItem" parents="root">
 		<bg.selected.color value="border_color"/>
 		<text.color value="text_prim"/>
 		<text.selected.color value="text_sec"/>
+		<check.color value="text_prim"/>
+		<check.bg.color value="bg_light"/>
+		<check.border.color value="border_color"/>
+		<padding.left value="26" />
+		<padding.right value="16" />
 	</style>
 
 	<style class="RackEars" parents="root"></style>
@@ -1644,8 +1677,7 @@
 		<color value="text_prim"/>
 	</style>
 
-	<style class="FileDialog::FileList" parents="ListBox">
-	</style>
+	<style class="FileDialog::FileList" parents="ListBox"></style>
 
 	<style class="FileDialog::PreviewAlign" parents="Align">
 		<allocation.hreduce value="true"/>

@@ -150,6 +150,27 @@
 		"modern": "Modern"
 	},
 	
+	"notes": {
+		"display": {
+			"full": "{@frequency} Hz\n{@note}{@octave}{@cents}",
+			"unknown": "{@frequency} Hz"
+		},
+		"names": {
+			"a": "A",
+			"a#": "A#",
+			"b": "B",
+			"c": "C",
+			"c#": "C#",
+			"d": "D",
+			"d#": "D#",
+			"e": "E",
+			"f": "F",
+			"f#": "F#",
+			"g": "G",
+			"g#": "G#"
+		}
+	},
+	
 	"oversampler": {
 		"full": {
 			"2x2": "Full x2(2L)",
@@ -222,22 +243,6 @@
 		"rms": "RMS",
 		"side": "Side",
 		"sma": "SMA"
-	},
-	
-	"spectrum": {
-		"analyzer": "Analyzer",
-		"analyzer_s": "Analyzer Stereo",
-		"mastering": "Mastering",
-		"mastering_s": "Mastering Stereo",
-		"spc": {
-			"color": "Color",
-			"fog": "Fog",
-			"lightness": "Lightness",
-			"lightning": "Lightning",
-			"rainbow": "Rainbow"
-		},
-		"spectralizer": "Spectralizer",
-		"spectralizer_s": "Spectralizer Stereo"
 	}
 }
 
