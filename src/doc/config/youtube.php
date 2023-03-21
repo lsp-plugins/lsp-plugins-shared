@@ -23,7 +23,9 @@ $YOUTUBE = array(
 	'g8cShrKtmKo' => 'Crossover',
 	'mEP1WyLFruY' => 'Artistic Delay',
 	'MCIpQebU5o4' => 'Oscilloscope',
-	'6ZuW28u1qns' => 'Multiband Dynamic Processor'
+	'6ZuW28u1qns' => 'Multiband Dynamic Processor',
+	'1Og6vAZ2BLo' => 'Noise Generator',
+	'EFf4VqvMUXM' => 'A/B Tester & Mixer'
 );
 
 ?>
