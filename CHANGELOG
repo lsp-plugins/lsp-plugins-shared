@@ -2,6 +2,9 @@
 * RECENT CHANGES
 *******************************************************************************
 
+=== 1.0.10 ===
+* Updated module versions in dependencies.
+
 === 1.0.9 ===
 * Fixed some shared data for 1.2.6 release.
 
