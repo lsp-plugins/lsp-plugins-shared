@@ -89,7 +89,11 @@
 	"ui_behavior": {
 		"": "Поведение интерфейса",
 		"ediable_knob_scale": "Редактируемые шкалы ручек",
-		"override_hydrogen_kits": "Замещать настройки Hydrogen"
+		"override_hydrogen_kits": "Замещать настройки Hydrogen",
+		"vscroll": {
+			"invert_global": "Инвертировать вертикальное колесо мыши",
+			"invert_graph_dot": "Инвертировать вертикальное колесо мыши для точек на графе"
+		}
 	},
 	
 	"ui_manual": "Руководство по интерфейсу",

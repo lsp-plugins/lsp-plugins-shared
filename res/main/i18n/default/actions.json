@@ -89,7 +89,11 @@
 	"ui_behavior": {
 		"": "UI behavior",
 		"ediable_knob_scale": "Editable knob scale",
-		"override_hydrogen_kits": "Override Hydrogen kits"
+		"override_hydrogen_kits": "Override Hydrogen kits",
+		"vscroll": {
+			"invert_global": "Invert vertical mouse scroll",
+			"invert_graph_dot": "Invert vertical mouse scroll for graph dots"
+		}
 	},
 	
 	"ui_manual": "UI manual",
