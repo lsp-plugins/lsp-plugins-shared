@@ -29,6 +29,21 @@
 	"export_settings_to_clipboard": "Export settings to clipboard",
 	"export_settings_to_file": "Export settings to file...",
 	
+	"file_preview": {
+		"pause": "Pause",
+		"play": "Play",
+		"stop": "Stop"
+	},
+
+	"filters": {
+		"switch": {
+			"to_left": "Switch to Left",
+			"to_mid": "Switch to Mid",
+			"to_right": "Switch to Right",
+			"to_side": "Switch to Side"
+		}
+	},
+	
 	"font_scaling": {
 		"select": "Font scaling",
 		"value:pc": "{@value} %",

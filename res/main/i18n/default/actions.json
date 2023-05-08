@@ -35,6 +35,15 @@
 		"stop": "Stop"
 	},
 	
+	"filters": {
+		"switch": {
+			"to_left": "Switch to Left",
+			"to_mid": "Switch to Mid",
+			"to_right": "Switch to Right",
+			"to_side": "Switch to Side"
+		}
+	},
+	
 	"font_scaling": {
 		"select": "Font scaling",
 		"value:pc": "{@value} %",
