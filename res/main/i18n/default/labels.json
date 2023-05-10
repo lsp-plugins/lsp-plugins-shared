@@ -336,6 +336,7 @@
 	"latency:ms": "Latency (ms)",
 	"launch": "Launch",
 	"left": "Left",
+	"line_size": "Line size",
 	"listen": "Listen",
 	"location": "Location",
 	"log_scale": "Log scale",
