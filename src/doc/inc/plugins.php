@@ -41,7 +41,7 @@
 			$full_name = htmlspecialchars("{$PACKAGE['short']} {$plugin['description']} ({$plugin['acronym']})");
 			$author = htmlspecialchars($plugin['author']);
 			
-			echo "<img class=\"plugin\" src=\"${DOCROOT}img/plugins/{$plugin['id']}.png\" alt=\"{$plugin['name']}\">\n";
+			echo "<img class=\"plugin\" src=\"{$DOCROOT}img/plugins/{$plugin['id']}.png\" alt=\"{$plugin['name']}\">\n";
 			echo "<p><b>Detailed:&nbsp;</b>{$full_name}</p>\n";
 			echo "<p><b>Formats:&nbsp;</b>" . implode(',&nbsp;', $fmt) . "</p>\n";
 			echo "<p><b>Categories:&nbsp;</b>" . implode(',&nbsp;', $plugin['groups']) . "</p>\n";
@@ -54,7 +54,7 @@
 	function out_image($id, $alt)
 	{
 		global $DOCROOT;
-		echo "<img src=\"${DOCROOT}/img/{$id}.png\" alt=\"{$alt}\">\n";
+		echo "<img src=\"{$DOCROOT}/img/{$id}.png\" alt=\"{$alt}\">\n";
 	}
 	
 	function plugin_ref($id)
@@ -65,7 +65,7 @@
 			return;
 		
 		$header = htmlspecialchars("{$PACKAGE['short']} {$page['text']}");
-		print("<b><a href=\"${DOCROOT}html/plugins/${page['id']}.html\">{$header}</a></b>");
+		print("<b><a href=\"{$DOCROOT}html/plugins/${page['id']}.html\">{$header}</a></b>");
 	}
 
 ?>
