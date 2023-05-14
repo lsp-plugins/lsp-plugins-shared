@@ -65,7 +65,7 @@
 			return;
 		
 		$header = htmlspecialchars("{$PACKAGE['short']} {$page['text']}");
-		print("<b><a href=\"{$DOCROOT}html/plugins/${page['id']}.html\">{$header}</a></b>");
+		print("<b><a href=\"{$DOCROOT}html/plugins/{$page['id']}.html\">{$header}</a></b>");
 	}
 
 ?>
