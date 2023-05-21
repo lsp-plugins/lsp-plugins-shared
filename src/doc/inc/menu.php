@@ -68,13 +68,13 @@
 		{
 			if (isset($item['items']))
 			{
-				print("<li>${item['text']}</li>\n");
+				print("<li>{$item['text']}</li>\n");
 				output_menu($item['items']);
 			}
 			else
 			{
 				$path = (strlen($item['path']) > 0) ? $item['path'] . '/' : '';
-				print("<li><a href=\"html/${path}${item['id']}.html\">${item['text']}</a></li>\n");
+				print("<li><a href=\"html/{$path}{$item['id']}.html\">{$item['text']}</a></li>\n");
 			}
 		}
 		print "</ul>\n";

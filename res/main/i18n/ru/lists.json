@@ -138,6 +138,16 @@
 		"t8": "Дорожка 8"
 	},
 	
+	"filters": {
+		"index": {
+		    "filter_id": "Фильтр №{@id}",
+			"left_id": "Левый №{@id}",
+			"mid_id": "Середина №{@id}",
+			"right_id": "Правый №{@id}",
+			"side_id": "Сторона №{@id}"
+		}
+	},
+	
 	"metering": {
 		"fft": {
 			"off": "Выкл",
@@ -153,8 +163,8 @@
 	
 	"notes": {
 		"display": {
-			"full": "{@frequency} Гц\n{@note}{@octave}{@cents}",
-			"unknown": "{@frequency} Гц"
+			"full": "{@filter}\n{@filter_type}\n{@frequency} Гц\n{@note}{@octave}{@cents}",
+			"unknown": "{@filter}\n{@filter_type}\n{@frequency} Гц"
 		},
 		"names": {
 			"a": "A",

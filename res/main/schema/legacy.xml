@@ -162,6 +162,8 @@
 		<graph_alt_3 value="#2c2c2c"/>
 		<graph_alt_4 value="#090909"/>
 		<graph_marker value="#ff4040"/>
+		<graph_marker_line value="#00ffff"/>
+		<graph_marker_line_hover value="#7cffff"/>
 
 		<!-- Area3d -->
 		<area3d_x value="#ff0000"/>

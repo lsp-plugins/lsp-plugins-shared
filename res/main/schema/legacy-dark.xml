@@ -159,6 +159,8 @@
 		<graph_alt_3 value="#2a2c34"/>
 		<graph_alt_4 value="#23252b"/>
 		<graph_marker value="#dc615a"/>
+		<graph_marker_line value="#00909e"/>
+		<graph_marker_line_hover value="#00a4b2"/>
 
 		<!-- Area3d -->
 		<area3d_x value="#ff0000"/>

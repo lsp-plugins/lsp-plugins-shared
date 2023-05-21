@@ -138,6 +138,16 @@
 		"t8": "Track 8"
 	},
 	
+	"filters": {
+		"index": {
+		    "filter_id": "Filter #{@id}",
+			"left_id": "Left #{@id}",
+			"mid_id": "Mid #{@id}",
+			"right_id": "Right #{@id}",
+			"side_id": "Side #{@id}"
+		}
+	},
+	
 	"metering": {
 		"fft": {
 			"off": "Off",
@@ -153,8 +163,8 @@
 	
 	"notes": {
 		"display": {
-			"full": "{@frequency} Hz\n{@note}{@octave}{@cents}",
-			"unknown": "{@frequency} Hz"
+			"full": "{@filter}\n{@filter_type}\n{@frequency} Hz\n{@note}{@octave}{@cents}",
+			"unknown": "{@filter}\n{@filter_type}\n{@frequency} Hz"
 		},
 		"names": {
 			"a": "A",

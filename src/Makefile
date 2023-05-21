@@ -78,17 +78,19 @@ CXX_OBJ_TEST            = $(patsubst %.cpp, $(ARTIFACT_BIN)/%.o, $(CXX_SRC_TEST)
 CXX_OBJ_NOTEST          = $(patsubst %.cpp, $(ARTIFACT_BIN)/%.o, $(CXX_SRC_NOTEST))
 CXX_OBJ_EXT             = $(patsubst %.cpp, $(ARTIFACT_BIN)/%.o, $(CXX_SRC_EXT))
 CXX_OBJ                 = $(CXX_OBJ_MAIN) $(CXX_OBJ_EXT)
+CXX_OBJ_ALL             = \
+  $(CXX_OBJ_MAIN) \
+  $(CXX_OBJ_EXPORT) \
+  $(CXX_OBJ_EXT) \
+  $(CXX_OBJ_TEST) \
+  $(CXX_OBJ_NOTEST)
 
 ALL_HEADERS             = $(call rwildcard, $(ARTIFACT_INC), *.h)
 CXX_FILE                = $(patsubst $(ARTIFACT_BIN)/%.o,%.cpp, $(@))
 CXX_HDR_PATHS           = $(foreach hdr,$(ARTIFACT_HEADERS),$(ARTIFACT_INC)/$(hdr))
 CXX_HEADERS             = $(foreach path,$(CXX_HDR_PATHS),$(call rwildcard, $(path), *.h))
 CXX_INSTHEADERS         = $(patsubst $(ARTIFACT_INC)/%,$(DESTDIR)$(INCDIR)/%,$(CXX_HEADERS))
-CXX_INSTALL_HEADERS     = 
-
-ifeq ($(HEADERS),1)
-  CXX_INSTALL_HEADERS     = 1
-endif
+DEP_FILE                = $(patsubst %.o,%.d, $(@))
 
 BUILD_ALL               = $(ARTIFACT_LIB) $(ARTIFACT_SLIB) $(ARTIFACT_PC)
 
@@ -101,28 +103,10 @@ DEP_CXX_FILE            = $(patsubst $(ARTIFACT_BIN)/%.d,%.cpp,$(@))
 DEP_DEP_FILE            = $(patsubst $(ARTIFACT_BIN)/%.d,%.o,$(@))
 
 .DEFAULT_GOAL = all
-.PHONY: compile depend dep_clean all install uninstall
+.PHONY: compile all install uninstall
 .PHONY: $(ARTIFACT_DEPS)
 
-# Dependencies
-dep_clean:
-
-$(DEP_CXX): dep_clean
-	echo "  dep  [$(ARTIFACT_NAME)] $(DEP_CXX_FILE)"
-	mkdir -p $(dir $(@))
-	$(CXX) -MM -MT "\$$($(ARTIFACT_ID)_BIN)/$(DEP_DEP_FILE)" -MF $(@) $(DEP_CXX_FILE) $(CXXFLAGS) $(INCLUDE) $(ARTIFACT_CFLAGS)
-
-depend: $(DEP_CXX)
-	$(foreach dep,$(ARTIFACT_DEPENDENCIES) $(HOST)$(ARTIFACT_ID),\
-	  $(if $($(dep)_INC), \
-	    $(eval SED_RULES += s/$(shell echo "$($(dep)_INC)" | sed "s/\\//\\\\\//g")/\$$$$\\($(dep)_INC\\)/g;)\
-	  )\
-	  $(if $($(dep)_BIN), \
-	    $(eval SED_RULES += s/$(shell echo "$($(dep)_BIN)" | sed "s/\\//\\\\\//g")/\\$$$$\\($(dep)_BIN\\)/g;)\
-	  )\
-	)
-	cat $(DEP_CXX) | sed -E "$(SED_RULES)" >Makefile.d
-
+# Compile dependencies
 $(ARTIFACT_DEPS):
 	echo "make $(notdir $($(@)_OBJ))"
 	$(MAKE) -C "$($(@)_PATH)" compile VERBOSE="$(VERBOSE)" CONFIG="$(CONFIG)" DEMO_TEST="0" BUILD_HOST="$(BUILD_HOST)"
@@ -130,15 +114,15 @@ $(ARTIFACT_DEPS):
 # Compilation
 compile: $(ARTIFACT_OBJ)
 
-$(CXX_OBJ_MAIN) $(CXX_OBJ_EXPORT) $(CXX_OBJ_EXT) $(CXX_OBJ_TEST) $(CXX_OBJ_NOTEST):
+$(CXX_OBJ_ALL):
 	echo "  $($(HOST)CXX)  [$(ARTIFACT_NAME)] $(CXX_FILE)"
 	mkdir -p $(dir $@)
-	$($(HOST)CXX) -o $(@) -c $(CXX_FILE) -fPIC $($(HOST)CXXFLAGS) $(ARTIFACT_MFLAGS) $($(HOST)EXT_FLAGS) $(INCLUDE) $(ARTIFACT_CFLAGS)
+	$($(HOST)CXX) -o $(@) -c $(CXX_FILE) -fPIC $($(HOST)CXXFLAGS) $(ARTIFACT_MFLAGS) $($(HOST)EXT_FLAGS) $(INCLUDE) $(ARTIFACT_CFLAGS) -MMD -MP -MF $(DEP_FILE) -MT $(@)
 	
 # Producing large object files
 $(ARTIFACT_OBJ): $(CXX_OBJ)
 	@echo "  $($(HOST)LD)   [$(ARTIFACT_NAME)] $(notdir $(ARTIFACT_OBJ))"
-	@$($(HOST)LD) -o $(ARTIFACT_OBJ) $($(HOST)LDFLAGS) $(CXX_OBJ)
+	$($(HOST)LD) -o $(ARTIFACT_OBJ) $($(HOST)LDFLAGS) $(CXX_OBJ)
 
 $(ARTIFACT_OBJ_TEST): $(CXX_OBJ_TEST)
 	echo "  $($(HOST)LD)   [$(ARTIFACT_NAME)] $(notdir $(ARTIFACT_OBJ_TEST))"
@@ -176,13 +160,11 @@ $(ARTIFACT_PC):
 install: all
 	echo "Installing $($(ARTIFACT_ID)_NAME)"
 	mkdir -p "$(DESTDIR)$(LIBDIR)/pkgconfig"
-	$(if $(CXX_INSTALL_HEADERS), mkdir -p "$(DESTDIR)$(INCDIR)")
-	$(if $(CXX_INSTALL_HEADERS), cp -r "$(CXX_HDR_PATHS)" "$(DESTDIR)$(INCDIR)/")
+	$(if $(filter $(INSTALL_HEADERS),1), mkdir -p "$(DESTDIR)$(INCDIR)")
+	$(if $(filter $(INSTALL_HEADERS),1), cp -r "$(CXX_HDR_PATHS)" "$(DESTDIR)$(INCDIR)/")
 	cp $(ARTIFACT_PC) "$(DESTDIR)$(LIBDIR)/pkgconfig/"
-	echo $(INSTALL) $(ARTIFACT_LIB) -t "$(DESTDIR)$(LIBDIR)"
-	$(INSTALL) $(ARTIFACT_LIB) -t "$(DESTDIR)$(LIBDIR)"
-	echo cp $(ARTIFACT_SLIB) -t "$(DESTDIR)$(LIBDIR)"
-	cp $(ARTIFACT_SLIB) -t "$(DESTDIR)$(LIBDIR)"
+	$(INSTALL) $(ARTIFACT_LIB) "$(DESTDIR)$(LIBDIR)/"
+	cp $(ARTIFACT_SLIB) "$(DESTDIR)$(LIBDIR)/"
 	ln -sf $(notdir $(ARTIFACT_LIB)) "$(DESTDIR)$(LIBDIR)/$(ARTIFACT_LIBLINK)"
 	ln -sf $(notdir $(ARTIFACT_SLIB)) "$(DESTDIR)$(LIBDIR)/$(ARTIFACT_SLIBLINK)"
 	echo "Install OK"
@@ -198,4 +180,4 @@ uninstall:
 	echo "Uninstall OK"
 
 # Dependencies
--include $(CURDIR)/Makefile.d
+-include $(foreach objfile,$(CXX_OBJ_ALL),$(patsubst %.o,%.d,$(objfile)))
