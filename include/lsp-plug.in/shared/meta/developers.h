@@ -64,6 +64,7 @@
 #define LSP_LADSPA_MIXER_BASE               (LSP_LADSPA_BASE + 140)
 #define LSP_LADSPA_AB_TESTER_BASE           (LSP_LADSPA_BASE + 150)
 #define LSP_LADSPA_GOTT_COMPRESSOR_BASE     (LSP_LADSPA_BASE + 160)
+#define LSP_LADSPA_FLANGER_BASE             (LSP_LADSPA_BASE + 170)
 
 namespace lsp
 {
