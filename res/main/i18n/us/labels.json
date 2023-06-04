@@ -40,6 +40,7 @@
 
 	"alr": "ALR",
 
+	"amount": "Amount",
 	"amplitude": "Amplitude",
 
 	"asample": {
@@ -182,6 +183,12 @@
 	"delay_line_processing": "Delay Line Processing",
 	"delay_time_formula": "Delay Time Formula",
 	"delay_reference": "Delay Reference",
+	
+	"depth":
+	{
+		"": "Depth",
+		"min": "Min Depth"
+	},
 
 	"direct_out": "Direct out",
 	"direct_output": "Direct output",
@@ -336,6 +343,13 @@
 	"latency:ms": "Latency (ms)",
 	"launch": "Launch",
 	"left": "Left",
+	"lfo": {
+		"": "LFO",
+		"difference": "Difference",
+		"phase":"Phase",
+		"rate": "Rate",
+		"type": "Type"
+	},
 	"line_size": "Line size",
 	"listen": "Listen",
 	"location": "Location",
