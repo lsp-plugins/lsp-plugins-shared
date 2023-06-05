@@ -535,10 +535,12 @@
 	"rating": "Rating",
 
 	"ratio": "Ratio",
+	"ratio_down": "Ratio down",
 	"ratio_high": "Ratio high",
 	"ratio_low": "Ratio low",
 	"ratio_low_high": "Ratio low,\nRatio high",
 	"ratio_knee:db": "Ratio,\nKnee (dB)",
+	"ratio_up": "Ratio up",
 
 	"reduction": "Reduction",
 
@@ -692,6 +694,11 @@
 	"thr_eshold": "Thr",
 	"thr_eshold_num_id": "Thr #{@id}",
 	"threads": "Threads",
+	"thresh": {
+		"down": "Downward\nthresh",
+		"min": "Bottom\nthresh",
+		"up": "Upward\nthresh"
+	},
 	"threshold": "Threshold",
 	"threshold:db": "Threshold\n(dB)",
 	"thresh_gain:db_db": "Thresh, Gain\n(dB, dB)",

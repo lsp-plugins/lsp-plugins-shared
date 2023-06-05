@@ -535,9 +535,12 @@
 	"rating": "Рэйтинг",
 
 	"ratio": "Наклон",
+	"ratio_down": "Понижение",
 	"ratio_high": "Наклон верх",
 	"ratio_low": "Наклон низ",
+	"ratio_low_high": "Наклон низ,\nНаклон верх",
 	"ratio_knee:db": "Наклон,\nКолено (dB)",
+	"ratio_up": "Повышение",
 
 	"reduction": "Понижение",
 
@@ -685,6 +688,11 @@
 	"thr_eshold": "Пор",
 	"thr_eshold_num_id": "Пор №{@id}",
 	"threads": "Потоков",
+	"thresh": {
+		"down": "Пониж.\nпорог",
+		"min": "Нижний\nпорог",
+		"up": "Повыш.\nпорог"
+	},
 	"threshold": "Порог",
 	"threshold:db": "Порог\n(дБ)",
 	"thresh_gain:db_db": "Порог, Усил\n(дБ, дБ)",
