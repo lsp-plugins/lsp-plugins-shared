@@ -1,18 +1,4 @@
 {
-	"values": {
-		"1k": "1к",
-		"10k": "10к",
-		"idL_eft": "{@id}Л",
-		"idM_id": "{@id}Ц",
-		"idR_ight": "{@id}П",
-		"idS_ide": "{@id}С",
-		"x:db": "{@value} дБ",
-		"x:hz": "{@value} Гц",
-		"x:s": "{@value} с",
-		"x_T": "{@value}T",
-		"x_k": "{@value}к"
-	},
-	
 	"axis": {
 		"+phase": "+фаза",
 		"-phase": "-фаза",
@@ -21,10 +7,12 @@
 			"left": "левый",
 			"right": "правый"
 		},
+		"depth": "глубина",
 		"in": "вх",
 		"level": "уровень",
 		"out": "вых",
 		"period": "период",
+		"phase": "фаза",
 		"reverb_time": "время реверберации",
 		"time": "время"
 	},
@@ -33,5 +21,22 @@
 		"db": "дБ",
 		"hz": "Гц",
 		"s": "с"
+	},
+	
+	"values": {
+		"1k": "1к",
+		"10k": "10к",
+		"idL_eft": "{@id}Л",
+		"idM_id": "{@id}Ц",
+		"idR_ight": "{@id}П",
+		"idS_ide": "{@id}С",
+		"max": "max",
+		"min": "min",
+		"x:db": "{@value} дБ",
+		"x:deg": "{@value}°",
+		"x:hz": "{@value} Гц",
+		"x:s": "{@value} с",
+		"x_T": "{@value}T",
+		"x_k": "{@value}к"
 	}
 }

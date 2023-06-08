@@ -345,6 +345,7 @@
 	"left": "Left",
 	"lfo": {
 		"": "LFO",
+		"crossfade": "Crossfade",
 		"difference": "Difference",
 		"phase":"Phase",
 		"rate": "Rate",
