@@ -63,6 +63,10 @@
 
 	"band": "Band",
 	"bands": {
+		"frequency_hi": "Frequency Hi",
+		"frequency_hi_e": "Frequency Hi-E",
+		"frequency_low": "Frequency Low",
+		"frequency_mid": "Frequency Mid",
 		"hi": "Hi",
 		"hi_e": "Hi-E",
 		"low": "Low",

@@ -63,6 +63,10 @@
 
 	"band": "Полоса",
 	"bands": {
+		"frequency_hi": "Частоты Вск Hi",
+		"frequency_hi_e": "Частоты Вск-Д",
+		"frequency_low": "Частоты Нзк",
+		"frequency_mid": "Частоты Срд",
 		"hi": "Вск",
 		"hi_e": "Вск-Д",
 		"low": "Нзк",
