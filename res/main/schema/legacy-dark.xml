@@ -330,7 +330,7 @@
 	<!-- Root style -->
 	<root>
 		<size.scaling value="1.0"/>
-		<lang value="en_US"/>
+		<lang value="us"/>
 		<bg.color value="bg"/>
 		<font.name value="noto-sans-display"/>
 		<font.antialiasing value="true"/>
