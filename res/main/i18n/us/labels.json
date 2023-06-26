@@ -318,6 +318,7 @@
 		"frequency": "FREQUENCY GRAPH",
 		"gating": "GATING",
 		"left_channel": "LEFT CHANNEL",
+		"LFO": "LFO GRAPH",
 		"oscillator_waveform": "OSCILLATOR WAVEFORM",
 		"oscilloscope": "OSCILLOSCOPE GRAPH",
 		"right_channel": "RIGHT CHANNEL",

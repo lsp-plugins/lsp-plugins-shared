@@ -318,6 +318,7 @@
 		"frequency": "ЧАСТОТНЫЙ ГРАФИК",
 		"gating": "ГЕЙТИРОВАНИЕ",
 		"left_channel": "ЛЕВЫЙ КАНАЛ",
+		"LFO": "НЧО ГРАФИК",
 		"oscillator_waveform": "ФОРМА ВОЛНЫ ГЕНЕРАТОРА",
 		"oscilloscope": "ГРАФИК ОСЦИЛЛОСКОПА",
 		"right_channel": "ПРАВЫЙ КАНАЛ",
