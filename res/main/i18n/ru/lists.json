@@ -164,7 +164,9 @@
 	"notes": {
 		"display": {
 			"full": "{@filter}\n{@filter_type}\n{@frequency} Гц\n{@note}{@octave}{@cents}",
-			"unknown": "{@filter}\n{@filter_type}\n{@frequency} Гц"
+			"full_single": "{@filter_type}\n{@frequency} Гц\n{@note}{@octave}{@cents}",
+			"unknown": "{@filter}\n{@filter_type}\n{@frequency} Гц",
+			"unknown_single": "{@filter}\n{@filter_type}\n{@frequency} Гц"
 		},
 		"names": {
 			"a": "A",
