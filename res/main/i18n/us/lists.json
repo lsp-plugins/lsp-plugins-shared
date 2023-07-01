@@ -17,7 +17,7 @@
 	        "8": "8bit"
         }
 	},
-	
+
 	"eq": {
 		"flt": {
 			"allpass": "Allpass",
@@ -69,12 +69,12 @@
 			"spm": "SPM"
 		}
 	},
-	
+
 	"fade": {
 		"const_power": "Constant power",
 		"linear": "Linear"
 	},
-	
+
 	"fft": {
 		"env": {
 			"blue": "Blue noise",
@@ -109,7 +109,7 @@
 			"welch": "Welch"
 		}
 	},
-	
+
 	"file": {
 		"f1": "File 1",
 		"f1l": "File 1 Left",
@@ -123,11 +123,11 @@
 		"f4": "File 4",
 		"f4l": "File 4 Left",
 		"f4r": "File 4 Right",
-		
+
 		"left": "Left",
 		"none": "None",
 		"right": "Right",
-		
+
 		"t1": "Track 1",
 		"t2": "Track 2",
 		"t3": "Track 3",
@@ -137,7 +137,63 @@
 		"t7": "Track 7",
 		"t8": "Track 8"
 	},
-	
+
+	"filter": {
+		"flt": {
+			"allpass": "Allpass",
+			"allpass2": "Allpass2",
+			"bandpass": "Bandpass",
+			"bell": "Bell",
+			"envelope": "Envelope",
+			"hipass": "Hi-pass",
+			"hishelf": "Hi-shelf",
+			"ladpass": "Ladder-pass",
+			"ladrej": "Ladder-rej",
+			"lopass": "Lo-pass",
+			"loshelf": "Lo-shelf",
+			"lufs": "LUFS",
+			"notch": "Notch",
+			"off": "Off",
+			"resonance": "Resonance"
+		},
+		"mode": {
+			"rlc_bt": "RLC (BT)",
+			"rlc_mt": "RLC (MT)",
+			"bwc_bt": "BWC (BT)",
+			"bwc_mt": "BWC (MT)",
+			"lrx_bt": "LRX (BT)",
+			"lrx_mt": "LRX (MT)",
+			"apo_dr": "APO (DR)"
+		},
+		"pos": {
+		    "post_eq": "Post-eq",
+			"pre_eq": "Pre-eq"
+		},
+		"slope": {
+			"6dbo": "6 dB/oct",
+			"12dbo": "12 dB/oct",
+			"18dbo": "18 dB/oct",
+			"24dbo": "24 dB/oct",
+			"30dbo": "30 dB/oct",
+			"36dbo": "36 dB/oct",
+			"off": "Off",
+			"x1": "x1",
+			"x2": "x2",
+			"x3": "x3",
+			"x4": "x4",
+			"x6": "x6",
+			"x8": "x8",
+			"x12": "x12",
+			"x16": "x16"
+		},
+		"type": {
+			"fir": "FIR",
+			"fft": "FFT",
+			"iir": "IIR",
+			"spm": "SPM"
+		}
+	},
+
 	"filters": {
 		"index": {
 		    "filter_id": "Filter #{@id}",
@@ -147,7 +203,7 @@
 			"side_id": "Side #{@id}"
 		}
 	},
-	
+
 	"metering": {
 		"fft": {
 			"off": "Off",
@@ -155,12 +211,12 @@
 			"pre_eq": "Pre-eq"
 		}
 	},
-	
+
 	"multiband": {
 		"classic": "Classic",
 		"modern": "Modern"
 	},
-	
+
 	"notes": {
 		"display": {
 			"full": "{@filter}\n{@filter_type}\n{@frequency} Hz\n{@note}{@octave}{@cents}",
@@ -183,7 +239,7 @@
 			"g#": "G#"
 		}
 	},
-	
+
 	"oversampler": {
 		"full": {
 			"2x2": "Full x2(2L)",
@@ -229,11 +285,11 @@
 		},
 		"none": "None"
 	},
-	
+
 	"rendering": {
 		"glx_opengl_v2": "OpenGL 2.0 (GLX)"
 	},
-	
+
 	"sidechain": {
 		"boost": {
 			"brown_bt": "Brown BT",
@@ -258,4 +314,3 @@
 		"sma": "SMA"
 	}
 }
-
