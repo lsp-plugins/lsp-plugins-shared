@@ -273,7 +273,12 @@
 		"time_ms": "{@min}:{@sec^0%2d}.{@msec^0%3d} m",
 		"time_s": "{@sec}.{@msec^0%3d} s"
 	},
-	"filter": "Filter",
+	"filter": { 
+	"": "Filter",
+	"bp_width": "Bandpass width",
+	"controls": "Filter controls",
+	"gain": "Filter gain"
+	},
 	"filters": "Filters",
 
 	"flt": {
