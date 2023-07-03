@@ -275,9 +275,9 @@
 	},
 	"filter": { 
 	"": "Filter",
-	"bp_width": "Bandpass width",
 	"controls": "Filter controls",
-	"gain": "Filter gain"
+	"gain": "Filter gain",
+	"width": "Filter Width"
 	},
 	"filters": "Filters",	
 
