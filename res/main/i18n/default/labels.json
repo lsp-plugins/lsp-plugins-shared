@@ -493,6 +493,7 @@
 	"output": "Output",
 	"output:db": "Output (dB)",
 	"oversampling": "Oversampling",
+	"oversampling:": "Oversampling:",
 
 	"panning": "Panning",
 	"panorama": "Panorama",

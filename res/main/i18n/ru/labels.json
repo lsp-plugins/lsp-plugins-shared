@@ -493,6 +493,7 @@
 	"output": "Выход",
 	"output:db": "Выход (дБ)",
 	"oversampling": "Передискретизация",
+	"oversampling:": "Передискретизация:",
 
 	"panning": "Панорама",
 	"panorama": "Панорама",
