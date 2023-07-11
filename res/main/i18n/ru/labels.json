@@ -34,7 +34,8 @@
 	"Tri_gger": "Триг",
 
 	"absolute_threshold": "Абс порог",
-
+	
+	"act_ive": "AКТ",
 	"active": "Активно",
 	"actual_duration": "Действительная\nдлительность (с)",
 
@@ -371,6 +372,7 @@
 		"rate": "Частота",
 		"type": "Тип"
 	},
+	"limiter_bands": "Полосы лимитера",
 	"line_size": "Размер линии",
 	"listen": "Слушать",
 	"location": "Местоположение",

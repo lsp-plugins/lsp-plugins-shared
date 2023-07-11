@@ -34,7 +34,8 @@
 	"Tri_gger": "Trg",
 
 	"absolute_threshold": "Absolute",
-
+	
+	"act_ive": "ACT",
 	"active": "Active",
 	"actual_duration": "Actual\nDuration (s)",
 
@@ -371,6 +372,7 @@
 		"rate": "Rate",
 		"type": "Type"
 	},
+	"limiter_bands": "Limiter bands",
 	"line_size": "Line size",
 	"listen": "Listen",
 	"location": "Location",
