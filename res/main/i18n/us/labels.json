@@ -40,6 +40,7 @@
 	"actual_duration": "Actual\nDuration (s)",
 
 	"alr": "ALR",
+    "alr_": "Auto level regulation",
 
 	"amount": "Amount",
 	"amplitude": "Amplitude",
@@ -494,6 +495,7 @@
 
 	"output": "Output",
 	"output:db": "Output (dB)",
+    "output_limiter": "Output limiter",
 	"oversampling": "Oversampling",
 	"oversampling:": "Oversampling:",
 
