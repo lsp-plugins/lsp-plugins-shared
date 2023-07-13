@@ -1342,6 +1342,13 @@
 		<pointer value="hand"/>
 	</style>
 
+	<style class="Knob_meter_threshold" parents="Knob">
+		<meter.active value ="true"/>
+		<meter.color value ="bright_violet"/>
+		<meter.color.a value ="0.5"/>
+		<scale.color value ="dark_violet"/>
+	</style>
+
 	<style class="Label" parents="root">
 		<text.color value="text_sec"/>
 		<allocation.hfill value="false"/>

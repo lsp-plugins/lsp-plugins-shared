@@ -592,6 +592,7 @@
 
 	"sc": {
 		"Ext_ernal": "Внеш",
+        "External_sidechain": "Внешняя БЦ",
 		"SC": "БЦ",
 		"listen": "Слушать",
 		"lookahead": "Предсказание",

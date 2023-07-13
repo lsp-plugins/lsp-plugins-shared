@@ -592,6 +592,7 @@
 
 	"sc": {
 		"Ext_ernal": "Ext",
+        "External_sidechain": "External Sidechain",
 		"SC": "SC",
 		"listen": "Listen",
 		"lookahead": "Lookahead",
