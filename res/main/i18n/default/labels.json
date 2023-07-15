@@ -109,6 +109,7 @@
 		"M_ute": "M",
 		"OFF": "OFF",
 		"ON": "ON",
+		"ON_num_id": "ON {@id}",
 		"P_hase": "P",
 		"R_ight": "R",
 		"R_ight:": "R:",
