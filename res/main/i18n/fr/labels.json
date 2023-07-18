@@ -390,6 +390,7 @@
 	"output": "Sortie",
 	"output:db": "Sortie (dB)",
 	"oversampling": "Suréchantillonnage",
+	"oversampling:": "Suréchantillonnage:",
 	
 	"panning": "Panoramique",
 	"panorama": "Panorama",

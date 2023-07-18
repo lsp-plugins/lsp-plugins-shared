@@ -337,6 +337,7 @@
 	"output": "Salida",
 	"output:db": "Salida (dB)",
 	"oversampling": "Sobremuestreo",
+	"oversampling:": "Sobremuestreo:",
 	
 	"panning": "Paneo",
 	"panorama": "Panorama",

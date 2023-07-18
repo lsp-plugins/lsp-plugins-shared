@@ -17,7 +17,7 @@
 	        "8": "8bit"
         }
 	},
-	
+
 	"eq": {
 		"flt": {
 			"allpass": "Allpass",
@@ -69,12 +69,12 @@
 			"spm": "SPM"
 		}
 	},
-	
+
 	"fade": {
 		"const_power": "Constant power",
 		"linear": "Linear"
 	},
-	
+
 	"fft": {
 		"env": {
 			"blue": "Blue noise",
@@ -109,7 +109,7 @@
 			"welch": "Welch"
 		}
 	},
-	
+
 	"file": {
 		"f1": "File 1",
 		"f1l": "File 1 Left",
@@ -123,11 +123,11 @@
 		"f4": "File 4",
 		"f4l": "File 4 Left",
 		"f4r": "File 4 Right",
-		
+
 		"left": "Left",
 		"none": "None",
 		"right": "Right",
-		
+
 		"t1": "Track 1",
 		"t2": "Track 2",
 		"t3": "Track 3",
@@ -137,17 +137,73 @@
 		"t7": "Track 7",
 		"t8": "Track 8"
 	},
-	
+
+	"filter": {
+		"flt": {
+			"allpass": "Allpass",
+			"allpass2": "Allpass2",
+			"bandpass": "Bandpass",
+			"bell": "Bell",
+			"envelope": "Envelope",
+			"hipass": "Hi-pass",
+			"hishelf": "Hi-shelf",
+			"ladpass": "Ladder-pass",
+			"ladrej": "Ladder-rej",
+			"lopass": "Lo-pass",
+			"loshelf": "Lo-shelf",
+			"lufs": "LUFS",
+			"notch": "Notch",
+			"off": "Off",
+			"resonance": "Resonance"
+		},
+		"mode": {
+			"rlc_bt": "RLC (BT)",
+			"rlc_mt": "RLC (MT)",
+			"bwc_bt": "BWC (BT)",
+			"bwc_mt": "BWC (MT)",
+			"lrx_bt": "LRX (BT)",
+			"lrx_mt": "LRX (MT)",
+			"apo_dr": "APO (DR)"
+		},
+		"pos": {
+		    "post_eq": "Post-eq",
+			"pre_eq": "Pre-eq"
+		},
+		"slope": {
+			"6dbo": "6 dB/oct",
+			"12dbo": "12 dB/oct",
+			"18dbo": "18 dB/oct",
+			"24dbo": "24 dB/oct",
+			"30dbo": "30 dB/oct",
+			"36dbo": "36 dB/oct",
+			"off": "Off",
+			"x1": "x1",
+			"x2": "x2",
+			"x3": "x3",
+			"x4": "x4",
+			"x6": "x6",
+			"x8": "x8",
+			"x12": "x12",
+			"x16": "x16"
+		},
+		"type": {
+			"fir": "FIR",
+			"fft": "FFT",
+			"iir": "IIR",
+			"spm": "SPM"
+		}
+	},
+
 	"filters": {
 		"index": {
-		    "filter_id": "Filter #{@id}",
+		  "filter_id": "Filter #{@id}",
 			"left_id": "Left #{@id}",
 			"mid_id": "Mid #{@id}",
 			"right_id": "Right #{@id}",
 			"side_id": "Side #{@id}"
 		}
 	},
-	
+
 	"metering": {
 		"fft": {
 			"off": "Off",
@@ -155,16 +211,18 @@
 			"pre_eq": "Pre-eq"
 		}
 	},
-	
+
 	"multiband": {
 		"classic": "Classic",
 		"modern": "Modern"
 	},
-	
+
 	"notes": {
 		"display": {
 			"full": "{@filter}\n{@filter_type}\n{@frequency} Hz\n{@note}{@octave}{@cents}",
-			"unknown": "{@filter}\n{@filter_type}\n{@frequency} Hz"
+			"full_single": "{@filter_type}\n{@frequency} Hz\n{@note}{@octave}{@cents}",
+			"unknown": "{@filter}\n{@filter_type}\n{@frequency} Hz",
+			"unknown_single": "{@filter_type}\n{@frequency} Hz"
 		},
 		"names": {
 			"a": "A",
@@ -181,43 +239,43 @@
 			"g#": "G#"
 		}
 	},
-	
+
 	"oversampler": {
 		"full": {
-			"2x2": "Full x2(2L)",
-			"2x3": "Full x2(3L)",
-			"3x2": "Full x3(2L)",
-			"3x3": "Full x3(3L)",
-			"4x2": "Full x4(2L)",
-			"4x3": "Full x4(3L)",
-			"6x2": "Full x6(2L)",
-			"6x3": "Full x6(3L)",
-			"8x2": "Full x8(2L)",
-			"8x3": "Full x8(3L)"
+			"2x16bit": "Full x2/16 bit",
+			"2x24bit": "Full x2/24 bit",
+			"3x16bit": "Full x3/16 bit",
+			"3x24bit": "Full x3/24 bit",
+			"4x16bit": "Full x4/16 bit",
+			"4x24bit": "Full x4/24 bit",
+			"6x16bit": "Full x6/16 bit",
+			"6x24bit": "Full x6/24 bit",
+			"8x16bit": "Full x8/16 bit",
+			"8x24bit": "Full x8/24 bit"
 		},
 		"half": {
-			"2x2": "Half x2(2L)",
-			"2x3": "Half x2(3L)",
-			"3x2": "Half x3(2L)",
-			"3x3": "Half x3(3L)",
-			"4x2": "Half x4(2L)",
-			"4x3": "Half x4(3L)",
-			"6x2": "Half x6(2L)",
-			"6x3": "Half x6(3L)",
-			"8x2": "Half x8(2L)",
-			"8x3": "Half x8(3L)"
+			"2x16bit": "Half x2/16 bit",
+			"2x24bit": "Half x2/24 bit",
+			"3x16bit": "Half x3/16 bit",
+			"3x24bit": "Half x3/24 bit",
+			"4x16bit": "Half x4/16 bit",
+			"4x24bit": "Half x4/24 bit",
+			"6x16bit": "Half x6/16 bit",
+			"6x24bit": "Half x6/24 bit",
+			"8x16bit": "Half x8/16 bit",
+			"8x24bit": "Half x8/24 bit"
 		},
 		"normal": {
-			"2x2": "x2(2L)",
-			"2x3": "x2(3L)",
-			"3x2": "x3(2L)",
-			"3x3": "x3(3L)",
-			"4x2": "x4(2L)",
-			"4x3": "x4(3L)",
-			"6x2": "x6(2L)",
-			"6x3": "x6(3L)",
-			"8x2": "x8(2L)",
-			"8x3": "x8(3L)",
+			"2x16bit": "x2/16 bit",
+			"2x24bit": "x2/24 bit",
+			"3x16bit": "x3/16 bit",
+			"3x24bit": "x3/24 bit",
+			"4x16bit": "x4/16 bit",
+			"4x24bit": "x4/24 bit",
+			"6x16bit": "x6/16 bit",
+			"6x24bit": "x6/24 bit",
+			"8x16bit": "x8/16 bit",
+			"8x24bit": "x8/24 bit",
 
 			"x2": "x2",
 			"x3": "x3",
@@ -227,11 +285,11 @@
 		},
 		"none": "None"
 	},
-	
+
 	"rendering": {
 		"glx_opengl_v2": "OpenGL 2.0 (GLX)"
 	},
-	
+
 	"sidechain": {
 		"boost": {
 			"brown_bt": "Brown BT",
@@ -256,4 +314,3 @@
 		"sma": "SMA"
 	}
 }
-

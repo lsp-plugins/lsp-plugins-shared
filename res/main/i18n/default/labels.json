@@ -34,12 +34,15 @@
 	"Tri_gger": "Trg",
 
 	"absolute_threshold": "Absolute",
-
+	
+	"act_ive": "ACT",
 	"active": "Active",
 	"actual_duration": "Actual\nDuration (s)",
 
 	"alr": "ALR",
+    "alr_": "Auto level regulation",
 
+	"amount": "Amount",
 	"amplitude": "Amplitude",
 
 	"asample": {
@@ -61,6 +64,16 @@
 	"balance": "Balance",
 
 	"band": "Band",
+	"bands": {
+		"frequency_hi": "Frequency Hi",
+		"frequency_hi_e": "Frequency Hi-E",
+		"frequency_low": "Frequency Low",
+		"frequency_mid": "Frequency Mid",
+		"hi": "Hi",
+		"hi_e": "Hi-E",
+		"low": "Low",
+		"mid": "Mid"
+	},
 	"band_hue": "Band, Hue",
 
 	"bool": {
@@ -71,6 +84,8 @@
 	"boost": "Boost",
 	"boost_": "Boost",
 	"bookmark_list": "Bookmarks",
+	
+	"bottom": "Bottom",
 
 	"bypass": "Bypass",
 
@@ -94,6 +109,7 @@
 		"M_ute": "M",
 		"OFF": "OFF",
 		"ON": "ON",
+		"ON_num_id": "ON {@id}",
 		"P_hase": "P",
 		"R_ight": "R",
 		"R_ight:": "R:",
@@ -161,7 +177,7 @@
 	"channels": "Channels",
 
 	"clear": "Clear",
-
+	"compression_curve": "Compression Curve",
 	"contour:": "Contour:",
 	"controls": "Controls",
 	"ctl": "Ctl",
@@ -182,6 +198,12 @@
 	"delay_line_processing": "Delay Line Processing",
 	"delay_time_formula": "Delay Time Formula",
 	"delay_reference": "Delay Reference",
+	
+	"depth":
+	{
+		"": "Depth",
+		"min": "Min Depth"
+	},
 
 	"direct_out": "Direct out",
 	"direct_output": "Direct output",
@@ -191,6 +213,8 @@
 	"dither": "Dither",
 	"dither:": "Dither:",
 	"dithering": "Dithering",
+	
+	"downward": "Downward",
 
 	"dynamics": "Dynamics",
 
@@ -252,8 +276,13 @@
 		"time_ms": "{@min}:{@sec^0%2d}.{@msec^0%3d} m",
 		"time_s": "{@sec}.{@msec^0%3d} s"
 	},
-	"filter": "Filter",
-	"filters": "Filters",
+	"filter": { 
+	"": "Filter",
+	"controls": "Filter controls",
+	"gain": "Filter gain",
+	"width": "Filter Width"
+	},
+	"filters": "Filters",	
 
 	"flt": {
 		"10k": "10k",
@@ -297,6 +326,7 @@
 		"frequency": "FREQUENCY GRAPH",
 		"gating": "GATING",
 		"left_channel": "LEFT CHANNEL",
+		"LFO": "LFO GRAPH",
 		"oscillator_waveform": "OSCILLATOR WAVEFORM",
 		"oscilloscope": "OSCILLOSCOPE GRAPH",
 		"right_channel": "RIGHT CHANNEL",
@@ -336,6 +366,15 @@
 	"latency:ms": "Latency (ms)",
 	"launch": "Launch",
 	"left": "Left",
+	"lfo": {
+		"": "LFO",
+		"crossfade": "Crossfade",
+		"difference": "Difference",
+		"phase":"Phase",
+		"rate": "Rate",
+		"type": "Type"
+	},
+	"limiter_bands": "Limiter bands",
 	"line_size": "Line size",
 	"listen": "Listen",
 	"location": "Location",
@@ -457,7 +496,9 @@
 
 	"output": "Output",
 	"output:db": "Output (dB)",
+    "output_limiter": "Output limiter",
 	"oversampling": "Oversampling",
+	"oversampling:": "Oversampling:",
 
 	"panning": "Panning",
 	"panorama": "Panorama",
@@ -521,10 +562,12 @@
 	"rating": "Rating",
 
 	"ratio": "Ratio",
+	"ratio_down": "Ratio down",
 	"ratio_high": "Ratio high",
 	"ratio_low": "Ratio low",
 	"ratio_low_high": "Ratio low,\nRatio high",
 	"ratio_knee:db": "Ratio,\nKnee (dB)",
+	"ratio_up": "Ratio up",
 
 	"reduction": "Reduction",
 
@@ -552,6 +595,7 @@
 
 	"sc": {
 		"Ext_ernal": "Ext",
+        "External_sidechain": "External Sidechain",
 		"SC": "SC",
 		"listen": "Listen",
 		"lookahead": "Lookahead",
@@ -667,6 +711,8 @@
 	"stereo_link": "Stereo link",
 	"stop": "Stop",
 	"stretch": "Stretch",
+	
+	"surge": "Surge",
 
 	"sync": "Sync",
 
@@ -678,6 +724,11 @@
 	"thr_eshold": "Thr",
 	"thr_eshold_num_id": "Thr #{@id}",
 	"threads": "Threads",
+	"thresh": {
+		"down": "Downward\nthresh",
+		"min": "Bottom\nthresh",
+		"up": "Upward\nthresh"
+	},
 	"threshold": "Threshold",
 	"threshold:db": "Threshold\n(dB)",
 	"thresh_gain:db_db": "Thresh, Gain\n(dB, dB)",
@@ -706,7 +757,7 @@
 		"millimeters": "Millimeters",
 		"samples": "Samples"
 	},
-
+	"upward": "Upward",
 	"value": "Value",
 	"values": {
 		"best": "Best",

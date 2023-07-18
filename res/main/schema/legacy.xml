@@ -54,6 +54,7 @@
 		<dark_violet value="#8800d2"/>
 		<dark_magenta value="#d200d2"/>
 		<dark_gray value="#444444"/>
+		<darker_gray value="#333333"/>
 
 		<!-- ChannelGroup -->
 
@@ -333,7 +334,7 @@
 	<!-- Root style -->
 	<root>
 		<size.scaling value="1.0"/>
-		<lang value="en_US"/>
+		<lang value="us"/>
 		<bg.color value="bg"/>
 		<font.name value="noto-sans-display"/>
 		<font.antialiasing value="true"/>
@@ -554,6 +555,18 @@
 		<border.down.color value="bright_gray"/>
 		<border.down.hover.color value="gray"/>
 		<led.color value="gray"/>
+	</style>
+
+	<style class="Button_inactive" parents="Button">
+		<down.color value="darker_gray"/>
+		<down.hover.color value="darker_gray"/>
+
+		<text.down.color value="gray"/>
+		<text.down.hover.color value="gray"/>
+
+		<border.down.color value="gray"/>
+		<border.down.hover.color value="dark_gray"/>
+		<led.color value="dark_gray"/>
 	</style>
 
 	<style class="Button_red" parents="Button">
@@ -861,6 +874,10 @@
 		<font.size value="8"/>
 	</style>
 
+	<style class="Button_inactive_8" parents="Button_inactive">
+		<font.size value="8"/>
+	</style>
+
 	<style class="Button_red_8" parents="Button_red">
 		<font.size value="8"/>
 	</style>
@@ -918,6 +935,10 @@
 	</style>
 
 	<style class="Button_gray_6" parents="Button_gray">
+		<font.size value="6"/>
+	</style>
+
+	<style class="Button_inactive_6" parents="Button_inactive">
 		<font.size value="6"/>
 	</style>
 
@@ -1360,6 +1381,13 @@
 		<hole.color value="black"/>
 		<scale.marks value="true"/>
 		<pointer value="hand"/>
+	</style>
+
+	<style class="Knob_meter_threshold" parents="Knob">
+		<meter.active value ="true"/>
+		<meter.color value ="bright_violet"/>
+		<meter.color.a value ="0.5"/>
+		<scale.color value ="dark_violet"/>
 	</style>
 
 	<style class="Label" parents="root">

@@ -418,6 +418,7 @@
 	"output": "Uscita",
 	"output:db": "Uscita (dB)",
 	"oversampling": "Sovracampionamento",
+	"oversampling:": "Sovracampionamento:",
 	
 	"panning": "Panning",
 	"panorama": "Panorama",

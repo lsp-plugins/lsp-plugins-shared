@@ -34,12 +34,16 @@
 	"Tri_gger": "Триг",
 
 	"absolute_threshold": "Абс порог",
-
+	
+	"act_ive": "AКТ",
 	"active": "Активно",
 	"actual_duration": "Действительная\nдлительность (с)",
 
 	"alr": "АРУ",
+    "alr_": "Авто регуляция уровней",
 
+
+	"amount": "Количество",
 	"amplitude": "Амплитуда",
 
 	"asample": {
@@ -61,6 +65,16 @@
 	"balance": "Баланс",
 
 	"band": "Полоса",
+	"bands": {
+		"frequency_hi": "Частоты Вск Hi",
+		"frequency_hi_e": "Частоты Вск-Д",
+		"frequency_low": "Частоты Нзк",
+		"frequency_mid": "Частоты Срд",
+		"hi": "Вск",
+		"hi_e": "Вск-Д",
+		"low": "Нзк",
+		"mid": "Срд"
+	},
 	"band_hue": "Полоса, Тон",
 
 	"bool": {
@@ -71,6 +85,8 @@
 	"boost": "Повышение",
 	"boost_": "Повыш",
 	"bookmark_list": "Закладки",
+	
+	"bottom": "Нижний",
 
 	"bypass": "Обход",
 
@@ -94,6 +110,7 @@
 		"M_ute": "Г",
 		"OFF": "ВЫКЛ",
 		"ON": "ВКЛ",
+		"ON_num_id": "ВКЛ {@id}",
 		"P_hase": "Ф",
 		"R_ight": "П",
 		"R_ight:": "П:",
@@ -161,7 +178,7 @@
 	"channels": "Каналы",
 
 	"clear": "Очистить",
-
+    "compression_curve": "Кривая копрессии",
 	"contour:": "Контур:",
 	"controls": "Управление",
 	"ctl": "Упр",
@@ -182,6 +199,12 @@
 	"delay_line_processing": "Обработка линии задержки",
 	"delay_time_formula": "Формула времени задержки",
 	"delay_reference": "Ссылка на задержку",
+	
+	"depth":
+	{
+		"": "Глубина",
+		"min": "Мин глубина"
+	},
 
 	"direct_out": "Прямой вых",
 	"direct_output": "Прямой выход",
@@ -191,6 +214,8 @@
 	"dither": "Дизеринг",
 	"dither:": "Дизеринг:",
 	"dithering": "Дизеринг",
+	
+	"downward": "Понижающий",
 
 	"dynamics": "Динамика",
 
@@ -252,7 +277,12 @@
 		"time_ms": "{@min}:{@sec^0%2d}.{@msec^0%3d} м",
 		"time_s": "{@sec}.{@msec^0%3d} с"
 	},
-	"filter": "Фильтр",
+	"filter": { 
+	"": "Фильтр",
+	"controls": "Управление фильтром",
+	"gain": "Усиление фильтра",	
+	"width": "Ширина фильтра"
+	},
 	"filters": "Фильтры",
 
 	"flt": {
@@ -297,6 +327,7 @@
 		"frequency": "ЧАСТОТНЫЙ ГРАФИК",
 		"gating": "ГЕЙТИРОВАНИЕ",
 		"left_channel": "ЛЕВЫЙ КАНАЛ",
+		"LFO": "НЧО ГРАФИК",
 		"oscillator_waveform": "ФОРМА ВОЛНЫ ГЕНЕРАТОРА",
 		"oscilloscope": "ГРАФИК ОСЦИЛЛОСКОПА",
 		"right_channel": "ПРАВЫЙ КАНАЛ",
@@ -336,6 +367,15 @@
 	"latency:ms": "Задержка (мс)",
 	"launch": "Пуск",
 	"left": "Лево",
+	"lfo": {
+		"": "НЧО",
+		"crossfade": "Кроссфейд",
+		"difference": "Разница",
+		"phase": "Фаза",
+		"rate": "Частота",
+		"type": "Тип"
+	},
+	"limiter_bands": "Полосы лимитера",
 	"line_size": "Размер линии",
 	"listen": "Слушать",
 	"location": "Местоположение",
@@ -457,7 +497,9 @@
 
 	"output": "Выход",
 	"output:db": "Выход (дБ)",
+    "output_limiter": "Выходной лимитер",
 	"oversampling": "Передискретизация",
+	"oversampling:": "Передискретизация:",
 
 	"panning": "Панорама",
 	"panorama": "Панорама",
@@ -521,9 +563,12 @@
 	"rating": "Рэйтинг",
 
 	"ratio": "Наклон",
+	"ratio_down": "Понижение",
 	"ratio_high": "Наклон верх",
 	"ratio_low": "Наклон низ",
+	"ratio_low_high": "Наклон низ,\nНаклон верх",
 	"ratio_knee:db": "Наклон,\nКолено (dB)",
+	"ratio_up": "Повышение",
 
 	"reduction": "Понижение",
 
@@ -551,6 +596,7 @@
 
 	"sc": {
 		"Ext_ernal": "Внеш",
+        "External_sidechain": "Внешняя БЦ",
 		"SC": "БЦ",
 		"listen": "Слушать",
 		"lookahead": "Предсказание",
@@ -660,6 +706,8 @@
 	"stereo_link": "Стереосвязь",
 	"stop": "Стоп",
 	"stretch": "Растяжение",
+	
+	"surge": "Всплеск",
 
 	"sync": "Синхр",
 
@@ -671,6 +719,11 @@
 	"thr_eshold": "Пор",
 	"thr_eshold_num_id": "Пор №{@id}",
 	"threads": "Потоков",
+	"thresh": {
+		"down": "Пониж.\nпорог",
+		"min": "Нижний\nпорог",
+		"up": "Повыш.\nпорог"
+	},
 	"threshold": "Порог",
 	"threshold:db": "Порог\n(дБ)",
 	"thresh_gain:db_db": "Порог, Усил\n(дБ, дБ)",
@@ -699,7 +752,7 @@
 		"millimeters": "Миллиметры",
 		"samples": "Отсчёты"
 	},
-
+	"upward": "Повышающий",
 	"value": "Значение",
 	"values": {
 		"best": "Лучшее",
