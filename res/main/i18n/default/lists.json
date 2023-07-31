@@ -303,14 +303,18 @@
 		"feed_forward": "Feed-forward",
 		"internal": "Internal",
 		"left": "Left",
+		"left_right": "Left/Right",
 		"lpf": "LPF",
 		"max": "Max",
 		"middle": "Middle",
+		"mid_side": "Mid/Side",
 		"min": "Min",
 		"peak": "Peak",
 		"right": "Right",
+		"right_left": "Right/Left",
 		"rms": "RMS",
 		"side": "Side",
+		"side_mid": "Side/Mid",
 		"sma": "SMA"
 	}
 }

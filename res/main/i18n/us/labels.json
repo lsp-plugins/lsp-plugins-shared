@@ -277,11 +277,11 @@
 		"time_s": "{@sec}.{@msec^0%3d} s"
 	},
 	"filter": { 
-	"": "Filter",
-	"bp_width": "Bandpass width",
-	"controls": "Filter controls",
-	"gain": "Filter gain",
-	"width": "Filter width"
+		"": "Filter",
+		"bp_width": "Bandpass width",
+		"controls": "Filter controls",
+		"gain": "Filter gain",
+		"width": "Filter width"
 	},
 	"filters": "Filters",
 
@@ -382,6 +382,8 @@
 	"log_scale": "Log scale",
 
 	"lookahead": "Lookahead",
+	
+	"lr_split": "L/R Split",
 
 	"makeup": "Makeup",
 	"makeup_:db": "Makeup\n(dB)",
