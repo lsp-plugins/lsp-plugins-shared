@@ -382,8 +382,6 @@
 	"log_scale": "Log scale",
 
 	"lookahead": "Lookahead",
-	
-	"lr_split": "L/R Split",
 
 	"makeup": "Makeup",
 	"makeup_:db": "Makeup\n(dB)",
@@ -704,7 +702,8 @@
 
 	"status": "Status",
 
-	"stereo_link": "Stereo link",
+	"stereo_link": "Stereo link",	
+	"stereo_split": "Stereo split",
 	"stop": "Stop",
 	"stretch": "Stretch",
 	
