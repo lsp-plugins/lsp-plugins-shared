@@ -67,7 +67,7 @@
 #define LSP_LADSPA_FLANGER_BASE             (LSP_LADSPA_BASE + 170)
 #define LSP_LADSPA_MB_LIMITER_BASE          (LSP_LADSPA_BASE + 180)
 #define LSP_LADSPA_FILTER_BASE              (LSP_LADSPA_BASE + 190)
-#define LSP_LADSPA_SHAPER_BASE              (LSP_LADSPA_BASE + 200)
+#define LSP_LADSPA_BIT_BREATHER_BASE        (LSP_LADSPA_BASE + 200)
 
 namespace lsp
 {
