@@ -93,6 +93,8 @@
 	"capture:": "Capture:",
 	"capsule": "Capsule",
 
+    "chain_output": "Chain Output",
+
 	"chan": {
 		":db": "(dB)",
 		"Ch_1": "Ch1",
@@ -300,9 +302,10 @@
 		"bass": "Bass",
 		"flatten": "Flatten",
 		"high_cut": "High cut",
-		"hpf:dbo": "HPF (db/oct)",
+		"hpf_lpf:dbo": "HPF | LPF\n(dB/oct)",
+		"hpf:dbo": "HPF (dB/oct)",
 		"low_cut": "Low cut",
-		"lpf:dbo": "LPF (db/oct)",
+		"lpf:dbo": "LPF (dB/oct)",
 		"middle": "Middle",
 		"presence": "Presence",
 		"show_": "Show",
