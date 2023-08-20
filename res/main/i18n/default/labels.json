@@ -93,6 +93,8 @@
 	"capture:": "Capture:",
 	"capsule": "Capsule",
 
+    "chain_output": "Chain Output",
+
 	"chan": {
 		":db": "(dB)",
 		"Ch_1": "Ch1",
@@ -277,10 +279,10 @@
 		"time_s": "{@sec}.{@msec^0%3d} s"
 	},
 	"filter": { 
-	"": "Filter",
-	"controls": "Filter controls",
-	"gain": "Filter gain",
-	"width": "Filter Width"
+		"": "Filter",
+		"controls": "Filter controls",
+		"gain": "Filter gain",
+		"width": "Filter Width"
 	},
 	"filters": "Filters",	
 
@@ -292,13 +294,17 @@
 		"EQ_ualizer": "EQ",
 		"H_ighC_ut": "HC",
 		"HCF": "HCF",
-		"HPF": "HPF",
+		"HPF": "HPF",		
 		"L_owC_ut": "LC",
 		"LCF": "LCF",
 		"LPF": "LPF",
 		"bass": "Bass",
+		"flatten": "Flatten",
 		"high_cut": "High cut",
+		"hpf:dbo": "HPF (dB/oct)",
+		"hpf_lpf:dbo": "HPF | LPF\n(dB/oct)",		
 		"low_cut": "Low cut",
+		"lpf:dbo": "LPF (dB/oct)",
 		"middle": "Middle",
 		"presence": "Presence",
 		"show_": "Show",
@@ -543,6 +549,7 @@
 
 	"q": "Q",
 	"q_hue": "Q, Hue",
+	"q_width": "Q,\nWidth (oct)",
 	"quality": "Quality",
 
 	"rack": {
@@ -708,7 +715,8 @@
 
 	"status": "Status",
 
-	"stereo_link": "Stereo link",
+	"stereo_link": "Stereo link",	
+	"stereo_split": "Stereo Split",
 	"stop": "Stop",
 	"stretch": "Stretch",
 	
