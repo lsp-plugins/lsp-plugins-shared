@@ -1,6 +1,6 @@
 {
 	"about": {
-		"copyright": "(C) {@meta_pkg_copyright} 2015-2022.",
+		"copyright": "(C) {@meta_pkg_copyright} 2015-2023.",
 		"description": "Коллекция аудио-плагинов с открытым исходным кодом.",
 		"info": {
 			"pkg_name": "Название пакета:",
