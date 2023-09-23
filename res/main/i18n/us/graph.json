@@ -35,6 +35,8 @@
 		"x:db": "{@value} dB",
 		"x:deg": "{@value}°",
 		"x:hz": "{@value} Hz",
+		"x:lu": "{@value} LU",
+		"x:lufs": "{@value} LUFS",
 		"x:s": "{@value} s",
 		"x_T": "{@value}T",
 		"x_k": "{@value}k"

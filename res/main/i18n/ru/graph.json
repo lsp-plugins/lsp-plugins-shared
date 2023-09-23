@@ -35,6 +35,8 @@
 		"x:db": "{@value} дБ",
 		"x:deg": "{@value}°",
 		"x:hz": "{@value} Гц",
+		"x:lu": "{@value} LU",
+		"x:lufs": "{@value} LUFS",
 		"x:s": "{@value} с",
 		"x_T": "{@value}T",
 		"x_k": "{@value}к"

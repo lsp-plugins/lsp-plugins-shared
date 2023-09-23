@@ -24,6 +24,9 @@
 	"khz": "kHz",
 	"km": "km",
 	"kmph": "km/h",
+	
+	"lu": "LU",
+	"lufs": "LUFS",
 
 	"m": "m",
 	"mbytes": "MB",
