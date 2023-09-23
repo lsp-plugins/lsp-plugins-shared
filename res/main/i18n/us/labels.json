@@ -514,6 +514,8 @@
 		"user_hydrogen_kits_override": "Override Hydrogen kits path:"
 	},
 	"pause": "Pause",
+	
+	"period": "Period",
 
 	"plug": {
 		"calibrator": "Calibrator",
@@ -748,10 +750,16 @@
 	"units": {
 		":db": "(dB)",
 		":hz": "(Hz)",
+		":lkfs": "(LKFS)",
+		":lufs": "(LUFS)",
+		":lu": "(LU)",
 		":ms": "(ms)",
 		":pc": "(%)",
 		"db": "dB",
 		"hz": "Hz",
+		"lkfs": "LKFS",
+		"lufs": "LUFS",
+		"lu": "LU",
 		"ms": "ms",
 		"pc": "%",
 		"centimeters": "Centimeters",
@@ -786,6 +794,8 @@
 		"feedback_out_of_range": "Warning! Feedback out of range.",
 		"loop_in_delay": "Warning! Loop in delay reference chain."
 	},
+	
+	"weighting": "Weighting",
 
 	"working_area": "Working area",
 
