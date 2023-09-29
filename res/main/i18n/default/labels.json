@@ -387,6 +387,8 @@
 	"log_scale": "Log scale",
 
 	"lookahead": "Lookahead",
+	
+	"loudness": "Loudness",
 
 	"makeup": "Makeup",
 	"makeup_:db": "Makeup\n(dB)",
@@ -414,10 +416,13 @@
 	"memory:mb": "Memory (MB)",
 	"metering": {
 		"channel": "Channel",
+		"drift": "Drift",
+		"fall": "Fall",
 		"fft_frequency": "FFT Frequency",
 		"frequency": "Frequency",
 		"fft_frequency:hz": "FFT Frequency (Hz)",
 		"frequency:hz": "Frequency (Hz)",
+		"grow": "Grow",
 		"level": "Level",
 		"level:db": "Level (dB)",
 		"measure_line": "Measure",
@@ -696,6 +701,8 @@
 		"wet": "Wet",
 		"wet:db": "Wet\n(dB)"
 	},
+	
+	"silence": "Silence",
 
 	"slope": "Slope",
 

@@ -388,6 +388,8 @@
 	"log_scale": "Лог масштаб",
 
 	"lookahead": "Предсказание",
+	
+	"loudness": "Громкость",
 
 	"makeup": "Коррекция",
 	"makeup_:db": "Коррекция\n(дБ)",
@@ -415,10 +417,13 @@
 	"memory:mb": "Память (МБ)",
 	"metering": {
 		"channel": "Канал",
+		"drift": "Дрифт",
+		"fall": "Спад",
 		"fft_frequency": "Частота БПФ",
 		"frequency": "Частота",
 		"frequency:hz": "Частота (Гц)",
 		"fft_frequency:hz": "Частота БПФ (Гц)",
+		"grow": "Рост",
 		"level": "Уровень",
 		"level:db": "Уровень (дБ)",
 		"measure_line": "Измеритель",
