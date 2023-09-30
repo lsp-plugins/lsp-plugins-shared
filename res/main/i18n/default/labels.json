@@ -616,6 +616,7 @@
 		"position": "Position",
 		"preamp": "Preamp",
 		"reactivity": "Reactivity",
+		"sc_mode": "SC Mode",
 		"sc_preamp": "SC Preamp",
 		"type": "Type"
 	},
