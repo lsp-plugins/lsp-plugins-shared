@@ -410,6 +410,7 @@
 	},
 	"max_delay": "Max Delay",
 	"max_delay:s": "Max Delay (s)",
+	"max_gain": "Max Gain",
 	"max_latency": "Max Latency",
 	"max_time": "Max time",
 
