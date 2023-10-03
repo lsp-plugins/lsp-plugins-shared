@@ -329,27 +329,6 @@
 		<button_inactive_border value="#eeeeee"/>
 		<button_inactive value="#cccccc"/>
 
-		<!-- <red value="#ff0000"/>
-		<orange value="#ff8800"/>
-		<yellow value="#ffff00"/>
-		<green value="#00ff00"/>
-		<cyan value="#00ffff"/>
-		<blue value="#2626ff"/>
-		<violet value="#802aff"/>
-		<magenta value="#aa00ff"/>
-		<gray value="#888888"/> -->
-
-		<!-- <dark_red value="#d20000"/>
-		<dark_orange value="#d28800"/>
-		<dark_yellow value="#d2d200"/>
-		<dark_green value="#00d200"/>
-		<dark_cyan value="#00d2d2"/>
-		<dark_blue value="#0000d2"/>
-		<dark_violet value="#8800d2"/>
-		<dark_magenta value="#d200d2"/>
-		<dark_gray value="#444444"/>
-		<darker_gray value="#333333"/> -->
-
 		<gain value="#2626ff"/>
 
 		<!-- Autogain colors -->
