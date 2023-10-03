@@ -312,6 +312,41 @@
 		<button_inactive_border value="#373944"/>
 		<button_inactive value="#25272e"/>
 
+
+		<!-- <red value="#e53f40"/>
+		<orange value="#c26412"/>
+
+		<green value="#009600"/>
+		<cyan value="#00909e"/>
+		<blue value="#377bff"/>
+		<violet value="#c728ff"/>
+		<magenta value="#e23c75"/>
+		<gray value="#6f7185"/> -->
+
+		<!-- <dark_red value="#95333b"/>
+		<dark_orange value="#7c491b"/>
+		<dark_yellow value="#635500"/>
+		<dark_green value="#006509"/>
+		<dark_cyan value="#00626b"/>
+		<dark_blue value="#1457a4"/>
+		<dark_violet value="#8a1ab7"/>
+		<dark_magenta value="#943059"/>
+		<dark_gray value="#606173"/>
+		<darker_gray value="#373843"/> -->
+
+		<gain value="#377bff"/>
+
+    <!-- Autogain colors -->
+		<loudness_level value="#977c00"/> 	<!-- <yellow value="#977c00"/> -->
+		<loudness_silence value="#877e78"/> 	<!-- <yellow value="#977c00"/> -->
+		<loudness_in_long value="#00909e"/>
+		<loudness_in_short value="#00626b"/>
+		<loudness_sc_long value="#c26412"/>
+		<loudness_sc_short value="#7c491b"/>
+		<loudness_out_long value="#009600"/>
+		<loudness_out_short value="#006509"/>
+
+
 	</colors>
 
 	<!-- Root style -->

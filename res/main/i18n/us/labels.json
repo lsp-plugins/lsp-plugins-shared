@@ -389,7 +389,9 @@
 
 	"lookahead": "Lookahead",
 	
-	"loudness": "Loudness",
+	"loudness": "Loudness",	
+	"loudness_L": "L",
+	"loudness_S": "S",
 
 	"makeup": "Makeup",
 	"makeup_:db": "Makeup\n(dB)",

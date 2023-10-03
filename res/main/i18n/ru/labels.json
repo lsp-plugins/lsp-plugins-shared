@@ -390,6 +390,8 @@
 	"lookahead": "Предсказание",
 	
 	"loudness": "Громкость",
+	"loudness_L": "Д",
+	"loudness_S": "К",
 
 	"makeup": "Коррекция",
 	"makeup_:db": "Коррекция\n(дБ)",
