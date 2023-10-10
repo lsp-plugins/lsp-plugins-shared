@@ -312,6 +312,20 @@
 		<button_inactive_border value="#373944"/>
 		<button_inactive value="#25272e"/>
 
+
+		<gain value="#377bff"/>
+
+    <!-- Autogain colors -->
+		<loudness_level value="#977c00"/> 	<!-- <yellow value="#977c00"/> -->
+		<loudness_silence value="#877e78"/> 	<!-- <yellow value="#977c00"/> -->
+		<loudness_in_long value="#00909e"/>
+		<loudness_in_short value="#00626b"/>
+		<loudness_sc_long value="#c26412"/>
+		<loudness_sc_short value="#7c491b"/>
+		<loudness_out_long value="#009600"/>
+		<loudness_out_short value="#006509"/>
+
+
 	</colors>
 
 	<!-- Root style -->

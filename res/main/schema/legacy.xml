@@ -329,6 +329,18 @@
 		<button_inactive_border value="#eeeeee"/>
 		<button_inactive value="#cccccc"/>
 
+		<gain value="#2626ff"/>
+
+		<!-- Autogain colors -->
+		<loudness_level value="#ffff00"/> 	<!-- <yellow value="#977c00"/> -->
+		<loudness_silence value="#fbfbcc"/> 	<!-- <yellow value="#977c00"/> -->
+		<loudness_in_long value="#00ffff"/>
+		<loudness_in_short value="#00d2d2"/>
+		<loudness_sc_long value="#ff8800"/>
+		<loudness_sc_short value="#d28800"/>
+		<loudness_out_long value="#00ff00"/>
+		<loudness_out_short value="#00d200"/>
+
 	</colors>
 
 	<!-- Root style -->

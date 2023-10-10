@@ -388,6 +388,10 @@
 	"log_scale": "Лог масштаб",
 
 	"lookahead": "Предсказание",
+	
+	"loudness": "Громкость",
+	"loudness_L": "Д",
+	"loudness_S": "К",
 
 	"makeup": "Коррекция",
 	"makeup_:db": "Коррекция\n(дБ)",
@@ -408,6 +412,7 @@
 	},
 	"max_delay": "Макс задержка",
 	"max_delay:s": "Макс задержка (с)",
+	"max_gain": "Макс усил",
 	"max_latency": "Макс задержка",
 	"max_time": "Макс время",
 
@@ -415,10 +420,13 @@
 	"memory:mb": "Память (МБ)",
 	"metering": {
 		"channel": "Канал",
+		"drift": "Дрифт",
+		"fall": "Спад",
 		"fft_frequency": "Частота БПФ",
 		"frequency": "Частота",
 		"frequency:hz": "Частота (Гц)",
 		"fft_frequency:hz": "Частота БПФ (Гц)",
+		"grow": "Рост",
 		"level": "Уровень",
 		"level:db": "Уровень (дБ)",
 		"measure_line": "Измеритель",
@@ -515,6 +523,8 @@
 		"user_hydrogen_kits_override": "Путь к файлам замещения файлов Hydrogen:"
 	},
 	"pause": "Пауза",
+	
+	"period": "Период",
 
 	"plug": {
 		"calibrator": "Калибратор",
@@ -610,6 +620,7 @@
 		"position": "Позиция",
 		"preamp": "Усиление",
 		"reactivity": "Реактивность",
+		"sc_mode": "Режим БЦ",
 		"sc_preamp": "Предусил БЦ",
 		"type": "Тип"
 	},
@@ -749,10 +760,16 @@
 	"units": {
 		":db": "(дБ)",
 		":hz": "(Гц)",
+		":lkfs": "(LKFS)",
+		":lufs": "(LUFS)",
+		":lu": "(LU)",
 		":ms": "(мс)",
 		":pc": "(%)",
 		"db": "дБ",
 		"hz": "Гц",
+		"lkfs": "LKFS",
+		"lufs": "LUFS",
+		"lu": "LU",
 		"ms": "мс",
 		"pc": "%",
 		"centimeters": "Сантиметры",
@@ -787,6 +804,8 @@
 		"feedback_out_of_range": "Внимание! Задержка обратной связи\nвне допустимого дипазона.",
 		"loop_in_delay": "Внимание! Циклическая ссылка в цепочке\nссылок на линии задержки."
 	},
+	
+	"weighting": "Взвешивание",
 
 	"working_area": "Рабочая область",
 

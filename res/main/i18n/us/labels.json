@@ -388,6 +388,10 @@
 	"log_scale": "Log scale",
 
 	"lookahead": "Lookahead",
+	
+	"loudness": "Loudness",	
+	"loudness_L": "L",
+	"loudness_S": "S",
 
 	"makeup": "Makeup",
 	"makeup_:db": "Makeup\n(dB)",
@@ -408,6 +412,7 @@
 	},
 	"max_delay": "Max Delay",
 	"max_delay:s": "Max Delay (s)",
+	"max_gain": "Max Gain",
 	"max_latency": "Max Latency",
 	"max_time": "Max time",
 
@@ -415,10 +420,13 @@
 	"memory:mb": "Memory (MB)",
 	"metering": {
 		"channel": "Channel",
+		"drift": "Drift",
+		"fall": "Fall",
 		"fft_frequency": "FFT Frequency",
 		"frequency": "Frequency",
 		"fft_frequency:hz": "FFT Frequency (Hz)",
 		"frequency:hz": "Frequency (Hz)",
+		"Grow": "Grow",
 		"level": "Level",
 		"level:db": "Level (dB)",
 		"measure_line": "Measure",
@@ -514,6 +522,8 @@
 		"user_hydrogen_kits_override": "Override Hydrogen kits path:"
 	},
 	"pause": "Pause",
+	
+	"period": "Period",
 
 	"plug": {
 		"calibrator": "Calibrator",
@@ -609,6 +619,7 @@
 		"position": "Position",
 		"preamp": "Preamp",
 		"reactivity": "Reactivity",
+		"sc_mode": "SC Mode",
 		"sc_preamp": "SC Preamp",
 		"type": "Type"
 	},
@@ -688,6 +699,8 @@
 		"wet": "Wet",
 		"wet:db": "Wet\n(dB)"
 	},
+	
+	"silence": "Silence",
 
 	"slope": "Slope",
 
@@ -748,10 +761,16 @@
 	"units": {
 		":db": "(dB)",
 		":hz": "(Hz)",
+		":lkfs": "(LKFS)",
+		":lufs": "(LUFS)",
+		":lu": "(LU)",
 		":ms": "(ms)",
 		":pc": "(%)",
 		"db": "dB",
 		"hz": "Hz",
+		"lkfs": "LKFS",
+		"lufs": "LUFS",
+		"lu": "LU",
 		"ms": "ms",
 		"pc": "%",
 		"centimeters": "Centimeters",
@@ -786,6 +805,8 @@
 		"feedback_out_of_range": "Warning! Feedback out of range.",
 		"loop_in_delay": "Warning! Loop in delay reference chain."
 	},
+	
+	"weighting": "Weighting",
 
 	"working_area": "Working area",
 

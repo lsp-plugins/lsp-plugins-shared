@@ -34,6 +34,8 @@
 		"min": "min",
 		"x:db": "{@value} dB",
 		"x:hz": "{@value} Hz",
+		"x:lu": "{@value} LU",
+		"x:lufs": "{@value} LUFS",
 		"x:s": "{@value} s",
 		"x:deg": "{@value}°",
 		"x_T": "{@value}T",
