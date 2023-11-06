@@ -98,7 +98,8 @@
 	
 	"ui_behavior": {
 		"": "Поведение интерфейса",
-		"ediable_knob_scale": "Редактируемые шкалы ручек",
+		"ediable_knob_scale": "Редактируемые шкалы ручек",		
+		"enable_zoomable_spectrum": "Автоматическое масштабирование графика частот",
 		"override_hydrogen_kits": "Замещать настройки Hydrogen",
 		"vscroll": {
 			"invert_global": "Инвертировать вертикальное колесо мыши",
