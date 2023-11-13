@@ -156,6 +156,13 @@
 			"off": "Off",
 			"resonance": "Resonance"
 		},
+		"lr_mode": {
+			"24dbo": "LR4 (24 dB/oct)",
+			"48dbo": "LR8 (48 dB/oct)",
+			"72dbo": "LR12 (72 dB/oct)",
+			"96dbo": "LR16 (96 dB/oct)",
+			"off": "Off"
+		},
 		"mode": {
 			"rlc_bt": "RLC (BT)",
 			"rlc_mt": "RLC (MT)",
