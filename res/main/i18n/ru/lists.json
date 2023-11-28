@@ -324,5 +324,19 @@
 		"side": "Сторона",
 		"side_mid": "Сторона/Центр",
 		"sma": "ПСС"
+	},
+	
+	"sigmoid": {
+		"arctangent": "Арктангенс",
+		"circle": "Окружность",
+		"error_function": "Ошибка Гаусса",
+		"guidermannian": "Функция Гудермана",
+		"hardclip": "Жёсткий срез",
+		"hyperbolic_tangent": "Гиперболический тангенс",
+		"logistic": "Логистическая",
+		"parabolic": "Параболическая",
+		"sine": "Синус",
+		"smootherstep": "Smootherstep",
+		"smoothstep": "Smoothstep"
 	}
 }

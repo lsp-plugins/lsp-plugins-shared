@@ -324,5 +324,19 @@
 		"side": "Side",
 		"side_mid": "Side/Mid",
 		"sma": "SMA"
+	},
+	
+	"sigmoid": {
+		"arctangent": "Arctangent",
+		"circle": "Circle",
+		"error_function": "Error function",
+		"guidermannian": "Guidermannian",
+		"hardclip": "Hard clip",
+		"hyperbolic_tangent": "Hyperbolic tangent",
+		"logistic": "Logistic",
+		"parabolic": "Parabolic",
+		"sine": "Sine",
+		"smootherstep": "Smootherstep",
+		"smoothstep": "Smoothstep"
 	}
 }
