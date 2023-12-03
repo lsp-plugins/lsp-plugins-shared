@@ -213,6 +213,9 @@
 
 		<dry value="#8c8700"/>
 		<wet value="#368ccc"/>
+		<lufs value="#8ab252"/>
+		<bright_lufs value="#bee784"/>
+		<dark_lufs value="#557c1e"/>
 
 		<!-- Inactive colors -->
 		<fader value="#3496ab"/>
@@ -312,19 +315,19 @@
 		<button_inactive_border value="#373944"/>
 		<button_inactive value="#25272e"/>
 
-
 		<gain value="#377bff"/>
 
-    <!-- Autogain colors -->
-		<loudness_level value="#977c00"/> 	<!-- <yellow value="#977c00"/> -->
-		<loudness_silence value="#877e78"/> 	<!-- <yellow value="#977c00"/> -->
+		<!-- Autogain colors -->
+		<loudness_level value="#977c00"/>
+		<!-- <yellow value="#977c00"/> -->
+		<loudness_silence value="#877e78"/>
+		<!-- <yellow value="#977c00"/> -->
 		<loudness_in_long value="#00909e"/>
 		<loudness_in_short value="#00626b"/>
 		<loudness_sc_long value="#c26412"/>
 		<loudness_sc_short value="#7c491b"/>
 		<loudness_out_long value="#009600"/>
 		<loudness_out_short value="#006509"/>
-
 
 	</colors>
 
@@ -757,6 +760,18 @@
 		<led.color value="#1b935c"/>
 	</style>
 
+	<style class="Button_lufs" parents="Button">
+		<down.color value="#485d2b"/>
+		<down.hover.color value="#485d2b"/>
+
+		<text.down.color value="#8ab252"/>
+		<text.down.hover.color value="#8ab252"/>
+
+		<border.down.color value="#8ab252"/>
+		<border.down.hover.color value="#6c8b40"/>
+		<led.color value="#6c8b40"/>
+	</style>
+
 	<style class="Button_ne_left" parents="Button">
 		<color value="dark_red"/>
 
@@ -922,6 +937,18 @@
 		<font.size value="8"/>
 	</style>
 
+	<style class="Button_stretch_8" parents="Button_stretch">
+		<font.size value="8"/>
+	</style>
+
+	<style class="Button_loop_8" parents="Button_loop">
+		<font.size value="8"/>
+	</style>
+
+	<style class="Button_lufs_8" parents="Button_lufs">
+		<font.size value="8"/>
+	</style>
+
 	<style class="Button_gray_6" parents="Button_gray">
 		<font.size value="6"/>
 	</style>
@@ -983,6 +1010,18 @@
 	</style>
 
 	<style class="Button_dry_6" parents="Button_dry">
+		<font.size value="6"/>
+	</style>
+
+	<style class="Button_stretch_6" parents="Button_stretch">
+		<font.size value="6"/>
+	</style>
+
+	<style class="Button_loop_6" parents="Button_loop">
+		<font.size value="6"/>
+	</style>
+
+	<style class="Button_lufs_6" parents="Button_lufs">
 		<font.size value="6"/>
 	</style>
 
@@ -1161,7 +1200,7 @@
 		<border.size value="5"/>
 		<size value="3"/>
 		<color value="cyan"/>
-		<step.accel value="1.0" />
+		<step.accel value="1.0"/>
 		<border.color value="cyan"/>
 		<hover.size value="3"/>
 		<hover.border.size value="10"/>
@@ -1171,7 +1210,7 @@
 
 	<style class="GraphMarker" parents="root">
 		<smooth value="false"/>
-		<step.accel value="1.0" />
+		<step.accel value="1.0"/>
 		<color value="graph_marker"/>
 	</style>
 
@@ -1378,10 +1417,17 @@
 	</style>
 
 	<style class="Knob_meter_threshold" parents="Knob">
-		<meter.active value ="true"/>
-		<meter.color value ="bright_violet"/>
-		<meter.color.a value ="0.5"/>
-		<scale.color value ="dark_violet"/>
+		<meter.active value="true"/>
+		<meter.color value="bright_violet"/>
+		<meter.color.a value="0.5"/>
+		<scale.color value="dark_violet"/>
+	</style>
+
+	<style class="Knob_meter_lufs" parents="Knob">
+		<meter.active value="true"/>
+		<meter.color value="bright_lufs"/>
+		<meter.color.a value="0.5"/>
+		<scale.color value="dark_lufs"/>
 	</style>
 
 	<style class="Label" parents="root">
@@ -1544,8 +1590,8 @@
 		<check.color value="text_prim"/>
 		<check.bg.color value="bg_light"/>
 		<check.border.color value="border_color"/>
-		<padding.left value="26" />
-		<padding.right value="16" />
+		<padding.left value="26"/>
+		<padding.right value="16"/>
 	</style>
 
 	<style class="RackEars" parents="root"></style>

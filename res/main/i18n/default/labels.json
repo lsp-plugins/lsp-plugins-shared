@@ -64,6 +64,7 @@
 	"balance": "Balance",
 
 	"band": "Band",
+	"band_id": "Band {@id}",
 	"bands": {
 		"frequency_hi": "Frequency Hi",
 		"frequency_hi_e": "Frequency Hi-E",
@@ -323,6 +324,7 @@
 	"global_settings": "Global Settings",
 
 	"graphs": {
+		"clipping": "CLIPPING",
 		"compression": "COMPRESSION",
 		"correlation": "CORRELATION GRAPH",
 		"curve": "CURVE",
@@ -335,6 +337,7 @@
 		"LFO": "LFO GRAPH",
 		"oscillator_waveform": "OSCILLATOR WAVEFORM",
 		"oscilloscope": "OSCILLOSCOPE GRAPH",
+		"overdrive_protection": "OVERDRIVE PROTECTION",
 		"right_channel": "RIGHT CHANNEL",
 		"spectrum": "SPECTRUM GRAPH",
 		"time": "TIME GRAPH",
@@ -391,6 +394,8 @@
 	"loudness": "Loudness",
 	"loudness_L": "L",
 	"loudness_S": "S",
+	
+	"lufs_limit": "Lufs Limit",
 
 	"makeup": "Makeup",
 	"makeup_:db": "Makeup\n(dB)",
@@ -511,6 +516,7 @@
 	"output": "Output",
 	"output:db": "Output (dB)",
     "output_limiter": "Output limiter",
+    "odp": "ODP",
 	"oversampling": "Oversampling",
 	"oversampling:": "Oversampling:",
 

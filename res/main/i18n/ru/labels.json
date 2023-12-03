@@ -65,6 +65,8 @@
 	"balance": "Баланс",
 
 	"band": "Полоса",
+	"band_id": "Полоса {@id}",
+	
 	"bands": {
 		"frequency_hi": "Частоты Вск Hi",
 		"frequency_hi_e": "Частоты Вск-Д",
@@ -324,6 +326,7 @@
 	"global_settings": "Общие настройки",
 
 	"graphs": {
+		"clipping": "КЛИППИНГ",
 		"compression": "КОМПРЕССИЯ",
 		"correlation": "ГРАФИК КОРРЕЛЯЦИИ",
 		"curve": "КРИВАЯ",
@@ -336,6 +339,7 @@
 		"LFO": "НЧО ГРАФИК",
 		"oscillator_waveform": "ФОРМА ВОЛНЫ ГЕНЕРАТОРА",
 		"oscilloscope": "ГРАФИК ОСЦИЛЛОСКОПА",
+		"overdrive_protection": "ЗАЩИТА ОТ ПЕРЕГРУЗКИ",
 		"right_channel": "ПРАВЫЙ КАНАЛ",
 		"spectrum": "СПЕКТРАЛЬНЫЙ ГРАФИК",
 		"time": "ВРЕМЕННОЙ ГРАФИК",
@@ -392,6 +396,8 @@
 	"loudness": "Громкость",
 	"loudness_L": "Д",
 	"loudness_S": "К",
+	
+	"lufs_limit": "LUFS Лимит",
 
 	"makeup": "Коррекция",
 	"makeup_:db": "Коррекция\n(дБ)",
@@ -512,6 +518,7 @@
 	"output": "Выход",
 	"output:db": "Выход (дБ)",
     "output_limiter": "Выходной лимитер",
+    "odp": "ЗОП",
 	"oversampling": "Передискретизация",
 	"oversampling:": "Передискретизация:",
 
