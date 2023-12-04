@@ -180,6 +180,7 @@
 	"channels": "Channels",
 
 	"clear": "Clear",
+	"clp": "CLP",
 	"compression_curve": "Compression Curve",
 	"contour:": "Contour:",
 	"controls": "Controls",
@@ -190,6 +191,8 @@
 	"coarse_ir_duration": "Coarse\nIR Duration (s)",
 	"coarse_ir_duration_sline": "Coarse IR Duration (s)",
 	"coarse_duration": "Coarse\nDuration",
+	
+	"crossover": "Crossover",
 
 	"curve": "Curve",
 
@@ -316,6 +319,8 @@
 	"frequency": "Frequency",
 	"freq_gain": "Freq, Gain",
 	"freq_gain:hz_db": "Freq, Gain\n(Hz, dB)",
+	
+	"function": "Function",
 
 	"gain": "Gain",
 	"gain_": "Gain",
@@ -515,8 +520,10 @@
 
 	"output": "Output",
 	"output:db": "Output (dB)",
+	"output_clipper": "Output Clipper",
     "output_limiter": "Output limiter",
     "odp": "ODP",
+    "odp_link": "ODP Link",
 	"oversampling": "Oversampling",
 	"oversampling:": "Oversampling:",
 
@@ -562,6 +569,9 @@
 		"waiting": "WAITING"
 	},
 	"progress": "Progress",
+	
+	"pump": "Pump",
+	"pumping": "Pumping",
 
 	"q": "Q",
 	"q_hue": "Q, Hue",
@@ -591,7 +601,9 @@
 	"ratio_low_high": "Ratio low,\nRatio high",
 	"ratio_knee:db": "Ratio,\nKnee (dB)",
 	"ratio_up": "Ratio up",
-
+	
+	"reactivity": "Reactivity",
+	
 	"reduction": "Reduction",
 
 	"reflections": "Reflections",
@@ -601,6 +613,9 @@
 	"release": "Release",
 	"release:db_ms": "Release\n(dB, ms)",
 	"reset": "Reset",
+	
+	"Resonance": "Resonance",
+	
 	"result": "Result",
 
 	"reverberation_time:s": "Reverberation\nTime (s)",
