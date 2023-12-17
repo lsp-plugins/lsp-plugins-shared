@@ -172,6 +172,13 @@
 			"lrx_mt": "LRX (MT)",
 			"apo_dr": "APO (DR)"
 		},
+		"point_thick" : {
+			"bold" : "Bold",
+			"normal" : "Normal",
+			"semibold" : "Semibold",
+			"thin" : "Thin",
+			"thinnest" : "Thinnest"
+		},
 		"pos": {
 		    "post_eq": "Post-eq",
 			"pre_eq": "Pre-eq"
