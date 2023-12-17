@@ -226,12 +226,6 @@
 	},
 
 	"notes": {
-		"display": {
-			"full": "{@filter}\n{@filter_type}\n{@frequency} Hz\n{@note}{@octave}{@cents}",
-			"full_single": "{@filter_type}\n{@frequency} Hz\n{@note}{@octave}{@cents}",
-			"unknown": "{@filter}\n{@filter_type}\n{@frequency} Hz",
-			"unknown_single": "{@filter_type}\n{@frequency} Hz"
-		},
 		"names": {
 			"a": "A",
 			"a#": "A#",
