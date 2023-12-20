@@ -25,11 +25,11 @@
 			"bandpass": "Bandpass",
 			"bell": "Bell",
 			"envelope": "Envelope",
-			"hipass": "Hi-pass",
+			"hipass": "Low-cut",
 			"hishelf": "Hi-shelf",
 			"ladpass": "Ladder-pass",
 			"ladrej": "Ladder-rej",
-			"lopass": "Lo-pass",
+			"lopass": "Hi-cut",
 			"loshelf": "Lo-shelf",
 			"lufs": "LUFS",
 			"notch": "Notch",
@@ -145,11 +145,11 @@
 			"bandpass": "Bandpass",
 			"bell": "Bell",
 			"envelope": "Envelope",
-			"hipass": "Hi-pass",
+			"hipass": "Low-cut",
 			"hishelf": "Hi-shelf",
 			"ladpass": "Ladder-pass",
 			"ladrej": "Ladder-rej",
-			"lopass": "Lo-pass",
+			"lopass": "Hi-cut",
 			"loshelf": "Lo-shelf",
 			"lufs": "LUFS",
 			"notch": "Notch",
@@ -326,7 +326,7 @@
 		"side_mid": "Side/Mid",
 		"sma": "SMA"
 	},
-	
+
 	"sigmoid": {
 		"arctangent": "Arctangent",
 		"circle": "Circle",
