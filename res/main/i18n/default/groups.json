@@ -21,6 +21,8 @@
 
 	"gain": "Gain",
 	"general": "General",
+	
+	"global_threshold": "Global Threshold",
 
 	"global_delay_ctr": "Global Delay Line Controls",
 

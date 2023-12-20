@@ -156,6 +156,13 @@
 			"off": "Off",
 			"resonance": "Resonance"
 		},
+		"lr_mode": {
+			"24dbo": "LR4 (24 dB/oct)",
+			"48dbo": "LR8 (48 dB/oct)",
+			"72dbo": "LR12 (72 dB/oct)",
+			"96dbo": "LR16 (96 dB/oct)",
+			"off": "Off"
+		},
 		"mode": {
 			"rlc_bt": "RLC (BT)",
 			"rlc_mt": "RLC (MT)",
@@ -164,6 +171,13 @@
 			"lrx_bt": "LRX (BT)",
 			"lrx_mt": "LRX (MT)",
 			"apo_dr": "APO (DR)"
+		},
+		"point_thick" : {
+			"bold" : "Bold",
+			"normal" : "Normal",
+			"semibold" : "Semibold",
+			"thin" : "Thin",
+			"thinnest" : "Thinnest"
 		},
 		"pos": {
 		    "post_eq": "Post-eq",
@@ -219,12 +233,6 @@
 	},
 
 	"notes": {
-		"display": {
-			"full": "{@filter}\n{@filter_type}\n{@frequency} Hz\n{@note}{@octave}{@cents}",
-			"full_single": "{@filter_type}\n{@frequency} Hz\n{@note}{@octave}{@cents}",
-			"unknown": "{@filter}\n{@filter_type}\n{@frequency} Hz",
-			"unknown_single": "{@filter_type}\n{@frequency} Hz"
-		},
 		"names": {
 			"a": "A",
 			"a#": "A#",
@@ -317,5 +325,19 @@
 		"side": "Side",
 		"side_mid": "Side/Mid",
 		"sma": "SMA"
+	},
+	
+	"sigmoid": {
+		"arctangent": "Arctangent",
+		"circle": "Circle",
+		"error_function": "Error function",
+		"guidermannian": "Guidermannian",
+		"hardclip": "Hard clip",
+		"hyperbolic_tangent": "Hyperbolic tangent",
+		"logistic": "Logistic",
+		"parabolic": "Parabolic",
+		"sine": "Sine",
+		"smootherstep": "Smootherstep",
+		"smoothstep": "Smoothstep"
 	}
 }

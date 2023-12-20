@@ -156,6 +156,13 @@
 			"off": "Выкл",
 			"resonance": "Резонанс"
 		},
+		"lr_mode": {
+			"24dbo": "LR4 (24 дБ/окт)",
+			"48dbo": "LR8 (48 дБ/окт)",
+			"72dbo": "LR12 (72 дБ/окт)",
+			"96dbo": "LR16 (96 дБ/окт)",
+			"off": "Выкл"
+		},
 		"mode": {
 			"rlc_bt": "РИК (БП)",
 			"rlc_mt": "РИК (ПП)",
@@ -164,6 +171,13 @@
 			"lrx_bt": "ЛРК (БП)",
 			"lrx_mt": "ЛКР (ПП)",
 			"apo_dr": "APO (ПО)"
+		},
+		"point_thick" : {
+			"bold" : "Жирный",
+			"normal" : "Нормальный",
+			"semibold" : "Полужирный",
+			"thin" : "Тонкий",
+			"thinnest" : "Тончайший"
 		},
 		"pos": {
 		    "post_eq": "Пост-экв",
@@ -219,12 +233,6 @@
 	},
 
 	"notes": {
-		"display": {
-			"full": "{@filter}\n{@filter_type}\n{@frequency} Гц\n{@note}{@octave}{@cents}",
-			"full_single": "{@filter_type}\n{@frequency} Гц\n{@note}{@octave}{@cents}",
-			"unknown": "{@filter}\n{@filter_type}\n{@frequency} Гц",
-			"unknown_single": "{@filter}\n{@filter_type}\n{@frequency} Гц"
-		},
 		"names": {
 			"a": "A",
 			"a#": "A#",
@@ -317,5 +325,19 @@
 		"side": "Сторона",
 		"side_mid": "Сторона/Центр",
 		"sma": "ПСС"
+	},
+	
+	"sigmoid": {
+		"arctangent": "Арктангенс",
+		"circle": "Окружность",
+		"error_function": "Ошибка Гаусса",
+		"guidermannian": "Функция Гудермана",
+		"hardclip": "Жёсткий срез",
+		"hyperbolic_tangent": "Гиперболический тангенс",
+		"logistic": "Логистическая",
+		"parabolic": "Параболическая",
+		"sine": "Синус",
+		"smootherstep": "Smootherstep",
+		"smoothstep": "Smoothstep"
 	}
 }

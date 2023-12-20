@@ -65,6 +65,8 @@
 	"balance": "Баланс",
 
 	"band": "Полоса",
+	"band_id": "Полоса {@id}",
+	
 	"bands": {
 		"frequency_hi": "Частоты Вск Hi",
 		"frequency_hi_e": "Частоты Вск-Д",
@@ -180,6 +182,7 @@
 	"channels": "Каналы",
 
 	"clear": "Очистить",
+	"clp": "КЛП",
     "compression_curve": "Кривая копрессии",
 	"contour:": "Контур:",
 	"controls": "Управление",
@@ -190,6 +193,8 @@
 	"coarse_ir_duration": "Приблизительная\nдлительность ИО (с)",
 	"coarse_ir_duration_sline": "Приблизительная длительность ИО (s)",
 	"coarse_duration": "Приблизительная\nдлительность",
+	
+	"crossover": "Кроссовер",
 
 	"curve": "Кривая",
 
@@ -316,6 +321,8 @@
 	"frequency": "Частота",
 	"freq_gain": "Част, Усил",
 	"freq_gain:hz_db": "Част, Усил\n(Гц, дБ)",
+	
+	"function": "Функция",
 
 	"gain": "Усиление",
 	"gain_": "Усил",
@@ -324,6 +331,7 @@
 	"global_settings": "Общие настройки",
 
 	"graphs": {
+		"clipping": "КЛИППИНГ",
 		"compression": "КОМПРЕССИЯ",
 		"correlation": "ГРАФИК КОРРЕЛЯЦИИ",
 		"curve": "КРИВАЯ",
@@ -336,6 +344,7 @@
 		"LFO": "НЧО ГРАФИК",
 		"oscillator_waveform": "ФОРМА ВОЛНЫ ГЕНЕРАТОРА",
 		"oscilloscope": "ГРАФИК ОСЦИЛЛОСКОПА",
+		"overdrive_protection": "ЗАЩИТА ОТ ПЕРЕГРУЗКИ",
 		"right_channel": "ПРАВЫЙ КАНАЛ",
 		"spectrum": "СПЕКТРАЛЬНЫЙ ГРАФИК",
 		"time": "ВРЕМЕННОЙ ГРАФИК",
@@ -392,6 +401,8 @@
 	"loudness": "Громкость",
 	"loudness_L": "Д",
 	"loudness_S": "К",
+	
+	"lufs_limit": "LUFS Лимит",
 
 	"makeup": "Коррекция",
 	"makeup_:db": "Коррекция\n(дБ)",
@@ -511,7 +522,10 @@
 
 	"output": "Выход",
 	"output:db": "Выход (дБ)",
+	"output_clipper": "Выходной клиппер",
     "output_limiter": "Выходной лимитер",
+    "odp": "ЗОП",    
+    "odp_link": "ЗОП Связь",
 	"oversampling": "Передискретизация",
 	"oversampling:": "Передискретизация:",
 
@@ -557,6 +571,9 @@
 		"waiting": "ОЖИДАНИЕ"
 	},
 	"progress": "Прогресс",
+	
+	"pump": "Нкчк",
+	"pumping": "Накачка",
 
 	"q": "Добр",
 	"q_hue": "Добр, Тон",
@@ -586,6 +603,8 @@
 	"ratio_low_high": "Наклон низ,\nНаклон верх",
 	"ratio_knee:db": "Наклон,\nКолено (dB)",
 	"ratio_up": "Повышение",
+	
+	"reactivity": "Реактивность",
 
 	"reduction": "Понижение",
 
@@ -596,6 +615,9 @@
 	"release": "Выключение",
 	"release:db_ms": "Выключение\n(дБ, мс)",
 	"reset": "Сбросить",
+	
+	"resonance": "Резонанс", 
+	
 	"result": "Результат",
 
 	"reverberation_time:s": "Время\nреверберации (с)",

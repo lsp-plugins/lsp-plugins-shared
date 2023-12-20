@@ -98,7 +98,9 @@
 	
 	"ui_behavior": {
 		"": "UI behavior",
-		"ediable_knob_scale": "Editable knob scale",
+		"ediable_knob_scale": "Editable knob scale",		
+		"enable_zoomable_spectrum": "Automatic frequency graph scaling",
+		"filter_point_thickness": "Filter point thickness",
 		"override_hydrogen_kits": "Override Hydrogen kits",
 		"vscroll": {
 			"invert_global": "Invert vertical mouse scroll",

@@ -230,6 +230,9 @@
 
 		<dry value="#fff600"/>
 		<wet value="#0092ff"/>
+		<lufs value="#c5ff00"/>
+		<bright_lufs value="#78ce00"/>
+		<dark_lufs value="#5e7a00"/>
 
 		<!-- Inactive colors -->
 		<fader value="#000000"/>
@@ -332,8 +335,10 @@
 		<gain value="#2626ff"/>
 
 		<!-- Autogain colors -->
-		<loudness_level value="#ffff00"/> 	<!-- <yellow value="#977c00"/> -->
-		<loudness_silence value="#fbfbcc"/> 	<!-- <yellow value="#977c00"/> -->
+		<loudness_level value="#ffff00"/>
+		<!-- <yellow value="#977c00"/> -->
+		<loudness_silence value="#fbfbcc"/>
+		<!-- <yellow value="#977c00"/> -->
 		<loudness_in_long value="#00ffff"/>
 		<loudness_in_short value="#00d2d2"/>
 		<loudness_sc_long value="#ff8800"/>
@@ -781,6 +786,18 @@
 		<led.color value="#7c00e9"/>
 	</style>
 
+	<style class="Button_lufs" parents="Button">
+		<down.color value="#709141"/>
+		<down.hover.color value="#709141"/>
+
+		<text.down.color value="bg"/>
+		<text.down.hover.color value="bg"/>
+
+		<border.down.color value="#8a000"/>
+		<border.down.hover.color value="#7ca148"/>
+		<led.color value="#7ca148"/>
+	</style>
+
 	<style class="Button_ne_left" parents="Button">
 		<color value="dark_red"/>
 
@@ -946,6 +963,18 @@
 		<font.size value="8"/>
 	</style>
 
+	<style class="Button_stretch_8" parents="Button_stretch">
+		<font.size value="8"/>
+	</style>
+
+	<style class="Button_loop_8" parents="Button_loop">
+		<font.size value="8"/>
+	</style>
+
+	<style class="Button_lufs_8" parents="Button_lufs">
+		<font.size value="8"/>
+	</style>
+
 	<style class="Button_gray_6" parents="Button_gray">
 		<font.size value="6"/>
 	</style>
@@ -1007,6 +1036,18 @@
 	</style>
 
 	<style class="Button_dry_6" parents="Button_dry">
+		<font.size value="6"/>
+	</style>
+
+	<style class="Button_stretch_6" parents="Button_stretch">
+		<font.size value="6"/>
+	</style>
+
+	<style class="Button_loop_6" parents="Button_loop">
+		<font.size value="6"/>
+	</style>
+
+	<style class="Button_lufs_6" parents="Button_lufs">
 		<font.size value="6"/>
 	</style>
 
@@ -1396,10 +1437,17 @@
 	</style>
 
 	<style class="Knob_meter_threshold" parents="Knob">
-		<meter.active value ="true"/>
-		<meter.color value ="bright_violet"/>
-		<meter.color.a value ="0.5"/>
-		<scale.color value ="dark_violet"/>
+		<meter.active value="true"/>
+		<meter.color value="bright_violet"/>
+		<meter.color.a value="0.5"/>
+		<scale.color value="dark_violet"/>
+	</style>
+
+	<style class="Knob_meter_lufs" parents="Knob">
+		<meter.active value="true"/>
+		<meter.color value="bright_lufs"/>
+		<meter.color.a value="0.5"/>
+		<scale.color value="dark_lufs"/>
 	</style>
 
 	<style class="Label" parents="root">
