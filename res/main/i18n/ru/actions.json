@@ -90,17 +90,17 @@
 
 	"save": "Сохранить",
 
-	"select_language": "Выбрать язык",
+	"select_language": "Язык",
 
 	"tap": "Тук",
 	"to_bookmarks": "В закладки",
 	"toggle_rack_mount": "Переключить стоечный монтаж",
 
 	"ui_behavior": {
-		"": "Настройки",
+		"": "Настройки UI",
 		"ediable_knob_scale": "Редактируемые шкалы ручек",
 		"enable_zoomable_spectrum": "Автоматическое масштабирование графика частот",
-		"filter_point_thickness": "Толщина точек фильтра",
+		"filter_point_thickness": "Размер точек фильтра",
 		"override_hydrogen_kits": "Замещать настройки Hydrogen",
 		"vscroll": {
 			"invert_global": "Инвертировать вертикальное колесо мыши",
