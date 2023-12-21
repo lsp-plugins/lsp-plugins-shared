@@ -98,8 +98,8 @@
 
 	"ui_behavior": {
 		"": "UI Settings",
-		"ediable_knob_scale": "Editable knob scale",
-		"enable_zoomable_spectrum": "Automatic frequency graph scaling",
+		"ediable_knob_scale": "Set knob value on click",
+		"enable_zoomable_spectrum": "Zoom slider affects spectrum",
 		"filter_point_thickness": "Graph dots size",
 		"override_hydrogen_kits": "Override Hydrogen kits",
 		"vscroll": {

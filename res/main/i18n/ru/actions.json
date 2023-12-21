@@ -98,8 +98,8 @@
 
 	"ui_behavior": {
 		"": "Настройки UI",
-		"ediable_knob_scale": "Редактируемые шкалы ручек",
-		"enable_zoomable_spectrum": "Автоматическое масштабирование графика частот",
+		"ediable_knob_scale": "Выставлять крутилки по клику",
+		"enable_zoomable_spectrum": "Слайдер масштаба влияет на спектр",
 		"filter_point_thickness": "Размер точек фильтра",
 		"override_hydrogen_kits": "Замещать настройки Hydrogen",
 		"vscroll": {
