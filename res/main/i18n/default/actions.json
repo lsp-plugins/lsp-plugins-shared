@@ -2,17 +2,17 @@
 	"3d_rendering": "3D rendering",
 
 	"apply": "Apply",
-	
+
 	"cancel": "Cancel",
 	"close": "Close",
-	
+
 	"confirm": {
 		"no": "No",
 		"yes": "Yes"
 	},
-	
+
 	"debug_dump": "Dump for debug",
-	
+
 	"edit": {
 		"clear": "Clear",
 		"copy": "Copy",
@@ -24,17 +24,17 @@
 		"move_up": "Move up",
 		"paste": "Paste"
 	},
-	
+
 	"export": "Export",
 	"export_settings_to_clipboard": "Export settings to clipboard",
 	"export_settings_to_file": "Export settings to file...",
-	
+
 	"file_preview": {
 		"pause": "Pause",
 		"play": "Play",
 		"stop": "Stop"
 	},
-	
+
 	"filters": {
 		"switch": {
 			"to_left": "Switch to Left",
@@ -43,16 +43,16 @@
 			"to_side": "Switch to Side"
 		}
 	},
-	
+
 	"font_scaling": {
 		"select": "Font scaling",
 		"value:pc": "{@value} %",
 		"zoom_in": "Zoom in",
 		"zoom_out": "Zoom out"
 	},
-	
+
 	"freeze": "Freeze",
-	
+
 	"import": "Import",
 	"import_hydrogen_drumkit_file": "Hydrogen drumkit file...",
 	"import_installed_hydrogen_drumkit": "Installed Hydrogen drumkit",
@@ -66,38 +66,38 @@
 		"copy": "Copy link",
 		"follow": "Follow link"
 	},
-	
+
 	"load": "Load",
 	"load_preset": "Load preset",
-	
+
 	"measure": "Measure",
-	
+
 	"nav": {
 		"go": "Go",
 		"up": "Up"
 	},
-	
+
 	"ok": "OK",
 	"open": "Open",
 
 	"plugin_manual": "Plugin manual",
 	"postprocess": "Post-process",
 	"profile": "Profile",
-	
+
 	"reset": "Reset",
 	"restart": "Restart",
 	"run_stop": "Run/Stop",
 
 	"save": "Save",
-	
+
 	"select_language": "Select language",
 
 	"tap": "Tap",
 	"to_bookmarks": "+Bookmarks",
 	"toggle_rack_mount": "Toggle rack mount",
-	
+
 	"ui_behavior": {
-		"": "UI behavior",
+		"": "Settings",
 		"ediable_knob_scale": "Editable knob scale",
 		"enable_zoomable_spectrum": "Automatic frequency graph scaling",
 		"filter_point_thickness": "Filter point thickness",
@@ -107,9 +107,9 @@
 			"invert_graph_dot": "Invert vertical mouse scroll for graph dots"
 		}
 	},
-	
+
 	"ui_manual": "UI manual",
-	
+
 	"ui_scaling": {
 		"prefer_host": "Prefer host",
 		"select": "UI scaling",
@@ -117,9 +117,9 @@
 		"zoom_in": "Zoom in",
 		"zoom_out": "Zoom out"
 	},
-	
+
 	"user_paths": "User paths...",
-	
+
 	"visual_schema": {
 		"select": "Visual Schema"
 	}
