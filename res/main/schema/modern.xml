@@ -1164,6 +1164,25 @@
 		<button.width value="8"/>
 	</style>
 
+	<style class="Fader_prophessor" parents="root">
+		<scale.color value="gray_inactive"/>
+		<scale.border.gradient value="false"/>
+		<scale.border.size value="0"/>
+		<scale.border.radius value="0"/>
+		<scale.width value="4"/>
+		<scale.border.color value="bg"/>
+		<scale.brightness value="0.6"/>
+		<bg.inherit value="true"/>
+
+		<button.color value="gray"/>
+		<button.aspect value="0.6" />
+		<button.border.gradient value="false"/>
+		<button.border.color value="gray"/>
+		<button.border.size value="6"/>
+		<button.border.radius value="4"/>
+		<button.width value="16"/>
+	</style>
+
 	<style class="Fader_play" parents="Fader">
 		<button.border.size value="0"/>
 		<button.border.radius value="0"/>
