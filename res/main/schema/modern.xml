@@ -921,6 +921,17 @@
 		<font.size value="8"/>
 	</style>
 
+	<style class="Button_left_8_dimmed" parents="Button_left_8">
+		<down.color.hue value="90"/>
+		<border.color.hue value="90"/>
+		<led.color.hue value="90"/>
+	</style>
+	<style class="Button_right_8_dimmed" parents="Button_right_8">
+		<down.color.hue value="90"/>
+		<border.color.hue value="90"/>
+		<led.color.hue value="90"/>
+	</style>
+
 	<style class="Button_right_8" parents="Button_right">
 		<font.size value="8"/>
 	</style>
@@ -1181,6 +1192,16 @@
 		<button.border.size value="6"/>
 		<button.border.radius value="4"/>
 		<button.width value="16"/>
+	</style>
+
+	<style class="Fader_prophessor_thin" parents="Fader_prophessor">
+		<scale.width value="2"/>
+
+		<button.aspect value="2.75" />
+		<button.border.size value="1"/>
+		<button.width value="1,1"/>
+		<button.width.x value="1"/>
+		<button.width.y value="1"/>
 	</style>
 
 	<style class="Fader_play" parents="Fader">
