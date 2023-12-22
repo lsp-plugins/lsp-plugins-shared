@@ -65,8 +65,8 @@
 		"type": {
 			"fir": "FIR",
 			"fft": "FFT",
-			"iir": "IIR",
-			"spm": "SPM"
+			"iir": "Zero-latency (IIR)",
+			"spm": "Linear phase (SPM)"
 		}
 	},
 
@@ -203,8 +203,8 @@
 		"type": {
 			"fir": "FIR",
 			"fft": "FFT",
-			"iir": "IIR",
-			"spm": "SPM"
+			"iir": "Zero-latency (IIR)",
+			"spm": "Linear phase (SPM)"
 		}
 	},
 
