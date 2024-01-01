@@ -1237,13 +1237,13 @@
 
 	<style class="GraphDot" parents="root">
 		<smooth value="true"/>
-		<border.size value="5"/>
+		<border.size value="3"/>
 		<size value="3"/>
 		<color value="cyan"/>
 		<step.accel value="1.0"/>
 		<border.color value="cyan"/>
 		<hover.size value="3"/>
-		<hover.border.size value="10"/>
+		<hover.border.size value="5"/>
 		<hover.color value="cyan"/>
 		<hover.border.color value="cyan"/>
 	</style>
