@@ -46,7 +46,7 @@
 			"apo_dr": "APO (DR)"
 		},
 		"pos": {
-		    "post_eq": "Post-eq",
+			"post_eq": "Post-eq",
 			"pre_eq": "Pre-eq"
 		},
 		"slope": {
@@ -180,7 +180,7 @@
 			"thinnest" : "Thinnest"
 		},
 		"pos": {
-		    "post_eq": "Post-eq",
+			"post_eq": "Post-eq",
 			"pre_eq": "Pre-eq"
 		},
 		"slope": {
@@ -222,7 +222,8 @@
 		"fft": {
 			"off": "Off",
 			"post_eq": "Post-eq",
-			"pre_eq": "Pre-eq"
+			"pre_eq": "Pre-eq",
+			"both": "Both"
 		}
 	},
 
