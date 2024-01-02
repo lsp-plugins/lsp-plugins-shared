@@ -17,7 +17,7 @@
 			<!-- Presets -->
 			<cell width.min="37" rows="2" cols="1">
 				<hbox expand="true" padding.l="20" padding.r="20">
-					<button text="Preset Name" hfill="true" expand="true" hexpand="true" />
+					<button ui:id="trg_presets_menu" text="Preset Name" hfill="true" expand="true" hexpand="true" />
 					<button text="<"/>
 					<button text=">"/>
 				</hbox>
