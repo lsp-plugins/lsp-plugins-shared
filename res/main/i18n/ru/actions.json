@@ -60,6 +60,7 @@
 	"import_settings_from_file": "Импорт настроек из файла...",
 	"import_sfz_file": "Импортировать файл SFZ...",
 	"import_rew_filter_file": "Файл фильтров REW...",
+	"reset_settings": "Сбросить настройки",
 
 	"listen": "Слушать",
 	"link": {

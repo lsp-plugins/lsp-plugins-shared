@@ -45,18 +45,6 @@
 					<label  hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.top="1" font.antialias="true" text="0" halign="1" />
 					<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.left="5" font.size="14" padding.top="3" halign="1" text="labels.header.menu"/>
 				</hbox>
-				<!-- <hbox ui:id="trg_export_settings" solid="true" padding.right="10" pointer="hand">
-					<label  hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.top="1" font.antialias="true" text="1" halign="1" />
-					<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.left="5" font.size="14" padding.top="3" halign="1" text="labels.header.save"/>
-				</hbox>
-				<hbox ui:id="trg_import_settings" solid="true" padding.right="10" pointer="hand">
-					<label  hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.top="1" font.antialias="true" text="2" halign="1" />
-					<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.left="5" font.size="14" padding.top="3" halign="1" text="labels.header.load"/>
-				</hbox>
-				<hbox ui:id="trg_reset_settings" solid="true" padding.right="10" pointer="hand">
-					<label  hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.top="1" font.antialias="true" text="3" halign="1" />
-					<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.left="5" font.size="14" padding.top="3" halign="1" text="labels.header.reset"/>
-				</hbox> -->
 				<hbox ui:id="trg_about" solid="true" padding.right="6" pointer="hand">
 					<label  hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.top="1" font.antialias="true" text="4" halign="1" />
 					<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.left="5" font.size="14" padding.top="3" halign="1" text="labels.header.about"/>

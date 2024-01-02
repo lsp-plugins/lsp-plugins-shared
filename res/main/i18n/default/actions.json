@@ -60,6 +60,7 @@
 	"import_settings_from_file": "Import settings from file...",
 	"import_sfz_file": "Import SFZ file...",
 	"import_rew_filter_file": "REW filter file...",
+	"reset_settings": "Reset settings",
 
 	"listen": "Listen",
 	"link": {
