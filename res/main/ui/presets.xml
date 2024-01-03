@@ -19,18 +19,24 @@
 		<!-- Actions -->
 		<vbox>
 			<label text="Actions" />
-			<ui:with halign="-1">
+			<hbox>
 				<button text="Create" ui:id="trg_presets_menu" />
 				<button text="Save" />
 				<button text="Load" />
-				<label text="---" />
-				<button text="Import from file" ui:id="trg_load_menu" />
-				<button text="Import from clipboard" />
-				<button text="Import *.REW" />
-				<label text="---" />
-				<button text="Export to file" ui:id="trg_save_menu" />
-				<button text="Export to clipboard" />
-			</ui:with>
+			</hbox>
+			<label text="---" />
+			<label text="Import from ..." />
+			<hbox>
+				<button text="file" ui:id="trg_load_menu" />
+				<button text="clipboard" />
+				<button text="*.REW" />
+			</hbox>
+			<label text="---" />
+			<label text="Export to ..." />
+			<hbox>
+				<button text="file" ui:id="trg_save_menu" />
+				<button text="clipboard" />
+			</hbox>
 		</vbox>
 	</hbox>
 </window>
