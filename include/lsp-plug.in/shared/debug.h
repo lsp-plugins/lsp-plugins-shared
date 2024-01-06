@@ -37,6 +37,28 @@ namespace lsp
         lsp_trace("  port id=%s", (p)->metadata()->id);
         return p;
     }
+
+    #ifdef LSP_TRACE
+        #define BIND_PORT(dst) \
+            do { \
+                dst = ports[port_id++]; \
+                const ::lsp::meta::port_t *port_meta_ = dst->metadata(); \
+                lsp_trace("Bind port %s -> %s (%s)", port_meta_->id, LSP_STRINGIFY(dst), port_meta_->name); \
+            } while (false)
+
+        #define SKIP_PORT(dst) \
+            do { \
+                const ::lsp::meta::port_t *port_meta_ = ports[port_id++]->metadata(); \
+                lsp_trace("Skip port %s -> %s (%s)", port_meta_->id, LSP_STRINGIFY(dst), port_meta_->name); \
+            } while (false)
+    #else
+        #define BIND_PORT(dst) \
+            dst = ports[port_id++];
+
+        #define SKIP_PORT(dst) \
+            ++port_id;
+    #endif /* LSP_TRACE */
+
 } /* namespace lsp */
 
 #endif /* LSP_PLUG_IN_SHARED_DEBUG_H_ */
