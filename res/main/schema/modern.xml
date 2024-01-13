@@ -1204,6 +1204,28 @@
 		<button.width.y value="1"/>
 	</style>
 
+	<style class="Fader_prophessor_ratio" parents="root">
+		<!-- Track -->
+		<scale.color value="bg"/>
+		<scale.border.gradient value="false"/>
+		<scale.border.size value="0"/>
+		<scale.border.radius value="0"/>
+		<scale.width value="4"/>
+		<scale.border.color value="bg"/>
+		<scale.brightness value="0.6"/>
+		<bg.inherit value="true"/>
+		<width value="64" />
+
+		<!-- Thumb -->
+		<button.color value="cyan"/>
+		<button.border.gradient value="false"/>
+		<button.border.size value="1"/>
+		<button.border.radius value="5"/>
+		<button.width value="0"/>
+		<!-- Should be a circle -->
+		<button.aspect value="0.99" />
+	</style>
+
 	<style class="Fader_play" parents="Fader">
 		<button.border.size value="0"/>
 		<button.border.radius value="0"/>
