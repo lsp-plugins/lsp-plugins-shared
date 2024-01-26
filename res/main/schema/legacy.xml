@@ -217,6 +217,7 @@
 		<sidechain_2 value="#e14a00"/>
 
 		<threshold value="#e200ff"/>
+		<threshold_hover value="#ff00ff"/>
 		<threshold_1 value="#e200ff"/>
 		<threshold_2 value="#e200ff"/>
 
