@@ -37,6 +37,8 @@
 				array_push($fmt, '<a href="https://lv2plug.in/" target="_blank">LV2</a>');
 			if ((isset($plugin['vst2_uid'])) && (strlen($plugin['vst2_uid']) > 0))
 				array_push($fmt, '<a href="https://www.steinberg.net/" target="_blank">VST2</a>');
+			if ((isset($plugin['vst3_uid'])) && (strlen($plugin['vst3_uid']) > 0))
+				array_push($fmt, '<a href="https://www.steinberg.net/" target="_blank">VST3</a>');
 		
 			$full_name = htmlspecialchars("{$PACKAGE['short']} {$plugin['description']} ({$plugin['acronym']})");
 			$author = htmlspecialchars($plugin['author']);
