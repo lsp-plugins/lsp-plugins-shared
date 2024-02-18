@@ -450,6 +450,7 @@
 	"mic_rophone_direction": "Напр микрофона",
 
 	"midi": {
+		"code": "Код",
 		"midi_num": "№ MIDI",
 		"midi_number": "Номер MIDI",
 		"note_off": "Нота выкл",
