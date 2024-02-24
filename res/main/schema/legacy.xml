@@ -231,6 +231,7 @@
 
 		<dry value="#fff600"/>
 		<wet value="#0092ff"/>
+		<drywet value="#89c400"/>
 		<lufs value="#c5ff00"/>
 		<bright_lufs value="#78ce00"/>
 		<dark_lufs value="#5e7a00"/>
