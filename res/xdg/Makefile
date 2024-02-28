@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 #
-# Copyright (C) 2020 Linux Studio Plugins Project <https://lsp-plug.in/>
-#           (C) 2020 Vladimir Sadovnikov <sadko4u@gmail.com>
+# Copyright (C) 2024 Linux Studio Plugins Project <https://lsp-plug.in/>
+#           (C) 2024 Vladimir Sadovnikov <sadko4u@gmail.com>
 #
 # This file is part of lsp-plugins-shared
 #
@@ -29,15 +29,16 @@ DESTDIR                :=
 ETCDIR                 := /etc
 SHAREDDIR              := /usr/local/share
 FILES                  :=
+BATCH_FILE             :=
 
 include $(CONFIG)
+-include $(BATCH_FILE)
 
 XDG_ICON_PATH   = $(DESTDIR)$(SHAREDDIR)/icons/hicolor
 XDG_MENU_PATH   = $(DESTDIR)$(ETCDIR)/xdg/menus/applications-merged
 XDG_APP_PATH    = $(DESTDIR)$(SHAREDDIR)/applications
 XDG_DIR_PATH    = $(DESTDIR)$(SHAREDDIR)/desktop-directories
 XDG_FILE_PATH   = $(foreach file,$(FILES),$(XDG_APP_PATH)/$(notdir $(file)))
-XDG_FILE_LIST   = $(foreach file,$(FILES),\\<Filename\\>$(notdir $(file))\\<\\/Filename\\>\\n)
 
 .PHONY: all install_xdg uninstall_xdg
 .DEFAULT_TARGET=all
@@ -66,12 +67,16 @@ install_xdg:
 	cp -f icons/lsp-plugins/128x128.png  "$(XDG_ICON_PATH)/128x128/apps/lsp-plugins.png"
 	cp -f icons/lsp-plugins/256x256.png  "$(XDG_ICON_PATH)/256x256/apps/lsp-plugins.png"
 	cp -f icons/lsp-plugins/scalable.svg "$(XDG_ICON_PATH)/scalable/apps/lsp-plugins.svg"
-	cp -f $(FILES) "$(XDG_APP_PATH)/"
+	$(foreach file,$(FILES), \
+	    cp -f $(file) "$(XDG_APP_PATH)/"; \
+	)
 	cp -f dirs/lsp-plugins.directory     "$(XDG_DIR_PATH)/lsp-plugins.directory"
-	cat menus/lsp-plugins.menu | sed -E "s/<\\?filelist\\?>/$(XDG_FILE_LIST)/g" > "$(XDG_MENU_PATH)/lsp-plugins.menu"
+	cp menus/lsp-plugins.menu "$(XDG_MENU_PATH)/lsp-plugins.menu"
 
 uninstall_xdg:
-	-rm -f $(XDG_FILE_PATH)
+	$(foreach path,$(XDG_FILE_PATH), \
+	    -rm -f $(path); \
+	)
 	-rm -f $(XDG_DIR_PATH)/lsp-plugins.directory
 	-rm -f $(XDG_MENU_PATH)/lsp-plugins.menu
 	-rm -f $(XDG_ICON_PATH)/16x16/apps/lsp-plugins.png
