@@ -28,24 +28,38 @@ CONFIG                 := $(MODDIR)/.config.mk
 DESTDIR                :=
 ETCDIR                 := /etc
 SHAREDDIR              := /usr/local/share
-FILES                  :=
-BATCH_FILE             :=
 
 include $(CONFIG)
--include $(BATCH_FILE)
 
 XDG_ICON_PATH   = $(DESTDIR)$(SHAREDDIR)/icons/hicolor
 XDG_MENU_PATH   = $(DESTDIR)$(ETCDIR)/xdg/menus/applications-merged
 XDG_APP_PATH    = $(DESTDIR)$(SHAREDDIR)/applications
 XDG_DIR_PATH    = $(DESTDIR)$(SHAREDDIR)/desktop-directories
-XDG_FILE_PATH   = $(foreach file,$(FILES),$(XDG_APP_PATH)/$(notdir $(file)))
+XDG_FILES       = $(file < $(FILE_LIST))
+XDG_FILE_PATH   = $(foreach file,$(XDG_FILES),$(XDG_APP_PATH)/$(notdir $(file)))
 
-.PHONY: all install_xdg uninstall_xdg
+# Form the batch file
+$(file > $(BATCH_FILE),) \
+$(file >> $(BATCH_FILE),install_xdg: install_xdg_prepare) \
+$(foreach item,$(XDG_FILES),\
+    $(file >> $(BATCH_FILE),$(shell printf "\t")cp "$(item)" "$$(XDG_APP_PATH)/") \
+)
+$(file >> $(BATCH_FILE),) \
+\
+$(file >> $(BATCH_FILE),uninstall_xdg: uninstall_xdg_prepare) \
+$(foreach item,$(XDG_FILE_PATH),\
+    $(file >> $(BATCH_FILE),$(shell printf "\t")-rm "$(item)") \
+)
+$(file >> $(BATCH_FILE),) \
+
+include $(BATCH_FILE)
+
+.PHONY: all install_xdg uninstall_xdg install_xdg_prepare uninstall_xdg_prepare
 .DEFAULT_TARGET=all
 
 all:
 
-install_xdg:
+install_xdg_prepare:
 	mkdir -p "$(XDG_APP_PATH)"
 	mkdir -p "$(XDG_DIR_PATH)"
 	mkdir -p "$(XDG_MENU_PATH)"
@@ -67,16 +81,10 @@ install_xdg:
 	cp -f icons/lsp-plugins/128x128.png  "$(XDG_ICON_PATH)/128x128/apps/lsp-plugins.png"
 	cp -f icons/lsp-plugins/256x256.png  "$(XDG_ICON_PATH)/256x256/apps/lsp-plugins.png"
 	cp -f icons/lsp-plugins/scalable.svg "$(XDG_ICON_PATH)/scalable/apps/lsp-plugins.svg"
-	$(foreach file,$(FILES), \
-	    cp -f $(file) "$(XDG_APP_PATH)/"; \
-	)
 	cp -f dirs/lsp-plugins.directory     "$(XDG_DIR_PATH)/lsp-plugins.directory"
 	cp menus/lsp-plugins.menu "$(XDG_MENU_PATH)/lsp-plugins.menu"
 
-uninstall_xdg:
-	$(foreach path,$(XDG_FILE_PATH), \
-	    -rm -f $(path); \
-	)
+uninstall_xdg_prepare:
 	-rm -f $(XDG_DIR_PATH)/lsp-plugins.directory
 	-rm -f $(XDG_MENU_PATH)/lsp-plugins.menu
 	-rm -f $(XDG_ICON_PATH)/16x16/apps/lsp-plugins.png
