@@ -121,14 +121,14 @@
 		"none": "Aucun",
 		"right": "Droite",
 		
-		"t1": "Track 1",
-		"t2": "Track 2",
-		"t3": "Track 3",
-		"t4": "Track 4",
-		"t5": "Track 5",
-		"t6": "Track 6",
-		"t7": "Track 7",
-		"t8": "Track 8"
+		"t1": "Piste 1",
+		"t2": "Piste 2",
+		"t3": "Piste 3",
+		"t4": "Piste 4",
+		"t5": "Piste 5",
+		"t6": "Piste 6",
+		"t7": "Piste 7",
+		"t8": "Piste 8"
 	},
 	
 	"metering": {
