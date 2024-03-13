@@ -217,6 +217,7 @@
 		<sidechain_2 value="#e14a00"/>
 
 		<threshold value="#e200ff"/>
+		<threshold_hover value="#ff00ff"/>
 		<threshold_1 value="#e200ff"/>
 		<threshold_2 value="#e200ff"/>
 
@@ -230,6 +231,7 @@
 
 		<dry value="#fff600"/>
 		<wet value="#0092ff"/>
+		<drywet value="#89c400"/>
 		<lufs value="#c5ff00"/>
 		<bright_lufs value="#78ce00"/>
 		<dark_lufs value="#5e7a00"/>

@@ -1,12 +1,12 @@
 {
 	"about": {
-		"copyright": "(C) {@meta_pkg_copyright} 2015-2023.",
-		"description": "This is a collection of open-source audio plugins.",
+		"copyright": "(C) {@meta_pkg_copyright} 2015-2024.",
+		"description": "Ceci est une collection de greffons audio libres.",
 		"info": {
-			"pkg_name": "Package name:",
-			"pkg_version": "Package version:",
-			"plug_name": "Plugin name:",
-			"plug_version": "Plugin version:"
+			"pkg_name": "Nom du paquet :",
+			"pkg_version": "Version du paquet :",
+			"plug_name": "Nom du greffon :",
+			"plug_version": "Version du greffon :"
 		},
 		"values": {
 			"pkg_name": "{@meta_pkg_artifact_name}",
@@ -14,9 +14,9 @@
 			"plug_name": "{@meta_plugin_description}",
 			"plug_version": "{@meta_plugin_version}"
 		},
-		"license": "Licensed under the terms of GNU Lesser Public License v3 (LGPLv3):",
+		"license": "Licencié selon les termes de la GNU Lesser Public License v3 (LGPLv3) :",
 		"license_url": "https://www.gnu.org/licenses/lgpl-3.0.fr.html",
-		"support": "Support the project:"
+		"support": "Supporter le projet :"
 	},
 	"file": {
 		"confirm_load": "Voulez-vous vraiment charger le fichier sélectionné ?",

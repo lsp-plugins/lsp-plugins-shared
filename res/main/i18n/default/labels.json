@@ -172,6 +172,7 @@
 		"shift": "Shift",
 		"side": "Side",
 		"side_on": "Side on",
+		"sm_apply": "S/M Apply",
 		"solo": "Solo",
 		"solo_hold": "Solo/Hold",
 		"volume": "Volume"
@@ -448,6 +449,7 @@
 	"mic_rophone_direction": "Mic. direction",
 
 	"midi": {
+		"code": "Code",
 		"midi_num": "MIDI #",
 		"midi_number": "MIDI Number",
 		"note_off": "Note off",
@@ -696,6 +698,7 @@
 		"dry": "Dry",
 		"dry:db": "Dry\n(dB)",
 		"dry_pan": "Dry pan",
+		"drywet": "Dry/Wet",
 		"duty_ratio": "Duty Ratio",
 		"envelope": "Envelope",
 		"fade_in": "Fade in",

@@ -42,11 +42,11 @@
 			<hbox bg.color="bg" halign="1">
 				<bevel expand="true" color="bg_schema" width.min="24" height.min="20" halign="-1"/>
 				<hbox ui:id="trg_main_menu" solid="true" padding.right="10" padding.left="2" pointer="hand">
-					<label  hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.top="1" font.antialias="true" text="0" halign="1" />
+					<label  hover="true" color="menu_icon" font.size="12" hover.color="menu_icon_hover" font.name="lsp-icons" padding.top="1" font.antialias="true" text="icons.main.menu" halign="1" />
 					<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.left="5" font.size="14" padding.top="3" halign="1" text="labels.header.menu"/>
 				</hbox>
 				<hbox ui:id="trg_about" solid="true" padding.right="6" pointer="hand">
-					<label  hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.top="1" font.antialias="true" text="4" halign="1" />
+					<label  hover="true" color="menu_icon" font.size="12" hover.color="menu_icon_hover" font.name="lsp-icons" padding.top="1" font.antialias="true" text="icons.main.about" halign="1" />
 					<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.left="5" font.size="14" padding.top="3" halign="1" text="labels.header.about"/>
 				</hbox>
 			</hbox>
@@ -61,16 +61,16 @@
 		<hbox height="20" bg.color="bg_schema" spacing="6">
 			<!-- Sscale icons + and - -->
 			<hbox padding.left="6">
-				<label ui:id="trg_ui_scaling" font.name="lsp-icons" hover="true" color="footer_icon" hover.color="footer_icon_hover" padding.right="10" font.size="12" font.antialias="true" text="7" pointer="hand"/>
-				<label ui:id="trg_ui_zoom_in" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.right="5" expand="false" font.size="10" font.antialias="true" text="B" pointer="hand"/>
-				<label ui:id="trg_ui_zoom_out" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.right="5" expand="false" font.size="10" font.antialias="true" text="C" pointer="hand"/>
+				<label ui:id="trg_ui_scaling" font.name="lsp-icons" hover="true" color="footer_icon" hover.color="footer_icon_hover" padding.right="10" font.size="12" font.antialias="true" text="icons.main.scale" pointer="hand"/>
+				<label ui:id="trg_ui_zoom_in" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.right="5" expand="false" font.size="10" font.antialias="true" text="icons.main.plus_nb" pointer="hand"/>
+				<label ui:id="trg_ui_zoom_out" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.right="5" expand="false" font.size="10" font.antialias="true" text="icons.main.minus_nb" pointer="hand"/>
 			</hbox>
 
 			<!-- Text scale icons + and - -->
 			<hbox padding.left="3">
-				<label ui:id="trg_font_scaling" font.name="lsp-icons" hover="true" color="footer_icon" hover.color="footer_icon_hover" padding.right="10" font.size="12" font.antialias="true" text="D" pointer="hand"/>
-				<label ui:id="trg_font_zoom_in" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.right="5" expand="false" font.size="10" font.antialias="true" text="B" pointer="hand"/>
-				<label ui:id="trg_font_zoom_out" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.right="5" expand="false" font.size="10" font.antialias="true" text="C" pointer="hand"/>
+				<label ui:id="trg_font_scaling" font.name="lsp-icons" hover="true" color="footer_icon" hover.color="footer_icon_hover" padding.right="10" font.size="12" font.antialias="true" text="icons.main.font" pointer="hand"/>
+				<label ui:id="trg_font_zoom_in" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.right="5" expand="false" font.size="10" font.antialias="true" text="icons.main.plus_nb" pointer="hand"/>
+				<label ui:id="trg_font_zoom_out" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.right="5" expand="false" font.size="10" font.antialias="true" text="icons.main.minus_nb" pointer="hand"/>
 			</hbox>
 
 			<!-- Empty filler -->
@@ -85,14 +85,14 @@
 			<!-- Help icon -->
 			<label ui:id="trg_plugin_manual"
 				font.name="lsp-icons" font.size="12" font.antialias="true"
-				text="6"
+				text="icons.main.help"
 				hover="true" color="footer_icon_rsz" hover.color="menu_icon_hover"
 				halign="1" pointer="hand" />
 
 			<!-- sizing icon -->
 			<label ui:id="trg_window_scale"
 				font.name="lsp-icons" font.size="12" font.antialias="true"
-				text="F"
+				text="icons.main.size"
 				hover="true" color="footer_icon_rsz" hover.color="menu_icon_hover"
 				halign="1" pointer="size_nwse"
 				fill="true" ipadding.right="6" />
