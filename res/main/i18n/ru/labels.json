@@ -128,6 +128,7 @@
 		"active_num_id_S_ide": "Активный №{@id} С",
 		"all": "Все",
 		"channel_n": "Канал {@id}",
+		"correlation": "Корреляция",
 		"external_sc": "Внешняя",
 		"external_sc_left": "Внешняя слева",
 		"external_sc_mid": "Вшешняя центр",

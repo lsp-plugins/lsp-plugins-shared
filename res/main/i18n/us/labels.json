@@ -127,6 +127,7 @@
 		"active_num_id_S_ide": "Active #{@id} S",
 		"all": "All",
 		"channel_n": "Channel {@id}",
+		"correlation": "Correlation",
 		"external_sc": "External",
 		"external_sc_left": "Left External",
 		"external_sc_mid": "Mid External",
