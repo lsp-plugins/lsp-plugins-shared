@@ -1450,7 +1450,7 @@
 		<value value="0.0f, 0.0f, 1.0f"/>
 		<peak value="0.0f"/>
 		<balance value="0.5f"/>
-		<color value="white"/>
+		<color value="bg_schema"/>
 		<value.color value="cyan"/>
 		<peak.color value="red"/>
 		<text.color value="cyan"/>
