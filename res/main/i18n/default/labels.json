@@ -162,6 +162,7 @@
 		"out": "Out",
 		"output": "Output",
 		"phase": "Phase",
+		"phase_shift": "Phase shift",
 		"pitch": "Pitch",
 		"pitch_left": "Pitch Left",
 		"pitch_mid": "Pitch Mid",
@@ -387,8 +388,10 @@
 		"crossfade": "Crossfade",
 		"difference": "Difference",
 		"phase":"Phase",
+		"phase_range": "Phase range",
 		"rate": "Rate",
-		"type": "Type"
+		"type": "Type",
+		"voices": "Voices"
 	},
 	"limiter_bands": "Limiter bands",
 	"line_size": "Line size",
@@ -527,6 +530,7 @@
     "output_limiter": "Output limiter",
     "odp": "ODP",
     "odp_link": "ODP Link",
+    "overlap": "Overlap",
 	"oversampling": "Oversampling",
 	"oversampling:": "Oversampling:",
 
