@@ -11,9 +11,10 @@
 		<!-- Presets -->
 		<vbox width="128" fill="true" bg.color="bg_schema" >
 			<label text="Presets" />
-			<ui:for id="i" first="0" last="10">
+			<list ui:id="presets_list" />
+			<!-- ui:for id="i" first="0" last="10">
 				<button hexpand="true" fill="true" text="Preset ${i}" />
-			</ui:for>
+			</ui:for-->
 		</vbox>
 
 		<!-- Actions -->
