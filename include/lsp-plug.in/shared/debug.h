@@ -38,6 +38,8 @@ namespace lsp
         return p;
     }
 
+    #define NEXT_PORT()     trace_port(ports[port_id++])
+
     #ifdef LSP_TRACE
         #define BIND_PORT(dst) \
             do { \
@@ -53,10 +55,10 @@ namespace lsp
             } while (false)
     #else
         #define BIND_PORT(dst) \
-            dst = ports[port_id++];
+            do { dst = ports[port_id++]; } while (false)
 
         #define SKIP_PORT(dst) \
-            ++port_id;
+            do { ++port_id; } while (false)
     #endif /* LSP_TRACE */
 
 } /* namespace lsp */

@@ -1,4 +1,15 @@
 {
+	"adsr": {
+		"type": {
+			"cubic": "Cubic",
+			"dline": "DLine",
+			"exp": "Exp",
+			"quad": "Quadro",
+			"off": "Off",
+			"vline": "VLine"
+		}
+	},
+	
 	"bool": {
 		"off": "off",
 		"on": "on"
@@ -56,6 +67,11 @@
 			"24dbo": "24 dB/oct",
 			"30dbo": "30 dB/oct",
 			"36dbo": "36 dB/oct",
+			"48dbo": "48 dB/oct",
+			"60dbo": "60 dB/oct",
+			"72dbo": "72 dB/oct",
+			"84dbo": "84 dB/oct",
+			"96dbo": "96 dB/oct",
 			"off": "Off",
 			"x1": "x1",
 			"x2": "x2",
@@ -313,6 +329,7 @@
 		"internal": "Internal",
 		"left": "Left",
 		"left_right": "Left/Right",
+		"link": "Link",
 		"lpf": "LPF",
 		"max": "Max",
 		"middle": "Middle",

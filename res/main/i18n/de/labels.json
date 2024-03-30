@@ -104,6 +104,8 @@
 		"active_num_id_R_ight": "Aktiv #{@id} R",
 		"active_num_id_S_ide": "Aktiv #{@id} S",
 		"all": "Alle",
+		"balance": "Balance",
+		"balance:pc": "Balance\n(%)",
 		"channel_n": "Kanal {@id}",
 		"external_sc": "Extern",
 		"external_sc_left": "Extern Links",
@@ -156,6 +158,7 @@
 	"channels": "Kanäle",
 
 	"clear": "Leeren",
+	"comment": "Kommentar",
 
 	"contour:": "Kontur:",
 	"controls": "Steuerung",
@@ -246,7 +249,11 @@
 		"treble": "Treble"
 	},
 
-	"frequency": "Frequenz",
+	"frequency": {
+		"": "Frequenz",
+		"max": "Max",
+		"min": "Min"
+	},
 	"freq_gain": "Freq, Gain",
 	"freq_gain:hz_db": "Freq, Gain\n(Hz, dB)",
 
@@ -295,6 +302,7 @@
 	"input": "Input",
 	"input_level:db": "Input Level (dB)",
 	"input:db": "Input (dB)",
+	"instrument": "Instrument",
 	"instrument_num": "Instrument #",
 
 	"ir_equalizer": "IR Equalizer",
@@ -540,6 +548,7 @@
 		"pitch": "Tonhöhe",
 		"predelay": "Vorverzögerung",
 		"reverse": "Rückwärts",
+		"sample": "Sample",
 		"sample_num": "Sample #",
 		"tail_cut": "Tail cut"
 	},
@@ -674,7 +683,7 @@
 		"loop_in_delay": "Achtung! Loop in Verzögerungsreferenzkette."
 	},
 
-	"working_area": "Arbeitsbereich",
+	"workspace": "Arbeitsbereich",
 
 	"X_Y_EXT": "X | Y | EXT",
 

@@ -38,6 +38,23 @@
 	"act_ive": "ACT",
 	"active": "Active",
 	"actual_duration": "Actual\nDuration (s)",
+	
+	"adsr": {
+		"adsr": "ADSR",
+		"ahdbssr": "AHDBSSR",
+		"attack": "Attack",
+		"break": "Break",
+		"convex": "Convex",
+		"curve": "Curve",
+		"decay": "Decay",
+		"envelope": "Envelope",
+		"hold": "Hold",
+		"release": "Release",
+		"shape": "Shape",
+		"slope": "Slope",
+		"sustain": "Sustain",
+		"time": "Time"
+	},
 
 	"alr": "ALR",
     "alr_": "Auto level regulation",
@@ -125,7 +142,10 @@
 		"active_num_id_R_ight": "Active #{@id} R",
 		"active_num_id_S_ide": "Active #{@id} S",
 		"all": "All",
+		"balance": "Balance",
+		"balance:pc": "Balance\n(%)",
 		"channel_n": "Channel {@id}",
+		"correlation": "Correlation",
 		"external_sc": "External",
 		"external_sc_left": "Left External",
 		"external_sc_mid": "Mid External",
@@ -145,10 +165,13 @@
 		"inspect": "Inspect",
 		"left": "Left",
 		"left_on": "Left on",
+		"link": "Link",
+		"lr_link": "L/R link",
 		"mid": "Mid",
 		"mid_on": "Mid on",
 		"mid_side": "Mid/Side",
 		"middle": "Middle",
+		"ms_link": "M/S link",
 		"mute": "Mute",
 		"none": "None",
 		"num_id": "#{@id}",
@@ -161,14 +184,17 @@
 		"out": "Out",
 		"output": "Output",
 		"phase": "Phase",
+		"phase_shift": "Phase shift",
 		"pitch": "Pitch",
 		"pitch_left": "Pitch Left",
 		"pitch_mid": "Pitch Mid",
 		"pitch_right": "Pitch Right",
 		"pitch_side": "Pitch Side",
 		"rand_id": "Randomized #{@id}",
+		"return": "Return",
 		"right": "Right",
 		"right_on": "Right on",
+		"send": "Send",
 		"shift": "Shift",
 		"side": "Side",
 		"side_on": "Side on",
@@ -182,6 +208,7 @@
 
 	"clear": "Clear",
 	"clp": "CLP",
+	"comment": "Comment",
 	"compression_curve": "Compression Curve",
 	"contour:": "Contour:",
 	"controls": "Controls",
@@ -242,7 +269,8 @@
 		"envelope": "Envelope",
 		"fft": "FFT",
 		"fft:": "FFT:",
-		"fft_in": "FFT In",
+		"fft_in": "FFT In",		
+		"fft_link": "FFT Link",
 		"fft_out": "FFT Out",
 		"frame": "FFT Frame",
 		"tolerance": "Tolerance",
@@ -317,7 +345,11 @@
 		"treble": "Treble"
 	},
 
-	"frequency": "Frequency",
+	"frequency": {
+		"": "Frequency",
+		"max": "Max",
+		"min": "Min"
+	},
 	"freq_gain": "Freq, Gain",
 	"freq_gain:hz_db": "Freq, Gain\n(Hz, dB)",
 	
@@ -325,6 +357,7 @@
 
 	"gain": "Gain",
 	"gain_": "Gain",
+	"gain_matching": "Gain matching",
 	"gain:db": "Gain\n(dB)",
 
 	"global_settings": "Global Settings",
@@ -341,6 +374,8 @@
 		"gating": "GATING",
 		"left_channel": "LEFT CHANNEL",
 		"LFO": "LFO GRAPH",
+		"LFO_1": "LFO 1 GRAPH",		
+		"LFO_2": "LFO 2 GRAPH",
 		"oscillator_waveform": "OSCILLATOR WAVEFORM",
 		"oscilloscope": "OSCILLOSCOPE GRAPH",
 		"overdrive_protection": "OVERDRIVE PROTECTION",
@@ -371,6 +406,7 @@
 	"input": "Input",
 	"input_level:db": "Input Level (dB)",
 	"input:db": "Input (dB)",
+	"instrument": "Instrument",
 	"instrument_num": "Instrument #",
 
 	"ir_equalizer": "IR equalizer",
@@ -383,14 +419,33 @@
 	"left": "Left",
 	"lfo": {
 		"": "LFO",
+		"1": "LFO 1",
+		"2": "LFO 2",
 		"crossfade": "Crossfade",
 		"difference": "Difference",
 		"phase":"Phase",
+		"phase_range": "Phase range",
 		"rate": "Rate",
-		"type": "Type"
+		"type": "Type",
+		"voices": "Voices"
 	},
 	"limiter_bands": "Limiter bands",
 	"line_size": "Line size",
+	"link": {
+		"": "Link",
+		"other" : {
+			"connected": "== {@value}",
+			"not_connected": "Link..."
+		},
+		"return": { 
+			"connected": "{@value} ->",
+			"not_connected": "Link..."
+		},
+		"send" : {
+			"connected": "-> {@value}",
+			"not_connected": "Send..."
+		}
+	},
 	"listen": "Listen",
 	"location": "Location",
 	"log_scale": "Log scale",
@@ -420,6 +475,7 @@
 		"sound_speed": "Sound speed",
 		"transparency": "Transparency"
 	},
+
 	"max_delay": "Max Delay",
 	"max_delay:s": "Max Delay (s)",
 	"max_gain": "Max Gain",
@@ -429,17 +485,23 @@
 	"measure": "Measure",
 	"memory:mb": "Memory (MB)",
 	"metering": {
+		"ballistics": "Ballistics",
 		"channel": "Channel",
+		"damping": "Damping",
+		"display": "Display",
 		"drift": "Drift",
 		"fall": "Fall",
 		"fft_frequency": "FFT Frequency",
-		"frequency": "Frequency",
 		"fft_frequency:hz": "FFT Frequency (Hz)",
+		"frequency": "Frequency",
 		"frequency:hz": "Frequency (Hz)",
+		"frame": "Frame",
 		"grow": "Grow",
+		"integration": "Integration",
 		"level": "Level",
 		"level:db": "Level (dB)",
 		"measure_line": "Measure",
+		"period": "Period",
 		"preamp": "Preamp",
 		"reactivity": "Reactivity",
 		"selector": "Selector",
@@ -526,6 +588,7 @@
     "output_limiter": "Output limiter",
     "odp": "ODP",
     "odp_link": "ODP Link",
+    "overlap": "Overlap",
 	"oversampling": "Oversampling",
 	"oversampling:": "Oversampling:",
 
@@ -555,8 +618,21 @@
 	"postprocess": "Post-process",
 
 	"preamp": "Preamp",
-
 	"predelay": "Pre-delay",
+	"premix": {
+		"": "Pre-mix",
+		"in_to_link": "In -> Link",
+		"in_to_sc": "In -> SC",
+		"link_to_in": "Link -> In",
+		"link_to_sc": "Link -> SC",
+		"sc_to_in": "SC -> In",
+		"sc_to_link": "SC -> Link"
+	},
+	
+	"processing": {
+		"post": "Post",
+		"pre": "Pre"
+	},
 	"prof": {
 		"calibrating": "CALIBRATING",
 		"convolving": "CONVOLVING",
@@ -665,6 +741,7 @@
 		"head_cut": "Head cut",
 		"listen": "Listen",
 		"loop": "Loop",
+		"loop_nth": "Loop {@id}",
 		"loop_end": "End",
 		"loop_fade": "Fade length",
 		"loop_start": "Start",
@@ -674,7 +751,10 @@
 		"pitch_fade": "Fade length",
 		"predelay": "Pre-delay",
 		"reverse": "Reverse",
+		"sample": "Sample",
 		"sample_num": "Sample #",
+		"sample_nth": "Sample {@id}",
+		"stop": "Stop",
 		"stretch": "Stretch",
 		"stretch_chunk": "Chunk size",
 		"stretch_end": "End",
@@ -683,6 +763,7 @@
 		"stretch_start": "Start",
 		"tail_cut": "Tail cut"
 	},
+	"separate": "Separate",
 	"settings": "Settings",
 
 	"side_direction": "Side direction",
@@ -695,6 +776,8 @@
 		"amplitude": "Amplitude",
 		"clip": "Clip",
 		"clipping": "Clipping",
+		"curr_ent": "Curr",
+		"drive": "Drive",
 		"dry": "Dry",
 		"dry:db": "Dry\n(dB)",
 		"dry_pan": "Dry pan",
@@ -706,6 +789,9 @@
 		"fall": "Fall",
 		"in_lr": "In L/R",
 		"invert": "Invert",
+		"max": "Max",
+		"min": "Min",
+		"mix": "Mix",
 		"mono": "Mono",
 		"negative": "Negative",
 		"negative_width": "Negative Width",
@@ -838,7 +924,7 @@
 	
 	"weighting": "Weighting",
 
-	"working_area": "Working area",
+	"workspace": "Workspace",
 
 	"X_Y_EXT": "X | Y | EXT",
 

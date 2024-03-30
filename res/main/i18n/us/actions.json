@@ -2,7 +2,15 @@
 	"3d_rendering": "3D rendering",
 
 	"apply": "Apply",
-
+	
+	"bundle_scaling": {
+		"default": "Default",
+		"select": "Plugin scaling",
+		"value:pc": "{@value} %",
+		"zoom_in": "Zoom in",
+		"zoom_out": "Zoom out"
+	},
+	
 	"cancel": "Cancel",
 	"close": "Close",
 
@@ -10,9 +18,12 @@
 		"no": "No",
 		"yes": "Yes"
 	},
-
+	
+	"connect": "Connect",
+	
 	"debug_dump": "Dump for debug",
-
+	"disconnect": "Disconnect",
+	
 	"edit": {
 		"clear": "Clear",
 		"copy": "Copy",
@@ -59,7 +70,7 @@
 	"import_settings_from_clipboard": "Import settings from clipboard",
 	"import_settings_from_file": "Import settings from file...",
 	"import_sfz_file": "Import SFZ file...",
-	"import_rew_filter_file": "REW filter file...",
+	"import_rew_filter_file": "REW/APO filter file...",
 
 	"listen": "Listen",
 	"link": {
@@ -97,11 +108,14 @@
 	"toggle_rack_mount": "Toggle rack mount",
 
 	"ui_behavior": {
-		"": "UI Settings",
-		"ediable_knob_scale": "Set knob value on click",
-		"enable_zoomable_spectrum": "Zoom slider affects spectrum",
-		"filter_point_thickness": "Graph dots size",
+		"": "UI behavior",
+		"ediable_knob_scale": "Editable knob scale",
+		"enable_zoomable_spectrum": "Automatic frequency graph scaling",
+		"file_list_navigation_autoload": "Automatically load files when navigating file list",
+		"file_list_navigation_autoplay": "Automatically play files when navigating file list",
+		"filter_point_thickness": "Filter point thickness",
 		"override_hydrogen_kits": "Override Hydrogen kits",
+		"take_instrument_name_from_file": "Take instrument name from file",
 		"vscroll": {
 			"invert_global": "Invert vertical mouse scroll",
 			"invert_graph_dot": "Invert vertical mouse scroll for graph dots"

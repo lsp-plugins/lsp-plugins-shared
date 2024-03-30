@@ -39,9 +39,25 @@
 	"active": "Активно",
 	"actual_duration": "Действительная\nдлительность (с)",
 
+	"adsr": {
+		"adsr": "ADSR",
+		"ahdbssr": "AHDBSSR",
+		"attack": "Подъём",
+		"break": "Разрыв",
+		"convex": "Выпукл",
+		"curve": "Кривая",
+		"decay": "Спад",
+		"envelope": "Огибающая",
+		"hold": "Удержание",
+		"release": "Затухание",
+		"shape": "Форма",
+		"slope": "Наклон",
+		"sustain": "Поддержка",
+		"time": "Время"
+	},
+
 	"alr": "АРУ",
     "alr_": "Авто регуляция уровней",
-
 
 	"amount": "Количество",
 	"amplitude": "Амплитуда",
@@ -127,7 +143,10 @@
 		"active_num_id_R_ight": "Активный №{@id} П",
 		"active_num_id_S_ide": "Активный №{@id} С",
 		"all": "Все",
+		"balance": "Баланс",
+		"balance:pc": "Баланс\n(%)",
 		"channel_n": "Канал {@id}",
+		"correlation": "Корреляция",
 		"external_sc": "Внешняя",
 		"external_sc_left": "Внешняя слева",
 		"external_sc_mid": "Вшешняя центр",
@@ -146,11 +165,14 @@
 		"input": "Вход",
 		"inspect": "Инспекция",
 		"left": "Левый",
-		"left_on": "Левый вкл",
+		"left_on": "Левый вкл",		
+		"link": "Линк",
+		"lr_link": "Связь Л/П",
 		"mid": "Центр",
 		"mid_on": "Центр вкл",
 		"mid_side": "Центр/Сторона",
 		"middle": "Центр",
+		"ms_link": "Связь Ц/С",
 		"mute": "Глуш",
 		"none": "Ничего",
 		"num_id": "№{@id}",
@@ -163,14 +185,17 @@
 		"out": "Вых",
 		"output": "Выход",
 		"phase": "Фаза",
+		"phase_shift": "Фазовый сдвиг",
 		"pitch": "Высота",
 		"pitch_left": "Высота левого",
 		"pitch_mid": "Высота центра",
 		"pitch_right": "Высота правого",
 		"pitch_side": "Высота стороны",
 		"rand_id": "В случайном порядке #{@id}",
+		"return": "Возврат",
 		"right": "Правый",
 		"right_on": "Правый вкл",
+		"send": "Посыл",
 		"shift": "Смещ",
 		"side": "Сторона",
 		"side_on": "Сторона вкл",
@@ -184,6 +209,7 @@
 
 	"clear": "Очистить",
 	"clp": "КЛП",
+	"comment": "Комментарий",
     "compression_curve": "Кривая копрессии",
 	"contour:": "Контур:",
 	"controls": "Управление",
@@ -244,7 +270,8 @@
 		"envelope": "Огибающая",
 		"fft": "БПФ",
 		"fft:": "БПФ:",
-		"fft_in": "БПФ Вх",
+		"fft_in": "БПФ Вх",	
+		"fft_link": "БПФ Линк",
 		"fft_out": "БПФ Вых",
 		"frame": "Кадр БПФ",
 		"tolerance": "Точность",
@@ -319,7 +346,11 @@
 		"treble": "Верха"
 	},
 
-	"frequency": "Частота",
+	"frequency": {
+		"": "Частота",
+		"max": "Макс",
+		"min": "Мин"
+	},
 	"freq_gain": "Част, Усил",
 	"freq_gain:hz_db": "Част, Усил\n(Гц, дБ)",
 	
@@ -327,6 +358,7 @@
 
 	"gain": "Усиление",
 	"gain_": "Усил",
+	"gain_matching": "Автоусиление",
 	"gain:db": "Усиление\n(дБ)",
 
 	"global_settings": "Общие настройки",
@@ -343,6 +375,8 @@
 		"gating": "ГЕЙТИРОВАНИЕ",
 		"left_channel": "ЛЕВЫЙ КАНАЛ",
 		"LFO": "НЧО ГРАФИК",
+		"LFO_1": "НЧО 1 ГРАФИК",		
+		"LFO_2": "НЧО 2 ГРАФИК",
 		"oscillator_waveform": "ФОРМА ВОЛНЫ ГЕНЕРАТОРА",
 		"oscilloscope": "ГРАФИК ОСЦИЛЛОСКОПА",
 		"overdrive_protection": "ЗАЩИТА ОТ ПЕРЕГРУЗКИ",
@@ -373,6 +407,7 @@
 	"input": "Вход",
 	"input_level:db": "Входной уровень (дБ)",
 	"input:db": "Вход (дБ)",
+	"instrument": "Инструмент",
 	"instrument_num": "№ инструмента",
 
 	"ir_equalizer": "Эквализация ИО",
@@ -385,14 +420,33 @@
 	"left": "Лево",
 	"lfo": {
 		"": "НЧО",
+		"1": "НЧО 1",
+		"2": "НЧО 2",
 		"crossfade": "Кроссфейд",
 		"difference": "Разница",
 		"phase": "Фаза",
+		"phase_range": "Фазовый диапазон",
 		"rate": "Частота",
-		"type": "Тип"
+		"type": "Тип",
+		"voices": "Голоса"
 	},
 	"limiter_bands": "Полосы лимитера",
 	"line_size": "Размер линии",
+	"link": {
+		"": "Связь",
+		"other": {
+			"connected": "== {@value}",
+			"not_connected": "Связь..."
+		},
+		"return": {
+			"connected": "{@value} ->",
+			"not_connected": "Связь..."
+		},
+		"send": {
+			"connected": "-> {@value}",
+			"not_connected": "Послать..."
+		}
+	},
 	"listen": "Слушать",
 	"location": "Местоположение",
 	"log_scale": "Лог масштаб",
@@ -431,17 +485,23 @@
 	"measure": "Измерить",
 	"memory:mb": "Память (МБ)",
 	"metering": {
+		"ballistics": "Баллистика",
 		"channel": "Канал",
+		"damping": "Затухание",
+		"display": "Показыать",
 		"drift": "Дрифт",
 		"fall": "Спад",
 		"fft_frequency": "Частота БПФ",
+		"fft_frequency:hz": "Частота БПФ (Гц)",
 		"frequency": "Частота",
 		"frequency:hz": "Частота (Гц)",
-		"fft_frequency:hz": "Частота БПФ (Гц)",
+		"frame": "Кадр",
 		"grow": "Рост",
+		"integration": "Интегрирование",
 		"level": "Уровень",
 		"level:db": "Уровень (дБ)",
 		"measure_line": "Измеритель",
+		"period": "Период",
 		"preamp": "Предусиление",
 		"reactivity": "Реактивность",
 		"selector": "Селектор",
@@ -528,6 +588,7 @@
     "output_limiter": "Выходной лимитер",
     "odp": "ЗОП",    
     "odp_link": "ЗОП Связь",
+    "overlap": "Наложение",
 	"oversampling": "Передискретизация",
 	"oversampling:": "Передискретизация:",
 
@@ -557,8 +618,21 @@
 	"postprocess": "Постобработка",
 
 	"preamp": "Предусиление",
-
 	"predelay": "П/задержка",
+	"premix": {
+		"": "Премикс",
+		"in_to_link": "Вх -> Связь",
+		"in_to_sc": "Вх -> БС",
+		"link_to_in": "Связь -> Вх",
+		"link_to_sc": "Связь -> БЦ",
+		"sc_to_in": "БЦ -> Вх",
+		"sc_to_link": "БЦ -> Связь"
+	},
+	
+	"processing": {
+		"post": "Пост",
+		"pre": "Пред"
+	},
 	"prof": {
 		"calibrating": "КАЛИБРОВКА",
 		"convolving": "СВЁРТКА",
@@ -666,11 +740,21 @@
 		"fade_out": "Затух",
 		"head_cut": "Нач срез",
 		"listen": "Слушать",
+		"loop": "Петля",
+		"loop_nth": "Петля {@id}",
+		"loop_end": "Конец",
+		"loop_fade": "Длина фейда",
+		"loop_start": "Начало",
 		"makeup": "Громк",
 		"pitch": "Высота",
+		"pitch_chunk": "Размер блока",
+		"pitch_fade": "Длина фейда",
 		"predelay": "Задерж",
 		"reverse": "Реверс",
+		"sample": "Сэмпл",
 		"sample_num": "№ сэмпла",
+		"sample_nth": "Сэмпл {@id}",
+		"stop": "Стоп",
 		"stretch": "Растяжение",
 		"stretch_chunk": "Размер блока",
 		"stretch_end": "Конец",
@@ -679,6 +763,7 @@
 		"stretch_start": "Start",
 		"tail_cut": "Кон срез"
 	},
+	"separate": "Разделение",
 	"settings": "Настройки",
 
 	"side_direction": "Напр бокового",
@@ -691,6 +776,8 @@
 		"amplitude": "Амплитуда",
 		"clip": "Срез",
 		"clipping": "Клиппинг",
+		"curr_ent": "Тек",
+		"drive": "Драйв",
 		"dry": "Необр",
 		"dry:db": "Необр\n(дБ)",
 		"dry_pan": "Пан необр",
@@ -702,6 +789,9 @@
 		"fall": "Спад",
 		"in_lr": "Вх Л/П",
 		"invert": "Инвертировать",
+		"max": "Макс",
+		"min": "Мин",
+		"mix": "Микс",
 		"mono": "Моно",
 		"negative": "Отрицательный",
 		"negative_width": "Отриц ширина",
@@ -832,7 +922,7 @@
 	
 	"weighting": "Взвешивание",
 
-	"working_area": "Рабочая область",
+	"workspace": "Рабочая область",
 
 	"X_Y_EXT": "X | Y | ВНЕШ",
 

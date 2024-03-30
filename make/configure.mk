@@ -1,6 +1,6 @@
 #
-# Copyright (C) 2020 Linux Studio Plugins Project <https://lsp-plug.in/>
-#           (C) 2020 Vladimir Sadovnikov <sadko4u@gmail.com>
+# Copyright (C) 2024 Linux Studio Plugins Project <https://lsp-plug.in/>
+#           (C) 2024 Vladimir Sadovnikov <sadko4u@gmail.com>
 #
 # This file is part of lsp-plugin-shared
 #
@@ -21,24 +21,21 @@ ifneq ($(VERBOSE),1)
 .SILENT:
 endif
 
-# Definitions
-PREFIX                     := /usr/local
-LIBDIR                     := $(PREFIX)/lib
-BINDIR                     := $(PREFIX)/bin
-SHAREDDIR                  := $(PREFIX)/share
-INCDIR                     := $(PREFIX)/include
-ETCDIR                     := /etc
 BASEDIR                    := $(CURDIR)
 ROOTDIR                    := $(CURDIR)
-BUILDDIR                   := $(BASEDIR)/.build
-TARGET_BUILDDIR            := $(BUILDDIR)/target
-HOST_BUILDDIR              := $(BUILDDIR)/host
-MODULES                    := $(BASEDIR)/modules
-CONFIG                     := $(BASEDIR)/.config.mk
 TEST                       := 0
 DEBUG                      := 0
 PROFILE                    := 0
 TRACE                      := 0
+
+# Configure system settings
+include $(BASEDIR)/project.mk
+include $(BASEDIR)/make/functions.mk
+include $(BASEDIR)/make/system.mk
+include $(BASEDIR)/make/paths.mk
+include $(BASEDIR)/make/tools.mk
+include $(BASEDIR)/modules.mk
+include $(BASEDIR)/dependencies.mk
 
 ifeq ($(DEVEL),1)
   X_URL_SUFFIX                = _RW
@@ -46,20 +43,13 @@ else
   X_URL_SUFFIX                = _RO
 endif
 
-include $(BASEDIR)/project.mk
-include $(BASEDIR)/make/functions.mk
-include $(BASEDIR)/make/system.mk
-include $(BASEDIR)/make/tools.mk
-include $(BASEDIR)/modules.mk
-include $(BASEDIR)/dependencies.mk
-
 # Compute the full list of dependencies
 MERGED_DEPENDENCIES        := \
   $(DEPENDENCIES) \
   $(TEST_DEPENDENCIES)
 UNIQ_MERGED_DEPENDENCIES   := $(call uniq, $(MERGED_DEPENDENCIES))
 DEPENDENCIES                = $(UNIQ_MERGED_DEPENDENCIES)
-FEATURES                   := $(call uniq, $(call subtraction,$(SUB_FEATURES),$(DEFAULT_FEATURES) $(ADD_FEATURES)))
+FEATURES                   := $(sort $(call subtraction,$(SUB_FEATURES),$(DEFAULT_FEATURES) $(ADD_FEATURES)))
 
 # Determine versions
 ifeq ($(findstring -devel,$(ARTIFACT_VERSION)),-devel)
@@ -127,11 +117,15 @@ define _modconfig =
   $(if $($(name)_TEST),,         $(eval $(name)_TEST         := $($(name)_PATH)/test))
   $(if $($(name)_TESTING),,      $(eval $(name)_TESTING      := 0))
   $(if $($(name)_BIN),,          $(eval $(name)_BIN          := $(TARGET_BUILDDIR)/$($(name)_NAME)))
-  $(if $($(name)_CFLAGS),,       $(eval $(name)_CFLAGS       := "-I\"$($(name)_INC)\"" -D$(name)_BUILTIN$(if $(publisher), -D$(name)_PUBLISHER)))
+  $(if $($(name)_CFLAGS),,       $(eval $(name)_CFLAGS       := "$(if $($(name)_INC_OPT),$($(name)_INC_OPT) ,-I )\"$($(name)_INC)\"" -D$(name)_BUILTIN$(if $(publisher), -D$(name)_PUBLISHER)))
   $(if $($(name)_LDLAGS),,       $(eval $(name)_LDFLAGS      :=))
   $(if $($(name)_OBJ),,          $(eval $(name)_OBJ          := "$($(name)_BIN)/$($(name)_NAME).o"))
   $(if $($(name)_OBJ_TEST),,     $(eval $(name)_OBJ_TEST     := "$($(name)_BIN)/$($(name)_NAME)-test.o"))
   $(if $($(name)_MFLAGS),,       $(eval $(name)_MFLAGS       := $(if $(publisher),,"-D$(name)_BUILTIN -fvisibility=hidden")))
+  
+  $(if $(HOST_$(name)_NAME),,    $(eval HOST_$(name)_NAME    := $($(name)_NAME)))
+  $(if $(HOST_$(name)_DESC),,    $(eval HOST_$(name)_DESC    := $($(name)_DESC)))
+  $(if $(HOST_$(name)_URL),,     $(eval HOST_$(name)_URL     := $($(name)_URL$(X_URL_SUFFIX))))
   
   $(if $(HOST_$(name)_PATH),,    $(eval HOST_$(name)_PATH    := $(MODULES)/$($(name)_NAME)))
   $(if $(HOST_$(name)_INC),,     $(eval HOST_$(name)_INC     := $(HOST_$(name)_PATH)/include))
@@ -139,7 +133,7 @@ define _modconfig =
   $(if $(HOST_$(name)_TEST),,    $(eval HOST_$(name)_TEST    := $(HOST_$(name)_PATH)/test))
   $(if $(HOST_$(name)_TESTING),, $(eval HOST_$(name)_TESTING := 0))
   $(if $(HOST_$(name)_BIN),,     $(eval HOST_$(name)_BIN     := $(HOST_BUILDDIR)/$($(name)_NAME)))
-  $(if $(HOST_$(name)_CFLAGS),,  $(eval HOST_$(name)_CFLAGS  := "-I\"$($(name)_INC)\"" -D$(name)_BUILTIN$(if $(publisher), -D$(name)_PUBLISHER)))
+  $(if $(HOST_$(name)_CFLAGS),,  $(eval HOST_$(name)_CFLAGS  := "$(if $($(name)_INC_OPT),$($(name)_INC_OPT) ,-I )\"$($(name)_INC)\"" -D$(name)_BUILTIN$(if $(publisher), -D$(name)_PUBLISHER)))
   $(if $(HOST_$(name)_LDLAGS),,  $(eval HOST_$(name)_LDFLAGS :=))
   $(if $(HOST_$(name)_OBJ),,     $(eval HOST_$(name)_OBJ     := "$(HOST_$(name)_BIN)/$($(name)_NAME).o"))
   $(if $(HOST_$(name)_OBJ_TEST),,$(eval HOST_$(name)_OBJ_TEST:= "$(HOST_$(name)_BIN)/$($(name)_NAME)-test.o"))
@@ -168,13 +162,17 @@ define hdrconfig =
   $(if $($(name)_PATH),,         $(eval $(name)_PATH         := $(MODULES)/$($(name)_NAME)))
   $(if $($(name)_INC),,          $(eval $(name)_INC          := $($(name)_PATH)/include))
   $(if $($(name)_TESTING),,      $(eval $(name)_TESTING      := 0))
-  $(if $($(name)_CFLAGS),,       $(eval $(name)_CFLAGS       := "-I\"$($(name)_INC)\""$(if $(publisher), "-D$(name)_PUBLISHER")))
+  $(if $($(name)_CFLAGS),,       $(eval $(name)_CFLAGS       := "$(if $($(name)_INC_OPT),$($(name)_INC_OPT) ,-I )\"$($(name)_INC)\""$(if $(publisher), "-D$(name)_PUBLISHER")))
   $(if $($(name)_MFLAGS),,       $(eval $(name)_MFLAGS       := "-D$(name)_BUILTIN -fvisibility=hidden"))
+
+  $(if $(HOST_$(name)_NAME),,    $(eval HOST_$(name)_NAME    := $($(name)_NAME)))
+  $(if $(HOST_$(name)_DESC),,    $(eval HOST_$(name)_DESC    := $($(name)_DESC)))
+  $(if $(HOST_$(name)_URL),,     $(eval HOST_$(name)_URL     := $($(name)_URL$(X_URL_SUFFIX))))
   
   $(if $(HOST_$(name)_PATH),,    $(eval HOST_$(name)_PATH    := $(MODULES)/$($(name)_NAME)))
   $(if $(HOST_$(name)_INC),,     $(eval HOST_$(name)_INC     := $(HOST_$(name)_PATH)/include))
   $(if $(HOST_$(name)_TESTING),, $(eval HOST_$(name)_TESTING := 0))
-  $(if $(HOST_$(name)_CFLAGS),,  $(eval HOST_$(name)_CFLAGS  := "-I\"$(HOST_$(name)_INC)\""$(if $(publisher), "-D$(name)_PUBLISHER")))
+  $(if $(HOST_$(name)_CFLAGS),,  $(eval HOST_$(name)_CFLAGS  := "$(if $($(name)_INC_OPT),$($(name)_INC_OPT) ,-I )\"$(HOST_$(name)_INC)\""$(if $(publisher), "-D$(name)_PUBLISHER")))
   $(if $(HOST_$(name)_MFLAGS),,  $(eval HOST_$(name)_MFLAGS  := "-D$(name)_BUILTIN -fvisibility=hidden"))
 endef
 
@@ -220,6 +218,7 @@ OVERALL_DEPS := $(call uniq,$(DEPENDENCIES) $(ARTIFACT_ID))
 __tmp := $(foreach dep,$(OVERALL_DEPS),$(call vardef, $(dep)))
 
 CONFIG_VARS = \
+  $(PATH_VARS) \
   $(COMMON_VARS) \
   $(TOOL_VARS) \
   $(foreach name, $(OVERALL_DEPS), \
@@ -242,6 +241,8 @@ CONFIG_VARS = \
     $(name)_OBJ \
     $(name)_OBJ_TEST \
     \
+    HOST_$(name)_NAME \
+    HOST_$(name)_DESC \
     HOST_$(name)_PATH \
     HOST_$(name)_INC \
     HOST_$(name)_SRC \
@@ -267,11 +268,12 @@ $(CONFIG_VARS): prepare
 	echo "$(@)=$($(@))" >> "$(CONFIG)"
 
 config: $(CONFIG_VARS)
-	echo "Architecture: $(ARCHITECTURE_FAMILY)/$(ARCHITECTURE) ($(ARCHITECTURE_CFLAGS))"
-	echo "Features:     $(FEATURES)"
+	echo "Host architecture: $(HOST_ARCHITECTURE_FAMILY)/$(HOST_ARCHITECTURE) ($(HOST_ARCHITECTURE_CFLAGS))"
+	echo "Architecture:      $(ARCHITECTURE_FAMILY)/$(ARCHITECTURE) ($(ARCHITECTURE_CFLAGS))"
+	echo "Features:          $(FEATURES)"
 	echo "Configured OK"
 
-help: | toolvars sysvars
+help: | pathvars toolvars sysvars
 	echo ""
 	echo "List of variables for each dependency:"
 	echo "  <ARTIFACT>_BIN            location to put all binaries when building artifact"

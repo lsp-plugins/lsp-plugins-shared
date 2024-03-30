@@ -209,7 +209,11 @@
 		"treble": "Agudos"
 	},
 	
-	"frequency": "Frecuencia",
+	"frequency": {
+		"": "Frecuencia",
+		"max": "Max",
+		"min": "Min"
+	},
 	"freq_gain:hz_db": "Frec, Ganancia\n(Hz, dB)",
 	
 	"gain": "Ganancia",
@@ -241,6 +245,7 @@
 	"input": "Entrada",
 	"input_level:db": "Nivel Entrada (dB)",
 	"input:db": "Entrada (dB)",
+	"instrument": "Instrumento",
 	"instrument_num": "Instrumento #",
 
 	"ir_equalizer": "Ecualizador RI",
@@ -446,6 +451,7 @@
 		"pitch": "Cabeceo",
 		"predelay": "Pre-delay",
 		"reverse": "Invertir",
+		"sample": "Muestra",
 		"sample_num": "Muestra #",
 		"tail_cut": "Corte cola"
 	},
@@ -563,7 +569,7 @@
 		"x_pc": "{@value%.2f} %"
 	},
 	
-	"working_area": "Zona trabajo",
+	"workspace": "Zona trabajo",
 	
 	"zone": "Zona",
 	"zoom": "Zoom"

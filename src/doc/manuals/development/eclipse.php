@@ -58,7 +58,7 @@ to <b>[ All Configurations ]</b>, this will apply all modified settings to all b
 
 <p>Select <b>GCC C++ Compiler</b> &rarr; <b>Preprocessor</b> section and add following macros to <b>Defined Symbols</b>:</p>
 <ul>
-	<li><b>LSP_TRACE</b> - this macro will enable output of trace information to the console while running code in debug envirionment.</li>
+	<li><b>LSP_TRACE</b> - this macro will enable output of trace information to the console while running code in debug environment.</li>
 	<li><b>LSP_IDE_DEBUG</b> - makes invisible set of main() functions that are defined in source code of different tools.</li>
 	<li><b>LSP_TESTING</b> - enables unit testing subsystem in build.</li>
 </ul>

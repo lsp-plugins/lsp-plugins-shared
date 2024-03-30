@@ -1,6 +1,6 @@
 /*
- * Copyright (C) 2020 Linux Studio Plugins Project <https://lsp-plug.in/>
- *           (C) 2020 Vladimir Sadovnikov <sadko4u@gmail.com>
+ * Copyright (C) 2025 Linux Studio Plugins Project <https://lsp-plug.in/>
+ *           (C) 2025 Vladimir Sadovnikov <sadko4u@gmail.com>
  *
  * This file is part of lsp-plugins-shared
  * Created on: 25 нояб. 2020 г.
@@ -34,6 +34,7 @@
 #define LSP_CLAP_URI(id)                    "in.lsp-plug." id
 #define LSP_VST3_UID(id)                    "dsp " id
 #define LSP_VST3UI_UID(id)                  "ui  " id
+#define LSP_GST_UID(id)                     "lsp_plugins_" id
 
 // LADSPA identifier allocation
 #define LSP_LADSPA_PHASE_DETECTOR_BASE      (LSP_LADSPA_BASE + 0)
@@ -74,6 +75,8 @@
 #define LSP_LADSPA_CLIPPER_BASE             (LSP_LADSPA_BASE + 220)
 #define LSP_LADSPA_MB_CLIPPER_BASE          (LSP_LADSPA_BASE + 230)
 #define LSP_LADSPA_PARA_EQUALIZER_X8        (LSP_LADSPA_BASE + 240)
+#define LSP_LADSPA_CHORUS_BASE              (LSP_LADSPA_BASE + 250)
+#define LSP_LADSPA_PHASER_BASE              (LSP_LADSPA_BASE + 260)
 
 
 namespace lsp

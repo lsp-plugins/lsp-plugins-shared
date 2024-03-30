@@ -19,6 +19,8 @@
 
 	"distance": "Расстояние",
 	
+	"filter": "Фильтр",
+	
 	"gain": "Усиление",
 	"general": "Общие настройки",
 	
@@ -41,6 +43,7 @@
 	
 	"metering": "Измерения",
 	"midi_setup": "Настройка MIDI",
+	"mix": "Mix",
 	"monitoring": "Мониторинг",
 	
 	"oscillator_function": "Функция осциллятора",
@@ -66,6 +69,9 @@
 		"trigger": "Триггер"
 	},
 	
+	"post_filter": "Пост-фильтр",
+
+	"premix": "Премикс",	
 	"processor": "Обработчик",
 	"processors": "Обработчики",
 	

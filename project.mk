@@ -23,7 +23,7 @@ ARTIFACT_ID                 = LSP_PLUGINS_SHARED
 ARTIFACT_NAME               = lsp-plugins-shared
 ARTIFACT_DESC               = Shared resources for LSP Plugins
 ARTIFACT_HEADERS            = lsp-plug.in
-ARTIFACT_VERSION            = 1.0.22-devel
+ARTIFACT_VERSION            = 1.0.30-devel
 ARTIFACT_EXPORT_ALL         = 1
 
 # Weak property
