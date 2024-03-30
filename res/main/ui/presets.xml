@@ -1,21 +1,22 @@
 <?xml version="1.0"?>
 
-<window ui:inject="PresetsDialog" title="Presets">
+<window ui:inject="PresetsDialog" title="Presets" fill="true">
 	<hbox spacing="25">
 		<!-- Packs -->
-		<vbox width="128" fill="false" valign="-1" bg.color="bg_schema" >
-			<label text="Packs" />
-			<button hexpand="true" fill="true" text="Factory" bg.color="button_red" />
-		</vbox>
+		<group ipadding="0" expand="true" fill="true" text="Packs">
+			<vbox width="128" fill="false" valign="-1" bg.color="bg_schema" >
+				<button hexpand="true" fill="true" text="Factory" bg.color="button_blue" />
+				<button hexpand="true" fill="true" text="User" bg.color="button_blue" />
+			</vbox>
+		</group>
 
 		<!-- Presets -->
-		<vbox width="128" fill="true" bg.color="bg_schema" >
-			<label text="Presets" />
-			<list ui:id="presets_list" />
-			<!-- ui:for id="i" first="0" last="10">
-				<button hexpand="true" fill="true" text="Preset ${i}" />
-			</ui:for-->
-		</vbox>
+
+		<group ipadding="0" expand="true" fill="true" text="Presets">
+			<vbox width="128" fill="true" bg.color="bg_schema" >
+				<list ui:id="presets_list" />
+			</vbox>
+		</group>
 
 		<!-- Actions -->
 		<vbox>
