@@ -1690,6 +1690,22 @@
 		<color value="cyan"/>
 	</style>
 
+	<!-- Multilayer Graph Meshes -->
+	<style class="GraphMesh_in" parents="GraphMesh">
+		<width value="2" />
+		<color value="#444444" />
+		<fill.color value="#444444" />
+		<color.a value="0.1" />
+		<fill.color.a value="0.3" />
+	</style>
+	<style class="GraphMesh_out" parents="GraphMesh">
+		<width value="2" />
+		<color value="#777777" />
+		<fill.color value="#777777" />
+		<color.a value="0.3" />
+		<fill.color.a value="0.5" />
+	</style>
+
 	<style class="GraphOrigin" parents="root">
 		<radius value="2"/>
 		<smooth value="true"/>
