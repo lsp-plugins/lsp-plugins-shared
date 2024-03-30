@@ -125,7 +125,10 @@
 		"active_num_id_R_ight": "Active #{@id} R",
 		"active_num_id_S_ide": "Active #{@id} S",
 		"all": "All",
+		"balance": "Balance",
+		"balance:pc": "Balance\n(%)",
 		"channel_n": "Channel {@id}",
+		"correlation": "Correlation",
 		"external_sc": "External",
 		"external_sc_left": "Left External",
 		"external_sc_mid": "Mid External",
@@ -161,6 +164,7 @@
 		"out": "Out",
 		"output": "Output",
 		"phase": "Phase",
+		"phase_shift": "Phase shift",
 		"pitch": "Pitch",
 		"pitch_left": "Pitch Left",
 		"pitch_mid": "Pitch Mid",
@@ -182,6 +186,7 @@
 
 	"clear": "Clear",
 	"clp": "CLP",
+	"comment": "Comment",
 	"compression_curve": "Compression Curve",
 	"contour:": "Contour:",
 	"controls": "Controls",
@@ -341,6 +346,8 @@
 		"gating": "GATING",
 		"left_channel": "LEFT CHANNEL",
 		"LFO": "LFO GRAPH",
+		"LFO_1": "LFO 1 GRAPH",		
+		"LFO_2": "LFO 2 GRAPH",
 		"oscillator_waveform": "OSCILLATOR WAVEFORM",
 		"oscilloscope": "OSCILLOSCOPE GRAPH",
 		"overdrive_protection": "OVERDRIVE PROTECTION",
@@ -383,11 +390,15 @@
 	"left": "Left",
 	"lfo": {
 		"": "LFO",
+		"1": "LFO 1",
+		"2": "LFO 2",
 		"crossfade": "Crossfade",
 		"difference": "Difference",
 		"phase":"Phase",
+		"phase_range": "Phase range",
 		"rate": "Rate",
-		"type": "Type"
+		"type": "Type",
+		"voices": "Voices"
 	},
 	"limiter_bands": "Limiter bands",
 	"line_size": "Line size",
@@ -526,6 +537,7 @@
     "output_limiter": "Output limiter",
     "odp": "ODP",
     "odp_link": "ODP Link",
+    "overlap": "Overlap",
 	"oversampling": "Oversampling",
 	"oversampling:": "Oversampling:",
 
@@ -683,6 +695,7 @@
 		"stretch_start": "Start",
 		"tail_cut": "Tail cut"
 	},
+	"separate": "Separate",
 	"settings": "Settings",
 
 	"side_direction": "Side direction",
