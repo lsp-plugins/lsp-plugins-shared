@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <window ui:inject="PresetsDialog" title="Presets" fill="true">
-	<hbox spacing="15" padding="10" height="256">
+	<hbox spacing="15" padding="5" height="256">
 		<!-- Packs -->
 		<group ipadding="0" expand="true" fill="true" width="80" text="Packs">
 			<vbox fill="false" valign="-1" bg.color="bg_schema" >
@@ -13,7 +13,7 @@
 		<!-- Presets -->
 
 		<vbox>
-			<group ipadding="0" expand="true" fill="true" width="320" text="Presets" text.show="false">
+			<group ipadding="0" expand="true" fill="true" width="300" text="Presets" text.show="false">
 				<vbox>
 					<hbox bg.color="bg_schema_name" hexpand="true" height="28" padding.left="10" padding.right="10">
 						<align halign="-1">
@@ -38,15 +38,19 @@
 		<!-- Actions -->
 		<vbox spacing="15">
 			<vbox spacing="5" hexpand="true">
-				<button fill="true" text="Load" />
 				<button fill="true" text="New" ui:id="trg_presets_menu" />
-				<button fill="true" text="Delete" />
+				<button fill="true" text="Delete" text.color="dark_red" />
 				<button fill="true" text="Override" />
 			</vbox>
 
 			<hbox spacing="5" hexpand="true">
-				<button text="Import..." />
-				<button text="Export..." />
+				<button fill="true" text="Import..." />
+				<button fill="true" text="Export..." />
+			</hbox>
+
+			<hbox spacing="5" hexpand="true">
+				<button fill="true" text="Copy state" />
+				<button fill="true" text="Paste state" />
 			</hbox>
 		</vbox>
 	</hbox>
