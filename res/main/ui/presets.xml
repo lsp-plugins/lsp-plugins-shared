@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 
 <window ui:inject="PresetsDialog" title="Presets" fill="true">
-	<hbox spacing="25">
+	<hbox spacing="15" padding="10" height="256">
 		<!-- Packs -->
-		<group ipadding="0" expand="true" fill="true" text="Packs">
-			<vbox width="128" fill="false" valign="-1" bg.color="bg_schema" >
+		<group ipadding="0" expand="true" fill="true" width="80" text="Packs">
+			<vbox fill="false" valign="-1" bg.color="bg_schema" >
 				<button hexpand="true" fill="true" text="Factory" bg.color="button_blue" />
 				<button hexpand="true" fill="true" text="User" bg.color="button_blue" />
 			</vbox>
@@ -12,32 +12,41 @@
 
 		<!-- Presets -->
 
-		<group ipadding="0" expand="true" fill="true" text="Presets">
-			<vbox width="128" fill="true" bg.color="bg_schema" >
-				<list ui:id="presets_list" />
-			</vbox>
-		</group>
+		<vbox>
+			<group ipadding="0" expand="true" fill="true" width="320" text="Presets" text.show="false">
+				<vbox>
+					<hbox bg.color="bg_schema_name" hexpand="true" height="28" padding.left="10" padding.right="10">
+						<align halign="-1">
+							<label text="Presets" />
+						</align>
+						<void hexpand="true" />
+						<button text=" o " ui:id="trg_refresh" ui:inject="Button_cyan" />
+					</hbox>
+					<vbox fill="true" expand="true" bg.color="red">
+						<list ui:id="presets_list" fill="true" />
+					</vbox>
+				</vbox>
+			</group>
+
+			<hbox hexpand="true" height="28" border.color="bg_schema_name" border.size="1">
+				<align halign="-1">
+					<label text="Search..." padding.left="5" padding.right="5" />
+				</align>
+			</hbox>
+		</vbox>
 
 		<!-- Actions -->
-		<vbox>
-			<label text="Actions" />
-			<hbox>
-				<button text="Create" ui:id="trg_presets_menu" />
-				<button text="Save" />
-				<button text="Load" />
-			</hbox>
-			<label text="---" />
-			<label text="Import from ..." />
-			<hbox>
-				<button text="file" ui:id="trg_load_menu" />
-				<button text="clipboard" />
-				<button text="*.REW" />
-			</hbox>
-			<label text="---" />
-			<label text="Export to ..." />
-			<hbox>
-				<button text="file" ui:id="trg_save_menu" />
-				<button text="clipboard" />
+		<vbox spacing="15">
+			<vbox spacing="5" hexpand="true">
+				<button fill="true" text="Load" />
+				<button fill="true" text="New" ui:id="trg_presets_menu" />
+				<button fill="true" text="Delete" />
+				<button fill="true" text="Override" />
+			</vbox>
+
+			<hbox spacing="5" hexpand="true">
+				<button text="Import..." />
+				<button text="Export..." />
 			</hbox>
 		</vbox>
 	</hbox>
