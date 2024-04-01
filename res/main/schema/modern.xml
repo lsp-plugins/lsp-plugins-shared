@@ -1613,6 +1613,15 @@
 		<button.width.y value="1"/>
 	</style>
 
+	<style class="Fader_prophessor_water" parents="Fader_prophessor">
+		<scale.width value="16"/>
+		<button.aspect value="0" />
+		<!-- <button.border.size value="1"/> -->
+		<button.width value="0"/>
+		<scale.border.radius value="10"/>
+		<angle value="0" />
+	</style>
+
 	<style class="Fader_prophessor_ratio" parents="root">
 		<!-- Track -->
 		<scale.color value="bg"/>
