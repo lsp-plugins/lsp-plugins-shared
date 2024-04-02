@@ -33,14 +33,17 @@
 				<button fill="true" text="Override" ui:id="btn_override" />
 			</vbox>
 
+			<vbox>
+				<label text="Current state:" />
+				<hbox spacing="5" hexpand="true">
+					<button fill="true" text="Copy" ui:id="btn_copy" />
+					<button fill="true" text="Paste"  ui:id="btn_paste" />
+				</hbox>
+			</vbox>
+
 			<hbox spacing="5" hexpand="true">
 				<button fill="true" text="Import..." ui:id="btn_import" />
 				<button fill="true" text="Export..." ui:id="btn_export" />
-			</hbox>
-
-			<hbox spacing="5" hexpand="true">
-				<button fill="true" text="Copy state" ui:id="btn_copy" />
-				<button fill="true" text="Paste state"  ui:id="btn_paste" />
 			</hbox>
 		</vbox>
 	</hbox>
