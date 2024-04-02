@@ -38,19 +38,19 @@
 		<!-- Actions -->
 		<vbox spacing="15">
 			<vbox spacing="5" hexpand="true">
-				<button fill="true" text="New" ui:id="trg_presets_menu" />
-				<button fill="true" text="Delete" text.color="dark_red" />
-				<button fill="true" text="Override" />
+				<button fill="true" text="New" ui:id="btn_new" />
+				<button fill="true" text="Delete" text.color="dark_red" ui:id="btn_delete" />
+				<button fill="true" text="Override" ui:id="btn_override" />
 			</vbox>
 
 			<hbox spacing="5" hexpand="true">
-				<button fill="true" text="Import..." />
-				<button fill="true" text="Export..." />
+				<button fill="true" text="Import..." ui:id="btn_import" />
+				<button fill="true" text="Export..." ui:id="btn_export" />
 			</hbox>
 
 			<hbox spacing="5" hexpand="true">
-				<button fill="true" text="Copy state" />
-				<button fill="true" text="Paste state" />
+				<button fill="true" text="Copy state" ui:id="btn_copy" />
+				<button fill="true" text="Paste state"  ui:id="btn_paste" />
 			</hbox>
 		</vbox>
 	</hbox>
