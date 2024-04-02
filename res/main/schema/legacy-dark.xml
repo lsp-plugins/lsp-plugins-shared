@@ -1159,6 +1159,7 @@
 		<border.radius value="5"/>
 		<color value="bg_light"/>
 		<text.color value="text_prim"/>
+		<text.empty.color value="text_tab"/>
 		<cursor.color value="text_prim"/>
 		<border.color value="bg"/>
 		<border.gap.color value="bg_light"/>

@@ -1171,6 +1171,7 @@
 
 		<color value="bg_name"/>
 		<text.color value="bg"/>
+		<text.empty.color value="text_tab"/>
 		<cursor.color value="bg"/>
 		<border.color value="bg"/>
 		<border.gap.color value="bg_name"/>
