@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 
 <window ui:inject="PresetsDialog" title="Presets" fill="true">
-	<hbox spacing="15" padding="5" width="600" height="256" padding.top="20" padding.bottom="10">
+	<hbox spacing="5" padding="5" width="600" height="256" padding.top="10" padding.bottom="10">
 		<!-- Presets -->
 
 		<vbox>
-			<group ipadding="0" expand="true" fill="true" width.min="300" width="400" text="Presets" text.show="false">
-				<vbox>
+			<group ipadding="0" expand="true" fill="true" width.min="300" text="Presets" text.show="false">
+				<vbox hfill="true">
 					<hbox bg.color="bg_schema_name" hexpand="true" height="28" padding.left="10" padding.right="10">
 						<align halign="-1">
 							<label text="Presets" />
@@ -14,37 +14,31 @@
 						<void hexpand="true" />
 						<button text=" o " ui:id="trg_refresh" ui:inject="Button_cyan" />
 					</hbox>
-					<vbox fill="true" expand="true" bg.color="red">
-						<list ui:id="presets_list" fill="true" />
-					</vbox>
+					<list ui:id="presets_list" expand="true" fill="true" />
 				</vbox>
 			</group>
 
 			<hbox hexpand="true" height="28" border.color="bg_schema_name" border.size="1">
-				<edit ui:id="preset_filter" text="Search..." padding.left="5" padding.right="5" />
+				<edit ui:id="preset_filter" etext="Search..." />
 			</hbox>
 		</vbox>
 
 		<!-- Actions -->
-		<vbox spacing="15" width.max="128">
+		<vbox spacing="5">
 			<vbox spacing="5" hexpand="true">
 				<button fill="true" text="New" ui:id="btn_new" />
 				<button fill="true" text="Delete" text.color="dark_red" ui:id="btn_delete" />
 				<button fill="true" text="Override" ui:id="btn_override" />
 			</vbox>
 
-			<vbox>
-				<label text="Current state:" />
-				<hbox spacing="5" hexpand="true">
-					<button fill="true" text="Copy" ui:id="btn_copy" />
-					<button fill="true" text="Paste"  ui:id="btn_paste" />
-				</hbox>
-			</vbox>
-
-			<hbox spacing="5" hexpand="true">
+			<label text="Current state:" />
+			<grid rows="2" cols="2" spacing="5">
+				<button fill="true" text="Copy" ui:id="btn_copy" />
+				<button fill="true" text="Paste"  ui:id="btn_paste" />
+				
 				<button fill="true" text="Import..." ui:id="btn_import" />
 				<button fill="true" text="Export..." ui:id="btn_export" />
-			</hbox>
+			</grid>
 		</vbox>
 	</hbox>
 </window>
