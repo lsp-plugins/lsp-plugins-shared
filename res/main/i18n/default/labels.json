@@ -343,6 +343,8 @@
 		"gating": "GATING",
 		"left_channel": "LEFT CHANNEL",
 		"LFO": "LFO GRAPH",
+		"LFO_1": "LFO 1 GRAPH",		
+		"LFO_2": "LFO 2 GRAPH",
 		"oscillator_waveform": "OSCILLATOR WAVEFORM",
 		"oscilloscope": "OSCILLOSCOPE GRAPH",
 		"overdrive_protection": "OVERDRIVE PROTECTION",
@@ -385,6 +387,8 @@
 	"left": "Left",
 	"lfo": {
 		"": "LFO",
+		"1": "LFO 1",
+		"2": "LFO 2",
 		"crossfade": "Crossfade",
 		"difference": "Difference",
 		"phase":"Phase",
@@ -688,6 +692,7 @@
 		"stretch_start": "Start",
 		"tail_cut": "Tail cut"
 	},
+	"separate": "Separate",
 	"settings": "Settings",
 
 	"side_direction": "Side direction",
