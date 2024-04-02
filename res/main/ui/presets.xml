@@ -1,19 +1,11 @@
 <?xml version="1.0"?>
 
 <window ui:inject="PresetsDialog" title="Presets" fill="true">
-	<hbox spacing="15" padding="5" height="256">
-		<!-- Packs -->
-		<group ipadding="0" expand="true" fill="true" width="80" text="Packs">
-			<vbox fill="false" valign="-1" bg.color="bg_schema" >
-				<button hexpand="true" fill="true" text="Factory" bg.color="button_blue" />
-				<button hexpand="true" fill="true" text="User" bg.color="button_blue" />
-			</vbox>
-		</group>
-
+	<hbox spacing="15" padding="5" width="600" height="256" padding.top="20" padding.bottom="10">
 		<!-- Presets -->
 
 		<vbox>
-			<group ipadding="0" expand="true" fill="true" width="300" text="Presets" text.show="false">
+			<group ipadding="0" expand="true" fill="true" width.min="300" width="400" text="Presets" text.show="false">
 				<vbox>
 					<hbox bg.color="bg_schema_name" hexpand="true" height="28" padding.left="10" padding.right="10">
 						<align halign="-1">
@@ -34,7 +26,7 @@
 		</vbox>
 
 		<!-- Actions -->
-		<vbox spacing="15">
+		<vbox spacing="15" width.max="128">
 			<vbox spacing="5" hexpand="true">
 				<button fill="true" text="New" ui:id="btn_new" />
 				<button fill="true" text="Delete" text.color="dark_red" ui:id="btn_delete" />
