@@ -29,9 +29,7 @@
 			</group>
 
 			<hbox hexpand="true" height="28" border.color="bg_schema_name" border.size="1">
-				<align halign="-1">
-					<label text="Search..." padding.left="5" padding.right="5" />
-				</align>
+				<edit ui:id="preset_filter" text="Search..." padding.left="5" padding.right="5" />
 			</hbox>
 		</vbox>
 
