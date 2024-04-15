@@ -530,6 +530,7 @@
 		<text.shift value="0 0"/>
 		<text.down.shift value="0 0"/>
 		<text.pressed.shift value="1 1"/>
+		<text.adjust value="toupper" />
 		<bg.inherit value="true"/>
 
 		<border.color value="gray"/>
