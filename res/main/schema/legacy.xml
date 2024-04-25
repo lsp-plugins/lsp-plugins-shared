@@ -1749,7 +1749,7 @@
 		<heading.gap value="0"/>
 		<heading.fill value="false"/>
 		<heading.spacing.fill value="false"/>
-		<pointer value="hand"/>
+		<tab.pointer value="hand"/>
 	</style>
 
 	<!-- FileDialog widgets -->
