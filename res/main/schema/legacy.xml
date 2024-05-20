@@ -530,6 +530,7 @@
 		<text.shift value="0 0"/>
 		<text.down.shift value="0 0"/>
 		<text.pressed.shift value="1 1"/>
+		<text.adjust value="toupper" />
 		<bg.inherit value="true"/>
 
 		<border.color value="gray"/>
@@ -1171,6 +1172,7 @@
 
 		<color value="bg_name"/>
 		<text.color value="bg"/>
+		<text.empty.color value="text_tab"/>
 		<cursor.color value="bg"/>
 		<border.color value="bg"/>
 		<border.gap.color value="bg_name"/>
@@ -1470,7 +1472,7 @@
 		<value value="0.0f, 0.0f, 1.0f"/>
 		<peak value="0.0f"/>
 		<balance value="0.5f"/>
-		<color value="white"/>
+		<color value="bg"/>
 		<value.color value="cyan"/>
 		<peak.color value="red"/>
 		<text.color value="cyan"/>
@@ -1747,7 +1749,7 @@
 		<heading.gap value="0"/>
 		<heading.fill value="false"/>
 		<heading.spacing.fill value="false"/>
-		<pointer value="hand"/>
+		<tab.pointer value="hand"/>
 	</style>
 
 	<!-- FileDialog widgets -->
@@ -1889,13 +1891,18 @@
 	<style class="Value::PopupWindow::ValidInput" parents="Value::PopupWindow::Input">
 		<border.size value="2"/>
 		<color value="bg"/>
+		<text.color value="text_sec"/>
 	</style>
 
 	<style class="Value::PopupWindow::InvalidInput" parents="Value::PopupWindow::Input">
+		<border.size value="2"/>
+		<color value="bg"/>
 		<text.color value="bright_red"/>
 	</style>
 
 	<style class="Value::PopupWindow::MismatchInput" parents="Value::PopupWindow::Input">
+		<border.size value="2"/>
+		<color value="bg"/>
 		<text.color value="bright_yellow"/>
 	</style>
 

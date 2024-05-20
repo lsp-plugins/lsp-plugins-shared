@@ -513,6 +513,7 @@
 		<text.shift value="0 0"/>
 		<text.down.shift value="0 0"/>
 		<text.pressed.shift value="1 1"/>
+		<text.adjust value="toupper" />
 		<bg.inherit value="true"/>
 
 		<border.color value="bg_name"/>
@@ -1143,6 +1144,7 @@
 		<border.radius value="0"/>
 		<color value="bg"/>
 		<text.color value="text_sec"/>
+		<text.empty.color value="text_tab"/>
 		<border.color value="bg_light"/>
 		<cursor.color value="text_sec"/>
 		<border.gap.color value="bg"/>
@@ -1450,7 +1452,7 @@
 		<value value="0.0f, 0.0f, 1.0f"/>
 		<peak value="0.0f"/>
 		<balance value="0.5f"/>
-		<color value="white"/>
+		<color value="bg_schema"/>
 		<value.color value="cyan"/>
 		<peak.color value="red"/>
 		<text.color value="cyan"/>
@@ -1734,7 +1736,7 @@
 		<tab.joint value="true"/>
 		<heading.fill value="false"/>
 		<heading.spacing.fill value="true"/>
-		<pointer value="hand"/>
+		<tab.pointer value="hand"/>
 	</style>
 
 	<!-- FileDialog widgets -->

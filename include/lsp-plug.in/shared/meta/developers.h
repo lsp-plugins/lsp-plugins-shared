@@ -74,6 +74,7 @@
 #define LSP_LADSPA_CLIPPER_BASE             (LSP_LADSPA_BASE + 220)
 #define LSP_LADSPA_MB_CLIPPER_BASE          (LSP_LADSPA_BASE + 230)
 #define LSP_LADSPA_PARA_EQUALIZER_X8        (LSP_LADSPA_BASE + 240)
+#define LSP_LADSPA_CHORUS_BASE              (LSP_LADSPA_BASE + 250)
 
 
 namespace lsp
