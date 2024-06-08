@@ -29,6 +29,8 @@
 			$fmt = array();
 			if (isset($plugin['clap_uid']) && ($plugin['clap_uid']))
 				array_push($fmt, '<a href="https://github.com/free-audio/clap" target="_blank">CLAP</a>');
+			if (isset($plugin['gst_uid']) && ($plugin['gst_uid']))
+				array_push($fmt, '<a href="https://gstreamer.freedesktop.org/" target="_blank">GST</a>');
 			if (isset($plugin['jack']) && ($plugin['jack']))
 				array_push($fmt, '<a href="https://jackaudio.org" target="_blank">JACK</a>');
 			if (isset($plugin['ladspa_label']) && (strlen($plugin['ladspa_label']) > 0))
