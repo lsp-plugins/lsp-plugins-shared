@@ -1177,6 +1177,21 @@
 		<border.color value="bg"/>
 		<border.gap.color value="bg_name"/>
 	</style>
+	
+	<style class="Edit::ValidInput" parents="Edit">
+		<color value="bg"/>
+		<text.color value="text_sec"/>
+	</style>
+
+	<style class="Edit::InvalidInput" parents="Edit">
+		<color value="bg"/>
+		<text.color value="bright_red"/>
+	</style>
+
+	<style class="Edit::MismatchInput" parents="Edit">
+		<color value="bg"/>
+		<text.color value="bright_yellow"/>
+	</style>
 
 	<style class="Fader" parents="root">
 		<scale.color value="black"/>

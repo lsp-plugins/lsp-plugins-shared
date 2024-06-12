@@ -1150,6 +1150,18 @@
 		<border.gap.color value="bg"/>
 		<bg.inherit value="true"/>
 	</style>
+	
+	<style class="Edit::ValidInput" parents="Edit">
+		<text.color value="text_sec"/>
+	</style>
+
+	<style class="Edit::InvalidInput" parents="Edit">
+		<text.color value="bright_red"/>
+	</style>
+
+	<style class="Edit::MismatchInput" parents="Edit">
+		<text.color value="bright_yellow"/>
+	</style>
 
 	<style class="Fader" parents="root">
 		<scale.color value="fader"/>
