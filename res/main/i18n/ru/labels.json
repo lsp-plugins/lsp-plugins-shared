@@ -127,6 +127,8 @@
 		"active_num_id_R_ight": "Активный №{@id} П",
 		"active_num_id_S_ide": "Активный №{@id} С",
 		"all": "Все",
+		"balance": "Баланс",
+		"balance:pc": "Баланс\n(%)",
 		"channel_n": "Канал {@id}",
 		"correlation": "Корреляция",
 		"external_sc": "Внешняя",

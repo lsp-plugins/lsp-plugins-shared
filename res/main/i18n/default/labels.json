@@ -125,6 +125,8 @@
 		"active_num_id_R_ight": "Active #{@id} R",
 		"active_num_id_S_ide": "Active #{@id} S",
 		"all": "All",
+		"balance": "Balance",
+		"balance:pc": "Balance\n(%)",
 		"channel_n": "Channel {@id}",
 		"correlation": "Correlation",
 		"external_sc": "External",
