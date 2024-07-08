@@ -175,7 +175,7 @@
 
 <p style="text-align:center">Anyway, it is much easier to add the color to the «Modern» schema just by choosing one of colors from the palette below.</p>
 <div class="images" style="margin: -10px auto 15px auto;">
-	<img class="border" style="max-width: 100%;" src="<?= $CTL ?>/palette 256.png">
+	<img class="border" style="max-width: 100%;" src="<?= $CTL ?>/palette_256.png">
 </div>
 
 <p style="text-align:center">In schemas many parameters already have their colors, here are some of them:</p>
