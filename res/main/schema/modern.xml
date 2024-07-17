@@ -1478,6 +1478,7 @@
 		<font value="9.0f"/>
 		<border value="2"/>
 		<angle value="0"/>
+		<header.pointer value="hand" />
 	</style>
 
 	<style class="MultiLabel" parents="root">
