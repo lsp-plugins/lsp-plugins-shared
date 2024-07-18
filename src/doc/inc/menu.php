@@ -26,14 +26,16 @@
 		
 		foreach ($menu['items'] as &$item)
 		{
-			if (isset($item['id']) && ($item['id'] == $id))
+			if (isset($item['id']) && ($item['id'] == $id)) {
 				return $item;
+			}
 
-			if (isset($item['items']))
+			if (array_key_exists('items', $item))
 			{
-				$subitem = &find_menu_item($id, $item['items']);
-				if (isset($subitem))
+				$subitem = &find_menu_item($id, $item);
+				if (isset($subitem)) {
 					return $subitem;
+				}
 			}
 		}
 	
