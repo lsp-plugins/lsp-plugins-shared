@@ -126,6 +126,8 @@
 		"active_num_id_R_ight": "Active #{@id} R",
 		"active_num_id_S_ide": "Active #{@id} S",
 		"all": "All",
+		"balance": "Balance",
+		"balance:pc": "Balance\n(%)",
 		"channel_n": "Channel {@id}",
 		"correlation": "Correlation",
 		"external_sc": "External",
@@ -185,6 +187,7 @@
 
 	"clear": "Clear",	
 	"clp": "CLP",
+	"comment": "Comment",
 	"compression_curve": "Compression Curve",
 	"contour:": "Contour:",
 	"controls": "Controls",

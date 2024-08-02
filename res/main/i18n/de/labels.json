@@ -104,6 +104,8 @@
 		"active_num_id_R_ight": "Aktiv #{@id} R",
 		"active_num_id_S_ide": "Aktiv #{@id} S",
 		"all": "Alle",
+		"balance": "Balance",
+		"balance:pc": "Balance\n(%)",
 		"channel_n": "Kanal {@id}",
 		"external_sc": "Extern",
 		"external_sc_left": "Extern Links",
@@ -156,6 +158,7 @@
 	"channels": "Kanäle",
 
 	"clear": "Leeren",
+	"comment": "Kommentar",
 
 	"contour:": "Kontur:",
 	"controls": "Steuerung",
