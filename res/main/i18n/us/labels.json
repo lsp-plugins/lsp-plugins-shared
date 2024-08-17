@@ -172,8 +172,10 @@
 		"pitch_right": "Pitch Right",
 		"pitch_side": "Pitch Side",
 		"rand_id": "Randomized #{@id}",
+		"return": "Return",
 		"right": "Right",
 		"right_on": "Right on",
+		"send": "Send",
 		"shift": "Shift",
 		"side": "Side",
 		"side_on": "Side on",
@@ -404,6 +406,11 @@
 	},
 	"limiter_bands": "Limiter bands",
 	"line_size": "Line size",
+	"link": {
+		"": "Link",
+		"connected": "-> {@value}",
+		"not_connected": "Connect..."
+	},
 	"listen": "Listen",
 	"location": "Location",
 	"log_scale": "Log scale",
