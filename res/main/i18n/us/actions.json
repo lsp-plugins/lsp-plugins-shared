@@ -11,7 +11,10 @@
 		"yes": "Yes"
 	},
 	
+	"connect": "Connect",
+	
 	"debug_dump": "Dump for debug",
+	"disconnect": "Disconnect",
 	
 	"edit": {
 		"clear": "Clear",

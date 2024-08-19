@@ -1868,6 +1868,9 @@
 	<style class="MessageBox::Heading" parents="Label"></style>
 
 	<style class="MessageBox::Button" parents="Button"></style>
+	
+	<!-- ShmLink widgets -->
+	<style class="ShmLink::PopupWindow" parents="PopupWindow"></style>
 
 	<!-- Additional styles for value -->
 	<style class="Value::PopupWindow" parents="PopupWindow">
