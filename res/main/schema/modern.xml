@@ -331,6 +331,7 @@
 		<loudness_out_long value="#009600"/>
 		<loudness_out_short value="#006509"/>
 
+		<shm_connected value="#0aab04" />
 	</colors>
 
 	<!-- Root style -->
@@ -1870,7 +1871,10 @@
 	<style class="MessageBox::Button" parents="Button"></style>
 	
 	<!-- ShmLink widgets -->
-	<style class="ShmLink::PopupWindow" parents="PopupWindow"></style>
+	<style class="ShmLink::Selector" parents="PopupWindow"></style>
+	<style class="ShmLink::ListBoxItem::connected" parents="ListBoxItem">
+		<text.color value="shm_connected" />
+	</style>
 
 	<!-- Additional styles for value -->
 	<style class="Value::PopupWindow" parents="PopupWindow">

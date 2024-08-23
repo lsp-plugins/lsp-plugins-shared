@@ -2,12 +2,10 @@
 
 <window width.min="96" width.max="256" height.min="128" height.max="512">
 	<vbox>
-		<label text="labels.filter" />
-		<edit ui:id="filter" fill="true" />
-		<list ui:id="connections" expand="true" />
 		<label text="labels.name" />
 		<edit ui:id="name" fill="true" />
 		<button ui:id="connect" text="actions.connect" fill="true" />
 		<button ui:id="disconnect" text="actions.disconnect" fill="true" />
+		<list ui:id="connections" expand="true" />
 	</vbox>
 </window>
