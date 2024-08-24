@@ -408,8 +408,14 @@
 	"line_size": "Размер линии",
 	"link": {
 		"": "Связь",
-		"connected": "-> {@value}",
-		"not_connected": "Связать..."
+		"return": {
+			"connected": "{@value} ->",
+			"not_connected": "Соединить..."
+		},
+		"send": {
+			"connected": "-> {@value}",
+			"not_connected": "Послать..."
+		}
 	},
 	"listen": "Слушать",
 	"location": "Местоположение",

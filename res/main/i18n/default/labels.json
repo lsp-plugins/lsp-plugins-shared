@@ -406,8 +406,14 @@
 	"line_size": "Line size",
 	"link": {
 		"": "Link",
-		"connected": "-> {@value}",
-		"not_connected": "Connect..."
+		"return": { 
+			"connected": "{@value} ->",
+			"not_connected": "Connect..."
+		},
+		"send" : {
+			"connected": "-> {@value}",
+			"not_connected": "Send..."
+		}
 	},
 	"listen": "Listen",
 	"location": "Location",
