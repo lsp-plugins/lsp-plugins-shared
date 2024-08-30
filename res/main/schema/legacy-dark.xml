@@ -1881,7 +1881,9 @@
 	
 	<!-- ShmLink widgets -->
 	<style class="ShmLink::Selector" parents="PopupWindow"></style>
-	<style class="ShmLink::ListBoxItem::connected" parents="ListBoxItem">
+	<style class="ShmLink::Filter::ValidInput" parents="Edit::ValidInput" />
+	<style class="ShmLink::Filter::InvalidInput" parents="Edit::InvalidInput" />
+	<style class="ShmLink::ListBoxItem::Connected" parents="ListBoxItem">
 		<text.color value="shm_connected" />
 	</style>
 
