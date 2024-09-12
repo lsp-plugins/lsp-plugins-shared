@@ -249,6 +249,7 @@
 		"envelope": "Envelope",
 		"fft": "FFT",
 		"fft:": "FFT:",
+		"fft_ext": "FFT Ext",
 		"fft_in": "FFT In",
 		"fft_out": "FFT Out",
 		"frame": "FFT Frame",
