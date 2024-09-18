@@ -1,11 +1,13 @@
 <?xml version="1.0"?>
 
-<window width.min="96" width.max="256" height.min="128" height.max="512">
-	<vbox>
-		<label text="labels.name" />
-		<edit ui:id="name" fill="true" />
-		<button ui:id="connect" text="actions.connect" fill="true" />
-		<button ui:id="disconnect" text="actions.disconnect" fill="true" />
-		<list ui:id="connections" expand="true" />
+<window width.min="123" width.max="256" height.min="250" height.max="512" >
+	<vbox expand="true" fill="true" pad.h="6" pad.v="4" width="123">
+		<hbox pad.b="4">
+			<label text="labels.name" fill="false"/>
+			<edit ui:id="name" fill="true" hexpand="true"/>
+		</hbox>
+		<button ui:id="connect" text="actions.connect" fill="true" pad.b="4"/>
+		<button ui:id="disconnect" text="actions.disconnect" fill="true" pad.b="4"/>
+		<list ui:id="connections" expand="true" height.min="200" pad.b="4"/>
 	</vbox>
 </window>
