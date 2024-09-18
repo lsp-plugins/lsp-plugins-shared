@@ -409,9 +409,13 @@
 	"line_size": "Размер линии",
 	"link": {
 		"": "Связь",
+		"other": {
+			"connected": "== {@value}",
+			"not_connected": "Связь..."
+		},
 		"return": {
 			"connected": "{@value} ->",
-			"not_connected": "Соединить..."
+			"not_connected": "Связь..."
 		},
 		"send": {
 			"connected": "-> {@value}",

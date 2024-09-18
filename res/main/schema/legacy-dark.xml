@@ -1880,6 +1880,24 @@
 	<style class="MessageBox::Button" parents="Button"></style>
 	
 	<!-- ShmLink widgets -->
+	<style class="ShmLink::NotConnected" parents="Button">
+		<font.size value="12" />
+	</style>
+	<style class="ShmLink::Connected::Send" parents="Button">
+		<font.size value="12" />
+		<text.adjust value="none" />
+		<text.layout.halign value="-1" />
+	</style>
+	<style class="ShmLink::Connected::Return" parents="Button">
+		<font.size value="12" />
+		<text.adjust value="none" />
+		<text.layout.halign value="1" />
+	</style>
+	<style class="ShmLink::Connected" parents="Button">
+		<font.size value="12" />
+		<text.adjust value="none" />
+		<text.layout.halign value="0" />
+	</style>
 	<style class="ShmLink::Selector" parents="PopupWindow"></style>
 	<style class="ShmLink::Filter::ValidInput" parents="Edit::ValidInput" />
 	<style class="ShmLink::Filter::InvalidInput" parents="Edit::InvalidInput" />

@@ -409,9 +409,13 @@
 	"line_size": "Line size",
 	"link": {
 		"": "Link",
+		"other" : {
+			"connected": "== {@value}",
+			"not_connected": "Link..."
+		},
 		"return": { 
 			"connected": "{@value} ->",
-			"not_connected": "Connect..."
+			"not_connected": "Link..."
 		},
 		"send" : {
 			"connected": "-> {@value}",
