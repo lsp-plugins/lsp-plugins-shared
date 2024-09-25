@@ -1153,6 +1153,7 @@
 		<list.bg.color value="bg"/>
 		<border.color value="border_color"/>
 		<pointer value="hand"/>
+		<hscroll.mode value="none" />
 	</style>
 
 	<style class="Edit" parents="root">
@@ -1287,6 +1288,7 @@
 		<pointer value="hand"/>
 		<spin.color value="text_group"/>
 		<spin.spacing value="6"/>
+		<hscroll.mode value="none" />
 	</style>
 
 	<style class="ComboGroup::List" parents="root">

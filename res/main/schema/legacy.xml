@@ -1162,6 +1162,7 @@
 		<border.gap.size value="4"/>
 		<border.gap.color value="bg"/>
 		<border.radius value="3"/>
+		<hscroll.mode value="none" />
 		<list.bg.color value="bg"/>
 		<border.color value="bg_name"/>
 		<pointer value="hand"/>
@@ -1306,6 +1307,7 @@
 		<border.gap.size value="4"/>
 		<border.gap.color value="bg"/>
 		<border.radius value="3"/>
+		<hscroll.mode value="none" />
 		<list.bg.color value="bg"/>
 		<border.color value="bg_name"/>
 		<pointer value="hand"/>

@@ -1137,6 +1137,7 @@
 		<list.bg.color value="bg"/>
 		<border.color value="bg_light"/>
 		<pointer value="hand"/>
+		<hscroll.mode value="none" />
 	</style>
 
 	<style class="Edit" parents="root">
@@ -1277,6 +1278,7 @@
 		<list.bg.color value="bg"/>
 		<border.color value="bg_light"/>
 		<pointer value="hand"/>
+		<hscroll.mode value="none" />
 	</style>
 
 	<style class="Group" parents="root">
