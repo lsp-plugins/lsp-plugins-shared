@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <window width.min="123" width.max="256" height.min="250" height.max="512" >
-	<vbox expand="true" fill="true" pad.h="6" pad.v="4" width="123">
+	<vbox expand="true" fill="true" pad.h="6" pad.v="4" width="145">
 		<hbox pad.b="4">
 			<label text="labels.name" fill="false"/>
 			<edit ui:id="name" fill="true" hexpand="true"/>
