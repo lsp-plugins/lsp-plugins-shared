@@ -66,15 +66,16 @@
 		"stair_pass": "g"
 	},
 	"playback": {
-		"backward": "V",
-		"begin": "T",
-		"end": "U",
-		"forward": "W",
-		"pause": "R",
-		"phase": "X",
-		"play": "P",
-		"record": "S",
-		"stop": "Q"
+		"backward": "W",
+		"begin": "U",
+		"end": "V",
+		"forward": "X",
+		"pause": "S",
+		"phase": "Y",
+		"play_reverse": "P",
+		"play": "Q",
+		"record": "T",
+		"stop": "R"
 	},
 	"main": {
 		"about": "4",
