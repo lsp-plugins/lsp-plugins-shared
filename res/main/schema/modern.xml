@@ -389,6 +389,12 @@
 		<play.color value="bright_cyan"/>
 	</style>
 	
+	<style class="AudioFolder::Active" parents="ListBox">
+	</style>
+	
+	<style class="AudioFolder::Inctive" parents="ListBox">
+	</style>
+	
 	<style class="AudioNavigator::Active" parents="Button">
 		<font.size value="20" />
 		<font.name value="lsp-icons" />
