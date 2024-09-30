@@ -20,6 +20,7 @@
 		"focus": "\u009a",
 		"link": "\u0092",
 		"lock": "\u0090",
+		"phase": "\u009d",
 		"redo": "\u0094",
 		"refresh": "\u0096",
 		"undo": "\u0095",
@@ -71,11 +72,21 @@
 		"end": "V",
 		"forward": "X",
 		"pause": "S",
-		"phase": "Y",
 		"play_reverse": "P",
 		"play": "Q",
 		"record": "T",
 		"stop": "R"
+	},
+	"playback_big": {
+		"backward": "\u00a7",
+		"begin": "\u00a5",
+		"end": "\u00a6",
+		"forward": "\u00a8",
+		"pause": "\u00a4",
+		"play_reverse": "\u00a0",
+		"play": "\u00a1",
+		"record": "\u00a4",
+		"stop": "\u00a2"
 	},
 	"main": {
 		"about": "4",
@@ -94,6 +105,27 @@
 		"size": ";",
 		"scale": "7",
 		"zoom": "<"
+	},
+	"navigation": {
+		"backward": "\u00b4",
+		"first": "\u00b2",
+		"forward": "\u00b5",
+		"last": "\u00b3",
+		"next": "\u00b1",
+		"previous": "\u00b0"
+	},
+	"navigation_big": {
+		"backward": "\u00bc",
+		"first": "\u00ba",
+		"forward": "\u00bd",
+		"last": "\u00bb",
+		"next": "\u00b9",
+		"previous": "\u00b8"
+	},
+	"random": {
+		"dice": "\u00c2",
+		"dice_3d": "\u00c1",
+		"signal": "\u00c0"
 	},
 	"shapes": {
 		"bottom": "\u0083",
