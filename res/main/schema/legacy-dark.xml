@@ -1900,15 +1900,22 @@
 	<style class="MessageBox::Button" parents="Button"></style>
 
 	<!-- ShmLink widgets -->
+	<style class="ShmLink_active" parents="Button">
+		<border.hover.color value="bright_gray"/>
+		<border.color value="gray"/>
+		<color value="bg_name"/>
+		<text.color value="text_prim"/>
+		<text.hover.color value="bright_gray"/>
+	</style>
 	<style class="ShmLink::NotConnected" parents="Button">
 		<font.size value="12"/>
 	</style>
-	<style class="ShmLink::Connected::Send" parents="Button">
+	<style class="ShmLink::Connected::Send" parents="ShmLink_active">
 		<font.size value="12"/>
 		<text.adjust value="none"/>
 		<text.layout.halign value="-1"/>
 	</style>
-	<style class="ShmLink::Connected::Return" parents="Button">
+	<style class="ShmLink::Connected::Return" parents="ShmLink_active">
 		<font.size value="12"/>
 		<text.adjust value="none"/>
 		<text.layout.halign value="1"/>
