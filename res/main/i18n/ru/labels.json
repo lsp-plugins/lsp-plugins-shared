@@ -588,8 +588,12 @@
 	"postprocess": "Постобработка",
 
 	"preamp": "Предусиление",
-
 	"predelay": "П/задержка",
+	
+	"processing": {
+		"post": "Пост",
+		"pre": "Пред"
+	},
 	"prof": {
 		"calibrating": "КАЛИБРОВКА",
 		"convolving": "СВЁРТКА",

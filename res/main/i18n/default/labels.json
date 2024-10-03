@@ -586,8 +586,12 @@
 	"postprocess": "Post-process",
 
 	"preamp": "Preamp",
-
 	"predelay": "Pre-delay",
+	
+	"processing": {
+		"post": "Post",
+		"pre": "Pre"
+	},
 	"prof": {
 		"calibrating": "CALIBRATING",
 		"convolving": "CONVOLVING",
