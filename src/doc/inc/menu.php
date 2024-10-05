@@ -112,15 +112,14 @@
 			$menu = &$MENU;
 		}
 		
-		if (array_key_exists('items', $menu)) {
-			foreach ($menu['items'] as &$item)
-			{
-				if (array_key_exists('items', $item)) {
-					raw_menu_list($target, $item['items']);
-				} else {
-					array_push($target, $item);
-				}
-			}
+		if (!array_key_exists('items', $menu)) {
+			array_push($target, $menu);
+			return;
+		}
+		
+		foreach ($menu['items'] as &$item)
+		{
+			raw_menu_list($target, $item);
 		}
 	}
 

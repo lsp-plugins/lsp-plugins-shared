@@ -149,7 +149,8 @@
 		"input": "Вход",
 		"inspect": "Инспекция",
 		"left": "Левый",
-		"left_on": "Левый вкл",
+		"left_on": "Левый вкл",		
+		"link": "Линк",
 		"mid": "Центр",
 		"mid_on": "Центр вкл",
 		"mid_side": "Центр/Сторона",
@@ -173,8 +174,10 @@
 		"pitch_right": "Высота правого",
 		"pitch_side": "Высота стороны",
 		"rand_id": "В случайном порядке #{@id}",
+		"return": "Возврат",
 		"right": "Правый",
 		"right_on": "Правый вкл",
+		"send": "Посыл",
 		"shift": "Смещ",
 		"side": "Сторона",
 		"side_on": "Сторона вкл",
@@ -249,7 +252,8 @@
 		"envelope": "Огибающая",
 		"fft": "БПФ",
 		"fft:": "БПФ:",
-		"fft_in": "БПФ Вх",
+		"fft_in": "БПФ Вх",	
+		"fft_link": "БПФ Линк",
 		"fft_out": "БПФ Вых",
 		"frame": "Кадр БПФ",
 		"tolerance": "Точность",
@@ -404,6 +408,21 @@
 	},
 	"limiter_bands": "Полосы лимитера",
 	"line_size": "Размер линии",
+	"link": {
+		"": "Связь",
+		"other": {
+			"connected": "== {@value}",
+			"not_connected": "Связь..."
+		},
+		"return": {
+			"connected": "{@value} ->",
+			"not_connected": "Связь..."
+		},
+		"send": {
+			"connected": "-> {@value}",
+			"not_connected": "Послать..."
+		}
+	},
 	"listen": "Слушать",
 	"location": "Местоположение",
 	"log_scale": "Лог масштаб",
@@ -569,8 +588,12 @@
 	"postprocess": "Постобработка",
 
 	"preamp": "Предусиление",
-
 	"predelay": "П/задержка",
+	
+	"processing": {
+		"post": "Пост",
+		"pre": "Пред"
+	},
 	"prof": {
 		"calibrating": "КАЛИБРОВКА",
 		"convolving": "СВЁРТКА",

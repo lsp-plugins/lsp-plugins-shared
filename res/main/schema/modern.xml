@@ -331,6 +331,7 @@
 		<loudness_out_long value="#009600"/>
 		<loudness_out_short value="#006509"/>
 
+		<shm_connected value="#0aab04"/>
 	</colors>
 
 	<!-- Root style -->
@@ -386,6 +387,24 @@
 		<loop.border.color value="loop_border_color"/>
 		<play.border value="1"/>
 		<play.color value="bright_cyan"/>
+	</style>
+
+	<style class="AudioFolder::Active" parents="ListBox">
+		<bg.color value="bg_graph"/>
+	</style>
+
+	<style class="AudioFolder::Inctive" parents="ListBox">
+		<bg.color value="bg_graph"/>
+	</style>
+
+	<style class="AudioNavigator::Active" parents="Button">
+		<font.size value="10"/>
+		<font.name value="lsp-icons"/>
+	</style>
+
+	<style class="AudioNavigator::Inactive" parents="Button">
+		<font.size value="10"/>
+		<font.name value="lsp-icons"/>
 	</style>
 
 	<style class="AudioSample" parents="root">
@@ -513,7 +532,7 @@
 		<text.shift value="0 0"/>
 		<text.down.shift value="0 0"/>
 		<text.pressed.shift value="1 1"/>
-		<text.adjust value="toupper" />
+		<text.adjust value="toupper"/>
 		<bg.inherit value="true"/>
 
 		<border.color value="bg_name"/>
@@ -1136,6 +1155,7 @@
 		<list.bg.color value="bg"/>
 		<border.color value="bg_light"/>
 		<pointer value="hand"/>
+		<hscroll.mode value="none"/>
 	</style>
 
 	<style class="Edit" parents="root">
@@ -1150,7 +1170,7 @@
 		<border.gap.color value="bg"/>
 		<bg.inherit value="true"/>
 	</style>
-	
+
 	<style class="Edit::ValidInput" parents="Edit">
 		<text.color value="text_sec"/>
 	</style>
@@ -1276,6 +1296,7 @@
 		<list.bg.color value="bg"/>
 		<border.color value="bg_light"/>
 		<pointer value="hand"/>
+		<hscroll.mode value="none"/>
 	</style>
 
 	<style class="Group" parents="root">
@@ -1478,7 +1499,7 @@
 		<font value="9.0f"/>
 		<border value="2"/>
 		<angle value="0"/>
-		<header.pointer value="hand" />
+		<header.pointer value="hand"/>
 	</style>
 
 	<style class="MultiLabel" parents="root">
@@ -1868,6 +1889,39 @@
 	<style class="MessageBox::Heading" parents="Label"></style>
 
 	<style class="MessageBox::Button" parents="Button"></style>
+
+	<!-- ShmLink widgets -->
+	<style class="ShmLink_active" parents="Button">
+		<border.hover.color value="bright_gray"/>
+		<border.color value="gray"/>
+		<color value="bg_name"/>
+		<text.color value="text_prim"/>
+		<text.hover.color value="text_sec"/>
+	</style>
+	<style class="ShmLink::NotConnected" parents="Button">
+		<font.size value="12"/>
+	</style>
+	<style class="ShmLink::Connected::Send" parents="ShmLink_active">
+		<font.size value="12"/>
+		<text.adjust value="none"/>
+		<text.layout.halign value="-1"/>
+	</style>
+	<style class="ShmLink::Connected::Return" parents="ShmLink_active">
+		<font.size value="12"/>
+		<text.adjust value="none"/>
+		<text.layout.halign value="1"/>
+	</style>
+	<style class="ShmLink::Connected" parents="Button">
+		<font.size value="12"/>
+		<text.adjust value="none"/>
+		<text.layout.halign value="0"/>
+	</style>
+	<style class="ShmLink::Selector" parents="PopupWindow"></style>
+	<style class="ShmLink::Filter::ValidInput" parents="Edit::ValidInput"/>
+	<style class="ShmLink::Filter::InvalidInput" parents="Edit::InvalidInput"/>
+	<style class="ShmLink::ListBoxItem::Connected" parents="ListBoxItem">
+		<text.color value="shm_connected"/>
+	</style>
 
 	<!-- Additional styles for value -->
 	<style class="Value::PopupWindow" parents="PopupWindow">
