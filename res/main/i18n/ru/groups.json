@@ -66,6 +66,8 @@
 		"trigger": "Триггер"
 	},
 	
+	"post_filter": "Пост-фильтр",
+	
 	"processor": "Обработчик",
 	"processors": "Обработчики",
 	

@@ -66,6 +66,8 @@
 		"processor": "Processor",
 		"trigger": "Trigger"
 	},
+	
+	"post_filter": "Post-filter",
 
 	"processor": "Processor",
 	"processors": "Processors",
