@@ -5,7 +5,9 @@
 		"amplitude": "amplitude",
 		"chan": {
 			"left": "left",
-			"right": "right"
+			"mid": "mid",
+			"right": "right",
+			"side": "side"
 		},
 		"depth": "depth",
 		"in": "in",
@@ -14,7 +16,9 @@
 		"period": "period",
 		"phase": "phase",
 		"reverb_time": "reverb time",
-		"time": "time"
+		"time": "time",
+		"x": "X",
+		"y": "Y"
 	},
 	
 	"units": {
