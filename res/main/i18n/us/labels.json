@@ -462,6 +462,7 @@
 	"memory:mb": "Memory (MB)",
 	"metering": {
 		"channel": "Channel",
+		"display": "Display",
 		"drift": "Drift",
 		"fall": "Fall",
 		"fft_frequency": "FFT Frequency",

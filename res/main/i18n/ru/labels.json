@@ -462,6 +462,7 @@
 	"memory:mb": "Память (МБ)",
 	"metering": {
 		"channel": "Канал",
+		"display": "Показыать",
 		"drift": "Дрифт",
 		"fall": "Спад",
 		"fft_frequency": "Частота БПФ",

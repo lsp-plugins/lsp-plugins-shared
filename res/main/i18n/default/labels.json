@@ -461,6 +461,7 @@
 	"metering": {
 		"channel": "Channel",
 		"drift": "Drift",
+		"display": "Display",
 		"fall": "Fall",
 		"fft_frequency": "FFT Frequency",
 		"frequency": "Frequency",
