@@ -45,6 +45,7 @@
 		"x:hz": "{@value} Гц",
 		"x:lu": "{@value} LU",
 		"x:lufs": "{@value} LUFS",
+		"x:pc:f": "{@value%.1f} %",
 		"x:s": "{@value} с",
 		"x_T": "{@value}T",
 		"x_k": "{@value}к"
