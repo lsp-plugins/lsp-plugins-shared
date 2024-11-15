@@ -46,6 +46,7 @@
 		"x:lufs": "{@value} LUFS",
 		"x:pc:f": "{@value%.1f} %",
 		"x:s": "{@value} s",
+		"x:s:2f": "{@value%.2f} s",
 		"x:deg": "{@value}°",
 		"x_T": "{@value}T",
 		"x_k": "{@value}k"

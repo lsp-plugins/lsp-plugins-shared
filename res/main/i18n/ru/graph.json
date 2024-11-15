@@ -47,6 +47,7 @@
 		"x:lufs": "{@value} LUFS",
 		"x:pc:f": "{@value%.1f} %",
 		"x:s": "{@value} с",
+		"x:s:2f": "{@value%.2f} с",
 		"x_T": "{@value}T",
 		"x_k": "{@value}к"
 	}
