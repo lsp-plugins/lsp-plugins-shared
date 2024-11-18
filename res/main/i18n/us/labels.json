@@ -461,7 +461,9 @@
 	"measure": "Measure",
 	"memory:mb": "Memory (MB)",
 	"metering": {
+		"ballistics": "Ballistics",
 		"channel": "Channel",
+		"damping": "Damping",
 		"display": "Display",
 		"drift": "Drift",
 		"fall": "Fall",
@@ -748,6 +750,8 @@
 		"fall": "Fall",
 		"in_lr": "In L/R",
 		"invert": "Invert",
+		"max": "Max",
+		"min": "Min",
 		"mix": "Mix",
 		"mono": "Mono",
 		"negative": "Negative",
