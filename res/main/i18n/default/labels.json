@@ -334,6 +334,7 @@
 
 	"gain": "Gain",
 	"gain_": "Gain",
+	"gain_matching": "Gain matching",
 	"gain:db": "Gain\n(dB)",
 
 	"global_settings": "Global Settings",
@@ -450,6 +451,7 @@
 		"sound_speed": "Sound speed",
 		"transparency": "Transparency"
 	},
+
 	"max_delay": "Max Delay",
 	"max_delay:s": "Max Delay (s)",
 	"max_gain": "Max Gain",

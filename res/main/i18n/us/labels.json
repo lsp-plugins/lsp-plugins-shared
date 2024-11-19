@@ -336,6 +336,7 @@
 
 	"gain": "Gain",
 	"gain_": "Gain",
+	"gain_matching": "Gain matching",
 	"gain:db": "Gain\n(dB)",
 
 	"global_settings": "Global Settings",
