@@ -741,6 +741,7 @@
 		"amplitude": "Amplitude",
 		"clip": "Clip",
 		"clipping": "Clipping",
+		"curr_ent": "Curr",
 		"dry": "Dry",
 		"dry:db": "Dry\n(dB)",
 		"dry_pan": "Dry pan",
