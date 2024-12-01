@@ -103,6 +103,7 @@
 		"": "UI behavior",
 		"ediable_knob_scale": "Editable knob scale",
 		"enable_zoomable_spectrum": "Automatic frequency graph scaling",
+		"file_list_navigation_autoload": "Automatically load files when navigating file list",
 		"filter_point_thickness": "Filter point thickness",
 		"override_hydrogen_kits": "Override Hydrogen kits",
 		"vscroll": {

@@ -104,6 +104,7 @@
 		"": "Поведение интерфейса",
 		"ediable_knob_scale": "Редактируемые шкалы ручек",		
 		"enable_zoomable_spectrum": "Автоматическое масштабирование графика частот",
+		"file_list_navigation_autoload": "Автоматически загружать файлы при навигации по списку файлов",
 		"filter_point_thickness": "Толщина точек фильтра",
 		"override_hydrogen_kits": "Замещать настройки Hydrogen",
 		"vscroll": {
