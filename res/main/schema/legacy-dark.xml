@@ -346,6 +346,17 @@
 		<loudness_out_short value="#006509"/>
 
 		<shm_connected value="#0aab04"/>
+
+		<!-- Referencer colors -->
+		<ref_mesh_1 value="#239db5"/>
+		<ref_mesh_2 value="#1ea3a1"/>
+		<ref_mesh_3 value="#1aa88b"/>
+		<ref_mesh_4 value="#14ad70"/>
+
+		<mix_mesh_1 value="#e6654d"/>
+		<mix_mesh_2 value="#cf7c45"/>
+		<mix_mesh_3 value="#b38e3b"/>
+		<mix_mesh_4 value="#919e2e"/>
 	</colors>
 
 	<!-- Root style -->
@@ -807,6 +818,24 @@
 		<border.down.color value="#8ab252"/>
 		<border.down.hover.color value="#6c8b40"/>
 		<led.color value="#6c8b40"/>
+	</style>
+
+	<style class="Button_ref" parents="Button_cyan">
+	</style>
+
+	<style class="Button_mix" parents="Button">
+		<down.color value="#b83c2b"/>
+		<down.hover.color value="#b83c2b"/>
+
+		<text.down.color value="#ff7e63"/>
+		<text.down.hover.color value="#ff7e63"/>
+
+		<border.down.color value="#ff7e63"/>
+		<border.down.hover.color value="mix_mesh_1"/>
+		<led.color value="mix_mesh_1"/>
+	</style>
+
+	<style class="Button_both" parents="Button_green">
 	</style>
 
 	<style class="Button_ne_left" parents="Button">

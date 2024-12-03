@@ -350,6 +350,16 @@
 
 		<shm_connected value="#7cff7c"/>
 
+		<!-- Referencer colors -->
+		<ref_mesh_1 value="#239db5"/>
+		<ref_mesh_2 value="#20a3a1"/>
+		<ref_mesh_3 value="#20a88c"/>
+		<ref_mesh_4 value="#21ad75"/>
+
+		<mix_mesh_1 value="#e64a2c"/>
+		<mix_mesh_2 value="#cf6b28"/>
+		<mix_mesh_3 value="#b38623"/>
+		<mix_mesh_4 value="#8f9e1f"/>
 	</colors>
 
 	<!-- Root style -->
@@ -786,8 +796,8 @@
 	</style>
 
 	<style class="Button_stretch" parents="Button">
-		<down.color value="#0070d2"/>
-		<down.hover.color value="#0070d2"/>
+		<down.color value="#0088ff"/>
+		<down.hover.color value="#007ce9"/>
 
 		<text.down.color value="bg"/>
 		<text.down.hover.color value="bg"/>
@@ -798,8 +808,8 @@
 	</style>
 
 	<style class="Button_loop" parents="Button">
-		<down.color value="#7000d2"/>
-		<down.hover.color value="#7000d2"/>
+		<down.color value="#8800ff"/>
+		<down.hover.color value="#7c00e9"/>
 
 		<text.down.color value="bg"/>
 		<text.down.hover.color value="bg"/>
@@ -810,15 +820,33 @@
 	</style>
 
 	<style class="Button_lufs" parents="Button">
-		<down.color value="#709141"/>
-		<down.hover.color value="#709141"/>
+		<down.color value="#91bc52"/>
+		<down.hover.color value="#7ca148"/>
 
 		<text.down.color value="bg"/>
 		<text.down.hover.color value="bg"/>
 
-		<border.down.color value="#8a000"/>
+		<border.down.color value="#91bc52"/>
 		<border.down.hover.color value="#7ca148"/>
 		<led.color value="#7ca148"/>
+	</style>
+
+	<style class="Button_ref" parents="Button_cyan">
+	</style>
+
+	<style class="Button_mix" parents="Button">
+		<down.color value="#ff5b37"/>
+		<down.hover.color value="mix_mesh_1"/>
+
+		<text.down.color value="bg"/>
+		<text.down.hover.color value="bg"/>
+
+		<border.down.color value="#ff5b37"/>
+		<border.down.hover.color value="mix_mesh_1"/>
+		<led.color value="mix_mesh_1"/>
+	</style>
+
+	<style class="Button_both" parents="Button_green">
 	</style>
 
 	<style class="Button_ne_left" parents="Button">
