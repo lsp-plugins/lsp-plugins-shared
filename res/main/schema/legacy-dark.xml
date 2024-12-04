@@ -824,8 +824,8 @@
 	</style>
 
 	<style class="Button_mix" parents="Button">
-		<down.color value="#a5241d"/>
-		<down.hover.color value="#a5241d"/>
+		<down.color value="#b13025"/>
+		<down.hover.color value="#b13025"/>
 
 		<text.down.color value="#ee6753"/>
 		<text.down.hover.color value="#ee6753"/>
