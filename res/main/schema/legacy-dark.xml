@@ -348,15 +348,15 @@
 		<shm_connected value="#0aab04"/>
 
 		<!-- Referencer colors -->
-		<ref_mesh_1 value="#239db5"/>
-		<ref_mesh_2 value="#1ea3a1"/>
-		<ref_mesh_3 value="#1aa88b"/>
-		<ref_mesh_4 value="#14ad70"/>
+		<ref_mesh_1 value="#00909e"/>
+		<ref_mesh_2 value="#0f9191"/>
+		<ref_mesh_3 value="#1a9281"/>
+		<ref_mesh_4 value="#21936d"/>
 
-		<mix_mesh_1 value="#e6654d"/>
-		<mix_mesh_2 value="#cf7c45"/>
-		<mix_mesh_3 value="#b38e3b"/>
-		<mix_mesh_4 value="#919e2e"/>
+		<mix_mesh_1 value="#d85442"/>
+		<mix_mesh_2 value="#ce5e3b"/>
+		<mix_mesh_3 value="#c26832"/>
+		<mix_mesh_4 value="#b57027"/>
 	</colors>
 
 	<!-- Root style -->
@@ -824,13 +824,13 @@
 	</style>
 
 	<style class="Button_mix" parents="Button">
-		<down.color value="#b83c2b"/>
-		<down.hover.color value="#b83c2b"/>
+		<down.color value="#a5241d"/>
+		<down.hover.color value="#a5241d"/>
 
-		<text.down.color value="#ff7e63"/>
-		<text.down.hover.color value="#ff7e63"/>
+		<text.down.color value="#ee6753"/>
+		<text.down.hover.color value="#ee6753"/>
 
-		<border.down.color value="#ff7e63"/>
+		<border.down.color value="#ee6753"/>
 		<border.down.hover.color value="mix_mesh_1"/>
 		<led.color value="mix_mesh_1"/>
 	</style>
