@@ -351,15 +351,15 @@
 		<shm_connected value="#7cff7c"/>
 
 		<!-- Referencer colors -->
-		<ref_mesh_1 value="#239db5"/>
-		<ref_mesh_2 value="#20a3a1"/>
-		<ref_mesh_3 value="#20a88c"/>
-		<ref_mesh_4 value="#21ad75"/>
+		<reference_ref_1 value="#239db5"/>
+		<reference_ref_2 value="#20a3a1"/>
+		<reference_ref_3 value="#20a88c"/>
+		<reference_ref_4 value="#21ad75"/>
 
-		<mix_mesh_1 value="#e64a2c"/>
-		<mix_mesh_2 value="#cf6b28"/>
-		<mix_mesh_3 value="#b38623"/>
-		<mix_mesh_4 value="#8f9e1f"/>
+		<reference_mix_1 value="#e64a2c"/>
+		<reference_mix_2 value="#cf6b28"/>
+		<reference_mix_3 value="#b38623"/>
+		<reference_mix_4 value="#8f9e1f"/>
 	</colors>
 
 	<!-- Root style -->
@@ -836,14 +836,14 @@
 
 	<style class="Button_mix" parents="Button">
 		<down.color value="#ff5b37"/>
-		<down.hover.color value="mix_mesh_1"/>
+		<down.hover.color value="reference_mix_1"/>
 
 		<text.down.color value="bg"/>
 		<text.down.hover.color value="bg"/>
 
 		<border.down.color value="#ff5b37"/>
-		<border.down.hover.color value="mix_mesh_1"/>
-		<led.color value="mix_mesh_1"/>
+		<border.down.hover.color value="reference_mix_1"/>
+		<led.color value="reference_mix_1"/>
 	</style>
 
 	<style class="Button_both" parents="Button_green">
