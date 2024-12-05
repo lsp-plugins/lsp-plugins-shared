@@ -720,6 +720,7 @@
 		"reverse": "Reverse",
 		"sample_num": "Sample #",
 		"sample_nth": "Sample {@id}",
+		"stop": "Stop",
 		"stretch": "Stretch",
 		"stretch_chunk": "Chunk size",
 		"stretch_end": "End",
