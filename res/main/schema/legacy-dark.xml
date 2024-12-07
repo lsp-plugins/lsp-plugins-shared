@@ -357,6 +357,11 @@
 		<reference_mix_2 value="#ce5e3b"/>
 		<reference_mix_3 value="#c26832"/>
 		<reference_mix_4 value="#b57027"/>
+
+		<reference_ch_1 value="#00909e"/>
+		<reference_ch_2 value="#21936d"/>
+		<reference_ch_1_dark value="#00626b"/>
+		<reference_ch_2_dark value="#136449"/>
 	</colors>
 
 	<!-- Root style -->
@@ -412,6 +417,18 @@
 		<loop.border.color value="loop_border_color"/>
 		<play.border value="1"/>
 		<play.color value="bright_cyan"/>
+	</style>
+
+	<style class="AudioChannel_reference_ch1" parents="AudioChannel">
+		<color value="reference_ch_1_dark"/>
+		<wave.border.color value="reference_ch_1"/>
+		<border value="1"/>
+	</style>
+
+	<style class="AudioChannel_reference_ch2" parents="AudioChannel">
+		<color value="reference_ch_2_dark"/>
+		<wave.border.color value="reference_ch_2"/>
+		<border value="1"/>
 	</style>
 
 	<style class="AudioFolder::Active" parents="ListBox">
