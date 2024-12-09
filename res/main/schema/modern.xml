@@ -1309,13 +1309,13 @@
 		<color value="graph_prim"/>
 	</style>
 
-	<style class="Graph_Name_Text" parents="root">
+	<style class="Graph_Name_Text" parents="GraphText">
 		<padding value="6"/>
-		<background value="true"/>
+		<bg value="true"/>
 		<bg.color value="bg"/>
 		<bg.color.a value="0.2"/>
 		<color value="text_group"/>
-		<background.radius value="0"/>
+		<bg.radius value="0"/>
 	</style>
 
 	<style class="Graph_Mouse_Text" parents="Graph_Name_Text"></style>
