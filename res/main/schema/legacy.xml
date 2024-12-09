@@ -848,8 +848,7 @@
 		<led.color value="#7ca148"/>
 	</style>
 
-	<style class="Button_ref" parents="Button_cyan">
-	</style>
+	<style class="Button_ref" parents="Button_cyan"></style>
 
 	<style class="Button_mix" parents="Button">
 		<down.color value="#ff5b37"/>
@@ -863,8 +862,7 @@
 		<led.color value="reference_mix_1"/>
 	</style>
 
-	<style class="Button_both" parents="Button_green">
-	</style>
+	<style class="Button_both" parents="Button_green"></style>
 
 	<style class="Button_ne_left" parents="Button">
 		<color value="dark_red"/>
@@ -1340,6 +1338,17 @@
 		<padding value="2"/>
 		<color value="graph_prim"/>
 	</style>
+
+	<style class="Graph_Name_Text" parents="root">
+		<padding value="6"/>
+		<background value="true"/>
+		<bg.color value="black"/>
+		<bg.color.a value="0.5"/>
+		<color value="bright_gray"/>
+		<background.radius value="0"/>
+	</style>
+
+	<style class="Graph_Mouse_Text" parents="Graph_Name_Text"></style>
 
 	<style class="Grid" parents="root">
 		<bg.inherit value="true"/>
