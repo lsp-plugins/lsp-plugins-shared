@@ -346,6 +346,22 @@
 		<loudness_out_short value="#006509"/>
 
 		<shm_connected value="#0aab04"/>
+
+		<!-- Referencer colors -->
+		<reference_ref_1 value="#00909e"/>
+		<reference_ref_2 value="#0f9191"/>
+		<reference_ref_3 value="#1a9281"/>
+		<reference_ref_4 value="#21936d"/>
+
+		<reference_mix_1 value="#d85442"/>
+		<reference_mix_2 value="#ce5e3b"/>
+		<reference_mix_3 value="#c26832"/>
+		<reference_mix_4 value="#b57027"/>
+
+		<reference_ch_1 value="#00909e"/>
+		<reference_ch_2 value="#21936d"/>
+		<reference_ch_1_dark value="#00626b"/>
+		<reference_ch_2_dark value="#136449"/>
 	</colors>
 
 	<!-- Root style -->
@@ -401,6 +417,18 @@
 		<loop.border.color value="loop_border_color"/>
 		<play.border value="1"/>
 		<play.color value="bright_cyan"/>
+	</style>
+
+	<style class="AudioChannel_reference_ch1" parents="AudioChannel">
+		<color value="reference_ch_1_dark"/>
+		<wave.border.color value="reference_ch_1"/>
+		<border value="1"/>
+	</style>
+
+	<style class="AudioChannel_reference_ch2" parents="AudioChannel">
+		<color value="reference_ch_2_dark"/>
+		<wave.border.color value="reference_ch_2"/>
+		<border value="1"/>
 	</style>
 
 	<style class="AudioFolder::Active" parents="ListBox">
@@ -808,6 +836,22 @@
 		<border.down.hover.color value="#6c8b40"/>
 		<led.color value="#6c8b40"/>
 	</style>
+
+	<style class="Button_ref" parents="Button_cyan"></style>
+
+	<style class="Button_mix" parents="Button">
+		<down.color value="#b13025"/>
+		<down.hover.color value="#b13025"/>
+
+		<text.down.color value="#ee6753"/>
+		<text.down.hover.color value="#ee6753"/>
+
+		<border.down.color value="#ee6753"/>
+		<border.down.hover.color value="reference_mix_1"/>
+		<led.color value="reference_mix_1"/>
+	</style>
+
+	<style class="Button_both" parents="Button_green"></style>
 
 	<style class="Button_ne_left" parents="Button">
 		<color value="dark_red"/>
@@ -1283,6 +1327,17 @@
 		<padding value="2"/>
 		<color value="graph_prim"/>
 	</style>
+
+	<style class="Graph_Name_Text" parents="GraphText">
+		<padding value="6"/>
+		<bg value="true"/>
+		<bg.color value="black"/>
+		<bg.color.a value="0.5"/>
+		<color value="text_group"/>
+		<bg.radius value="0"/>
+	</style>
+
+	<style class="Graph_Mouse_Text" parents="Graph_Name_Text"></style>
 
 	<style class="Grid" parents="root">
 		<bg.inherit value="true"/>

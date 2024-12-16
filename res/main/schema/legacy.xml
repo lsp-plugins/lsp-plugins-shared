@@ -350,6 +350,21 @@
 
 		<shm_connected value="#7cff7c"/>
 
+		<!-- Referencer colors -->
+		<reference_ref_1 value="#239db5"/>
+		<reference_ref_2 value="#20a3a1"/>
+		<reference_ref_3 value="#20a88c"/>
+		<reference_ref_4 value="#21ad75"/>
+
+		<reference_mix_1 value="#e64a2c"/>
+		<reference_mix_2 value="#cf6b28"/>
+		<reference_mix_3 value="#b38623"/>
+		<reference_mix_4 value="#8f9e1f"/>
+
+		<reference_ch_1 value="#14edff"/>
+		<reference_ch_2 value="#43ffc0"/>
+		<reference_ch_1_dark value="#10b5c3"/>
+		<reference_ch_2_dark value="#33c393"/>
 	</colors>
 
 	<!-- Root style -->
@@ -405,6 +420,18 @@
 		<loop.border.color value="loop_border_color"/>
 		<play.border value="2"/>
 		<play.color value="white"/>
+	</style>
+
+	<style class="AudioChannel_reference_ch1" parents="AudioChannel">
+		<color value="reference_ch_1_dark"/>
+		<wave.border.color value="reference_ch_1"/>
+		<border value="1"/>
+	</style>
+
+	<style class="AudioChannel_reference_ch2" parents="AudioChannel">
+		<color value="reference_ch_2_dark"/>
+		<wave.border.color value="reference_ch_2"/>
+		<border value="1"/>
 	</style>
 
 	<style class="AudioFolder::Active" parents="ListBox">
@@ -786,8 +813,8 @@
 	</style>
 
 	<style class="Button_stretch" parents="Button">
-		<down.color value="#0070d2"/>
-		<down.hover.color value="#0070d2"/>
+		<down.color value="#0088ff"/>
+		<down.hover.color value="#007ce9"/>
 
 		<text.down.color value="bg"/>
 		<text.down.hover.color value="bg"/>
@@ -798,8 +825,8 @@
 	</style>
 
 	<style class="Button_loop" parents="Button">
-		<down.color value="#7000d2"/>
-		<down.hover.color value="#7000d2"/>
+		<down.color value="#8800ff"/>
+		<down.hover.color value="#7c00e9"/>
 
 		<text.down.color value="bg"/>
 		<text.down.hover.color value="bg"/>
@@ -810,16 +837,32 @@
 	</style>
 
 	<style class="Button_lufs" parents="Button">
-		<down.color value="#709141"/>
-		<down.hover.color value="#709141"/>
+		<down.color value="#91bc52"/>
+		<down.hover.color value="#7ca148"/>
 
 		<text.down.color value="bg"/>
 		<text.down.hover.color value="bg"/>
 
-		<border.down.color value="#8a000"/>
+		<border.down.color value="#91bc52"/>
 		<border.down.hover.color value="#7ca148"/>
 		<led.color value="#7ca148"/>
 	</style>
+
+	<style class="Button_ref" parents="Button_cyan"></style>
+
+	<style class="Button_mix" parents="Button">
+		<down.color value="#ff5b37"/>
+		<down.hover.color value="reference_mix_1"/>
+
+		<text.down.color value="bg"/>
+		<text.down.hover.color value="bg"/>
+
+		<border.down.color value="#ff5b37"/>
+		<border.down.hover.color value="reference_mix_1"/>
+		<led.color value="reference_mix_1"/>
+	</style>
+
+	<style class="Button_both" parents="Button_green"></style>
 
 	<style class="Button_ne_left" parents="Button">
 		<color value="dark_red"/>
@@ -1295,6 +1338,17 @@
 		<padding value="2"/>
 		<color value="graph_prim"/>
 	</style>
+
+	<style class="Graph_Name_Text" parents="GraphText">
+		<padding value="6"/>
+		<bg value="true"/>
+		<bg.color value="black"/>
+		<bg.color.a value="0.5"/>
+		<color value="bright_gray"/>
+		<bg.radius value="0"/>
+	</style>
+
+	<style class="Graph_Mouse_Text" parents="Graph_Name_Text"></style>
 
 	<style class="Grid" parents="root">
 		<bg.inherit value="true"/>
