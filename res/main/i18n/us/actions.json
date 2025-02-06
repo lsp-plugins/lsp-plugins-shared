@@ -3,6 +3,14 @@
 
 	"apply": "Apply",
 	
+	"bundle_scaling": {
+		"default": "Default",
+		"select": "Plugin scaling",
+		"value:pc": "{@value} %",
+		"zoom_in": "Zoom in",
+		"zoom_out": "Zoom out"
+	},
+	
 	"cancel": "Cancel",
 	"close": "Close",
 	
