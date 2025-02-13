@@ -4,8 +4,8 @@
 	<vbox spacing="8">
 		<label ui:inject="GreetingDialog::Heading" text="headings.greetings" text.meta="true" />
 		<label ui:inject="GreetingDialog::Text" text="messages.greetings.0" text.meta="true" font.b="true" />
-		<label ui:inject="GreetingDialog::Text" text="messages.greetings.1" text.meta="true" />
-		<label ui:inject="GreetingDialog::Text" text="messages.greetings.2" text.meta="true" />
+		<label ui:tag="42" ui:inject="GreetingDialog::Text" text="messages.greetings.1" text.meta="true" />
+		<label ui:tag="43" ui:inject="GreetingDialog::Text" text="messages.greetings.2" text.meta="true" />
 
 		<ui:for id="i" first="0" count="3">
 			<hlink ui:inject="GreetingDialog::Hlink"

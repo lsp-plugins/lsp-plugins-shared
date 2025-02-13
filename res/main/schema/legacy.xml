@@ -1675,9 +1675,11 @@
 		<bg.color value="bg"/>
 		<bg.hover.color value="bright_gray"/>
 		<bg.selected.color value="bg_name"/>
-		<text.hover.color value="bg"/>
+		<bg.selected.hover.color value="bg_name"/>
 		<text.color value="text_sec"/>
+		<text.hover.color value="bg"/>
 		<text.selected.color value="bg"/>
+		<text.selected.hover.color value="bg"/>
 	</style>
 
 	<style class="Menu" parents="root">
@@ -1809,16 +1811,19 @@
 
 	<style class="Tab" parents="root">
 		<color value="gray"/>
-		<selected.color value="bg_name"/>
 		<hover.color value="bg_name"/>
+		<selected.color value="bg_name"/>
+		<selected.hover.color value="bg_name"/>
 
 		<border.color value="#888888"/>
-		<border.selected.color value="#000000"/>
 		<border.hover.color value="#eeeeee"/>
+		<border.selected.color value="#000000"/>
+		<border.selected.hover.color value="#000000"/>
 
 		<text.color value="text_tab"/>
-		<text.selected.color value="text_group"/>
 		<text.hover.color value="text_group"/>
+		<text.selected.color value="text_group"/>
+		<text.selected.hover.color value="text_group"/>
 
 		<text.padding.bottom value="0"/>
 		<text.padding.top value="0"/>
