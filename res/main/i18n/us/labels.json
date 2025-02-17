@@ -385,6 +385,7 @@
 	"input": "Input",
 	"input_level:db": "Input Level (dB)",
 	"input:db": "Input (dB)",
+	"instrument": "Instrument",
 	"instrument_num": "Instrument #",
 
 	"ir_equalizer": "IR equalizer",
@@ -719,6 +720,7 @@
 		"pitch_fade": "Fade length",
 		"predelay": "Pre-delay",
 		"reverse": "Reverse",
+		"sample": "Sample",
 		"sample_num": "Sample #",
 		"sample_nth": "Sample {@id}",
 		"stop": "Stop",
@@ -890,7 +892,7 @@
 	
 	"weighting": "Weighting",
 
-	"working_area": "Working area",
+	"workspace": "Workspace",
 
 	"X_Y_EXT": "X | Y | EXT",
 

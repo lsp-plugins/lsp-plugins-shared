@@ -298,6 +298,7 @@
 	"input": "Input",
 	"input_level:db": "Input Level (dB)",
 	"input:db": "Input (dB)",
+	"instrument": "Instrument",
 	"instrument_num": "Instrument #",
 
 	"ir_equalizer": "IR Equalizer",
@@ -543,6 +544,7 @@
 		"pitch": "Tonhöhe",
 		"predelay": "Vorverzögerung",
 		"reverse": "Rückwärts",
+		"sample": "Sample",
 		"sample_num": "Sample #",
 		"tail_cut": "Tail cut"
 	},
@@ -677,7 +679,7 @@
 		"loop_in_delay": "Achtung! Loop in Verzögerungsreferenzkette."
 	},
 
-	"working_area": "Arbeitsbereich",
+	"workspace": "Arbeitsbereich",
 
 	"X_Y_EXT": "X | Y | EXT",
 

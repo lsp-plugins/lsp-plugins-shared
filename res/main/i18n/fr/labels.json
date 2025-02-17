@@ -269,6 +269,7 @@
 	"input": "Entrée",
 	"input_level:db": "Niveau d'entrée (dB)",
 	"input:db": "Entrée (dB)",
+	"instrument": "Instrument",
 	"instrument_num": "Instrument #",
 
 	"ir_equalizer": "IR égaliseur",
@@ -503,6 +504,7 @@
 		"pitch": "Hauteur tonale",
 		"predelay": "Pré-délai",
 		"reverse": "Inverser",
+		"sample": "Échantillon",
 		"sample_num": "Échantillon #",
 		"tail_cut": "Coupe de la fin"
 	},
@@ -635,7 +637,7 @@
 		"loop_in_delay": "Attention ! Boucle dans la chaîne de référence de délai."
 	},
 
-	"working_area": "Zone de travail",
+	"workspace": "Zone de travail",
 
 	"X_Y_EXT": "X | Y | EXT",
 	

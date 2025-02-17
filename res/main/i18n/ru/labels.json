@@ -385,6 +385,7 @@
 	"input": "Вход",
 	"input_level:db": "Входной уровень (дБ)",
 	"input:db": "Вход (дБ)",
+	"instrument": "Инструмент",
 	"instrument_num": "№ инструмента",
 
 	"ir_equalizer": "Эквализация ИО",
@@ -719,6 +720,7 @@
 		"pitch_fade": "Длина фейда",
 		"predelay": "Задерж",
 		"reverse": "Реверс",
+		"sample": "Сэмпл",
 		"sample_num": "№ сэмпла",
 		"sample_nth": "Сэмпл {@id}",
 		"stop": "Стоп",
@@ -888,7 +890,7 @@
 	
 	"weighting": "Взвешивание",
 
-	"working_area": "Рабочая область",
+	"workspace": "Рабочая область",
 
 	"X_Y_EXT": "X | Y | ВНЕШ",
 
