@@ -441,6 +441,17 @@
 	<style class="AudioFolder::Inctive" parents="ListBox">
 		<bg.color value="bg_graph"/>
 	</style>
+	
+	<style class="AudioFolder::ListBoxItem::Active" parents="ListBoxItem">
+		<bg.color value="bg_name"/>
+		<bg.hover.color value="bg_name"/>
+		<bg.selected.color value="bg_name"/>
+		<bg.selected.hover.color value="bg_name"/>
+		<text.color value="bg"/>
+		<text.hover.color value="bg"/>
+		<text.selected.color value="bg"/>
+		<text.selected.hover.color value="bg"/>
+	</style>
 
 	<style class="AudioNavigator::Active" parents="Button">
 		<font.size value="10"/>

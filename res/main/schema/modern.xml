@@ -424,6 +424,17 @@
 	<style class="AudioFolder::Inctive" parents="ListBox">
 		<bg.color value="bg_graph"/>
 	</style>
+	
+	<style class="AudioFolder::ListBoxItem::Active" parents="ListBoxItem">
+		<bg.color value="dark_gray"/>
+		<bg.hover.color value="dark_gray"/>
+		<bg.selected.color value="dark_gray"/>
+		<bg.selected.hover.color value="dark_gray"/>
+		<text.color value="text_sec"/>
+		<text.hover.color value="text_sec"/>
+		<text.selected.color value="text_sec"/>
+		<text.selected.hover.color value="text_sec"/>
+	</style>
 
 	<style class="AudioNavigator::Active" parents="Button">
 		<font.size value="10"/>
@@ -1658,7 +1669,7 @@
 		<text.selected.color value="text_sec"/>
 		<text.selected.hover.color value="text_sec"/>
 	</style>
-
+	
 	<style class="Menu" parents="root">
 		<border.size value="0"/>
 		<ipadding.top value="4"/>
