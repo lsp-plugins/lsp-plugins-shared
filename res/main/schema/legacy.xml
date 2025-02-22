@@ -365,6 +365,12 @@
 		<reference_ch_2 value="#43ffc0"/>
 		<reference_ch_1_dark value="#10b5c3"/>
 		<reference_ch_2_dark value="#33c393"/>
+
+		<!-- ListBoxItem colors -->
+		<LBI_act value="#ebecee"/>
+		<LBI_hov value="#cccccc"/>
+		<LBI_sel value="#ebecee"/>
+		<LBI_sel_hov value="#ebecee"/>
 	</colors>
 
 	<!-- Root style -->
@@ -441,12 +447,10 @@
 	<style class="AudioFolder::Inctive" parents="ListBox">
 		<bg.color value="bg_graph"/>
 	</style>
-	
+
 	<style class="AudioFolder::ListBoxItem::Active" parents="ListBoxItem">
-		<bg.color value="bg_name"/>
-		<bg.hover.color value="bg_name"/>
-		<bg.selected.color value="bg_name"/>
-		<bg.selected.hover.color value="bg_name"/>
+		<bg.color value="LBI_act"/>
+		<bg.selected.color value="LBI_act"/>
 		<text.color value="bg"/>
 		<text.hover.color value="bg"/>
 		<text.selected.color value="bg"/>
@@ -1684,9 +1688,9 @@
 		<padding.top value="4"/>
 		<padding.bottom value="4"/>
 		<bg.color value="bg"/>
-		<bg.hover.color value="bright_gray"/>
-		<bg.selected.color value="bg_name"/>
-		<bg.selected.hover.color value="bg_name"/>
+		<bg.hover.color value="LBI_hov"/>
+		<bg.selected.color value="LBI_sel"/>
+		<bg.selected.hover.color value="LBI_sel_hov"/>
 		<text.color value="text_sec"/>
 		<text.hover.color value="bg"/>
 		<text.selected.color value="bg"/>
