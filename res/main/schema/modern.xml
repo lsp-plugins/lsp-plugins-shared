@@ -1500,7 +1500,7 @@
 	<style class="Indicator" parents="root">
 		<color value="ind_col"/>
 		<text.color value="ind_text"/>
-		<modern value="true"/>
+		<type value="modern"/>
 		<text.dark value="false"/>
 		<bg.inherit value="true"/>
 	</style>

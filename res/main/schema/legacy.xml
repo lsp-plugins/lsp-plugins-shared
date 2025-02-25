@@ -1525,7 +1525,7 @@
 	<style class="Indicator" parents="root">
 		<color value="ind_col"/>
 		<text.color value="ind_text"/>
-		<modern value="false"/>
+		<type value="segment"/>
 		<text.dark value="true"/>
 		<bg.inherit value="false"/>
 	</style>

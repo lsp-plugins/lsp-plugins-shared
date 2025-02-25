@@ -1519,7 +1519,7 @@
 	<style class="Indicator" parents="root">
 		<color value="ind_col"/>
 		<text.color value="ind_text"/>
-		<modern value="false"/>
+		<type value="pixel"/>
 		<text.dark value="false"/>
 		<bg.inherit value="false"/>
 	</style>
