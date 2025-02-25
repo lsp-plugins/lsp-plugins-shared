@@ -114,6 +114,7 @@
 		"file_list_navigation_autoload": "Automatically load files when navigating file list",
 		"filter_point_thickness": "Filter point thickness",
 		"override_hydrogen_kits": "Override Hydrogen kits",
+		"take_instrument_name_from_file": "Take instrument name from file",
 		"vscroll": {
 			"invert_global": "Invert vertical mouse scroll",
 			"invert_graph_dot": "Invert vertical mouse scroll for graph dots"
