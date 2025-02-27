@@ -1,6 +1,6 @@
 {
 	"about": {
-		"copyright": "(C) {@meta_pkg_copyright} 2015-2024.",
+		"copyright": "(C) {@meta_pkg_copyright} 2015-2025.",
 		"description": "This is a collection of open-source audio plugins.",
 		"info": {
 			"pkg_name": "Package name:",
