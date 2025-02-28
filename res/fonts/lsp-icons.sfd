@@ -22,7 +22,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1709466937
-ModificationTime: 1733903735
+ModificationTime: 1740684363
 OS2TypoAscent: 0
 OS2TypoAOffset: 1
 OS2TypoDescent: 0
@@ -36,6 +36,7 @@ HheadAscent: 0
 HheadAOffset: 1
 HheadDescent: 0
 HheadDOffset: 1
+OS2Vendor: 'PfEd'
 MarkAttachClasses: 1
 DEI: 91125
 Encoding: ISO8859-1
@@ -44,14 +45,14 @@ NameList: AGL For New Fonts
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 96 16 10
+WinInfo: 64 16 10
 BeginPrivate: 0
 EndPrivate
 Grid
 -1024 1402.59997559 m 0
  2048 1402.59997559 l 1024
 EndSplineSet
-BeginChars: 256 120
+BeginChars: 256 121
 
 StartChar: zero
 Encoding: 48 48 0
@@ -4815,7 +4816,7 @@ SplineSet
  50.3427734375 759.32421875 l 6
  50.3896484375 790.456054688 69.69921875 812.145507812 100.033203125 817.75 c 4
 EndSplineSet
-Validated: 524325
+Validated: 37
 EndChar
 
 StartChar: cent
@@ -4859,7 +4860,7 @@ SplineSet
  0.6396484375 753.26953125 l 2
  0.6904296875 787.713867188 22.052734375 811.711914062 55.6103515625 818.360351562 c 1
 EndSplineSet
-Validated: 524329
+Validated: 41
 EndChar
 
 StartChar: sterling
@@ -7386,6 +7387,33 @@ SplineSet
  483.53125 403.7109375 l 1
  483.53125 499.284179688 l 2
  483.553710938 515.111328125 488.791992188 527.182617188 505.166992188 531.688476562 c 0
+EndSplineSet
+EndChar
+
+StartChar: Adieresis
+Encoding: 196 196 120
+Width: 1024
+Flags: H
+LayerCount: 2
+Fore
+SplineSet
+0 819 m 1
+ 1024 819 l 1
+ 1024 -205 l 1
+ 0 -205 l 1
+ 0 819 l 1
+172.021484375 646.967773438 m 1
+ 172.036132812 -147.65625 l 1
+ 331.76953125 -147.65625 l 1
+ 331.76953125 488.248046875 l 1
+ 966.649414062 488.248046875 l 1
+ 966.645507812 646.967773438 l 1
+ 172.021484375 646.967773438 l 1
+511.990234375 307 m 1
+ 511.991210938 -147.65625 l 1
+ 966.666992188 -147.65625 l 1
+ 966.65625 307 l 1
+ 511.990234375 307 l 1
 EndSplineSet
 EndChar
 EndChars

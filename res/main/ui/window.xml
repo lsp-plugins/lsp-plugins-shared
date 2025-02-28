@@ -61,11 +61,18 @@
 		<hsep ui:inject="PluginWindow::Hsep_header" />
 		<!-- Footer -->
 		<hbox height="20" bg.color="bg_schema" spacing="6">
-			<!-- Sscale icons + and - -->
+			<!-- UI Scale icons + and - -->
 			<hbox padding.left="6">
 				<label ui:id="trg_ui_scaling" font.name="lsp-icons" hover="true" color="footer_icon" hover.color="footer_icon_hover" padding.right="10" font.size="12" font.antialias="true" text="icons.main.scale" pointer="hand"/>
 				<label ui:id="trg_ui_zoom_in" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.right="5" expand="false" font.size="10" font.antialias="true" text="icons.main.plus_nb" pointer="hand"/>
 				<label ui:id="trg_ui_zoom_out" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.right="5" expand="false" font.size="10" font.antialias="true" text="icons.main.minus_nb" pointer="hand"/>
+			</hbox>
+			
+			<!-- Bundle Scale icons + and - -->
+			<hbox padding.left="6">
+				<label ui:id="trg_bundle_scaling" font.name="lsp-icons" hover="true" color="footer_icon" hover.color="footer_icon_hover" padding.right="10" font.size="12" font.antialias="true" text="icons.main.bundle_scale" pointer="hand"/>
+				<label ui:id="trg_bundle_zoom_in" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.right="5" expand="false" font.size="10" font.antialias="true" text="icons.main.plus_nb" pointer="hand"/>
+				<label ui:id="trg_bundle_zoom_out" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.right="5" expand="false" font.size="10" font.antialias="true" text="icons.main.minus_nb" pointer="hand"/>
 			</hbox>
 			
 			<!-- Text scale icons + and - -->

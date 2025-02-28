@@ -3,6 +3,14 @@
 
 	"apply": "Применить",
 	
+	"bundle_scaling": {
+		"default": "По умолчанию",
+		"select": "Масштаб плагина",
+		"value:pc": "{@value} %",
+		"zoom_in": "Увеличить масштаб",
+		"zoom_out": "Уменьшить масштаб"
+	},
+	
 	"cancel": "Отмена",
 	"close": "Закрыть",
 	
@@ -107,6 +115,7 @@
 		"file_list_navigation_autoload": "Автоматически загружать файлы при навигации по списку файлов",
 		"filter_point_thickness": "Толщина точек фильтра",
 		"override_hydrogen_kits": "Замещать настройки Hydrogen",
+		"take_instrument_name_from_file": "Получать название инструмента из файла",
 		"vscroll": {
 			"invert_global": "Инвертировать вертикальное колесо мыши",
 			"invert_graph_dot": "Инвертировать вертикальное колесо мыши для точек на графе"

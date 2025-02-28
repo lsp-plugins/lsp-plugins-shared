@@ -96,7 +96,7 @@
 		<bg_light value="#25272e"/>
 		<bg_schema value="#25272e"/>
 		<bg_schema_name value="#373944"/>
-		<border_color value="#373943"/>
+		<border_color value="#373944"/>
 		<text_prim value="#8088b3"/>
 		<text_sec value="#a8aed3"/>
 		<text_tab value="#585d7b"/>
@@ -348,6 +348,12 @@
 		<reference_ch_2 value="#21936d"/>
 		<reference_ch_1_dark value="#00626b"/>
 		<reference_ch_2_dark value="#136449"/>
+
+		<!-- ListBoxItem colors -->
+		<LBI_act value="#464855"/>
+		<LBI_hov value="#575869"/>
+		<LBI_sel value="#373944"/>
+		<LBI_sel_hov value="#606173"/>
 	</colors>
 
 	<!-- Root style -->
@@ -423,6 +429,15 @@
 
 	<style class="AudioFolder::Inctive" parents="ListBox">
 		<bg.color value="bg_graph"/>
+	</style>
+
+	<style class="AudioFolder::ListBoxItem::Active" parents="ListBoxItem">
+		<bg.color value="LBI_act"/>
+		<bg.selected.color value="LBI_act"/>
+		<text.color value="text_sec"/>
+		<text.hover.color value="text_sec"/>
+		<text.selected.color value="text_sec"/>
+		<text.selected.hover.color value="text_sec"/>
 	</style>
 
 	<style class="AudioNavigator::Active" parents="Button">
@@ -1485,7 +1500,7 @@
 	<style class="Indicator" parents="root">
 		<color value="ind_col"/>
 		<text.color value="ind_text"/>
-		<modern value="true"/>
+		<type value="modern"/>
 		<text.dark value="false"/>
 		<bg.inherit value="true"/>
 	</style>
@@ -1650,11 +1665,13 @@
 		<padding.top value="4"/>
 		<padding.bottom value="4"/>
 		<bg.color value="bg_light"/>
-		<bg.selected.color value="border_color"/>
-		<bg.hover.color value="dark_gray"/>
+		<bg.hover.color value="LBI_hov"/>
+		<bg.selected.color value="LBI_sel"/>
+		<bg.selected.hover.color value="LBI_sel_hov"/>
 		<text.color value="text_prim"/>
 		<text.hover.color value="text_sec"/>
 		<text.selected.color value="text_sec"/>
+		<text.selected.hover.color value="text_sec"/>
 	</style>
 
 	<style class="Menu" parents="root">
@@ -1793,16 +1810,20 @@
 
 	<style class="Tab" parents="root">
 		<color value="bg_schema"/>
-		<selected.color value="bg_name"/>
 		<hover.color value="bg_name"/>
+		<selected.color value="bg_name"/>
+		<selected.hover.color value="bg_name"/>
 
 		<border.color value="#888888"/>
-		<border.selected.color value="#000000"/>
 		<border.hover.color value="#eeeeee"/>
+		<border.selected.color value="#000000"/>
+		<border.selected.hover.color value="#000000"/>
 
 		<text.color value="text_tab"/>
-		<text.selected.color value="text_group"/>
 		<text.hover.color value="text_prim"/>
+		<text.selected.color value="text_group"/>
+		<text.selected.hover.color value="text_group"/>
+
 		<text.padding.left value="6"/>
 		<text.padding.right value="6"/>
 		<text.padding.top value="2"/>
