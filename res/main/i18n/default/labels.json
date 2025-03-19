@@ -326,7 +326,11 @@
 		"treble": "Treble"
 	},
 
-	"frequency": "Frequency",
+	"frequency": {
+		"": "Frequency",
+		"max": "Max",
+		"min": "Min"
+	},
 	"freq_gain": "Freq, Gain",
 	"freq_gain:hz_db": "Freq, Gain\n(Hz, dB)",
 	
