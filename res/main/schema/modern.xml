@@ -1783,6 +1783,16 @@
 		<y.color value="area3d_y"/>
 		<z.color value="area3d_z"/>
 	</style>
+	
+	<style class="Overlay" parents="root">
+		<visible value="false" />
+		<transparency value="0.1"/>
+		<border.size value="2" />
+		<border.radius value="0" />
+		<border.rounding value="" />
+		<border.color value="black" />
+		<close.auto value="true" />
+	</style>
 
 	<style class="ProgressBar" parents="root">
 		<border.radius value="0"/>
