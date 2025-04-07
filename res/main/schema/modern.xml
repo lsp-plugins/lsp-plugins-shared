@@ -1793,6 +1793,9 @@
 		<border.radius value="0" />
 		<border.rounding value="" />
 		<border.color value="black" />
+		<shadow.start value="black" />
+		<shadow.end value="black" />
+		<shadow.size value="24" />
 		<close.auto value="true" />
 	</style>
 

@@ -1803,6 +1803,9 @@
 		<border.radius value="11" />
 		<border.rounding value="lb,rt,rb" />
 		<border.color value="black" />
+		<shadow.start value="black" />
+		<shadow.end value="black" />
+		<shadow.size value="24" />
 		<close.auto value="true" />
 	</style>
 
