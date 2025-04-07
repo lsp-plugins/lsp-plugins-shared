@@ -1788,8 +1788,8 @@
 	
 	<style class="Overlay" parents="root">
 		<visible value="false" />
-		<transparency value="0.1"/>
-		<border.size value="2" />
+		<transparency value="0"/>
+		<border.size value="0" />
 		<border.radius value="0" />
 		<border.rounding value="" />
 		<border.color value="black" />
