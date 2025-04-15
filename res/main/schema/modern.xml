@@ -360,7 +360,13 @@
 	<root>
 		<size.scaling value="1.0"/>
 		<lang value="us"/>
+		
 		<bg.color value="bg"/>
+		
+		<inactive.brightness value="0.75"/>
+		<inactive.bg.color value="bg"/>
+		<inactive.bg.brightness value="1.0"/>
+		
 		<font.name value="noto-sans-display"/>
 		<font.antialiasing value="true"/>
 		<font.size value="12.0"/>
@@ -621,11 +627,7 @@
 		<inactive.text.down.color value="text_prim"/>
 		<inactive.text.down.hover.color value="text_sec"/>
 
-		<inactive.bright value="0.75"/>
-		<inactive.bg.bright value="1.0"/>
 		<inactive.editable value="false"/>
-		<inactive.bg.color value="red"/>
-
 	</style>
 
 	<style class="Button_gray" parents="Button">
@@ -1545,9 +1547,6 @@
 		<inactive.scale.color value="kscale_inactive"/>
 		<inactive.color value="kcap"/>
 		<inactive.tip.color value="text_group"/>
-		<inactive.bright value="0.75"/>
-		<inactive.bg.bright value="0.75"/>
-		<inactive.bg.color value="bg_schema"/>
 	</style>
 
 	<style class="Knob_meter_threshold" parents="Knob">
