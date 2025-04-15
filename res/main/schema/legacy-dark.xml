@@ -1538,6 +1538,13 @@
 		<hole.color value="black"/>
 		<scale.marks value="true"/>
 		<pointer value="hand"/>
+
+		<inactive.scale.color value="kscale_inactive"/>
+		<inactive.color value="kcap"/>
+		<inactive.tip.color value="bg"/>
+		<inactive.bright value="0.75"/>
+		<inactive.bg.bright value="1.0"/>
+		<inactive.bg.color value="bg_schema"/>
 	</style>
 
 	<style class="Knob_meter_threshold" parents="Knob">
@@ -1795,7 +1802,7 @@
 		<y.color value="area3d_y"/>
 		<z.color value="area3d_z"/>
 	</style>
-	
+
 	<style class="Overlay" parents="root">
 		<visible value="false" />
 		<transparency value="0"/>
