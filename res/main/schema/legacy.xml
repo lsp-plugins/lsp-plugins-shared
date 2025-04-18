@@ -371,6 +371,9 @@
 		<LBI_hov value="#cccccc"/>
 		<LBI_sel value="#ebecee"/>
 		<LBI_sel_hov value="#ebecee"/>
+
+		<!-- Overlay -->
+		<overlay_shadow value="#000000"/>
 	</colors>
 
 	<!-- Root style -->
@@ -1814,8 +1817,8 @@
 		<border.radius value="11" />
 		<border.rounding value="lb,rt,rb" />
 		<border.color value="black" />
-		<shadow.start value="black" />
-		<shadow.end value="black" />
+		<shadow.start value="overlay_shadow" />
+		<shadow.end value="overlay_shadow" />
 		<shadow.size value="24" />
 		<close.auto value="true" />
 	</style>

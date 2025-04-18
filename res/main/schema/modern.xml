@@ -354,19 +354,22 @@
 		<LBI_hov value="#575869"/>
 		<LBI_sel value="#373944"/>
 		<LBI_sel_hov value="#606173"/>
+
+		<!-- Overlay -->
+		<overlay_shadow avalue="#88000000"/>
 	</colors>
 
 	<!-- Root style -->
 	<root>
 		<size.scaling value="1.0"/>
 		<lang value="us"/>
-		
+
 		<bg.color value="bg"/>
-		
+
 		<inactive.brightness value="0.75"/>
 		<inactive.bg.color value="bg"/>
 		<inactive.bg.brightness value="1.0"/>
-		
+
 		<font.name value="noto-sans-display"/>
 		<font.antialiasing value="true"/>
 		<font.size value="12.0"/>
@@ -1817,8 +1820,8 @@
 		<border.radius value="0" />
 		<border.rounding value="" />
 		<border.color value="black" />
-		<shadow.start value="black" />
-		<shadow.end value="black" />
+		<shadow.start value="overlay_shadow" />
+		<shadow.end value="overlay_shadow" />
 		<shadow.size value="24" />
 		<close.auto value="true" />
 	</style>
