@@ -1822,6 +1822,7 @@
 		<border.color value="black" />
 		<shadow.start value="overlay_shadow" />
 		<shadow.end value="overlay_shadow" />
+		<padding value="24" />
 		<shadow.size value="24" />
 		<close.auto value="true" />
 	</style>
