@@ -1820,10 +1820,14 @@
 		<border.radius value="0" />
 		<border.rounding value="" />
 		<border.color value="black" />
+		<shadow.size value="24" />
+		<shadow.radius value="8" />
+		<shadow.rounding value="lt,rt,lb,rb" />
 		<shadow.start value="overlay_shadow" />
 		<shadow.end value="overlay_shadow" />
 		<padding value="24" />
-		<shadow.size value="24" />
+		<ipadding.top value="4" />
+		<ipadding.bottom value="4" />
 		<close.auto value="true" />
 	</style>
 

@@ -1817,9 +1817,14 @@
 		<border.radius value="11" />
 		<border.rounding value="lb,rt,rb" />
 		<border.color value="black" />
+		<shadow.size value="24" />
+		<shadow.radius value="8" />
+		<shadow.rounding value="lt" />
 		<shadow.start value="overlay_shadow" />
 		<shadow.end value="overlay_shadow" />
-		<shadow.size value="24" />
+		<padding value="24" />
+		<ipadding.top value="4" />
+		<ipadding.bottom value="4" />
 		<close.auto value="true" />
 	</style>
 
