@@ -1823,8 +1823,7 @@
 		<shadow.start value="overlay_shadow" />
 		<shadow.end value="overlay_shadow" />
 		<padding value="24" />
-		<ipadding.top value="4" />
-		<ipadding.bottom value="4" />
+		<ipadding value="0" />
 		<close.auto value="true" />
 	</style>
 
