@@ -121,7 +121,7 @@
 
 		<!-- Knob -->
 		<kscale value="#239db5"/>
-		<kscale_inactive value="#4b666d"/>
+		<kscale_inactive value="#6f7185"/>
 		<kcap value="#3b3d49"/>
 
 		<!-- Led -->
@@ -571,6 +571,10 @@
 
 	<style class="Box" parents="root">
 		<bg.inherit value="true"/>
+		<bg.color value="bg_schema"/>
+		<inactive.bright value="0.75"/>
+		<inactive.bg.bright value="1.0"/>
+		<inactive.bg.color value="bg_schema"/>
 	</style>
 
 	<style class="Bevel_cycle" parents="root">
@@ -624,6 +628,27 @@
 		<text.padding.left value="4"/>
 		<text.padding.right value="4"/>
 
+		<bg.color value="bg_schema"/>
+
+		<inactive.border.color value="bg_name"/>
+		<inactive.border.hover.color value="bright_gray"/>
+		<inactive.border.down.color value="bright_cyan"/>
+		<inactive.border.down.hover.color value="cyan"/>
+
+		<inactive.color value="bg_light"/>
+		<inactive.hover.color value="bg_name"/>
+		<inactive.down.color value="dark_cyan"/>
+		<inactive.down.hover.color value="dark_cyan"/>
+
+		<inactive.text.color value="text_prim"/>
+		<inactive.text.hover.color value="text_sec"/>
+		<inactive.text.down.color value="bright_cyan"/>
+		<inactive.text.down.hover.color value="bright_cyan"/>
+
+		<inactive.bright value="0.75"/>
+		<inactive.bg.bright value="1.0"/>
+		<inactive.bg.color value="bg_schema"/>
+		<inactive.bg.inherit value="true"/>
 	</style>
 
 	<style class="Button_gray" parents="Button">
@@ -1542,6 +1567,8 @@
 		<scale.marks value="true"/>
 		<pointer value="hand"/>
 
+		<bg.color value="bg_schema"/>
+
 		<inactive.scale.color value="kscale_inactive"/>
 		<inactive.color value="kcap"/>
 		<inactive.tip.color value="bg"/>
@@ -1569,6 +1596,13 @@
 		<allocation.hfill value="false"/>
 		<allocation.vfill value="false"/>
 		<bg.inherit value="true"/>
+
+		<bg.color value="bg_schema"/>
+
+		<inactive.text.color value="text_sec"/>
+		<inactive.bright value="0.75"/>
+		<inactive.bg.bright value="1.0"/>
+		<inactive.bg.color value="bg_schema"/>
 	</style>
 
 	<style class="LedMeter" parents="root">
@@ -1615,6 +1649,16 @@
 		<round value="true"/>
 		<gradient value="false"/>
 		<hole value="false"/>
+
+		<bg.color value="bg_schema"/>
+
+		<inactive.color value="led_c"/>
+		<inactive.led.color value="led_l"/>
+		<inactive.border.color value="led_bc"/>
+		<inactive.led.border.color value="led_bl"/>
+		<inactive.bright value="0.75"/>
+		<inactive.bg.bright value="1.0"/>
+		<inactive.bg.color value="bg_schema"/>
 	</style>
 
 	<style class="Led_red" parents="root">

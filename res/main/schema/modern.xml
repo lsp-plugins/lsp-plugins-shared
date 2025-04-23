@@ -118,7 +118,7 @@
 
 		<!-- Knob -->
 		<kscale value="#3496ab"/>
-		<kscale_inactive value="#4b666d"/>
+		<kscale_inactive value="#6f7185"/>
 		<kcap value="#1b1c22"/>
 
 		<!-- Led -->
@@ -563,6 +563,10 @@
 
 	<style class="Box" parents="root">
 		<bg.inherit value="true"/>
+		<bg.color value="bg_schema"/>
+		<inactive.bright value="0.75"/>
+		<inactive.bg.bright value="0.75"/>
+		<inactive.bg.color value="bg_schema"/>
 	</style>
 
 	<style class="Bevel_cycle" parents="root">
@@ -615,6 +619,8 @@
 		<text.padding.left value="4"/>
 		<text.padding.right value="4"/>
 
+		<bg.color value="bg_schema"/>
+
 		<inactive.border.color value="bg_name"/>
 		<inactive.border.hover.color value="bright_gray"/>
 		<inactive.border.down.color value="bg_name"/>
@@ -630,7 +636,10 @@
 		<inactive.text.down.color value="text_prim"/>
 		<inactive.text.down.hover.color value="text_sec"/>
 
-		<inactive.editable value="false"/>
+		<inactive.bright value="0.75"/>
+		<inactive.bg.bright value="0.75"/>
+		<inactive.bg.color value="bg_schema"/>
+		<inactive.bg.inherit value="true"/>
 	</style>
 
 	<style class="Button_gray" parents="Button">
@@ -1547,9 +1556,14 @@
 		<balance.tip.size value="2"/>
 		<pointer value="hand"/>
 
+		<bg.color value="bg_schema"/>
+
 		<inactive.scale.color value="kscale_inactive"/>
 		<inactive.color value="kcap"/>
 		<inactive.tip.color value="text_group"/>
+		<inactive.bright value="0.75"/>
+		<inactive.bg.bright value="0.75"/>
+		<inactive.bg.color value="bg_schema"/>
 	</style>
 
 	<style class="Knob_meter_threshold" parents="Knob">
@@ -1571,6 +1585,13 @@
 		<allocation.hfill value="false"/>
 		<allocation.vfill value="false"/>
 		<bg.inherit value="true"/>
+
+		<bg.color value="bg_schema"/>
+
+		<inactive.text.color value="text_sec"/>
+		<inactive.bright value="0.75"/>
+		<inactive.bg.bright value="0.75"/>
+		<inactive.bg.color value="bg_schema"/>
 	</style>
 
 	<style class="LedMeter" parents="root">
@@ -1617,6 +1638,16 @@
 		<round value="false"/>
 		<gradient value="false"/>
 		<hole value="false"/>
+
+		<bg.color value="bg_schema"/>
+
+		<inactive.color value="led_c"/>
+		<inactive.led.color value="led_l"/>
+		<inactive.border.color value="led_bc"/>
+		<inactive.led.border.color value="led_bl"/>
+		<inactive.bright value="0.75"/>
+		<inactive.bg.bright value="0.75"/>
+		<inactive.bg.color value="bg_schema"/>
 	</style>
 
 	<style class="Led_red" parents="root">
@@ -1814,20 +1845,20 @@
 	</style>
 
 	<style class="Overlay" parents="root">
-		<visible value="false" />
+		<visible value="false"/>
 		<transparency value="0"/>
-		<border.size value="0" />
-		<border.radius value="0" />
-		<border.rounding value="" />
-		<border.color value="black" />
-		<shadow.size value="24" />
-		<shadow.radius value="8" />
-		<shadow.rounding value="lt,rt,lb,rb" />
-		<shadow.start value="overlay_shadow" />
-		<shadow.end value="overlay_shadow" />
-		<padding value="24" />
-		<ipadding value="0" />
-		<close.auto value="true" />
+		<border.size value="0"/>
+		<border.radius value="0"/>
+		<border.rounding value=""/>
+		<border.color value="black"/>
+		<shadow.size value="24"/>
+		<shadow.radius value="8"/>
+		<shadow.rounding value="lt,rt,lb,rb"/>
+		<shadow.start value="overlay_shadow"/>
+		<shadow.end value="overlay_shadow"/>
+		<padding value="24"/>
+		<ipadding value="0"/>
+		<close.auto value="true"/>
 	</style>
 
 	<style class="ProgressBar" parents="root">
