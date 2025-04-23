@@ -564,8 +564,8 @@
 	<style class="Box" parents="root">
 		<bg.inherit value="true"/>
 		<bg.color value="bg_schema"/>
-		<inactive.bright value="0.75"/>
-		<inactive.bg.bright value="0.75"/>
+		<inactive.brightness value="0.75"/>
+		<inactive.bg.brightness value="0.75"/>
 		<inactive.bg.color value="bg_schema"/>
 	</style>
 
@@ -636,8 +636,8 @@
 		<inactive.text.down.color value="text_prim"/>
 		<inactive.text.down.hover.color value="text_sec"/>
 
-		<inactive.bright value="0.75"/>
-		<inactive.bg.bright value="0.75"/>
+		<inactive.brightness value="0.75"/>
+		<inactive.bg.brightness value="0.75"/>
 		<inactive.bg.color value="bg_schema"/>
 		<inactive.bg.inherit value="true"/>
 	</style>
@@ -1561,8 +1561,8 @@
 		<inactive.scale.color value="kscale_inactive"/>
 		<inactive.color value="kcap"/>
 		<inactive.tip.color value="text_group"/>
-		<inactive.bright value="0.75"/>
-		<inactive.bg.bright value="0.75"/>
+		<inactive.brightness value="0.75"/>
+		<inactive.bg.brightness value="0.75"/>
 		<inactive.bg.color value="bg_schema"/>
 	</style>
 
@@ -1589,8 +1589,8 @@
 		<bg.color value="bg_schema"/>
 
 		<inactive.text.color value="text_sec"/>
-		<inactive.bright value="0.75"/>
-		<inactive.bg.bright value="0.75"/>
+		<inactive.brightness value="0.75"/>
+		<inactive.bg.brightness value="0.75"/>
 		<inactive.bg.color value="bg_schema"/>
 	</style>
 
@@ -1645,8 +1645,8 @@
 		<inactive.led.color value="led_l"/>
 		<inactive.border.color value="led_bc"/>
 		<inactive.led.border.color value="led_bl"/>
-		<inactive.bright value="0.75"/>
-		<inactive.bg.bright value="0.75"/>
+		<inactive.brightness value="0.75"/>
+		<inactive.bg.brightness value="0.75"/>
 		<inactive.bg.color value="bg_schema"/>
 	</style>
 
