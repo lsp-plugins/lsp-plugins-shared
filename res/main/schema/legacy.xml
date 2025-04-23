@@ -1605,6 +1605,7 @@
 
 		<bg.color value="bg_schema"/>
 
+		<inactive.text.color value="text_sec"/>
 		<inactive.bright value="0.75"/>
 		<inactive.bg.bright value="1.0"/>
 		<inactive.bg.color value="bg_schema"/>
@@ -1854,20 +1855,20 @@
 	</style>
 
 	<style class="Overlay" parents="root">
-		<visible value="false" />
+		<visible value="false"/>
 		<transparency value="0"/>
-		<border.size value="0" />
-		<border.radius value="11" />
-		<border.rounding value="lb,rt,rb" />
-		<border.color value="black" />
-		<shadow.size value="24" />
-		<shadow.radius value="8" />
-		<shadow.rounding value="lt" />
-		<shadow.start value="overlay_shadow" />
-		<shadow.end value="overlay_shadow" />
-		<padding value="24" />
-		<ipadding value="0" />
-		<close.auto value="true" />
+		<border.size value="0"/>
+		<border.radius value="11"/>
+		<border.rounding value="lb,rt,rb"/>
+		<border.color value="black"/>
+		<shadow.size value="24"/>
+		<shadow.radius value="8"/>
+		<shadow.rounding value="lt"/>
+		<shadow.start value="overlay_shadow"/>
+		<shadow.end value="overlay_shadow"/>
+		<padding value="24"/>
+		<ipadding value="0"/>
+		<close.auto value="true"/>
 	</style>
 
 	<style class="ProgressBar" parents="root">
