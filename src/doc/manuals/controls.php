@@ -26,6 +26,7 @@
 	<li><a href="#Label"><b>Label</b></a> &ndash; label with text information.</li>
 	<li><a href="#Led"><b>Led</b></a> &ndash; LED.</li>
 	<li><a href="#Meter"><b>Meter</b></a> &ndash; metering control.</li>
+	<li><a href="#Overlay"><b>Overlay</b></a> &ndash; widget container.</li>
 	<li><a href="#Parameter"><b>Parameter</b></a> &ndash; the value of controllable parameter.</li>
 	<li><a href="#ProgressBar"><b>Progress Bar</b></a> &ndash; progress control.</li>
 	<li><a href="#SampleEditor"><b>Sample Editor</b></a> &ndash; sample editor.</li>
@@ -481,6 +482,17 @@
 	<div class="images">
 		<img style="margin-right:10px;" src="<?= $CTL ?>meter_mono.png">
 		<img  src="<?= $CTL ?>meter_stereo.png">
+	</div>
+</section>
+
+<section id="Overlay">
+	<h2>Overlay</h2>
+	<p>Overlays are special widget containers designed to hide rarely used controls from regular user while
+	keeping the power, functionality and flexibility of the plugin. These widget allow to show on demand set
+	of additional controls laying on the top of plugin's window. Usually it is done by special button.<p>
+	<p style="text-align:center">Example of overlay:</p>
+	<div class="images">
+		<img style="margin-right:10px;" src="<?= $CTL ?>overlay.png">
 	</div>
 </section>
 
