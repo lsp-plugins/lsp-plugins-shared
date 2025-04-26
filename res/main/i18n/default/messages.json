@@ -3,6 +3,7 @@
 		"copyright": "(C) {@meta_pkg_copyright} 2015-2025.",
 		"description": "This is a collection of open-source audio plugins.",
 		"info": {
+			"ui_graphics_library": "UI Graphics:",
 			"pkg_name": "Package name:",
 			"pkg_version": "Package version:",
 			"plug_format": "Plugin format:",
@@ -10,6 +11,7 @@
 			"plug_version": "Plugin version:"
 		},
 		"values": {
+			"ui_graphics_library": "{@meta_ui_graphics_library}",
 			"pkg_name": "{@meta_pkg_artifact_name}",
 			"pkg_version": "{@meta_pkg_version}",
 			"plug_format": "{@meta_plugin_format}",
