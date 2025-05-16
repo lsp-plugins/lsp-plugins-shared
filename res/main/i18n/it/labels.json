@@ -244,7 +244,11 @@
 		"treble": "Alti"
 	},
 	
-	"frequency": "Frequenza",
+	"frequency": {
+		"": "Frequenza",
+		"max": "Max",
+		"min": "Min"
+	},
 	"freq_gain": "Freq, Guadagno",
 	"freq_gain:hz_db": "Freq, Guadagno\n(Hz, dB)",
 	

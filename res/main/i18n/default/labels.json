@@ -326,7 +326,11 @@
 		"treble": "Treble"
 	},
 
-	"frequency": "Frequency",
+	"frequency": {
+		"": "Frequency",
+		"max": "Max",
+		"min": "Min"
+	},
 	"freq_gain": "Freq, Gain",
 	"freq_gain:hz_db": "Freq, Gain\n(Hz, dB)",
 	
@@ -745,6 +749,7 @@
 		"clip": "Clip",
 		"clipping": "Clipping",
 		"curr_ent": "Curr",
+		"drive": "Drive",
 		"dry": "Dry",
 		"dry:db": "Dry\n(dB)",
 		"dry_pan": "Dry pan",

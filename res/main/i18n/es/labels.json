@@ -209,7 +209,11 @@
 		"treble": "Agudos"
 	},
 	
-	"frequency": "Frecuencia",
+	"frequency": {
+		"": "Frecuencia",
+		"max": "Max",
+		"min": "Min"
+	},
 	"freq_gain:hz_db": "Frec, Ganancia\n(Hz, dB)",
 	
 	"gain": "Ganancia",

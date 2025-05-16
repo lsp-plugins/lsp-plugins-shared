@@ -121,7 +121,7 @@
 
 		<!-- Knob -->
 		<kscale value="#239db5"/>
-		<kscale_inactive value="#4b666d"/>
+		<kscale_inactive value="#6f7185"/>
 		<kcap value="#3b3d49"/>
 
 		<!-- Led -->
@@ -368,6 +368,9 @@
 		<LBI_hov value="#575869"/>
 		<LBI_sel value="#373944"/>
 		<LBI_sel_hov value="#606173"/>
+
+		<!-- Overlay -->
+		<overlay_shadow avalue="#88000000"/>
 	</colors>
 
 	<!-- Root style -->
@@ -568,6 +571,10 @@
 
 	<style class="Box" parents="root">
 		<bg.inherit value="true"/>
+		<bg.color value="bg_schema"/>
+		<inactive.brightness value="0.75"/>
+		<inactive.bg.brightness value="1.0"/>
+		<inactive.bg.color value="bg_schema"/>
 	</style>
 
 	<style class="Bevel_cycle" parents="root">
@@ -621,6 +628,27 @@
 		<text.padding.left value="4"/>
 		<text.padding.right value="4"/>
 
+		<bg.color value="bg_schema"/>
+
+		<inactive.border.color value="bg_name"/>
+		<inactive.border.hover.color value="bright_gray"/>
+		<inactive.border.down.color value="bright_cyan"/>
+		<inactive.border.down.hover.color value="cyan"/>
+
+		<inactive.color value="bg_light"/>
+		<inactive.hover.color value="bg_name"/>
+		<inactive.down.color value="dark_cyan"/>
+		<inactive.down.hover.color value="dark_cyan"/>
+
+		<inactive.text.color value="text_prim"/>
+		<inactive.text.hover.color value="text_sec"/>
+		<inactive.text.down.color value="bright_cyan"/>
+		<inactive.text.down.hover.color value="bright_cyan"/>
+
+		<inactive.brightness value="0.75"/>
+		<inactive.bg.brightness value="1.0"/>
+		<inactive.bg.color value="bg_schema"/>
+		<inactive.bg.inherit value="true"/>
 	</style>
 
 	<style class="Button_gray" parents="Button">
@@ -633,6 +661,16 @@
 		<border.down.color value="bright_gray"/>
 		<border.down.hover.color value="gray"/>
 		<led.color value="gray"/>
+
+		<inactive.down.color value="dark_gray"/>
+		<inactive.down.hover.color value="dark_gray"/>
+
+		<inactive.text.down.color value="bright_gray"/>
+		<inactive.text.down.hover.color value="bright_gray"/>
+
+		<inactive.border.down.color value="bright_gray"/>
+		<inactive.border.down.hover.color value="gray"/>
+		<inactive.led.color value="gray"/>
 	</style>
 
 	<style class="Button_inactive" parents="Button">
@@ -645,6 +683,16 @@
 		<border.down.color value="gray"/>
 		<border.down.hover.color value="dark_gray"/>
 		<led.color value="dark_gray"/>
+
+		<inactive.down.color value="darker_gray"/>
+		<inactive.down.hover.color value="darker_gray"/>
+
+		<inactive.text.down.color value="gray"/>
+		<inactive.text.down.hover.color value="gray"/>
+
+		<inactive.border.down.color value="gray"/>
+		<inactive.border.down.hover.color value="dark_gray"/>
+		<inactive.led.color value="dark_gray"/>
 	</style>
 
 	<style class="Button_red" parents="Button">
@@ -657,6 +705,16 @@
 		<border.down.color value="bright_red"/>
 		<border.down.hover.color value="red"/>
 		<led.color value="red"/>
+
+		<inactive.down.color value="dark_red"/>
+		<inactive.down.hover.color value="dark_red"/>
+
+		<inactive.text.down.color value="bright_red"/>
+		<inactive.text.down.hover.color value="bright_red"/>
+
+		<inactive.border.down.color value="bright_red"/>
+		<inactive.border.down.hover.color value="red"/>
+		<inactive.led.color value="red"/>
 	</style>
 
 	<style class="Button_orange" parents="Button">
@@ -669,6 +727,16 @@
 		<border.down.color value="bright_orange"/>
 		<border.down.hover.color value="orange"/>
 		<led.color value="orange"/>
+
+		<inactive.down.color value="dark_orange"/>
+		<inactive.down.hover.color value="dark_orange"/>
+
+		<inactive.text.down.color value="bright_orange"/>
+		<inactive.text.down.hover.color value="bright_orange"/>
+
+		<inactive.border.down.color value="bright_orange"/>
+		<inactive.border.down.hover.color value="orange"/>
+		<inactive.led.color value="orange"/>
 	</style>
 
 	<style class="Button_yellow" parents="Button">
@@ -681,6 +749,16 @@
 		<border.down.color value="bright_yellow"/>
 		<border.down.hover.color value="yellow"/>
 		<led.color value="yellow"/>
+
+		<inactive.down.color value="dark_yellow"/>
+		<inactive.down.hover.color value="dark_yellow"/>
+
+		<inactive.text.down.color value="bright_yellow"/>
+		<inactive.text.down.hover.color value="bright_yellow"/>
+
+		<inactive.border.down.color value="bright_yellow"/>
+		<inactive.border.down.hover.color value="yellow"/>
+		<inactive.led.color value="yellow"/>
 	</style>
 
 	<style class="Button_green" parents="Button">
@@ -693,6 +771,16 @@
 		<border.down.color value="bright_green"/>
 		<border.down.hover.color value="green"/>
 		<led.color value="green"/>
+
+		<inactive.down.color value="dark_green"/>
+		<inactive.down.hover.color value="dark_green"/>
+
+		<inactive.text.down.color value="bright_green"/>
+		<inactive.text.down.hover.color value="bright_green"/>
+
+		<inactive.border.down.color value="bright_green"/>
+		<inactive.border.down.hover.color value="green"/>
+		<inactive.led.color value="green"/>
 	</style>
 
 	<style class="Button_cyan" parents="Button">
@@ -704,9 +792,17 @@
 
 		<border.down.color value="bright_cyan"/>
 		<border.down.hover.color value="cyan"/>
-
 		<led.color value="cyan"/>
 
+		<inactive.down.color value="dark_cyan"/>
+		<inactive.down.hover.color value="dark_cyan"/>
+
+		<inactive.text.down.color value="bright_cyan"/>
+		<inactive.text.down.hover.color value="bright_cyan"/>
+
+		<inactive.border.down.color value="bright_cyan"/>
+		<inactive.border.down.hover.color value="cyan"/>
+		<inactive.led.color value="cyan"/>
 	</style>
 
 	<style class="Button_blue" parents="Button">
@@ -718,6 +814,17 @@
 
 		<border.down.color value="bright_blue"/>
 		<border.down.hover.color value="blue"/>
+		<led.color value="blue"/>
+
+		<inactive.down.color value="dark_blue"/>
+		<inactive.down.hover.color value="dark_blue"/>
+
+		<inactive.text.down.color value="bright_blue"/>
+		<inactive.text.down.hover.color value="bright_blue"/>
+
+		<inactive.border.down.color value="bright_blue"/>
+		<inactive.border.down.hover.color value="blue"/>
+		<inactive.led.color value="blue"/>
 	</style>
 
 	<style class="Button_violet" parents="Button">
@@ -730,6 +837,16 @@
 		<border.down.color value="bright_violet"/>
 		<border.down.hover.color value="violet"/>
 		<led.color value="violet"/>
+
+		<inactive.down.color value="dark_violet"/>
+		<inactive.down.hover.color value="dark_violet"/>
+
+		<inactive.text.down.color value="bright_violet"/>
+		<inactive.text.down.hover.color value="bright_violet"/>
+
+		<inactive.border.down.color value="bright_violet"/>
+		<inactive.border.down.hover.color value="violet"/>
+		<inactive.led.color value="violet"/>
 	</style>
 
 	<style class="Button_magenta" parents="Button">
@@ -742,6 +859,16 @@
 		<border.down.color value="bright_magenta"/>
 		<border.down.hover.color value="magenta"/>
 		<led.color value="magenta"/>
+
+		<inactive.down.color value="dark_magenta"/>
+		<inactive.down.hover.color value="dark_magenta"/>
+
+		<inactive.text.down.color value="bright_magenta"/>
+		<inactive.text.down.hover.color value="bright_magenta"/>
+
+		<inactive.border.down.color value="bright_magenta"/>
+		<inactive.border.down.hover.color value="magenta"/>
+		<inactive.led.color value="magenta"/>
 	</style>
 
 	<style class="Button_mono" parents="Button">
@@ -754,6 +881,16 @@
 		<border.down.color value="bright_red"/>
 		<border.down.hover.color value="red"/>
 		<led.color value="red"/>
+
+		<inactive.down.color value="dark_red"/>
+		<inactive.down.hover.color value="dark_red"/>
+
+		<inactive.text.down.color value="bright_red"/>
+		<inactive.text.down.hover.color value="bright_red"/>
+
+		<inactive.border.down.color value="bright_red"/>
+		<inactive.border.down.hover.color value="red"/>
+		<inactive.led.color value="red"/>
 	</style>
 
 	<style class="Button_left" parents="Button">
@@ -766,6 +903,16 @@
 		<border.down.color value="bright_red"/>
 		<border.down.hover.color value="red"/>
 		<led.color value="red"/>
+
+		<inactive.down.color value="dark_red"/>
+		<inactive.down.hover.color value="dark_red"/>
+
+		<inactive.text.down.color value="bright_red"/>
+		<inactive.text.down.hover.color value="bright_red"/>
+
+		<inactive.border.down.color value="bright_red"/>
+		<inactive.border.down.hover.color value="red"/>
+		<inactive.led.color value="red"/>
 	</style>
 
 	<style class="Button_right" parents="Button">
@@ -778,6 +925,16 @@
 		<border.down.color value="bright_blue"/>
 		<border.down.hover.color value="blue"/>
 		<led.color value="blue"/>
+
+		<inactive.down.color value="dark_blue"/>
+		<inactive.down.hover.color value="dark_blue"/>
+
+		<inactive.text.down.color value="bright_blue"/>
+		<inactive.text.down.hover.color value="bright_blue"/>
+
+		<inactive.border.down.color value="bright_blue"/>
+		<inactive.border.down.hover.color value="blue"/>
+		<inactive.led.color value="blue"/>
 	</style>
 
 	<style class="Button_side" parents="Button">
@@ -790,6 +947,16 @@
 		<border.down.color value="bright_green"/>
 		<border.down.hover.color value="green"/>
 		<led.color value="green"/>
+
+		<inactive.down.color value="dark_green"/>
+		<inactive.down.hover.color value="dark_green"/>
+
+		<inactive.text.down.color value="bright_green"/>
+		<inactive.text.down.hover.color value="bright_green"/>
+
+		<inactive.border.down.color value="bright_green"/>
+		<inactive.border.down.hover.color value="green"/>
+		<inactive.led.color value="green"/>
 	</style>
 
 	<style class="Button_mid" parents="Button">
@@ -802,6 +969,16 @@
 		<border.down.color value="bright_cyan"/>
 		<border.down.hover.color value="cyan"/>
 		<led.color value="cyan"/>
+
+		<inactive.down.color value="dark_cyan"/>
+		<inactive.down.hover.color value="dark_cyan"/>
+
+		<inactive.text.down.color value="bright_cyan"/>
+		<inactive.text.down.hover.color value="bright_cyan"/>
+
+		<inactive.border.down.color value="bright_cyan"/>
+		<inactive.border.down.hover.color value="cyan"/>
+		<inactive.led.color value="cyan"/>
 	</style>
 
 	<style class="Button_dry" parents="Button">
@@ -814,6 +991,16 @@
 		<border.down.color value="bright_yellow"/>
 		<border.down.hover.color value="yellow"/>
 		<led.color value="yellow"/>
+
+		<inactive.down.color value="dark_yellow"/>
+		<inactive.down.hover.color value="dark_yellow"/>
+
+		<inactive.text.down.color value="bright_yellow"/>
+		<inactive.text.down.hover.color value="bright_yellow"/>
+
+		<inactive.border.down.color value="bright_yellow"/>
+		<inactive.border.down.hover.color value="yellow"/>
+		<inactive.led.color value="yellow"/>
 	</style>
 
 	<style class="Button_stretch" parents="Button">
@@ -826,6 +1013,16 @@
 		<border.down.color value="#a49851"/>
 		<border.down.hover.color value="#8b8144"/>
 		<led.color value="#8b8144"/>
+
+		<inactive.down.color value="#5e562b"/>
+		<inactive.down.hover.color value="#5e562b"/>
+
+		<inactive.text.down.color value="#a49851"/>
+		<inactive.text.down.hover.color value="#a49851"/>
+
+		<inactive.border.down.color value="#a49851"/>
+		<inactive.border.down.hover.color value="#8b8144"/>
+		<inactive.led.color value="#8b8144"/>
 	</style>
 
 	<style class="Button_loop" parents="Button">
@@ -838,6 +1035,16 @@
 		<border.down.color value="#23b270"/>
 		<border.down.hover.color value="#1b935c"/>
 		<led.color value="#1b935c"/>
+
+		<inactive.down.color value="#0f633c"/>
+		<inactive.down.hover.color value="#0f633c"/>
+
+		<inactive.text.down.color value="#23b270"/>
+		<inactive.text.down.hover.color value="#23b270"/>
+
+		<inactive.border.down.color value="#23b270"/>
+		<inactive.border.down.hover.color value="#1b935c"/>
+		<inactive.led.color value="#1b935c"/>
 	</style>
 
 	<style class="Button_lufs" parents="Button">
@@ -850,6 +1057,16 @@
 		<border.down.color value="#8ab252"/>
 		<border.down.hover.color value="#6c8b40"/>
 		<led.color value="#6c8b40"/>
+
+		<inactive.down.color value="#485d2b"/>
+		<inactive.down.hover.color value="#485d2b"/>
+
+		<inactive.text.down.color value="#8ab252"/>
+		<inactive.text.down.hover.color value="#8ab252"/>
+
+		<inactive.border.down.color value="#8ab252"/>
+		<inactive.border.down.hover.color value="#6c8b40"/>
+		<inactive.led.color value="#6c8b40"/>
 	</style>
 
 	<style class="Button_ref" parents="Button_cyan"></style>
@@ -864,13 +1081,22 @@
 		<border.down.color value="#ee6753"/>
 		<border.down.hover.color value="reference_mix_1"/>
 		<led.color value="reference_mix_1"/>
+
+		<inactive.down.color value="#b13025"/>
+		<inactive.down.hover.color value="#b13025"/>
+
+		<inactive.text.down.color value="#ee6753"/>
+		<inactive.text.down.hover.color value="#ee6753"/>
+
+		<inactive.border.down.color value="#ee6753"/>
+		<inactive.border.down.hover.color value="reference_mix_1"/>
+		<inactive.led.color value="reference_mix_1"/>
 	</style>
 
 	<style class="Button_both" parents="Button_green"></style>
 
 	<style class="Button_ne_left" parents="Button">
 		<color value="dark_red"/>
-
 		<text.color value="bright_red"/>
 
 		<border.color value="bright_red"/>
@@ -883,11 +1109,24 @@
 
 		<border.down.color value="bright_red"/>
 		<border.down.hover.color value="red"/>
+
+		<inactive.color value="dark_red"/>
+		<inactive.text.color value="bright_red"/>
+
+		<inactive.border.color value="bright_red"/>
+		<inactive.led.color value="red"/>
+		<inactive.down.color value="dark_red"/>
+		<inactive.down.hover.color value="dark_red"/>
+
+		<inactive.text.down.color value="bright_red"/>
+		<inactive.text.down.hover.color value="bright_red"/>
+
+		<inactive.border.down.color value="bright_red"/>
+		<inactive.border.down.hover.color value="red"/>
 	</style>
 
 	<style class="Button_ne_right" parents="Button">
 		<color value="dark_blue"/>
-
 		<text.color value="bright_blue"/>
 
 		<border.color value="bright_blue"/>
@@ -900,11 +1139,24 @@
 
 		<border.down.color value="bright_blue"/>
 		<border.down.hover.color value="blue"/>
+
+		<inactive.color value="dark_blue"/>
+		<inactive.text.color value="bright_blue"/>
+
+		<inactive.border.color value="bright_blue"/>
+		<inactive.led.color value="blue"/>
+		<inactive.down.color value="dark_blue"/>
+		<inactive.down.hover.color value="dark_blue"/>
+
+		<inactive.text.down.color value="bright_blue"/>
+		<inactive.text.down.hover.color value="bright_blue"/>
+
+		<inactive.border.down.color value="bright_blue"/>
+		<inactive.border.down.hover.color value="blue"/>
 	</style>
 
 	<style class="Button_ne_side" parents="Button">
 		<color value="dark_green"/>
-
 		<text.color value="bright_green"/>
 
 		<border.color value="bright_green"/>
@@ -918,11 +1170,24 @@
 		<border.down.color value="bright_green"/>
 		<border.down.hover.color value="green"/>
 
+		<inactive.color value="dark_green"/>
+		<inactive.text.color value="bright_green"/>
+
+		<inactive.border.color value="bright_green"/>
+		<inactive.led.color value="green"/>
+		<inactive.down.color value="dark_green"/>
+		<inactive.down.hover.color value="dark_green"/>
+
+		<inactive.text.down.color value="bright_green"/>
+		<inactive.text.down.hover.color value="bright_green"/>
+
+		<inactive.border.down.color value="bright_green"/>
+		<inactive.border.down.hover.color value="green"/>
+
 	</style>
 
 	<style class="Button_ne_mid" parents="Button">
 		<color value="dark_cyan"/>
-
 		<text.color value="bright_cyan"/>
 
 		<border.color value="bright_cyan"/>
@@ -935,11 +1200,24 @@
 
 		<border.down.color value="bright_cyan"/>
 		<border.down.hover.color value="cyan"/>
+
+		<inactive.color value="dark_cyan"/>
+		<inactive.text.color value="bright_cyan"/>
+
+		<inactive.border.color value="bright_cyan"/>
+		<inactive.led.color value="cyan"/>
+		<inactive.down.color value="dark_cyan"/>
+		<inactive.down.hover.color value="dark_cyan"/>
+
+		<inactive.text.down.color value="bright_cyan"/>
+		<inactive.text.down.hover.color value="bright_cyan"/>
+
+		<inactive.border.down.color value="bright_cyan"/>
+		<inactive.border.down.hover.color value="cyan"/>
 	</style>
 
 	<style class="Button_ne_dry" parents="Button">
 		<color value="dark_yellow"/>
-
 		<text.color value="bright_yellow"/>
 
 		<border.color value="bright_yellow"/>
@@ -952,6 +1230,20 @@
 
 		<border.down.color value="bright_yellow"/>
 		<border.down.hover.color value="yellow"/>
+
+		<inactive.color value="dark_yellow"/>
+		<inactive.text.color value="bright_yellow"/>
+
+		<inactive.border.color value="bright_yellow"/>
+		<inactive.led.color value="yellow"/>
+		<inactive.down.color value="dark_yellow"/>
+		<inactive.down.hover.color value="dark_yellow"/>
+
+		<inactive.text.down.color value="bright_yellow"/>
+		<inactive.text.down.hover.color value="bright_yellow"/>
+
+		<inactive.border.down.color value="bright_yellow"/>
+		<inactive.border.down.hover.color value="yellow"/>
 	</style>
 
 	<style class="Button_ne_Cycle" parents="Button_gray_8">
@@ -967,6 +1259,19 @@
 
 		<border.down.color value="bright_red"/>
 		<border.down.hover.color value="red"/>
+
+		<inactive.color value="dark_red"/>
+		<inactive.text.color value="bright_red"/>
+		<inactive.border.color value="bright_red"/>
+		<inactive.led.color value="red"/>
+		<inactive.down.color value="dark_red"/>
+		<inactive.down.hover.color value="dark_red"/>
+
+		<inactive.text.down.color value="bright_red"/>
+		<inactive.text.down.hover.color value="bright_red"/>
+
+		<inactive.border.down.color value="bright_red"/>
+		<inactive.border.down.hover.color value="red"/>
 	</style>
 
 	<style class="Button_gray_8" parents="Button_gray">
@@ -1538,6 +1843,15 @@
 		<hole.color value="black"/>
 		<scale.marks value="true"/>
 		<pointer value="hand"/>
+
+		<bg.color value="bg_schema"/>
+
+		<inactive.scale.color value="kscale_inactive"/>
+		<inactive.color value="kcap"/>
+		<inactive.tip.color value="bg"/>
+		<inactive.brightness value="0.75"/>
+		<inactive.bg.brightness value="1.0"/>
+		<inactive.bg.color value="bg_schema"/>
 	</style>
 
 	<style class="Knob_meter_threshold" parents="Knob">
@@ -1559,6 +1873,13 @@
 		<allocation.hfill value="false"/>
 		<allocation.vfill value="false"/>
 		<bg.inherit value="true"/>
+
+		<bg.color value="bg_schema"/>
+
+		<inactive.text.color value="text_sec"/>
+		<inactive.brightness value="0.75"/>
+		<inactive.bg.brightness value="1.0"/>
+		<inactive.bg.color value="bg_schema"/>
 	</style>
 
 	<style class="LedMeter" parents="root">
@@ -1605,6 +1926,16 @@
 		<round value="true"/>
 		<gradient value="false"/>
 		<hole value="false"/>
+
+		<bg.color value="bg_schema"/>
+
+		<inactive.color value="led_c"/>
+		<inactive.led.color value="led_l"/>
+		<inactive.border.color value="led_bc"/>
+		<inactive.led.border.color value="led_bl"/>
+		<inactive.brightness value="0.75"/>
+		<inactive.bg.brightness value="1.0"/>
+		<inactive.bg.color value="bg_schema"/>
 	</style>
 
 	<style class="Led_red" parents="root">
@@ -1794,6 +2125,23 @@
 		<x.color value="area3d_x"/>
 		<y.color value="area3d_y"/>
 		<z.color value="area3d_z"/>
+	</style>
+
+	<style class="Overlay" parents="root">
+		<visible value="false" />
+		<transparency value="0"/>
+		<border.size value="0" />
+		<border.radius value="11" />
+		<border.rounding value="lb,rt,rb" />
+		<border.color value="black" />
+		<shadow.size value="24" />
+		<shadow.radius value="8" />
+		<shadow.rounding value="lt" />
+		<shadow.start value="overlay_shadow" />
+		<shadow.end value="overlay_shadow" />
+		<padding value="24" />
+		<ipadding value="0" />
+		<close.auto value="true" />
 	</style>
 
 	<style class="ProgressBar" parents="root">

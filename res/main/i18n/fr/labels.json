@@ -231,7 +231,11 @@
 		"treble": "Aigü"
 	},
 	
-	"frequency": "Fréquence",
+	"frequency": {
+		"": "Fréquence",
+		"max": "Max",
+		"min": "Min"
+	},
 	"freq_gain:hz_db": "Fréq, Gain\n(Hz, dB)",
 	
 	"gain": "Gain",

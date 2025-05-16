@@ -2,7 +2,7 @@
 
 <window ui:inject="PluginWindow">
 	<!-- header new -->
-	<vbox spacing="4">
+	<vbox spacing="4" ui:id="plugin_window">
 		<grid rows="3" cols="9" height="44" expand="false" bg.color="bg_schema" >
 			<cell width.min="106" rows="2" cols="1">
 				<hbox>
