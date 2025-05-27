@@ -113,6 +113,7 @@
 		"ediable_knob_scale": "Редактируемые шкалы ручек",		
 		"enable_zoomable_spectrum": "Автоматическое масштабирование графика частот",
 		"file_list_navigation_autoload": "Автоматически загружать файлы при навигации по списку файлов",
+		"file_list_navigation_autoplay": "Автоматически проигрывать файлы при навигации по списку файлов",
 		"filter_point_thickness": "Толщина точек фильтра",
 		"override_hydrogen_kits": "Замещать настройки Hydrogen",
 		"take_instrument_name_from_file": "Получать название инструмента из файла",
