@@ -602,6 +602,15 @@
 
 	"preamp": "Preamp",
 	"predelay": "Pre-delay",
+	"premix": {
+		"": "Pre-mix",
+		"in_to_link": "In -> Link",
+		"in_to_sc": "In -> SC",
+		"link_to_in": "Link -> In",
+		"link_to_sc": "Link -> SC",
+		"sc_to_in": "SC -> In",
+		"sc_to_link": "SC -> Link"
+	},
 	
 	"processing": {
 		"post": "Post",
