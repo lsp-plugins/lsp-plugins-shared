@@ -15,4 +15,4 @@
 
 <p>Currently project is developed and maintained by LSP Project Team with the main founder and developer at the head &ndash; Vladimir Sadovnikov.</p>
 
-<p>The official site ot the project is located here: <a href="https://lsp-plug.in/">https://lsp-plug.in/</a></p>
+<p>The official site for the project is located here: <a href="https://lsp-plug.in/">https://lsp-plug.in/</a></p>

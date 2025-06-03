@@ -33,7 +33,7 @@
 
 <p>
 	All filters are build by using well-known methods of analog filter design (complex polynomials in top and bottom) or directly as digital filters.
-    When the filters are build from analog designs, plugins first of all calculate parameters of ideal analog filter by using Laplace transform and then digitalize
+    When the filters are build from analog designs, plugins first of all calculate parameters of ideal analog filter by using Laplace transform and then digitize
     it by applying analog-to-digital transform also known as Z Transform. Each filter implements it's own set of poles and zeros, the configuration of poles and zeros
     can be controlled by using <b>quality factor</b> and <b>slope parameters</b>.
 </p>
@@ -53,7 +53,7 @@
 	Nyquist Frequency.
 </p>
 <p>
-    Digital filters can also be generated directly in the digital domain, without needing to convert an analog prototype or by using design equations availble in
+    Digital filters can also be generated directly in the digital domain, without needing to convert an analog prototype or by using design equations available in
     literature, often coming from digitalization of canonic analog filter prototypes, but with the advantage of not having to perform digitalization in real-time.
     This is the case of Direct design IIR filters.
 </p>

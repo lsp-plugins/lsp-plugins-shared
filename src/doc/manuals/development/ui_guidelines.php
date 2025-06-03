@@ -27,7 +27,7 @@
 
 <ul>
 	<li>The plugin’s window becomes split into separate blocks, each of them can contain it’s own properties: the color of the background, the padding, the minimal width, etc. The size of paddings, minimal size, etc is counted in nominal pixels.</li>
-	<li>Also block can be built-in into another block. This allows to create more complicated strutures.</li>
+	<li>Also block can be built-in into another block. This allows to create more complicated structures.</li>
 	<li>Blocks can inherit some features of parent blocks. For example, the color of the background.</li>
 	<li>We use tags for the definition of the window structure and location of the blocks.</li>
 </ul>
@@ -61,7 +61,7 @@
 	</div>
 </div>
 <ul>
-	<li>If the structure is more complicated than set of several blocks placed into one single horisontal or vertical line, it is recommended to use grid and place blocks and widgets into separate cells of the grid.</li>
+	<li>If the structure is more complicated than set of several blocks placed into one single horizontal or vertical line, it is recommended to use grid and place blocks and widgets into separate cells of the grid.</li>
 </ul>
 <div class="grid-2col-man">
 	<div class="thc-descr">
@@ -151,12 +151,12 @@
 <div class="images" style="margin: -10px auto 15px auto;">
 	<img class="border" style="max-width: 100%;" src="<?= $CTL ?>/scheme_legacy_dark.png">
 </div>
-<p>One important rule: if some color was added to one shema, it should also be added to other schemas. It is also imporant to check how new added color affects the look of related widgets for these schemas.</p>
+<p>One important rule: if some color was added to one schema, it should also be added to other schemas. It is also important to check how new added color affects the look of related widgets for these schemas.</p>
 
 <h2>Basic color rules and solutions</h2>
 
 <p>In the &quot;MODERN&quot; schema all colors are organized according to the LCH (or HCL) color space which is based on LAB color space. In such color space all colors have perceptual uniformity. That means, that in LCH color space all colors that
-	have the same lighness are perceived as colors that have the same lightness, and all colors that have the same chromaticity are percieved as colors with the same chromaticity.</p>
+	have the same lighness are perceived as colors that have the same lightness, and all colors that have the same chromaticity are perceived as colors with the same chromaticity.</p>
 
 <p>Such decision was made for the purpose of making the interface soft and not too motely, and also to make the individual elements not changing the brightness depending on the color tone (as a counterversive part to HSL color space in the
 	&quot;Legacy&quot; schema).</p>
@@ -227,7 +227,7 @@
 
 <p>That&rsquo;s why before adding new color to the widget&rsquo;s property it is important to ensure that it is not already defined in the schema.<br />
 	The color in color schema should reflect the meaning of the entity it is operating or the process it is responsible for. In other words, &quot;button_green&quot; is a bad name for the color because even if it is green in current schema, it can
-	suprisingly become of another color in another schema. By the other side, &quot;button_threshold&quot; is a good color name because it tells about the function of the element it is associated with.</p>
+	surprisingly become of another color in another schema. By the other side, &quot;button_threshold&quot; is a good color name because it tells about the function of the element it is associated with.</p>
 
 <p>The value of the color can be defined in multiple ways (capital letters mean hexadecimal digits while lower-case letters mean floating-point values often normalized to range 0.0 to 1.0):</p>
 
@@ -248,13 +248,13 @@
 	colors.</p>
 
 <p>It is strongly not recommended to explicitly define the value of the color in plugin&rsquo;s UI markup file. Otherwise switching schemas will yield to unexpected results caused by hard-coded colors not blending together with other elements. To
-	prevent such problem, it is strongly recommented to define all colors in schema files.</p>
+	prevent such problem, it is strongly recommended to define all colors in schema files.</p>
 
 <p>If widgets are of the different kind but carry the same meaning, it is important to make them of the same color. It helps to preserve the common style and provide the consistency of the interface.</p>
 
 <p>Gray tones are used only for inactive (disabled) elements and we don&rsquo;t use it for any plugin&rsquo;s parameter.</p>
 
-<p style="text-align:center">In the example below the selected filter does not provide band width nor gain controls, that&rsquo;s why corresponsing widgets were of the gray color.</p>
+<p style="text-align:center">In the example below the selected filter does not provide band width nor gain controls, that&rsquo;s why corresponding widgets were of the gray color.</p>
 <div class="images" style="margin: -10px auto 15px auto;">
 	<img class="border" style="max-width: 100%;" src="<?= $CTL ?>/inactive.png">
 </div>
@@ -278,10 +278,10 @@
 	<img class="border" style="max-width: 100%;" src="<?= $CTL ?>/cycles.png">
 </div>
 
-<p>There are three colors defined for the background in &quot;Modern&quot; schema. Usually, the first color is used by separators and paddings, the second color is used for primary background, the third one is the primary backround for widgets in
+<p>There are three colors defined for the background in &quot;Modern&quot; schema. Usually, the first color is used by separators and paddings, the second color is used for primary background, the third one is the primary background for widgets in
 	inactive state.</p>
 
-<p>Instead of higlighting some active element, it is decided in LSP to darken inactive elements. In other words, the block containing widget and all widgets in this block become darken. Scales, buttons, meters and other colored widgets become
+<p>Instead of highlighting some active element, it is decided in LSP to darken inactive elements. In other words, the block containing widget and all widgets in this block become darken. Scales, buttons, meters and other colored widgets become
 	grayscale (excluding the active ones).</p>
 
 <div class="images">
@@ -338,7 +338,7 @@
 <p>While designing the user interface, it is generally accepted to always show all possible elements like knobs, combo boxes, buttons, etc. If under certain conditions widget is useless, we don&rsquo;t hide it from the UI but make inactive (gray
 	color and dark background if necessary). This allows to make the UI look more stable, no window resize nor content flickering happens.</p>
 
-<p>It is strongly recommended to verify the maximum and minimum values of the <strong><em>&lt;value&gt;</em></strong> widget. For this pupose just put the corresponding control element into the minimum and maximum positions. If the values are
+<p>It is strongly recommended to verify the maximum and minimum values of the <strong><em>&lt;value&gt;</em></strong> widget. For this purpose just put the corresponding control element into the minimum and maximum positions. If the values are
 	flickering and force to flicker the neighbor widgets, it is required to explicitly specify the minimum widget width that allows to fully fit the minimum and maximum value text.</p>
 
 <pre>
@@ -372,7 +372,7 @@
 	<img class="border" style="max-width: 100%;" src="<?= $CTL ?>/shake.gif">
 </div>
 
-<p>On the picture above we observe the flickering of the UI when adjusting the value of the &quot;Dry&quot; knob. To solve this, we alterate the tag <strong><em>&lt;value id=&quot;dry&quot; pad.b=&quot;4&quot;
+<p>On the picture above we observe the flickering of the UI when adjusting the value of the &quot;Dry&quot; knob. To solve this, we alternate the tag <strong><em>&lt;value id=&quot;dry&quot; pad.b=&quot;4&quot;
 			same.line=&quot;true&quot;/&gt;</em></strong> and append additional property <strong><em>width.min=&quot;48&quot;</em></strong>. Finally the tag now looks like this: <strong><em>&lt;value id=&quot;dry&quot; pad.b=&quot;4&quot;
 			same.line=&quot;true&quot; width.min=&quot;48&quot;/&gt;</em></strong>. The result is on the picture below:</p>
 
@@ -419,7 +419,7 @@
 	<img class="border" style="max-width: 100%;" src="<?= $CTL ?>/middle.png">
 </div>
 
-<p>In the body of the plugin there can be such elemens as:</p>
+<p>In the body of the plugin there can be such elements as:</p>
 
 <p>&nbsp;</p>
 
@@ -442,7 +442,7 @@
 </div>
 
 <p>There are also widgets of the same to<strong><em> &lt;group&gt; </em></strong>meaning: <strong><em>&lt;tabs&gt; and &lt;cgroup&gt;</em></strong>. They are designed for paging purpose and paginized access to the huge amount of control elements such
-	as filter parameters in the equalizer or differens sample manipulations in sampler.</p>
+	as filter parameters in the equalizer or different sample manipulations in sampler.</p>
 
 <div class="images">
 	<img class="border" style="max-width: 100%;" src="<?= $CTL ?>/tabs.png">
