@@ -39,6 +39,22 @@
 	"active": "Active",
 	"actual_duration": "Actual\nDuration (s)",
 
+	"adsr": {
+		"adsr": "ADSR",
+		"ahdbssr": "AHDBSSR",
+		"attack": "Attack",
+		"break": "Break",
+		"convex": "Convex",
+		"curve": "Curve",
+		"decay": "Decay",
+		"hold": "Hold",
+		"release": "Release",
+		"shape": "Shape",
+		"slope": "Slope",
+		"sustain": "Sustain",
+		"time": "Time"
+	},
+
 	"alr": "ALR",
     "alr_": "Auto level regulation",
 
