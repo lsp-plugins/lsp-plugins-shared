@@ -32,7 +32,7 @@
 	"import": "Importar",
 	"import_settings_from_clipboard": "Importar configuración del portapapeles",
 	"import_settings_from_file": "Imporar configuración de archivo...",
-	"import_rew_filter_file": "Archivo filtrado REW...",
+	"import_rew_filter_file": "Archivo filtrado REW/APO...",
 
 	"listen": "Escuchar",
 	"link": {

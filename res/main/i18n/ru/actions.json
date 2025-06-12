@@ -71,7 +71,7 @@
 	"import_settings_from_clipboard": "Импорт настроек из буфера обмена",
 	"import_settings_from_file": "Импорт настроек из файла...",
 	"import_sfz_file": "Импортировать файл SFZ...",
-	"import_rew_filter_file": "Файл фильтров REW...",
+	"import_rew_filter_file": "Файл фильтров REW/APO...",
 
 	"listen": "Слушать",
 	"link": {
