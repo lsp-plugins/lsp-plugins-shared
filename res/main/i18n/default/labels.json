@@ -47,6 +47,7 @@
 		"convex": "Convex",
 		"curve": "Curve",
 		"decay": "Decay",
+		"envelope": "Envelope",
 		"hold": "Hold",
 		"release": "Release",
 		"shape": "Shape",

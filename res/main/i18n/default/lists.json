@@ -1,4 +1,15 @@
 {
+	"adsr": {
+		"type": {
+			"cubic": "Cubic",
+			"dline": "DLine",
+			"exp": "Exp",
+			"quad": "Quadro",
+			"off": "Off",
+			"vline": "VLine"
+		}
+	},
+	
 	"bool": {
 		"off": "off",
 		"on": "on"
