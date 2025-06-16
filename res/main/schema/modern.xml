@@ -431,12 +431,15 @@
 		<wave.border.color value="reference_ch_2"/>
 		<border value="1"/>
 	</style>
+	
+	<style class="AudioEnvelope" parents="root">
+	</style>
 
 	<style class="AudioFolder::Active" parents="ListBox">
 		<bg.color value="bg_graph"/>
 	</style>
 
-	<style class="AudioFolder::Inctive" parents="ListBox">
+	<style class="AudioFolder::Inactive" parents="ListBox">
 		<bg.color value="bg_graph"/>
 	</style>
 
