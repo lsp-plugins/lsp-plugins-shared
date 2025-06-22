@@ -629,6 +629,16 @@
 		"sc_to_link": "SC -> Link"
 	},
 	
+	"presets": {
+		"category": {
+			"all": "All",
+			"factory": "Factory",
+			"favourites": "Favourites",
+			"user": "User"
+		},
+		"configuration": "Configuration"
+	},
+	
 	"processing": {
 		"post": "Post",
 		"pre": "Pre"

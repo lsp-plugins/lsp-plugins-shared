@@ -94,6 +94,17 @@
 
 	"plugin_manual": "Plugin manual",
 	"postprocess": "Post-process",
+	"presets": {
+		"copy": "Copy",
+		"export": "Export...",
+		"import": "Import...",
+		"paste": "Paste",
+		"new": "New",
+		"remove": "Remove",
+		"reset": "Reset",
+		"save": "Save",
+		"search": "Search..."
+	},
 	"profile": "Profile",
 
 	"reset": "Reset",

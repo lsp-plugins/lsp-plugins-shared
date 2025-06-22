@@ -629,6 +629,16 @@
 		"sc_to_link": "БЦ -> Связь"
 	},
 	
+	"presets": {
+		"category": {
+			"all": "Все",
+			"factory": "Фабричные",
+			"favourites": "Избранные",
+			"user": "Пользовательские"
+		},
+		"configuration": "Конфигурация"
+	},
+	
 	"processing": {
 		"post": "Пост",
 		"pre": "Пред"

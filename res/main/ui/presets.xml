@@ -4,40 +4,48 @@
 	<hbox spacing="5" padding="5" width="600" height="256" padding.top="10" padding.bottom="10">
 		<!-- Presets -->
 
-		<vbox>
-			<group ipadding="0" expand="true" fill="true" width.min="300" text="Presets" text.show="false">
-				<vbox hfill="true">
-					<hbox bg.color="bg_schema_name" hexpand="true" height="28" padding.left="10" padding.right="10">
-						<align halign="-1">
-							<label text="Presets" />
-						</align>
-						<void hexpand="true" />
-						<button text=" o " ui:id="trg_refresh" ui:inject="Button_cyan" />
-					</hbox>
-					<list ui:id="presets_list" expand="true" fill="true" />
-				</vbox>
-			</group>
-
-			<hbox hexpand="true" height="28" border.color="bg_schema_name" border.size="1">
-				<edit ui:id="preset_filter" etext="Search..." />
+		<vbox hexpand="true" hfill="true">
+			<hbox hexpand="true" height="28">
+				<hbox hexpand="true" height="28" border.color="bg_schema_name" border.size="1">
+					<edit ui:id="preset_filter" etext="actions.presets.search" />
+				</hbox>
+				<button
+					ui:id="trg_refresh" ui:inject="Button_cyan"
+					font.name="lsp-icons" font.size="12" font.antialias="true"
+					text="icons.actions.refresh" />
 			</hbox>
+			<tabs ui:id="preset_category" expand="true" fill="true" head.valign="1">
+				<tab text="labels.presets.category.factory">
+					<list ui:id="factory_presets_list" expand="true" fill="true" />
+				</tab>
+				<tab text="labels.presets.category.user">
+					<list ui:id="user_presets_list" expand="true" fill="true" />
+				</tab>
+				<tab text="labels.presets.category.favourites">
+					<list ui:id="favourite_presets_list" expand="true" fill="true" />
+				</tab>
+				<tab text="labels.presets.category.all">
+					<list ui:id="all_presets_list" expand="true" fill="true" />
+				</tab>
+			</tabs>
 		</vbox>
 
 		<!-- Actions -->
-		<vbox spacing="5">
+		<vbox spacing="5" width.min="192">
 			<vbox spacing="5" hexpand="true">
-				<button fill="true" text="New" ui:id="btn_new" />
-				<button fill="true" text="Delete" text.color="dark_red" ui:id="btn_delete" />
-				<button fill="true" text="Override" ui:id="btn_override" />
+				<button fill="true" text="actions.presets.reset" ui:id="btn_reset" />
+				<button fill="true" text="actions.presets.new" ui:id="btn_new" />
+				<button fill="true" text="actions.presets.remove" text.color="dark_red" ui:id="btn_delete" />
+				<button fill="true" text="actions.presets.save" ui:id="btn_save" />
 			</vbox>
 
-			<label text="Current state:" />
+			<label text="labels.presets.configuration" hfill="true" text.halign="-1"/>
 			<grid rows="2" cols="2" spacing="5">
-				<button fill="true" text="Copy" ui:id="btn_copy" />
-				<button fill="true" text="Paste"  ui:id="btn_paste" />
+				<button fill="true" text="actions.presets.copy" ui:id="btn_copy" />
+				<button fill="true" text="actions.presets.paste"  ui:id="btn_paste" />
 				
-				<button fill="true" text="Import..." ui:id="btn_import" />
-				<button fill="true" text="Export..." ui:id="btn_export" />
+				<button fill="true" text="actions.presets.import" ui:id="btn_import" />
+				<button fill="true" text="actions.presets.export" ui:id="btn_export" />
 			</grid>
 		</vbox>
 	</hbox>
