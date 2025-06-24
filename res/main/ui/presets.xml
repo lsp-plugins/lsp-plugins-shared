@@ -15,6 +15,9 @@
 					text="icons.actions.refresh" />
 			</hbox>
 			<tabs ui:id="preset_category" expand="true" fill="true" head.valign="1">
+				<tab text="labels.presets.category.all">
+					<list ui:id="all_presets_list" expand="true" fill="true" />
+				</tab>
 				<tab text="labels.presets.category.factory">
 					<list ui:id="factory_presets_list" expand="true" fill="true" />
 				</tab>
@@ -23,9 +26,6 @@
 				</tab>
 				<tab text="labels.presets.category.favourites">
 					<list ui:id="favourite_presets_list" expand="true" fill="true" />
-				</tab>
-				<tab text="labels.presets.category.all">
-					<list ui:id="all_presets_list" expand="true" fill="true" />
 				</tab>
 			</tabs>
 		</vbox>

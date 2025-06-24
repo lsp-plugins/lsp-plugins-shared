@@ -636,7 +636,15 @@
 			"favourites": "Избранные",
 			"user": "Пользовательские"
 		},
-		"configuration": "Конфигурация"
+		"configuration": "Конфигурация",
+		"name": {
+			"mod": "* {@name}",
+			"normal": "{@name}",
+			"factory": "{@name} [Втроенный]",
+			"user": "{@name} [Пользовательский]",
+			"factory_mod": "* {@name} [Встроенный]",
+			"user_mod": "* {@name} [Пользовательский]"
+		}
 	},
 	
 	"processing": {

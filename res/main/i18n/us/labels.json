@@ -636,7 +636,15 @@
 			"favourites": "Favourites",
 			"user": "User"
 		},
-		"configuration": "Configuration"
+		"configuration": "Configuration",
+		"name": {
+			"mod": "* {@name}",
+			"normal": "{@name}",
+			"factory": "{@name} [Factory]",
+			"user": "{@name} [User]",
+			"factory_mod": "* {@name} [Factory]",
+			"user_mod": "* {@name} [User]"
+		}
 	},
 	
 	"processing": {
