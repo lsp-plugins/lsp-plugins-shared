@@ -98,7 +98,9 @@
 	"presets": {
 		"copy": "Copy",
 		"export": "Export...",
+		"favourite": "Favourite",
 		"import": "Import...",
+		"load": "Load",
 		"paste": "Paste",
 		"new": "New",
 		"remove": "Remove",

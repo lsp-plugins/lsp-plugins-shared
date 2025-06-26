@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <window ui:inject="PresetsDialog" title="Presets" fill="true">
-	<hbox spacing="5" padding="5" width="600" height="256" padding.top="10" padding.bottom="10">
+	<hbox ui:id="trg_overlays" spacing="5" padding="5" width="600" height="256" padding.top="10" padding.bottom="10">
 		<!-- Presets -->
 
 		<vbox hexpand="true" hfill="true">
@@ -10,7 +10,7 @@
 					<edit ui:id="preset_filter" etext="actions.presets.search" />
 				</hbox>
 				<button
-					ui:id="trg_refresh" ui:inject="Button_cyan"
+					ui:id="btn_refresh" ui:inject="Button_cyan"
 					font.name="lsp-icons" font.size="12" font.antialias="true"
 					text="icons.actions.refresh" />
 			</hbox>
@@ -25,7 +25,7 @@
 					<list ui:id="user_presets_list" expand="true" fill="true" />
 				</tab>
 				<tab text="labels.presets.category.favourites">
-					<list ui:id="favourite_presets_list" expand="true" fill="true" />
+					<list ui:id="favourites_presets_list" expand="true" fill="true" />
 				</tab>
 			</tabs>
 		</vbox>
@@ -33,20 +33,25 @@
 		<!-- Actions -->
 		<vbox spacing="5" width.min="192">
 			<vbox spacing="5" hexpand="true">
-				<button fill="true" text="actions.presets.reset" ui:id="btn_reset" />
-				<button fill="true" text="actions.presets.new" ui:id="btn_new" />
-				<button fill="true" text="actions.presets.remove" text.color="dark_red" ui:id="btn_delete" />
-				<button fill="true" text="actions.presets.save" ui:id="btn_save" />
+				<button ui:id="btn_load" fill="true" text="actions.presets.load" />
+				<button ui:id="btn_save" fill="true" text="actions.presets.save" />
+				<button ui:id="btn_favourite" fill="true" text="actions.presets.favourite" />
+				<button ui:id="btn_remove" fill="true" text="actions.presets.remove" text.color="dark_red" />
+				<button ui:id="btn_reset" fill="true" text="actions.presets.reset" />
 			</vbox>
 
 			<label text="labels.presets.configuration" hfill="true" text.halign="-1"/>
 			<grid rows="2" cols="2" spacing="5">
-				<button fill="true" text="actions.presets.copy" ui:id="btn_copy" />
-				<button fill="true" text="actions.presets.paste"  ui:id="btn_paste" />
+				<button ui:id="btn_copy" fill="true" text="actions.presets.copy" />
+				<button ui:id="btn_paste" fill="true" text="actions.presets.paste" />
 				
-				<button fill="true" text="actions.presets.import" ui:id="btn_import" />
-				<button fill="true" text="actions.presets.export" ui:id="btn_export" />
+				<button ui:id="btn_import" fill="true" text="actions.presets.import" />
+				<button ui:id="btn_export" fill="true" text="actions.presets.export" />
 			</grid>
 		</vbox>
 	</hbox>
+	
+	<!-- Save overlay -->
+	<overlay id="save_overlay" >
+	</overlay>
 </window>

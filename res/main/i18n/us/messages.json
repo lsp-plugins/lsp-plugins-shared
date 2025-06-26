@@ -44,5 +44,11 @@
 	},
 
 	"postscript": "{@meta_pkg_full_name}",
+	
+	"presets": {
+		"factory_preset_changed": "Factory preset '{@name}' has been changed previously.\nDo you want to switch to selected preset without saving?",
+		"user_preset_changed": "User preset '{@name}' has been changed previously.\nDo you want to switch to selected preset without saving?"
+	},	
+	
 	"site": "{@meta_pkg_site}"
 }
