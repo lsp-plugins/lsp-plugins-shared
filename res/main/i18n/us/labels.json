@@ -630,6 +630,7 @@
 	},
 	
 	"presets": {
+		"add_to_favourites": "Add to favourites",
 		"category": {
 			"all": "All",
 			"factory": "Factory",
@@ -644,7 +645,8 @@
 			"user": "{@name} [User]",
 			"factory_mod": "* {@name} [Factory]",
 			"user_mod": "* {@name} [User]"
-		}
+		},
+		"preset_name": "Preset name"
 	},
 	
 	"processing": {

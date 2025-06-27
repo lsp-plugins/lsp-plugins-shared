@@ -14,6 +14,9 @@
 	"load_audio_file": "Загрузить аудиофайл",
 	"load_from_file": "Загрузить файл",
 	
+	"preset_management": "Управление пресетами",
+	
+	"save_preset": "Сохранить пресет",
 	"save_to_file": "Сохранить файл",
 	
 	"update_notification": "Оповещение об обновлении"

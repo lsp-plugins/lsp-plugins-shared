@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
-<window ui:inject="PresetsDialog" title="Presets" fill="true">
-	<hbox ui:id="trg_overlays" spacing="5" padding="5" width="600" height="256" padding.top="10" padding.bottom="10">
+<window ui:inject="PresetsDialog" title="titles.preset_management" fill="true">
+	<hbox spacing="5" padding="5" width="600" height="256" padding.top="10" padding.bottom="10">
 		<!-- Presets -->
 
 		<vbox hexpand="true" hfill="true">
@@ -33,7 +33,6 @@
 		<!-- Actions -->
 		<vbox spacing="5" width.min="192">
 			<vbox spacing="5" hexpand="true">
-				<button ui:id="btn_load" fill="true" text="actions.presets.load" />
 				<button ui:id="btn_save" fill="true" text="actions.presets.save" />
 				<button ui:id="btn_favourite" fill="true" text="actions.presets.favourite" />
 				<button ui:id="btn_remove" fill="true" text="actions.presets.remove" text.color="dark_red" />
@@ -50,8 +49,4 @@
 			</grid>
 		</vbox>
 	</hbox>
-	
-	<!-- Save overlay -->
-	<overlay id="save_overlay" >
-	</overlay>
 </window>

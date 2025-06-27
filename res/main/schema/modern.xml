@@ -380,6 +380,13 @@
 	<style class="Window" parents="root"></style>
 
 	<style class="FileDialog" parents="Window"></style>
+	
+	<style class="SavePresetDialog" parents="Window">
+		<border.style value="dialog" />
+		<actions value="move,stick,change_desk" />
+		<layout.hscale value="1.0"/>
+		<layout.vscale value="1.0"/>
+	</style>
 
 	<style class="MessageBox" parents="Window"></style>
 
