@@ -17,9 +17,9 @@
 			<!-- Presets -->
 			<cell width.min="37" rows="2" cols="1">
 				<hbox ui:id="trg_presets_selector" expand="true" padding.l="20" padding.r="20">
-					<button ui:id="trg_presets_menu" text="Select preset" hfill="true" expand="true" hexpand="true" />
-					<button text="&lt;"/>
-					<button text="&gt;"/>
+					<button ui:id="trg_presets_menu" hfill="true" expand="true" hexpand="true" />
+					<button ui:id="trg_prev_preset" font.name="lsp-icons" font.size="12" text="icons.shapes.left" />
+					<button ui:id="trg_next_preset" font.name="lsp-icons" font.size="12" text="icons.shapes.right" />
 				</hbox>
 			</cell>
 

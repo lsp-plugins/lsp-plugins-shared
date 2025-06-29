@@ -106,7 +106,8 @@
 		"remove": "Remove",
 		"reset": "Reset",
 		"save": "Save",
-		"search": "Search..."
+		"search": "Search...",
+		"select": "Select preset"
 	},
 	"profile": "Profile",
 
