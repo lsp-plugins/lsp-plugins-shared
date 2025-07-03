@@ -444,6 +444,20 @@
 	</style>
 
 	<style class="AudioEnvelope" parents="root">
+		<line.width value="2"/>
+		<line.color value="#9e60ee"/>
+		<fill.color value="#9e60ee"/>
+		<fill.color.a value="0.8"/>
+		<point.size value="6"/>
+		<point.color value="#9e60ee"/>
+		<point.hover.color value="#e9a9ff"/>
+		<border.size value="4"/>
+		<border.radius value="12"/>
+		<border.flat value="true"/>
+		<border.color value="#ffffff"/>
+		<glass value="true"/>
+		<glass.color value="#ffffff"/>
+		<ipadding value="1"/>
 	</style>
 
 	<style class="AudioFolder::Active" parents="ListBox">
@@ -612,8 +626,8 @@
 
 		<color value="button_face"/>
 		<hover.color value="button_hface"/>
-		<down.color value="bright_gray"/>
-		<down.hover.color value="dark_gray"/>
+		<down.color value="kscale"/>
+		<down.hover.color value="kscale"/>
 
 		<text.color value="bg"/>
 		<text.hover.color value="bg"/>

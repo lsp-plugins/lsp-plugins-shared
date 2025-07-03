@@ -431,8 +431,22 @@
 		<wave.border.color value="reference_ch_2"/>
 		<border value="1"/>
 	</style>
-	
+
 	<style class="AudioEnvelope" parents="root">
+		<line.width value="2"/>
+		<line.color value="#7c5ba1"/>
+		<fill.color value="#7c5ba1"/>
+		<fill.color.a value="0.8"/>
+		<point.size value="6"/>
+		<point.color value="#7c5ba1"/>
+		<point.hover.color value="#c591ff"/>
+		<border.size value="4"/>
+		<border.radius value="12"/>
+		<border.flat value="false"/>
+		<border.color value="#0000000"/>
+		<glass value="false"/>
+		<glass.color value="#ffffff"/>
+		<ipadding value="0"/>
 	</style>
 
 	<style class="AudioFolder::Active" parents="ListBox">
