@@ -1555,6 +1555,17 @@
 		<border.gap.color value="bg"/>
 		<pointer value="hand"/>
 		<bg.inherit value="true"/>
+
+		<inactive.color value="bg"/>
+		<inactive.text.color value="text_sec"/>
+		<inactive.spin.color value="bg"/>
+		<inactive.spin.text.color value="text_prim"/>
+		<inactive.border.color value="bg_light"/>
+		<inactive.border.gap.color value="bg"/>
+		<inactive.brightness value="0.75"/>
+		<inactive.bg.brightness value="0.75"/>
+
+
 	</style>
 
 	<style class="ComboBox::List" parents="root">
@@ -1565,6 +1576,11 @@
 		<border.color value="bg_light"/>
 		<pointer value="hand"/>
 		<hscroll.mode value="none"/>
+
+		<inactive.list.bg.color value="bg"/>
+		<inactive.border.color value="bg_light"/>
+		<inactive.brightness value="0.75"/>
+		<inactive.bg.brightness value="0.75"/>
 	</style>
 
 	<style class="Edit" parents="root">
@@ -2048,6 +2064,17 @@
 		<text.hover.color value="text_sec"/>
 		<text.selected.color value="text_sec"/>
 		<text.selected.hover.color value="text_sec"/>
+
+		<inactive.bg.color value="bg_light"/>
+		<inactive.bg.hover.color value="LBI_hov"/>
+		<inactive.bg.selected.color value="LBI_sel"/>
+		<inactive.bg.selected.hover.color value="LBI_sel_hov"/>
+		<inactive.text.color value="text_prim"/>
+		<inactive.text.hover.color value="text_sec"/>
+		<inactive.text.selected.color value="text_sec"/>
+		<inactive.text.selected.hover.color value="text_sec"/>		
+		<inactive.brightness value="0.75"/>
+		<inactive.bg.brightness value="0.75"/>
 	</style>
 
 	<style class="Menu" parents="root">
