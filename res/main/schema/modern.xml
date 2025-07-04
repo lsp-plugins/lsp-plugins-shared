@@ -1055,6 +1055,28 @@
 		<inactive.led.color value="#1b935c"/>
 	</style>
 
+	<style class="Button_envelope" parents="Button">
+		<down.color value="#68488c"/>
+		<down.hover.color value="#68488c"/>
+
+		<text.down.color value="#b28ed8"/>
+		<text.down.hover.color value="#b28ed8"/>
+
+		<border.down.color value="#b28ed8"/>
+		<border.down.hover.color value="#9572bb"/>
+		<led.color value="#9572bb"/>
+
+		<inactive.down.color value="#68488c"/>
+		<inactive.down.hover.color value="#68488c"/>
+
+		<inactive.text.down.color value="#b28ed8"/>
+		<inactive.text.down.hover.color value="#b28ed8"/>
+
+		<inactive.border.down.color value="#b28ed8"/>
+		<inactive.border.down.hover.color value="#9572bb"/>
+		<inactive.led.color value="#9572bb"/>
+	</style>
+
 	<style class="Button_lufs" parents="Button">
 		<down.color value="#485d2b"/>
 		<down.hover.color value="#485d2b"/>

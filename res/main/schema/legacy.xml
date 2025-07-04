@@ -445,12 +445,12 @@
 
 	<style class="AudioEnvelope" parents="root">
 		<line.width value="2"/>
-		<line.color value="#9e60ee"/>
-		<fill.color value="#9e60ee"/>
-		<fill.color.a value="0.8"/>
+		<line.color value="#e99000"/>
+		<fill.color value="#e99000"/>
+		<fill.color.a value="0.6"/>
 		<point.size value="6"/>
-		<point.color value="#9e60ee"/>
-		<point.hover.color value="#e9a9ff"/>
+		<point.color value="#e99000"/>
+		<point.hover.color value="#ff9e00"/>
 		<border.size value="4"/>
 		<border.radius value="12"/>
 		<border.flat value="true"/>
@@ -1065,6 +1065,28 @@
 		<inactive.border.down.color value="#8800ff"/>
 		<inactive.border.down.hover.color value="#7c00e9"/>
 		<inactive.led.color value="#7c00e9"/>
+	</style>
+
+	<style class="Button_envelope" parents="Button">
+		<down.color value="#ff9e00"/>
+		<down.hover.color value="#e99000"/>
+
+		<text.down.color value="bg"/>
+		<text.down.hover.color value="bg"/>
+
+		<border.down.color value="#ff9e00"/>
+		<border.down.hover.color value="#e99000"/>
+		<led.color value="#e99000"/>
+
+		<inactive.down.color value="#ff9e00"/>
+		<inactive.down.hover.color value="#e99000"/>
+
+		<inactive.text.down.color value="bg"/>
+		<inactive.text.down.hover.color value="bg"/>
+
+		<inactive.border.down.color value="#ff9e00"/>
+		<inactive.border.down.hover.color value="#e99000"/>
+		<inactive.led.color value="#e99000"/>
 	</style>
 
 	<style class="Button_lufs" parents="Button">
