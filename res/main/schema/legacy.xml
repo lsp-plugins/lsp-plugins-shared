@@ -302,7 +302,7 @@
 		<fade_in value="#ffff00"/>
 		<fade_out value="#ffff00"/>
 		<stretch value="#0088ff"/>
-		<loop value="#8800ff"/>
+		<loop value="#ff9900"/>
 
 		<!-- Cycle colors -->
 		<cycle value="#ff0000"/>
@@ -317,10 +317,10 @@
 		<stretch_border_color avalue="#000088ff"/>
 		<stretch_color_off avalue="#ee0088ff"/>
 		<stretch_border_color_off avalue="#880088ff"/>
-		<loop_color avalue="#888800ff"/>
-		<loop_border_color avalue="#008800ff"/>
-		<loop_color_off avalue="#ee8800ff"/>
-		<loop_border_color_off avalue="#888800ff"/>
+		<loop_color avalue="#88ff9900"/>
+		<loop_border_color avalue="#00ff9900"/>
+		<loop_color_off avalue="#eeff9900"/>
+		<loop_border_color_off avalue="#88ff9900"/>
 
 		<!-- Button colors -->
 		<button_cyan_rating_color value="#cccccc"/>
@@ -445,12 +445,12 @@
 
 	<style class="AudioEnvelope" parents="root">
 		<line.width value="2"/>
-		<line.color value="#e99000"/>
-		<fill.color value="#e99000"/>
+		<line.color value="#7c00e9"/>
+		<fill.color value="#7c00e9"/>
 		<fill.color.a value="0.6"/>
 		<point.size value="6"/>
-		<point.color value="#e99000"/>
-		<point.hover.color value="#ff9e00"/>
+		<point.color value="#7c00e9"/>
+		<point.hover.color value="#8800ff"/>
 		<border.size value="4"/>
 		<border.radius value="12"/>
 		<border.flat value="true"/>
@@ -1046,6 +1046,28 @@
 	</style>
 
 	<style class="Button_loop" parents="Button">
+		<down.color value="#ff9900"/>
+		<down.hover.color value="#e88b00"/>
+
+		<text.down.color value="bg"/>
+		<text.down.hover.color value="bg"/>
+
+		<border.down.color value="#ff9900"/>
+		<border.down.hover.color value="#e88b00"/>
+		<led.color value="#e88b00"/>
+
+		<inactive.down.color value="#ff9900"/>
+		<inactive.down.hover.color value="#e88b00"/>
+
+		<inactive.text.down.color value="bg"/>
+		<inactive.text.down.hover.color value="bg"/>
+
+		<inactive.border.down.color value="#ff9900"/>
+		<inactive.border.down.hover.color value="#e88b00"/>
+		<inactive.led.color value="#e88b00"/>
+	</style>
+
+	<style class="Button_envelope" parents="Button">
 		<down.color value="#8800ff"/>
 		<down.hover.color value="#7c00e9"/>
 
@@ -1065,28 +1087,6 @@
 		<inactive.border.down.color value="#8800ff"/>
 		<inactive.border.down.hover.color value="#7c00e9"/>
 		<inactive.led.color value="#7c00e9"/>
-	</style>
-
-	<style class="Button_envelope" parents="Button">
-		<down.color value="#ff9e00"/>
-		<down.hover.color value="#e99000"/>
-
-		<text.down.color value="bg"/>
-		<text.down.hover.color value="bg"/>
-
-		<border.down.color value="#ff9e00"/>
-		<border.down.hover.color value="#e99000"/>
-		<led.color value="#e99000"/>
-
-		<inactive.down.color value="#ff9e00"/>
-		<inactive.down.hover.color value="#e99000"/>
-
-		<inactive.text.down.color value="bg"/>
-		<inactive.text.down.hover.color value="bg"/>
-
-		<inactive.border.down.color value="#ff9e00"/>
-		<inactive.border.down.hover.color value="#e99000"/>
-		<inactive.led.color value="#e99000"/>
 	</style>
 
 	<style class="Button_lufs" parents="Button">
