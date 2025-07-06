@@ -629,6 +629,26 @@
 		"sc_to_link": "БЦ -> Связь"
 	},
 	
+	"presets": {
+		"add_to_favourites": "Добавить в избранное",
+		"category": {
+			"all": "Все",
+			"factory": "Фабричные",
+			"favourites": "Избранные",
+			"user": "Пользовательские"
+		},
+		"configuration": "Конфигурация",
+		"name": {
+			"mod": "* {@name}",
+			"normal": "{@name}",
+			"factory": "{@name} [Втроенный]",
+			"user": "{@name} [Пользовательский]",
+			"factory_mod": "* {@name} [Встроенный]",
+			"user_mod": "* {@name} [Пользовательский]"
+		},
+		"preset_name": "Название пресета"
+	},
+	
 	"processing": {
 		"post": "Пост",
 		"pre": "Пред"

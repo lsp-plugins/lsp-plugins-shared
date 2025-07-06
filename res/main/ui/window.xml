@@ -13,8 +13,18 @@
 					<void expand="true"/>
 				</hbox>
 			</cell>
-			<cell width.min="37" rows="2" cols="1"><void expand="true"/></cell>
+
+			<!-- Presets -->
+			<cell width.min="37" rows="2" cols="1">
+				<hbox ui:id="trg_presets_selector" expand="true" padding.l="20" padding.r="20">
+					<button ui:id="trg_presets_menu" hfill="true" expand="true" hexpand="true" />
+					<button ui:id="trg_prev_preset" font.name="lsp-icons" font.size="12" text="icons.shapes.left" />
+					<button ui:id="trg_next_preset" font.name="lsp-icons" font.size="12" text="icons.shapes.right" />
+				</hbox>
+			</cell>
+
 			<void/>
+
 			<cell rows="1" cols="6">
 				<hbox>
 					<void expand="true"/>
@@ -34,18 +44,6 @@
 				<hbox ui:id="trg_main_menu" solid="true" padding.right="10" padding.left="2" pointer="hand">
 					<label  hover="true" color="menu_icon" font.size="12" hover.color="menu_icon_hover" font.name="lsp-icons" padding.top="1" font.antialias="true" text="icons.main.menu" halign="1" />
 					<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.left="5" font.size="14" padding.top="3" halign="1" text="labels.header.menu"/>
-				</hbox>
-				<hbox ui:id="trg_export_settings" solid="true" padding.right="10" pointer="hand">
-					<label  hover="true" color="menu_icon" font.size="12" hover.color="menu_icon_hover" font.name="lsp-icons" padding.top="1" font.antialias="true" text="icons.main.import" halign="1" />
-					<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.left="5" font.size="14" padding.top="3" halign="1" text="labels.header.save"/>
-				</hbox>
-				<hbox ui:id="trg_import_settings" solid="true" padding.right="10" pointer="hand">
-					<label  hover="true" color="menu_icon" font.size="12" hover.color="menu_icon_hover" font.name="lsp-icons" padding.top="1" font.antialias="true" text="icons.main.export" halign="1" />
-					<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.left="5" font.size="14" padding.top="3" halign="1" text="labels.header.load"/>
-				</hbox>
-				<hbox ui:id="trg_reset_settings" solid="true" padding.right="10" pointer="hand">
-					<label  hover="true" color="menu_icon" font.size="12" hover.color="menu_icon_hover" font.name="lsp-icons" padding.top="1" font.antialias="true" text="icons.main.reset" halign="1" />
-					<label  hover="true" color="menu_text" hover.color="menu_text_hover" padding.left="5" font.size="14" padding.top="3" halign="1" text="labels.header.reset"/>
 				</hbox>
 				<hbox ui:id="trg_about" solid="true" padding.right="6" pointer="hand">
 					<label  hover="true" color="menu_icon" font.size="12" hover.color="menu_icon_hover" font.name="lsp-icons" padding.top="1" font.antialias="true" text="icons.main.about" halign="1" />
@@ -81,10 +79,10 @@
 				<label ui:id="trg_font_zoom_in" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.right="5" expand="false" font.size="10" font.antialias="true" text="icons.main.plus_nb" pointer="hand"/>
 				<label ui:id="trg_font_zoom_out" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.right="5" expand="false" font.size="10" font.antialias="true" text="icons.main.minus_nb" pointer="hand"/>
 			</hbox>
-			
+
 			<!-- Empty filler -->
 			<void expand="true"/>
-			
+
 			<!-- Jack status -->
 			<hbox ui:id="jack_indicator" visibility="false" spacing="6" padding.right="6">
 				<label text="statuses.jack.label" ui:inject="PluginWindow::StatusBar::Label" />
@@ -97,7 +95,7 @@
 				text="icons.main.help"
 				hover="true" color="footer_icon_rsz" hover.color="menu_icon_hover"
 				halign="1" pointer="hand" />
-			
+
 			<!-- sizing icon -->
 			<label ui:id="trg_window_scale"
 				font.name="lsp-icons" font.size="12" font.antialias="true"

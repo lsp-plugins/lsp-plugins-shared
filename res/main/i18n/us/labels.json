@@ -629,6 +629,26 @@
 		"sc_to_link": "SC -> Link"
 	},
 	
+	"presets": {
+		"add_to_favourites": "Add to favourites",
+		"category": {
+			"all": "All",
+			"factory": "Factory",
+			"favourites": "Favourites",
+			"user": "User"
+		},
+		"configuration": "Configuration",
+		"name": {
+			"mod": "* {@name}",
+			"normal": "{@name}",
+			"factory": "{@name} [Factory]",
+			"user": "{@name} [User]",
+			"factory_mod": "* {@name} [Factory]",
+			"user_mod": "* {@name} [User]"
+		},
+		"preset_name": "Preset name"
+	},
+	
 	"processing": {
 		"post": "Post",
 		"pre": "Pre"

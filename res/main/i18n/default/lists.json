@@ -36,11 +36,11 @@
 			"bandpass": "Bandpass",
 			"bell": "Bell",
 			"envelope": "Envelope",
-			"hipass": "Hi-pass",
+			"hipass": "Lo-cut",
 			"hishelf": "Hi-shelf",
 			"ladpass": "Ladder-pass",
 			"ladrej": "Ladder-rej",
-			"lopass": "Lo-pass",
+			"lopass": "Hi-cut",
 			"loshelf": "Lo-shelf",
 			"lufs": "LUFS",
 			"notch": "Notch",
@@ -57,7 +57,7 @@
 			"apo_dr": "APO (DR)"
 		},
 		"pos": {
-		    "post_eq": "Post-eq",
+			"post_eq": "Post-eq",
 			"pre_eq": "Pre-eq"
 		},
 		"slope": {
@@ -81,8 +81,8 @@
 		"type": {
 			"fir": "FIR",
 			"fft": "FFT",
-			"iir": "IIR",
-			"spm": "SPM"
+			"iir": "Zero-latency (IIR)",
+			"spm": "Linear phase (SPM)"
 		}
 	},
 
@@ -161,11 +161,11 @@
 			"bandpass": "Bandpass",
 			"bell": "Bell",
 			"envelope": "Envelope",
-			"hipass": "Hi-pass",
+			"hipass": "Lo-cut",
 			"hishelf": "Hi-shelf",
 			"ladpass": "Ladder-pass",
 			"ladrej": "Ladder-rej",
-			"lopass": "Lo-pass",
+			"lopass": "Hi-cut",
 			"loshelf": "Lo-shelf",
 			"lufs": "LUFS",
 			"notch": "Notch",
@@ -196,7 +196,7 @@
 			"thinnest" : "Thinnest"
 		},
 		"pos": {
-		    "post_eq": "Post-eq",
+			"post_eq": "Post-eq",
 			"pre_eq": "Pre-eq"
 		},
 		"slope": {
@@ -219,8 +219,8 @@
 		"type": {
 			"fir": "FIR",
 			"fft": "FFT",
-			"iir": "IIR",
-			"spm": "SPM"
+			"iir": "Zero-latency (IIR)",
+			"spm": "Linear phase (SPM)"
 		}
 	},
 
@@ -238,7 +238,8 @@
 		"fft": {
 			"off": "Off",
 			"post_eq": "Post-eq",
-			"pre_eq": "Pre-eq"
+			"pre_eq": "Pre-eq",
+			"both": "Both"
 		}
 	},
 
@@ -343,7 +344,7 @@
 		"side_mid": "Side/Mid",
 		"sma": "SMA"
 	},
-	
+
 	"sigmoid": {
 		"arctangent": "Arctangent",
 		"circle": "Circle",

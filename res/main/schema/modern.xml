@@ -170,7 +170,7 @@
 
 		<!-- Knob and meshes colors -->
 		<mono_in value="#bf6455"/>
-		<mono value="#d8412a"/>
+		<mono value="#ce6e5f"/>
 
 		<left_in value="#bf6455"/>
 		<right_in value="#717eae"/>
@@ -380,6 +380,13 @@
 	<style class="Window" parents="root"></style>
 
 	<style class="FileDialog" parents="Window"></style>
+	
+	<style class="SavePresetDialog" parents="Window">
+		<border.style value="dialog" />
+		<actions value="move,stick,change_desk" />
+		<layout.hscale value="1.0"/>
+		<layout.vscale value="1.0"/>
+	</style>
 
 	<style class="MessageBox" parents="Window"></style>
 
@@ -1352,6 +1359,17 @@
 		<font.size value="8"/>
 	</style>
 
+	<style class="Button_left_8_dimmed" parents="Button_left_8">
+		<down.color.hue value="90"/>
+		<border.color.hue value="90"/>
+		<led.color.hue value="90"/>
+	</style>
+	<style class="Button_right_8_dimmed" parents="Button_right_8">
+		<down.color.hue value="90"/>
+		<border.color.hue value="90"/>
+		<led.color.hue value="90"/>
+	</style>
+
 	<style class="Button_right_8" parents="Button_right">
 		<font.size value="8"/>
 	</style>
@@ -1625,6 +1643,66 @@
 		<button.width value="8"/>
 	</style>
 
+	<style class="Fader_prophessor" parents="root">
+		<scale.color value="gray_inactive"/>
+		<scale.border.gradient value="false"/>
+		<scale.border.size value="0"/>
+		<scale.border.radius value="0"/>
+		<scale.width value="4"/>
+		<scale.border.color value="bg"/>
+		<scale.brightness value="0.6"/>
+		<bg.inherit value="true"/>
+
+		<button.color value="gray"/>
+		<button.aspect value="0.6" />
+		<button.border.gradient value="false"/>
+		<button.border.color value="gray"/>
+		<button.border.size value="6"/>
+		<button.border.radius value="4"/>
+		<button.width value="16"/>
+	</style>
+
+	<style class="Fader_prophessor_thin" parents="Fader_prophessor">
+		<scale.width value="2"/>
+
+		<button.aspect value="2.75" />
+		<button.border.size value="1"/>
+		<button.width value="1,1"/>
+		<button.width.x value="1"/>
+		<button.width.y value="1"/>
+	</style>
+
+	<style class="Fader_prophessor_water" parents="Fader_prophessor">
+		<scale.width value="16"/>
+		<button.aspect value="0" />
+		<!-- <button.border.size value="1"/> -->
+		<button.width value="0"/>
+		<scale.border.radius value="10"/>
+		<angle value="0" />
+	</style>
+
+	<style class="Fader_prophessor_ratio" parents="root">
+		<!-- Track -->
+		<scale.color value="bg"/>
+		<scale.border.gradient value="false"/>
+		<scale.border.size value="0"/>
+		<scale.border.radius value="0"/>
+		<scale.width value="4"/>
+		<scale.border.color value="bg"/>
+		<scale.brightness value="0.6"/>
+		<bg.inherit value="true"/>
+		<width value="64" />
+
+		<!-- Thumb -->
+		<button.color value="cyan"/>
+		<button.border.gradient value="false"/>
+		<button.border.size value="1"/>
+		<button.border.radius value="5"/>
+		<button.width value="0"/>
+		<!-- Should be a circle -->
+		<button.aspect value="0.99" />
+	</style>
+
 	<style class="Fader_play" parents="Fader">
 		<button.border.size value="0"/>
 		<button.border.radius value="0"/>
@@ -1658,13 +1736,13 @@
 
 	<style class="GraphDot" parents="root">
 		<smooth value="true"/>
-		<border.size value="5"/>
+		<border.size value="3"/>
 		<size value="3"/>
 		<color value="cyan"/>
 		<step.accel value="1.0"/>
 		<border.color value="cyan"/>
 		<hover.size value="3"/>
-		<hover.border.size value="10"/>
+		<hover.border.size value="5"/>
 		<hover.color value="cyan"/>
 		<hover.border.color value="cyan"/>
 	</style>
@@ -1678,6 +1756,22 @@
 	<style class="GraphMesh" parents="root">
 		<smooth value="true"/>
 		<color value="cyan"/>
+	</style>
+
+	<!-- Multilayer Graph Meshes -->
+	<style class="GraphMesh_in" parents="GraphMesh">
+		<width value="2" />
+		<color value="#444444" />
+		<fill.color value="#444444" />
+		<color.a value="0.1" />
+		<fill.color.a value="0.3" />
+	</style>
+	<style class="GraphMesh_out" parents="GraphMesh">
+		<width value="2" />
+		<color value="#777777" />
+		<fill.color value="#777777" />
+		<color.a value="0.3" />
+		<fill.color.a value="0.5" />
 	</style>
 
 	<style class="GraphOrigin" parents="root">

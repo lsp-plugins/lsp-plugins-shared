@@ -11,9 +11,12 @@
 	"import_rew_filter_settings": "Import REW filter settings",
 	"import_settings": "Import settings",
 	
-	"load_audio_file": "Load Audio File",
+	"load_audio_file": "Load audio file",
 	"load_from_file": "Load from file",
 	
+	"preset_management": "Preset management",
+	
+	"save_preset": "Save preset",
 	"save_to_file": "Save to file",
 	
 	"update_notification": "Update notification"
