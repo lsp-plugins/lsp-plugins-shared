@@ -94,6 +94,7 @@
 		<bg value="#1b1c22"/>
 		<bg_name value="#ebecee"/>
 		<bg_light value="#25272e"/>
+		<bg_preset value="#1b1c22"/>
 		<bg_schema value="#1b1c22"/>
 		<bg_schema_name value="#1b1c22"/>
 		<border_color value="#373943"/>
@@ -391,7 +392,7 @@
 	<style class="Window" parents="root"></style>
 
 	<style class="FileDialog" parents="Window"></style>
-	
+
 	<style class="SavePresetDialog" parents="Window">
 		<border.style value="dialog" />
 		<actions value="move,stick,change_desk" />
