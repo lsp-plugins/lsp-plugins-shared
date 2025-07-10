@@ -29,14 +29,16 @@
 			<void expand="true"/>
 
 			<!-- Preset and Menu box -->
-			<hbox bg.color="bg" halign="1">
+			<hbox bg.color="bg">
 
 				<!-- Presets-->
 				<ui:with bg.color="bg_preset">
-					<bevel expand="false" color="bg_schema" width.min="24" height.min="20" />
-					<label ui:id="trg_prev_preset" hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.top="1" font.antialias="true" text="icons.shapes.left" width="22" />
-					<label ui:id="trg_presets_menu" ui:tag="666" hover="true" color="menu_text" hover.color="menu_text_hover" pad.h="5" font.size="14" padding.top="3" text="labels.header.menu" width="200" hfill="true" text.clip="true" />
-					<label ui:id="trg_next_preset" hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.top="1" font.antialias="true" text="icons.shapes.right" width="22" />
+					<hbox ui:id="trg_presets_menu_area">
+						<bevel expand="false" color="bg_schema" width.min="24" height.min="20" />
+						<label ui:id="trg_prev_preset" hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.top="1" font.antialias="true" text="icons.shapes.left" width="22" />
+						<label ui:id="trg_presets_menu" ui:tag="666" hover="true" color="menu_text" hover.color="menu_text_hover" pad.h="5" font.size="14" padding.top="3" text="labels.header.menu" width="200" hfill="true" text.clip="true" />
+						<label ui:id="trg_next_preset" hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.top="1" font.antialias="true" text="icons.shapes.right" width="22" />
+					</hbox>
 				</ui:with>
 
 				<!-- Menu and About -->
