@@ -448,6 +448,7 @@
 	},
 	"listen": "Listen",
 	"location": "Location",
+	"log_dots": "Log dots",
 	"log_scale": "Log scale",
 
 	"lookahead": "Lookahead",

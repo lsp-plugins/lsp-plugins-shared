@@ -74,6 +74,7 @@
 	"reset_settings": "Reset settings",
 
 	"listen": "Listen",
+	"linear_frequency": "Linear frequency",
 	"link": {
 		"copy": "Copy link",
 		"follow": "Follow link"
