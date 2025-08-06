@@ -798,6 +798,8 @@
 		"clip": "Clip",
 		"clipping": "Clipping",
 		"curr_ent": "Curr",
+		"dc_compensate": "DC compensate",
+		"dc_offset": "DC offset",
 		"drive": "Drive",
 		"dry": "Dry",
 		"dry:db": "Dry\n(dB)",

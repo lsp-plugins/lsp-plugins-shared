@@ -40,6 +40,7 @@
 		"min": "min",
 		"x::2f": "{@value%.2f}",
 		"x::f": "{@value%.4f}",
+		"x:db:f;x::f": "{@db%.2f} дБ\n{@value%.4f}",
 		"x:db": "{@value} дБ",
 		"x:db:f": "{@value%.2f} дБ",
 		"x:deg": "{@value}°",
