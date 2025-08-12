@@ -391,8 +391,8 @@
 	<style class="FileDialog" parents="Window"></style>
 
 	<style class="SavePresetDialog" parents="Window">
-		<border.style value="dialog" />
-		<actions value="move,stick,change_desk" />
+		<border.style value="dialog"/>
+		<actions value="move,stick,change_desk"/>
 		<layout.hscale value="1.0"/>
 		<layout.vscale value="1.0"/>
 	</style>
@@ -1573,7 +1573,6 @@
 		<pointer value="hand"/>
 		<bg.inherit value="true"/>
 
-
 		<inactive.color value="bg_light"/>
 		<inactive.text.color value="text_prim"/>
 		<inactive.spin.color value="bg_light"/>
@@ -1593,7 +1592,6 @@
 		<border.color value="border_color"/>
 		<pointer value="hand"/>
 		<hscroll.mode value="none"/>
-
 
 		<inactive.list.bg.color value="bg"/>
 		<inactive.border.color value="border_color"/>
@@ -2085,7 +2083,6 @@
 		<text.selected.color value="text_icon"/>
 		<text.selected.hover.color value="text_icon"/>
 
-
 		<inactive.bg.color value="bg"/>
 		<inactive.bg.hover.color value="LBI_hov"/>
 		<inactive.bg.selected.color value="LBI_sel"/>
@@ -2376,6 +2373,8 @@
 		<border.color value="border_color"/>
 		<border.gap.color value="bg_light"/>
 	</style>
+
+	<style class="FileDialog::Input" parents="FileDialog::Search"></style>
 
 	<style class="FileDialog::Warning" parents="root">
 		<text.color value="warn"/>
@@ -2682,6 +2681,25 @@
 		<border.style value="dialog"/>
 		<layout.hscale value="1.0"/>
 		<layout.vscale value="1.0"/>
+	</style>
+
+	<!-- PresetsDialog widgets -->
+	<style class="PresetsDialog" parents="Window">
+		<padding value="4"/>
+		<border.style value="none"/>
+		<layout.hscale value="1.0"/>
+		<layout.vscale value="1.0"/>
+	</style>
+
+	<style class="PresetsTab" parents="TabControl">
+		<heading value="-1 1 0 0"/>
+		<heading.gap value="0"/>
+		<heading.spacing value="0"/>
+		<heading.spacing.fill value="false"/>
+	</style>
+
+	<style class="PresetsList" parents="ListBox">
+		<border.size value="0"/>
 	</style>
 
 </schema>

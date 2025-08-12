@@ -383,8 +383,8 @@
 	<style class="FileDialog" parents="Window"></style>
 
 	<style class="SavePresetDialog" parents="Window">
-		<border.style value="dialog" />
-		<actions value="move,stick,change_desk" />
+		<border.style value="dialog"/>
+		<actions value="move,stick,change_desk"/>
 		<layout.hscale value="1.0"/>
 		<layout.vscale value="1.0"/>
 	</style>
@@ -1584,7 +1584,6 @@
 		<inactive.brightness value="0.75"/>
 		<inactive.bg.brightness value="0.75"/>
 
-
 	</style>
 
 	<style class="ComboBox::List" parents="root">
@@ -1655,7 +1654,7 @@
 		<bg.inherit value="true"/>
 
 		<button.color value="gray"/>
-		<button.aspect value="0.6" />
+		<button.aspect value="0.6"/>
 		<button.border.gradient value="false"/>
 		<button.border.color value="gray"/>
 		<button.border.size value="6"/>
@@ -1666,7 +1665,7 @@
 	<style class="Fader_prophessor_thin" parents="Fader_prophessor">
 		<scale.width value="2"/>
 
-		<button.aspect value="2.75" />
+		<button.aspect value="2.75"/>
 		<button.border.size value="1"/>
 		<button.width value="1,1"/>
 		<button.width.x value="1"/>
@@ -1675,11 +1674,11 @@
 
 	<style class="Fader_prophessor_water" parents="Fader_prophessor">
 		<scale.width value="16"/>
-		<button.aspect value="0" />
+		<button.aspect value="0"/>
 		<!-- <button.border.size value="1"/> -->
 		<button.width value="0"/>
 		<scale.border.radius value="10"/>
-		<angle value="0" />
+		<angle value="0"/>
 	</style>
 
 	<style class="Fader_prophessor_ratio" parents="root">
@@ -1692,7 +1691,7 @@
 		<scale.border.color value="bg"/>
 		<scale.brightness value="0.6"/>
 		<bg.inherit value="true"/>
-		<width value="64" />
+		<width value="64"/>
 
 		<!-- Thumb -->
 		<button.color value="cyan"/>
@@ -1701,7 +1700,7 @@
 		<button.border.radius value="5"/>
 		<button.width value="0"/>
 		<!-- Should be a circle -->
-		<button.aspect value="0.99" />
+		<button.aspect value="0.99"/>
 	</style>
 
 	<style class="Fader_play" parents="Fader">
@@ -1761,18 +1760,18 @@
 
 	<!-- Multilayer Graph Meshes -->
 	<style class="GraphMesh_in" parents="GraphMesh">
-		<width value="2" />
-		<color value="#444444" />
-		<fill.color value="#444444" />
-		<color.a value="0.1" />
-		<fill.color.a value="0.3" />
+		<width value="2"/>
+		<color value="#444444"/>
+		<fill.color value="#444444"/>
+		<color.a value="0.1"/>
+		<fill.color.a value="0.3"/>
 	</style>
 	<style class="GraphMesh_out" parents="GraphMesh">
-		<width value="2" />
-		<color value="#777777" />
-		<fill.color value="#777777" />
-		<color.a value="0.3" />
-		<fill.color.a value="0.5" />
+		<width value="2"/>
+		<color value="#777777"/>
+		<fill.color value="#777777"/>
+		<color.a value="0.3"/>
+		<fill.color.a value="0.5"/>
 	</style>
 
 	<style class="GraphOrigin" parents="root">
@@ -2462,6 +2461,8 @@
 		<border.gap.color value="bg_light"/>
 	</style>
 
+	<style class="FileDialog::Input" parents="FileDialog::Search"></style>
+
 	<style class="FileDialog::Warning" parents="root">
 		<text.color value="warn"/>
 	</style>
@@ -2773,6 +2774,25 @@
 		<border.style value="dialog"/>
 		<layout.hscale value="1.0"/>
 		<layout.vscale value="1.0"/>
+	</style>
+
+	<!-- PresetsDialog widgets -->
+	<style class="PresetsDialog" parents="Window">
+		<padding value="4"/>
+		<border.style value="none"/>
+		<layout.hscale value="1.0"/>
+		<layout.vscale value="1.0"/>
+	</style>
+
+	<style class="PresetsTab" parents="TabControl">
+		<heading value="-1 1 0 0"/>
+		<heading.gap value="0"/>
+		<heading.spacing value="0"/>
+		<heading.spacing.fill value="false"/>
+	</style>
+
+	<style class="PresetsList" parents="ListBox">
+		<border.size value="1"/>
 	</style>
 
 </schema>
