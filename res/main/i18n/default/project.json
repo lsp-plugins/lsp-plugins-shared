@@ -2,9 +2,22 @@
 	"acronym": "LSP",
 
 	"donations": {
-		"0": "https://www.blockchain.com/btc/address/15X3AfDRF3EshSLBoK8UfHAsFr2TQsH8pk",
-		"1": "https://etherscan.io/address/0x079b24da78d78302cd3cfbb80c728cd554606cc6",
-		"2": "https://www.patreon.com/sadko4u"
+		"0": {
+			"url": "https://paypal.me/borTCreative",
+			"text": "PayPal (Boris Gotsulenko aka borT)"
+		},
+		"1": {
+			"url": "https://www.blockchain.com/btc/address/15X3AfDRF3EshSLBoK8UfHAsFr2TQsH8pk",
+			"text": "BTC wallet: 15X3AfDRF3EshSLBoK8UfHAsFr2TQsH8pk"
+		},
+		"2": {
+			"url": "https://etherscan.io/address/0x079b24da78d78302cd3cfbb80c728cd554606cc6",
+			"text": "ETH wallet: 0x079b24da78d78302cd3cfbb80c728cd554606cc6"
+		},
+		"3": {
+			"url": "https://www.patreon.com/sadko4u",
+			"text": "Patreon (Vladimir Sadovnikov aka sadko4u)"
+		}
 	},
 
 	"name": "Linux Studio Plugins Project",
