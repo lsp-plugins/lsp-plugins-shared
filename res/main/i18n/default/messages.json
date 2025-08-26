@@ -46,5 +46,15 @@
 	},
 
 	"postscript": "{@meta_pkg_full_name}",
+	
+	"presets": {
+		"confirm_overwrite": "User preset '{@name}' already exists. Do you want to overwrite it?",
+		"confirm_remove_preset": "Do you want to remove user preset '{@name}'?",
+		"confirm_reset_state": "Do you want to reset settings to default?",
+		"factory_preset_changed": "Factory preset '{@name}' has been changed previously.\nDo you want to switch to selected preset without saving?",
+		"save_preset_failed": "Failed to save user preset '{@name}', error code: {@code}.\nPlease verify the name of the preset and write permissions on the file system.",
+		"user_preset_changed": "User preset '{@name}' has been changed previously.\nDo you want to switch to selected preset without saving?"
+	},
+	
 	"site": "{@meta_pkg_site}"
 }

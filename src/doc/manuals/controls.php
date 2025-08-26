@@ -296,7 +296,7 @@
 		<li><b>LSP Logo</b> at the left</li>
 		<li><b>Plugin name</b> at the top</li>
 		<li><b>Plugin model</b> code near to the plugin name.</li>
-		<li><b>Bypass button</b> at ther right of the plugin name.</li>
+		<li><b>Bypass button</b> at the right of the plugin name.</li>
 		<li><b>Main menu bar</b> that consists of the following elements:</li>
 		<ul>
 			<li><b>Menu</b> &ndash; triggers the main plugin menu.</li>
@@ -306,7 +306,7 @@
 			<li><b>About</b> &ndash; shows the dialog which displays all necessary information about the plugin</li>
 		</ul>
 	</ul>
-	<p>The main menu allows to peform the following actions on plugin instance:</p>
+	<p>The main menu allows to perform the following actions on plugin instance:</p>
 	<ul>
 		<li>Show manual for the plugin and for the controls.</li>
 		<li>Export plugin settings to file and clipboard.</li>
@@ -320,7 +320,7 @@
 		<li>Apply different built-in presets if they are present and supported by the plugin.</li>
 	</ul>
 	
-	<p>Plugins typically use the folowing model code format: <b>XXXX&nbsp;MM&nbsp;NN&nbsp;CC</b>, where:</p>
+	<p>Plugins typically use the following model code format: <b>XXXX&nbsp;MM&nbsp;NN&nbsp;CC</b>, where:</p>
 	<ul>
 		<li><b>XXXX</b> &ndash; arconym from the full name of plugin, for example <b>GE</b> for <b>Grafischer Entzerrer</b>.</li>
 		<li><b>MM</b> &ndash; modifiers that show additional facilities of plugin like <b>M</b> (MIDI) or <b>SC</b> (Side chain)</li>
@@ -414,7 +414,7 @@
 	LV2 format.</p>
 	<p>So they're available in the Ardour's mixer strip even if UI is not shown. Inline displays also are
 	available in <a href="https://harrisonconsoles.com/">Mixbus DAW</a> as the relative to Ardour product.</p>
-	<p>Because inline display is an LV2-specific exension, it is available only for LV2 version of LSP plugins.
+	<p>Because inline display is an LV2-specific extension, it is available only for LV2 version of LSP plugins.
 	But standalone JACK versions of plugins that support inline displays in LV2, draw them on window's icon.</p>
 	
 	<p style="text-align:center">Example of inline displays:</p>
@@ -427,14 +427,14 @@
 <section id="Knob">
 	<h2>Knob</h2>
 	<p>Knobs are the mostly used controls by plugin GUIs. They allow to adjust value for continuous parameters
-	in the pre-defined range. Higlighted part of the knob's scale shows deviation from it's zero position.
+	in the pre-defined range. Highlighted part of the knob's scale shows deviation from it's zero position.
 	There are many ways to adjust the controlled parameter.<p>
 	<p>The first way to change the parameter is performing left mouse click on the knob's cap, holding mouse
 	button and moving cursor up and down. To apply more accurate adjustment, right button of mouse may be pressed
 	while moving cursor.</p>
 	<p>The second way to change parameter's value may be reached by using mouse scroll. To perform more accurate
 	adjustment, shift key may be pressed on keyboard. To accelerate the adjustment, control key may be pressed on keyboard.</p>
-	<p>For all knobs (especially when they are stiff) quick adjustment of parameter may be achived by left-clicking
+	<p>For all knobs (especially when they are stiff) quick adjustment of parameter may be achieved by left-clicking
 	knob's scale. Also, additionally mouse button may be hold and parameter will be adjusted by moving mouse
 	clockwise/counter-clockwise.</p>
 	<p>Note, that knob scale actions can be enabled or disabled by the additional 'UI behavior' &rarr; 'Editable knob scale' option.</p>
@@ -477,7 +477,7 @@
 <section id="Meter">
 	<h2>Meter</h2>
 	<p>Meters are used for metering some values (mostly, levels of the audio signal). They may contain yellow
-	and red zones. They respectivelly show that signal exceeds -6dB and 0dB levels.<p>
+	and red zones. They respectively show that signal exceeds -6dB and 0dB levels.<p>
 	<p style="text-align:center">Example of meters:</p>
 	<div class="images">
 		<img style="margin-right:10px;" src="<?= $CTL ?>meter_mono.png">
@@ -521,7 +521,7 @@
 <section id="SampleEditor">
 	<h2>Sample Editor</h2>
 	
-	<p>Sampe Editor widget is used for viewing and editing audio samples. It is similar to AudioFile wiget but
+	<p>Sample Editor widget is used for viewing and editing audio samples. It is similar to AudioFile wiget but
 	unlike AudioFile widget, it does not allow to load files from file system.</p>
 	
 	<p>By default if there is no sample data, the file widget displays

@@ -94,6 +94,7 @@
 		<bg value="#1b1c22"/>
 		<bg_name value="#ebecee"/>
 		<bg_light value="#25272e"/>
+		<bg_preset value="#1b1c22"/>
 		<bg_schema value="#1b1c22"/>
 		<bg_schema_name value="#1b1c22"/>
 		<border_color value="#373943"/>
@@ -302,7 +303,7 @@
 		<fade_in value="#ffff00"/>
 		<fade_out value="#ffff00"/>
 		<stretch value="#0088ff"/>
-		<loop value="#8800ff"/>
+		<loop value="#ff9900"/>
 
 		<!-- Cycle colors -->
 		<cycle value="#ff0000"/>
@@ -317,10 +318,10 @@
 		<stretch_border_color avalue="#000088ff"/>
 		<stretch_color_off avalue="#ee0088ff"/>
 		<stretch_border_color_off avalue="#880088ff"/>
-		<loop_color avalue="#888800ff"/>
-		<loop_border_color avalue="#008800ff"/>
-		<loop_color_off avalue="#ee8800ff"/>
-		<loop_border_color_off avalue="#888800ff"/>
+		<loop_color avalue="#88ff9900"/>
+		<loop_border_color avalue="#00ff9900"/>
+		<loop_color_off avalue="#eeff9900"/>
+		<loop_border_color_off avalue="#88ff9900"/>
 
 		<!-- Button colors -->
 		<button_cyan_rating_color value="#cccccc"/>
@@ -392,6 +393,13 @@
 
 	<style class="FileDialog" parents="Window"></style>
 
+	<style class="SavePresetDialog" parents="Window">
+		<border.style value="dialog"/>
+		<actions value="move,stick,change_desk"/>
+		<layout.hscale value="1.0"/>
+		<layout.vscale value="1.0"/>
+	</style>
+
 	<style class="MessageBox" parents="Window"></style>
 
 	<style class="PopupWindow" parents="Window"></style>
@@ -443,11 +451,28 @@
 		<border value="1"/>
 	</style>
 
+	<style class="AudioEnvelope" parents="root">
+		<line.width value="2"/>
+		<line.color value="#7c00e9"/>
+		<fill.color value="#7c00e9"/>
+		<fill.color.a value="0.6"/>
+		<point.size value="6"/>
+		<point.color value="#7c00e9"/>
+		<point.hover.color value="#8800ff"/>
+		<border.size value="4"/>
+		<border.radius value="12"/>
+		<border.flat value="true"/>
+		<border.color value="#ffffff"/>
+		<glass value="true"/>
+		<glass.color value="#ffffff"/>
+		<ipadding value="1"/>
+	</style>
+
 	<style class="AudioFolder::Active" parents="ListBox">
 		<bg.color value="bg_graph"/>
 	</style>
 
-	<style class="AudioFolder::Inctive" parents="ListBox">
+	<style class="AudioFolder::Inactive" parents="ListBox">
 		<bg.color value="bg_graph"/>
 	</style>
 
@@ -609,8 +634,8 @@
 
 		<color value="button_face"/>
 		<hover.color value="button_hface"/>
-		<down.color value="bright_gray"/>
-		<down.hover.color value="dark_gray"/>
+		<down.color value="kscale"/>
+		<down.hover.color value="kscale"/>
 
 		<text.color value="bg"/>
 		<text.hover.color value="bg"/>
@@ -1029,6 +1054,28 @@
 	</style>
 
 	<style class="Button_loop" parents="Button">
+		<down.color value="#ff9900"/>
+		<down.hover.color value="#e88b00"/>
+
+		<text.down.color value="bg"/>
+		<text.down.hover.color value="bg"/>
+
+		<border.down.color value="#ff9900"/>
+		<border.down.hover.color value="#e88b00"/>
+		<led.color value="#e88b00"/>
+
+		<inactive.down.color value="#ff9900"/>
+		<inactive.down.hover.color value="#e88b00"/>
+
+		<inactive.text.down.color value="bg"/>
+		<inactive.text.down.hover.color value="bg"/>
+
+		<inactive.border.down.color value="#ff9900"/>
+		<inactive.border.down.hover.color value="#e88b00"/>
+		<inactive.led.color value="#e88b00"/>
+	</style>
+
+	<style class="Button_envelope" parents="Button">
 		<down.color value="#8800ff"/>
 		<down.hover.color value="#7c00e9"/>
 
@@ -1533,6 +1580,15 @@
 		<border.gap.color value="bg_name"/>
 		<pointer value="hand"/>
 		<bg.inherit value="true"/>
+
+		<inactive.color value="bg_name"/>
+		<inactive.text.color value="bg"/>
+		<inactive.spin.color value="bg_name"/>
+		<inactive.spin.text.color value="bg"/>
+		<inactive.border.color value="bg"/>
+		<inactive.border.gap.color value="bg_name"/>
+		<inactive.brightness value="0.75"/>
+		<inactive.bg.brightness value="0.75"/>
 	</style>
 
 	<style class="ComboBox::List" parents="root">
@@ -1544,6 +1600,11 @@
 		<list.bg.color value="bg"/>
 		<border.color value="bg_name"/>
 		<pointer value="hand"/>
+
+		<inactive.list.bg.color value="bg"/>
+		<inactive.border.color value="bg_name"/>
+		<inactive.brightness value="0.75"/>
+		<inactive.bg.brightness value="0.75"/>
 	</style>
 
 	<style class="Edit" parents="root">
@@ -2023,6 +2084,17 @@
 		<text.hover.color value="bg"/>
 		<text.selected.color value="bg"/>
 		<text.selected.hover.color value="bg"/>
+
+		<inactive.bg.color value="bg"/>
+		<inactive.bg.hover.color value="LBI_hov"/>
+		<inactive.bg.selected.color value="LBI_sel"/>
+		<inactive.bg.selected.hover.color value="LBI_sel_hov"/>
+		<inactive.text.color value="text_sec"/>
+		<inactive.text.hover.color value="bg"/>
+		<inactive.text.selected.color value="bg"/>
+		<inactive.text.selected.hover.color value="bg"/>
+		<inactive.brightness value="0.75"/>
+		<inactive.bg.brightness value="0.75"/>
 	</style>
 
 	<style class="Menu" parents="root">
@@ -2308,6 +2380,8 @@
 		<border.color value="bg"/>
 		<border.gap.color value="bg_name"/>
 	</style>
+
+	<style class="FileDialog::Input" parents="FileDialog::Search"></style>
 
 	<style class="FileDialog::Warning" parents="root">
 		<text.color value="warn"/>
@@ -2616,6 +2690,25 @@
 		<border.style value="dialog"/>
 		<layout.hscale value="1.0"/>
 		<layout.vscale value="1.0"/>
+	</style>
+
+	<!-- PresetsDialog widgets -->
+	<style class="PresetsDialog" parents="Window">
+		<padding value="4"/>
+		<border.style value="none"/>
+		<layout.hscale value="1.0"/>
+		<layout.vscale value="1.0"/>
+	</style>
+
+	<style class="PresetsTab" parents="TabControl">
+		<heading value="-1 1 0 0"/>
+		<heading.gap value="0"/>
+		<heading.spacing value="0"/>
+		<heading.spacing.fill value="false"/>
+	</style>
+
+	<style class="PresetsList" parents="ListBox">
+		<border.size value="0"/>
 	</style>
 
 </schema>

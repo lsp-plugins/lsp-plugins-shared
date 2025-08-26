@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<window ui:inject="PresetsDialog" title="titles.preset_management" fill="true">
+	<hbox spacing="4" width="600" height="256" >
+		<!-- Presets -->
+		<vbox expand="true" fill="true">
+			<hbox hexpand="true" spacing="4" pad.b="4">
+				<edit ui:inject="FileDialog::Search" ui:id="preset_filter" etext="actions.presets.search" hexpand="true"/>
+				<button ui:id="btn_refresh" ui:inject="Button_cyan" font.name="lsp-icons" font.size="11" size="22" font.antialias="true" text="icons.actions.refresh"/>
+			</hbox>
+			<tabs ui:inject="PresetsTab" ui:id="preset_category" expand="true" fill="true">
+				<tab text="labels.presets.category.all">
+					<list ui:inject="PresetsList" ui:id="all_presets_list" expand="true" fill="true" />
+				</tab>
+				<tab text="labels.presets.category.factory">
+					<list ui:inject="PresetsList" ui:id="factory_presets_list" expand="true" fill="true" />
+				</tab>
+				<tab text="labels.presets.category.user">
+					<list ui:inject="PresetsList" ui:id="user_presets_list" expand="true" fill="true"/>
+				</tab>
+				<tab text="labels.presets.category.favourites">
+					<list ui:inject="PresetsList" ui:id="favourites_presets_list" expand="true" fill="true"/>
+				</tab>
+			</tabs>
+		</vbox>
+		<!-- Actions -->
+		<vbox spacing="4" width.min="192">
+			<vbox spacing="4" hexpand="true">
+				<button ui:id="btn_save" fill="true" text="actions.presets.save"/>
+				<button ui:id="btn_favourite" fill="true" text="actions.presets.favourite"/>
+				<button ui:id="btn_remove" fill="true" text="actions.presets.remove" text.color="dark_red"/>
+				<button ui:id="btn_reset" fill="true" text="actions.presets.reset"/>
+			</vbox>
+
+			<label text="labels.presets.configuration" hfill="true" text.halign="-1"/>
+			<grid rows="2" cols="2" spacing="4">
+				<button ui:id="btn_copy" fill="true" text="actions.presets.copy"/>
+				<button ui:id="btn_paste" fill="true" text="actions.presets.paste"/>
+
+				<button ui:id="btn_import" fill="true" text="actions.presets.import"/>
+				<button ui:id="btn_export" fill="true" text="actions.presets.export"/>
+			</grid>
+		</vbox>
+	</hbox>
+</window>

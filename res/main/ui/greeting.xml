@@ -7,10 +7,10 @@
 		<label ui:tag="42" ui:inject="GreetingDialog::Text" text="messages.greetings.1" text.meta="true" />
 		<label ui:tag="43" ui:inject="GreetingDialog::Text" text="messages.greetings.2" text.meta="true" />
 
-		<ui:for id="i" first="0" count="3">
+		<ui:for id="i" first="0" count="4">
 			<hlink ui:inject="GreetingDialog::Hlink"
-				text="project.donations.${i}"
-				url="project.donations.${i}"
+				text="project.donations.${i}.text"
+				url="project.donations.${i}.url"
 				text.meta="true"
 				url.meta="true"
 			/>

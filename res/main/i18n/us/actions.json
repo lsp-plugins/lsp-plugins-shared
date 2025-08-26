@@ -13,7 +13,7 @@
 	
 	"cancel": "Cancel",
 	"close": "Close",
-	
+
 	"confirm": {
 		"no": "No",
 		"yes": "Yes"
@@ -35,11 +35,11 @@
 		"move_up": "Move up",
 		"paste": "Paste"
 	},
-	
+
 	"export": "Export",
 	"export_settings_to_clipboard": "Export settings to clipboard",
 	"export_settings_to_file": "Export settings to file...",
-	
+
 	"file_preview": {
 		"pause": "Pause",
 		"play": "Play",
@@ -54,64 +54,82 @@
 			"to_side": "Switch to Side"
 		}
 	},
-	
+
 	"font_scaling": {
 		"select": "Font scaling",
 		"value:pc": "{@value} %",
 		"zoom_in": "Zoom in",
 		"zoom_out": "Zoom out"
 	},
-	
+
 	"freeze": "Freeze",
-	
+
 	"import": "Import",
 	"import_hydrogen_drumkit_file": "Hydrogen drumkit file...",
 	"import_installed_hydrogen_drumkit": "Installed Hydrogen drumkit",
 	"import_settings_from_clipboard": "Import settings from clipboard",
 	"import_settings_from_file": "Import settings from file...",
 	"import_sfz_file": "Import SFZ file...",
-	"import_rew_filter_file": "REW filter file...",
+	"import_rew_filter_file": "REW/APO filter file...",
 
 	"listen": "Listen",
+	"linear_frequency": "Linear frequency",
 	"link": {
 		"copy": "Copy link",
 		"follow": "Follow link"
 	},
-	
+
 	"load": "Load",
 	"load_preset": "Load preset",
-	
+
+	"manage_presets": "Manage presets...",
 	"measure": "Measure",
-	
+
 	"nav": {
 		"go": "Go",
 		"up": "Up"
 	},
-	
+
 	"ok": "OK",
 	"open": "Open",
 
 	"plugin_manual": "Plugin manual",
 	"postprocess": "Post-process",
+	"presets": {
+		"copy": "Copy",
+		"export": "Export...",
+		"favourite": "Favourite",
+		"import": "Import...",
+		"input_name": "Input name",
+		"load": "Load",
+		"paste": "Paste",
+		"new": "New",
+		"remove": "Remove",
+		"reset": "Reset",
+		"save": "Save",
+		"search": "Search...",
+		"select": "Select preset"
+	},
 	"profile": "Profile",
-	
-	"reset": "Reset",	
+
+	"reset": "Reset",
 	"restart": "Restart",
 	"run_stop": "Run/Stop",
 
 	"save": "Save",
-	
-	"select_language": "Select language",
+
+	"select_language": "Language",
 
 	"tap": "Tap",
 	"to_bookmarks": "+Bookmarks",
 	"toggle_rack_mount": "Toggle rack mount",
-	
+
 	"ui_behavior": {
 		"": "UI behavior",
-		"ediable_knob_scale": "Editable knob scale",		
+		"ediable_knob_scale": "Editable knob scale",
 		"enable_zoomable_spectrum": "Automatic frequency graph scaling",
 		"file_list_navigation_autoload": "Automatically load files when navigating file list",
+		"file_list_navigation_autoplay": "Automatically play files when navigating file list",
 		"filter_point_thickness": "Filter point thickness",
 		"override_hydrogen_kits": "Override Hydrogen kits",
 		"take_instrument_name_from_file": "Take instrument name from file",
@@ -120,9 +138,9 @@
 			"invert_graph_dot": "Invert vertical mouse scroll for graph dots"
 		}
 	},
-	
+
 	"ui_manual": "UI manual",
-	
+
 	"ui_scaling": {
 		"prefer_host": "Prefer host",
 		"select": "UI scaling",
@@ -130,9 +148,9 @@
 		"zoom_in": "Zoom in",
 		"zoom_out": "Zoom out"
 	},
-	
+
 	"user_paths": "User paths...",
-	
+
 	"visual_schema": {
 		"select": "Visual Schema"
 	}

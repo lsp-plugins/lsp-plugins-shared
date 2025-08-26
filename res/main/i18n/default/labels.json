@@ -38,6 +38,23 @@
 	"act_ive": "ACT",
 	"active": "Active",
 	"actual_duration": "Actual\nDuration (s)",
+	
+	"adsr": {
+		"adsr": "ADSR",
+		"ahdbssr": "AHDBSSR",
+		"attack": "Attack",
+		"break": "Break",
+		"convex": "Convex",
+		"curve": "Curve",
+		"decay": "Decay",
+		"envelope": "Envelope",
+		"hold": "Hold",
+		"release": "Release",
+		"shape": "Shape",
+		"slope": "Slope",
+		"sustain": "Sustain",
+		"time": "Time"
+	},
 
 	"alr": "ALR",
     "alr_": "Auto level regulation",
@@ -149,10 +166,12 @@
 		"left": "Left",
 		"left_on": "Left on",
 		"link": "Link",
+		"lr_link": "L/R link",
 		"mid": "Mid",
 		"mid_on": "Mid on",
 		"mid_side": "Mid/Side",
 		"middle": "Middle",
+		"ms_link": "M/S link",
 		"mute": "Mute",
 		"none": "None",
 		"num_id": "#{@id}",
@@ -429,6 +448,7 @@
 	},
 	"listen": "Listen",
 	"location": "Location",
+	"log_dots": "Log dots",
 	"log_scale": "Log scale",
 
 	"lookahead": "Lookahead",
@@ -600,6 +620,35 @@
 
 	"preamp": "Preamp",
 	"predelay": "Pre-delay",
+	"premix": {
+		"": "Pre-mix",
+		"in_to_link": "In -> Link",
+		"in_to_sc": "In -> SC",
+		"link_to_in": "Link -> In",
+		"link_to_sc": "Link -> SC",
+		"sc_to_in": "SC -> In",
+		"sc_to_link": "SC -> Link"
+	},
+	
+	"presets": {
+		"add_to_favourites": "Add to favourites",
+		"category": {
+			"all": "All",
+			"factory": "Factory",
+			"favourites": "Favourites",
+			"user": "User"
+		},
+		"configuration": "Configuration",
+		"name": {
+			"mod": "* {@name}",
+			"normal": "{@name}",
+			"factory": "{@name} [Factory]",
+			"user": "{@name} [User]",
+			"factory_mod": "* {@name} [Factory]",
+			"user_mod": "* {@name} [User]"
+		},
+		"preset_name": "Preset name"
+	},
 	
 	"processing": {
 		"post": "Post",
@@ -749,6 +798,8 @@
 		"clip": "Clip",
 		"clipping": "Clipping",
 		"curr_ent": "Curr",
+		"dc_compensate": "DC compensate",
+		"dc_offset": "DC offset",
 		"drive": "Drive",
 		"dry": "Dry",
 		"dry:db": "Dry\n(dB)",

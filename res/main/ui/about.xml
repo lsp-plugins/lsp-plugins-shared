@@ -68,11 +68,11 @@
 						<label ui:inject="AboutDialog::Text" text="messages.about.support" />
 					</cell>
 					
-					<ui:for id="i" first="0" count="3">
+					<ui:for id="i" first="0" count="4">
 						<cell cols="2">
 							<hlink ui:inject="AboutDialog::Hlink"
-								text="project.donations.${i}"
-								url="project.donations.${i}"
+								text="project.donations.${i}.text"
+								url="project.donations.${i}.url"
 								text.meta="true"
 								url.meta="true"
 							/>

@@ -1,4 +1,15 @@
 {
+	"adsr": {
+		"type": {
+			"cubic": "Cubic",
+			"dline": "DLine",
+			"exp": "Exp",
+			"quad": "Quadro",
+			"off": "Off",
+			"vline": "VLine"
+		}
+	},
+	
 	"bool": {
 		"off": "off",
 		"on": "on"
@@ -70,8 +81,8 @@
 		"type": {
 			"fir": "FIR",
 			"fft": "FFT",
-			"iir": "IIR",
-			"spm": "SPM"
+			"iir": "Zero-latency (IIR)",
+			"spm": "Linear phase (SPM)"
 		}
 	},
 
@@ -208,8 +219,8 @@
 		"type": {
 			"fir": "FIR",
 			"fft": "FFT",
-			"iir": "IIR",
-			"spm": "SPM"
+			"iir": "Zero-latency (IIR)",
+			"spm": "Linear phase (SPM)"
 		}
 	},
 
@@ -332,7 +343,7 @@
 		"side_mid": "Side/Mid",
 		"sma": "SMA"
 	},
-	
+
 	"sigmoid": {
 		"arctangent": "Arctangent",
 		"circle": "Circle",

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<window ui:inject="SavePresetDialog" title="titles.save_preset" fill="true" width.min="400" heigh.min="200">
+	<vbox spacing="8" padding="5" fill="true" expand="true">
+		<label text="labels.presets.preset_name" fill="true" text.halign="-1" />
+
+		<edit ui:inject="FileDialog::Input" ui:id="preset_name" etext="actions.presets.input_name" hexpand="true" />
+
+		<hbox spacing="4">
+			<check ui:id="favourites_check" />
+			<label ui:id="favourites_label" text="labels.presets.add_to_favourites" />
+			<void hexpand="true" />
+		</hbox>
+
+		<void height.min="16" />
+
+		<hbox spacing="4">
+			<button ui:id="btn_save" width.min="96" fill="true" text="actions.presets.save" />
+			<button ui:id="btn_cancel" width.min="96" fill="true" text="actions.cancel" />
+			<void hexpand="true" />
+		</hbox>
+	</vbox>
+</window>

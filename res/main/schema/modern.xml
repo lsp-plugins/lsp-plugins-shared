@@ -94,6 +94,7 @@
 		<bg value="#1b1c22"/>
 		<bg_name value="#373944"/>
 		<bg_light value="#25272e"/>
+		<bg_preset value="#1f2027"/>
 		<bg_schema value="#25272e"/>
 		<bg_schema_name value="#373944"/>
 		<border_color value="#373944"/>
@@ -170,7 +171,7 @@
 
 		<!-- Knob and meshes colors -->
 		<mono_in value="#bf6455"/>
-		<mono value="#d8412a"/>
+		<mono value="#ce6e5f"/>
 
 		<left_in value="#bf6455"/>
 		<right_in value="#717eae"/>
@@ -381,6 +382,13 @@
 
 	<style class="FileDialog" parents="Window"></style>
 
+	<style class="SavePresetDialog" parents="Window">
+		<border.style value="dialog"/>
+		<actions value="move,stick,change_desk"/>
+		<layout.hscale value="1.0"/>
+		<layout.vscale value="1.0"/>
+	</style>
+
 	<style class="MessageBox" parents="Window"></style>
 
 	<style class="PopupWindow" parents="Window"></style>
@@ -432,11 +440,28 @@
 		<border value="1"/>
 	</style>
 
+	<style class="AudioEnvelope" parents="root">
+		<line.width value="2"/>
+		<line.color value="#7c5ba1"/>
+		<fill.color value="#7c5ba1"/>
+		<fill.color.a value="0.8"/>
+		<point.size value="6"/>
+		<point.color value="#7c5ba1"/>
+		<point.hover.color value="#c591ff"/>
+		<border.size value="4"/>
+		<border.radius value="12"/>
+		<border.flat value="false"/>
+		<border.color value="#0000000"/>
+		<glass value="false"/>
+		<glass.color value="#ffffff"/>
+		<ipadding value="0"/>
+	</style>
+
 	<style class="AudioFolder::Active" parents="ListBox">
 		<bg.color value="bg_graph"/>
 	</style>
 
-	<style class="AudioFolder::Inctive" parents="ListBox">
+	<style class="AudioFolder::Inactive" parents="ListBox">
 		<bg.color value="bg_graph"/>
 	</style>
 
@@ -1038,6 +1063,28 @@
 		<inactive.led.color value="#1b935c"/>
 	</style>
 
+	<style class="Button_envelope" parents="Button">
+		<down.color value="#68488c"/>
+		<down.hover.color value="#68488c"/>
+
+		<text.down.color value="#b28ed8"/>
+		<text.down.hover.color value="#b28ed8"/>
+
+		<border.down.color value="#b28ed8"/>
+		<border.down.hover.color value="#9572bb"/>
+		<led.color value="#9572bb"/>
+
+		<inactive.down.color value="#68488c"/>
+		<inactive.down.hover.color value="#68488c"/>
+
+		<inactive.text.down.color value="#b28ed8"/>
+		<inactive.text.down.hover.color value="#b28ed8"/>
+
+		<inactive.border.down.color value="#b28ed8"/>
+		<inactive.border.down.hover.color value="#9572bb"/>
+		<inactive.led.color value="#9572bb"/>
+	</style>
+
 	<style class="Button_lufs" parents="Button">
 		<down.color value="#485d2b"/>
 		<down.hover.color value="#485d2b"/>
@@ -1313,6 +1360,17 @@
 		<font.size value="8"/>
 	</style>
 
+	<style class="Button_left_8_dimmed" parents="Button_left_8">
+		<down.color.hue value="90"/>
+		<border.color.hue value="90"/>
+		<led.color.hue value="90"/>
+	</style>
+	<style class="Button_right_8_dimmed" parents="Button_right_8">
+		<down.color.hue value="90"/>
+		<border.color.hue value="90"/>
+		<led.color.hue value="90"/>
+	</style>
+
 	<style class="Button_right_8" parents="Button_right">
 		<font.size value="8"/>
 	</style>
@@ -1516,6 +1574,16 @@
 		<border.gap.color value="bg"/>
 		<pointer value="hand"/>
 		<bg.inherit value="true"/>
+
+		<inactive.color value="bg"/>
+		<inactive.text.color value="text_sec"/>
+		<inactive.spin.color value="bg"/>
+		<inactive.spin.text.color value="text_prim"/>
+		<inactive.border.color value="bg_light"/>
+		<inactive.border.gap.color value="bg"/>
+		<inactive.brightness value="0.75"/>
+		<inactive.bg.brightness value="0.75"/>
+
 	</style>
 
 	<style class="ComboBox::List" parents="root">
@@ -1526,6 +1594,11 @@
 		<border.color value="bg_light"/>
 		<pointer value="hand"/>
 		<hscroll.mode value="none"/>
+
+		<inactive.list.bg.color value="bg"/>
+		<inactive.border.color value="bg_light"/>
+		<inactive.brightness value="0.75"/>
+		<inactive.bg.brightness value="0.75"/>
 	</style>
 
 	<style class="Edit" parents="root">
@@ -1570,6 +1643,66 @@
 		<button.width value="8"/>
 	</style>
 
+	<style class="Fader_prophessor" parents="root">
+		<scale.color value="gray_inactive"/>
+		<scale.border.gradient value="false"/>
+		<scale.border.size value="0"/>
+		<scale.border.radius value="0"/>
+		<scale.width value="4"/>
+		<scale.border.color value="bg"/>
+		<scale.brightness value="0.6"/>
+		<bg.inherit value="true"/>
+
+		<button.color value="gray"/>
+		<button.aspect value="0.6"/>
+		<button.border.gradient value="false"/>
+		<button.border.color value="gray"/>
+		<button.border.size value="6"/>
+		<button.border.radius value="4"/>
+		<button.width value="16"/>
+	</style>
+
+	<style class="Fader_prophessor_thin" parents="Fader_prophessor">
+		<scale.width value="2"/>
+
+		<button.aspect value="2.75"/>
+		<button.border.size value="1"/>
+		<button.width value="1,1"/>
+		<button.width.x value="1"/>
+		<button.width.y value="1"/>
+	</style>
+
+	<style class="Fader_prophessor_water" parents="Fader_prophessor">
+		<scale.width value="16"/>
+		<button.aspect value="0"/>
+		<!-- <button.border.size value="1"/> -->
+		<button.width value="0"/>
+		<scale.border.radius value="10"/>
+		<angle value="0"/>
+	</style>
+
+	<style class="Fader_prophessor_ratio" parents="root">
+		<!-- Track -->
+		<scale.color value="bg"/>
+		<scale.border.gradient value="false"/>
+		<scale.border.size value="0"/>
+		<scale.border.radius value="0"/>
+		<scale.width value="4"/>
+		<scale.border.color value="bg"/>
+		<scale.brightness value="0.6"/>
+		<bg.inherit value="true"/>
+		<width value="64"/>
+
+		<!-- Thumb -->
+		<button.color value="cyan"/>
+		<button.border.gradient value="false"/>
+		<button.border.size value="1"/>
+		<button.border.radius value="5"/>
+		<button.width value="0"/>
+		<!-- Should be a circle -->
+		<button.aspect value="0.99"/>
+	</style>
+
 	<style class="Fader_play" parents="Fader">
 		<button.border.size value="0"/>
 		<button.border.radius value="0"/>
@@ -1603,13 +1736,13 @@
 
 	<style class="GraphDot" parents="root">
 		<smooth value="true"/>
-		<border.size value="5"/>
+		<border.size value="3"/>
 		<size value="3"/>
 		<color value="cyan"/>
 		<step.accel value="1.0"/>
 		<border.color value="cyan"/>
 		<hover.size value="3"/>
-		<hover.border.size value="10"/>
+		<hover.border.size value="5"/>
 		<hover.color value="cyan"/>
 		<hover.border.color value="cyan"/>
 	</style>
@@ -1623,6 +1756,22 @@
 	<style class="GraphMesh" parents="root">
 		<smooth value="true"/>
 		<color value="cyan"/>
+	</style>
+
+	<!-- Multilayer Graph Meshes -->
+	<style class="GraphMesh_in" parents="GraphMesh">
+		<width value="2"/>
+		<color value="#444444"/>
+		<fill.color value="#444444"/>
+		<color.a value="0.1"/>
+		<fill.color.a value="0.3"/>
+	</style>
+	<style class="GraphMesh_out" parents="GraphMesh">
+		<width value="2"/>
+		<color value="#777777"/>
+		<fill.color value="#777777"/>
+		<color.a value="0.3"/>
+		<fill.color.a value="0.5"/>
 	</style>
 
 	<style class="GraphOrigin" parents="root">
@@ -2009,6 +2158,17 @@
 		<text.hover.color value="text_sec"/>
 		<text.selected.color value="text_sec"/>
 		<text.selected.hover.color value="text_sec"/>
+
+		<inactive.bg.color value="bg_light"/>
+		<inactive.bg.hover.color value="LBI_hov"/>
+		<inactive.bg.selected.color value="LBI_sel"/>
+		<inactive.bg.selected.hover.color value="LBI_sel_hov"/>
+		<inactive.text.color value="text_prim"/>
+		<inactive.text.hover.color value="text_sec"/>
+		<inactive.text.selected.color value="text_sec"/>
+		<inactive.text.selected.hover.color value="text_sec"/>
+		<inactive.brightness value="0.75"/>
+		<inactive.bg.brightness value="0.75"/>
 	</style>
 
 	<style class="Menu" parents="root">
@@ -2300,6 +2460,8 @@
 		<border.color value="border_color"/>
 		<border.gap.color value="bg_light"/>
 	</style>
+
+	<style class="FileDialog::Input" parents="FileDialog::Search"></style>
 
 	<style class="FileDialog::Warning" parents="root">
 		<text.color value="warn"/>
@@ -2612,6 +2774,25 @@
 		<border.style value="dialog"/>
 		<layout.hscale value="1.0"/>
 		<layout.vscale value="1.0"/>
+	</style>
+
+	<!-- PresetsDialog widgets -->
+	<style class="PresetsDialog" parents="Window">
+		<padding value="4"/>
+		<border.style value="none"/>
+		<layout.hscale value="1.0"/>
+		<layout.vscale value="1.0"/>
+	</style>
+
+	<style class="PresetsTab" parents="TabControl">
+		<heading value="-1 1 0 0"/>
+		<heading.gap value="0"/>
+		<heading.spacing value="0"/>
+		<heading.spacing.fill value="false"/>
+	</style>
+
+	<style class="PresetsList" parents="ListBox">
+		<border.size value="1"/>
 	</style>
 
 </schema>

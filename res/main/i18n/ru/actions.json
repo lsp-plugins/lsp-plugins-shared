@@ -13,7 +13,7 @@
 	
 	"cancel": "Отмена",
 	"close": "Закрыть",
-	
+
 	"confirm": {
 		"no": "Нет",
 		"yes": "Да"
@@ -36,17 +36,17 @@
 		"move_up": "Переместить вверх",
 		"paste": "Вставить"
 	},
-	
+
 	"export": "Экспорт",
 	"export_settings_to_clipboard": "Экпорт настроек в буфер обмена",
 	"export_settings_to_file": "Экспорт настроек в файл...",
-	
+
 	"file_preview": {
 		"pause": "Пауза",
 		"play": "Играть",
 		"stop": "Стоп"
 	},
-	
+
 	"filters": {
 		"switch": {
 			"to_left": "Переключить на Левый",
@@ -55,64 +55,83 @@
 			"to_side": "Переключить на Сторону"
 		}
 	},
-	
+
 	"font_scaling": {
 		"select": "Масштаб шрифтов",
 		"value:pc": "{@value} %",
 		"zoom_in": "Увеличить масштаб",
 		"zoom_out": "Уменьшить масштаб"
 	},
-	
+
 	"freeze": "Стоп-кадр",
-	
+
 	"import": "Импорт",
 	"import_hydrogen_drumkit_file": "Библиотека семплов Hydrogen...",
 	"import_installed_hydrogen_drumkit": "Установленная библиотека Hydrogen",
 	"import_settings_from_clipboard": "Импорт настроек из буфера обмена",
 	"import_settings_from_file": "Импорт настроек из файла...",
 	"import_sfz_file": "Импортировать файл SFZ...",
-	"import_rew_filter_file": "Файл фильтров REW...",
+	"import_rew_filter_file": "Файл фильтров REW/APO...",
+	"reset_settings": "Сбросить настройки",
 
 	"listen": "Слушать",
+	"linear_frequency": "Линейная частота",
 	"link": {
 		"copy": "Копировать ссылку",
 		"follow": "Перейти по ссылке"
 	},
-	
+
 	"load": "Загрузить",
 	"load_preset": "Загрузить пресет",
-	
+
+	"manage_presets": "Управление пресетами...",
 	"measure": "Измерить",
-	
+
 	"nav": {
 		"go": "Перейти",
 		"up": "Наверх"
 	},
-	
+
 	"ok": "Хорошо",
 	"open": "Открыть",
-	
+
 	"plugin_manual": "Руководство к плагину",
 	"postprocess": "Постобработка",
+	"presets": {
+		"copy": "Копировать",
+		"export": "Экспорт...",
+		"favourite": "Избранное",
+		"import": "Импорт...",
+		"input_name": "Введите название",
+		"load": "Загрузить",
+		"paste": "Вставить",
+		"new": "Новый",
+		"remove": "Удалить",
+		"reset": "Сбросить",
+		"save": "Сохранить",
+		"search": "Поиск...",
+		"select": "Выбрать пресет"
+	},
 	"profile": "Профилировать",
-	
-	"reset": "Сбросить",	
+
+	"reset": "Сбросить",
 	"restart": "Перезапуск",
 	"run_stop": "Пуск/Стоп",
 
 	"save": "Сохранить",
 
-	"select_language": "Выбрать язык",
-	
+	"select_language": "Язык",
+
 	"tap": "Тук",
 	"to_bookmarks": "В закладки",
 	"toggle_rack_mount": "Переключить стоечный монтаж",
-	
+
 	"ui_behavior": {
 		"": "Поведение интерфейса",
-		"ediable_knob_scale": "Редактируемые шкалы ручек",		
+		"ediable_knob_scale": "Редактируемые шкалы ручек",
 		"enable_zoomable_spectrum": "Автоматическое масштабирование графика частот",
 		"file_list_navigation_autoload": "Автоматически загружать файлы при навигации по списку файлов",
+		"file_list_navigation_autoplay": "Автоматически проигрывать файлы при навигации по списку файлов",
 		"filter_point_thickness": "Толщина точек фильтра",
 		"override_hydrogen_kits": "Замещать настройки Hydrogen",
 		"take_instrument_name_from_file": "Получать название инструмента из файла",
@@ -121,9 +140,9 @@
 			"invert_graph_dot": "Инвертировать вертикальное колесо мыши для точек на графе"
 		}
 	},
-	
+
 	"ui_manual": "Руководство по интерфейсу",
-	
+
 	"ui_scaling": {
 		"prefer_host": "Предпочитать масштаб хоста",
 		"select": "Масштаб интерфейса",
@@ -131,9 +150,9 @@
 		"zoom_in": "Увеличить масштаб",
 		"zoom_out": "Уменьшить масштаб"
 	},
-	
+
 	"user_paths": "Пользовательские пути...",
-	
+
 	"visual_schema": {
 		"select": "Визуальная схема"
 	}
