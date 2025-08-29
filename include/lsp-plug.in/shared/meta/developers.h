@@ -77,6 +77,7 @@
 #define LSP_LADSPA_PARA_EQUALIZER_X8        (LSP_LADSPA_BASE + 240)
 #define LSP_LADSPA_CHORUS_BASE              (LSP_LADSPA_BASE + 250)
 #define LSP_LADSPA_PHASER_BASE              (LSP_LADSPA_BASE + 260)
+#define LSP_LADSPA_RINGMOD_SC_BASE          (LSP_LADSPA_BASE + 270)
 
 
 namespace lsp
