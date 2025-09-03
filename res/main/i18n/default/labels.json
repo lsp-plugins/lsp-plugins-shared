@@ -734,11 +734,13 @@
 		"Ext_ernal": "Ext",
         "External_sidechain": "External Sidechain",
 		"SC": "SC",
+		"ducking": "Ducking",
 		"listen": "Listen",
 		"lookahead": "Lookahead",
 		"position": "Position",
 		"preamp": "Preamp",
 		"reactivity": "Reactivity",
+		"source": "Source",
 		"sc_mode": "SC Mode",
 		"sc_preamp": "SC Preamp",
 		"type": "Type"

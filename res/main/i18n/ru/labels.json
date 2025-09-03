@@ -734,11 +734,13 @@
 		"Ext_ernal": "Внеш",
         "External_sidechain": "Внешняя БЦ",
 		"SC": "БЦ",
+		"ducking": "Зазор",
 		"listen": "Слушать",
 		"lookahead": "Предсказание",
 		"position": "Позиция",
 		"preamp": "Усиление",
 		"reactivity": "Реактивность",
+		"source": "Источник",
 		"sc_mode": "Режим БЦ",
 		"sc_preamp": "Предусил БЦ",
 		"type": "Тип"
