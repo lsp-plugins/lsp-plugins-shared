@@ -173,6 +173,7 @@
 			"resonance": "Resonance"
 		},
 		"lr_mode": {
+			"12dbo": "LR2 (12 dB/oct)",
 			"24dbo": "LR4 (24 dB/oct)",
 			"48dbo": "LR8 (48 dB/oct)",
 			"72dbo": "LR12 (72 dB/oct)",
