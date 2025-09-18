@@ -273,6 +273,7 @@
 		"fft_in": "FFT In",			
 		"fft_link": "FFT Link",
 		"fft_out": "FFT Out",
+		"fft_sc": "FFT SC",
 		"frame": "FFT Frame",
 		"tolerance": "Tolerance",
 		"window": "Window"
