@@ -61,6 +61,7 @@
 
 	"amount": "Количество",
 	"amount:db": "Количество\n(дБ)",
+	"amount_stereo_link:db_pc": "Количество,\nСтереосвязь\n(дБ, %)",
 	"amplitude": "Амплитуда",
 
 	"asample": {
@@ -401,7 +402,7 @@
 
 	"hold": "Удерживать",
 	"host_bpm": "УВМ хоста",
-	"hold_release:ms_ms": "Удерж, Отпуск\n(мс, мс)",
+	"hold_release:ms_ms": "Удержание,\nОтпускание\n(мс, мс)",
 
 	"hysteresis": "Гистерезис",
 
@@ -412,6 +413,7 @@
 	"input:db": "Вход (дБ)",
 	"instrument": "Инструмент",
 	"instrument_num": "№ инструмента",
+	"invert": "Инверсия",
 
 	"ir_equalizer": "Эквализация ИО",
 
@@ -456,7 +458,7 @@
 	"log_scale": "Лог масштаб",
 
 	"lookahead": "Предсказание",
-	"lookahead_duck:ms_ms": "Предсказ, Зазор\n(мс, мс)",
+	"lookahead_duck:ms_ms": "Предсказ,\nЗазор\n(мс, мс)",
 	
 	"loudness": "Громкость",
 	"loudness_L": "Д",

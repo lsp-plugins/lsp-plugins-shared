@@ -60,7 +60,7 @@
     "alr_": "Auto level regulation",
 
 	"amount": "Amount",
-	"amount:db": "Amount\n(dB)",
+	"amount_stereo_link:db_pc": "Amount,\nStereo Link\n(dB, %)",
 	"amplitude": "Amplitude",
 
 	"asample": {
@@ -400,7 +400,7 @@
 
 	"hold": "Hold",
 	"host_bpm": "Host BPM",
-	"hold_release:ms_ms": "Hold, Release\n(ms, ms)",
+	"hold_release:ms_ms": "Hold,\nRelease\n(ms, ms)",
 
 	"hysteresis": "Hysteresis",
 
@@ -411,6 +411,7 @@
 	"input:db": "Input (dB)",
 	"instrument": "Instrument",
 	"instrument_num": "Instrument #",
+	"invert": "Invert",
 
 	"ir_equalizer": "IR equalizer",
 
@@ -455,7 +456,7 @@
 	"log_scale": "Log scale",
 
 	"lookahead": "Lookahead",
-	"lookahead_duck:ms_ms": "Lookahead, Duck\n(ms, ms)",
+	"lookahead_duck:ms_ms": "Lookahead,\nDuck\n(ms, ms)",
 	
 	"loudness": "Loudness",
 	"loudness_L": "L",
