@@ -1948,6 +1948,11 @@
 		<text.visible value="true"/>
 		<color value="bg"/>
 		<bg.color value="bg"/>
+		<inactive.text.color value="text_sec"/>
+		<inactive.brightness value="0.75"/>
+		<inactive.bg.brightness value="1.0"/>
+		<inactive.color value="bg_schema"/>
+		<inactive.bg.color value="bg_schema"/>
 	</style>
 
 	<style class="LedMeterChannel" parents="root">
@@ -1970,6 +1975,11 @@
 		<border value="2"/>
 		<angle value="0"/>
 		<header.pointer value="hand"/>
+		<inactive.color value="bg"/>
+		<inactive.value.color value="gray"/>
+		<inactive.text.color value="text_sec"/>
+		<inactive.brightness value="0.75"/>
+		<inactive.bg.brightness value="1.0"/>
 	</style>
 
 	<style class="MultiLabel" parents="root">
