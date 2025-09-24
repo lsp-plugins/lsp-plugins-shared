@@ -648,13 +648,13 @@
 
 		<inactive.border.color value="bg_name"/>
 		<inactive.border.hover.color value="bright_gray"/>
-		<inactive.border.down.color value="bg_name"/>
-		<inactive.border.down.hover.color value="bright_gray"/>
+		<inactive.border.down.color value="gray"/>
+		<inactive.border.down.hover.color value="dark_gray"/>
 
 		<inactive.color value="bg_light"/>
 		<inactive.hover.color value="bg_name"/>
-		<inactive.down.color value="bg_light"/>
-		<inactive.down.hover.color value="bg_name"/>
+		<inactive.down.color value="darker_gray"/>
+		<inactive.down.hover.color value="darker_gray"/>
 
 		<inactive.text.color value="text_prim"/>
 		<inactive.text.hover.color value="text_sec"/>
@@ -1284,7 +1284,8 @@
 		<inactive.border.down.hover.color value="yellow"/>
 	</style>
 
-	<style class="Button_ne_Cycle" parents="Button_gray_8">
+	<style class="Button_ne_Cycle" parents="Button">
+		<font.size value="8"/>
 		<color value="dark_red"/>
 		<text.color value="bright_red"/>
 		<border.color value="bright_red"/>
@@ -1515,7 +1516,8 @@
 		<font.size value="6"/>
 	</style>
 
-	<style class="Button_Cycle" parents="Button_gray_8">
+	<style class="Button_Cycle" parents="Button">
+		<font.size value="8"/>
 		<down.color value="dark_red"/>
 		<down.hover.color value="dark_red"/>
 
@@ -1527,7 +1529,6 @@
 	</style>
 
 	<style class="Button_Cycle_8" parents="Button_Cycle">
-		<font.size value="8"/>
 	</style>
 
 	<style class="Button_Cycle_6" parents="Button_Cycle">

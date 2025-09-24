@@ -1293,7 +1293,8 @@
 		<inactive.border.down.hover.color value="yellow"/>
 	</style>
 
-	<style class="Button_ne_Cycle" parents="Button_gray_8">
+	<style class="Button_ne_Cycle" parents="Button">
+		<font.size value="8"/>
 		<color value="dark_red"/>
 		<text.color value="bright_red"/>
 		<border.color value="bright_red"/>
@@ -1513,7 +1514,8 @@
 		<font.size value="6"/>
 	</style>
 
-	<style class="Button_Cycle" parents="Button_gray_8">
+	<style class="Button_Cycle" parents="Button">
+		<font.size value="8"/>
 		<down.color value="dark_red"/>
 		<down.hover.color value="dark_red"/>
 
@@ -1525,7 +1527,6 @@
 	</style>
 
 	<style class="Button_Cycle_8" parents="Button_Cycle">
-		<font.size value="8"/>
 	</style>
 
 	<style class="Button_Cycle_6" parents="Button_Cycle">
