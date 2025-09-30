@@ -264,6 +264,20 @@
 			"f#": "F#",
 			"g": "G",
 			"g#": "G#"
+		},
+		"fmt" : {
+			"a": "A{@octave}",
+			"a#": "A#{@octave}",
+			"b": "B{@octave}",
+			"c": "C{@octave}",
+			"c#": "C#{@octave}",
+			"d": "D{@octave}",
+			"d#": "D#{@octave}",
+			"e": "E{@octave}",
+			"f": "F{@octave}",
+			"f#": "F#{@octave}",
+			"g": "G{@octave}",
+			"g#": "G#{@octave}"
 		}
 	},
 
