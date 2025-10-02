@@ -2751,6 +2751,72 @@
 	<style class="PluginWindow::RackEarSide" parents="RackEars">
 		<font.size value="16"/>
 	</style>
+	
+	<style class="PluginWindow::ABSwitch::Active" parents="Button">
+		<down.colors value="true"/>
+		<color value="bg_light"/>
+		<down.color value="bg_light"/>
+		<hover.color value="bg_light"/>
+		<down.hover.color value="bg_light"/>
+		<text.color value="green"/>
+		<text.hover.color value="dark_green"/>
+		<text.down.color value="red"/>
+		<text.down.hover.color value="dark_red"/>
+		<border.size value="0"/>
+		<border.down.size value="0"/>
+		<border.pressed.size value="0"/>
+		<hole value="false"/>
+		<hover value="true"/>
+		<padding.top value="1"/>
+		<padding.right value="3"/>
+
+		<font.size value="14" />
+		<font.bold value="true"/>
+	</style>
+	
+	<style class="PluginWindow::ABSwitch::Copy" parents="Button">
+		<down.colors value="true"/>
+		<color value="bg_light"/>
+		<down.color value="bg_light"/>
+		<hover.color value="bg_light"/>
+		<down.hover.color value="bg_light"/>
+		<text.color value="green"/>
+		<text.hover.color value="dark_green"/>
+		<text.down.color value="red"/>
+		<text.down.hover.color value="dark_red"/>
+		<border.size value="0"/>
+		<border.down.size value="0"/>
+		<border.pressed.size value="0"/>
+		<hole value="false"/>
+		<hover value="true"/>
+		<padding.top value="1"/>
+		<padding.right value="3"/>
+
+		<font.name value="lsp-icons"/>
+		<font.size value="12" />
+	</style>
+	
+	<style class="PluginWindow::ABSwitch::Inactive" parents="Button">
+		<down.colors value="true"/>
+		<color value="bg_light"/>
+		<down.color value="bg_light"/>
+		<hover.color value="bg_light"/>
+		<down.hover.color value="bg_light"/>
+		<text.color value="green"/>
+		<text.hover.color value="dark_green"/>
+		<text.down.color value="red"/>
+		<text.down.hover.color value="dark_red"/>
+		<border.size value="0"/>
+		<border.down.size value="0"/>
+		<border.pressed.size value="0"/>
+		<hole value="false"/>
+		<hover value="true"/>
+		<padding.top value="1"/>
+		<padding.right value="3"/>
+
+		<font.size value="14" />
+		<font.bold value="false"/>
+	</style>
 
 	<style class="PluginWindow::Bypass::Box" parents="Box">
 		<padding value="4"/>

@@ -22,8 +22,13 @@
 					<label color="plug_name" font.bold="true" font.size="14" halign="1" padding.top="2" padding.bottom="-1" padding.right="6" text="labels.rack.description" text.meta="true" text.adjust="toupper"/>
 					<label color="plug_name_sep" text="|"/>
 					<label color="plug_name_acr" font.bold="true" font.size="14" halign="1" padding.top="2" padding.bottom="-1" padding.left="6" padding.right="12" text="labels.rack.acronym" text.meta="true" text.adjust="toupper"/>
+					<label color="plug_name_sep" text="|"/>
+					<!-- A/B switch -->
+					<button ui:id="switch_preset_a" ui:inject="PluginWindow::ABSwitch::Active" text="A" halign="2" />
+					<button ui:id="switch_preset_copy" ui:inject="PluginWindow::ABSwitch::Copy" text="icons.arrow.right" halign="2" />
+					<button ui:id="switch_preset_b" ui:inject="PluginWindow::ABSwitch::Inactive" text="B" halign="2" />
 					<!-- bypass icon -->
-					<button id="bypass" ui:inject="PluginWindow::Bypass::Button" text="5" halign="1"/>
+					<button id="bypass" ui:inject="PluginWindow::Bypass::Button" text="icons.main.bypass" halign="1"/>
 				</hbox>
 			</cell>
 			<void expand="true"/>
