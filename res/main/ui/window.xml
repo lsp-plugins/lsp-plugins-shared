@@ -13,20 +13,15 @@
 					<void expand="true"/>
 				</hbox>
 			</cell>
-			<cell rows="2" width.min="37"><void expand="true"/></cell>
+			<cell rows="2" width.min="10"><void expand="true"/></cell>
 			<void expand="true"/>
-			<cell >
+			<cell>
 				<hbox>
 					<void hexpand="true"/>
 					<!-- plugin name -->
 					<label color="plug_name" font.bold="true" font.size="14" halign="1" padding.top="2" padding.bottom="-1" padding.right="6" text="labels.rack.description" text.meta="true" text.adjust="toupper"/>
 					<label color="plug_name_sep" text="|"/>
 					<label color="plug_name_acr" font.bold="true" font.size="14" halign="1" padding.top="2" padding.bottom="-1" padding.left="6" padding.right="12" text="labels.rack.acronym" text.meta="true" text.adjust="toupper"/>
-					<label color="plug_name_sep" text="|"/>
-					<!-- A/B switch -->
-					<button ui:id="switch_preset_a" ui:inject="PluginWindow::ABSwitch::Active" text="A" halign="2" />
-					<button ui:id="switch_preset_copy" ui:inject="PluginWindow::ABSwitch::Copy" text="icons.arrow.right" halign="2" />
-					<button ui:id="switch_preset_b" ui:inject="PluginWindow::ABSwitch::Inactive" text="B" halign="2" />
 					<!-- bypass icon -->
 					<button id="bypass" ui:inject="PluginWindow::Bypass::Button" text="icons.main.bypass" halign="1"/>
 				</hbox>
@@ -37,17 +32,23 @@
 			<hbox bg.color="bg">
 
 				<!-- Presets-->
+				<hbox ui:id="trg_presets_menu_area">
+					<bevel hexpand="false" color="bg_schema" width.min="24" height.min="20"/>
+					<label ui:id="trg_prev_preset" hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.top="1" font.antialias="true" text="icons.shapes.left" width="22" pointer="hand" />
+					<label ui:id="trg_presets_menu" hover="true" color="menu_text" hover.color="menu_text_hover" pad.h="5" font.size="14" padding.top="3" text="labels.header.menu" width="200" hfill="true" text.clip="true" text.halign="0" text.clip.halign="-1" pointer="hand" />
+					<label ui:id="trg_next_preset" hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.top="1" font.antialias="true" text="icons.shapes.right" width="22" pointer="hand" />
+				</hbox>
+
+				<!-- A/B switch -->
 				<ui:with bg.color="bg_preset">
-					<hbox ui:id="trg_presets_menu_area">
-						<bevel hexpand="false" color="bg_schema" width.min="24" height.min="20"/>
-						<label ui:id="trg_prev_preset" hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.top="1" font.antialias="true" text="icons.shapes.left" width="22"/>
-						<label ui:id="trg_presets_menu" hover="true" color="menu_text" hover.color="menu_text_hover" pad.h="5" font.size="14" padding.top="3" text="labels.header.menu" width="200" hfill="true" text.clip="true" text.halign="0" text.clip.halign="-1"/>
-						<label ui:id="trg_next_preset" hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.top="1" font.antialias="true" text="icons.shapes.right" width="22"/>
-					</hbox>
+					<bevel hexpand="false" color="bg" width.min="24" height.min="20"/>
+					<button ui:id="switch_preset_a" ui:inject="PluginWindow::ABSwitch::Active" text="A" halign="2"/>
+					<button ui:id="switch_preset_copy" ui:inject="PluginWindow::ABSwitch::Copy" text="icons.arrow.right" halign="2"/>
+					<button ui:id="switch_preset_b" ui:inject="PluginWindow::ABSwitch::Inactive" text="B" halign="2"/>
+					<bevel hexpand="false" color="bg_preset" bg.color="bg" width.min="24" height.min="20"/>
 				</ui:with>
 
 				<!-- Menu and About -->
-				<bevel hexpand="false" color="bg_preset" width.min="24" height.min="20"/>
 				<hbox ui:id="trg_main_menu" solid="true" padding.right="10" padding.left="2" pointer="hand">
 					<label hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.top="1" font.antialias="true" text="0"/>
 					<label hover="true" color="menu_text" hover.color="menu_text_hover" padding.left="5" font.size="14" padding.top="3" text="labels.header.menu"/>

@@ -2227,7 +2227,7 @@
 		<ipadding value="0"/>
 		<close.auto value="true"/>
 	</style>
-	
+
 	<style class="PianoKeys" parents="root">
 		<white.color value="#ffffff" />
 		<white.down.color value="#ffffff" />
@@ -2245,7 +2245,7 @@
 		<white.inactive.down.hover.color value="#cccccc" />
 		<white.inactive.selected.hover.color value="#cccccc" />
 		<white.inactive.selected.down.hover.color value="#cccccc" />
-		
+
 		<black.color value="#000000" />
 		<black.down.color value="#000000" />
 		<black.selected.color value="#000000" />
@@ -2262,11 +2262,11 @@
 		<black.inactive.down.hover.color value="#000000" />
 		<black.inactive.selected.hover.color value="#000000" />
 		<black.inactive.selected.down.hover.color value="#000000" />
-		
+
 		<border.color value="#000000" />
 		<split.color value="#cccccc" />
 		<octave.split.color value="#888888" />
-		
+
 		<inactive.border.color value="#000000" />
 		<inactive.split.color value="#888888" />
 		<inactive.octave.split.color value="#444444" />
@@ -2663,6 +2663,51 @@
 
 	<style class="PluginWindow::RackEarSide" parents="RackEars">
 		<font.size value="16"/>
+	</style>
+
+	<style class="PluginWindow::ABSwitch::Active" parents="Button">
+		<down.colors value="true"/>
+		<color value="bg_preset"/>
+		<down.color value="bg_preset"/>
+		<hover.color value="bg_preset"/>
+		<down.hover.color value="bg_preset"/>
+		<text.color value="green"/>
+		<text.hover.color value="dark_green"/>
+		<text.down.color value="green"/>
+		<text.down.hover.color value="dark_green"/>
+		<border.size value="0"/>
+		<border.down.size value="0"/>
+		<border.pressed.size value="0"/>
+		<hole value="false"/>
+		<hover value="true"/>
+		<padding.top value="1"/>
+		<padding.right value="3"/>
+		<pointer value="arrow" />
+		<font.size value="14" />
+		<font.bold value="true"/>
+		<text.shift value="0 0"/>
+		<text.down.shift value="0 0"/>
+		<text.pressed.shift value="0 0"/>
+
+		<gradient value="false"/>
+	</style>
+
+	<style class="PluginWindow::ABSwitch::Copy" parents="PluginWindow::ABSwitch::Active">
+		<text.color value="cyan"/>
+		<text.hover.color value="dark_cyan"/>
+		<text.down.color value="cyan"/>
+		<text.down.hover.color value="dark_cyan"/>
+		<font.name value="lsp-icons"/>
+		<text.pressed.shift value="1 1"/>
+		<pointer value="hand" />
+	</style>
+
+	<style class="PluginWindow::ABSwitch::Inactive" parents="PluginWindow::ABSwitch::Active">
+		<text.color value="cyan"/>
+		<text.hover.color value="dark_cyan"/>
+		<text.down.color value="cyan"/>
+		<text.down.hover.color value="dark_cyan"/>
+		<pointer value="hand" />
 	</style>
 
 	<style class="PluginWindow::Bypass::Box" parents="Box">
