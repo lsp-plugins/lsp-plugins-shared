@@ -372,6 +372,18 @@
 
 		<!-- Overlay -->
 		<overlay_shadow avalue="#88000000"/>
+
+		<!-- Piano Keys colors -->
+		<pianokeys_white value="#3b3d49"/>
+		<pianokeys_white_inactive value="#3b3d49"/>
+		<pianokeys_black value="#1b1c22"/>
+		<pianokeys_black_inactive value="#1b1c22"/>
+		<pianokeys_border value="#424451"/>
+		<pianokeys_border_inactive value="#424451"/>
+		<pianokeys_split value="#2a2c37"/>
+		<pianokeys_split_inactive value="#2a2c37"/>
+		<pianokeys_octave_split value="#1b1c22"/>
+		<pianokeys_octave_split_inactive value="#1b1c22"/>
 	</colors>
 
 	<!-- Root style -->
@@ -1526,8 +1538,7 @@
 		<border.down.hover.color value="red"/>
 	</style>
 
-	<style class="Button_Cycle_8" parents="Button_Cycle">
-	</style>
+	<style class="Button_Cycle_8" parents="Button_Cycle"></style>
 
 	<style class="Button_Cycle_6" parents="Button_Cycle">
 		<font.size value="6"/>
@@ -2228,50 +2239,50 @@
 	</style>
 
 	<style class="PianoKeys" parents="root">
-		<white.color value="#ffffff" />
-		<white.down.color value="#ffffff" />
-		<white.selected.color value="#ffffff" />
-		<white.selected.down.color value="#ffffff" />
-		<white.inactive.color value="#cccccc" />
-		<white.inactive.down.color value="#cccccc" />
-		<white.inactive.selected.color value="#cccccc" />
-		<white.inactive.selected.down.color value="#cccccc" />
-		<white.hover.color value="#ffffff" />
-		<white.down.hover.color value="#ffffff" />
-		<white.selected.hover.color value="#ffffff" />
-		<white.selected.down.hover.color value="#ffffff" />
-		<white.inactive.hover.color value="#cccccc" />
-		<white.inactive.down.hover.color value="#cccccc" />
-		<white.inactive.selected.hover.color value="#cccccc" />
-		<white.inactive.selected.down.hover.color value="#cccccc" />
+		<white.color value="pianokeys_white" />
+		<white.down.color value="pianokeys_white" />
+		<white.selected.color value="pianokeys_white" />
+		<white.selected.down.color value="pianokeys_white" />
+		<white.inactive.color value="pianokeys_white_inactive" />
+		<white.inactive.down.color value="pianokeys_white_inactive" />
+		<white.inactive.selected.color value="pianokeys_white_inactive" />
+		<white.inactive.selected.down.color value="pianokeys_white_inactive" />
+		<white.hover.color value="pianokeys_white" />
+		<white.down.hover.color value="pianokeys_white" />
+		<white.selected.hover.color value="pianokeys_white" />
+		<white.selected.down.hover.color value="pianokeys_white" />
+		<white.inactive.hover.color value="pianokeys_white_inactive" />
+		<white.inactive.down.hover.color value="pianokeys_white_inactive" />
+		<white.inactive.selected.hover.color value="pianokeys_white_inactive" />
+		<white.inactive.selected.down.hover.color value="pianokeys_white_inactive" />
 
-		<black.color value="#000000" />
-		<black.down.color value="#000000" />
-		<black.selected.color value="#000000" />
-		<black.selected.down.color value="#000000" />
-		<black.inactive.color value="#000000" />
-		<black.inactive.down.color value="#000000" />
-		<black.inactive.selected.color value="#000000" />
-		<black.inactive.selected.down.color value="#000000" />
-		<black.hover.color value="#000000" />
-		<black.down.hover.color value="#000000" />
-		<black.selected.hover.color value="#000000" />
-		<black.selected.down.hover.color value="#000000" />
-		<black.inactive.hover.color value="#000000" />
-		<black.inactive.down.hover.color value="#000000" />
-		<black.inactive.selected.hover.color value="#000000" />
-		<black.inactive.selected.down.hover.color value="#000000" />
+		<black.color value="pianokeys_black" />
+		<black.down.color value="pianokeys_black" />
+		<black.selected.color value="pianokeys_black" />
+		<black.selected.down.color value="pianokeys_black" />
+		<black.inactive.color value="pianokeys_black_inactive" />
+		<black.inactive.down.color value="pianokeys_black_inactive" />
+		<black.inactive.selected.color value="pianokeys_black_inactive" />
+		<black.inactive.selected.down.color value="pianokeys_black_inactive" />
+		<black.hover.color value="pianokeys_black" />
+		<black.down.hover.color value="pianokeys_black" />
+		<black.selected.hover.color value="pianokeys_black" />
+		<black.selected.down.hover.color value="pianokeys_black" />
+		<black.inactive.hover.color value="pianokeys_black_inactive" />
+		<black.inactive.down.hover.color value="pianokeys_black_inactive" />
+		<black.inactive.selected.hover.color value="pianokeys_black_inactive" />
+		<black.inactive.selected.down.hover.color value="pianokeys_black_inactive" />
 
-		<border.color value="#000000" />
-		<split.color value="#cccccc" />
-		<octave.split.color value="#888888" />
+		<border.color value="pianokeys_border" />
+		<split.color value="pianokeys_split" />
+		<octave.split.color value="pianokeys_octave_split" />
 
-		<inactive.border.color value="#000000" />
-		<inactive.split.color value="#888888" />
-		<inactive.octave.split.color value="#444444" />
+		<inactive.border.color value="pianokeys_border_inactive" />
+		<inactive.split.color value="pianokeys_split_inactive" />
+		<inactive.octave.split.color value="pianokeys_octave_split_inactive" />
 
 		<border value="0" />
-		<split.size value="1" />
+		<split.size value="2" />
 		<angle value="0" />
 	</style>
 
@@ -2675,8 +2686,8 @@
 		<hover value="true"/>
 		<padding.top value="1"/>
 		<padding.right value="3"/>
-		<pointer value="arrow" />
-		<font.size value="14" />
+		<pointer value="arrow"/>
+		<font.size value="14"/>
 		<font.bold value="true"/>
 		<text.shift value="0 0"/>
 		<text.down.shift value="0 0"/>
@@ -2690,7 +2701,7 @@
 		<text.down.hover.color value="dark_cyan"/>
 		<font.name value="lsp-icons"/>
 		<text.pressed.shift value="1 1"/>
-		<pointer value="hand" />
+		<pointer value="hand"/>
 	</style>
 
 	<style class="PluginWindow::ABSwitch::Inactive" parents="PluginWindow::ABSwitch::Active">
@@ -2698,7 +2709,7 @@
 		<text.hover.color value="dark_cyan"/>
 		<text.down.color value="cyan"/>
 		<text.down.hover.color value="dark_cyan"/>
-		<pointer value="hand" />
+		<pointer value="hand"/>
 	</style>
 
 	<style class="PluginWindow::Bypass::Box" parents="Box">
