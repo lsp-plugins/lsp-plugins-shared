@@ -133,6 +133,9 @@
 		"next": "\u00b9",
 		"previous": "\u00b8"
 	},
+	"other": {
+		"quantize_note": "\u00af" 
+	},
 	"random": {
 		"dice": "\u00c2",
 		"dice_3d": "\u00c1",		
