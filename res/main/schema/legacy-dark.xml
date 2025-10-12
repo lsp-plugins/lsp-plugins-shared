@@ -2144,7 +2144,23 @@
 		<padding.right value="16"/>
 	</style>
 
-	<style class="RackEars" parents="root"></style>
+	<style class="RangeSlider" parents="root">
+		<scale.color value="bg"/>
+		<scale.border.gradient value="false"/>
+		<scale.border.size value="2"/>
+		<scale.border.radius value="5"/>
+		<scale.width value="-1"/>
+		<scale.border.color value="bg_name"/>
+		<scale.brightness value="1.5"/>
+		<bg.inherit value="true"/>
+
+		<button.color value="bg"/>
+		<button.border.color value="bg_name"/>
+		<button.border.gradient value="false"/>
+		<button.border.size value="2"/>
+		<button.border.radius value="3"/>
+		<button.width value="4"/>
+	</style>
 
 	<style class="ScrollArea" parents="root"></style>
 
@@ -2659,14 +2675,6 @@
 		<allocation.vfill value="true"/>
 		<text.layout.halign value="1.0"/>
 		<padding value="4"/>
-	</style>
-
-	<style class="PluginWindow::RackEarTop" parents="RackEars">
-		<font.size value="12"/>
-	</style>
-
-	<style class="PluginWindow::RackEarSide" parents="RackEars">
-		<font.size value="16"/>
 	</style>
 
 	<style class="PluginWindow::ABSwitch::Active" parents="Button">

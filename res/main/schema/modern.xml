@@ -2224,8 +2224,6 @@
 		<padding.right value="16"/>
 	</style>
 
-	<style class="RackEars" parents="root"></style>
-
 	<style class="ScrollArea" parents="root"></style>
 
 	<style class="ScrollBar" parents="root">
@@ -2378,6 +2376,23 @@
 		<text.color value="text_sec"/>
 		<inv.color value="bg_graph"/>
 		<text.inv.color value="text_prim"/>
+	</style>
+	
+	<style class="RangeSlider" parents="root">
+		<scale.color value="fader"/>
+		<scale.border.gradient value="false"/>
+		<scale.border.size value="0"/>
+		<scale.border.radius value="0"/>
+		<scale.width value="8"/>
+		<scale.border.color value="bg"/>
+		<scale.brightness value="0.6"/>
+		<bg.inherit value="true"/>
+
+		<button.color value="bg"/>
+		<button.border.gradient value="false"/>
+		<button.border.size value="0"/>
+		<button.border.radius value="0"/>
+		<button.width value="8"/>
 	</style>
 
 	<style class="Separator" parents="root">
@@ -2754,14 +2769,6 @@
 		<allocation.vfill value="true"/>
 		<text.layout.halign value="1.0"/>
 		<padding value="0"/>
-	</style>
-
-	<style class="PluginWindow::RackEarTop" parents="RackEars">
-		<font.size value="12"/>
-	</style>
-
-	<style class="PluginWindow::RackEarSide" parents="RackEars">
-		<font.size value="16"/>
 	</style>
 
 	<style class="PluginWindow::ABSwitch::Active" parents="Button">

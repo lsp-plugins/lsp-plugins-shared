@@ -2297,6 +2297,23 @@
 		<inv.color value="#ffffff"/>
 		<text.inv.color value="#000000"/>
 	</style>
+	
+	<style class="RangeSlider" parents="root">
+		<scale.color value="black"/>
+		<scale.border.gradient value="true"/>
+		<scale.border.size value="3"/>
+		<scale.border.radius value="5"/>
+		<scale.width value="-1"/>
+		<scale.border.color value="white"/>
+		<scale.brightness value="0.75"/>
+		<bg.inherit value="true"/>
+
+		<button.color value="#cccccc"/>
+		<button.border.gradient value="true"/>
+		<button.border.size value="3"/>
+		<button.border.radius value="2"/>
+		<button.width value="12"/>
+	</style>
 
 	<style class="Separator" parents="root">
 		<color value="border_color"/>
@@ -2666,14 +2683,6 @@
 		<allocation.vfill value="true"/>
 		<text.layout.halign value="1.0"/>
 		<padding value="4"/>
-	</style>
-
-	<style class="PluginWindow::RackEarTop" parents="RackEars">
-		<font.size value="12"/>
-	</style>
-
-	<style class="PluginWindow::RackEarSide" parents="RackEars">
-		<font.size value="16"/>
 	</style>
 
 	<style class="PluginWindow::ABSwitch::Active" parents="Button">
