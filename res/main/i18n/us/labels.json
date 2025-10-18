@@ -519,6 +519,7 @@
 	"mic_rophone_direction": "Mic. direction",
 
 	"midi": {
+		":code": "(Code)",
 		"code": "Code",
 		"midi_num": "MIDI #",
 		"midi_number": "MIDI Number",

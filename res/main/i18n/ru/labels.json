@@ -518,6 +518,7 @@
 	"mic_rophone_direction": "Напр микрофона",
 
 	"midi": {
+		":code": "(Код)",
 		"code": "Код",
 		"midi_num": "№ MIDI",
 		"midi_number": "Номер MIDI",
