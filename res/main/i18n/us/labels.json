@@ -528,7 +528,7 @@
 		"velocity": "Velocity"
 	},
 	"mix": "Mix",
-	"mix_gain": "Mix Gain",
+	"mix_gain": "Mix gain",
 
 	"mode": "Mode",
 	"mode:": "Mode:",
@@ -831,9 +831,9 @@
 		"out_lr": "Out L/R",
 		"pan": "Pan",
 		"pan_l": "Pan L",
-		"pan_left": "Pan Left",
+		"pan_left": "Pan left",
 		"pan_r": "Pan R",
-		"pan_right": "Pan Right",
+		"pan_right": "Pan right",
 		"peak": "Peak",
 		"phase": "Phase",
 		"phase_invert": "Phase Invert",
