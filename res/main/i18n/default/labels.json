@@ -60,6 +60,8 @@
     "alr_": "Auto level regulation",
 
 	"amount": "Amount",
+	"amount:db": "Amount\n(dB)",
+	"amount_stereo_link:db_pc": "Amount,\nStereo Link\n(dB, %)",
 	"amplitude": "Amplitude",
 
 	"asample": {
@@ -272,6 +274,7 @@
 		"fft_in": "FFT In",		
 		"fft_link": "FFT Link",
 		"fft_out": "FFT Out",
+		"fft_sc": "FFT SC",
 		"frame": "FFT Frame",
 		"tolerance": "Tolerance",
 		"window": "Window"
@@ -398,6 +401,7 @@
 
 	"hold": "Hold",
 	"host_bpm": "Host BPM",
+	"hold_release:ms_ms": "Hold,\nRelease\n(ms, ms)",
 
 	"hysteresis": "Hysteresis",
 
@@ -408,6 +412,7 @@
 	"input:db": "Input (dB)",
 	"instrument": "Instrument",
 	"instrument_num": "Instrument #",
+	"invert": "Invert",
 
 	"ir_equalizer": "IR equalizer",
 
@@ -452,6 +457,7 @@
 	"log_scale": "Log scale",
 
 	"lookahead": "Lookahead",
+	"lookahead_duck:ms_ms": "Lookahead,\nDuck\n(ms, ms)",
 	
 	"loudness": "Loudness",
 	"loudness_L": "L",
@@ -512,6 +518,7 @@
 	"mic_rophone_direction": "Mic. direction",
 
 	"midi": {
+		":code": "(Code)",
 		"code": "Code",
 		"midi_num": "MIDI #",
 		"midi_number": "MIDI Number",
@@ -520,7 +527,7 @@
 		"velocity": "Velocity"
 	},
 	"mix": "Mix",
-	"mix_gain": "Mix Gain",
+	"mix_gain": "Mix gain",
 
 	"mode": "Mode",
 	"mode_slope": "Mode, Slope",
@@ -734,11 +741,13 @@
 		"Ext_ernal": "Ext",
         "External_sidechain": "External Sidechain",
 		"SC": "SC",
+		"ducking": "Ducking",
 		"listen": "Listen",
 		"lookahead": "Lookahead",
 		"position": "Position",
 		"preamp": "Preamp",
 		"reactivity": "Reactivity",
+		"source": "Source",
 		"sc_mode": "SC Mode",
 		"sc_preamp": "SC Preamp",
 		"type": "Type"
@@ -821,9 +830,9 @@
 		"out_lr": "Out L/R",
 		"pan": "Pan",
 		"pan_l": "Pan L",
-		"pan_left": "Pan Left",
+		"pan_left": "Pan left",
 		"pan_r": "Pan R",
-		"pan_right": "Pan Right",
+		"pan_right": "Pan right",
 		"peak": "Peak",
 		"phase": "Phase",
 		"phase_invert": "Phase Invert",

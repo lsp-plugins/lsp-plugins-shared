@@ -372,6 +372,18 @@
 
 		<!-- Overlay -->
 		<overlay_shadow avalue="#88000000"/>
+
+		<!-- Piano Keys colors -->
+		<pianokeys_white value="#3b3d49"/>
+		<pianokeys_white_inactive value="#3b3d49"/>
+		<pianokeys_black value="#1b1c22"/>
+		<pianokeys_black_inactive value="#1b1c22"/>
+		<pianokeys_border value="#424451"/>
+		<pianokeys_border_inactive value="#424451"/>
+		<pianokeys_split value="#2a2c37"/>
+		<pianokeys_split_inactive value="#2a2c37"/>
+		<pianokeys_octave_split value="#1b1c22"/>
+		<pianokeys_octave_split_inactive value="#1b1c22"/>
 	</colors>
 
 	<!-- Root style -->
@@ -1293,7 +1305,8 @@
 		<inactive.border.down.hover.color value="yellow"/>
 	</style>
 
-	<style class="Button_ne_Cycle" parents="Button_gray_8">
+	<style class="Button_ne_Cycle" parents="Button">
+		<font.size value="8"/>
 		<color value="dark_red"/>
 		<text.color value="bright_red"/>
 		<border.color value="bright_red"/>
@@ -1513,7 +1526,8 @@
 		<font.size value="6"/>
 	</style>
 
-	<style class="Button_Cycle" parents="Button_gray_8">
+	<style class="Button_Cycle" parents="Button">
+		<font.size value="8"/>
 		<down.color value="dark_red"/>
 		<down.hover.color value="dark_red"/>
 
@@ -1524,9 +1538,7 @@
 		<border.down.hover.color value="red"/>
 	</style>
 
-	<style class="Button_Cycle_8" parents="Button_Cycle">
-		<font.size value="8"/>
-	</style>
+	<style class="Button_Cycle_8" parents="Button_Cycle"></style>
 
 	<style class="Button_Cycle_6" parents="Button_Cycle">
 		<font.size value="6"/>
@@ -1947,6 +1959,11 @@
 		<text.visible value="true"/>
 		<color value="bg"/>
 		<bg.color value="bg"/>
+		<inactive.text.color value="text_sec"/>
+		<inactive.brightness value="0.75"/>
+		<inactive.bg.brightness value="1.0"/>
+		<inactive.color value="bg_schema"/>
+		<inactive.bg.color value="bg_schema"/>
 	</style>
 
 	<style class="LedMeterChannel" parents="root">
@@ -1969,6 +1986,11 @@
 		<border value="2"/>
 		<angle value="0"/>
 		<header.pointer value="hand"/>
+		<inactive.color value="bg"/>
+		<inactive.value.color value="gray"/>
+		<inactive.text.color value="text_sec"/>
+		<inactive.brightness value="0.75"/>
+		<inactive.bg.brightness value="1.0"/>
 	</style>
 
 	<style class="MultiLabel" parents="root">
@@ -2122,7 +2144,23 @@
 		<padding.right value="16"/>
 	</style>
 
-	<style class="RackEars" parents="root"></style>
+	<style class="RangeSlider" parents="root">
+		<scale.color value="bg"/>
+		<scale.border.gradient value="false"/>
+		<scale.border.size value="2"/>
+		<scale.border.radius value="5"/>
+		<scale.width value="-1"/>
+		<scale.border.color value="bg_name"/>
+		<scale.brightness value="1.5"/>
+		<bg.inherit value="true"/>
+
+		<button.color value="bg"/>
+		<button.border.color value="bg_name"/>
+		<button.border.gradient value="false"/>
+		<button.border.size value="2"/>
+		<button.border.radius value="3"/>
+		<button.width value="4"/>
+	</style>
 
 	<style class="ScrollArea" parents="root"></style>
 
@@ -2214,6 +2252,54 @@
 		<padding value="24"/>
 		<ipadding value="0"/>
 		<close.auto value="true"/>
+	</style>
+
+	<style class="PianoKeys" parents="root">
+		<white.color value="pianokeys_white" />
+		<white.down.color value="pianokeys_white" />
+		<white.selected.color value="pianokeys_white" />
+		<white.selected.down.color value="pianokeys_white" />
+		<white.inactive.color value="pianokeys_white_inactive" />
+		<white.inactive.down.color value="pianokeys_white_inactive" />
+		<white.inactive.selected.color value="pianokeys_white_inactive" />
+		<white.inactive.selected.down.color value="pianokeys_white_inactive" />
+		<white.hover.color value="pianokeys_white" />
+		<white.down.hover.color value="pianokeys_white" />
+		<white.selected.hover.color value="pianokeys_white" />
+		<white.selected.down.hover.color value="pianokeys_white" />
+		<white.inactive.hover.color value="pianokeys_white_inactive" />
+		<white.inactive.down.hover.color value="pianokeys_white_inactive" />
+		<white.inactive.selected.hover.color value="pianokeys_white_inactive" />
+		<white.inactive.selected.down.hover.color value="pianokeys_white_inactive" />
+
+		<black.color value="pianokeys_black" />
+		<black.down.color value="pianokeys_black" />
+		<black.selected.color value="pianokeys_black" />
+		<black.selected.down.color value="pianokeys_black" />
+		<black.inactive.color value="pianokeys_black_inactive" />
+		<black.inactive.down.color value="pianokeys_black_inactive" />
+		<black.inactive.selected.color value="pianokeys_black_inactive" />
+		<black.inactive.selected.down.color value="pianokeys_black_inactive" />
+		<black.hover.color value="pianokeys_black" />
+		<black.down.hover.color value="pianokeys_black" />
+		<black.selected.hover.color value="pianokeys_black" />
+		<black.selected.down.hover.color value="pianokeys_black" />
+		<black.inactive.hover.color value="pianokeys_black_inactive" />
+		<black.inactive.down.hover.color value="pianokeys_black_inactive" />
+		<black.inactive.selected.hover.color value="pianokeys_black_inactive" />
+		<black.inactive.selected.down.hover.color value="pianokeys_black_inactive" />
+
+		<border.color value="pianokeys_border" />
+		<split.color value="pianokeys_split" />
+		<octave.split.color value="pianokeys_octave_split" />
+
+		<inactive.border.color value="pianokeys_border_inactive" />
+		<inactive.split.color value="pianokeys_split_inactive" />
+		<inactive.octave.split.color value="pianokeys_octave_split_inactive" />
+
+		<border value="0" />
+		<split.size value="2" />
+		<angle value="0" />
 	</style>
 
 	<style class="ProgressBar" parents="root">
@@ -2591,12 +2677,47 @@
 		<padding value="4"/>
 	</style>
 
-	<style class="PluginWindow::RackEarTop" parents="RackEars">
-		<font.size value="12"/>
+	<style class="PluginWindow::ABSwitch::Active" parents="Button">
+		<down.colors value="true"/>
+		<color value="bg_preset"/>
+		<down.color value="bg_preset"/>
+		<hover.color value="bg_preset"/>
+		<down.hover.color value="bg_preset"/>
+		<text.color value="green"/>
+		<text.hover.color value="dark_green"/>
+		<text.down.color value="green"/>
+		<text.down.hover.color value="dark_green"/>
+		<border.size value="0"/>
+		<border.down.size value="0"/>
+		<border.pressed.size value="0"/>
+		<hole value="false"/>
+		<hover value="true"/>
+		<padding.top value="1"/>
+		<padding.right value="3"/>
+		<pointer value="arrow"/>
+		<font.size value="14"/>
+		<font.bold value="true"/>
+		<text.shift value="0 0"/>
+		<text.down.shift value="0 0"/>
+		<text.pressed.shift value="0 0"/>
 	</style>
 
-	<style class="PluginWindow::RackEarSide" parents="RackEars">
-		<font.size value="16"/>
+	<style class="PluginWindow::ABSwitch::Copy" parents="PluginWindow::ABSwitch::Active">
+		<text.color value="cyan"/>
+		<text.hover.color value="dark_cyan"/>
+		<text.down.color value="cyan"/>
+		<text.down.hover.color value="dark_cyan"/>
+		<font.name value="lsp-icons"/>
+		<text.pressed.shift value="1 1"/>
+		<pointer value="hand"/>
+	</style>
+
+	<style class="PluginWindow::ABSwitch::Inactive" parents="PluginWindow::ABSwitch::Active">
+		<text.color value="cyan"/>
+		<text.hover.color value="dark_cyan"/>
+		<text.down.color value="cyan"/>
+		<text.down.hover.color value="dark_cyan"/>
+		<pointer value="hand"/>
 	</style>
 
 	<style class="PluginWindow::Bypass::Box" parents="Box">

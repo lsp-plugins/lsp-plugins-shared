@@ -60,6 +60,8 @@
     "alr_": "Авто регуляция уровней",
 
 	"amount": "Количество",
+	"amount:db": "Количество\n(дБ)",
+	"amount_stereo_link:db_pc": "Количество,\nСтереосвязь\n(дБ, %)",
 	"amplitude": "Амплитуда",
 
 	"asample": {
@@ -273,6 +275,7 @@
 		"fft_in": "БПФ Вх",	
 		"fft_link": "БПФ Линк",
 		"fft_out": "БПФ Вых",
+		"fft_sc": "БПВ БЦ",
 		"frame": "Кадр БПФ",
 		"tolerance": "Точность",
 		"window": "Окно"
@@ -399,6 +402,7 @@
 
 	"hold": "Удерживать",
 	"host_bpm": "УВМ хоста",
+	"hold_release:ms_ms": "Удержание,\nОтпускание\n(мс, мс)",
 
 	"hysteresis": "Гистерезис",
 
@@ -409,6 +413,7 @@
 	"input:db": "Вход (дБ)",
 	"instrument": "Инструмент",
 	"instrument_num": "№ инструмента",
+	"invert": "Инверсия",
 
 	"ir_equalizer": "Эквализация ИО",
 
@@ -453,6 +458,7 @@
 	"log_scale": "Лог масштаб",
 
 	"lookahead": "Предсказание",
+	"lookahead_duck:ms_ms": "Предсказ,\nЗазор\n(мс, мс)",
 	
 	"loudness": "Громкость",
 	"loudness_L": "Д",
@@ -512,6 +518,7 @@
 	"mic_rophone_direction": "Напр микрофона",
 
 	"midi": {
+		":code": "(Код)",
 		"code": "Код",
 		"midi_num": "№ MIDI",
 		"midi_number": "Номер MIDI",
@@ -734,11 +741,13 @@
 		"Ext_ernal": "Внеш",
         "External_sidechain": "Внешняя БЦ",
 		"SC": "БЦ",
+		"ducking": "Зазор",
 		"listen": "Слушать",
 		"lookahead": "Предсказание",
 		"position": "Позиция",
 		"preamp": "Усиление",
 		"reactivity": "Реактивность",
+		"source": "Источник",
 		"sc_mode": "Режим БЦ",
 		"sc_preamp": "Предусил БЦ",
 		"type": "Тип"
