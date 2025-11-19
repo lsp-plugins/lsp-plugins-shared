@@ -12,6 +12,7 @@
 	},
 	
 	"cancel": "Cancel",
+	"capture": "Capture",
 	"close": "Close",
 
 	"confirm": {
@@ -112,6 +113,7 @@
 	},
 	"profile": "Profile",
 
+	"record": "Record",
 	"reset": "Reset",
 	"restart": "Restart",
 	"run_stop": "Run/Stop",
