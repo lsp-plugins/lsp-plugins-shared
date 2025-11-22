@@ -346,7 +346,8 @@
 		"presence": "Присутствие",
 		"show_": "Показ",
 		"subs": "Суббас",
-		"treble": "Верха"
+		"treble": "Верха",
+		"x_k": "{@value}к"
 	},
 
 	"frequency": {

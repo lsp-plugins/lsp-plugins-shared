@@ -345,7 +345,8 @@
 		"presence": "Presence",
 		"show_": "Show",
 		"subs": "Subs",
-		"treble": "Treble"
+		"treble": "Treble",
+		"x_k": "{@value}k"
 	},
 
 	"frequency": {
