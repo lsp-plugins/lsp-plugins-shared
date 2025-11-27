@@ -75,6 +75,7 @@
 	"reset_settings": "Reset settings",
 
 	"listen": "Listen",
+	"limits": "Limits",
 	"linear_frequency": "Linear frequency",
 	"link": {
 		"copy": "Copy link",
@@ -86,6 +87,7 @@
 
 	"manage_presets": "Manage presets...",
 	"measure": "Measure",
+	"morphing": "Morphing",
 
 	"nav": {
 		"go": "Go",
