@@ -19,6 +19,8 @@
 
 	"distance": "Расстояние",
 	
+	"equalizer": "Эквалайзер",
+	
 	"file": "Файл",
 	"filter": "Фильтр",
 	
@@ -77,6 +79,7 @@
 	"processors": "Обработчики",
 	"profile_limits": "Ограничения профиля",
 	"profile_morphing": "Морфирование профиля",
+	"profiles": "Профили",
 	
 	"rendering": "Отрисовка",
 	

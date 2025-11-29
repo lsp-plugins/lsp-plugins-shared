@@ -19,6 +19,8 @@
 
 	"distance": "Distance",
 	
+	"equalizer": "Equalizer",
+	
 	"file": "File",
 	"filter": "Filter",
 
@@ -78,6 +80,7 @@
 	"processors": "Processors",
 	"profile_limits": "Profile Limits",
 	"profile_morphing": "Profile Morhping",
+	"profiles": "Profiles",
 
 	"rendering": "Rendering",
 
