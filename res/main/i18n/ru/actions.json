@@ -125,8 +125,11 @@
 	"save": "Сохранить",
 
 	"select_language": "Язык",
+	
+	"show": "Показать",
 
 	"tap": "Тук",
+	"tracking": "Трекинг",
 	"to_bookmarks": "В закладки",
 	"toggle_rack_mount": "Переключить стоечный монтаж",
 

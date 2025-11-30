@@ -123,8 +123,11 @@
 	"save": "Save",
 
 	"select_language": "Language",
+	
+	"show": "Show",
 
 	"tap": "Tap",
+	"tracking": "Tracking",
 	"to_bookmarks": "+Bookmarks",
 	"toggle_rack_mount": "Toggle rack mount",
 
