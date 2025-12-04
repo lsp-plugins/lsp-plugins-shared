@@ -95,6 +95,8 @@
 		"mid": "Mid"
 	},
 	"band_hue": "Band, Hue",
+	
+	"blend": "Blend",
 
 	"bool": {
 		"off": "off",
