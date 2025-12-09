@@ -440,6 +440,10 @@
 		"voices": "Voices"
 	},
 	"limiter_bands": "Limiter bands",
+	"limiting": {
+		"bottom": "Bottom",
+		"top": "Top"
+	},
 	"line_size": "Line size",
 	"link": {
 		"": "Link",
