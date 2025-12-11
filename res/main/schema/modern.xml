@@ -1810,10 +1810,18 @@
 
 	<style class="Grid" parents="root">
 		<bg.inherit value="true"/>
+		<bg.color value="bg_schema"/>
+		<inactive.brightness value="0.75"/>
+		<inactive.bg.brightness value="0.75"/>
+		<inactive.bg.color value="bg_schema"/>
 	</style>
 
 	<style class="Cell" parents="root">
 		<bg.inherit value="true"/>
+		<bg.color value="bg_schema"/>
+		<inactive.brightness value="0.75"/>
+		<inactive.bg.brightness value="0.75"/>
+		<inactive.bg.color value="bg_schema"/>
 	</style>
 
 	<style class="ComboGroup" parents="root">
@@ -2377,7 +2385,7 @@
 		<inv.color value="bg_graph"/>
 		<text.inv.color value="text_prim"/>
 	</style>
-	
+
 	<style class="RangeSlider" parents="root">
 		<scale.color value="fader"/>
 		<scale.border.gradient value="false"/>
