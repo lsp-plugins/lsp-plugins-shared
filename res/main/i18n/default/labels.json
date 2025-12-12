@@ -353,6 +353,7 @@
 		"x_k": "{@value}k"
 	},
 
+	"freq": "Freq",
 	"frequency": {
 		"": "Frequency",
 		"max": "Max",
