@@ -543,6 +543,8 @@
 	"mode:": "Mode:",
 	"model": "Model",
 	"model:": "Model:",
+	
+	"morph_time": "Morph time",
 
 	"ms_listen": "MS Listen",
 
@@ -833,6 +835,8 @@
 		"fall": "Fall",
 		"in_lr": "In L/R",
 		"input": "Input",
+		"input_A": "Input A",
+		"input_B": "Input B",
 		"invert": "Invert",
 		"match": "Match",
 		"max": "Max",

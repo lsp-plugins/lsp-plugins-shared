@@ -656,6 +656,10 @@
 
 	<style class="Void" parents="root">
 		<bg.inherit value="true"/>
+		<bg.color value="bg_schema"/>
+		<inactive.brightness value="0.75"/>
+		<inactive.bg.brightness value="1.0"/>
+		<inactive.bg.color value="bg_schema"/>
 	</style>
 
 	<style class="Button" parents="root">
@@ -2264,60 +2268,116 @@
 		<inactive.bg.color value="bg_schema"/>
 	</style>
 
-	<style class="Led_red" parents="root">
+	<style class="Led_red" parents="Led">
 		<color value="dark_red"/>
 		<border.color value="dark_red"/>
 		<led.color value="red"/>
 		<led.border.color value="bright_red"/>
 	</style>
 
-	<style class="Led_blue" parents="root">
+	<style class="Led_blue" parents="Led">
 		<color value="dark_blue"/>
 		<border.color value="dark_blue"/>
 		<led.color value="blue"/>
 		<led.border.color value="bright_blue"/>
 	</style>
 
-	<style class="Led_green" parents="root">
+	<style class="Led_green" parents="Led">
 		<color value="dark_green"/>
 		<border.color value="dark_green"/>
 		<led.color value="green"/>
 		<led.border.color value="bright_green"/>
 	</style>
 
-	<style class="Led_yellow" parents="root">
+	<style class="Led_yellow" parents="Led">
 		<color value="dark_yellow"/>
 		<border.color value="dark_yellow"/>
 		<led.color value="yellow"/>
 		<led.border.color value="bright_yellow"/>
 	</style>
 
-	<style class="Led_magenta" parents="root">
+	<style class="Led_magenta" parents="Led">
 		<color value="dark_magenta"/>
 		<border.color value="dark_magenta"/>
 		<led.color value="magenta"/>
 		<led.border.color value="bright_magenta"/>
 	</style>
 
-	<style class="Led_cyan" parents="root">
+	<style class="Led_cyan" parents="Led">
 		<color value="dark_cyan"/>
 		<border.color value="dark_cyan"/>
 		<led.color value="cyan"/>
 		<led.border.color value="bright_cyan"/>
 	</style>
 
-	<style class="Led_violet" parents="root">
+	<style class="Led_violet" parents="Led">
 		<color value="dark_violet"/>
 		<border.color value="dark_violet"/>
 		<led.color value="violet"/>
 		<led.border.color value="bright_violet"/>
 	</style>
 
-	<style class="Led_orange" parents="root">
+	<style class="Led_orange" parents="Led">
 		<color value="dark_orange"/>
 		<border.color value="dark_orange"/>
 		<led.color value="orange"/>
 		<led.border.color value="bright_orange"/>
+	</style>
+
+	<style class="Led_yellow_green" parents="Led">
+		<color value="dark_yellow_green"/>
+		<border.color value="dark_yellow_green"/>
+		<led.color value="yellow_green"/>
+		<led.border.color value="bright_yellow_green"/>
+	</style>
+
+	<style class="Led_red_orange" parents="Led">
+		<color value="dark_red_orange"/>
+		<border.color value="dark_red_orange"/>
+		<led.color value="red_orange"/>
+		<led.border.color value="bright_red_orange"/>
+	</style>
+
+	<style class="Led_orange_yellow" parents="Led">
+		<color value="dark_orange_yellow"/>
+		<border.color value="dark_orange_yellow"/>
+		<led.color value="orange_yellow"/>
+		<led.border.color value="bright_orange_yellow"/>
+	</style>
+
+	<style class="Led_green_cyan" parents="Led">
+		<color value="dark_green_cyan"/>
+		<border.color value="dark_green_cyan"/>
+		<led.color value="green_cyan"/>
+		<led.border.color value="bright_green_cyan"/>
+	</style>
+
+	<style class="dark_yan_blue" parents="Led">
+		<color value="dark_cyan_blue"/>
+		<border.color value="dark_cyan_blue"/>
+		<led.color value="cyan_blue"/>
+		<led.border.color value="bright_cyan_blue"/>
+	</style>
+
+	<style class="Led_blue_violet" parents="Led">
+		<color value="dark_blue_violet"/>
+		<border.color value="dark_blue_violet"/>
+		<led.color value="blue_violet"/>
+		<led.border.color value="bright_blue_violet"/>
+	</style>
+
+	<style class="Led_violet_magenta" parents="Led">
+		<color value="dark_violet_magenta"/>
+		<border.color value="dark_violet_magenta"/>
+		<led.color value="violet_magenta"/>
+		<led.border.color value="bright_violet_magenta"/>
+	</style>
+
+	<style class="Led_magenta_red" parents="Led">
+		<color value="dark_magenta_red"/>
+		<border.color value="dark_magenta_red"/>
+		<led.color value="magenta_red"/>
+		<led.border.color value="bright_magenta_red"/>
 	</style>
 
 	<style class="ButtonLed" parents="Led">
