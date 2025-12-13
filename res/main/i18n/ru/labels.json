@@ -686,6 +686,10 @@
 		"saving": "СОХРАНЕНИЕ",
 		"waiting": "ОЖИДАНИЕ"
 	},
+	"profiles": {
+		"capture_profile": "Capture profile",
+		"input_profile": "Input profile"
+	},
 	"progress": "Прогресс",
 	
 	"pump": "Нкчк",

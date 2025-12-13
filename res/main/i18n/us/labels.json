@@ -687,6 +687,10 @@
 		"saving": "SAVING",
 		"waiting": "WAITING"
 	},
+	"profiles": {
+		"capture_profile": "Capture profile",
+		"input_profile": "Input profile"
+	},
 	"progress": "Progress",
 	
 	"pump": "Pump",
