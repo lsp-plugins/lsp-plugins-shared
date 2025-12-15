@@ -2331,6 +2331,15 @@
 		<inactive.bg.color value="bg_schema"/>
 	</style>
 
+	<style class="Led_matcher_capture_ready" parents="Led">
+		<color value="led_c"/>
+		<border.color value="led_bc"/>
+		<led.color value="yellow_green"/>
+		<led.border.color value="bright_yellow_green"/>
+		<inactive.led.color value="gray"/>
+		<inactive.led.border.color value="bright_gray"/>
+	</style>
+
 	<style class="Led_red" parents="Led">
 		<color value="led_c"/>
 		<border.color value="led_bc"/>

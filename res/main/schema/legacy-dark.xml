@@ -2204,10 +2204,10 @@
 		<color value="bg"/>
 		<bg.color value="bg"/>
 		<inactive.text.color value="text_sec"/>
-		<inactive.brightness value="0.75"/>
+		<inactive.brightness value="1.0"/>
 		<inactive.bg.brightness value="1.0"/>
-		<inactive.color value="bg_schema"/>
-		<inactive.bg.color value="bg_schema"/>
+		<inactive.color value="bg"/>
+		<inactive.bg.color value="bg"/>
 	</style>
 
 	<style class="LedMeterChannel" parents="root">
@@ -2264,6 +2264,16 @@
 		<inactive.bg.brightness value="1.0"/>
 		<inactive.bg.color value="bg_schema"/>
 	</style>
+
+	<style class="Led_matcher_capture_ready" parents="Led">
+		<color value="led_c"/>
+		<border.color value="led_bc"/>
+		<led.color value="yellow_green"/>
+		<led.border.color value="bright_yellow_green"/>
+		<inactive.led.color value="gray"/>
+		<inactive.led.border.color value="bright_gray"/>
+	</style>
+
 
 	<style class="Led_red" parents="Led">
 		<color value="led_c"/>
