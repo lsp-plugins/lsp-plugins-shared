@@ -19,7 +19,12 @@
 
 	"distance": "Distance",
 	
+	"envelope": "Envelope",
+	"equalizer": "Equalizer",
+	
+	"file": "File",
 	"filter": "Filter",
+	"filters": "Filters",
 
 	"gain": "Gain",
 	"general": "General",
@@ -75,6 +80,9 @@
 	"premix": "Pre-mix",
 	"processor": "Processor",
 	"processors": "Processors",
+	"profile_limits": "Profile Limits",
+	"profile_morphing": "Profile Morhping",
+	"profiles": "Profiles",
 
 	"rendering": "Rendering",
 

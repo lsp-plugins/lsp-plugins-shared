@@ -12,6 +12,7 @@
 	},
 	
 	"cancel": "Cancel",
+	"capture": "Capture",
 	"close": "Close",
 
 	"confirm": {
@@ -73,6 +74,7 @@
 	"import_rew_filter_file": "REW/APO filter file...",
 
 	"listen": "Listen",
+	"limits": "Limits",
 	"linear_frequency": "Linear frequency",
 	"link": {
 		"copy": "Copy link",
@@ -83,7 +85,9 @@
 	"load_preset": "Load preset",
 
 	"manage_presets": "Manage presets...",
+	"match": "Match",
 	"measure": "Measure",
+	"morphing": "Morphing",
 
 	"nav": {
 		"go": "Go",
@@ -112,6 +116,7 @@
 	},
 	"profile": "Profile",
 
+	"record": "Record",
 	"reset": "Reset",
 	"restart": "Restart",
 	"run_stop": "Run/Stop",
@@ -119,8 +124,11 @@
 	"save": "Save",
 
 	"select_language": "Language",
+	
+	"show": "Show",
 
 	"tap": "Tap",
+	"tracking": "Tracking",
 	"to_bookmarks": "+Bookmarks",
 	"toggle_rack_mount": "Toggle rack mount",
 

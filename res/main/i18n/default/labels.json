@@ -95,6 +95,8 @@
 		"mid": "Mid"
 	},
 	"band_hue": "Band, Hue",
+	
+	"blend": "Blend",
 
 	"bool": {
 		"off": "off",
@@ -193,6 +195,7 @@
 		"pitch_right": "Pitch Right",
 		"pitch_side": "Pitch Side",
 		"rand_id": "Randomized #{@id}",
+		"reference": "Reference",
 		"return": "Return",
 		"right": "Right",
 		"right_on": "Right on",
@@ -252,6 +255,7 @@
 	
 	"downward": "Downward",
 
+	"dynamic_profiles": "Dynamic profiles",
 	"dynamics": "Dynamics",
 
 	"enable": "Enable",
@@ -345,9 +349,11 @@
 		"presence": "Presence",
 		"show_": "Show",
 		"subs": "Subs",
-		"treble": "Treble"
+		"treble": "Treble",
+		"x_k": "{@value}k"
 	},
 
+	"freq": "Freq",
 	"frequency": {
 		"": "Frequency",
 		"max": "Max",
@@ -435,6 +441,10 @@
 		"voices": "Voices"
 	},
 	"limiter_bands": "Limiter bands",
+	"limiting": {
+		"bottom": "Bottom",
+		"top": "Top"
+	},
 	"line_size": "Line size",
 	"link": {
 		"": "Link",
@@ -534,6 +544,8 @@
 	"mode:": "Mode:",
 	"model": "Model",
 	"model:": "Model:",
+	
+	"morph_time": "Morph time",
 
 	"ms_listen": "MS Listen",
 
@@ -674,6 +686,10 @@
 		"saving": "SAVING",
 		"waiting": "WAITING"
 	},
+	"profiles": {
+		"capture_profile": "Capture profile",
+		"input_profile": "Input profile"
+	},
 	"progress": "Progress",
 	
 	"pump": "Pump",
@@ -709,6 +725,7 @@
 	"ratio_up": "Ratio up",
 	
 	"reactivity": "Reactivity",
+	"ready": "Ready",
 	
 	"reduction": "Reduction",
 
@@ -800,6 +817,7 @@
 	"sidechain": "Sidechain",
 
 	"signal": {
+		"": "Signal",
 		"M_iddle": "M",
 		"P_hase": "P",
 		"S_ide": "S",
@@ -820,7 +838,11 @@
 		"fade_out": "Fade out",
 		"fall": "Fall",
 		"in_lr": "In L/R",
+		"input": "Input",
+		"input_A": "Input A",
+		"input_B": "Input B",
 		"invert": "Invert",
+		"match": "Match",
 		"max": "Max",
 		"min": "Min",
 		"mix": "Mix",
@@ -838,6 +860,7 @@
 		"phase_invert": "Phase Invert",
 		"positive": "Positive",
 		"positive_width": "Positive Width",
+		"profile": "Profile",
 		"raise": "Raise",
 		"reference": "Reference",
 		"relative": "Relative",
@@ -851,6 +874,8 @@
 	"silence": "Silence",
 
 	"slope": "Slope",
+	
+	"smooth": "Smooth",
 
 	"source": "Source",
 	"source:": "Source:",
@@ -868,6 +893,7 @@
 		"enabled": "Enabled"
 	},
 
+	"static_profiles": "Static profiles",
 	"status": "Status",
 
 	"stereo_link": "Stereo link",	
@@ -927,6 +953,7 @@
 		"samples": "Samples"
 	},
 	"upward": "Upward",
+	"user_friendly_values": "User-friendly values",
 	"value": "Value",
 	"values": {
 		"best": "Best",

@@ -56,6 +56,38 @@
 		<dark_gray value="#444444"/>
 		<darker_gray value="#333333"/>
 
+		<red_orange value="#ff2d00"/>
+		<bright_red_orange value="#ff7d62"/>
+		<dark_red_orange value="#d22d00"/>
+
+		<orange_yellow value="#ff9b00"/>
+		<bright_orange_yellow value="#ffcf62"/>
+		<dark_orange_yellow value="#d29b00"/>
+
+		<yellow_green value="#ccff00"/>
+		<bright_yellow_green value="#e6ff62"/>
+		<dark_yellow_green value="#ccd200"/>
+
+		<green_cyan value="#00ff55"/>
+		<bright_green_cyan value="#7cff9d"/>
+		<dark_green_cyan value="#00d255"/>
+
+		<cyan_blue value="#1a84ff"/>
+		<bright_cyan_blue value="#91c1ff"/>
+		<dark_cyan_blue value="#1a6dd2"/>
+
+		<blue_violet value="#3c28ff"/>
+		<bright_blue_violet value="#867aff"/>
+		<dark_blue_violet value="#3c28d2"/>
+
+		<violet_magenta value="#9f1cff"/>
+		<bright_violet_magenta value="#d06eff"/>
+		<dark_violet_magenta value="#9f1cd2"/>
+
+		<magenta_red value="#d500cc"/>
+		<bright_magenta_red value="#e962e6"/>
+		<dark_magenta_red value="#d500cc"/>
+
 		<!-- ChannelGroup -->
 
 		<channel_group_red_bg value="#2b2628"/>
@@ -624,6 +656,10 @@
 
 	<style class="Void" parents="root">
 		<bg.inherit value="true"/>
+		<bg.color value="bg_schema"/>
+		<inactive.brightness value="0.75"/>
+		<inactive.bg.brightness value="1.0"/>
+		<inactive.bg.color value="bg_schema"/>
 	</style>
 
 	<style class="Button" parents="root">
@@ -909,6 +945,142 @@
 		<inactive.border.down.color value="bright_magenta"/>
 		<inactive.border.down.hover.color value="magenta"/>
 		<inactive.led.color value="magenta"/>
+	</style>
+
+	<style class="Button_red_orange" parents="Button">
+		<down.color value="bright_red_orange"/>
+		<down.hover.color value="red_orange"/>
+		<text.down.color value="bg"/>
+		<text.down.hover.color value="bg"/>
+		<border.down.color value="bright_red_orange"/>
+		<border.down.hover.color value="red_orange"/>
+		<led.color value="red_orange"/>
+		<inactive.down.color value="bright_red_orange"/>
+		<inactive.down.hover.color value="red_orange"/>
+		<inactive.text.down.color value="bg"/>
+		<inactive.text.down.hover.color value="bg"/>
+		<inactive.border.down.color value="bright_red_orange"/>
+		<inactive.border.down.hover.color value="red_orange"/>
+		<inactive.led.color value="red_orange"/>
+	</style>
+
+	<style class="Button_orange_yellow" parents="Button">
+		<down.color value="bright_orange_yellow"/>
+		<down.hover.color value="orange_yellow"/>
+		<text.down.color value="bg"/>
+		<text.down.hover.color value="bg"/>
+		<border.down.color value="bright_orange_yellow"/>
+		<border.down.hover.color value="orange_yellow"/>
+		<led.color value="orange_yellow"/>
+		<inactive.down.color value="bright_orange_yellow"/>
+		<inactive.down.hover.color value="orange_yellow"/>
+		<inactive.text.down.color value="bg"/>
+		<inactive.text.down.hover.color value="bg"/>
+		<inactive.border.down.color value="bright_orange_yellow"/>
+		<inactive.border.down.hover.color value="orange_yellow"/>
+		<inactive.led.color value="orange_yellow"/>
+	</style>
+
+	<style class="Button_yellow_green" parents="Button">
+		<down.color value="bright_yellow_green"/>
+		<down.hover.color value="yellow_green"/>
+		<text.down.color value="bg"/>
+		<text.down.hover.color value="bg"/>
+		<border.down.color value="bright_yellow_green"/>
+		<border.down.hover.color value="yellow_green"/>
+		<led.color value="yellow_green"/>
+		<inactive.down.color value="bright_yellow_green"/>
+		<inactive.down.hover.color value="yellow_green"/>
+		<inactive.text.down.color value="bg"/>
+		<inactive.text.down.hover.color value="bg"/>
+		<inactive.border.down.color value="bright_yellow_green"/>
+		<inactive.border.down.hover.color value="yellow_green"/>
+		<inactive.led.color value="yellow_green"/>
+	</style>
+
+	<style class="Button_green_cyan" parents="Button">
+		<down.color value="bright_green_cyan"/>
+		<down.hover.color value="green_cyan"/>
+		<text.down.color value="bg"/>
+		<text.down.hover.color value="bg"/>
+		<border.down.color value="bright_green_cyan"/>
+		<border.down.hover.color value="green_cyan"/>
+		<led.color value="green_cyan"/>
+		<inactive.down.color value="bright_green_cyan"/>
+		<inactive.down.hover.color value="green_cyan"/>
+		<inactive.text.down.color value="bg"/>
+		<inactive.text.down.hover.color value="bg"/>
+		<inactive.border.down.color value="bright_green_cyan"/>
+		<inactive.border.down.hover.color value="green_cyan"/>
+		<inactive.led.color value="green_cyan"/>
+	</style>
+
+	<style class="Button_cyan_blue" parents="Button">
+		<down.color value="bright_cyan_blue"/>
+		<down.hover.color value="cyan_blue"/>
+		<text.down.color value="bg"/>
+		<text.down.hover.color value="bg"/>
+		<border.down.color value="bright_cyan_blue"/>
+		<border.down.hover.color value="cyan_blue"/>
+		<led.color value="cyan_blue"/>
+		<inactive.down.color value="bright_cyan_blue"/>
+		<inactive.down.hover.color value="cyan_blue"/>
+		<inactive.text.down.color value="bg"/>
+		<inactive.text.down.hover.color value="bg"/>
+		<inactive.border.down.color value="bright_cyan_blue"/>
+		<inactive.border.down.hover.color value="cyan_blue"/>
+		<inactive.led.color value="cyan_blue"/>
+	</style>
+
+	<style class="Button_blue_violet" parents="Button">
+		<down.color value="bright_blue_violet"/>
+		<down.hover.color value="blue_violet"/>
+		<text.down.color value="bg"/>
+		<text.down.hover.color value="bg"/>
+		<border.down.color value="bright_blue_violet"/>
+		<border.down.hover.color value="blue_violet"/>
+		<led.color value="blue_violet"/>
+		<inactive.down.color value="bright_blue_violet"/>
+		<inactive.down.hover.color value="blue_violet"/>
+		<inactive.text.down.color value="bg"/>
+		<inactive.text.down.hover.color value="bg"/>
+		<inactive.border.down.color value="bright_blue_violet"/>
+		<inactive.border.down.hover.color value="blue_violet"/>
+		<inactive.led.color value="blue_violet"/>
+	</style>
+
+	<style class="Button_violet_magenta" parents="Button">
+		<down.color value="bright_violet_magenta"/>
+		<down.hover.color value="violet_magenta"/>
+		<text.down.color value="bg"/>
+		<text.down.hover.color value="bg"/>
+		<border.down.color value="bright_violet_magenta"/>
+		<border.down.hover.color value="violet_magenta"/>
+		<led.color value="violet_magenta"/>
+		<inactive.down.color value="bright_violet_magenta"/>
+		<inactive.down.hover.color value="violet_magenta"/>
+		<inactive.text.down.color value="bg"/>
+		<inactive.text.down.hover.color value="bg"/>
+		<inactive.border.down.color value="bright_violet_magenta"/>
+		<inactive.border.down.hover.color value="violet_magenta"/>
+		<inactive.led.color value="violet_magenta"/>
+	</style>
+
+	<style class="Button_magenta_red" parents="Button">
+		<down.color value="bright_magenta_red"/>
+		<down.hover.color value="magenta_red"/>
+		<text.down.color value="bg"/>
+		<text.down.hover.color value="bg"/>
+		<border.down.color value="bright_magenta_red"/>
+		<border.down.hover.color value="magenta_red"/>
+		<led.color value="magenta_red"/>
+		<inactive.down.color value="bright_magenta_red"/>
+		<inactive.down.hover.color value="magenta_red"/>
+		<inactive.text.down.color value="bg"/>
+		<inactive.text.down.hover.color value="bg"/>
+		<inactive.border.down.color value="bright_magenta_red"/>
+		<inactive.border.down.hover.color value="magenta_red"/>
+		<inactive.led.color value="magenta_red"/>
 	</style>
 
 	<style class="Button_mono" parents="Button">
@@ -1382,6 +1554,70 @@
 		<font.size value="8"/>
 	</style>
 
+	<style class="Button_red_orange_8" parents="Button_red_orange">
+		<font.size value="8"/>
+	</style>
+
+	<style class="Button_orange_yellow_8" parents="Button_orange_yellow">
+		<font.size value="8"/>
+	</style>
+
+	<style class="Button_yellow_green_8" parents="Button_yellow_green">
+		<font.size value="8"/>
+	</style>
+
+	<style class="Button_green_cyan_8" parents="Button_green_cyan">
+		<font.size value="8"/>
+	</style>
+
+	<style class="Button_cyan_blue_8" parents="Button_cyan_blue">
+		<font.size value="8"/>
+	</style>
+
+	<style class="Button_blue_violet_8" parents="Button_blue_violet">
+		<font.size value="8"/>
+	</style>
+
+	<style class="Button_violet_magenta_8" parents="Button_violet_magenta">
+		<font.size value="8"/>
+	</style>
+
+	<style class="Button_magenta_red_8" parents="Button_magenta_red">
+		<font.size value="8"/>
+	</style>
+
+	<style class="Button_red_orange_6" parents="Button_red_orange">
+		<font.size value="6"/>
+	</style>
+
+	<style class="Button_orange_yellow_6" parents="Button_orange_yellow">
+		<font.size value="6"/>
+	</style>
+
+	<style class="Button_yellow_green_6" parents="Button_yellow_green">
+		<font.size value="6"/>
+	</style>
+
+	<style class="Button_green_cyan_6" parents="Button_green_cyan">
+		<font.size value="6"/>
+	</style>
+
+	<style class="Button_cyan_blue_6" parents="Button_cyan_blue">
+		<font.size value="6"/>
+	</style>
+
+	<style class="Button_blue_violet_6" parents="Button_blue_violet">
+		<font.size value="6"/>
+	</style>
+
+	<style class="Button_violet_magenta_6" parents="Button_violet_magenta">
+		<font.size value="6"/>
+	</style>
+
+	<style class="Button_magenta_red_6" parents="Button_magenta_red">
+		<font.size value="6"/>
+	</style>
+
 	<style class="Button_mono_8" parents="Button_mono">
 		<font.size value="8"/>
 	</style>
@@ -1742,10 +1978,18 @@
 
 	<style class="Grid" parents="root">
 		<bg.inherit value="true"/>
+		<bg.color value="bg_schema"/>
+		<inactive.brightness value="0.75"/>
+		<inactive.bg.brightness value="1.0"/>
+		<inactive.bg.color value="bg_schema"/>
 	</style>
 
 	<style class="Cell" parents="root">
 		<bg.inherit value="true"/>
+		<bg.color value="bg_schema"/>
+		<inactive.brightness value="0.75"/>
+		<inactive.bg.brightness value="1.0"/>
+		<inactive.bg.color value="bg_schema"/>
 	</style>
 
 	<style class="ComboGroup" parents="root">
@@ -1963,10 +2207,10 @@
 		<color value="bg"/>
 		<bg.color value="bg"/>
 		<inactive.text.color value="text_sec"/>
-		<inactive.brightness value="0.75"/>
+		<inactive.brightness value="1.0"/>
 		<inactive.bg.brightness value="1.0"/>
-		<inactive.color value="bg_schema"/>
-		<inactive.bg.color value="bg_schema"/>
+		<inactive.color value="bg"/>
+		<inactive.bg.color value="bg"/>
 	</style>
 
 	<style class="LedMeterChannel" parents="root">
@@ -1993,7 +2237,7 @@
 		<inactive.value.color value="gray"/>
 		<inactive.text.color value="text_sec"/>
 		<inactive.brightness value="0.75"/>
-		<inactive.bg.brightness value="0.75"/>
+		<inactive.bg.brightness value="1.0"/>
 	</style>
 
 	<style class="MultiLabel" parents="root">
@@ -2024,60 +2268,127 @@
 		<inactive.bg.color value="bg_schema"/>
 	</style>
 
-	<style class="Led_red" parents="root">
+	<style class="Led_matcher_capture_ready" parents="Led">
+		<color value="dark_yellow_green"/>
+		<border.color value="dark_yellow_green"/>
+		<led.color value="yellow_green"/>
+		<led.border.color value="bright_yellow_green"/>
+		<inactive.color value="dark_gray"/>
+		<inactive.border.color value="dark_gray"/>
+		<inactive.led.color value="gray"/>
+		<inactive.led.border.color value="bright_gray"/>
+	</style>
+
+	<style class="Led_red" parents="Led">
 		<color value="dark_red"/>
 		<border.color value="dark_red"/>
 		<led.color value="red"/>
 		<led.border.color value="bright_red"/>
 	</style>
 
-	<style class="Led_blue" parents="root">
+	<style class="Led_blue" parents="Led">
 		<color value="dark_blue"/>
 		<border.color value="dark_blue"/>
 		<led.color value="blue"/>
 		<led.border.color value="bright_blue"/>
 	</style>
 
-	<style class="Led_green" parents="root">
+	<style class="Led_green" parents="Led">
 		<color value="dark_green"/>
 		<border.color value="dark_green"/>
 		<led.color value="green"/>
 		<led.border.color value="bright_green"/>
 	</style>
 
-	<style class="Led_yellow" parents="root">
+	<style class="Led_yellow" parents="Led">
 		<color value="dark_yellow"/>
 		<border.color value="dark_yellow"/>
 		<led.color value="yellow"/>
 		<led.border.color value="bright_yellow"/>
 	</style>
 
-	<style class="Led_magenta" parents="root">
+	<style class="Led_magenta" parents="Led">
 		<color value="dark_magenta"/>
 		<border.color value="dark_magenta"/>
 		<led.color value="magenta"/>
 		<led.border.color value="bright_magenta"/>
 	</style>
 
-	<style class="Led_cyan" parents="root">
+	<style class="Led_cyan" parents="Led">
 		<color value="dark_cyan"/>
 		<border.color value="dark_cyan"/>
 		<led.color value="cyan"/>
 		<led.border.color value="bright_cyan"/>
 	</style>
 
-	<style class="Led_violet" parents="root">
+	<style class="Led_violet" parents="Led">
 		<color value="dark_violet"/>
 		<border.color value="dark_violet"/>
 		<led.color value="violet"/>
 		<led.border.color value="bright_violet"/>
 	</style>
 
-	<style class="Led_orange" parents="root">
+	<style class="Led_orange" parents="Led">
 		<color value="dark_orange"/>
 		<border.color value="dark_orange"/>
 		<led.color value="orange"/>
 		<led.border.color value="bright_orange"/>
+	</style>
+
+	<style class="Led_yellow_green" parents="Led">
+		<color value="dark_yellow_green"/>
+		<border.color value="dark_yellow_green"/>
+		<led.color value="yellow_green"/>
+		<led.border.color value="bright_yellow_green"/>
+	</style>
+
+	<style class="Led_red_orange" parents="Led">
+		<color value="dark_red_orange"/>
+		<border.color value="dark_red_orange"/>
+		<led.color value="red_orange"/>
+		<led.border.color value="bright_red_orange"/>
+	</style>
+
+	<style class="Led_orange_yellow" parents="Led">
+		<color value="dark_orange_yellow"/>
+		<border.color value="dark_orange_yellow"/>
+		<led.color value="orange_yellow"/>
+		<led.border.color value="bright_orange_yellow"/>
+	</style>
+
+	<style class="Led_green_cyan" parents="Led">
+		<color value="dark_green_cyan"/>
+		<border.color value="dark_green_cyan"/>
+		<led.color value="green_cyan"/>
+		<led.border.color value="bright_green_cyan"/>
+	</style>
+
+	<style class="dark_yan_blue" parents="Led">
+		<color value="dark_cyan_blue"/>
+		<border.color value="dark_cyan_blue"/>
+		<led.color value="cyan_blue"/>
+		<led.border.color value="bright_cyan_blue"/>
+	</style>
+
+	<style class="Led_blue_violet" parents="Led">
+		<color value="dark_blue_violet"/>
+		<border.color value="dark_blue_violet"/>
+		<led.color value="blue_violet"/>
+		<led.border.color value="bright_blue_violet"/>
+	</style>
+
+	<style class="Led_violet_magenta" parents="Led">
+		<color value="dark_violet_magenta"/>
+		<border.color value="dark_violet_magenta"/>
+		<led.color value="violet_magenta"/>
+		<led.border.color value="bright_violet_magenta"/>
+	</style>
+
+	<style class="Led_magenta_red" parents="Led">
+		<color value="dark_magenta_red"/>
+		<border.color value="dark_magenta_red"/>
+		<led.color value="magenta_red"/>
+		<led.border.color value="bright_magenta_red"/>
 	</style>
 
 	<style class="ButtonLed" parents="Led">
@@ -2240,51 +2551,51 @@
 	</style>
 
 	<style class="PianoKeys" parents="root">
-		<white.color value="pianokeys_white" />
-		<white.down.color value="pianokeys_white" />
-		<white.selected.color value="pianokeys_white" />
-		<white.selected.down.color value="pianokeys_white" />
-		<white.inactive.color value="pianokeys_white_inactive" />
-		<white.inactive.down.color value="pianokeys_white_inactive" />
-		<white.inactive.selected.color value="pianokeys_white_inactive" />
-		<white.inactive.selected.down.color value="pianokeys_white_inactive" />
-		<white.hover.color value="pianokeys_white" />
-		<white.down.hover.color value="pianokeys_white" />
-		<white.selected.hover.color value="pianokeys_white" />
-		<white.selected.down.hover.color value="pianokeys_white" />
-		<white.inactive.hover.color value="pianokeys_white_inactive" />
-		<white.inactive.down.hover.color value="pianokeys_white_inactive" />
-		<white.inactive.selected.hover.color value="pianokeys_white_inactive" />
-		<white.inactive.selected.down.hover.color value="pianokeys_white_inactive" />
+		<white.color value="pianokeys_white"/>
+		<white.down.color value="pianokeys_white"/>
+		<white.selected.color value="pianokeys_white"/>
+		<white.selected.down.color value="pianokeys_white"/>
+		<white.inactive.color value="pianokeys_white_inactive"/>
+		<white.inactive.down.color value="pianokeys_white_inactive"/>
+		<white.inactive.selected.color value="pianokeys_white_inactive"/>
+		<white.inactive.selected.down.color value="pianokeys_white_inactive"/>
+		<white.hover.color value="pianokeys_white"/>
+		<white.down.hover.color value="pianokeys_white"/>
+		<white.selected.hover.color value="pianokeys_white"/>
+		<white.selected.down.hover.color value="pianokeys_white"/>
+		<white.inactive.hover.color value="pianokeys_white_inactive"/>
+		<white.inactive.down.hover.color value="pianokeys_white_inactive"/>
+		<white.inactive.selected.hover.color value="pianokeys_white_inactive"/>
+		<white.inactive.selected.down.hover.color value="pianokeys_white_inactive"/>
 
-		<black.color value="pianokeys_black" />
-		<black.down.color value="pianokeys_black" />
-		<black.selected.color value="pianokeys_black" />
-		<black.selected.down.color value="pianokeys_black" />
-		<black.inactive.color value="pianokeys_black_inactive" />
-		<black.inactive.down.color value="pianokeys_black_inactive" />
-		<black.inactive.selected.color value="pianokeys_black_inactive" />
-		<black.inactive.selected.down.color value="pianokeys_black_inactive" />
-		<black.hover.color value="pianokeys_black" />
-		<black.down.hover.color value="pianokeys_black" />
-		<black.selected.hover.color value="pianokeys_black" />
-		<black.selected.down.hover.color value="pianokeys_black" />
-		<black.inactive.hover.color value="pianokeys_black_inactive" />
-		<black.inactive.down.hover.color value="pianokeys_black_inactive" />
-		<black.inactive.selected.hover.color value="pianokeys_black_inactive" />
-		<black.inactive.selected.down.hover.color value="pianokeys_black_inactive" />
+		<black.color value="pianokeys_black"/>
+		<black.down.color value="pianokeys_black"/>
+		<black.selected.color value="pianokeys_black"/>
+		<black.selected.down.color value="pianokeys_black"/>
+		<black.inactive.color value="pianokeys_black_inactive"/>
+		<black.inactive.down.color value="pianokeys_black_inactive"/>
+		<black.inactive.selected.color value="pianokeys_black_inactive"/>
+		<black.inactive.selected.down.color value="pianokeys_black_inactive"/>
+		<black.hover.color value="pianokeys_black"/>
+		<black.down.hover.color value="pianokeys_black"/>
+		<black.selected.hover.color value="pianokeys_black"/>
+		<black.selected.down.hover.color value="pianokeys_black"/>
+		<black.inactive.hover.color value="pianokeys_black_inactive"/>
+		<black.inactive.down.hover.color value="pianokeys_black_inactive"/>
+		<black.inactive.selected.hover.color value="pianokeys_black_inactive"/>
+		<black.inactive.selected.down.hover.color value="pianokeys_black_inactive"/>
 
-		<border.color value="pianokeys_border" />
-		<split.color value="pianokeys_split" />
-		<octave.split.color value="pianokeys_octave_split" />
+		<border.color value="pianokeys_border"/>
+		<split.color value="pianokeys_split"/>
+		<octave.split.color value="pianokeys_octave_split"/>
 
-		<inactive.border.color value="pianokeys_border_inactive" />
-		<inactive.split.color value="pianokeys_split_inactive" />
-		<inactive.octave.split.color value="pianokeys_octave_split_inactive" />
+		<inactive.border.color value="pianokeys_border_inactive"/>
+		<inactive.split.color value="pianokeys_split_inactive"/>
+		<inactive.octave.split.color value="pianokeys_octave_split_inactive"/>
 
-		<border value="0" />
-		<split.size value="2" />
-		<angle value="0" />
+		<border value="0"/>
+		<split.size value="2"/>
+		<angle value="0"/>
 	</style>
 
 	<style class="ProgressBar" parents="root">
@@ -2297,7 +2608,7 @@
 		<inv.color value="#ffffff"/>
 		<text.inv.color value="#000000"/>
 	</style>
-	
+
 	<style class="RangeSlider" parents="root">
 		<scale.color value="black"/>
 		<scale.border.gradient value="true"/>
