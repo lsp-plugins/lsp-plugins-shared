@@ -706,6 +706,7 @@
 		"description": "{@meta_plugin_description}",
 		"left": "{@meta_pkg_brand}",
 		"name": "{@meta_plugin_name}",
+		"plugin_launcher": "Plugin launcher",
 		"right": "{@meta_plugin_acronym}",
 		"top": "{@meta_pkg_brand} {@meta_plugin_acronym}"
 	},
