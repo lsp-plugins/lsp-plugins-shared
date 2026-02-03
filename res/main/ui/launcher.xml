@@ -49,7 +49,31 @@
 
 		<!-- plugin-content -->
 		<vbox ui:inject="LauncherWindow::Content" ui:id="launcher_content">
-			<void />
+			<hbox fill="true">
+				<label text="labels.search" />
+				<edit ui:id="search_input" width.min="200" />
+				<void hexpand="true" />
+			</hbox>
+			<tabs expand="true">
+				<tab text="labels.all_plugins">
+					<vbox expand="true">
+						<label text="labels.all_plugins" font.size="32" font.b="true" htext="-1" hfill="true"/>
+						<hsep hexpand="true" />
+						<sarea expand="true" vscroll="true">
+							<vbox ui:id="all_plugins_list" expand="true" />
+						</sarea>
+					</vbox>
+				</tab>
+				<tab text="labels.favourites">
+					<vbox expand="true">
+						<label text="labels.all_plugins" font.size="32" font.b="true" htext="-1" hfill="true"/>
+						<hsep hexpand="true" />
+						<sarea expand="true" vscroll="true">
+							<vbox ui:id="favourites_list" expand="true" />
+						</sarea>
+					</vbox>
+				</tab>
+			</tabs>
 		</vbox>
 
 		<hsep ui:inject="LauncherWindow::HSep::Header"/>

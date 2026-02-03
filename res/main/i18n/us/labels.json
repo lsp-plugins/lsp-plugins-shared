@@ -55,6 +55,8 @@
 		"sustain": "Sustain",
 		"time": "Time"
 	},
+	
+	"all_plugins": "All plugins",
 
 	"alr": "ALR",
     "alr_": "Auto level regulation",
@@ -268,6 +270,8 @@
 	"equalizer:db": "Equalizer (dB)",
 
 	"export": "Export",
+	
+	"favourites": "Favourites",
 
 	"feedback": "Feedback",
 	"feed_gain": "Feed Gain",
