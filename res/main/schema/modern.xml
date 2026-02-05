@@ -2201,6 +2201,9 @@
 		<text.color value="hl_text"/>
 		<text.hover.color value="hl_hover"/>
 	</style>
+	
+	<style class="Image" parents="root">
+	</style>
 
 	<style class="Indicator" parents="root">
 		<color value="ind_col"/>
@@ -3077,6 +3080,83 @@
 		<allocation.hexpand value="true"/>
 		<allocation.vexpand value="true"/>
 		<padding value="0"/>
+	</style>
+	
+	<style class="LauncherWindow::Heading" parents="Label">
+		<allocation.hfill value="true"/>
+		<text.layout.halign value="-1.0" />
+		<font.bold value="true"/>
+		<font.size value="32"/>
+	</style>
+	
+	<style class="LauncherWindow::Category::Heading" parents="Label">
+		<allocation.hfill value="true"/>
+		<text.layout.halign value="-1.0" />
+		<font.bold value="true"/>
+		<bg.color value="bg_bright" />
+		<font.size value="24"/>
+	</style>
+	
+	<style class="LauncherWindow::Bundle::Grid" parents="Grid">
+		<bg.color value="bg_bright" />
+		<hspacing value="6" />
+		<vspacing value="6" />
+	</style>
+	
+	<style class="LauncherWindow::Bundle::Heading" parents="Label">
+		<allocation.hfill value="true"/>
+		<text.layout.halign value="-1.0" />
+		<font.bold value="true"/>
+		<bg.color value="bg_bright" />
+		<font.size value="18"/>
+	</style>
+	
+	<style class="LauncherWindow::Bundle::Description" parents="Label">
+		<allocation.hfill value="true"/>
+		<allocation.hexpand value="true"/>
+		<text.layout.halign value="-1.0" />
+	</style>
+	
+	<style class="LauncherWindow::Bundle::Images::Align" parents="Align">
+		<allocation.hfill value="true" />
+		<allocation.vfill value="true" />
+		<layout.halign value="0.0"/>
+		<layout.valign value="-1.0"/>
+		<layout.hscale value="0.0" />
+		<layout.vscale value="0.0" />
+	</style>
+	
+	<style class="LauncherWindow::Bundle::Images" parents="Box">
+		<orientation value="horizontal" />
+	</style>
+	
+	<style class="LauncherWindow::Bundle::Favourites" parents="Button">
+		<font.name value="lsp-icons" />
+		<font.size value="16" />
+	</style>
+	
+	<style class="LauncherWindow::Bundle::Help" parents="Button">
+		<font.name value="lsp-icons" />
+		<font.size value="16" />
+	</style>
+	
+	<style class="LauncherWindow::Bundle::Buttons" parents="Grid">
+		<allocation.hexpand value="true" />
+		<allocation.vexpand value="true" />
+	</style>
+	
+	<style class="LauncherWindow::Plugin::Image" parents="Image">
+		<bg.color value="bg_bright" />
+		<color value="bg" />
+		<size.constraints.width.min value="96"/>
+		<size.constraints.width.max value="96"/>
+		<size.constraints.height.min value="96"/>
+		<size.constraints.height.max value="96"/>
+		<proportion value="1.0" />
+		<fitting value="cover" />
+	</style>
+	
+	<style class="LauncherWindow::Plugin::Button" parents="Button">
 	</style>
 
 	<!-- PluginWindow widgets -->

@@ -1,0 +1,15 @@
+{
+	"groups": {
+        "analyzers": "Analyzers",
+        "convolution": "Convolution / Reverb Processing",
+        "delays": "Delay Effects",
+        "dynamics": "Dynamic Processing",
+        "effects": "Effects",
+        "equalizers": "Equalizers",
+        "generators": "Generators / Oscillators",
+        "mb_dynamics": "Multiband Dynamic Processing",
+        "mb_processing": "Multiband Processing",
+        "samplers": "Samplers",
+        "utilities": "Utilitary Plugins"
+	}
+}

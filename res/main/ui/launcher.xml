@@ -54,21 +54,21 @@
 				<edit ui:id="search_input" width.min="200" />
 				<void hexpand="true" />
 			</hbox>
-			<tabs expand="true">
+			<tabs ui:id="tab_control" expand="true">
 				<tab text="labels.all_plugins">
 					<vbox expand="true">
-						<label text="labels.all_plugins" font.size="32" font.b="true" htext="-1" hfill="true"/>
+						<label ui:inject="LauncherWindow::Heading" text="labels.all_plugins" />
 						<hsep hexpand="true" />
-						<sarea expand="true" vscroll="true">
+						<sarea expand="true" vscroll="optional" hscale="1">
 							<vbox ui:id="all_plugins_list" expand="true" />
 						</sarea>
 					</vbox>
 				</tab>
 				<tab text="labels.favourites">
 					<vbox expand="true">
-						<label text="labels.all_plugins" font.size="32" font.b="true" htext="-1" hfill="true"/>
+						<label ui:inject="LauncherWindow::Heading" text="labels.favourites" />
 						<hsep hexpand="true" />
-						<sarea expand="true" vscroll="true">
+						<sarea expand="true" vscroll="optional" hscale="1">
 							<vbox ui:id="favourites_list" expand="true" />
 						</sarea>
 					</vbox>
