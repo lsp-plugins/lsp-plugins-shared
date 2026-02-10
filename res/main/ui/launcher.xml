@@ -26,7 +26,6 @@
 
 			<!-- Preset and Menu box -->
 			<hbox bg.color="bg">
-
 				<!-- Filter -->
 				<hbox ui:id="trg_presets_menu_area">
 					<bevel hexpand="false" color="bg_schema" bg.color="bg_preset" width.min="24" height.min="20"/>
@@ -50,9 +49,15 @@
 		<!-- plugin-content -->
 		<vbox ui:inject="LauncherWindow::Content" ui:id="launcher_content">
 			<hbox fill="true">
-				<label text="labels.search" />
-				<edit ui:id="search_input" width.min="200" />
-				<void hexpand="true" />
+				<hbox ui:id="trg_language_select_area" visibility="false">
+					<label text="lang.language" />
+					<combo ui:id="trg_language_select" width.min="96"/>
+				</hbox>
+				<hbox>
+					<label text="labels.search" />
+					<edit ui:id="search_input" width.min="200" />
+					<void hexpand="true" />
+				</hbox>
 			</hbox>
 			<tabs ui:id="tab_control" expand="true">
 				<tab text="labels.all_plugins">
