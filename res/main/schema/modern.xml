@@ -3133,6 +3133,7 @@
 	<style class="LauncherWindow::Bundle::Favourites" parents="Button">
 		<font.name value="lsp-icons" />
 		<font.size value="16" />
+		<mode value="toggle" />
 	</style>
 	
 	<style class="LauncherWindow::Bundle::Help" parents="Button">
