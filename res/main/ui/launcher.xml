@@ -26,18 +26,8 @@
 
 			<!-- Preset and Menu box -->
 			<hbox bg.color="bg">
-				<!-- Filter -->
-				<hbox ui:id="trg_presets_menu_area">
-					<bevel hexpand="false" color="bg_schema" bg.color="bg_preset" width.min="24" height.min="20"/>
-					<label text="FILTER" />
-					<bevel hexpand="false" color="bg_preset" bg.color="bg" width.min="24" height.min="20"/>
-				</hbox>
-
-				<!-- Menu and About -->
-				<hbox ui:id="trg_main_menu" solid="true" padding.right="10" padding.left="2" pointer="hand">
-					<label hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.top="1" font.antialias="true" text="0"/>
-					<label hover="true" color="menu_text" hover.color="menu_text_hover" padding.left="5" font.size="14" padding.top="3" text="labels.header.menu"/>
-				</hbox>
+				<!-- About -->
+				<bevel hexpand="false" color="bg_schema" bg.color="bg" width.min="24" height.min="20"/>
 				<hbox ui:id="trg_about" solid="true" padding.right="6" pointer="hand">
 					<label hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.top="1" font.antialias="true" text="4"/>
 					<label hover="true" color="menu_text" hover.color="menu_text_hover" padding.left="5" font.size="14" padding.top="3" text="labels.header.about"/>
