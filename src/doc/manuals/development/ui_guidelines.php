@@ -2,12 +2,12 @@
 	$CTL = $RES_ROOT . "/img/ui_guidlines/";
 ?>
 
-<h2>Foreword</h2>
+<h2><a href="#foreword">Foreword</a></h2>
 <p>Before introducing any changes to the user interface, it is very important to carefully consider their necessity and possible side effects. It is important to understand how these changes will affect end users and ensure that they won’t complicate
 	or disimprove the user experience.</p>
 <p>It is also important to count that any changes in the user interface may require additional time spendings for development and testing. Also it is very important to estimate how these changes can make the final product better.</p>
 
-<h2>Common terms</h2>
+<h2><a href="#terms">Common terms</a></h2>
 <p>The main principle of the LSP Plugins’ user interface creation is the compactness. </p>
 <p>Althroug plugins are present as standalone applications and built-in plugins for DAW, it is important to make the plugin window as compact as possible. It is needed to make the end user possible to simultaneously work with multiple plugins on the
 	same screen.</p>
@@ -15,7 +15,7 @@
 	should be displayed in the plugin’s window.</p>
 <p>In other words, it is important to find compromises between the compactness and the comfortability of the use.</p>
 
-<h2>Block and table system</h2>
+<h2><a href="#grid">Block and table system</a></h2>
 
 <p>We use the mix of block and table system while developing the UI - this is a markup plinciple based on usage of tables and nested elements - widgets.<br />
 	Widget is a small interactive element which can provide different functions and act as some view of some information or some control which allows to modify some information.
@@ -23,7 +23,7 @@
 
 <p>Widgets can be grouped into blocks and placed at some position of the table — such mmix of block and table markup allows to define the position and the structure of widgets in the plugin’s window.</p>
 
-<h2>Basic principles</h2>
+<h2><a href="#principles">Basic principles</a></h2>
 
 <ul>
 	<li>The plugin’s window becomes split into separate blocks, each of them can contain it’s own properties: the color of the background, the padding, the minimal width, etc. The size of paddings, minimal size, etc is counted in nominal pixels.</li>
@@ -36,23 +36,23 @@
 	<div class="thc-descr">
 		<pre style="margin-top: 0px;">
 &lt;plugin resizable=&quot;true&quot;&gt;
-&nbsp; &lt;hbox bg.color=&quot;bg_schema&quot; pad.v=&quot;4&quot;&gt;
-&nbsp;&nbsp;&nbsp; &lt;vbox spacing=&quot;4&quot;&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;label text=&quot;labels.signal.dry&quot;/&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;knob id=&quot;dry&quot; scale.color=&quot;dry&quot;/&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;value id=&quot;dry&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;/vbox&gt;
-&nbsp;&nbsp;&nbsp; &lt;vbox spacing=&quot;4&quot;&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;label text=&quot;labels.signal.wet&quot;/&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;knob id=&quot;wet&quot; scale.color=&quot;wet&quot;/&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;value id=&quot;wet&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;/vbox&gt;
-&nbsp;&nbsp;&nbsp; &lt;vbox spacing=&quot;4&quot;&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;label text=&quot;labels.output&quot;/&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;knob id=&quot;g_out&quot;/&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;value id=&quot;g_out&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;/vbox&gt;
-&nbsp; &lt;/hbox&gt;
+&nbsp;&nbsp;&lt;hbox bg.color=&quot;bg_schema&quot; pad.v=&quot;4&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;vbox spacing=&quot;4&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label text=&quot;labels.signal.dry&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;knob id=&quot;dry&quot; scale.color=&quot;dry&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;value id=&quot;dry&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/vbox&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;vbox spacing=&quot;4&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label text=&quot;labels.signal.wet&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;knob id=&quot;wet&quot; scale.color=&quot;wet&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;value id=&quot;wet&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/vbox&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;vbox spacing=&quot;4&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label text=&quot;labels.output&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;knob id=&quot;g_out&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;value id=&quot;g_out&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/vbox&gt;
+&nbsp;&nbsp;&lt;/hbox&gt;
 &lt;/plugin&gt;</pre>
 	</div>
 	<div class="thc-descr">
@@ -66,21 +66,21 @@
 <div class="grid-2col-man">
 	<div class="thc-descr">
 		<pre style="margin-top: 0px;">&lt;plugin resizable=&quot;true&quot;&gt;
-&nbsp; &lt;grid rows=&quot;3&quot; cols=&quot;3&quot; spacing=&quot;4&quot;
+&nbsp;&nbsp;&lt;grid rows=&quot;3&quot; cols=&quot;3&quot; spacing=&quot;4&quot;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bg.color=&quot;bg_schema&quot; pad.v=&quot;4&quot;&gt;
-&nbsp;&nbsp;&nbsp; &lt;!-- Row 1 --&gt;
-&nbsp;&nbsp;&nbsp; &lt;label text=&quot;labels.signal.dry&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;label text=&quot;labels.signal.wet&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;label text=&quot;labels.output&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;!-- Row 2 --&gt;
-&nbsp;&nbsp;&nbsp; &lt;knob id=&quot;dry&quot; scale.color=&quot;dry&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;knob id=&quot;wet&quot; scale.color=&quot;wet&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;knob id=&quot;g_out&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;!-- Row 3 --&gt;
-&nbsp;&nbsp;&nbsp; &lt;value id=&quot;dry&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;value id=&quot;wet&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;value id=&quot;g_out&quot;/&gt;
-&nbsp; &lt;/grid&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Row 1 --&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;label text=&quot;labels.signal.dry&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;label text=&quot;labels.signal.wet&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;label text=&quot;labels.output&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Row 2 --&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;knob id=&quot;dry&quot; scale.color=&quot;dry&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;knob id=&quot;wet&quot; scale.color=&quot;wet&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;knob id=&quot;g_out&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Row 3 --&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;value id=&quot;dry&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;value id=&quot;wet&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;value id=&quot;g_out&quot;/&gt;
+&nbsp;&nbsp;&lt;/grid&gt;
 &lt;/plugin&gt;</pre>
 	</div>
 	<div class="thc-descr">
@@ -95,7 +95,7 @@
 	<li>For better understanding of how does it all work together, it is better to perform the one’s own analysis of one of already designed plugins.</li>
 </ul>
 
-<h2>Color and style schemes</h2>
+<h2><a href="#colors">Color and style schemes</a></h2>
 <p>The style scheme includes all the information about what colors, paddings, sizes etc will be utilized by widgets.</p>
 <div class="grid-2col-man">
 	<div class="thc-descr">
@@ -153,7 +153,7 @@
 </div>
 <p>One important rule: if some color was added to one schema, it should also be added to other schemas. It is also important to check how new added color affects the look of related widgets for these schemas.</p>
 
-<h2>Basic color rules and solutions</h2>
+<h2><a href="#rules">Basic color rules and solutions</a></h2>
 
 <p>In the &quot;MODERN&quot; schema all colors are organized according to the LCH (or HCL) color space which is based on LAB color space. In such color space all colors have perceptual uniformity. That means, that in LCH color space all colors that
 	have the same lighness are perceived as colors that have the same lightness, and all colors that have the same chromaticity are perceived as colors with the same chromaticity.</p>
@@ -264,13 +264,13 @@
 
 <pre>
 &lt;plugin resizable=&quot;true&quot;&gt;
-&nbsp; &lt;grid rows=&quot;3&quot; cols=&quot;8&quot; bg.color=&quot;bg_schema&quot; spacing=&quot;4&quot; transpose=&quot;true&quot;&gt;
-&nbsp;&nbsp;&nbsp; &lt;ui:for id=&quot;i&quot; first=&quot;0&quot; count=&quot;8&quot;&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;label text=&quot;labels.signal.dry&quot;/&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;knob id=&quot;dry&quot; scolor=&quot;cycle&quot; scolor.hue=&quot;${:i * 0.125}&quot;/&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;value id=&quot;dry&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;/ui:for&gt;
-&nbsp; &lt;/grid&gt;
+&nbsp;&nbsp;&lt;grid rows=&quot;3&quot; cols=&quot;8&quot; bg.color=&quot;bg_schema&quot; spacing=&quot;4&quot; transpose=&quot;true&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;ui:for id=&quot;i&quot; first=&quot;0&quot; count=&quot;8&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label text=&quot;labels.signal.dry&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;knob id=&quot;dry&quot; scolor=&quot;cycle&quot; scolor.hue=&quot;${:i * 0.125}&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;value id=&quot;dry&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ui:for&gt;
+&nbsp;&nbsp;&lt;/grid&gt;
 &lt;/plugin&gt;</pre>
 
 <p style="text-align:center">This allows to gain the following result:</p>
@@ -298,30 +298,30 @@
 
 <pre>
 &lt;plugin resizable=&quot;true&quot;&gt;
-&nbsp; &lt;grid rows=&quot;4&quot; cols=&quot;5&quot; bg.color=&quot;bg_schema&quot;&gt;
-&nbsp;&nbsp;&nbsp; &lt;!-- Row 1 --&gt;
-&nbsp;&nbsp;&nbsp; &lt;label text=&quot;labels.signal.dry&quot; pad.v=&quot;4&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;cell rows=&quot;4&quot;&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;vsep pad.h=&quot;2&quot; bg.color=&quot;bg&quot; hreduce=&quot;true&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;/cell&gt;
-&nbsp;&nbsp;&nbsp; &lt;label text=&quot;labels.signal.wet&quot; pad.v=&quot;4&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;cell rows=&quot;4&quot;&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;vsep pad.h=&quot;2&quot; bg.color=&quot;bg&quot; hreduce=&quot;true&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;/cell&gt;
-&nbsp;&nbsp;&nbsp; &lt;label text=&quot;labels.output&quot; pad.v=&quot;4&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;!-- Row 2 --&gt;
-&nbsp;&nbsp;&nbsp; &lt;hsep pad.v=&quot;2&quot; bg.color=&quot;bg&quot; vreduce=&quot;true&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;hsep pad.v=&quot;2&quot; bg.color=&quot;bg&quot; vreduce=&quot;true&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;hsep pad.v=&quot;2&quot; bg.color=&quot;bg&quot; vreduce=&quot;true&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;!-- Row 3 --&gt;
-&nbsp;&nbsp;&nbsp; &lt;knob id=&quot;dry&quot; scale.color=&quot;dry&quot; pad.v=&quot;4&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;knob id=&quot;wet&quot; scolor=&quot;wet&quot; pad.v=&quot;4&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;knob id=&quot;g_out&quot; pad.v=&quot;4&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;!-- Row 4 --&gt;
-&nbsp;&nbsp;&nbsp; &lt;value id=&quot;dry&quot; pad.b=&quot;4&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;value id=&quot;wet&quot; pad.b=&quot;4&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;value id=&quot;g_out&quot; pad.b=&quot;4&quot;/&gt;
-&nbsp; &lt;/grid&gt;
+&nbsp;&nbsp;&lt;grid rows=&quot;4&quot; cols=&quot;5&quot; bg.color=&quot;bg_schema&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Row 1 --&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;label text=&quot;labels.signal.dry&quot; pad.v=&quot;4&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;cell rows=&quot;4&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;vsep pad.h=&quot;2&quot; bg.color=&quot;bg&quot; hreduce=&quot;true&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/cell&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;label text=&quot;labels.signal.wet&quot; pad.v=&quot;4&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;cell rows=&quot;4&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;vsep pad.h=&quot;2&quot; bg.color=&quot;bg&quot; hreduce=&quot;true&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/cell&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;label text=&quot;labels.output&quot; pad.v=&quot;4&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Row 2 --&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;hsep pad.v=&quot;2&quot; bg.color=&quot;bg&quot; vreduce=&quot;true&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;hsep pad.v=&quot;2&quot; bg.color=&quot;bg&quot; vreduce=&quot;true&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;hsep pad.v=&quot;2&quot; bg.color=&quot;bg&quot; vreduce=&quot;true&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Row 3 --&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;knob id=&quot;dry&quot; scale.color=&quot;dry&quot; pad.v=&quot;4&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;knob id=&quot;wet&quot; scolor=&quot;wet&quot; pad.v=&quot;4&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;knob id=&quot;g_out&quot; pad.v=&quot;4&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Row 4 --&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;value id=&quot;dry&quot; pad.b=&quot;4&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;value id=&quot;wet&quot; pad.b=&quot;4&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;value id=&quot;g_out&quot; pad.b=&quot;4&quot;/&gt;
+&nbsp;&nbsp;&lt;/grid&gt;
 &lt;/plugin&gt;</pre>
 
 <div class="grid-2col-man">
@@ -343,30 +343,30 @@
 
 <pre>
 &lt;plugin resizable=&quot;true&quot;&gt;
-&nbsp; &lt;grid rows=&quot;4&quot; cols=&quot;5&quot; bg.color=&quot;bg_schema&quot;&gt;
-&nbsp;&nbsp;&nbsp; &lt;!-- Row 1 --&gt;
-&nbsp;&nbsp;&nbsp; &lt;label text=&quot;labels.signal.dry&quot; pad.v=&quot;4&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;cell rows=&quot;4&quot;&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;vsep pad.h=&quot;2&quot; bg.color=&quot;bg&quot; hreduce=&quot;true&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;/cell&gt;
-&nbsp;&nbsp;&nbsp; &lt;label text=&quot;labels.signal.wet&quot; expand=&quot;true&quot; pad.v=&quot;4&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;cell rows=&quot;4&quot;&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;vsep pad.h=&quot;2&quot; bg.color=&quot;bg&quot; hreduce=&quot;true&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;/cell&gt;
-&nbsp;&nbsp;&nbsp; &lt;label text=&quot;labels.output&quot; pad.v=&quot;4&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;!-- Row 2 --&gt;
-&nbsp;&nbsp;&nbsp; &lt;hsep pad.v=&quot;2&quot; bg.color=&quot;bg&quot; vreduce=&quot;true&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;hsep pad.v=&quot;2&quot; bg.color=&quot;bg&quot; vreduce=&quot;true&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;hsep pad.v=&quot;2&quot; bg.color=&quot;bg&quot; vreduce=&quot;true&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;!-- Row 3 --&gt;
-&nbsp;&nbsp;&nbsp; &lt;knob id=&quot;dry&quot; scale.color=&quot;dry&quot; pad.v=&quot;4&quot; pad.h=&quot;6&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;knob id=&quot;wet&quot; scale.color=&quot;wet&quot; pad.v=&quot;4&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;knob id=&quot;g_out&quot; pad.v=&quot;4&quot; pad.h=&quot;6&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;!-- Row 4 --&gt;
-&nbsp;&nbsp;&nbsp; &lt;value id=&quot;dry&quot; pad.b=&quot;4&quot; same.line=&quot;true&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;value id=&quot;wet&quot; pad.b=&quot;4&quot; same.line=&quot;true&quot;/&gt;
-&nbsp;&nbsp;&nbsp; &lt;value id=&quot;g_out&quot; pad.b=&quot;4&quot; same.line=&quot;true&quot;/&gt;
-&nbsp; &lt;/grid&gt;
+&nbsp;&nbsp;&lt;grid rows=&quot;4&quot; cols=&quot;5&quot; bg.color=&quot;bg_schema&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Row 1 --&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;label text=&quot;labels.signal.dry&quot; pad.v=&quot;4&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;cell rows=&quot;4&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;vsep pad.h=&quot;2&quot; bg.color=&quot;bg&quot; hreduce=&quot;true&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/cell&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;label text=&quot;labels.signal.wet&quot; expand=&quot;true&quot; pad.v=&quot;4&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;cell rows=&quot;4&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;vsep pad.h=&quot;2&quot; bg.color=&quot;bg&quot; hreduce=&quot;true&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/cell&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;label text=&quot;labels.output&quot; pad.v=&quot;4&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Row 2 --&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;hsep pad.v=&quot;2&quot; bg.color=&quot;bg&quot; vreduce=&quot;true&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;hsep pad.v=&quot;2&quot; bg.color=&quot;bg&quot; vreduce=&quot;true&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;hsep pad.v=&quot;2&quot; bg.color=&quot;bg&quot; vreduce=&quot;true&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Row 3 --&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;knob id=&quot;dry&quot; scale.color=&quot;dry&quot; pad.v=&quot;4&quot; pad.h=&quot;6&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;knob id=&quot;wet&quot; scale.color=&quot;wet&quot; pad.v=&quot;4&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;knob id=&quot;g_out&quot; pad.v=&quot;4&quot; pad.h=&quot;6&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Row 4 --&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;value id=&quot;dry&quot; pad.b=&quot;4&quot; same.line=&quot;true&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;value id=&quot;wet&quot; pad.b=&quot;4&quot; same.line=&quot;true&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;value id=&quot;g_out&quot; pad.b=&quot;4&quot; same.line=&quot;true&quot;/&gt;
+&nbsp;&nbsp;&lt;/grid&gt;
 &lt;/plugin&gt;</pre>
 <div class="images">
 	<img class="border" style="max-width: 100%;" src="<?= $CTL ?>/shake.gif">
@@ -398,7 +398,7 @@
 <p>The properties expand, vexpand, hexpand are responsible for expanding the widgets. If the only one element in the grid will contain such property, then only this widget will take the maximum possible space. In the case when there are more than one
 	expanding widgets, then they will share the space proportionally to their sizes. Usually these properties are applied to graphs or widgets that provide some visual information.</p>
 
-<h2>Sections and components</h2>
+<h2><a href="#components">Sections and components</a></h2>
 <p>The interface is split into three parts: top panel, the body and the bottom panel.</p>
 
 <p>&nbsp;</p>
