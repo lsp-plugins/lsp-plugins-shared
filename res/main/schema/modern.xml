@@ -22,9 +22,6 @@
 	<!-- Color aliases -->
 	<colors>
 		<!-- Generic colors -->
-		<black value="#000000"/>
-		<white value="#ffffff"/>
-
 		<red value="#e53f40"/>
 		<orange value="#c26412"/>
 		<yellow value="#977c00"/>
@@ -389,6 +386,7 @@
 		<LBI_sel_hov value="#606173"/>
 
 		<!-- Overlay -->
+		<overlay_border value="#000000"/>
 		<overlay_shadow avalue="#88000000"/>
 
 		<!-- Piano Keys colors -->
@@ -2610,7 +2608,7 @@
 		<border.size value="0"/>
 		<border.radius value="0"/>
 		<border.rounding value=""/>
-		<border.color value="black"/>
+		<border.color value="overlay_border"/>
 		<shadow.size value="24"/>
 		<shadow.radius value="8"/>
 		<shadow.rounding value="lt,rt,lb,rb"/>
