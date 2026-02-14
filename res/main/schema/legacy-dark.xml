@@ -2976,8 +2976,7 @@
 		<layout.hscale value="1.0"/>
 		<layout.vscale value="1.0"/>
 		<text.layout.halign value="1.0"/>
-		<padding value="0"/>
-		<padding value="6 4"/>
+		<padding value="0" />
 	</style>
 
 	<style class="LauncherWindow::HSep::Header" parents="Separator">
@@ -2999,6 +2998,18 @@
 		<font.bold value="true"/>
 		<font.size value="20"/>
 	</style>
+	
+	<style class="LauncherWindow::Category" parents="Box">
+		<orientation value="vertical" />
+	</style>
+	
+	<style class="LauncherWindow::Category::Separator" parents="Separator">
+		<orientation value="horizontal" />
+		<bg.inherit value="false"/>
+		<bg.color value="bg"/>
+		<padding.top value="20" />
+		<padding.bottom value="20" />
+	</style>
 
 	<style class="LauncherWindow::Category::Heading" parents="Label">
 		<allocation.hfill value="true"/>
@@ -3007,8 +3018,28 @@
 		<bg.color value="bg_schema"/>
 		<font.size value="16"/>
 	</style>
+	
+	<style class="LauncherWindow::Category::Heading::Separator" parents="Separator">
+		<orientation value="horizontal" />
+	</style>
 
 	<style class="LauncherWindow::Bundle::Grid" parents="Grid">
+		<bg.inherit value="false"/>
+		<bg.color value="bg_schema"/>
+		<padding.left value="6" />
+		<padding.right value="6" />
+		<padding.top value="12" />
+		<padding.bottom value="12" />
+		<hspacing value="12" />
+		<vspacing value="12" />
+	</style>
+	
+	<style class="LauncherWindow::Bundle::Separator" parents="Separator">
+		<orientation value="horizontal" />
+		<bg.inherit value="false"/>
+		<bg.color value="bg"/>
+		<padding.top value="2" />
+		<padding.bottom value="2" />
 	</style>
 
 	<style class="LauncherWindow::Bundle::Heading" parents="Label">
@@ -3041,6 +3072,10 @@
 	<style class="LauncherWindow::Bundle::Images" parents="Box">
 		<orientation value="horizontal"/>
 	</style>
+	
+	<style class="LauncherWindow::Bundle::Controls" parents="Box">
+		<spacing value="6" />
+	</style>
 
 	<style class="LauncherWindow::Bundle::Favourites" parents="Button">
 		<font.name value="lsp-icons"/>
@@ -3054,6 +3089,7 @@
 	</style>
 
 	<style class="LauncherWindow::Bundle::Buttons" parents="Grid">
+		<spacing value="6" />
 	</style>
 
 	<style class="LauncherWindow::Plugin::Image" parents="Image">
