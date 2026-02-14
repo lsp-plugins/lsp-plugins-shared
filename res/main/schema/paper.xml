@@ -2197,9 +2197,8 @@
 		<text.color value="hl_text"/>
 		<text.hover.color value="hl_hover"/>
 	</style>
-	
-	<style class="Image" parents="root">
-	</style>
+
+	<style class="Image" parents="root"></style>
 
 	<style class="Indicator" parents="root">
 		<color value="ind_col"/>
@@ -2403,55 +2402,53 @@
 	</style>
 
 	<style class="Led_red_orange" parents="Led">
-	  <color value="led_c"/>
-	  <border.color value="led_bc"/>
-	  <led.color value="red_orange"/>
-	  <led.border.color value="bright_red_orange"/>
+		<color value="led_c"/>
+		<border.color value="led_bc"/>
+		<led.color value="red_orange"/>
+		<led.border.color value="bright_red_orange"/>
 	</style>
 
 	<style class="Led_orange_yellow" parents="Led">
-	  <color value="led_c"/>
-	  <border.color value="led_bc"/>
-	  <led.color value="orange_yellow"/>
-	  <led.border.color value="bright_orange_yellow"/>
+		<color value="led_c"/>
+		<border.color value="led_bc"/>
+		<led.color value="orange_yellow"/>
+		<led.border.color value="bright_orange_yellow"/>
 	</style>
 
 	<style class="Led_green_cyan" parents="Led">
-	  <color value="led_c"/>
-	  <border.color value="led_bc"/>
-	  <led.color value="green_cyan"/>
-	  <led.border.color value="bright_green_cyan"/>
+		<color value="led_c"/>
+		<border.color value="led_bc"/>
+		<led.color value="green_cyan"/>
+		<led.border.color value="bright_green_cyan"/>
 	</style>
 
 	<style class="Led_cyan_blue" parents="Led">
-	  <color value="led_c"/>
-	  <border.color value="led_bc"/>
-	  <led.color value="cyan_blue"/>
-	  <led.border.color value="bright_cyan_blue"/>
+		<color value="led_c"/>
+		<border.color value="led_bc"/>
+		<led.color value="cyan_blue"/>
+		<led.border.color value="bright_cyan_blue"/>
 	</style>
 
 	<style class="Led_blue_violet" parents="Led">
-	  <color value="led_c"/>
-	  <border.color value="led_bc"/>
-	  <led.color value="blue_violet"/>
-	  <led.border.color value="bright_blue_violet"/>
+		<color value="led_c"/>
+		<border.color value="led_bc"/>
+		<led.color value="blue_violet"/>
+		<led.border.color value="bright_blue_violet"/>
 	</style>
 
 	<style class="Led_violet_magenta" parents="Led">
-	  <color value="led_c"/>
-	  <border.color value="led_bc"/>
-	  <led.color value="violet_magenta"/>
-	  <led.border.color value="bright_violet_magenta"/>
+		<color value="led_c"/>
+		<border.color value="led_bc"/>
+		<led.color value="violet_magenta"/>
+		<led.border.color value="bright_violet_magenta"/>
 	</style>
 
 	<style class="Led_magenta_red" parents="Led">
-	  <color value="led_c"/>
-	  <border.color value="led_bc"/>
-	  <led.color value="magenta_red"/>
-	  <led.border.color value="bright_magenta_red"/>
+		<color value="led_c"/>
+		<border.color value="led_bc"/>
+		<led.color value="magenta_red"/>
+		<led.border.color value="bright_magenta_red"/>
 	</style>
-
-
 
 	<style class="Button_Led" parents="Led">
 		<size.constraints.width.min value="28"/>
@@ -3054,22 +3051,22 @@
 		<text.layout.halign value="-1.0"/>
 		<padding.left value="24"/>
 	</style>
-	
+
 	<!-- LauncherWindow widgets -->
 	<style class="LauncherWindow" parents="Window">
 		<allocation.hfill value="true"/>
 		<allocation.vfill value="true"/>
-		<layout.hscale value="1.0" />
-		<layout.vscale value="1.0" />
+		<layout.hscale value="1.0"/>
+		<layout.vscale value="1.0"/>
 		<text.layout.halign value="1.0"/>
 		<padding value="0"/>
 	</style>
-	
+
 	<style class="LauncherWindow::HSep::Header" parents="Separator">
 		<color value="bg"/>
 		<visible value="false"/>
 	</style>
-	
+
 	<style class="LauncherWindow::Content" parents="Box">
 		<allocation.hfill value="true"/>
 		<allocation.vfill value="true"/>
@@ -3077,91 +3074,90 @@
 		<allocation.vexpand value="true"/>
 		<padding value="0"/>
 	</style>
-	
+
 	<style class="LauncherWindow::Heading" parents="Label">
 		<allocation.hfill value="true"/>
-		<text.layout.halign value="-1.0" />
+		<text.layout.halign value="0.0"/>
 		<font.bold value="true"/>
-		<font.size value="32"/>
+		<font.size value="20"/>
 	</style>
-	
+
 	<style class="LauncherWindow::Category::Heading" parents="Label">
 		<allocation.hfill value="true"/>
-		<text.layout.halign value="-1.0" />
+		<text.layout.halign value="-1.0"/>
 		<font.bold value="true"/>
-		<bg.color value="bg_bright" />
-		<font.size value="24"/>
+		<bg.color value="bg_bright"/>
+		<font.size value="16"/>
 	</style>
-	
+
 	<style class="LauncherWindow::Bundle::Grid" parents="Grid">
-		<bg.color value="bg_bright" />
-		<hspacing value="6" />
-		<vspacing value="6" />
+		<bg.color value="bg_bright"/>
+		<hspacing value="6"/>
+		<vspacing value="6"/>
 	</style>
-	
+
 	<style class="LauncherWindow::Bundle::Heading" parents="Label">
 		<allocation.hfill value="true"/>
-		<text.layout.halign value="-1.0" />
+		<text.layout.halign value="-1.0"/>
 		<font.bold value="true"/>
-		<bg.color value="bg_bright" />
+		<bg.color value="bg_bright"/>
 		<font.size value="18"/>
 	</style>
-	
+
 	<style class="LauncherWindow::Bundle::Description" parents="Label">
 		<allocation.hfill value="true"/>
 		<allocation.hexpand value="true"/>
-		<text.layout.halign value="-1.0" />
+		<text.layout.halign value="-1.0"/>
 	</style>
-	
+
 	<style class="LauncherWindow::Bundle::Images::Align" parents="Align">
-		<allocation.hfill value="true" />
-		<allocation.vfill value="true" />
+		<allocation.hfill value="true"/>
+		<allocation.vfill value="true"/>
 		<layout.halign value="0.0"/>
 		<layout.valign value="-1.0"/>
-		<layout.hscale value="0.0" />
-		<layout.vscale value="0.0" />
+		<layout.hscale value="0.0"/>
+		<layout.vscale value="0.0"/>
 	</style>
-	
+
 	<style class="LauncherWindow::Bundle::Images" parents="Box">
-		<orientation value="horizontal" />
+		<orientation value="horizontal"/>
 	</style>
-	
+
 	<style class="LauncherWindow::Bundle::Favourites" parents="Button">
-		<font.name value="lsp-icons" />
-		<font.size value="16" />
-		<mode value="toggle" />
+		<font.name value="lsp-icons"/>
+		<font.size value="16"/>
+		<mode value="toggle"/>
 	</style>
-	
+
 	<style class="LauncherWindow::Bundle::Help" parents="Button">
-		<font.name value="lsp-icons" />
-		<font.size value="16" />
+		<font.name value="lsp-icons"/>
+		<font.size value="16"/>
 	</style>
-	
+
 	<style class="LauncherWindow::Bundle::Buttons" parents="Grid">
-		<allocation.hexpand value="true" />
-		<allocation.vexpand value="true" />
+		<allocation.hexpand value="true"/>
+		<allocation.vexpand value="true"/>
 	</style>
-	
+
 	<style class="LauncherWindow::Plugin::Image" parents="Image">
-		<bg.color value="bg_bright" />
-		<color value="bg" />
+		<bg.color value="bg_bright"/>
+		<color value="bg"/>
 		<size.constraints.width.min value="96"/>
 		<size.constraints.width.max value="96"/>
 		<size.constraints.height.min value="96"/>
 		<size.constraints.height.max value="96"/>
-		<proportion value="1.0" />
-		<fitting value="cover" />
+		<proportion value="1.0"/>
+		<fitting value="cover"/>
 	</style>
-	
-	<style class="LauncherWindow::Plugin::Button" parents="Button">
-	</style>
+
+	<style class="LauncherWindow::Plugin::Button" parents="Button"></style>
 
 	<!-- PluginWindow widgets -->
 	<style class="PluginWindow" parents="Window">
 		<allocation.hfill value="true"/>
 		<allocation.vfill value="true"/>
-		<layout.hscale value="1.0" />
-		<layout.vscale value="1.0" />
+		<layout.hscale value="1.0"/>
+		<layout.vscale value="1.0"/>
 		<text.layout.halign value="1.0"/>
 		<padding value="0"/>
 	</style>
@@ -3256,7 +3252,7 @@
 		<allocation.vexpand value="true"/>
 		<padding value="0"/>
 	</style>
-	
+
 	<style class="PluginWindow::HSep::Header" parents="Separator">
 		<color value="bg"/>
 		<visible value="false"/>

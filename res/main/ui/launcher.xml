@@ -26,6 +26,7 @@
 
 			<!-- Preset and Menu box -->
 			<hbox bg.color="bg">
+				<void expand="true" bg.color="bg_schema"/>
 				<!-- About -->
 				<bevel hexpand="false" color="bg_schema" bg.color="bg" width.min="24" height.min="20"/>
 				<hbox ui:id="trg_about" solid="true" padding.right="6" pointer="hand">
@@ -38,37 +39,38 @@
 
 		<!-- plugin-content -->
 		<vbox ui:inject="LauncherWindow::Content" ui:id="launcher_content">
-			<hbox fill="true">
+			<hbox fill="true" bg.color="bg_schema" pad.h="6" pad.v="4">
 				<hbox>
-					<label text="labels.search" />
-					<edit ui:id="search_input" width.min="200" />
-					<void hexpand="true" />
+					<label text="labels.search" pad.r="6" />
+					<edit ui:id="search_input" width.min="400" />
 				</hbox>
+				<void hexpand="true" />
 				<hbox ui:id="trg_language_select_area">
-					<label text="lang.language" />
+					<label text="lang.language" pad.r="6" />
 					<combo ui:id="trg_language_select" width.min="96"/>
 				</hbox>
-				<hbox ui:id="trg_visual_schema_select_area">
-					<label text="actions.visual_schema.select" />
+				<hbox ui:id="trg_visual_schema_select_area" pad.l="12">
+					<label text="actions.visual_schema.select" pad.r="6"/>
 					<combo ui:id="trg_visual_schema_select" width.min="96"/>
 				</hbox>
 			</hbox>
+			<hsep bg.color="bg" pad.v="2" vreduce="true"/>
 			<tabs ui:id="tab_control" expand="true">
 				<tab text="labels.all_plugins">
 					<vbox expand="true">
-						<label ui:inject="LauncherWindow::Heading" text="labels.all_plugins" />
-						<hsep hexpand="true" />
+						<label ui:inject="LauncherWindow::Heading" text="labels.all_plugins" bg.color="bg_schema" pad.v="15"/>
+						<void bg.color="bg_name" pad.v="1" vreduce="true"/>
 						<sarea expand="true" vscroll="optional" hscale="1">
-							<vbox ui:id="all_plugins_list" expand="true" />
+							<vbox ui:id="all_plugins_list" expand="true" pad.v="4" pad.h="6"/>
 						</sarea>
 					</vbox>
 				</tab>
 				<tab text="labels.favourites">
 					<vbox expand="true">
-						<label ui:inject="LauncherWindow::Heading" text="labels.favourites" />
-						<hsep hexpand="true" />
+						<label ui:inject="LauncherWindow::Heading" text="labels.favourites" bg.color="bg_schema" pad.v="15"/>
+						<void bg.color="bg_name" pad.v="1" vreduce="true"/>
 						<sarea expand="true" vscroll="optional" hscale="1">
-							<vbox ui:id="favourites_list" expand="true" />
+							<vbox ui:id="favourites_list" expand="true" pad.v="4" pad.h="6"/>
 						</sarea>
 					</vbox>
 				</tab>
@@ -76,7 +78,7 @@
 		</vbox>
 
 		<hsep ui:inject="LauncherWindow::HSep::Header"/>
-		
+
 		<!-- Footer -->
 		<hbox height="20" bg.color="bg_schema" spacing="6">
 			<!-- UI Scale icons + and - -->
