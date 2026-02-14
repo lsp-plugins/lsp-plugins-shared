@@ -3086,28 +3086,30 @@
 		<allocation.hfill value="true"/>
 		<text.layout.halign value="-1.0"/>
 		<font.bold value="true"/>
-		<bg.color value="bg_bright"/>
+		<bg.color value="bg_schema"/>
 		<font.size value="16"/>
+		<padding value="6 4"/>
 	</style>
 
 	<style class="LauncherWindow::Bundle::Grid" parents="Grid">
-		<bg.color value="bg_bright"/>
-		<hspacing value="6"/>
-		<vspacing value="6"/>
 	</style>
 
 	<style class="LauncherWindow::Bundle::Heading" parents="Label">
 		<allocation.hfill value="true"/>
+		<allocation.hexpand value="true"/>
 		<text.layout.halign value="-1.0"/>
 		<font.bold value="true"/>
-		<bg.color value="bg_bright"/>
+		<bg.color value="bg_name"/>
 		<font.size value="18"/>
 	</style>
 
 	<style class="LauncherWindow::Bundle::Description" parents="Label">
 		<allocation.hfill value="true"/>
 		<allocation.hexpand value="true"/>
-		<text.layout.halign value="-1.0"/>
+		<allocation.vfill value="true"/>
+		<allocation.vexpand value="true"/>
+		<text.layout.halign value="-1.0" />
+		<text.layout.valign value="-1.0" />
 	</style>
 
 	<style class="LauncherWindow::Bundle::Images::Align" parents="Align">
@@ -3135,12 +3137,10 @@
 	</style>
 
 	<style class="LauncherWindow::Bundle::Buttons" parents="Grid">
-		<allocation.hexpand value="true"/>
-		<allocation.vexpand value="true"/>
 	</style>
 
 	<style class="LauncherWindow::Plugin::Image" parents="Image">
-		<bg.color value="bg_bright"/>
+		<bg.color value="bg_name"/>
 		<color value="bg"/>
 		<size.constraints.width.min value="96"/>
 		<size.constraints.width.max value="96"/>
