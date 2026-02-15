@@ -3061,6 +3061,7 @@
 		<allocation.vfill value="true"/>
 		<layout.hscale value="1.0" />
 		<layout.vscale value="1.0" />
+		<size.constraints.width.min value="640" />
 		<text.layout.halign value="1.0"/>
 		<padding value="0" />
 	</style>
