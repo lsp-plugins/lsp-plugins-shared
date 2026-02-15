@@ -39,10 +39,10 @@
 
 		<!-- plugin-content -->
 		<vbox ui:inject="LauncherWindow::Content" ui:id="launcher_content">
-			<hbox fill="true" bg.color="bg_schema" pad.h="6" pad.v="4" width.min="848">
+			<hbox fill="true" bg.color="bg_schema" pad.h="6" pad.v="4">
 				<hbox>
 					<label text="labels.search" pad.r="6"/>
-					<edit ui:id="search_input" width.min="400"/>
+					<edit ui:id="search_input" width.min="200" pad.r="6"/>
 				</hbox>
 				<void hexpand="true"/>
 				<hbox ui:id="trg_language_select_area">
@@ -56,6 +56,26 @@
 			</hbox>
 			<hsep bg.color="bg" pad.v="2" vreduce="true"/>
 			<tabs ui:id="tab_control" expand="true">
+				<tab text="labels.all_plugins">
+					<vbox expand="true">
+						<label ui:inject="LauncherWindow::Heading" text="labels.all_plugins" />
+						<void bg.color="bg_name" pad.v="1" vreduce="true"/>
+						<sarea expand="true" vscroll="optional" hscale="1">
+							<vbox ui:id="all_plugins_list" expand="true" />
+						</sarea>
+						<void expand="true"/>
+					</vbox>
+				</tab>
+				<tab text="labels.favourites">
+					<vbox expand="true">
+						<label ui:inject="LauncherWindow::Heading" text="labels.favourites" />
+						<void bg.color="bg_name" pad.v="1" vreduce="true"/>
+						<sarea expand="true" vscroll="optional" hscale="1">
+							<vbox ui:id="favourites_list" expand="true" />
+						</sarea>
+						<void expand="true"/>
+					</vbox>
+				</tab>
 				<tab text="With big love to c++">
 					<vbox expand="true">
 						<label ui:inject="LauncherWindow::Heading" text="With big love to c++" />
@@ -71,7 +91,7 @@
 								<grid ui:inject="LauncherWindow::Bundle::Grid" rows="4" cols="2">
 									<cell rows="3">
 										<align ui:inject="LauncherWindow::Bundle::Images::Align">
-											<hbox width="128" height="128">
+											<hbox ui:inject="LauncherWindow::Bundle::Images">
 												<label text="Image" bg.color="gray" />
 											</hbox>
 										</align>
@@ -84,21 +104,22 @@
 									</hbox>
 									<label ui:inject="LauncherWindow::Bundle::Description" text="bundles.slap_delay.description"/>
 									<cell cols="2">
-										<hbox ui:inject="LauncherWindow::Bundle::Buttons">
-											<button id="test_2" text="number 1"/>
-											<button id="test_2" text="num"/>
-											<button id="test_2" text="number 3"/>
-											<button id="test_2" text="number 4"/>
-											<button id="test_2" text="nuber 5"/>
-											<button id="test_2" text="number 6"/>
-											<button id="test_2" text="numbernumber 7"/>
-											<button id="test_2" text="number 8"/>
-											<button id="test_2" text="num 9"/>
-											<button id="test_2" text="number 10"/>
-											<button id="test_2" text="number 11"/>
-											<button id="test_2" text="er 12"/>
-											<void hexpand="true"/>
-										</hbox>
+										<align ui:inject="LauncherWindow::Bundle::Buttons::Align">
+											<hbox ui:inject="LauncherWindow::Bundle::Buttons">
+												<button id="test_2" text="number 1"/>
+												<button id="test_2" text="num"/>
+												<button id="test_2" text="number 3"/>
+												<button id="test_2" text="number 4"/>
+												<button id="test_2" text="nuber 5"/>
+												<button id="test_2" text="number 6"/>
+												<button id="test_2" text="numbernumber 7"/>
+												<button id="test_2" text="number 8"/>
+												<button id="test_2" text="num 9"/>
+												<button id="test_2" text="number 10"/>
+												<button id="test_2" text="number 11"/>
+												<button id="test_2" text="er 12"/>
+											</hbox>
+										</align>
 									</cell>
 								</grid>
 
@@ -107,7 +128,7 @@
 								<grid ui:inject="LauncherWindow::Bundle::Grid" rows="4" cols="2" >
 									<cell rows="3">
 										<align ui:inject="LauncherWindow::Bundle::Images::Align">
-											<hbox width="128" height="128">
+											<hbox ui:inject="LauncherWindow::Bundle::Images">
 												<label text="Image" bg.color="gray" />
 											</hbox>
 										</align>
@@ -120,13 +141,14 @@
 									</hbox>
 									<label ui:inject="LauncherWindow::Bundle::Description" text="bundles.filter.description"/>
 									<cell cols="2">
-										<hbox spacing="6" ui:inject="LauncherWindow::Bundle::Buttons">
-											<button id="test_2" text="number 1"/>
-											<button id="test_2" text="num"/>
-											<button id="test_2" text="number 11"/>
-											<button id="test_2" text="er 12"/>
-											<void hexpand="true"/>
-										</hbox>
+										<align ui:inject="LauncherWindow::Bundle::Buttons::Align">
+											<hbox spacing="6" ui:inject="LauncherWindow::Bundle::Buttons">
+												<button id="test_2" text="number 1"/>
+												<button id="test_2" text="num"/>
+												<button id="test_2" text="number 11"/>
+												<button id="test_2" text="er 12"/>
+											</hbox>
+										</align>
 									</cell>
 								</grid>
 
@@ -135,7 +157,7 @@
 								<grid ui:inject="LauncherWindow::Bundle::Grid" rows="4" cols="2" spacing="12" bg.color="bg_schema" >
 									<cell rows="3">
 										<align ui:inject="LauncherWindow::Bundle::Images::Align">
-											<hbox width="128" height="128">
+											<hbox ui:inject="LauncherWindow::Bundle::Images">
 												<label text="Image" bg.color="gray" />
 											</hbox>
 										</align>
@@ -148,13 +170,14 @@
 									</hbox>
 									<label ui:inject="LauncherWindow::Bundle::Description" text="bundles.phaser.description"/>
 									<cell cols="2">
-										<hbox spacing="6" ui:inject="LauncherWindow::Bundle::Buttons">
-											<button id="test_2" text="num 9"/>
-											<button id="test_2" text="number 10"/>
-											<button id="test_2" text="number 11"/>
-											<button id="test_2" text="er 12"/>
-											<void hexpand="true"/>
-										</hbox>
+										<align ui:inject="LauncherWindow::Bundle::Buttons::Align">
+											<hbox spacing="6" ui:inject="LauncherWindow::Bundle::Buttons">
+												<button id="test_2" text="num 9"/>
+												<button id="test_2" text="number 10"/>
+												<button id="test_2" text="number 11"/>
+												<button id="test_2" text="er 12"/>
+											</hbox>
+										</align>
 									</cell>
 								</grid>
 
@@ -168,7 +191,7 @@
 								<grid ui:inject="LauncherWindow::Bundle::Grid" rows="4" cols="2">
 									<cell rows="3">
 										<align ui:inject="LauncherWindow::Bundle::Images::Align">
-											<hbox width="128" height="128">
+											<hbox ui:inject="LauncherWindow::Bundle::Images">
 												<label text="Image" bg.color="gray" />
 											</hbox>
 										</align>
@@ -181,21 +204,22 @@
 									</hbox>
 									<label ui:inject="LauncherWindow::Bundle::Description" text="bundles.slap_delay.description"/>
 									<cell cols="2">
-										<hbox spacing="6" ui:inject="LauncherWindow::Bundle::Buttons">
-											<button id="test_2" text="number 1"/>
-											<button id="test_2" text="num"/>
-											<button id="test_2" text="number 3"/>
-											<button id="test_2" text="number 4"/>
-											<button id="test_2" text="nuber 5"/>
-											<button id="test_2" text="number 6"/>
-											<button id="test_2" text="numbernumber 7"/>
-											<button id="test_2" text="number 8"/>
-											<button id="test_2" text="num 9"/>
-											<button id="test_2" text="number 10"/>
-											<button id="test_2" text="number 11"/>
-											<button id="test_2" text="er 12"/>
-											<void hexpand="true"/>
-										</hbox>
+										<align ui:inject="LauncherWindow::Bundle::Buttons::Align">
+											<hbox spacing="6" ui:inject="LauncherWindow::Bundle::Buttons">
+												<button id="test_2" text="number 1"/>
+												<button id="test_2" text="num"/>
+												<button id="test_2" text="number 3"/>
+												<button id="test_2" text="number 4"/>
+												<button id="test_2" text="nuber 5"/>
+												<button id="test_2" text="number 6"/>
+												<button id="test_2" text="numbernumber 7"/>
+												<button id="test_2" text="number 8"/>
+												<button id="test_2" text="num 9"/>
+												<button id="test_2" text="number 10"/>
+												<button id="test_2" text="number 11"/>
+												<button id="test_2" text="er 12"/>
+											</hbox>
+										</align>
 									</cell>
 								</grid>
 
@@ -204,7 +228,7 @@
 								<grid ui:inject="LauncherWindow::Bundle::Grid" rows="4" cols="2">
 									<cell rows="3">
 										<align ui:inject="LauncherWindow::Bundle::Images::Align">
-											<hbox width="128" height="128">
+											<hbox ui:inject="LauncherWindow::Bundle::Images">
 												<label text="Image" bg.color="gray" />
 											</hbox>
 										</align>
@@ -217,13 +241,14 @@
 									</hbox>
 									<label ui:inject="LauncherWindow::Bundle::Description" text="bundles.filter.description"/>
 									<cell cols="2">
-										<hbox spacing="6" ui:inject="LauncherWindow::Bundle::Buttons">
-											<button id="test_2" text="number 1"/>
-											<button id="test_2" text="num"/>
-											<button id="test_2" text="number 11"/>
-											<button id="test_2" text="er 12"/>
-											<void hexpand="true"/>
-										</hbox>
+										<align ui:inject="LauncherWindow::Bundle::Buttons::Align">
+											<hbox spacing="6" ui:inject="LauncherWindow::Bundle::Buttons">
+												<button id="test_2" text="number 1"/>
+												<button id="test_2" text="num"/>
+												<button id="test_2" text="number 11"/>
+												<button id="test_2" text="er 12"/>
+											</hbox>
+										</align>
 									</cell>
 								</grid>
 
@@ -232,7 +257,7 @@
 								<grid ui:inject="LauncherWindow::Bundle::Grid" rows="4" cols="2">
 									<cell rows="3">
 										<align ui:inject="LauncherWindow::Bundle::Images::Align">
-											<hbox width="128" height="128">
+											<hbox ui:inject="LauncherWindow::Bundle::Images">
 												<label text="Image" bg.color="gray" />
 											</hbox>
 										</align>
@@ -245,39 +270,20 @@
 									</hbox>
 									<label ui:inject="LauncherWindow::Bundle::Description" text="bundles.phaser.description"/>
 									<cell cols="2">
-										<hbox spacing="6" ui:inject="LauncherWindow::Bundle::Buttons">
-											<button id="test_2" text="num 9"/>
-											<button id="test_2" text="number 10"/>
-											<button id="test_2" text="number 11"/>
-											<button id="test_2" text="er 12"/>
-											<void hexpand="true"/>
-										</hbox>
+										<align ui:inject="LauncherWindow::Bundle::Buttons::Align">
+											<hbox spacing="6" ui:inject="LauncherWindow::Bundle::Buttons">
+												<button id="test_2" text="num 9"/>
+												<button id="test_2" text="number 10"/>
+												<button id="test_2" text="number 11"/>
+												<button id="test_2" text="er 12"/>
+											</hbox>
+										</align>
 									</cell>
 								</grid>
 							</vbox>
 						</sarea>
 						<void expand="true"/>
 						<!-- End Categoty example -->
-					</vbox>
-				</tab>
-				<tab text="labels.all_plugins">
-					<vbox expand="true">
-						<label ui:inject="LauncherWindow::Heading" text="labels.all_plugins" />
-						<void bg.color="bg_name" pad.v="1" vreduce="true"/>
-						<sarea expand="true" vscroll="optional" hscale="1">
-							<vbox ui:id="all_plugins_list" expand="true" pad.v="4" pad.h="6"/>
-						</sarea>
-						<void expand="true"/>
-					</vbox>
-				</tab>
-				<tab text="labels.favourites">
-					<vbox expand="true">
-						<label ui:inject="LauncherWindow::Heading" text="labels.favourites" />
-						<void bg.color="bg_name" pad.v="1" vreduce="true"/>
-						<sarea expand="true" vscroll="optional" hscale="1">
-							<vbox ui:id="favourites_list" expand="true" pad.v="4" pad.h="6"/>
-						</sarea>
-						<void expand="true"/>
 					</vbox>
 				</tab>
 			</tabs>

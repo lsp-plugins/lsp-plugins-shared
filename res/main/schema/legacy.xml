@@ -3085,6 +3085,10 @@
 
 	<style class="LauncherWindow::Bundle::Images" parents="Box">
 		<orientation value="horizontal"/>
+		<size.constraints.width.min value="132" />
+		<size.constraints.width.max value="132" />
+		<size.constraints.height.min value="132" />
+		<size.constraints.height.max value="132" />
 	</style>
 	
 	<style class="LauncherWindow::Bundle::Controls" parents="Box">
@@ -3103,21 +3107,33 @@
 	</style>
 
 	<style class="LauncherWindow::Bundle::Buttons" parents="Grid">
-		<spacing value="6" />
+		<hspacing value="6" />
+		<vspacing value="6" />
+	</style>
+	
+	<style class="LauncherWindow::Bundle::Buttons::Align" parents="Align">
+		<allocation.hfill value="true" />
+		<allocation.vfill value="true" />
+		<layout.halign value="-1.0"/>
+		<layout.valign value="-1.0"/>
+		<layout.hscale value="0.0" />
+		<layout.vscale value="0.0" />
 	</style>
 
 	<style class="LauncherWindow::Plugin::Image" parents="Image">
-		<bg.color value="bg_name"/>
+		<bg.color value="gray"/>
 		<color value="bg"/>
-		<size.constraints.width.min value="96"/>
-		<size.constraints.width.max value="96"/>
-		<size.constraints.height.min value="96"/>
-		<size.constraints.height.max value="96"/>
+		<size.constraints.width.min value="128"/>
+		<size.constraints.width.max value="128"/>
+		<size.constraints.height.min value="128"/>
+		<size.constraints.height.max value="128"/>
 		<proportion value="1.0"/>
 		<fitting value="cover"/>
 	</style>
 
-	<style class="LauncherWindow::Plugin::Button" parents="Button"></style>
+	<style class="LauncherWindow::Plugin::Button" parents="Button">
+		<allocation.hfill value="true" />
+	</style>
 
 	<!-- PluginWindow widgets -->
 	<style class="PluginWindow" parents="Window">
