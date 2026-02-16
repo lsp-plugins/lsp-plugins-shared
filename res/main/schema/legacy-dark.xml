@@ -412,6 +412,9 @@
 		<pianokeys_split_inactive value="#2a2c37"/>
 		<pianokeys_octave_split value="#1b1c22"/>
 		<pianokeys_octave_split_inactive value="#1b1c22"/>
+
+		<!-- Launcher -->
+		<launcher_image_border value="#373944"/>
 	</colors>
 
 	<!-- Root style -->
@@ -2976,8 +2979,8 @@
 		<layout.hscale value="1.0"/>
 		<layout.vscale value="1.0"/>
 		<size.constraints.width.min value="640" />
-		<text.layout.halign value="1.0"/>
-		<padding value="0" />
+		<text.layout.halign value="1.0"/>		
+		<padding value="4"/>
 	</style>
 
 	<style class="LauncherWindow::HSep::Header" parents="Separator">
@@ -2999,11 +3002,11 @@
 		<font.bold value="true"/>
 		<font.size value="20"/>
 	</style>
-	
+
 	<style class="LauncherWindow::Category" parents="Box">
 		<orientation value="vertical" />
 	</style>
-	
+
 	<style class="LauncherWindow::Category::Separator" parents="Separator">
 		<orientation value="horizontal" />
 		<bg.inherit value="false"/>
@@ -3019,7 +3022,7 @@
 		<bg.color value="bg_schema"/>
 		<font.size value="16"/>
 	</style>
-	
+
 	<style class="LauncherWindow::Category::Heading::Separator" parents="Separator">
 		<orientation value="horizontal" />
 	</style>
@@ -3034,7 +3037,7 @@
 		<hspacing value="12" />
 		<vspacing value="12" />
 	</style>
-	
+
 	<style class="LauncherWindow::Bundle::Separator" parents="Separator">
 		<orientation value="horizontal" />
 		<bg.inherit value="false"/>
@@ -3077,7 +3080,7 @@
 		<size.constraints.height.min value="132" />
 		<size.constraints.height.max value="132" />
 	</style>
-	
+
 	<style class="LauncherWindow::Bundle::Controls" parents="Box">
 		<spacing value="6" />
 	</style>
@@ -3097,7 +3100,7 @@
 		<hspacing value="6" />
 		<vspacing value="6" />
 	</style>
-	
+
 	<style class="LauncherWindow::Bundle::Buttons::Align" parents="Align">
 		<allocation.hfill value="true" />
 		<allocation.vfill value="true" />
@@ -3108,7 +3111,7 @@
 	</style>
 
 	<style class="LauncherWindow::Plugin::Image" parents="Image">
-		<bg.color value="gray"/>
+		<bg.color value="launcher_image_border"/>
 		<color value="bg"/>
 		<size.constraints.width.min value="128"/>
 		<size.constraints.width.max value="128"/>
