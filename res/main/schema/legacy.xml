@@ -126,6 +126,7 @@
 		<bg_preset value="#1b1c22"/>
 		<bg_schema value="#1b1c22"/>
 		<bg_schema_name value="#1b1c22"/>
+		<hole value="#000000" />
 		<border_color value="#373943"/>
 		<text_prim value="#ebecee"/>
 		<text_sec value="#cacbcd"/>
@@ -459,7 +460,7 @@
 		<border.color value="bg_name"/>
 		<border.size value="2"/>
 		<border.radius value="10"/>
-		<color value="black"/>
+		<color value="hole"/>
 		<bg.inherit value="false"/>
 		<border.flat value="true"/>
 	</style>
@@ -546,7 +547,7 @@
 		<border.color value="#ffffff"/>
 		<border.size value="2"/>
 		<border.radius value="10"/>
-		<color value="black"/>
+		<color value="hole"/>
 		<bg.inherit value="false"/>
 		<text.radius value="0"/>
 		<glass value="true"/>
@@ -1883,7 +1884,7 @@
 	</style>
 
 	<style class="Fader" parents="root">
-		<scale.color value="black"/>
+		<scale.color value="hole"/>
 		<scale.border.gradient value="true"/>
 		<scale.border.size value="3"/>
 		<scale.border.radius value="5"/>
@@ -1919,7 +1920,7 @@
 		<border.color value="bg_name"/>
 		<border.size value="2"/>
 		<border.radius value="10"/>
-		<color value="black"/>
+		<color value="hole"/>
 		<bg.inherit value="false"/>
 		<text.radius value="0"/>
 		<border.flat value="true"/>
@@ -1967,7 +1968,7 @@
 	<style class="Graph_Name_Text" parents="GraphText">
 		<padding value="6"/>
 		<bg value="true"/>
-		<bg.color value="black"/>
+		<bg.color value="hole"/>
 		<bg.color.a value="0.5"/>
 		<color value="bright_gray"/>
 		<bg.radius value="0"/>
@@ -2161,8 +2162,10 @@
 		<flat value="false"/>
 		<gap.size value="2"/>
 		<hole.size value="1"/>
-		<hole.color value="black"/>
+		<hole.color value="hole"/>
 		<scale.marks value="true"/>
+		<scale.brightness value="0.75"/>
+		<balance.tip.size value="0"/>
 		<pointer value="hand"/>
 
 		<bg.color value="bg_schema"/>
@@ -2611,7 +2614,7 @@
 	</style>
 
 	<style class="RangeSlider" parents="root">
-		<scale.color value="black"/>
+		<scale.color value="hole"/>
 		<scale.border.gradient value="true"/>
 		<scale.border.size value="3"/>
 		<scale.border.radius value="5"/>

@@ -126,6 +126,7 @@
 		<bg_preset value="#1b1c22"/>
 		<bg_schema value="#1b1c22"/>
 		<bg_schema_name value="#1b1c22"/>
+		<hole value="#000000" />
 		<border_color value="#373944"/>
 		<text_prim value="#71758c"/>
 		<text_sec value="#71758c"/>
@@ -1959,7 +1960,7 @@
 	<style class="Graph_Name_Text" parents="GraphText">
 		<padding value="6"/>
 		<bg value="true"/>
-		<bg.color value="black"/>
+		<bg.color value="hole"/>
 		<bg.color.a value="0.5"/>
 		<color value="text_group"/>
 		<bg.radius value="0"/>
@@ -2158,8 +2159,10 @@
 		<flat value="false"/>
 		<gap.size value="2"/>
 		<hole.size value="1"/>
-		<hole.color value="black"/>
+		<hole.color value="hole"/>
 		<scale.marks value="true"/>
+		<scale.brightness value="0.75"/>
+		<balance.tip.size value="0"/>
 		<pointer value="hand"/>
 
 		<bg.color value="bg_schema"/>
