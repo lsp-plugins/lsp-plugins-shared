@@ -60,7 +60,7 @@
 					<vbox expand="true">
 						<label ui:inject="LauncherWindow::Heading" text="labels.all_plugins" />
 						<void bg.color="bg_name" pad.v="1" vreduce="true"/>
-						<sarea expand="true" vscroll="optional" hscale="1">
+						<sarea ui:id="all_plugins_area" expand="true" vscroll="optional" hscale="1">
 							<vbox ui:id="all_plugins_list" expand="true" />
 						</sarea>
 						<void expand="true"/>
@@ -70,7 +70,7 @@
 					<vbox expand="true">
 						<label ui:inject="LauncherWindow::Heading" text="labels.favourites" />
 						<void bg.color="bg_name" pad.v="1" vreduce="true"/>
-						<sarea expand="true" vscroll="optional" hscale="1">
+						<sarea ui:id="favourites_area" expand="true" vscroll="optional" hscale="1">
 							<vbox ui:id="favourites_list" expand="true" />
 						</sarea>
 						<void expand="true"/>
