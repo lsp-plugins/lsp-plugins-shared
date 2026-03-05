@@ -235,6 +235,7 @@
 	"dc_offset": "Смещение",
 	"dc_reference": "Точка отсчёта",
 
+	"decramp": "Разжатие",
 	"delay": "Задержка",
 	"delay:ms": "Задержка (мс)",
 	"delay_line_processing": "Обработка линии задержки",

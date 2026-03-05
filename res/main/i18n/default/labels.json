@@ -234,6 +234,7 @@
 	"dc_offset": "DC Offset",
 	"dc_reference": "DC Reference",
 
+	"decramp": "Decramp",
 	"delay": "Delay",
 	"delay:ms": "Delay (ms)",
 	"delay_line_processing": "Delay Line Processing",
