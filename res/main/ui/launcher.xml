@@ -101,7 +101,7 @@
 			<void expand="true"/>
 
 			<!-- Help icon -->
-			<label ui:id="trg_show_manual" font.name="lsp-icons" font.size="12" font.antialias="true" text="icons.main.help" hover="true" color="footer_icon_rsz" hover.color="menu_icon_hover" halign="1" pointer="hand"/>
+			<label ui:id="trg_show_manual" pad.r="6" font.name="lsp-icons" font.size="12" font.antialias="true" text="icons.main.help" hover="true" color="footer_icon_rsz" hover.color="menu_icon_hover" halign="1" pointer="hand"/>
 		</hbox>
 	</vbox>
 </window>
