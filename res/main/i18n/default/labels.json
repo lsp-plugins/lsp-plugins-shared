@@ -55,6 +55,8 @@
 		"sustain": "Sustain",
 		"time": "Time"
 	},
+	
+	"all_plugins": "All plugins",
 
 	"alr": "ALR",
     "alr_": "Auto level regulation",
@@ -232,6 +234,7 @@
 	"dc_offset": "DC Offset",
 	"dc_reference": "DC Reference",
 
+	"decramp": "Decramp",
 	"delay": "Delay",
 	"delay:ms": "Delay (ms)",
 	"delay_line_processing": "Delay Line Processing",
@@ -267,6 +270,8 @@
 	"equalizer:db": "Equalizer (dB)",
 
 	"export": "Export",
+	
+	"favourites": "Favourites",
 
 	"feedback": "Feedback",
 	"feed_gain": "Feed Gain",
@@ -705,6 +710,7 @@
 		"description": "{@meta_plugin_description}",
 		"left": "{@meta_pkg_brand}",
 		"name": "{@meta_plugin_name}",
+		"plugin_launcher": "Plugin launcher",
 		"right": "{@meta_plugin_acronym}",
 		"top": "{@meta_pkg_brand} {@meta_plugin_acronym}"
 	},

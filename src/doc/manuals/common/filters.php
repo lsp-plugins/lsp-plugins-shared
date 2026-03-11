@@ -45,7 +45,8 @@
 <p>
 	<b>Bilinear Transform</b> is easy to implement, and in most plugins this type of transform is used. The main disadvantage of this transform is that it distorts
 	the form of the filter's curve while moving it's poles and zeros from low to high frequencies. Also it's noticeable that low-pass filters transformed by using
-	bilinear transform have	-INF dB amplification level at the Nyquist frequency.
+	bilinear transform have	-INF dB amplification level at the Nyquist frequency. This effect is also called cramping. To minimize such effect, one of the techniques
+	applied can be oversampling.
 </p>
 <p>
 	Completely different is the behaviour of filters transformed by <b>Matched Z Transform</b>. These filters have identical to the analog filters frequency and

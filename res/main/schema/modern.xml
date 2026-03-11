@@ -22,9 +22,6 @@
 	<!-- Color aliases -->
 	<colors>
 		<!-- Generic colors -->
-		<black value="#000000"/>
-		<white value="#ffffff"/>
-
 		<red value="#e53f40"/>
 		<orange value="#c26412"/>
 		<yellow value="#977c00"/>
@@ -354,9 +351,7 @@
 
 		<!-- Autogain colors -->
 		<loudness_level value="#977c00"/>
-		<!-- <yellow value="#977c00"/> -->
 		<loudness_silence value="#877e78"/>
-		<!-- <yellow value="#977c00"/> -->
 		<loudness_in_long value="#00909e"/>
 		<loudness_in_short value="#00626b"/>
 		<loudness_sc_long value="#c26412"/>
@@ -389,6 +384,7 @@
 		<LBI_sel_hov value="#606173"/>
 
 		<!-- Overlay -->
+		<overlay_border value="#000000"/>
 		<overlay_shadow avalue="#88000000"/>
 
 		<!-- Piano Keys colors -->
@@ -402,6 +398,9 @@
 		<pianokeys_split_inactive value="#2a2c37"/>
 		<pianokeys_octave_split value="#1b1c22"/>
 		<pianokeys_octave_split_inactive value="#1b1c22"/>
+
+		<!-- Launcher -->
+		<launcher_image_border value="#373944"/>
 	</colors>
 
 	<!-- Root style -->
@@ -2202,6 +2201,9 @@
 		<text.hover.color value="hl_hover"/>
 	</style>
 
+	<style class="Image" parents="root">
+	</style>
+
 	<style class="Indicator" parents="root">
 		<color value="ind_col"/>
 		<text.color value="ind_text"/>
@@ -2607,7 +2609,7 @@
 		<border.size value="0"/>
 		<border.radius value="0"/>
 		<border.rounding value=""/>
-		<border.color value="black"/>
+		<border.color value="overlay_border"/>
 		<shadow.size value="24"/>
 		<shadow.radius value="8"/>
 		<shadow.rounding value="lt,rt,lb,rb"/>
@@ -2854,12 +2856,6 @@
 
 	<style class="FileDialog::WarningBox" parents="Box"></style>
 
-	<!-- Separator Header -->
-	<style class="PluginWindow::Hsep_header" parents="Separator">
-		<color value="bg"/>
-		<visible value="false"/>
-	</style>
-
 	<!-- MessageBox widgets -->
 	<style class="MessageBox::Message" parents="Label"></style>
 
@@ -3062,10 +3058,178 @@
 		<padding.left value="24"/>
 	</style>
 
+	<!-- LauncherWindow widgets -->
+	<style class="LauncherWindow" parents="Window">
+		<allocation.hfill value="true"/>
+		<allocation.vfill value="true"/>
+		<layout.hscale value="1.0" />
+		<layout.vscale value="1.0" />
+		<size.constraints.width.min value="640" />
+		<size.constraints.height.min value="640" />
+		<text.layout.halign value="1.0"/>
+		<padding value="0" />
+	</style>
+
+	<style class="LauncherWindow::HSep::Header" parents="Separator">
+		<color value="bg"/>
+		<visible value="false"/>
+	</style>
+
+	<style class="LauncherWindow::Content" parents="Box">
+		<allocation.hfill value="true"/>
+		<allocation.vfill value="true"/>
+		<allocation.hexpand value="true"/>
+		<allocation.vexpand value="true"/>
+		<padding value="0"/>
+	</style>
+
+	<style class="LauncherWindow::Heading" parents="Label">
+		<allocation.hfill value="true"/>
+		<text.layout.halign value="0.0" />
+		<font.bold value="true"/>
+		<font.size value="20"/>
+		<bg.color value="bg_schema" />
+		<bg.inherit value="false" />
+		<padding.top value="15" />
+		<padding.bottom value="15" />
+	</style>
+
+	<style class="LauncherWindow::Category" parents="Box">
+		<orientation value="vertical" />
+	</style>
+
+	<style class="LauncherWindow::Category::Separator" parents="Separator">
+		<orientation value="horizontal" />
+		<bg.inherit value="false"/>
+		<bg.color value="bg"/>
+		<padding.top value="20" />
+		<padding.bottom value="20" />
+	</style>
+
+	<style class="LauncherWindow::Category::Heading" parents="Label">
+		<allocation.hfill value="true" />
+		<text.layout.halign value="-1.0" />
+		<font.bold value="true" />
+		<bg.inherit value="false" />
+		<bg.color value="bg_name" />
+		<font.size value="16" />
+		<padding.left value="6" />
+		<padding.right value="6" />
+		<padding.top value="4" />
+		<padding.bottom value="4" />
+	</style>
+
+	<style class="LauncherWindow::Category::Heading::Separator" parents="Separator">
+		<bg.color value="bg" />
+		<orientation value="horizontal" />
+		<padding.top value="2" />
+		<padding.bottom value="2" />
+	</style>
+
+	<style class="LauncherWindow::Bundle::Grid" parents="Grid">
+		<bg.inherit value="false"/>
+		<bg.color value="bg_schema"/>
+		<padding.left value="6" />
+		<padding.right value="6" />
+		<padding.top value="12" />
+		<padding.bottom value="12" />
+		<hspacing value="12" />
+		<vspacing value="12" />
+	</style>
+
+	<style class="LauncherWindow::Bundle::Separator" parents="Separator">
+		<orientation value="horizontal" />
+		<bg.inherit value="false"/>
+		<bg.color value="bg"/>
+		<padding.top value="2" />
+		<padding.bottom value="2" />
+	</style>
+
+	<style class="LauncherWindow::Bundle::Heading" parents="Label">
+		<allocation.hfill value="true"/>
+		<allocation.hexpand value="true"/>
+		<text.layout.halign value="-1.0" />
+		<font.bold value="true"/>
+		<bg.color value="bg_name" />
+		<font.size value="18"/>
+	</style>
+
+	<style class="LauncherWindow::Bundle::Description" parents="Label">
+		<allocation.hfill value="true"/>
+		<allocation.hexpand value="true"/>
+		<allocation.vfill value="true"/>
+		<allocation.vexpand value="true"/>
+		<text.layout.halign value="-1.0" />
+		<text.layout.valign value="-1.0" />
+	</style>
+
+	<style class="LauncherWindow::Bundle::Images::Align" parents="Align">
+		<allocation.hfill value="true" />
+		<allocation.vfill value="true" />
+		<layout.halign value="0.0"/>
+		<layout.valign value="-1.0"/>
+		<layout.hscale value="0.0" />
+		<layout.vscale value="0.0" />
+	</style>
+
+	<style class="LauncherWindow::Bundle::Images" parents="Box">
+		<orientation value="horizontal" />
+		<size.constraints.width.min value="132" />
+		<size.constraints.width.max value="132" />
+		<size.constraints.height.min value="132" />
+		<size.constraints.height.max value="132" />
+	</style>
+
+	<style class="LauncherWindow::Bundle::Controls" parents="Box">
+		<spacing value="6" />
+	</style>
+
+	<style class="LauncherWindow::Bundle::Favourites" parents="Button">
+		<font.name value="lsp-icons" />
+		<font.size value="16" />
+		<mode value="toggle" />
+	</style>
+
+	<style class="LauncherWindow::Bundle::Help" parents="Button">
+		<font.name value="lsp-icons" />
+		<font.size value="16" />
+	</style>
+
+	<style class="LauncherWindow::Bundle::Buttons" parents="Grid">
+		<hspacing value="6" />
+		<vspacing value="6" />
+	</style>
+
+	<style class="LauncherWindow::Bundle::Buttons::Align" parents="Align">
+		<allocation.hfill value="true" />
+		<allocation.vfill value="true" />
+		<layout.halign value="-1.0"/>
+		<layout.valign value="-1.0"/>
+		<layout.hscale value="0.0" />
+		<layout.vscale value="0.0" />
+	</style>
+
+	<style class="LauncherWindow::Plugin::Image" parents="Image">
+		<bg.color value="launcher_image_border"/>
+		<color value="bg" />
+		<size.constraints.width.min value="128"/>
+		<size.constraints.width.max value="128"/>
+		<size.constraints.height.min value="128"/>
+		<size.constraints.height.max value="128"/>
+		<proportion value="1.0" />
+		<fitting value="cover" />
+	</style>
+
+	<style class="LauncherWindow::Plugin::Button" parents="Button">
+		<allocation.hfill value="true" />
+	</style>
+
 	<!-- PluginWindow widgets -->
 	<style class="PluginWindow" parents="Window">
 		<allocation.hfill value="true"/>
 		<allocation.vfill value="true"/>
+		<layout.hscale value="1.0" />
+		<layout.vscale value="1.0" />
 		<text.layout.halign value="1.0"/>
 		<padding value="0"/>
 	</style>
@@ -3159,6 +3323,11 @@
 		<allocation.hexpand value="true"/>
 		<allocation.vexpand value="true"/>
 		<padding value="0"/>
+	</style>
+
+	<style class="PluginWindow::HSep::Header" parents="Separator">
+		<color value="bg"/>
+		<visible value="false"/>
 	</style>
 
 	<style class="PluginWindow::ResetMenu" parents="Menu">

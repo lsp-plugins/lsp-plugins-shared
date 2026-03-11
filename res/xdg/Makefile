@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 #
-# Copyright (C) 2024 Linux Studio Plugins Project <https://lsp-plug.in/>
-#           (C) 2024 Vladimir Sadovnikov <sadko4u@gmail.com>
+# Copyright (C) 2026 Linux Studio Plugins Project <https://lsp-plug.in/>
+#           (C) 2026 Vladimir Sadovnikov <sadko4u@gmail.com>
 #
 # This file is part of lsp-plugins-shared
 #
@@ -23,20 +23,23 @@ ifneq ($(VERBOSE),1)
 .SILENT:
 endif
 
-MODDIR                  = $(CURDIR)/..
 CONFIG                 := $(MODDIR)/.config.mk
+include $(CONFIG)
+
+MODDIR                  = $(CURDIR)/..
 DESTDIR                :=
 ETCDIR                 := /etc
-SHAREDDIR              := /usr/local/share
-
-include $(CONFIG)
+SHAREDDIR              := $(PREFIX)/share
 
 XDG_ICON_PATH   = $(DESTDIR)$(SHAREDDIR)/icons/hicolor
 XDG_MENU_PATH   = $(DESTDIR)$(ETCDIR)/xdg/menus/applications-merged
 XDG_APP_PATH    = $(DESTDIR)$(SHAREDDIR)/applications
 XDG_DIR_PATH    = $(DESTDIR)$(SHAREDDIR)/desktop-directories
 XDG_FILES       = $(file < $(FILE_LIST))
-XDG_FILE_PATH   = $(foreach file,$(XDG_FILES),$(XDG_APP_PATH)/$(notdir $(file)))
+XDG_FILE_PATH   = $(foreach file,$(XDG_FILES),$$(XDG_APP_PATH)/$(notdir $(file)))
+
+# Include the script for deletion of legacy icons
+include $(LSP_PLUGINS_SHARED_PATH)/res/xdg/uninstall-old-xdg.mk
 
 # Form the batch file
 $(file > $(BATCH_FILE),) \
@@ -59,7 +62,7 @@ include $(BATCH_FILE)
 
 all:
 
-install_xdg_prepare:
+install_xdg_prepare: uninstall_old_xdg_icons
 	mkdir -p "$(XDG_APP_PATH)"
 	mkdir -p "$(XDG_DIR_PATH)"
 	mkdir -p "$(XDG_MENU_PATH)"
@@ -81,12 +84,8 @@ install_xdg_prepare:
 	cp -f icons/lsp-plugins/128x128.png  "$(XDG_ICON_PATH)/128x128/apps/lsp-plugins.png"
 	cp -f icons/lsp-plugins/256x256.png  "$(XDG_ICON_PATH)/256x256/apps/lsp-plugins.png"
 	cp -f icons/lsp-plugins/scalable.svg "$(XDG_ICON_PATH)/scalable/apps/lsp-plugins.svg"
-	cp -f dirs/lsp-plugins.directory     "$(XDG_DIR_PATH)/lsp-plugins.directory"
-	cp menus/lsp-plugins.menu "$(XDG_MENU_PATH)/lsp-plugins.menu"
 
-uninstall_xdg_prepare:
-	-rm -f $(XDG_DIR_PATH)/lsp-plugins.directory
-	-rm -f $(XDG_MENU_PATH)/lsp-plugins.menu
+uninstall_xdg_prepare: uninstall_old_xdg_icons
 	-rm -f $(XDG_ICON_PATH)/16x16/apps/lsp-plugins.png
 	-rm -f $(XDG_ICON_PATH)/22x22/apps/lsp-plugins.png
 	-rm -f $(XDG_ICON_PATH)/24x24/apps/lsp-plugins.png

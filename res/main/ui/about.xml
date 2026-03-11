@@ -10,7 +10,7 @@
 			</multilabel>
 		</align>
 		<align fill="true" valign="-1" hexpand="true">
-			<grid rows="19" cols="2" hspacing="4" vspacing="4">
+			<grid rows="${15 + ((ex :plugin_id) ? 3 : 0) + ((ex :bundle_id) ? 1 : 0)}" cols="2" hspacing="4" vspacing="4">
 				<cell cols="2">
 					<label ui:inject="AboutDialog::Heading" text="headings.about" text.meta="true" />
 				</cell>
@@ -37,21 +37,25 @@
 					<label ui:inject="AboutDialog::Text" text="messages.about.info.pkg_version" />
 					<label ui:inject="AboutDialog::Text" text="messages.about.values.pkg_version" />
 					
-					<label ui:inject="AboutDialog::Text" text="messages.about.info.plug_name" />
-					<label ui:inject="AboutDialog::Text" text="messages.about.values.plug_name" />
-					
-					<label ui:inject="AboutDialog::Text" text="messages.about.info.plug_version" />
-					<label ui:inject="AboutDialog::Text" text="messages.about.values.plug_version" />
-					
-					<label ui:inject="AboutDialog::Text" text="messages.about.info.plug_format" />
-					<label ui:inject="AboutDialog::Text" text="messages.about.values.plug_format" />
+					<ui:if test="ex :plugin_id">
+						<label ui:inject="AboutDialog::Text" text="messages.about.info.plug_name" />
+						<label ui:inject="AboutDialog::Text" text="messages.about.values.plug_name" />
+						
+						<label ui:inject="AboutDialog::Text" text="messages.about.info.plug_version" />
+						<label ui:inject="AboutDialog::Text" text="messages.about.values.plug_version" />
+						
+						<label ui:inject="AboutDialog::Text" text="messages.about.info.plug_format" />
+						<label ui:inject="AboutDialog::Text" text="messages.about.values.plug_format" />
+					</ui:if>
 					
 					<label ui:inject="AboutDialog::Text" text="messages.about.info.ui_graphics_library" />
 					<label ui:inject="AboutDialog::Text" text="messages.about.values.ui_graphics_library" />
 					
-					<cell cols="2">
-						<label ui:inject="AboutDialog::Text" text="bundles.${bundle_id}.description" />
-					</cell>
+					<ui:if test="ex :bundle_id">
+						<cell cols="2">
+							<label ui:inject="AboutDialog::Text" text="bundles.${bundle_id}.description" />
+						</cell>
+					</ui:if>
 					
 					<cell cols="2">
 						<label ui:inject="AboutDialog::Text" text="messages.about.license" />

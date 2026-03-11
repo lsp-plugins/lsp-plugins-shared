@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+
+<window ui:inject="LauncherWindow">
+	<!-- header -->
+	<vbox spacing="4" ui:id="launcher_window">
+		<grid rows="2" cols="4" height="44" expand="false" bg.color="bg_schema">
+			<cell rows="2" width.min="106">
+				<hbox>
+					<multilabel padding.left="6" padding.bottom="3" font.scaling="1">
+						<label font.name="lsp-logo" font.size="34" font.antialias="true" text="A" color="lsp_logo"/>
+						<label font.name="lsp-logo" font.size="34" font.antialias="true" text="B" color="lsp_logo_cover"/>
+					</multilabel>
+					<void expand="true"/>
+				</hbox>
+			</cell>
+			<cell rows="2" width.min="10"><void expand="true"/></cell>
+			<void expand="true"/>
+			<cell>
+				<hbox>
+					<void hexpand="true"/>
+					<!-- plugin name -->
+					<label color="plug_name" font.bold="true" font.size="14" halign="1" padding.top="2" padding.bottom="-1" padding.right="6" text="labels.rack.plugin_launcher" text.meta="true" text.adjust="toupper"/>
+				</hbox>
+			</cell>
+			<void expand="true"/>
+
+			<!-- Preset and Menu box -->
+			<hbox bg.color="bg">
+				<void expand="true" bg.color="bg_schema"/>
+				<!-- About -->
+				<bevel hexpand="false" color="bg_schema" bg.color="bg" width.min="24" height.min="20"/>
+				<hbox ui:id="trg_about" solid="true" padding.right="6" pointer="hand">
+					<label hover="true" color="menu_icon" font.size="10" hover.color="menu_icon_hover" font.name="lsp-icons" padding.top="1" font.antialias="true" text="4"/>
+					<label hover="true" color="menu_text" hover.color="menu_text_hover" padding.left="5" font.size="14" padding.top="3" text="labels.header.about"/>
+				</hbox>
+			</hbox>
+		</grid>
+		<hsep ui:inject="LauncherWindow::HSep::Header"/>
+
+		<!-- plugin-content -->
+		<vbox ui:inject="LauncherWindow::Content" ui:id="launcher_content">
+			<hbox fill="true" bg.color="bg_schema" pad.h="6" pad.v="4">
+				<hbox>
+					<label text="labels.search" pad.r="6"/>
+					<edit ui:id="search_input" width.min="200" pad.r="6"/>
+				</hbox>
+				<void hexpand="true"/>
+				<hbox ui:id="trg_language_select_area">
+					<label text="lang.language" pad.r="6"/>
+					<combo ui:id="trg_language_select" width.min="96"/>
+				</hbox>
+				<hbox ui:id="trg_visual_schema_select_area" pad.l="12">
+					<label text="actions.visual_schema.select" pad.r="6"/>
+					<combo ui:id="trg_visual_schema_select" width.min="96"/>
+				</hbox>
+			</hbox>
+			<void bg.color="bg" pad.v="2" vreduce="true"/>
+			<tabs ui:id="tab_control" expand="true">
+				<tab text="labels.all_plugins">
+					<vbox expand="true">
+						<label ui:inject="LauncherWindow::Heading" text="labels.all_plugins" />
+						<void bg.color="bg_name" pad.v="1" vreduce="true"/>
+						<sarea ui:id="all_plugins_area" expand="true" vscroll="optional" hscale="1">
+							<vbox ui:id="all_plugins_list" expand="true" />
+						</sarea>
+						<void expand="true"/>
+					</vbox>
+				</tab>
+				<tab text="labels.favourites">
+					<vbox expand="true">
+						<label ui:inject="LauncherWindow::Heading" text="labels.favourites" />
+						<void bg.color="bg_name" pad.v="1" vreduce="true"/>
+						<sarea ui:id="favourites_area" expand="true" vscroll="optional" hscale="1">
+							<vbox ui:id="favourites_list" expand="true" />
+						</sarea>
+						<void expand="true"/>
+					</vbox>
+				</tab>
+				</tabs>
+		</vbox>
+
+		<hsep ui:inject="LauncherWindow::HSep::Header"/>
+
+		<!-- Footer -->
+		<hbox height="20" bg.color="bg_schema" spacing="6">
+			<!-- UI Scale icons + and - -->
+			<hbox padding.left="6">
+				<label ui:id="trg_ui_scaling" font.name="lsp-icons" hover="true" color="footer_icon" hover.color="footer_icon_hover" padding.right="10" font.size="12" font.antialias="true" text="icons.main.scale" pointer="hand"/>
+				<label ui:id="trg_ui_zoom_in" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.right="5" expand="false" font.size="10" font.antialias="true" text="icons.main.plus_nb" pointer="hand"/>
+				<label ui:id="trg_ui_zoom_out" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.right="5" expand="false" font.size="10" font.antialias="true" text="icons.main.minus_nb" pointer="hand"/>
+			</hbox>
+
+			<!-- Text scale icons + and - -->
+			<hbox padding.left="3">
+				<label ui:id="trg_font_scaling" font.name="lsp-icons" hover="true" color="footer_icon" hover.color="footer_icon_hover" padding.right="10" font.size="12" font.antialias="true" text="icons.main.font" pointer="hand"/>
+				<label ui:id="trg_font_zoom_in" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.right="5" expand="false" font.size="10" font.antialias="true" text="icons.main.plus_nb" pointer="hand"/>
+				<label ui:id="trg_font_zoom_out" font.name="lsp-icons" hover="true" color="footer_icon_rsz" hover.color="footer_icon_rsz_hover" padding.right="5" expand="false" font.size="10" font.antialias="true" text="icons.main.minus_nb" pointer="hand"/>
+			</hbox>
+
+			<!-- Empty filler -->
+			<void expand="true"/>
+
+			<!-- Help icon -->
+			<label ui:id="trg_show_manual" pad.r="6" font.name="lsp-icons" font.size="12" font.antialias="true" text="icons.main.help" hover="true" color="footer_icon_rsz" hover.color="menu_icon_hover" halign="1" pointer="hand"/>
+		</hbox>
+	</vbox>
+</window>

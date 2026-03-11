@@ -55,6 +55,8 @@
 		"sustain": "Поддержка",
 		"time": "Время"
 	},
+	
+	"all_plugins": "Все плагины",
 
 	"alr": "АРУ",
     "alr_": "Авто регуляция уровней",
@@ -233,6 +235,7 @@
 	"dc_offset": "Смещение",
 	"dc_reference": "Точка отсчёта",
 
+	"decramp": "Разжатие",
 	"delay": "Задержка",
 	"delay:ms": "Задержка (мс)",
 	"delay_line_processing": "Обработка линии задержки",
@@ -268,6 +271,8 @@
 	"equalizer:db": "Эквалайзер (дБ)",
 
 	"export": "Экспорт",
+	
+	"favourites": "Избранное",
 
 	"feedback": "Обратная связь",
 	"feed_gain": "Глубина ОС",
@@ -705,6 +710,7 @@
 		"description": "{@meta_plugin_description}",
 		"left": "{@meta_pkg_brand}",
 		"name": "{@meta_plugin_name}",
+		"plugin_launcher": "Запуск плагина",
 		"right": "{@meta_plugin_acronym}",
 		"top": "{@meta_pkg_brand} {@meta_plugin_acronym}"
 	},

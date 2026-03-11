@@ -79,6 +79,12 @@
         "protocol_error": "Protocol error",
         "bad_token": "Bad token",
         "no_grab": "No grab is currently obtained",
-        "underflow": "Underflow"
+        "underflow": "Underflow",
+        "incompatible": "Incompatible module/function",
+        "not_mapped": "Resource is not mapped",
+        "retry": "Retry a call",
+        "interrupted": "Interrupted",
+        "not_file": "Not a regular file",
+        "bad_symlink": "Bad or broken symbolic link"
 	}
 }

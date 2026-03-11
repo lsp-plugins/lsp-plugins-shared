@@ -59,12 +59,12 @@
 				</hbox>
 			</hbox>
 		</grid>
-		<hsep ui:inject="PluginWindow::Hsep_header"/>
+		<hsep ui:inject="PluginWindow::HSep::Header"/>
 
 		<!-- plugin-content -->
 		<hbox ui:inject="PluginWindow::Content" ui:id="plugin_content"></hbox>
 
-		<hsep ui:inject="PluginWindow::Hsep_header"/>
+		<hsep ui:inject="PluginWindow::HSep::Header"/>
 		<!-- Footer -->
 		<hbox height="20" bg.color="bg_schema" spacing="6">
 			<!-- UI Scale icons + and - -->
