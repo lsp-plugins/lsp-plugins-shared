@@ -54,6 +54,10 @@
 					<combo ui:id="trg_visual_schema_select" width.min="96"/>
 				</hbox>
 			</hbox>
+			<hbox>
+				<void hexpand="true"/>
+				<button id="_launcher_launch_multiple" text="actions.launch_multiple" />
+			</hbox>
 			<void bg.color="bg" pad.v="2" vreduce="true"/>
 			<tabs ui:id="tab_control" expand="true">
 				<tab text="labels.all_plugins">
