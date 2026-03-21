@@ -53,34 +53,31 @@
 					<label text="actions.visual_schema.select" pad.r="6"/>
 					<combo ui:id="trg_visual_schema_select" width.min="96"/>
 				</hbox>
-			</hbox>
-			<hbox>
-				<void hexpand="true"/>
-				<button id="_launcher_launch_multiple" text="actions.launch_multiple" />
+				<button id="_launcher_launch_multiple" text="actions.launch_multiple" pad.l="12"/>
 			</hbox>
 			<void bg.color="bg" pad.v="2" vreduce="true"/>
 			<tabs ui:id="tab_control" expand="true">
 				<tab text="labels.all_plugins">
 					<vbox expand="true">
-						<label ui:inject="LauncherWindow::Heading" text="labels.all_plugins" />
+						<label ui:inject="LauncherWindow::Heading" text="labels.all_plugins"/>
 						<void bg.color="bg_name" pad.v="1" vreduce="true"/>
 						<sarea ui:id="all_plugins_area" expand="true" vscroll="optional" hscale="1">
-							<vbox ui:id="all_plugins_list" expand="true" />
+							<vbox ui:id="all_plugins_list" expand="true"/>
 						</sarea>
 						<void expand="true"/>
 					</vbox>
 				</tab>
 				<tab text="labels.favourites">
 					<vbox expand="true">
-						<label ui:inject="LauncherWindow::Heading" text="labels.favourites" />
+						<label ui:inject="LauncherWindow::Heading" text="labels.favourites"/>
 						<void bg.color="bg_name" pad.v="1" vreduce="true"/>
 						<sarea ui:id="favourites_area" expand="true" vscroll="optional" hscale="1">
-							<vbox ui:id="favourites_list" expand="true" />
+							<vbox ui:id="favourites_list" expand="true"/>
 						</sarea>
 						<void expand="true"/>
 					</vbox>
 				</tab>
-				</tabs>
+			</tabs>
 		</vbox>
 
 		<hsep ui:inject="LauncherWindow::HSep::Header"/>
