@@ -430,6 +430,7 @@
 	"knee": "Knee",
 	"knee_:db": "Knee\n(dB)",
 
+	"latency": "Latency",
 	"latency:ms": "Latency (ms)",
 	"launch": "Launch",
 	"left": "Left",

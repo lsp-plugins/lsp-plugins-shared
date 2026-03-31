@@ -73,7 +73,8 @@
 	"import_settings_from_file": "Импорт настроек из файла...",
 	"import_sfz_file": "Импортировать файл SFZ...",
 	"import_rew_filter_file": "Файл фильтров REW/APO...",
-	"reset_settings": "Сбросить настройки",
+	
+	"launch_multiple": "Запустить несколько",
 
 	"listen": "Слушать",
 	"limits": "Ограничения",
@@ -120,6 +121,7 @@
 
 	"record": "Запись",
 	"reset": "Сбросить",
+	"reset_settings": "Сбросить настройки",
 	"restart": "Перезапуск",
 	"run_stop": "Пуск/Стоп",
 

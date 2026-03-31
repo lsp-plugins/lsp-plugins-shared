@@ -72,7 +72,8 @@
 	"import_settings_from_file": "Import settings from file...",
 	"import_sfz_file": "Import SFZ file...",
 	"import_rew_filter_file": "REW/APO filter file...",
-	"reset_settings": "Reset settings",
+	
+	"launch_multiple": "Launch Multiple",
 
 	"listen": "Listen",
 	"limits": "Limits",
@@ -119,6 +120,7 @@
 
 	"record": "Record",
 	"reset": "Reset",
+	"reset_settings": "Reset settings",
 	"restart": "Restart",
 	"run_stop": "Run/Stop",
 
