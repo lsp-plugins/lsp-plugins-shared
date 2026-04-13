@@ -1,6 +1,6 @@
 {
-	"jack": {
-		"label": "JACK:",
+	"backend": {
+		"label": "BACKEND:",
 		"off": "AUS",
 		"on": "AN"
 	},

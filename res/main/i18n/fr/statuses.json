@@ -1,6 +1,6 @@
 {
-	"jack": {
-		"label": "JACK :",
+	"backend": {
+		"label": "BACKEND:",
 		"off": "OFF",
 		"on": "ON"
 	},
