@@ -93,7 +93,7 @@
 
 			<!-- Audio backend status -->
 			<hbox ui:id="backend_indicator" visibility="false" spacing="6" padding.right="6">
-				<label text="statuses.backend.label" ui:inject="PluginWindow::StatusBar::Label"/>
+				<label ui:id="backend_name" text="statuses.backend.label.unknown" ui:inject="PluginWindow::StatusBar::Label"/>
 				<label ui:id="backend_status" text="statuses.backend.off" ui:inject="PluginWindow::StatusBar::Label"/>
 			</hbox>
 

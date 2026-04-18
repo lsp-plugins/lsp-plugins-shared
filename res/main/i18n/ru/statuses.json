@@ -1,6 +1,11 @@
 {
 	"backend": {
-		"label": "БЭКЕНД:",
+		"label": {
+			"dummy": "Пустой драйвер:",
+			"jack": "JACK:",
+			"pipewire": "PipeWire:",
+			"unknown": "Аудиодрайвер:"
+		},
 		"off": "ВЫКЛ",
 		"on": "ВКЛ"
 	},
