@@ -17,6 +17,13 @@
 		"pipewire": "PipeWire"
 	},
 	
+	"audio_backend_item": {
+		"auto": "Auto",
+		"dummy": "Dummy",
+		"jack": "JACK",
+		"pipewire": "PipeWire"
+	},
+	
 	"bool": {
 		"off": "off",
 		"on": "on"

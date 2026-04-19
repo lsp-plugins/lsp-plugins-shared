@@ -17,6 +17,13 @@
 		"pipewire": "PipeWire"
 	},
 	
+	"audio_backend_item": {
+		"auto": "Авто",
+		"dummy": "Пустой",
+		"jack": "JACK",
+		"pipewire": "PipeWire"
+	},
+	
 	"bool": {
 		"off": "выкл",
 		"on": "вкл"
