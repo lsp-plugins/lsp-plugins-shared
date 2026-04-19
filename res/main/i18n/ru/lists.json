@@ -10,6 +10,13 @@
 		}
 	},
 	
+	"audio_backend": {
+		"auto": "Автоматический выбор",
+		"dummy": "Пустой драйвер (имитация)",
+		"jack": "JACK",
+		"pipewire": "PipeWire"
+	},
+	
 	"bool": {
 		"off": "выкл",
 		"on": "вкл"

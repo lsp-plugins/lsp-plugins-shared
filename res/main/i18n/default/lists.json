@@ -10,6 +10,13 @@
 		}
 	},
 	
+	"audio_backend": {
+		"auto": "Automatic selection",
+		"dummy": "Dummy",
+		"jack": "JACK",
+		"pipewire": "PipeWire"
+	},
+	
 	"bool": {
 		"off": "off",
 		"on": "on"

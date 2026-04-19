@@ -3,6 +3,8 @@
 
 	"apply": "Apply",
 	
+	"audio_driver": "Audio driver",
+	
 	"bundle_scaling": {
 		"default": "Default",
 		"select": "Plugin scaling",
