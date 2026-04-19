@@ -3,6 +3,8 @@
 
 	"apply": "Применить",
 	
+	"audio_driver": "Драйвер аудио",
+	
 	"bundle_scaling": {
 		"default": "По умолчанию",
 		"select": "Масштаб плагина",

@@ -9,6 +9,20 @@
 			"vline": "VLine"
 		}
 	},
+		
+	"audio_backend": {
+		"auto": "Automatic selection",
+		"dummy": "Dummy",
+		"jack": "JACK",
+		"pipewire": "PipeWire"
+	},
+	
+	"audio_backend_item": {
+		"auto": "Auto",
+		"dummy": "Dummy",
+		"jack": "JACK",
+		"pipewire": "PipeWire"
+	},
 	
 	"bool": {
 		"off": "off",
