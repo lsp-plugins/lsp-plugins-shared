@@ -1,6 +1,6 @@
 #
-# Copyright (C) 2024 Linux Studio Plugins Project <https://lsp-plug.in/>
-#           (C) 2024 Vladimir Sadovnikov <sadko4u@gmail.com>
+# Copyright (C) 2026 Linux Studio Plugins Project <https://lsp-plug.in/>
+#           (C) 2026 Vladimir Sadovnikov <sadko4u@gmail.com>
 #
 # This file is part of lsp-plugin-shared
 #
@@ -63,7 +63,7 @@ PHP                ?= $(X_PHP_TOOL)
 PKG_CONFIG         ?= $(X_PKG_CONFIG)
 
 # Define tool variables for host build
-ifeq ($(CROSS_COMPILE),1)
+ifeq ($(call fcheck,crosscompile,$(BUILD_FEATURES),ON),ON)
   HOST_CC            ?= $(X_CC_TOOL)
   HOST_CXX           ?= $(X_CXX_TOOL)
   HOST_AS            ?= $(X_AS_TOOL)
@@ -89,6 +89,7 @@ INSTALL            ?= $(X_INSTALL_TOOL)
 FLAG_RELRO         := -Wl,-z,relro,-z,now
 FLAG_STDLIB        := 
 FLAG_GC_SECTIONS   := -Wl,--gc-sections
+FLAG_AS_NEEDED     := -Wl,-as-needed
 NOARCH_CFLAGS      := 
 NOARCH_CXXFLAGS    := 
 NOARCH_EXE_FLAGS   := 
@@ -108,7 +109,8 @@ else ifeq ($(PLATFORM),Windows)
   NOARCH_LDFLAGS     += -T $(CURDIR)/make/ld-windows.script
 else ifeq ($(PLATFORM),MacOS)
   FLAG_RELRO          =
-  FLAG_GC_SECTIONS    = 
+  FLAG_GC_SECTIONS    =
+  FLAG_AS_NEEDED      =
   NOARCH_CXXFLAGS    += -std=c++0x
   NOARCH_LDFLAGS     += -keep_private_externs
 else ifeq ($(PLATFORM),BSD)
@@ -116,7 +118,7 @@ else ifeq ($(PLATFORM),BSD)
   NOARCH_SO_FLAGS    += -L/usr/local/lib
 endif
 
-ifeq ($(DEBUG),1)
+ifeq ($(call fcheck,debug,$(BUILD_FEATURES),ON),ON)
   NOARCH_CFLAGS      += -Og -g3 -DLSP_DEBUG -falign-functions=16
   NOARCH_CXXFLAGS    += -Og -g3 -DLSP_DEBUG -falign-functions=16
 else
@@ -124,7 +126,7 @@ else
   NOARCH_CXXFLAGS    += -O2
 endif
 
-ifeq ($(ASAN),1)
+ifeq ($(call fcheck,asan,$(BUILD_FEATURES),ON),ON)
   NOARCH_CFLAGS      += -fsanitize=address
   NOARCH_CXXFLAGS    += -fsanitize=address
   NOARCH_EXE_FLAGS   += -fsanitize=address
@@ -136,17 +138,17 @@ ifeq ($(PROFILE),1)
   NOARCH_CXXFLAGS    += -pg -DLSP_PROFILE
 endif
 
-ifeq ($(TRACE),1)
+ifeq ($(call fcheck,trace,$(BUILD_FEATURES),ON),ON)
   NOARCH_CFLAGS      += -DLSP_TRACE
   NOARCH_CXXFLAGS    += -DLSP_TRACE
 endif
 
-ifeq ($(STRICT),1)
+ifeq ($(call fcheck,strict,$(BUILD_FEATURES),ON),ON)
   NOARCH_CFLAGS      += -Werror
   NOARCH_CXXFLAGS    += -Werror
 endif
 
-ifeq ($(TEST),1)
+ifeq ($(call fcheck,test,$(BUILD_FEATURES),ON),ON)
   NOARCH_CFLAGS      += -DLSP_TESTING
   NOARCH_CXXFLAGS    += -DLSP_TESTING
   EXPORT_SYMBOLS     ?= 1
@@ -200,11 +202,11 @@ NOARCH_LDFLAGS     += -r
 LDFLAGS            := $(ARCHITECTURE_LDFLAGS) $(NOARCH_LDFLAGS)
 HOST_LDFLAGS       := $(HOST_ARCHITECTURE_LDFLAGS) $(NOARCH_LDFLAGS)
 
-NOARCH_EXE_FLAGS   += $(FLAG_RELRO) $(FLAG_GC_SECTIONS)
+NOARCH_EXE_FLAGS   += $(FLAG_RELRO) $(FLAG_GC_SECTIONS) $(FLAG_AS_NEEDED)
 EXE_FLAGS          := $(ARCHITECTURE_CFLAGS) $(NOARCH_EXE_FLAGS)
 HOST_EXE_FLAGS     := $(HOST_ARCHITECTURE_CFLAGS) $(NOARCH_EXE_FLAGS)
 
-NOARCH_SO_FLAGS    += $(FLAG_RELRO) $(FLAG_GC_SECTIONS) -shared $(FLAG_STDLIB) -fPIC 
+NOARCH_SO_FLAGS    += $(FLAG_RELRO) $(FLAG_GC_SECTIONS) $(FLAG_AS_NEEDED) -shared $(FLAG_STDLIB) -fPIC 
 SO_FLAGS           := $(ARCHITECTURE_CFLAGS) $(NOARCH_SO_FLAGS)
 HOST_SO_FLAGS      := $(HOST_ARCHITECTURE_CFLAGS) $(NOARCH_SO_FLAGS)
 
@@ -220,6 +222,7 @@ TOOL_VARS := \
 
 .PHONY: toolvars
 toolvars:
+	echo ""
 	echo "List of tool variables:"
 	echo "  AR                        Archiver tool for target build"
 	echo "  AS                        Assembler tool for target build"
@@ -252,4 +255,13 @@ toolvars:
 	echo "  PKG_CONFIG                Installed package management tool for target build"
 	echo "  SO_FLAGS                  Flags to link shared object/library files for target build"
 	echo ""
-
+	echo "Available compilation FEATURES:"
+	echo "  asan                      Build with address sanitizer enabled"
+	echo "  crosscompile              Build with additional debug information and debug logs enabled"
+	echo "  debug                     Build with additional debug information and debug logs enabled"
+	echo "  devel                     Use development (SSH) links for remote repositories instead of HTTPS"
+	echo "  profile                   Build with gprof profiling options"
+	echo "  strict                    Strict compilation: treat all compilation warning as errors"
+	echo "  test                      Enable tests and build test binary"
+	echo "  trace                     Enable output of additional trace logs"
+	echo ""

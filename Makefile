@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 #
-# Copyright (C) 2020 Linux Studio Plugins Project <https://lsp-plug.in/>
-#           (C) 2020 Vladimir Sadovnikov <sadko4u@gmail.com>
+# Copyright (C) 2026 Linux Studio Plugins Project <https://lsp-plug.in/>
+#           (C) 2026 Vladimir Sadovnikov <sadko4u@gmail.com>
 #
 # This file is part of lsp-plugins-shared
 #
@@ -80,9 +80,6 @@ prune: clean
 # Configuration-related targets
 .PHONY: config help chkconfig
 
-testconfig:
-	$(MAKE) -f "$(BASEDIR)/make/configure.mk" $(@) VERBOSE="$(VERBOSE)" CONFIG="$(CONFIG)" TEST="1" -$(MAKEFLAGS)
-
 config:
 	$(MAKE) -f "$(BASEDIR)/make/configure.mk" $(@) VERBOSE="$(VERBOSE)" CONFIG="$(CONFIG)" -$(MAKEFLAGS)
 
@@ -94,12 +91,10 @@ distsrc:
 	$(MAKE) -f "$(BASEDIR)/make/modules.mk" tree VERBOSE="$(VERBOSE)" BASEDIR="$(BASEDIR)" MODULES="$(DISTSRC)/modules" TREE="1"
 	cp -R $(BASEDIR)/include $(BASEDIR)/make $(BASEDIR)/src "$(DISTSRC)/"
 	cp $(BASEDIR)/CHANGELOG $(BASEDIR)/COPYING* $(BASEDIR)/Makefile $(BASEDIR)/*.mk "$(DISTSRC)/"
-	find "$(DISTSRC)" -iname '.git' | xargs -exec rm -rf {}
-	find "$(DISTSRC)" -iname '.gitignore' | xargs -exec rm -rf {}
-	tar -C $(DISTSRC_PATH) -czf "$(BUILDDIR)/$(ARTIFACT_NAME)-$(ARTIFACT_VERSION)-src.tar.gz" "$(ARTIFACT_NAME)"
-	echo "Created archive: $(BUILDDIR)/$(ARTIFACT_NAME)-$(ARTIFACT_VERSION)-src.tar.gz"
-	ln -sf "$(ARTIFACT_NAME)-$(ARTIFACT_VERSION)-src.tar.gz" "$(BUILDDIR)/$(ARTIFACT_NAME)-src.tar.gz"
-	echo "Created symlink: $(BUILDDIR)/$(ARTIFACT_NAME)-src.tar.gz"
+	find "$(DISTSRC)" -iname '.git' | xargs rm -rf {}
+	find "$(DISTSRC)" -iname '.gitignore' | xargs rm -rf {}
+	tar -C $(DISTSRC_PATH) -czf "$(BUILDDIR)/$(ARTIFACT_NAME)-src-$(ARTIFACT_VERSION).tar.gz" "$(ARTIFACT_NAME)"
+	echo "Created archive: $(BUILDDIR)/$(ARTIFACT_NAME)-src-$(ARTIFACT_VERSION).tar.gz"
 	rm -rf $(DISTSRC_PATH)
 	echo "Build OK"
 
