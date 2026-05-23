@@ -145,6 +145,7 @@
 		"file_list_navigation_autoplay": "Automatically play files when navigating file list",
 		"filter_point_thickness": "Filter point thickness",
 		"override_hydrogen_kits": "Override Hydrogen kits",
+		"reveal_sample_on_listen": "Reveal sample on listen event",
 		"show_piano_layout_on_graph": "Show piano keyboard layout on frequency graph",
 		"take_instrument_name_from_file": "Take instrument name from file",
 		"vscroll": {
