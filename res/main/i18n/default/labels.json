@@ -325,8 +325,9 @@
 	},
 	"filter": { 
 		"": "Filter",
-		"controls": "Filter controls",
-		"gain": "Filter gain",
+		"bp_width": "Bandpass Width",
+		"controls": "Filter Controls",
+		"gain": "Filter Gain",
 		"width": "Filter Width"
 	},
 	"filters": "Filters",	
@@ -446,7 +447,7 @@
 		"type": "Type",
 		"voices": "Voices"
 	},
-	"limiter_bands": "Limiter bands",
+	"limiter_bands": "Limiter Bands",
 	"limiting": {
 		"bottom": "Bottom",
 		"top": "Top"
