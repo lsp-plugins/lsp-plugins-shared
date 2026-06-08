@@ -158,8 +158,9 @@
 		<led_bl value="#00a4b2"/>
 
 		<!-- Indicator -->
-		<ind_col value="#E0DFDA"/>
-		<ind_text value="#DC624A"/>
+		<indicator_color value="#E0DFDA"/>
+		<indicator_text value="#DC624A"/>
+		<indicator_text_inactive value="#6f7185"/>
 
 		<!-- Hyperlinks -->
 		<hl_text value="#1a7788"/>
@@ -1848,6 +1849,15 @@
 		<cursor.color value="text_sec"/>
 		<border.gap.color value="bg"/>
 		<bg.inherit value="true"/>
+
+		<inactive.color value="bg"/>
+		<inactive.text.color value="text_sec"/>
+		<inactive.text.empty.color value="text_tab"/>
+		<inactive.border.color value="bg_light"/>
+		<inactive.cursor.color value="text_sec"/>
+		<inactive.border.gap.color value="bg"/>
+		<inactive.brightness value="0.75"/>
+		<inactive.bg.brightness value="0.75"/>
 	</style>
 
 	<style class="Edit::ValidInput" parents="Edit">
@@ -2204,11 +2214,16 @@
 	<style class="Image" parents="root"></style>
 
 	<style class="Indicator" parents="root">
-		<color value="ind_col"/>
-		<text.color value="ind_text"/>
+		<color value="indicator_color"/>
+		<text.color value="indicator_text"/>
 		<type value="modern"/>
 		<text.dark value="false"/>
 		<bg.inherit value="true"/>
+
+		<inactive.color value="indicator_color"/>
+		<inactive.text.color value="indicator_text_inactive"/>
+		<inactive.brightness value="0.75"/>
+		<inactive.bg.brightness value="0.75"/>
 	</style>
 
 	<style class="Knob" parents="root">
@@ -3061,10 +3076,10 @@
 		<allocation.vfill value="true"/>
 		<layout.hscale value="1.0"/>
 		<layout.vscale value="1.0"/>
-		<size.constraints.width.min value="640" />
-		<size.constraints.height.min value="640" />
+		<size.constraints.width.min value="640"/>
+		<size.constraints.height.min value="640"/>
 		<text.layout.halign value="1.0"/>
-		<padding value="0" />
+		<padding value="0"/>
 	</style>
 
 	<style class="LauncherWindow::HSep::Header" parents="Separator">
@@ -3088,15 +3103,15 @@
 	</style>
 
 	<style class="LauncherWindow::Category" parents="Box">
-		<orientation value="vertical" />
+		<orientation value="vertical"/>
 	</style>
 
 	<style class="LauncherWindow::Category::Separator" parents="Separator">
-		<orientation value="horizontal" />
+		<orientation value="horizontal"/>
 		<bg.inherit value="false"/>
 		<bg.color value="bg"/>
-		<padding.top value="20" />
-		<padding.bottom value="20" />
+		<padding.top value="20"/>
+		<padding.bottom value="20"/>
 	</style>
 
 	<style class="LauncherWindow::Category::Heading" parents="Label">
@@ -3105,36 +3120,36 @@
 		<font.bold value="true"/>
 		<bg.color value="bg_schema"/>
 		<font.size value="16"/>
-		<padding.left value="6" />
-		<padding.right value="6" />
-		<padding.top value="4" />
-		<padding.bottom value="4" />
+		<padding.left value="6"/>
+		<padding.right value="6"/>
+		<padding.top value="4"/>
+		<padding.bottom value="4"/>
 	</style>
 
 	<style class="LauncherWindow::Category::Heading::Separator" parents="Separator">
-		<bg.color value="bg" />
-		<orientation value="horizontal" />
-		<padding.top value="2" />
-		<padding.bottom value="2" />
+		<bg.color value="bg"/>
+		<orientation value="horizontal"/>
+		<padding.top value="2"/>
+		<padding.bottom value="2"/>
 	</style>
 
 	<style class="LauncherWindow::Bundle::Grid" parents="Grid">
 		<bg.inherit value="false"/>
 		<bg.color value="bg_schema"/>
-		<padding.left value="6" />
-		<padding.right value="6" />
-		<padding.top value="12" />
-		<padding.bottom value="12" />
-		<hspacing value="12" />
-		<vspacing value="12" />
+		<padding.left value="6"/>
+		<padding.right value="6"/>
+		<padding.top value="12"/>
+		<padding.bottom value="12"/>
+		<hspacing value="12"/>
+		<vspacing value="12"/>
 	</style>
 
 	<style class="LauncherWindow::Bundle::Separator" parents="Separator">
-		<orientation value="horizontal" />
+		<orientation value="horizontal"/>
 		<bg.inherit value="false"/>
 		<bg.color value="bg"/>
-		<padding.top value="2" />
-		<padding.bottom value="2" />
+		<padding.top value="2"/>
+		<padding.bottom value="2"/>
 	</style>
 
 	<style class="LauncherWindow::Bundle::Heading" parents="Label">
@@ -3151,8 +3166,8 @@
 		<allocation.hexpand value="true"/>
 		<allocation.vfill value="true"/>
 		<allocation.vexpand value="true"/>
-		<text.layout.halign value="-1.0" />
-		<text.layout.valign value="-1.0" />
+		<text.layout.halign value="-1.0"/>
+		<text.layout.valign value="-1.0"/>
 	</style>
 
 	<style class="LauncherWindow::Bundle::Images::Align" parents="Align">
@@ -3166,14 +3181,14 @@
 
 	<style class="LauncherWindow::Bundle::Images" parents="Box">
 		<orientation value="horizontal"/>
-		<size.constraints.width.min value="132" />
-		<size.constraints.width.max value="132" />
-		<size.constraints.height.min value="132" />
-		<size.constraints.height.max value="132" />
+		<size.constraints.width.min value="132"/>
+		<size.constraints.width.max value="132"/>
+		<size.constraints.height.min value="132"/>
+		<size.constraints.height.max value="132"/>
 	</style>
 
 	<style class="LauncherWindow::Bundle::Controls" parents="Box">
-		<spacing value="6" />
+		<spacing value="6"/>
 	</style>
 
 	<style class="LauncherWindow::Bundle::Favourites" parents="Button">
@@ -3188,17 +3203,17 @@
 	</style>
 
 	<style class="LauncherWindow::Bundle::Buttons" parents="Grid">
-		<hspacing value="6" />
-		<vspacing value="6" />
+		<hspacing value="6"/>
+		<vspacing value="6"/>
 	</style>
 
 	<style class="LauncherWindow::Bundle::Buttons::Align" parents="Align">
-		<allocation.hfill value="true" />
-		<allocation.vfill value="true" />
+		<allocation.hfill value="true"/>
+		<allocation.vfill value="true"/>
 		<layout.halign value="-1.0"/>
 		<layout.valign value="-1.0"/>
-		<layout.hscale value="0.0" />
-		<layout.vscale value="0.0" />
+		<layout.hscale value="0.0"/>
+		<layout.vscale value="0.0"/>
 	</style>
 
 	<style class="LauncherWindow::Plugin::Image" parents="Image">
@@ -3213,7 +3228,7 @@
 	</style>
 
 	<style class="LauncherWindow::Plugin::Button" parents="Button">
-		<allocation.hfill value="true" />
+		<allocation.hfill value="true"/>
 	</style>
 
 	<!-- PluginWindow widgets -->
