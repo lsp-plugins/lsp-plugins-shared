@@ -42,9 +42,12 @@
 			<hbox fill="true" bg.color="bg_schema" pad.h="6" pad.v="4">
 				<hbox>
 					<label text="labels.search" pad.r="6"/>
-					<edit ui:id="search_input" width.min="200" pad.r="6"/>
+					<edit ui:id="search_input" width.min="320" pad.r="6"/>
 				</hbox>
 				<void hexpand="true"/>
+				<button id="_launcher_launch_multiple" text="actions.launch_multiple" pad.l="12"/>
+			</hbox>
+			<hbox fill="true" bg.color="bg_schema" pad.h="6" pad.v="4">
 				<hbox ui:id="trg_language_select_area">
 					<label text="lang.language" pad.r="6"/>
 					<combo ui:id="trg_language_select" width.min="96"/>
@@ -53,7 +56,11 @@
 					<label text="actions.visual_schema.select" pad.r="6"/>
 					<combo ui:id="trg_visual_schema_select" width.min="96"/>
 				</hbox>
-				<button id="_launcher_launch_multiple" text="actions.launch_multiple" pad.l="12"/>
+				<hbox ui:id="trg_audio_driver_select_area" pad.l="12">
+					<label text="actions.audio_driver" pad.r="6"/>
+					<combo ui:id="trg_audio_driver_select" width.min="96"/>
+				</hbox>
+				<void hexpand="true"/>
 			</hbox>
 			<void bg.color="bg" pad.v="2" vreduce="true"/>
 			<tabs ui:id="tab_control" expand="true">

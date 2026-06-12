@@ -22,7 +22,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1709466937
-ModificationTime: 1772537470
+ModificationTime: 1781198325
 OS2TypoAscent: 0
 OS2TypoAOffset: 1
 OS2TypoDescent: 0
@@ -36,7 +36,6 @@ HheadAscent: 0
 HheadAOffset: 1
 HheadDescent: 0
 HheadDOffset: 1
-OS2Vendor: 'PfEd'
 MarkAttachClasses: 1
 DEI: 91125
 Encoding: ISO8859-1
@@ -45,7 +44,7 @@ NameList: AGL For New Fonts
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 16 16 10
+WinInfo: 64 16 10
 BeginPrivate: 0
 EndPrivate
 Grid
@@ -3376,19 +3375,19 @@ EndChar
 StartChar: uni0080
 Encoding: 128 128 58
 Width: 1024
-HStem: 697 20G<594.049 768>
+Flags: H
+HStem: 697 20G<645.049 819>
 LayerCount: 2
 Fore
 SplineSet
-768 717 m 257
- 358 307 l 257
- 768 -102 l 257
- 614 -102 l 257
- 205 307 l 257
- 614 717 l 257
- 768 717 l 257
+793.5 717 m 257
+ 383.5 307 l 257
+ 793.5 -102 l 257
+ 639.5 -102 l 257
+ 230.5 307 l 257
+ 639.5 717 l 257
+ 793.5 717 l 257
 EndSplineSet
-Validated: 1
 EndChar
 
 StartChar: uni0081
@@ -3411,19 +3410,19 @@ EndChar
 StartChar: uni0082
 Encoding: 130 130 60
 Width: 1024
-HStem: 697 20G<256 429.951>
+Flags: H
+HStem: 697 20G<230.5 404.451>
 LayerCount: 2
 Fore
 SplineSet
-256 717 m 257
- 410 717 l 257
- 819 307 l 257
- 410 -102 l 257
- 256 -102 l 257
- 666 307 l 257
- 256 717 l 257
+230.5 717 m 257
+ 384.5 717 l 257
+ 793.5 307 l 257
+ 384.5 -102 l 257
+ 230.5 -102 l 257
+ 640.5 307 l 257
+ 230.5 717 l 257
 EndSplineSet
-Validated: 1
 EndChar
 
 StartChar: uni0083
@@ -4139,6 +4138,7 @@ EndChar
 StartChar: uni0096
 Encoding: 150 150 74
 Width: 1024
+Flags: H
 HStem: 585 115<512 590.636>
 VStem: 115.5 117.5<198.57 424.25> 791 117.5<189.75 415.688>
 LayerCount: 2
@@ -4199,7 +4199,6 @@ SplineSet
  179 641 179 641 152.5 667.5 c 0
  126 694 126 694 121 700 c 257
 EndSplineSet
-Validated: 33
 EndChar
 
 StartChar: uni0097

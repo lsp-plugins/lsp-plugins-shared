@@ -326,10 +326,10 @@
 	},
 	"filter": { 
 		"": "Filter",
-		"bp_width": "Bandpass width",
-		"controls": "Filter controls",
-		"gain": "Filter gain",
-		"width": "Filter width"
+		"bp_width": "Bandpass Width",
+		"controls": "Filter Controls",
+		"gain": "Filter Gain",
+		"width": "Filter Width"
 	},
 	"filters": "Filters",
 
@@ -448,7 +448,7 @@
 		"type": "Type",
 		"voices": "Voices"
 	},
-	"limiter_bands": "Limiter bands",
+	"limiter_bands": "Limiter Bands",
 	"limiting": {
 		"bottom": "Bottom",
 		"top": "Top"
@@ -539,12 +539,12 @@
 		"code": "Code",
 		"midi_num": "MIDI #",
 		"midi_number": "MIDI Number",
-		"note_off": "Note off",
-		"note_on": "Note on",
+		"note_off": "Note Off",
+		"note_on": "Note On",
 		"velocity": "Velocity"
 	},
 	"mix": "Mix",
-	"mix_gain": "Mix gain",
+	"mix_gain": "Mix Gain",
 
 	"mode": "Mode",
 	"mode:": "Mode:",
@@ -860,9 +860,9 @@
 		"out_lr": "Out L/R",
 		"pan": "Pan",
 		"pan_l": "Pan L",
-		"pan_left": "Pan left",
+		"pan_left": "Pan Left",
 		"pan_r": "Pan R",
-		"pan_right": "Pan right",
+		"pan_right": "Pan Right",
 		"peak": "Peak",
 		"phase": "Phase",
 		"phase_invert": "Phase Invert",

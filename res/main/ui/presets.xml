@@ -7,6 +7,8 @@
 			<hbox hexpand="true" spacing="4" pad.b="4">
 				<edit ui:inject="FileDialog::Search" ui:id="preset_filter" etext="actions.presets.search" hexpand="true"/>
 				<button ui:id="btn_refresh" ui:inject="Button_cyan" font.name="lsp-icons" font.size="11" size="22" font.antialias="true" text="icons.actions.refresh"/>
+				<button ui:id="btn_previous_preset" ui:inject="Button_cyan" font.name="lsp-icons" font.size="11" size="22" font.antialias="true" text="icons.shapes.left" />
+				<button ui:id="btn_next_preset" ui:inject="Button_cyan" font.name="lsp-icons" font.size="11" size="22" font.antialias="true" text="icons.shapes.right" />
 			</hbox>
 			<tabs ui:inject="PresetsTab" ui:id="preset_category" expand="true" fill="true">
 				<tab text="labels.presets.category.all">

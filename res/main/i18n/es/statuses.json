@@ -1,6 +1,11 @@
 {
-	"jack": {
-		"label": "JACK:",
+	"backend": {
+		"label": {
+			"dummy": "Dummy Driver:",
+			"jack": "JACK:",
+			"pipewire": "PipeWire:",
+			"unknown": "Audio Driver:"
+		},
 		"off": "OFF",
 		"on": "ON"
 	},

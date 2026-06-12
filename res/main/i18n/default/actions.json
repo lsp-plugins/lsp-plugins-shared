@@ -3,6 +3,8 @@
 
 	"apply": "Apply",
 	
+	"audio_driver": "Audio driver",
+	
 	"bundle_scaling": {
 		"default": "Default",
 		"select": "Plugin scaling",
@@ -139,10 +141,13 @@
 		"": "UI behavior",
 		"ediable_knob_scale": "Editable knob scale",
 		"enable_zoomable_spectrum": "Automatic frequency graph scaling",
-		"file_list_navigation_autoload": "Automatically load files when navigating file list",
-		"file_list_navigation_autoplay": "Automatically play files when navigating file list",
+		"file_list_navigation_autoload": "Automatically load sample files when navigating file list",
+		"file_list_navigation_autoplay": "Automatically play sample files when navigating file list",
 		"filter_point_thickness": "Filter point thickness",
+		"ir_list_navigation_autoload": "Automatically load IR files when navigating file list",
+		"ir_list_navigation_autoplay": "Automatically play IR files when navigating file list",
 		"override_hydrogen_kits": "Override Hydrogen kits",
+		"reveal_sample_on_listen": "Reveal sample on listen event",
 		"show_piano_layout_on_graph": "Show piano keyboard layout on frequency graph",
 		"take_instrument_name_from_file": "Take instrument name from file",
 		"vscroll": {
