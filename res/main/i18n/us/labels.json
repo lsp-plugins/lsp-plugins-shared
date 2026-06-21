@@ -353,6 +353,8 @@
 		"low_cut": "Low cut",
 		"lpf:dbo": "LPF (dB/oct)",
 		"middle": "Middle",
+		"peak_1": "Peak 1",
+		"peak_2": "Peak 2",
 		"presence": "Presence",
 		"show_": "Show",
 		"subs": "Subs",
