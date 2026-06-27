@@ -439,6 +439,7 @@
 	"latency:ms": "Latency (ms)",
 	"launch": "Launch",
 	"left": "Left",
+	"lf_link": "LF Link",
 	"lfo": {
 		"": "LFO",
 		"1": "LFO 1",
