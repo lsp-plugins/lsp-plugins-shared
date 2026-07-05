@@ -544,6 +544,7 @@
 		"midi_number": "Номер MIDI",
 		"note_off": "Нота выкл",
 		"note_on": "Нота вкл",
+		"pc": "%",
 		"velocity": "Сила"
 	},
 	"mix": "Микс",

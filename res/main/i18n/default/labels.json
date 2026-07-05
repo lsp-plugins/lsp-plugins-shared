@@ -545,6 +545,7 @@
 		"midi_number": "MIDI Number",
 		"note_off": "Note Off",
 		"note_on": "Note On",
+		"pc": "%",
 		"velocity": "Velocity"
 	},
 	"mix": "Mix",
