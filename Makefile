@@ -46,9 +46,9 @@ DISTSRC_PATH                = $(BUILDDIR)/distsrc
 DISTSRC                     = $(DISTSRC_PATH)/$(ARTIFACT_NAME)
 
 .DEFAULT_GOAL              := all
-.PHONY: all compile install uninstall clean
+.PHONY: all bundle clean compile install uninstall
 
-compile all install uninstall:
+all compile bundle install uninstall:
 	$(CHK_CONFIG)
 	$(MAKE) -C "$(BASEDIR)/src" $(@) VERBOSE="$(VERBOSE)" CONFIG="$(CONFIG)" DESTDIR="$(DESTDIR)"
 
@@ -88,7 +88,7 @@ config:
 distsrc:
 	echo "Building source code archive"
 	mkdir -p "$(DISTSRC)/modules"
-	$(MAKE) -f "make/modules.mk" tree TREE="1" BUILD_FEATURES="$(FEATURES)" VERBOSE="$(VERBOSE)" BASEDIR="$(BASEDIR)" MODULES="$(DISTSRC)/modules"
+	$(MAKE) -f "$(BASEDIR)/make/modules.mk" tree TREE="1" BUILD_FEATURES="$(FEATURES)" VERBOSE="$(VERBOSE)" BASEDIR="$(BASEDIR)" MODULES="$(DISTSRC)/modules"
 	cp -R $(BASEDIR)/include $(BASEDIR)/make $(BASEDIR)/src "$(DISTSRC)/"
 	cp $(BASEDIR)/CHANGELOG $(BASEDIR)/COPYING* $(BASEDIR)/Makefile $(BASEDIR)/*.mk "$(DISTSRC)/"
 	find "$(DISTSRC)" -iname '.git' | xargs rm -rf {}
@@ -102,6 +102,7 @@ distsrc:
 help:
 	echo "Available targets:"
 	echo "  all                       Build all binaries"
+	echo "  bundle                    Install only necessary binaries for bundling"
 	echo "  clean                     Clean all build files and configuration file"
 	echo "  config                    Configure build"
 	echo "  distsrc                   Make tarball with source code for packagers"
@@ -115,4 +116,5 @@ help:
 	echo "  uninstall                 Uninstall binaries"
 	echo ""
 	$(MAKE) -f "$(BASEDIR)/make/configure.mk" $(@) VERBOSE="$(VERBOSE)"
-	echo ""
+
+	
