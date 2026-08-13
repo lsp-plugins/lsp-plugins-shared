@@ -79,6 +79,7 @@
 #define LSP_LADSPA_PHASER_BASE              (LSP_LADSPA_BASE + 260)
 #define LSP_LADSPA_RINGMOD_SC_BASE          (LSP_LADSPA_BASE + 270)
 #define LSP_LADSPA_MB_RINGMOD_SC_BASE       (LSP_LADSPA_BASE + 280)
+#define LSP_LADSPA_DEESSER_BASE             (LSP_LADSPA_BASE + 290)
 
 
 namespace lsp

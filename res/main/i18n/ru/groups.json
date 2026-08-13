@@ -66,6 +66,7 @@
 	"plug": {
 		"calibrator": "Калибратор",
 		"compressor": "Компрессор",
+		"deesser": "Деэссер",
 		"expander": "Экспандер",
 		"gate": "Гейт",
 		"latency_detector": "Детектор задержки",
@@ -76,7 +77,8 @@
 	
 	"post_filter": "Пост-фильтр",
 
-	"premix": "Премикс",	
+	"premix": "Премикс",
+	"pre_equalization": "Предэквализация",
 	"processor": "Обработчик",
 	"processors": "Обработчики",
 	"profile_limits": "Ограничения профиля",

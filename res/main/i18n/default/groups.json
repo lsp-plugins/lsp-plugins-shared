@@ -67,6 +67,7 @@
 	"plug": {
 		"calibrator": "Calibrator",
 		"compressor": "Compressor",
+		"deesser": "Deesser",
 		"expander": "Expander",
 		"gate": "Gate",
 		"latency_detector": "Latency Detector",
@@ -78,6 +79,7 @@
 	"post_filter": "Post-filter",
 
 	"premix": "Pre-mix",
+	"pre_equalization": "Pre-equalization",
 	"processor": "Processor",
 	"processors": "Processors",
 	"profile_limits": "Profile Limits",
