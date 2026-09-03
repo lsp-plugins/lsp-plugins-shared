@@ -103,9 +103,11 @@
 		},
 		"type": {
 			"fir": "FIR",
-			"fft": "FFT",
+			"fft_lp": "Linear phase (FFT)",
+			"fft_mp": "Minimum phase (FFT)",
 			"iir": "Zero-latency (IIR)",
-			"spm": "Linear phase (SPM)"
+			"spm_lp": "Linear phase (SPM)",
+			"spm_mp": "Minimum phase (SPM)"
 		}
 	},
 
@@ -239,12 +241,6 @@
 			"x8": "x8",
 			"x12": "x12",
 			"x16": "x16"
-		},
-		"type": {
-			"fir": "FIR",
-			"fft": "FFT",
-			"iir": "Zero-latency (IIR)",
-			"spm": "Linear phase (SPM)"
 		}
 	},
 
