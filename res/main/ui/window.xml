@@ -42,9 +42,11 @@
 				<!-- A/B switch -->
 				<ui:with bg.color="bg_preset">
 					<bevel hexpand="false" color="bg" width.min="24" height.min="20"/>
-					<button ui:id="switch_preset_a" ui:inject="PluginWindow::ABSwitch::Active" text="A" halign="2"/>
+					<button ui:id="switch_preset_a_active" ui:inject="PluginWindow::ABSwitch::Active" text="A" halign="2" editable="false"/>
+					<button ui:id="switch_preset_b_active" ui:inject="PluginWindow::ABSwitch::Active" text="B" halign="2" editable="false"/>
 					<button ui:id="switch_preset_copy" ui:inject="PluginWindow::ABSwitch::Copy" text="icons.arrow.right" halign="2"/>
-					<button ui:id="switch_preset_b" ui:inject="PluginWindow::ABSwitch::Inactive" text="B" halign="2"/>
+					<button ui:id="switch_preset_a_toggle" ui:inject="PluginWindow::ABSwitch::Inactive" text="A" halign="2" editable="true"/>
+					<button ui:id="switch_preset_b_toggle" ui:inject="PluginWindow::ABSwitch::Inactive" text="B" halign="2" editable="true"/>
 					<bevel hexpand="false" color="bg_preset" bg.color="bg" width.min="24" height.min="20"/>
 				</ui:with>
 
