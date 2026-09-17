@@ -103,7 +103,8 @@
 			"x4": "x4"
 		},
 		"type": {
-			"fir": "FIR",
+			"fir_lp": "Linear phase (FIR)",
+			"fir_mp": "Minimum phase (FIR)",
 			"fft_lp": "Linear phase (FFT)",
 			"fft_mp": "Minimum phase (FFT)",
 			"iir": "Zero-latency (IIR)",
