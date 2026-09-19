@@ -142,6 +142,7 @@
 			"hann": "Ханна",
 			"hann_poisson": "Ханна-Пуассона",
 			"kaiser": "Кайзера",
+			"kaiser_bessel_derived": "Кайзера-Бесселя Производная",
 			"lanczos": "Ланцоша",
 			"nuttall": "Нутталла",
 			"parzen": "Парцена",

@@ -142,6 +142,7 @@
 			"hann": "Hann",
 			"hann_poisson": "Hann-Poisson",
 			"kaiser": "Kaiser",
+			"kaiser_bessel_derived": "Kaiser-Bessel Derived",
 			"lanczos": "Lanczos",
 			"nuttall": "Nuttall",
 			"parzen": "Parzen",
