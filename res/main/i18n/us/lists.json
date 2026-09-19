@@ -141,6 +141,7 @@
 			"hamming": "Hamming",
 			"hann": "Hann",
 			"hann_poisson": "Hann-Poisson",
+			"kaiser": "Kaiser",
 			"lanczos": "Lanczos",
 			"nuttall": "Nuttall",
 			"parzen": "Parzen",
