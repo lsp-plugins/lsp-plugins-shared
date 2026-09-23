@@ -348,7 +348,8 @@
 	},
 
 	"rendering": {
-		"glx_opengl_v2": "OpenGL 2.0 (GLX)"
+		"glx_opengl_v2": "OpenGL 2.0 (GLX)",
+		"wgl_opengl_v2": "OpenGL 2.0 (WGL)"
 	},
 
 	"sidechain": {
