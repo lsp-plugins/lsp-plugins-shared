@@ -836,6 +836,7 @@
 		"amplitude": "Амплитуда",
 		"clip": "Срез",
 		"clipping": "Клиппинг",
+		"compensate": "Компенсация",
 		"curr_ent": "Тек",
 		"dc_compensate": "Комп. смещения",
 		"dc_offset": "Смещение",
