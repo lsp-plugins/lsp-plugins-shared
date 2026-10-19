@@ -489,6 +489,8 @@
 	"makeup": "Makeup",
 	"makeup_:db": "Makeup\n(dB)",
 
+	"matching": "Matching",
+
 	"material": {
 		"absorption": "Absorption",
 		"diffusion": "Diffusion",

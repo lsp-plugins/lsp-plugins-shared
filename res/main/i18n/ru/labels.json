@@ -488,6 +488,8 @@
 
 	"makeup": "Коррекция",
 	"makeup_:db": "Коррекция\n(дБ)",
+	
+	"matching": "Соответствие",
 
 	"material": {
 		"absorption": "Поглощение",
